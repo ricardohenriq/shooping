@@ -1,0 +1,26 @@
+# BACKUP TOTAL
+#
+# Com o "CMD as Administrator" aberto: Navegue (usando cd [pasta] e dir) até
+# a pasta bin contendo o mysqldump.exe (c:\Program Files\MySQL\MySQL Server 5.6\bin) 
+# e Cole o COMANDO ABAIXO e Tecle ENTER (se pedido a inserção da senha)
+# mysqldump -u shop -p shopping > "C:\backup.sql"
+#
+# RESTORE TOTAL
+#
+# Com o "CMD as Administrator" aberto: Navegue (usando cd [pasta] e dir) até
+# a pasta bin contendo o mysql.exe (c:\Program Files\MySQL\MySQL Server 5.6\bin) 
+# e Cole o COMANDO ABAIXO e Tecle ENTER (se pedido a inserção da senha)
+# mysql -u shop -p shopping < "C:\backup.sql"
+#
+# BACKUP POR TABELA
+#
+# Com o "CMD as Administrator" aberto: Navegue (usando cd [pasta] e dir) até
+# a pasta bin contendo o mysqldump.exe (c:\Program Files\MySQL\MySQL Server 5.6\bin) 
+# e Cole o COMANDO ABAIXO e Tecle ENTER (se pedido a inserção da senha)
+# mysqldump -u shop -p shopping users > "C:\backup-users.sql"
+#
+# RESTORE POR TABELA
+# Com o "MySql Command Line Client" aberto: Cole o COMANDO ABAIXO e Tecle ENTER
+# mysql -u shop
+# mysql> use shopping;
+# source C:\backup-users.sql;
