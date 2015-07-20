@@ -42,6 +42,7 @@ use Cake\Routing\Router;
 Router::defaultRouteClass('Route');
 
 Router::scope('/', function ($routes) {
+    // Pages é estatico não gerado pelo bake
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
      * its action called 'display', and we pass a param to select the view file
@@ -49,6 +50,8 @@ Router::scope('/', function ($routes) {
      */
     $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
 
+    // tendo pages após o dominio (sequido de qualquer coisa) será redirecionado para o controller pages,
+    // método display, qualquer coisa após o * será passado como parametro
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
      */
