@@ -51,6 +51,8 @@ class UsersTable extends Table
      * @param \Cake\Validation\Validator $validator Validator instance.
      * @return \Cake\Validation\Validator
      */
+    // Cria o validador que será usado para validar os dados antes
+    // de serem inseridos no banco de dados.
     public function validationDefault(Validator $validator)
     {
         $validator
@@ -105,6 +107,7 @@ class UsersTable extends Table
      * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
      * @return \Cake\ORM\RulesChecker
      */
+    // Qual a função deste método? não é similar à função validationDefault?
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->isUnique(['email'])); // Define a coluna / propriedade "email" unico.
