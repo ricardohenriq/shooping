@@ -15,6 +15,9 @@ class UsersControllerTest extends IntegrationTestCase
      *
      * @var array
      */
+    // Carregando as fixtures que serão usados nos casos de teste,
+    // neste caso todas as fixtures de todas as tabelas que estão
+    // relacionadas a tabela users incluindo-a.
     public $fixtures = [
         'app.users',
         'app.user_types',
@@ -27,6 +30,9 @@ class UsersControllerTest extends IntegrationTestCase
      *
      * @return void
      */
+    // Método que deverá testar o método "index()" de "User",
+    // mas como e quando este método será chamado?
+    // A ferramenta seleciona o método a ser executado
     public function testIndex()
     {
         $this->markTestIncomplete('Not implemented yet.');
@@ -37,6 +43,8 @@ class UsersControllerTest extends IntegrationTestCase
      *
      * @return void
      */
+    // Método que deverá testar o método "view()" de "User",
+    // mas como e quando este método será chamado?
     public function testView()
     {
         $this->markTestIncomplete('Not implemented yet.');
@@ -47,6 +55,8 @@ class UsersControllerTest extends IntegrationTestCase
      *
      * @return void
      */
+    // Método que deverá testar o método "add()" de "User",
+    // mas como e quando este método será chamado?
     public function testAdd()
     {
         $this->markTestIncomplete('Not implemented yet.');
@@ -57,6 +67,8 @@ class UsersControllerTest extends IntegrationTestCase
      *
      * @return void
      */
+    // Método que deverá testar o método "edit()" de "User",
+    // mas como e quando este método será chamado?
     public function testEdit()
     {
         $this->markTestIncomplete('Not implemented yet.');
@@ -67,6 +79,8 @@ class UsersControllerTest extends IntegrationTestCase
      *
      * @return void
      */
+    // Método que deverá testar o método "delete()" de "User",
+    // mas como e quando este método será chamado?
     public function testDelete()
     {
         $this->markTestIncomplete('Not implemented yet.');

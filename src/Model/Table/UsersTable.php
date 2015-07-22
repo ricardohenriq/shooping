@@ -26,8 +26,8 @@ class UsersTable extends Table
     public function initialize(array $config)
     {
         $this->table('users'); // Expecifica nome da tabela (Opcional pois sigo as convenções)
-        $this->displayField('id'); //“Setando” qual campo deve aparecer como display nas listas
-        // quando usarmos o método Model:find(‘list’); CARECE MAIS EXPLICAÇÃO
+        $this->displayField('id'); // displayField faz, na teoria, $user imprimir o campo id,
+        // ao invés do objeto inteiro.
         $this->primaryKey('id'); // Expecifica a chave primaria da tabela
         $this->addBehavior('Timestamp'); // Adiciono um "Behavior" a tabela ("Timestamp" é nativo)
         // Definição de relacionamento entre objetos
@@ -73,6 +73,7 @@ class UsersTable extends Table
             ->add('email', 'valid', ['rule' => 'email'])
             // Seta que a presença do campo é obrigatório ao validar uma operação de criação.
             // criação == inserção no banco.
+            // Define se um campo é requerido para estar presente no array de dados.
             ->requirePresence('email', 'create')
             // Seta que a qualquer momento a coluna "email" não pode ser vazio
             ->notEmpty('email');
@@ -81,6 +82,7 @@ class UsersTable extends Table
         $validator
             // Seta que a presença do campo é obrigatório ao validar uma operação de criação.
             // criação == inserção no banco.
+            // Define se um campo é requerido para estar presente no array de dados.
             ->requirePresence('password', 'create')
             // Seta que a qualquer momento a coluna "password" não pode ser vazio
             ->notEmpty('password');
@@ -89,6 +91,7 @@ class UsersTable extends Table
         $validator
             // Seta que a presença do campo é obrigatório ao validar uma operação de criação.
             // criação == inserção no banco.
+            // Define se um campo é requerido para estar presente no array de dados.
             ->requirePresence('username', 'create')
             // Seta que a qualquer momento a coluna "username" não pode ser vazio
             ->notEmpty('username');
@@ -111,11 +114,12 @@ class UsersTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->isUnique(['email'])); // Define a coluna / propriedade "email" unico.
-        $rules->add($rules->isUnique(['username'])); // Porque unico ? Não defini na tabela como unico.
+        $rules->add($rules->isUnique(['username'])); // Porque unico ? Não defini na tabela como unico. Por inferencia
         $rules->add($rules->existsIn(['user_type_id'], 'UserTypes')); // Explicita que a coluna "user_type_id"
         // é uma chave estrangeira para a tabela "user_types".
         return $rules;
 
         // PORQUE NÃO HÁ VALIDAÇÃO PARA OS CAMPOS "password" e "id" ?
+        //A validação de password é especial. Não é necessário escrever uma validação custom para password.
     }
 }

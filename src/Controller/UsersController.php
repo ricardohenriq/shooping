@@ -24,9 +24,10 @@ class UsersController extends AppController
             'limit' => 10,
             'contain' => ['UserTypes']
         ];
-        // Executa a consulta paginada sobre os usuarios (Tabela 'users').
+        // Executa a consulta paginada sobre os usuarios (Tabela 'users'), e atribui a uma
+        // variavel que será usada na view
         $this->set('users', $this->paginate($this->Users));
-        // CARECE EXPLICAÇÃO
+        // Serializa a variavel 'users' para o formato json
         $this->set('_serialize', ['users']);
     }
 
@@ -48,6 +49,7 @@ class UsersController extends AppController
         // Atribui a variavel da view 'user' o valor da variavel (entidade) $user
         $this->set('user', $user);
         // CARECE EXPLICAÇÃO
+        // Serializa a variavel 'users' para o formato json
         $this->set('_serialize', ['user']);
     }
 
@@ -69,6 +71,7 @@ class UsersController extends AppController
             if ($this->Users->save($user)) {
                 // Usa src/Template/Element/Flash/success.ctp com a mensagem passada.
                 // PORQUE O '__'?
+                // __ é a função que chama uma tradução i18n automaticamente, se isso for possível.
                 $this->Flash->success(__('The user has been saved.'));
                 // Redireciona para o metodo "index" deste controller, esse redirecionamento
                 // deve ser feito na forma de retorno.
@@ -76,6 +79,7 @@ class UsersController extends AppController
             } else {
                 // Usa src/Template/Element/Flash/error.ctp com a mensagem passada
                 // PORQUE O '__'?
+                // __ é a função que chama uma tradução i18n automaticamente, se isso for possível.
                 $this->Flash->error(__('The user could not be saved. Please, try again.'));
             }
         }
@@ -115,6 +119,7 @@ class UsersController extends AppController
             if ($this->Users->save($user)) {
                 // Usa src/Template/Element/Flash/success.ctp com a mensagem passada
                 // PORQUE O '__'?
+                // __ é a função que chama uma tradução i18n automaticamente, se isso for possível.
                 $this->Flash->success(__('The user has been saved.'));
                 // Redireciona para o metodo "index" deste controller, esse redirecionamento
                 // deve ser feito na forma de retorno.
@@ -122,6 +127,7 @@ class UsersController extends AppController
             } else {
                 // Usa src/Template/Element/Flash/error.ctp com a mensagem passada
                 // PORQUE O '__'?
+                // __ é a função que chama uma tradução i18n automaticamente, se isso for possível.
                 $this->Flash->error(__('The user could not be saved. Please, try again.'));
             }
         }
@@ -134,6 +140,7 @@ class UsersController extends AppController
         // (pelo array $userTypes).
         $this->set(compact('user', 'userTypes'));
         // CARECE EXPLICAÇÃO
+        // Serializa a variavel 'users' para o formato json
         $this->set('_serialize', ['user']);
     }
 
@@ -155,10 +162,12 @@ class UsersController extends AppController
         if ($this->Users->delete($user)) {
             // Usa src/Template/Element/Flash/success.ctp com a mensagem passada
             // PORQUE O '__'?
+            // __ é a função que chama uma tradução i18n automaticamente, se isso for possível.
             $this->Flash->success(__('The user has been deleted.'));
         } else {
             // Usa src/Template/Element/Flash/error.ctp com a mensagem passada
             // PORQUE O '__'?
+            // __ é a função que chama uma tradução i18n automaticamente, se isso for possível.
             $this->Flash->error(__('The user could not be deleted. Please, try again.'));
         }
         // Redireciona para o metodo "index" deste controller, esse redirecionamento

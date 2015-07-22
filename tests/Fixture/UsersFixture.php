@@ -7,6 +7,9 @@ use Cake\TestSuite\Fixture\TestFixture;
  * UsersFixture
  *
  */
+// Usado para gerar tabelas de dados temporarios (mockar os dados)
+// A vantagem de usar fixtures é que seu teste não tem chance de
+// corromper dados reais.
 class UsersFixture extends TestFixture
 {
 
@@ -16,6 +19,7 @@ class UsersFixture extends TestFixture
      * @var array
      */
     // @codingStandardsIgnoreStart
+    // Define como a tabela é criada.
     public $fields = [
         'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'email' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
@@ -43,6 +47,7 @@ class UsersFixture extends TestFixture
      *
      * @var array
      */
+    // Define um registro que será inserido na tabela para teste.
     public $records = [
         [
             'id' => 1,
