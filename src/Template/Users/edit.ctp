@@ -27,7 +27,7 @@
     </ul>
 </div>
 <div class="users form large-10 medium-9 columns">
-    <!-- Irá criar um <form> com método POST com "onaction" apontando para propria página
+    <!-- Irá criar um <form> com método POST com "action" apontando para propria página
      do controler (a página atual), o argumento "$user" é usado como forma de contexto,
      Neste contexto permite FormHelper trabalhar com resultados obtidos com a ORM Embutido
      todas as entradas que eu criar usará o contexto ativo -->

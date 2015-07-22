@@ -57,6 +57,7 @@ class UsersControllerTest extends IntegrationTestCase
      */
     // Método que deverá testar o método "add()" de "User",
     // mas como e quando este método será chamado?
+    // A ferramenta seleciona o método a ser executado
     public function testAdd()
     {
         $this->markTestIncomplete('Not implemented yet.');
@@ -81,6 +82,7 @@ class UsersControllerTest extends IntegrationTestCase
      */
     // Método que deverá testar o método "delete()" de "User",
     // mas como e quando este método será chamado?
+    // A ferramenta seleciona o método a ser executado
     public function testDelete()
     {
         $this->markTestIncomplete('Not implemented yet.');

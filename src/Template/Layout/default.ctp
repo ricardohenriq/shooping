@@ -26,13 +26,18 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $cakeDescription ?>:
         <!-- Não consegui entender o conceito do fetch poderiam me exemplificar,
          de onde viria este title ? -->
+         <!-- fetch faz o render de uma seção inteira. -->
+         <!-- neste caso irá imprimir somente o nome da Entity -->
+        <?= $this->assign('title','Camaro amarelo')?>
         <?= $this->fetch('title') ?>
     </title>
     <!-- Não consegui entender o conceito poderiam me exemplificar. Como o Cake sabe
      da onde vem? não consegui encontrar nada com este nome "icon", É alguma constante
      ou componente? onde é definida? a exclusão desta linha remove duas linhas que definem
      um os favicons porem ainda há um favicon na página -->
-    <?= $this->Html->meta('icon') ?>
+    <?= $this->Html->meta( 'favicon.ico',
+                              '/diamond-favicon-32.png',
+                              array('type' => 'icon')) ?>
     <!-- Inseri dois css que esta localizado na pasta css que esta dentro da webroot -->
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
@@ -40,6 +45,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <!-- Não consegui entender o conceito do fetch poderiam me exemplificar,
      de onde viriam os conteudos em parentese ? deletei estas linhas e não houve qualquer
      diferença na view (quando removi os Html->css acima a view perdeu os arquivos css) -->
+    <!-- isso não foi definido em local algum -->
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
@@ -47,6 +53,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <body>
     <header>
         <div class="header-title">
+            <?= $this->assign('title','Camaro amarelo')?>
             <span><?= $this->fetch('title') ?></span>
         </div>
         <div class="header-help">
@@ -62,6 +69,8 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <!-- Não consegui entender o conceito do fetch poderiam me exemplificar? no lugar
              deste "content" será inserido o framento correspondete ao método do controller
              mas como que é descoberto o nome do template (neste caso edit.ctp)? -->
+             <!-- 'content' é um default que será substituido pelo template do método do
+              controller -->
             <div class="row">
                 <?= $this->fetch('content') ?>
             </div>

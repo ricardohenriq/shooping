@@ -67,6 +67,7 @@ class UsersTableTest extends TestCase
      */
     // Método que deverá testar o método "initialize()" de "UsersTable",
     // mas como e quando este método será chamado?
+    // A ferramenta seleciona o método a ser executado
     public function testInitialize()
     {
         $this->markTestIncomplete('Not implemented yet.');
@@ -79,6 +80,7 @@ class UsersTableTest extends TestCase
      */
     // Método que deverá testar o método "validationDefault()" de "UsersTable",
     // mas como e quando este método será chamado?
+    // A ferramenta seleciona o método a ser executado
     public function testValidationDefault()
     {
         $this->markTestIncomplete('Not implemented yet.');
@@ -91,6 +93,7 @@ class UsersTableTest extends TestCase
      */
     // Método que deverá testar o método "buildRules()" de "UsersTable",
     // mas como e quando este método será chamado?
+    // A ferramenta seleciona o método a ser executado
     public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
