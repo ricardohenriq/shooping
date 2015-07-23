@@ -37,9 +37,16 @@ class PagesController extends AppController
      */
     public function display()
     {
+        // Cria um array com todos os argumentos passados para a função.
         $path = func_get_args();
-
+        // Conta quantos argumentos foram passados para a função.
         $count = count($path);
+        // Por meio de um componente (Search) eu listo todas as 'categories'.
+        $categories = $this->Search->listAllCategories();
+        // Atribuo as categorias resgatadas do BD ($categories)
+        // e atribuo a variavel 'categories' da view.
+        $this->set('categories',$categories);
+
         if (!$count) {
             return $this->redirect('/');
         }

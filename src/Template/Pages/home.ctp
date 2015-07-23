@@ -49,10 +49,11 @@
         <div class="wrapper">
             <div class="container">
                 <div class="row">
-
+                    <?= $this->element('Body/categories') ?>
                 </div>
             </div>
         </div>
+        <?= $this->element('Footer/footer-newsletter') ?>
         <?= $this->element('Footer/footer-information') ?>
         <?= $this->element('Modal/create-account-modal') ?>
         <?= $this->element('Modal/login-modal') ?>
