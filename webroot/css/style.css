@@ -1,0 +1,32 @@
+.wrapper{
+    padding-top:60px
+}
+
+.social-container{
+    min-width:60px
+}
+
+.social{
+    text-align:center
+}
+
+.social button{
+    width:60px
+}
+
+.date{
+    z-index:1051
+}
+
+.popover{
+    z-index:1051;
+    width:300px
+}
+
+.title{
+    font-weight:bold
+}
+
+#member_benefits{
+    border:2px solid #000
+}
