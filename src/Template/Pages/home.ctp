@@ -55,7 +55,11 @@
         </div>
         <?= $this->element('Footer/footer-newsletter') ?>
         <?= $this->element('Footer/footer-information') ?>
-        <?= $this->element('Modal/create-account-modal') ?>
-        <?= $this->element('Modal/login-modal') ?>
+        <?php if ($logged == false): ?>
+            <?= $this->element('Modal/create-account-modal') ?>
+            <?= $this->element('Modal/login-modal') ?>
+        <?php elseif($logged == true): ?>
+            <?= $this->element('Modal/logout-modal') ?>
+        <?php endif; ?>
     </body>
 </html>

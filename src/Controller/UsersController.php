@@ -10,7 +10,6 @@ use App\Controller\AppController;
  */
 class UsersController extends AppController
 {
-
     /**
      * Index method
      *
@@ -173,5 +172,31 @@ class UsersController extends AppController
         // Redireciona para o metodo "index" deste controller, esse redirecionamento
         // deve ser feito na forma de retorno.
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function login()
+    {
+        if ($this->request->is('post')) {
+            $user = $this->Auth->identify();
+            if ($user) {
+                $this->Auth->setUser($user);
+                return $this->redirect($this->Auth->redirectUrl());
+            }
+            $this->Flash->error('Your username or password is incorrect.');
+        }
+    }
+
+    public function logout()
+    {
+        $this->Flash->success('You are now logged out.');
+        return $this->redirect($this->Auth->logout());
+    }
+
+    // Este método é executado antes de cada ação dos controllers. É um ótimo lugar para
+    // verificar se há uma sessão ativa ou inspecionar as permissões de um usuário.
+    // Neste caso libera o acesso a action 'add' (bloqueado pelo AuthComponent)
+    public function beforeFilter(\Cake\Event\Event $event)
+    {
+        $this->Auth->allow(['add']);
     }
 }

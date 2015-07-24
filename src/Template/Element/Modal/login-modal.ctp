@@ -6,7 +6,8 @@
                 <h4 class="modal-title span7 text-center" id="myModalLabel"><span class="title">Login</span></h4>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal" id="login-form" action="#" method="post">
+                <?= $this->Form->create(null, ['url' => ['controller' => 'Users', 'action' => 'login'], 'type' => 'post', 'id' => 'login-form', 'class' => 'form-horizontal']) ?>
+                <!--<form class="form-horizontal" id="login-form" action="#" method="post">-->
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="input_email" class="control-label col-md-3">Your Email (login)</label>
@@ -38,7 +39,8 @@
                         </div>
                     </div>
                     <input type="hidden" name="login_form" value="Login">
-                </form>
+                <!--</form>-->
+                <?= $this->Form->end() ?>
             </div>
         </div>
     </div>

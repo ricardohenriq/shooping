@@ -27,7 +27,6 @@ use Cake\View\Exception\MissingTemplateException;
  */
 class PagesController extends AppController
 {
-
     /**
      * Displays a view
      *
@@ -46,6 +45,14 @@ class PagesController extends AppController
         // Atribuo as categorias resgatadas do BD ($categories)
         // e atribuo a variavel 'categories' da view.
         $this->set('categories',$categories);
+
+        if($this->Auth->user())
+        {
+            $this->set('logged',true);
+        }else
+        {
+            $this->set('logged',false);
+        }
 
         if (!$count) {
             return $this->redirect('/');

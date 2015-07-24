@@ -50,6 +50,9 @@ VALUES ('benz@hotmail.com', 'trewq', 'benz', 1, CURDATE(), CURDATE());
 INSERT INTO users (email, password, username, user_type_id, created, modified)
 VALUES ('dodge@hotmail.com', 'fdsa', 'dodge', 1, CURDATE(), CURDATE());
 
+# INSERT INTO users (email, password, username, user_type_id, created, modified)
+# VALUES ('harley@hotmail.com', 'davidson', 'davidson', 1, CURDATE(), CURDATE());
+
 # 4 registros na tabela "stores" --------------------------------------------------
 
 INSERT INTO stores (store_name, user_id, created, modified)

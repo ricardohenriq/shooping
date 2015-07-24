@@ -23,8 +23,12 @@
                         <li><a href=""></a></li>
                     </ul>
                 </li>
-                <li><button type="button" class="btn btn-info navbar-btn" data-toggle="modal" data-target="#login_modal">Login</button></li>
-                <li><button type="button" class="btn btn-info navbar-btn" data-toggle="modal" data-target="#create_account_modal">Create Account</button></li>
+                <?php if ($logged == false): ?>
+                    <li><button type="button" class="btn btn-info navbar-btn" data-toggle="modal" data-target="#login_modal">Login</button></li>
+                    <li><button type="button" class="btn btn-info navbar-btn" data-toggle="modal" data-target="#create_account_modal">Create Account</button></li>
+                <?php elseif($logged == true): ?>
+
+                <?php endif; ?>
                 <li>
                     <div class="btn-group navbar-btn">
                         <button type="button" class="btn btn-info">
