@@ -91,7 +91,7 @@ class UsersController extends AppController
         // (pelo array $userTypes).
         $this->set(compact('user', 'userTypes'));
         // CARECE EXPLICAÇÃO
-        $this->set('_serialize', ['user']);
+        //$this->set('_serialize', ['user']);
     }
 
     /**

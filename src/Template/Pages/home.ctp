@@ -46,6 +46,7 @@
     </head>
     <body>
         <?= $this->element('Navbar/navbar-main') ?>
+        <?= $this->Flash->render() ?>
         <div class="wrapper">
             <div class="container">
                 <div class="row">

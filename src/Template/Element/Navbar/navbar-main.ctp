@@ -27,7 +27,21 @@
                     <li><button type="button" class="btn btn-info navbar-btn" data-toggle="modal" data-target="#login_modal">Login</button></li>
                     <li><button type="button" class="btn btn-info navbar-btn" data-toggle="modal" data-target="#create_account_modal">Create Account</button></li>
                 <?php elseif($logged == true): ?>
-
+                    <li>
+                        <div class="btn-group navbar-btn">
+                            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                Bill Gates&nbsp;<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">My Favorites</a></li>
+                                <li><a href="#">My History</a></li>
+                                <li><a href="#">My Advertises</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#" data-toggle="modal" data-target="#logout_modal">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 <?php endif; ?>
                 <li>
                     <div class="btn-group navbar-btn">

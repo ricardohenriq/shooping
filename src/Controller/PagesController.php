@@ -16,6 +16,7 @@ namespace App\Controller;
 
 use Cake\Core\Configure;
 use Cake\Network\Exception\NotFoundException;
+use Cake\ORM\TableRegistry;
 use Cake\View\Exception\MissingTemplateException;
 
 /**
@@ -44,7 +45,10 @@ class PagesController extends AppController
         $categories = $this->Search->listAllCategories();
         // Atribuo as categorias resgatadas do BD ($categories)
         // e atribuo a variavel 'categories' da view.
-        $this->set('categories',$categories);
+        $this->set('categories', $categories);
+
+        $userTypes = $this->Search->listAllUserTypes();
+        $this->set('userTypes', $userTypes);
 
         if($this->Auth->user())
         {

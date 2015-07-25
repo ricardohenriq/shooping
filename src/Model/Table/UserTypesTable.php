@@ -24,7 +24,7 @@ class UserTypesTable extends Table
     public function initialize(array $config)
     {
         $this->table('user_types');
-        $this->displayField('id');
+        $this->displayField('type_name');
         $this->primaryKey('id');
         $this->addBehavior('Timestamp');
         $this->hasMany('Users', [

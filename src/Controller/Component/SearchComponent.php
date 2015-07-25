@@ -8,8 +8,15 @@ class SearchComponent extends Component
 {
     public function listAllCategories()
     {
-        $articles = TableRegistry::get('Categories');
-        $query = $articles->find();
+        $categories = TableRegistry::get('Categories');
+        $query = $categories->find('list');
+        return $query;
+    }
+
+    public function listAllUserTypes()
+    {
+        $userTypes = TableRegistry::get('UserTypes');
+        $query = $userTypes->find('list');
         return $query;
     }
 }

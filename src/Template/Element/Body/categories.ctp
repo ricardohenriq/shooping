@@ -2,7 +2,7 @@
     <ul class="nav nav-pills nav-stacked">
     <?php foreach($categories as $category): ?>
         <li role="presentation">
-            <a href="#"><?= $category['category_name'] ?>
+            <a href="#"><?= $category ?>
             <i class="glyphicon glyphicon-chevron-right"></i></a>
         </li>
     <?php endforeach; ?>

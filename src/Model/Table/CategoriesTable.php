@@ -23,7 +23,7 @@ class CategoriesTable extends Table
     public function initialize(array $config)
     {
         $this->table('categories');
-        $this->displayField('id');
+        $this->displayField('category_name');
         $this->primaryKey('id');
         $this->addBehavior('Timestamp');
     }

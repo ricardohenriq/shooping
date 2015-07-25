@@ -3,26 +3,25 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title span7 text-center" id="myModalLabel"><span class="title">Login</span></h4>
+                <h4 class="modal-title span7 text-center title" id="myModalLabel">Login</h4>
             </div>
             <div class="modal-body">
                 <?= $this->Form->create(null, ['url' => ['controller' => 'Users', 'action' => 'login'], 'type' => 'post', 'id' => 'login-form', 'class' => 'form-horizontal']) ?>
-                <!--<form class="form-horizontal" id="login-form" action="#" method="post">-->
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="input_email" class="control-label col-md-3">Your Email (login)</label>
+                            <label for="email" class="control-label col-md-3">Your Email (login)</label>
                             <div class="col-md-9">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                <?= $this->Form->input('email', ['label' => false, 'class' => 'form-control', 'placeholder' => 'Email']) ?>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="input_password" class="control-label col-md-3">Password</label>
+                            <label for="password" class="control-label col-md-3">Password</label>
                             <div class="col-md-9">
-                                <input type="password" class="form-control" id="pass" name="pass" placeholder="Password">
+                                <?= $this->Form->input('password', ['label' => false, 'class' => 'form-control', 'placeholder' => 'Password']) ?>
                             </div>
                         </div>
                         <div class="checkbox text-center">
-                            <label><input type="checkbox" id="remember_me" name="remember_me">Remember me on this computer</label>
+                            <label><input type="checkbox" id="remember-me" name="remember-me">Remember me on this computer</label>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -34,12 +33,10 @@
                     </div>
                     <div class="form-group text-center">
                         <div class="col-md-6 col-md-offset-3">
-                            <button type="reset" class="btn btn-danger">Reset</button>
-                            <button type="submit" class="btn btn-info">Login</button>
+                            <?= $this->Form->button('Reset', ['type' => 'reset', 'class' => 'btn btn-danger']) ?>
+                            <?= $this->Form->button('Login', ['type' => 'submit', 'class' => 'btn btn-info']) ?>
                         </div>
                     </div>
-                    <input type="hidden" name="login_form" value="Login">
-                <!--</form>-->
                 <?= $this->Form->end() ?>
             </div>
         </div>

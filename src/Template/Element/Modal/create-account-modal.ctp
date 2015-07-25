@@ -1,3 +1,4 @@
+
 <div class="modal fade" id="create_account_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" style="z-index: 1050">
         <div class="modal-content">
@@ -6,47 +7,43 @@
                 <h4 class="modal-title span7 text-center" id="myModalLabel"><span class="title">Create Account</span></h4>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal" id="create-account-form" action="" method="post">
+                <?= $this->Form->create(null, ['url' => ['controller' => 'Users', 'action' => 'add'], 'type' => 'post', 'id' => 'create-account-form', 'class' => 'form-horizontal']) ?>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="email_ca" class="control-label col-md-3">Your Email (login)</label>
                             <div class="col-md-9">
-                                <input type="email" class="form-control" id="email_ca" name="email_ca" placeholder="Email">
+                                <?= $this->Form->input('email', ['label' => false, 'class' => 'form-control', 'placeholder' => 'Email']) ?>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="pass_ca" class="control-label col-md-3">Password</label>
                             <div class="col-md-9">
-                                <input type="password" class="form-control" id="pass_ca" name="pass_ca" placeholder="Password" data-html="true">
+                                <?= $this->Form->input('password', ['label' => false, 'class' => 'form-control', 'placeholder' => 'Senha', 'id' => 'pass_ca', 'data-html' => 'true']) ?>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="re_pass_ca" class="control-label col-md-3">Retype Pass</label>
+                            <label for="re_pass" class="control-label col-md-3">Retype Pass</label>
                             <div class="col-md-9">
-                                <input type="password" class="form-control" name="re_pass_ca" placeholder="Retype Password">
+                                <?= $this->Form->input('password', ['label' => false, 'class' => 'form-control', 'placeholder' => 'Redigite a Senha', 'name' => 're_pass_ca', 'id' => 're_pass_ca']) ?>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="name" class="control-label col-md-3">Name</label>
                             <div class="col-md-9">
-                                <input type="text" class="form-control" name="name" placeholder="Name">
+                                <?= $this->Form->input('username', ['label' => false, 'class' => 'form-control', 'placeholder' => 'Nome']) ?>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="birthdate" class="control-label col-md-3">Birthdate</label>
                             <div class="col-md-9 input-group date">
-                                <input type="text" class="form-control" name="birthdate"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                                <?= $this->Form->input('nascimento', ['label' => false, 'class' => 'form-control', 'placeholder' => '12/12/2012']) ?>
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="sex" class="control-label col-md-3">Sex</label>
+                            <label for="sex" class="control-label col-md-3">Tipo</label>
                             <div class="col-md-9">
-                                <select class="form-control" name="sex">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                </select>
+                                <?= $this->Form->input('user_type_id', ['label' => false, 'options' => $userTypes, 'class' => 'form-control']) ?>
                             </div>
                         </div>
                     </div>
@@ -62,12 +59,11 @@
                     </div>
                     <div class="form-group text-center">
                         <div class="col-md-6 col-md-offset-3">
-                            <button type="reset" class="btn btn-danger">Reset</button>
-                            <button type="submit" class="btn btn-info">Create Account</button>
+                            <?= $this->Form->button('Reset', ['type' => 'reset', 'class' => 'btn btn-danger']) ?>
+                            <?= $this->Form->button('Criar Conta', ['type' => 'submit', 'class' => 'btn btn-info']) ?>
                         </div>
                     </div>
-                    <input type="hidden" name="create_account_form" value="Create Account">
-                </form>
+                <?= $this->Form->end() ?>
             </div>
         </div>
     </div>
