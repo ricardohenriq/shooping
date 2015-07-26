@@ -1,14 +1,13 @@
-//$( document ).ready(function() {
-    $('.date').datepicker({
-        format: "yyyy/mm/dd",
-        //startDate:"2012-01-01",
-        //endDate:"2015-01-01",
-        todayBtn: "linked",
-        viewMode: "years",
-        autoclose: true,
-        todayHighlight: true,
-        orientation: "top"
-    });
+$('.date').datepicker({
+    format: "yyyy/mm/dd",
+    //startDate:"2012-01-01",
+    //endDate:"2015-01-01",
+    todayBtn: "linked",
+    viewMode: "years",
+    autoclose: true,
+    todayHighlight: true,
+    orientation: "top"
+});
 
 $("#pass_ca").popover({
     title: 'A senha deve conter entre 8 e 16 caracteres, incluindo:',
@@ -23,7 +22,7 @@ $("#login-form").validate({
             required: true,
             minlength: 8
         },
-        pass: "required"
+        password: "required"
     },
     messages: {
         email: {
@@ -33,5 +32,3 @@ $("#login-form").validate({
         pass: "Please provide your password"
     }
 });
-
-//});

@@ -38,6 +38,7 @@
         <?= $this->Html->css('font-awesome-4.3.0/css/font-awesome.min.css') ?>
         <?= $this->Html->css('datepicker/css/datepicker.css') ?>
         <?= $this->Html->css('style.css') ?>
+        <?= $this->Html->css('menu-plugin.css') ?>
         <?= $this->Html->script('jquery-1.11.1.min.js') ?>
         <?= $this->Html->script('bootstrap.min.js') ?>
         <?= $this->Html->script('Jquery-Validate/jquery.validate.min.js') ?>
@@ -48,9 +49,9 @@
         <?= $this->element('Navbar/navbar-main') ?>
         <?= $this->Flash->render() ?>
         <div class="wrapper">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <?= $this->element('Body/categories') ?>
+                    <?= $this->element('Body/categories2') ?>
                 </div>
             </div>
         </div>
@@ -62,5 +63,11 @@
         <?php elseif($logged == true): ?>
             <?= $this->element('Modal/logout-modal') ?>
         <?php endif; ?>
+
+        <script>
+          $(function () {
+            $('#menu').metisMenu();
+          });
+        </script>
     </body>
 </html>

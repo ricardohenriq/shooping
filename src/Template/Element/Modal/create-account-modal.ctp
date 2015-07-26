@@ -1,4 +1,3 @@
-
 <div class="modal fade" id="create_account_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" style="z-index: 1050">
         <div class="modal-content">
