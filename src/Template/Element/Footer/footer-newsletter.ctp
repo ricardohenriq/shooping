@@ -1,13 +1,14 @@
-<div class="container">
-    <div class="row">
-        <div class="col-lg-10 col-lg-offset-1 span7 text-center" style="border:2px solid yellow">
-            <form class="form-inline" role="form">
-                <div class="form-group">
-                    Newsletter
-                    <input type="email" class="form-control" id="email" placeholder="Email">
-                    <button type="submit" class="btn btn-default">Enviar</button>
-                  </div>
-            </form>
+<?= $this->Form->create(null, ['url' => ['controller' => '', 'action' => ''], 'type' => 'post', 'class' => 'form-inline']) ?>
+    <div id="newsletter" class="col-lg-10 col-lg-offset-1 span7 text-center">
+        <div class="col-md-3">
+            <label for="email" class="control-label full-column">Newsletter</label>
+        </div>
+        <div class="col-md-6">
+            <?= $this->Form->input('email', ['label' => false, 'class' => 'form-control full-column', 'placeholder' => 'Email']) ?>
+        </div>
+        <div class="col-md-3">
+            <?= $this->Form->button('Enviar', ['type' => 'submit', 'class' => 'btn btn-info full-column']) ?>
         </div>
     </div>
-</div>
+<?= $this->Form->end() ?>
+

@@ -85,7 +85,6 @@
                 <button class="btn btn-default" type="submit" name="search_form" value="Search">Search
                     <span class="glyphicon glyphicon-search"></span>
                 </button>
-                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#advanced_search_modal">Advanced Search</button>
             </form>
         </div>
     </div>

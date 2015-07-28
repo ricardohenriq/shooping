@@ -1,8 +1,8 @@
 <footer>
     <div class="container">
     	<div class="row">
-            <div class="col-lg-10 col-lg-offset-1" style="border:2px solid red">
-                <div class="col-lg-3" style="border:2px solid black">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="col-lg-3">
                     <span>Institucional</span>
                     <ul>
                         <li><a href="#">Termos de Serviços</a></li>
@@ -11,7 +11,7 @@
                         <li><a href="#">Resposabilidades</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3" style="border:2px solid black">
+                <div class="col-lg-3">
                     <span>Dúvidas</span>
                     <ul>
                         <li><a href="#">Perguntas Frequentes</a></li>
@@ -19,7 +19,7 @@
                         <li><a href="#">Trocas e devoluções</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3" style="border:2px solid black">
+                <div class="col-lg-3">
                     <span>Vendas</span>
                     <ul>
                         <li><a href="#">Quem são os vendedores</a></li>
@@ -27,7 +27,7 @@
                         <li><a href="#">Disponibilidade dos Produtos</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3" style="border:2px solid black">
+                <div class="col-lg-3">
                     <span>Magma TI</span>
                     <ul>
                         <li><a href="#">Quem somos</a></li>

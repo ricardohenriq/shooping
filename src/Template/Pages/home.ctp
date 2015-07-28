@@ -37,25 +37,43 @@
         <?= $this->Html->css('Bootstrap/css/bootstrap.min.css') ?>
         <?= $this->Html->css('font-awesome-4.3.0/css/font-awesome.min.css') ?>
         <?= $this->Html->css('datepicker/css/datepicker.css') ?>
+        <?= $this->Html->css('jquery-bxslider/jquery.bxslider.css') ?>
         <?= $this->Html->css('style.css') ?>
         <?= $this->Html->css('menu-plugin.css') ?>
         <?= $this->Html->script('jquery-1.11.1.min.js') ?>
         <?= $this->Html->script('bootstrap.min.js') ?>
         <?= $this->Html->script('Jquery-Validate/jquery.validate.min.js') ?>
         <?= $this->Html->script('datepicker/js/bootstrap-datepicker.js') ?>
+        <?= $this->Html->script('jquery-bxslider/jquery.bxslider.min.js') ?>
         <?= $this->Html->script('main.js',['defer' => true]) ?>
     </head>
     <body>
         <?= $this->element('Navbar/navbar-main') ?>
         <?= $this->Flash->render() ?>
         <div class="wrapper">
-            <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <?= $this->element('Body/news') ?>
+                </div>
                 <div class="row">
                     <?= $this->element('Body/categories2') ?>
+                    <?= $this->element('Body/offers') ?>
+                </div>
+                <div class="row">
+                    <?= $this->element('Body/banner-sets') ?>
+                </div>
+                <div class="row">
+                    <?= $this->element('Body/product-trends') ?>
+                </div>
+                <div class="row">
+                    <?= $this->element('Body/banner-product') ?>
+                </div>
+                <div class="row">
+                    <?= $this->element('Footer/footer-newsletter') ?>
                 </div>
             </div>
         </div>
-        <?= $this->element('Footer/footer-newsletter') ?>
+        <?= $this->element('Body/back-top') ?>
         <?= $this->element('Footer/footer-information') ?>
         <?php if ($logged == false): ?>
             <?= $this->element('Modal/create-account-modal') ?>
@@ -63,11 +81,5 @@
         <?php elseif($logged == true): ?>
             <?= $this->element('Modal/logout-modal') ?>
         <?php endif; ?>
-
-        <script>
-          $(function () {
-            $('#menu').metisMenu();
-          });
-        </script>
     </body>
 </html>

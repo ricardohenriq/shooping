@@ -59,6 +59,7 @@ class UsersController extends AppController
      */
     public function add()
     {
+
         // Cria uma nova entidade vazia.
         $user = $this->Users->newEntity();
         // Verifica se o request utiliza o seguinte método: 'post'

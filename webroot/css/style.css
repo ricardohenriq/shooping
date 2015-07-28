@@ -30,3 +30,41 @@
 #member_benefits{
     border:2px solid #000
 }
+
+.bx-wrapper .bx-controls-direction a{
+    z-index:100
+}
+
+.full-column{
+    width:100% !important
+}
+
+.bx-wrapper .bx-prev{
+    left:10px
+}
+
+.bx-wrapper .bx-next{
+    right:20px
+}
+
+.row{
+    margin-bottom:20px
+}
+
+.item-name:after,.item-old-price:after,.item-price:after,.item-payment-form:after{
+    content:"\a";
+    white-space:pre
+}
+
+.item-block{
+    display:inline-block
+}
+
+#back-top{
+    background-color:#1d9d74;
+    color:#fff;
+    position:fixed;
+    bottom:0;
+    right:0;
+    z-index:9999999
+}

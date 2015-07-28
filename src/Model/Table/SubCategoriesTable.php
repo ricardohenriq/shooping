@@ -24,7 +24,7 @@ class SubCategoriesTable extends Table
     public function initialize(array $config)
     {
         $this->table('sub_categories');
-        $this->displayField('id');
+        $this->displayField('sub_category_name');
         $this->primaryKey('id');
         $this->addBehavior('Timestamp');
         $this->belongsTo('Categories', [

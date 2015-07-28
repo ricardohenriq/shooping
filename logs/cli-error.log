@@ -24,3 +24,15 @@ Stack Trace:
 #21 {main}
 
 
+2015-07-28 12:48:56 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Serve" could not be found.
+Exception Attributes: array (
+  'class' => 'Serve',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(201): Cake\Console\ShellDispatcher->findShell('serve')
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#3 C:\xampp\htdocs\PROJETOS\Shopping\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+
