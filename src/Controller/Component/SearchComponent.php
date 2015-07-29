@@ -33,4 +33,22 @@ class SearchComponent extends Component
         $query = $subCategories->find('list');
         return $query;
     }
+
+    public function listAllSmallBanners(){
+        $smallBanners = TableRegistry::get('banners');
+        $query = $smallBanners->find();
+        $query->select(['banner_description', 'path_banner', 'url_redirect'])
+            ->where(['banner_type_id' => 1])
+            ->limit(3);
+        return $query;
+    }
+
+    public function listAllFullBanners(){
+        $smallBanners = TableRegistry::get('banners');
+        $query = $smallBanners->find();
+        $query->select(['banner_description', 'path_banner', 'url_redirect'])
+            ->where(['banner_type_id' => 2])
+            ->limit(1);
+        return $query;
+    }
 }

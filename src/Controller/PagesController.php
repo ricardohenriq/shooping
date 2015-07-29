@@ -56,6 +56,12 @@ class PagesController extends AppController
         $userTypes = $this->Search->listAllUserTypes();
         $this->set('userTypes', $userTypes);
 
+        $smallBanners = $this->Search->listAllSmallBanners();
+        $this->set('smallBanners', $smallBanners);
+
+        $fullBanners = $this->Search->listAllFullBanners();
+        $this->set('fullBanners', $fullBanners);
+
         if($this->Auth->user())
         {
             $this->set('logged',true);

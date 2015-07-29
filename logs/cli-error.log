@@ -36,3 +36,24 @@ Stack Trace:
 #4 {main}
 
 
+2015-07-28 18:00:43 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shopping.subscribers' doesn't exist
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'subscribers', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(65): Cake\Database\Schema\Collection->describe('subscribers', Array)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(426): Cake\Database\Schema\CachedCollection->describe('subscribers')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(502): Cake\ORM\Table->schema()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(195): Cake\ORM\Table->primaryKey()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Subscribers')
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\bake\src\Shell\BakeShell.php(254): Bake\Shell\Task\ModelTask->main('Subscribers')
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('subscribers', 0)
+#9 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Cake\Collection\Collection->each(Object(Closure))
+#10 [internal function]: Bake\Shell\BakeShell->all('subscribers')
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Console\Shell.php(380): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(204): Cake\Console\Shell->runCommand(Array, true)
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(175): Cake\Console\ShellDispatcher->_dispatch()
+#14 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch()
+#15 C:\xampp\htdocs\PROJETOS\Shopping\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#16 {main}
+
+

@@ -11,7 +11,10 @@
 }
 
 .social button{
-    width:60px
+    width:60px;
+    position:relative;
+    font-size:24px;
+    height:34px;
 }
 
 .date{
@@ -67,4 +70,26 @@
     bottom:0;
     right:0;
     z-index:9999999
+}
+
+.red{
+    background-color:#e52d27
+}
+
+.blue{
+    background-color:#3b5998
+}
+
+.blue-light{
+    background-color:#00aced
+}
+
+.blue-dark{
+    background-color:#32506d
+}
+
+.red i,.blue i,.blue-light i,.blue-dark i{
+    position:absolute;
+    top:5px;
+    left:18px
 }

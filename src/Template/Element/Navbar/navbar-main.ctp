@@ -14,7 +14,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href=""></a></li>
+                        <li><a href="">Mini Mapa</a></li>
                         <li class="divider"></li>
                         <li><a href=""></a></li>
                         <li><a href=""></a></li>
@@ -54,22 +54,22 @@
                         </button>
                         <ul class="dropdown-menu social-container" role="menu">
                             <li class="social">
-                                <button type="button" class="btn btn-info">
+                                <button type="button" class="btn red">
                                     <i class="fa fa-youtube-play"></i>
                                 </button>
                             </li>
                             <li class="social">
-                                <button type="button" class="btn btn-info">
+                                <button type="button" class="btn blue">
                                     <i class="fa fa-facebook"></i>
                                 </button>
                             </li>
                             <li class="social">
-                                <button type="button" class="btn btn-info">
+                                <button type="button" class="btn blue-dark">
                                     <i class="fa fa-tumblr"></i>
                                 </button>
                             </li>
                             <li class="social">
-                                <button type="button" class="btn btn-info">
+                                <button type="button" class="btn blue-light">
                                     <i class="fa fa-twitter"></i>
                                 </button>
                             </li>

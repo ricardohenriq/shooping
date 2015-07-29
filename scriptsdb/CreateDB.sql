@@ -141,3 +141,30 @@ CREATE TABLE promotion_products (
   FOREIGN KEY product_key (product_id) REFERENCES products(id),
   FOREIGN KEY promotion_key (promotion_id) REFERENCES promotions(id)
 );
+
+CREATE TABLE subscribers (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255) NOT NULL,
+  created DATETIME,
+  modified DATETIME
+);
+
+CREATE TABLE banner_types (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  type_name VARCHAR(255) NOT NULL,
+  created DATETIME,
+  modified DATETIME
+);
+
+CREATE TABLE banners (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  banner_type_id INT NOT NULL,
+  user_id INT NOT NULL,
+  banner_description VARCHAR(255) NOT NULL,
+  path_banner VARCHAR(255) NOT NULL,
+  url_redirect VARCHAR(255) NOT NULL,
+  created DATETIME,
+  modified DATETIME,
+  FOREIGN KEY banner_type_key (banner_type_id) REFERENCES banner_types(id),
+  FOREIGN KEY user_key (user_id) REFERENCES users(id)
+);

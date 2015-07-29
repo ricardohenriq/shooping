@@ -60,13 +60,13 @@
                     <?= $this->element('Body/offers') ?>
                 </div>
                 <div class="row">
-                    <?= $this->element('Body/banner-sets') ?>
+                    <?= $this->element('Body/small-banners') ?>
                 </div>
                 <div class="row">
                     <?= $this->element('Body/product-trends') ?>
                 </div>
                 <div class="row">
-                    <?= $this->element('Body/banner-product') ?>
+                    <?= $this->element('Body/full-banner') ?>
                 </div>
                 <div class="row">
                     <?= $this->element('Footer/footer-newsletter') ?>

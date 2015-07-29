@@ -4,7 +4,7 @@
 
 USE shopping;
 
-# 3 registros na tabela "users_type" -------------------------------------------------
+# 3 registros na tabela "user_types" -------------------------------------------------
 
 INSERT INTO user_types (type_name, created, modified)
 VALUES ('common', CURDATE(), CURDATE());
@@ -90,7 +90,7 @@ VALUES ('Camiseta U', 2, 130, 'Macia', 13.99, 0, CURDATE(), CURDATE());
 INSERT INTO products (product_name, store_id, quantity, description, price, status, created, modified)
 VALUES ('Sapato R', 3, 200, 'Confortavel', 30.30, 0, CURDATE(), CURDATE());
 
-#  registros na tabela "bookings" ---------------------------------------------------
+# 5 registros na tabela "bookings" ---------------------------------------------------
 
 INSERT INTO bookings (product_id, quantity, user_id, created, modified)
 VALUES (1, 5, 1, CURDATE(), CURDATE());
@@ -218,7 +218,7 @@ VALUES ('Material', CURDATE(), CURDATE());
 INSERT INTO features (feature_name, created, modified)
 VALUES ('Largura', CURDATE(), CURDATE());
 
-# 10 registros na tabela "products_feature" --------------------------------------------
+# 10 registros na tabela "product_features" --------------------------------------------
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
 VALUES ('30 Cm', 1, 1, CURDATE(), CURDATE());
@@ -250,7 +250,7 @@ VALUES ('90 Dias', 3, 2, CURDATE(), CURDATE());
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
 VALUES ('2 Meses', 4, 3, CURDATE(), CURDATE());
 
-# 3 registros na tabela "midia_tipos" --------------------------------------------------
+# 3 registros na tabela "media_types" --------------------------------------------------
 
 INSERT INTO media_types(name_media_type , created, modified)
 VALUES ('Foto', CURDATE(), CURDATE());
@@ -366,7 +366,7 @@ VALUES ('Promoção de verão', 2,CURDATE(), CURDATE());
 INSERT INTO promotions (promotion_name, duration, created, modified)
 VALUES ('Promoção de inverno', 14,CURDATE(), CURDATE());
 
-# 8 registros na tabela "products_promotion" -----------------------------------------
+# 8 registros na tabela "product_promotions" -----------------------------------------
 
 INSERT INTO promotion_products (product_id, promotion_id, promotion_price, promotion_quantity, created, modified)
 VALUES (1, 1, 10.50, 30, CURDATE(), CURDATE());
@@ -391,3 +391,48 @@ VALUES (7, 2, 10.50, 30, CURDATE(), CURDATE());
 
 INSERT INTO promotion_products (product_id, promotion_id, promotion_price, promotion_quantity, created, modified)
 VALUES (1, 3, 10.50, 30, CURDATE(), CURDATE());
+
+# 2 registros na tabela "subscribers" -------------------------------------------------
+
+INSERT INTO subscribers (email, created, modified)
+VALUES ('ricardohenrique996@gmail.com', CURDATE(), CURDATE());
+
+INSERT INTO subscribers (email, created, modified)
+VALUES ('ricardohenrique1@outlook.com', CURDATE(), CURDATE());
+
+# 2 registros na tabela "banner_types" -------------------------------------------------
+
+INSERT INTO banner_types (type_name, created, modified)
+VALUES ('Small-Banner', CURDATE(), CURDATE());
+
+INSERT INTO banner_types (type_name, created, modified)
+VALUES ('Full-Banner', CURDATE(), CURDATE());
+
+# 9 registros na tabela "banners" ------------------------------------------------------
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (1, 1, 'Banner 1', 'mini-banners/mini-banner1.png', 'http://pt.stackoverflow.com/review', CURDATE(), CURDATE());
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (1, 2, 'Banner 2', 'mini-banners/mini-banner2.png', 'http://pt.stackoverflow.com/questions', CURDATE(), CURDATE());
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (1, 3, 'Banner 3', 'mini-banners/mini-banner3.png', 'http://pt.stackoverflow.com/tags', CURDATE(), CURDATE());
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (1, 4, 'Banner 4', 'mini-banners/mini-banner4.png', 'http://pt.stackoverflow.com/users', CURDATE(), CURDATE());
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (1, 5, 'Banner 5', 'mini-banners/mini-banner5.png', 'http://pt.stackoverflow.com/help/badges', CURDATE(), CURDATE());
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (1, 6, 'Banner 6', 'mini-banners/mini-banner6.png', 'http://pt.stackoverflow.com/unanswered', CURDATE(), CURDATE());
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (2, 7, 'Banner 7', 'full-banners/full-banner3.png', 'http://pt.stackoverflow.com/tour', CURDATE(), CURDATE());
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (2, 8, 'Banner 8', 'full-banners/full-banner4.png', 'http://pt.stackoverflow.com/help', CURDATE(), CURDATE());
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (2, 9, 'Banner 9', 'full-banners/full-banner5.png', 'http://meta.pt.stackoverflow.com/', CURDATE(), CURDATE());
