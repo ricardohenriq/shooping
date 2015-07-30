@@ -174,3 +174,29 @@ CREATE TABLE banners (
   FOREIGN KEY banner_type_key (banner_type_id) REFERENCES banner_types(id),
   FOREIGN KEY user_key (user_id) REFERENCES users(id)
 );
+
+CREATE TABLE offer_banners (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  path_banner VARCHAR(255) NOT NULL,
+  date_start DATETIME,
+  date_end DATETIME,
+  created DATETIME,
+  modified DATETIME,
+  FOREIGN KEY user_key (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE new_banners (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  path_banner VARCHAR(255) NOT NULL,
+  date_start DATETIME,
+  date_end DATETIME,
+  created DATETIME,
+  modified DATETIME,
+  FOREIGN KEY user_key (user_id) REFERENCES users(id)
+);

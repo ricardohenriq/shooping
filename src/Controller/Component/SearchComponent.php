@@ -48,20 +48,34 @@ class SearchComponent extends Component
     {
         $products = TableRegistry::get('products');
         $query = $products->find();
-        $query->select(['product_name', 'quantity', 'sold', 'description', 'price', 'old_price', 'thumbnail'])
-            ->where(['sub_category_id' => $subCategoryId])
-            ->order([$column => $order])
-            ->limit($productsQuantity);
+        $query->select(['product_name', 'quantity', 'sold', 'description', 'price', 'old_price', 'thumbnail']);
+            if ($subCategoryId > 0) {
+                $query = $query->where(['sub_category_id' => $subCategoryId]);
+            }
+            $query = $query->order([$column => $order]);
+            $query = $query->limit($productsQuantity);
         return $query;
     }
 
-    public function listOffers()
+    public function listOfferBanners($offerBannersQuantity)
     {
-
+        $offerBanners = TableRegistry::get('offer_banners');
+        $query = $offerBanners->find();
+        $query->select(['path_banner', 'date_start', 'date_end', 'name', 'description'])
+            ->where(['date_start <=' => new \DateTime('today')])
+            ->andWhere(['date_end >' => new \DateTime('tomorrow')])
+            ->limit($offerBannersQuantity);
+        return $query;
     }
 
-    public function listNews()
+    public function listNewBanners($newBannersQuantity)
     {
-
+        $newBanners = TableRegistry::get('new_banners');
+        $query = $newBanners->find();
+        $query->select(['path_banner', 'date_start', 'date_end', 'name', 'description'])
+            ->where(['date_start <=' => new \DateTime('today')])
+            ->andWhere(['date_end >' => new \DateTime('tomorrow')])
+            ->limit($newBannersQuantity);
+        return $query;
     }
 }

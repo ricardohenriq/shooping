@@ -94,3 +94,43 @@
 .img-full-screen{
     width:100%
 }
+
+#news-slide .item-new .new-thumb{
+    float: left
+}
+
+#news-slide .item-new .new-description {
+    margin-left: 45%;
+}
+
+.item-offer{
+    margin-top: 10%;
+    margin-left:15%;
+    margin-right:10%
+}
+
+#offers-slide .item-offer .product-thumb{
+    float:left;
+    /*ajuste pra porcentagem que a imagem deve ocupar*/
+    width:50%
+}
+
+#offers-slide .item-offer .product-description{
+    margin-left:55%;
+    /*ajuste pra porcentagem que o texto de ocupar*/
+    max-width:50%;
+    /*O tamanho da fonte se adapta ao tamanho da tela*/
+    font-size:2.2vmin
+}
+
+#offers-slide .item-offer .product-thumb{
+    max-width:100%
+}
+
+#offers-slide .item-offer:after{
+    /*quebra floats*/
+    clear:both;
+    display:block;
+    content:"-";
+    visibility:hidden
+}

@@ -38,7 +38,6 @@ $('#offers-slide').bxSlider({
     minSlides:1,
     maxSlides:1,
     moveSlides:1,
-    slideMargin:10,
     auto:true
 });
 
@@ -48,6 +47,7 @@ $('#news-slide').bxSlider({
     maxSlides:5,
     moveSlides:1,
     slideMargin:10,
+    infiniteLoop:false,
     auto:true,
     pager:false
 });

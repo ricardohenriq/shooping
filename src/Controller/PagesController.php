@@ -66,11 +66,10 @@ class PagesController extends AppController
         $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
         $this->set('fullBanners', $fullBanners);
 
-
         $productsQuantity = 4;
         $order = 'DESC';
 
-        $subCategoryId = 2;
+        $subCategoryId = 0;
         $column = 'sold';
         $productsBestSeller = $this->Search->listProductsByTrend($subCategoryId, $productsQuantity, $column, $order);
         $this->set('productsBestSeller', $productsBestSeller);
@@ -84,6 +83,14 @@ class PagesController extends AppController
         $column = 'visited';
         $productsMostPopular = $this->Search->listProductsByTrend($subCategoryId, $productsQuantity, $column, $order);
         $this->set('productsMostPopular', $productsMostPopular);
+
+        $newBannersQuantity = 5;
+        $newBanners = $this->Search->listNewBanners($newBannersQuantity);
+        $this->set('newBanners', $newBanners);
+
+        $offerBannersQuantity = 5;
+        $offerBanners = $this->Search->listOfferBanners($offerBannersQuantity);
+        $this->set('offerBanners', $offerBanners);
 
         if($this->Auth->user())
         {

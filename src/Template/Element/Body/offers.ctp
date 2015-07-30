@@ -1,10 +1,20 @@
 <div id="offers" class="col-md-9">
     <ul id="offers-slide">
-        <li><?= $this->Html->image('offers/offer1.png', ['alt' => 'Oferta 1']) ?></li>
-        <li><?= $this->Html->image('offers/offer2.png', ['alt' => 'Oferta 2']) ?></li>
-        <li><?= $this->Html->image('offers/offer3.png', ['alt' => 'Oferta 3']) ?></li>
-        <li><?= $this->Html->image('offers/offer4.png', ['alt' => 'Oferta 4']) ?></li>
-        <li><?= $this->Html->image('offers/offer5.png', ['alt' => 'Oferta 5']) ?></li>
-        <li><?= $this->Html->image('offers/offer6.png', ['alt' => 'Oferta 6']) ?></li>
+        <?php foreach($offerBanners as $offerBanner): ?>
+            <li><?= $this->Html->image($offerBanner['path_banner'], ['alt' => $offerBanner['description'], 'title' => $offerBanner['name']]) ?></li>
+        <?php endforeach; ?>
+        <li>
+            <div class="item-offer">
+                <div class="product-thumb">
+                    <img src="img/products/product2.jpg" />
+                </div>
+                <div class="product-description">
+                    Texto Texto Texto Texto Texto Texto
+                    Texto Texto Texto Texto Texto Texto
+                    Texto Texto Texto Texto Texto Texto
+                    Texto Texto Texto Texto Texto Texto
+                </div>
+            </div>
+        </li>
     </ul>
 </div>

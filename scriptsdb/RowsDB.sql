@@ -436,3 +436,61 @@ VALUES (2, 8, 'Banner 8', 'full-banners/full-banner4.png', 'http://pt.stackoverf
 
 INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
 VALUES (2, 9, 'Banner 9', 'full-banners/full-banner5.png', 'http://meta.pt.stackoverflow.com/', CURDATE(), CURDATE());
+
+# 9 registros na tabela "new_banners" -------------------------------------------------
+
+INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (1, 'Banner 1', 'Noticia Fantastica', 'news/new1.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (2, 'Banner 2', 'Noticia Boa', 'news/new2.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (3, 'Banner 3', 'Noticia Muito Boa', 'news/new3.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (4, 'Banner 4', 'Noticia Melhor', 'news/new4.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (5, 'Banner 5', 'Noticia Top', 'news/new1.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (6, 'Banner 6', 'Noticia Otima', 'news/new2.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (7, 'Banner 7', 'Noticia Excelente', 'news/new3.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (8, 'Banner 8', 'Noticia Perfeita', 'news/new4.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (9, 'Banner 9', 'Noticia Boa Dimais da Conta', 'news/new1.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+# 9 registros na tabela "offer_banners" -----------------------------------------------
+
+INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (1, 'Oferta 1', 'Oferta Boa', 'offers/offer1.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (2, 'Oferta 2', 'Oferta Muito Boa', 'offers/offer2.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (3, 'Oferta 3', 'Oferta Boa Dimais Da conta Sô', 'offers/offer3.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (4, 'Oferta 4', 'Oferta Excelente', 'offers/offer4.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (5, 'Oferta 5', 'Oferta Otima', 'offers/offer5.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (6, 'Oferta 6', 'Oferta Razoavel', 'offers/offer6.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (7, 'Oferta 7', 'Oferta Regular', 'offers/offer1.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (8, 'Oferta 8', 'Oferta Bacana', 'offers/offer2.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+
+INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (9, 'Oferta 9', 'Oferta Fulera', 'offers/offer3.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());

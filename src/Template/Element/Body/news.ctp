@@ -1,10 +1,17 @@
 <div id="news" class="col-md-12">
     <ul id="news-slide">
-        <li><?= $this->Html->image('news/new1.png', ['alt' => 'Noticias 1']) ?></li>
-        <li><?= $this->Html->image('news/new2.png', ['alt' => 'Noticias 2']) ?></li>
-        <li><?= $this->Html->image('news/new4.png', ['alt' => 'Noticias 4']) ?></li>
-        <li><?= $this->Html->image('news/new3.png', ['alt' => 'Noticias 3']) ?></li>
-        <li><?= $this->Html->image('news/new3.png', ['alt' => 'Noticias 3']) ?></li>
-        <li><?= $this->Html->image('news/new4.png', ['alt' => 'Noticias 4']) ?></li>
+        <?php foreach($newBanners as $newBanner): ?>
+            <li><?= $this->Html->image($newBanner['path_banner'], ['alt' => $newBanner['description'], 'title' => $newBanner['name']]) ?></li>
+        <?php endforeach; ?>
+        <li>
+            <div class="item-new">
+                <div class="new-thumb">
+                    <img src="img/news-thumb/new-thumb1.png" />
+                </div>
+                <div class="new-description">
+                    Texto Texto Texto Texto Texto Texto
+                </div>
+            </div>
+        </li>
     </ul>
 </div>
