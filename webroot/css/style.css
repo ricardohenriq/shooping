@@ -54,13 +54,10 @@
     margin-bottom:20px
 }
 
-.item-name:after,.item-old-price:after,.item-price:after,.item-payment-form:after{
+.item-name:after,.item-old-price:after,
+.item-price:after,.item-payment-form:after{
     content:"\a";
     white-space:pre
-}
-
-.item-block{
-    display:inline-block
 }
 
 #back-top{
@@ -92,4 +89,8 @@
     position:absolute;
     top:5px;
     left:18px
+}
+
+.img-full-screen{
+    width:100%
 }

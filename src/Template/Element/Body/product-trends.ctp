@@ -5,42 +5,19 @@
             <?= $this->Form->input('most-popular', ['label' => false, 'options' => $subCategories, 'class' => 'form-control']) ?>
         <?= $this->Form->end() ?>
         <ul id="most-popular-products">
-            <li>
-                <div class="item-block">
-                    <?= $this->Html->image('products/product1.jpg', ['alt' => 'Produto 1']) ?>
-                    <span class="item-name">Nome produto</span>
-                    <span class="item-old-price">De R$ 4.948,90</span>
-                    <span class="item-price">R$ 81,90</span>
-                    <span class="item-payment-form">Ou 2x de R$ 40,95 sem juros</span><br>
-                </div>
-            </li>
-            <li>
-                <div class="item-block">
-                    <?= $this->Html->image('products/product2.jpg', ['alt' => 'Produto 1']) ?>
-                    <span class="item-name">Nome produto</span>
-                    <span class="item-old-price">De R$ 4.948,90</span>
-                    <span class="item-price">R$ 81,90</span>
-                    <span class="item-payment-form">Ou 2x de R$ 40,95 sem juros</span><br>
-                </div>
-            </li>
-            <li>
-                <div class="item-block">
-                    <?= $this->Html->image('products/product3.jpg', ['alt' => 'Produto 1']) ?>
-                    <span class="item-name">Nome produto</span>
-                    <span class="item-old-price">De R$ 4.948,90</span>
-                    <span class="item-price">R$ 81,90</span>
-                    <span class="item-payment-form">Ou 2x de R$ 40,95 sem juros</span><br>
-                </div>
-            </li>
-            <li>
-                <div class="item-block">
-                    <?= $this->Html->image('products/product4.jpg', ['alt' => 'Produto 1']) ?>
-                    <span class="item-name">Nome produto</span>
-                    <span class="item-old-price">De R$ 4.948,90</span>
-                    <span class="item-price">R$ 81,90</span>
-                    <span class="item-payment-form">Ou 2x de R$ 40,95 sem juros</span><br>
-                </div>
-            </li>
+            <?php foreach($productsMostPopular as $productMostPopular): ?>
+                <li>
+                    <div class="item-block">
+                        <?= $this->Html->image($productMostPopular['thumbnail'], ['alt' => $productMostPopular['product_name']]) ?>
+                        <span class="item-name"><?= $productMostPopular['product_name'] ?></span>
+                        <?php if($productMostPopular['price'] < $productMostPopular['old_price']): ?>
+                            <span class="item-old-price">De R$ <?= $productMostPopular['old_price'] ?></span>
+                        <?php endif; ?>
+                        <span class="item-price">R$ <?=$productMostPopular['price'] ?></span>
+                        <br>
+                    </div>
+                </li>
+            <?php endforeach; ?>
         </ul>
     </div>
     <div class="col-lg-4">
@@ -49,42 +26,19 @@
             <?= $this->Form->input('most-popular', ['label' => false, 'options' => $subCategories, 'class' => 'form-control']) ?>
         <?= $this->Form->end() ?>
         <ul id="best-sellers-products">
-            <li>
-                <div class="item-block">
-                    <?= $this->Html->image('products/product1.jpg', ['alt' => 'Produto 1']) ?>
-                    <span class="item-name">Nome produto</span>
-                    <span class="item-old-price">De R$ 4.948,90</span>
-                    <span class="item-price">R$ 81,90</span>
-                    <span class="item-payment-form">Ou 2x de R$ 40,95 sem juros</span><br>
-                </div>
-            </li>
-            <li>
-                <div class="item-block">
-                    <?= $this->Html->image('products/product2.jpg', ['alt' => 'Produto 1']) ?>
-                    <span class="item-name">Nome produto</span>
-                    <span class="item-old-price">De R$ 4.948,90</span>
-                    <span class="item-price">R$ 81,90</span>
-                    <span class="item-payment-form">Ou 2x de R$ 40,95 sem juros</span><br>
-                </div>
-            </li>
-            <li>
-                <div class="item-block">
-                    <?= $this->Html->image('products/product3.jpg', ['alt' => 'Produto 1']) ?>
-                    <span class="item-name">Nome produto</span>
-                    <span class="item-old-price">De R$ 4.948,90</span>
-                    <span class="item-price">R$ 81,90</span>
-                    <span class="item-payment-form">Ou 2x de R$ 40,95 sem juros</span><br>
-                </div>
-            </li>
-            <li>
-                <div class="item-block">
-                    <?= $this->Html->image('products/product4.jpg', ['alt' => 'Produto 1']) ?>
-                    <span class="item-name">Nome produto</span>
-                    <span class="item-old-price">De R$ 4.948,90</span>
-                    <span class="item-price">R$ 81,90</span>
-                    <span class="item-payment-form">Ou 2x de R$ 40,95 sem juros</span><br>
-                </div>
-            </li>
+            <?php foreach($productsBestSeller as $productBestSeller): ?>
+                <li>
+                    <div class="item-block">
+                        <?= $this->Html->image($productMostPopular['thumbnail'], ['alt' => $productMostPopular['product_name']]) ?>
+                        <span class="item-name"><?= $productBestSeller['product_name'] ?></span>
+                        <?php if($productBestSeller['price'] < $productBestSeller['old_price']): ?>
+                            <span class="item-old-price">De R$ <?= $productBestSeller['old_price'] ?></span>
+                        <?php endif; ?>
+                        <span class="item-price">R$ <?=$productBestSeller['price'] ?></span>
+                        <br>
+                    </div>
+                </li>
+            <?php endforeach; ?>
         </ul>
     </div>
     <div class="col-lg-4">
@@ -93,42 +47,19 @@
             <?= $this->Form->input('most-popular', ['label' => false, 'options' => $subCategories, 'class' => 'form-control']) ?>
         <?= $this->Form->end() ?>
         <ul id="releases-products">
-            <li>
-                <div class="item-block">
-                    <?= $this->Html->image('products/product1.jpg', ['alt' => 'Produto 1']) ?>
-                    <span class="item-name">Nome produto</span>
-                    <span class="item-old-price">De R$ 4.948,90</span>
-                    <span class="item-price">R$ 81,90</span>
-                    <span class="item-payment-form">Ou 2x de R$ 40,95 sem juros</span><br>
-                </div>
-            </li>
-            <li>
-                <div class="item-block">
-                    <?= $this->Html->image('products/product2.jpg', ['alt' => 'Produto 1']) ?>
-                    <span class="item-name">Nome produto</span>
-                    <span class="item-old-price">De R$ 4.948,90</span>
-                    <span class="item-price">R$ 81,90</span>
-                    <span class="item-payment-form">Ou 2x de R$ 40,95 sem juros</span><br>
-                </div>
-            </li>
-            <li>
-                <div class="item-block">
-                    <?= $this->Html->image('products/product3.jpg', ['alt' => 'Produto 1']) ?>
-                    <span class="item-name">Nome produto</span>
-                    <span class="item-old-price">De R$ 4.948,90</span>
-                    <span class="item-price">R$ 81,90</span>
-                    <span class="item-payment-form">Ou 2x de R$ 40,95 sem juros</span><br>
-                </div>
-            </li>
-            <li>
-                <div class="item-block">
-                    <?= $this->Html->image('products/product4.jpg', ['alt' => 'Produto 1']) ?>
-                    <span class="item-name">Nome produto</span>
-                    <span class="item-old-price">De R$ 4.948,90</span>
-                    <span class="item-price">R$ 81,90</span>
-                    <span class="item-payment-form">Ou 2x de R$ 40,95 sem juros</span><br>
-                </div>
-            </li>
+            <?php foreach($productNewer as $productNewer): ?>
+                <li>
+                    <div class="item-block">
+                        <?= $this->Html->image($productMostPopular['thumbnail'], ['alt' => $productMostPopular['product_name']]) ?>
+                        <span class="item-name"><?= $productNewer['product_name'] ?></span>
+                        <?php if($productNewer['price'] < $productNewer['old_price']): ?>
+                            <span class="item-old-price">De R$ <?= $productNewer['old_price'] ?></span>
+                        <?php endif; ?>
+                        <span class="item-price">R$ <?= $productNewer['price'] ?></span>
+                        <br>
+                    </div>
+                </li>
+            <?php endforeach; ?>
         </ul>
     </div>
 </div>

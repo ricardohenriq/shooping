@@ -56,11 +56,34 @@ class PagesController extends AppController
         $userTypes = $this->Search->listAllUserTypes();
         $this->set('userTypes', $userTypes);
 
-        $smallBanners = $this->Search->listAllSmallBanners();
+        $bannerType = 1;
+        $bannersQuantity = 3;
+        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
         $this->set('smallBanners', $smallBanners);
 
-        $fullBanners = $this->Search->listAllFullBanners();
+        $bannerType = 2;
+        $bannersQuantity = 1;
+        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
         $this->set('fullBanners', $fullBanners);
+
+
+        $productsQuantity = 4;
+        $order = 'DESC';
+
+        $subCategoryId = 2;
+        $column = 'sold';
+        $productsBestSeller = $this->Search->listProductsByTrend($subCategoryId, $productsQuantity, $column, $order);
+        $this->set('productsBestSeller', $productsBestSeller);
+
+        $subCategoryId = 2;
+        $column = 'created';
+        $productNewer = $this->Search->listProductsByTrend($subCategoryId, $productsQuantity, $column, $order);
+        $this->set('productNewer', $productNewer);
+
+        $subCategoryId = 2;
+        $column = 'visited';
+        $productsMostPopular = $this->Search->listProductsByTrend($subCategoryId, $productsQuantity, $column, $order);
+        $this->set('productsMostPopular', $productsMostPopular);
 
         if($this->Auth->user())
         {

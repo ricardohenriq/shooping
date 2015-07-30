@@ -34,21 +34,34 @@ class SearchComponent extends Component
         return $query;
     }
 
-    public function listAllSmallBanners(){
+    public function listAllBanners($bannerType, $bannersQuantity)
+    {
         $smallBanners = TableRegistry::get('banners');
         $query = $smallBanners->find();
         $query->select(['banner_description', 'path_banner', 'url_redirect'])
-            ->where(['banner_type_id' => 1])
-            ->limit(3);
+            ->where(['banner_type_id' => $bannerType])
+            ->limit($bannersQuantity);
         return $query;
     }
 
-    public function listAllFullBanners(){
-        $smallBanners = TableRegistry::get('banners');
-        $query = $smallBanners->find();
-        $query->select(['banner_description', 'path_banner', 'url_redirect'])
-            ->where(['banner_type_id' => 2])
-            ->limit(1);
+    public function listProductsByTrend($subCategoryId, $productsQuantity, $column, $order)
+    {
+        $products = TableRegistry::get('products');
+        $query = $products->find();
+        $query->select(['product_name', 'quantity', 'sold', 'description', 'price', 'old_price', 'thumbnail'])
+            ->where(['sub_category_id' => $subCategoryId])
+            ->order([$column => $order])
+            ->limit($productsQuantity);
         return $query;
+    }
+
+    public function listOffers()
+    {
+
+    }
+
+    public function listNews()
+    {
+
     }
 }

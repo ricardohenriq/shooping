@@ -42,13 +42,19 @@ CREATE TABLE products (
   id INT AUTO_INCREMENT PRIMARY KEY,
   product_name VARCHAR(255) NOT NULL,
   store_id INT NOT NULL,
+  sub_category_id INT NOT NULL,
   quantity INT NOT NULL,
+  sold INT NOT NULL,
   description VARCHAR(1000),
   price DECIMAL(7,2) NOT NULL,
+  old_price DECIMAL(7,2) NOT NULL,
+  visited INT NOT NULL,
+  thumbnail VARCHAR(255) NOT NULL,
   status INT NOT NULL,
   created DATETIME,
   modified DATETIME,
-  FOREIGN KEY store_key (store_id) REFERENCES stores(id)
+  FOREIGN KEY store_key (store_id) REFERENCES stores(id),
+  FOREIGN KEY sub_category_key (sub_category_id) REFERENCES sub_categories(id)
 );
 
 CREATE TABLE bookings (
