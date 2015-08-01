@@ -2,7 +2,7 @@
     <div class="col-lg-4">
         <h3><i class="fa fa-user-plus"></i> Mais Populares</h3>
         <?= $this->Form->input('most-popular', ['label' => false, 'options' => $subCategories, 'class' => 'form-control', 'empty' => 'Todas Subcategorias', 'id' => 'most-pupular-subcat']) ?>
-
+        <div id="most-popular-container">
             <ul id="most-popular-products">
                 <?php foreach($productsMostPopular as $productMostPopular): ?>
                     <li>
@@ -18,7 +18,7 @@
                     </li>
                 <?php endforeach; ?>
             </ul>
-
+        </div>
     </div>
     <div class="col-lg-4">
         <h3><i class="fa fa-cart-plus"></i> Mais Vendidos</h3>
