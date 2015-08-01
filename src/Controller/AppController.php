@@ -53,6 +53,6 @@ class AppController extends Controller
                 'action' => 'display'
             ]
         ]);
-        $this->Auth->allow(['display','login','add']);
+        $this->Auth->allow();
     }
 }

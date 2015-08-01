@@ -107,4 +107,20 @@ class ProductsController extends AppController
         }
         return $this->redirect(['action' => 'index']);
     }
+
+    public function mostPopular()
+    {
+        $this->autoRender = false;
+        if($this->request->is('post'))
+        {
+            $productsQuantity = 4;
+            $order = 'DESC';
+            $column = 'visited';
+            $subCategoryId = $this->request->data['subCategory'];
+            $productsMostPopular = $this->Search->listProductsByTrend($subCategoryId, $productsQuantity, $column, $order);
+            //$this->set('productsMostPopular', $productsMostPopular);
+            //$this->set('_serialize',array('productsMostPopular'));
+            echo json_encode($productsMostPopular);
+        }
+    }
 }

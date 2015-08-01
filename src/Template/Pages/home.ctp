@@ -74,6 +74,7 @@
             </div>
         </div>
         <?= $this->element('Body/back-top') ?>
+        <div id="teste"></div>
         <?= $this->element('Footer/footer-information') ?>
         <?php if ($logged == false): ?>
             <?= $this->element('Modal/create-account-modal') ?>

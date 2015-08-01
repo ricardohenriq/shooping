@@ -52,12 +52,11 @@ $('#news-slide').bxSlider({
     pager:false
 });
 
-$('#most-popular-products').bxSlider({
+var mostPopularSlider =  $('#most-popular-products').bxSlider({
     slideWidth:250,
     minSlides:1,
     maxSlides:1,
     moveSlides:1,
-    slideMargin:10,
     auto:true,
     pager:false
 });
@@ -67,7 +66,6 @@ $('#best-sellers-products').bxSlider({
     minSlides:1,
     maxSlides:1,
     moveSlides:1,
-    slideMargin:10,
     auto:true,
     pager:false
 });
@@ -77,7 +75,6 @@ $('#releases-products').bxSlider({
     minSlides:1,
     maxSlides:1,
     moveSlides:1,
-    slideMargin:10,
     auto:true,
     pager:false
 });
@@ -86,3 +83,77 @@ $('#back-top').click(function(){
     $('html, body').animate({scrollTop:0}, 'slow');
     return false;
 });
+
+$('#most-pupular-subcat').change(function(){
+    //alert($('#most-pupular-subcat').val());
+    $.ajax({
+        type:'post',
+        url:'products/most-popular',
+        data:{
+            subCategory:$('#most-pupular-subcat').val()
+        },
+        beforeSend:function(){
+            $('#most-popular-products').empty();
+            $('#most-popular-products').append('<img src="img/loader.gif" class="img-loader">');
+            //alert('Send');
+        },
+        success:function(products){
+            //$('#most-popular-products').empty();
+            //$('#most-popular-container').append('Success');
+            //formatProducts(products);
+            //alert('Success');
+        },
+        error:function(response, error){
+            //$('#most-popular-products').html(error)
+            //alert(error);
+        },
+        dataType:'json',
+        global:false
+    });
+});
+
+function formatProducts(products){
+    console.log(JSON.stringify(products));
+    //console.debug(products);
+
+    var ul = document.getElementById('most-popular-products');
+    //$(ul).attr('id','most-popular-products');
+
+    var productsLength = products.length;
+    for(i = 0; i < productsLength; i++){
+        var li = document.createElement("li");
+
+        var div = document.createElement("div");
+        $(div).addClass('item-block');
+
+        var img = document.createElement("img");
+        $(img).attr('alt',products[i]['product_name']);
+        $(img).attr('src','img/' + products[i]['thumbnail']);
+        $(div).append(img);
+
+        spanName = document.createElement("span");
+        $(spanName).addClass('item-name');
+        $(spanName).text(products[i]['product_name']);
+        $(div).append(spanName);
+
+        if(products[i]['price'] < products[i]['old_price']){
+            spanOldPrice = document.createElement("span");
+            $(spanOldPrice).addClass('item-old-price');
+            $(spanOldPrice).text('De R$ ' + products[i]['price']);
+            $(div).append(spanOldPrice);
+        }
+
+        spanPrice = document.createElement("span");
+        $(spanPrice).addClass('item-price');
+        $(spanPrice).text('R$ ' + products[i]['price']);
+        $(div).append(spanPrice);
+        //$(div).append(document.createElement("br"));
+
+        $(li).append(div);
+        $(ul).append(li);
+        //$('#teste').append('<span>'+products[0]['product_name']+'</span><br>');
+    }
+
+    //$('#most-popular-container').append(ul);
+    mostPopularSlider.reloadSlider();
+}

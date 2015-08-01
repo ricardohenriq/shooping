@@ -54,7 +54,7 @@ class SearchComponent extends Component
             }
             $query = $query->order([$column => $order]);
             $query = $query->limit($productsQuantity);
-        return $query;
+        return $query->all();
     }
 
     public function listOfferBanners($offerBannersQuantity)
@@ -65,7 +65,7 @@ class SearchComponent extends Component
             ->where(['date_start <=' => new \DateTime('today')])
             ->andWhere(['date_end >' => new \DateTime('tomorrow')])
             ->limit($offerBannersQuantity);
-        return $query;
+        return $query->all();
     }
 
     public function listNewBanners($newBannersQuantity)
@@ -76,6 +76,6 @@ class SearchComponent extends Component
             ->where(['date_start <=' => new \DateTime('today')])
             ->andWhere(['date_end >' => new \DateTime('tomorrow')])
             ->limit($newBannersQuantity);
-        return $query;
+        return $query->all();
     }
 }
