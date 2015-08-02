@@ -14,7 +14,6 @@
      */
 
     $this->layout = false;
-    $pageTitle = 'Stores';
 ?>
 <!DOCTYPE html>
 <html>
@@ -48,25 +47,25 @@
         <?= $this->Html->script('main.js',['defer' => true]) ?>
     </head>
     <body>
-        <?= $this->element('Navbar/navbar-main') ?>
+        <!--<= $this->element('Navbar/navbar-main') ?>-->
         <?= $this->Flash->render() ?>
         <div class="wrapper">
             <div class="container">
                 <div class="row">
-                    <?= $this->element('Body/news') ?>
+                    <?= $this->element('Body/filter_pagination') ?>
                 </div>
                 <div class="row">
-                    <?= $this->element('Body/categories2') ?>
-                    <?= $this->element('Body/offers') ?>
+                    <?= $this->element('Body/filter_display') ?>
                 </div>
                 <div class="row">
-                    <?= $this->element('Body/small-banners') ?>
+                    <?= $this->element('Body/filters') ?>
+                    <?= $this->element('Body/products') ?>
                 </div>
                 <div class="row">
-                    <?= $this->element('Body/product-trends') ?>
+                    <?= $this->element('Footer/footer_pagination') ?>
                 </div>
                 <div class="row">
-                    <?= $this->element('Body/full-banner') ?>
+                    <!--<= $this->element('Body/full-banner') ?>-->
                 </div>
                 <div class="row">
                     <?= $this->element('Footer/footer-newsletter') ?>
@@ -75,11 +74,11 @@
         </div>
         <?= $this->element('Body/back-top') ?>
         <?= $this->element('Footer/footer-information') ?>
-        <?php if ($logged == false): ?>
-            <?= $this->element('Modal/create-account-modal') ?>
-            <?= $this->element('Modal/login-modal') ?>
-        <?php elseif($logged == true): ?>
-            <?= $this->element('Modal/logout-modal') ?>
-        <?php endif; ?>
+        <!--<php if ($logged == false): ?>
+            <= $this->element('Modal/create-account-modal') ?>
+            <= $this->element('Modal/login-modal') ?>
+        <php elseif($logged == true): ?>
+            <= $this->element('Modal/logout-modal') ?>
+        <php endif; ?>-->
     </body>
 </html>

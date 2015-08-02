@@ -1,4 +1,4 @@
-<div class="col-lg-10 col-lg-offset-1" style="boder:2px solid red">
+<div class="col-lg-10 col-lg-offset-1">
     <div class="col-lg-4">
         <h3><i class="fa fa-user-plus"></i> Mais Populares</h3>
         <?= $this->Form->input('most-popular', ['label' => false, 'options' => $subCategories, 'class' => 'form-control', 'empty' => 'Todas Subcategorias', 'id' => 'most-pupular-subcat']) ?>
@@ -12,7 +12,7 @@
                             <?php if($productMostPopular['price'] < $productMostPopular['old_price']): ?>
                                 <span class="item-old-price">De R$ <?= $productMostPopular['old_price'] ?></span>
                             <?php endif; ?>
-                            <span class="item-price">R$ <?=$productMostPopular['price'] ?></span>
+                            <span class="item-price">R$ <?= $productMostPopular['price'] ?></span>
                             <br>
                         </div>
                     </li>
@@ -34,7 +34,7 @@
                         <?php if($productBestSeller['price'] < $productBestSeller['old_price']): ?>
                             <span class="item-old-price">De R$ <?= $productBestSeller['old_price'] ?></span>
                         <?php endif; ?>
-                        <span class="item-price">R$ <?=$productBestSeller['price'] ?></span>
+                        <span class="item-price">R$ <?= $productBestSeller['price'] ?></span>
                         <br>
                     </div>
                 </li>

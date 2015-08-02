@@ -10,7 +10,6 @@ use App\Controller\AppController;
  */
 class ProductsController extends AppController
 {
-
     /**
      * Index method
      *
@@ -122,5 +121,13 @@ class ProductsController extends AppController
             //$this->set('_serialize',array('productsMostPopular'));
             echo json_encode($productsMostPopular);
         }
+    }
+
+    public function search()
+    {
+        $this->paginate = [
+            'limit' => 3
+        ];
+        $this->set('products', $this->paginate($this->Products));
     }
 }
