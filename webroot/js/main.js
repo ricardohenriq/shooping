@@ -192,3 +192,9 @@ function formatProducts(products){
         pager:false
     });
 }
+
+$("#full").elevateZoom({
+    gallery:'product-gallery',
+    cursor:'crosshair',
+    zoomType:'inner'
+});

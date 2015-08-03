@@ -44,6 +44,7 @@
         <?= $this->Html->script('Jquery-Validate/jquery.validate.min.js') ?>
         <?= $this->Html->script('datepicker/js/bootstrap-datepicker.js') ?>
         <?= $this->Html->script('jquery-bxslider/jquery.bxslider.min.js') ?>
+        <?= $this->Html->script('elevatezoom/jquery.elevateZoom-3.0.8.min.js') ?>
         <?= $this->Html->script('main.js',['defer' => true]) ?>
     </head>
     <body>

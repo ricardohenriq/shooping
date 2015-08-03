@@ -54,8 +54,9 @@
     margin-bottom:20px
 }
 
-.item-name:after,.item-old-price:after,
-.item-price:after,.item-payment-form:after{
+.item-block span:after,
+.product-info span:after,
+.product-statistics span:after{
     content:"\a";
     white-space:pre
 }
@@ -66,6 +67,7 @@
     position:fixed;
     bottom:0;
     right:0;
+    cursor:pointer;
     z-index:9999999
 }
 
@@ -152,9 +154,25 @@
 }
 
 .products-view{
-    max-width:75px;
+    max-width:75px
 }
 
 .products-order{
     max-width:160px
+}
+
+.thumb-product{
+    max-height:75px
+}
+
+.full-product{
+    max-height:400px
+}
+
+#product-gallery img{
+    border:2px solid #fff
+}
+
+.active img{
+    border:2px solid #333 !important
 }

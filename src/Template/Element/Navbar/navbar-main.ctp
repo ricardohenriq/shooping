@@ -78,7 +78,7 @@
                 </li>
             </ul>
             <form class="navbar-form span7 text-center" role="search" action="">
-                <button class="btn btn-info" title="Favoritos">
+                <button class="btn btn-info" title="Favorite o Site">
                     <span class="glyphicon glyphicon-star"></span>
                 </button>
                 <input type="text" class="form-control" placeholder="Search">
