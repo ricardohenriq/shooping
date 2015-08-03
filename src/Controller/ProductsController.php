@@ -31,8 +31,9 @@ class ProductsController extends AppController
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function view($id = null)
+    public function view($id)
     {
+
         $product = $this->Products->get($id, [
             'contain' => ['Stores', 'Bookings', 'ProductFeatures', 'ProductMedias']
         ]);
@@ -123,11 +124,19 @@ class ProductsController extends AppController
         }
     }
 
-    public function search()
+    public function search($search)
     {
-        $this->paginate = [
-            'limit' => 3
-        ];
-        $this->set('products', $this->paginate($this->Products));
+        if($this->request->is('get'))
+        {
+            //$product = $this->request->params['pass'];
+            $this->paginate = [
+                'fields' => ['product_name', 'quantity', 'sold', 'description', 'price', 'old_price', 'thumbnail'],
+                'conditions' => ['product_name LIKE' => '%'.$search.'%'],
+                'order' => ['price' => 'DESC'],
+                'limit' => 3
+            ];
+
+            $this->set('products', $this->paginate($this->Products));
+        }
     }
 }

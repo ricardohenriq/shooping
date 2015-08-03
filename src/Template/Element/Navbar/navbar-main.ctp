@@ -77,15 +77,13 @@
                     </div>
                 </li>
             </ul>
-            <form class="navbar-form span7 text-center" role="search" action="">
+            <?= $this->Form->create(null, ['url' => ['controller' => 'Products', 'action' => 'search'], 'type' => 'get', 'id' => 'search-form', 'class' => 'navbar-form span7 text-center']) ?>
                 <button class="btn btn-info" title="Favorite o Site">
                     <span class="glyphicon glyphicon-star"></span>
                 </button>
-                <input type="text" class="form-control" placeholder="Search">
-                <button class="btn btn-default" type="submit" name="search_form" value="Search">Search
-                    <span class="glyphicon glyphicon-search"></span>
-                </button>
-            </form>
+                <?= $this->Form->text('search', ['class' => 'form-control', 'placeholder' => 'Search']) ?>
+                <?= $this->Form->button('Buscar <span class="glyphicon glyphicon-search"></span>', ['type' => 'submit', 'class' => 'btn btn-default']) ?>
+            <?= $this->Form->end() ?>
         </div>
     </div>
 </nav>
