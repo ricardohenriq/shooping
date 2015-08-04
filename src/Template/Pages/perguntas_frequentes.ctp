@@ -20,7 +20,7 @@
     <head>
         <?= $this->Html->charset() ?>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Termos de Serviço</title>
+        <title>Perguntas Frequentes</title>
         <?= $this->Html->meta('favicon.ico','/cart.png', array('type' => 'icon')) ?>
         <?= $this->Html->meta('keywords','palavra chave') ?>
         <?= $this->Html->meta('description','descrição') ?>
@@ -55,28 +55,38 @@
                 <div class="row">
                     <div class="panel panel-default col-md-10 col-md-offset-1">
                         <div class="panel-heading">
-                            <h3 class="panel-title span7 text-center title">Stores - Termos de Serviço</h3>
+                            <h3 class="panel-title span7 text-center title">Stores - Perguntas Frequentes</h3>
                         </div>
                         <div class="panel-body">
-                            <p><span class="title">- Termos de Uso</span></p>
+                            <p><span class="title">- </span></p>
                             <hr>
-                            <p><span class="title">- Conteudo postado no Site</span></p>
+                            <p><span class="title">- O faço para ter acesso as ofertas ?</span></p>
                             <hr>
-                            <p><span class="title">- Transações e Taxas</span></p>
+                            <p><span class="title">- Como posso recuperar meu Login ou Senha ?</span></p>
                             <hr>
-                            <p><span class="title">- Fraude</span></p>
+                            <p><span class="title">- </span></p>
                             <hr>
-                            <p><span class="title">- Isenções de garantias</span></p>
+                            <p><span class="title">- Como posso favoritar um produto ?</span></p>
                             <hr>
-                            <p><span class="title">- Limitação de responsabilidade</span></p>
+                            <p><span class="title">- Porque fui redirecionado para a página mobile ?</span></p>
                             <hr>
-                            <p><span class="title">- Indenização</span></p>
+                            <p><span class="title">- Posso acessar o site pelo Smartphone ?</span></p>
                             <hr>
-                            <p><span class="title">- Uso Internacional</span></p>
+                            <p><span class="title">- É possivel receber notificações de novos produtos ?</span></p>
                             <hr>
-                            <p><span class="title">- Autonomia e integração</span></p>
+                            <p><span class="title">- </span></p>
                             <hr>
-                            <p><span class="title">- Prazo e Rescisão</span></p>
+                            <p><span class="title">- Como eu reporto um produto ?</span></p>
+                            <hr>
+                            <p><span class="title">- A velocidade de acesso esta muito ruim</span></p>
+                            <hr>
+                            <p><span class="title">- How can I remove XVIDEOS from my computer?</span></p>
+                            <hr>
+                            <p><span class="title">- Como eu deleto um produto ?</span></p>
+                            <hr>
+                            <p><span class="title">- Como eu faço para anúnciar no Site ?</span></p>
+                            <hr>
+                            <p><span class="title">- Troca de Links</span></p>
                         </div>
                         <div class="panel-footer span7 text-center"><a href="#">Mais dúvidas? Envie-nos um Email</a></div>
                     </div>

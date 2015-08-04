@@ -64,6 +64,10 @@ Router::scope('/', function ($routes) {
 
     $routes->connect('/termos-de-servico', ['controller' => 'Pages', 'action' => 'display', 'termos_de_servico']);
 
+    $routes->connect('/politicas-de-privacidade', ['controller' => 'Pages', 'action' => 'display', 'politicas_de_privacidade']);
+
+    $routes->connect('/perguntas-frequentes', ['controller' => 'Pages', 'action' => 'display', 'perguntas_frequentes']);
+
     /**
      * Connect catchall routes for all controllers.
      *
