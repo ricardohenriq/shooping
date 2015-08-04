@@ -6,7 +6,7 @@
                     <span>Institucional</span>
                     <ul>
                         <li><?= $this->Html->link('Termos de Serviços','/termos-de-servico', ['target' => '_blank']) ?></li>
-                        <li><?= $this->Html->link('Politica de Privacidade','/politica-de-privacidade', ['target' => '_blank']) ?></li>
+                        <li><?= $this->Html->link('Politica de Privacidade','/politicas-de-privacidade', ['target' => '_blank']) ?></li>
                         <li><?= $this->Html->link('Relações com Lojistas','/relacoes-com-lojistas', ['target' => '_blank']) ?></li>
                         <li><?= $this->Html->link('Resposabilidades','/resposabilidades', ['target' => '_blank']) ?></li>
                     </ul>

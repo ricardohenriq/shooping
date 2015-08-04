@@ -176,3 +176,9 @@
 .active img{
     border:2px solid #333 !important
 }
+
+hr{
+    color:#000;
+    background-color:#000;
+    height:1px
+}

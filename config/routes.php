@@ -62,6 +62,8 @@ Router::scope('/', function ($routes) {
     $routes->connect('/products/search/:search', ['controller' => 'Products', 'action' => 'search'],
         [':search' => '\w+', 'pass' => ['search']]);
 
+    $routes->connect('/termos-de-servico', ['controller' => 'Pages', 'action' => 'display', 'termos_de_servico']);
+
     /**
      * Connect catchall routes for all controllers.
      *
