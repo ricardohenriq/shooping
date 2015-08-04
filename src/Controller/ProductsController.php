@@ -33,12 +33,13 @@ class ProductsController extends AppController
      */
     public function view($id)
     {
-
-        $product = $this->Products->get($id, [
-            'contain' => ['Stores', 'Bookings', 'ProductFeatures', 'ProductMedias']
-        ]);
-        $this->set('product', $product);
-        $this->set('_serialize', ['product']);
+        if($this->request->is('get'))
+        {
+            $product = $this->Products->get($id, [
+                'contain' => ['Stores', 'Bookings', 'ProductFeatures', 'ProductMedias']
+            ]);
+            $this->set('product', $product);
+        }
     }
 
     /**
@@ -137,6 +138,21 @@ class ProductsController extends AppController
             ];
 
             $this->set('products', $this->paginate($this->Products));
+
+            $bannerType = 1;
+            $bannersQuantity = 3;
+            $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+            $this->set('smallBanners', $smallBanners);
+
+            $bannerType = 2;
+            $bannersQuantity = 1;
+            $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+            $this->set('fullBanners', $fullBanners);
+
+            $logged = $this->Auth->user();
+            $this->set('logged',$logged);
+
+            $this->set('pageTitle',$search.' - Stores');
         }
     }
 }
