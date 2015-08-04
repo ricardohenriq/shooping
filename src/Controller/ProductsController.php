@@ -39,6 +39,16 @@ class ProductsController extends AppController
                 'contain' => ['Stores', 'Bookings', 'ProductFeatures', 'ProductMedias']
             ]);
             $this->set('product', $product);
+
+            $bannerType = 2;
+            $bannersQuantity = 1;
+            $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+            $this->set('fullBanners', $fullBanners);
+
+            $logged = $this->Auth->user();
+            $this->set('logged', $logged);
+
+            $this->set('pageTitle', $product['product_name'].' - Stores');
         }
     }
 
@@ -150,9 +160,9 @@ class ProductsController extends AppController
             $this->set('fullBanners', $fullBanners);
 
             $logged = $this->Auth->user();
-            $this->set('logged',$logged);
+            $this->set('logged', $logged);
 
-            $this->set('pageTitle',$search.' - Stores');
+            $this->set('pageTitle', $search.' - Stores');
         }
     }
 }

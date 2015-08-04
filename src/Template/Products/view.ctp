@@ -48,7 +48,7 @@
         <?= $this->Html->script('main.js',['defer' => true]) ?>
     </head>
     <body>
-        <!--<= $this->element('Navbar/navbar-main') ?>-->
+        <?= $this->element('Navbar/navbar-main') ?>
         <?= $this->Flash->render() ?>
         <div class="wrapper">
             <div class="container">
@@ -56,7 +56,7 @@
                     <?= $this->element('Body/product') ?>
                 </div>
                 <div class="row">
-                    <!--<= $this->element('Body/full-banner') ?>-->
+                    <?= $this->element('Body/full-banner') ?>
                 </div>
                 <div class="row">
                     <?= $this->element('Footer/footer-newsletter') ?>
@@ -65,11 +65,11 @@
         </div>
         <?= $this->element('Body/back-top') ?>
         <?= $this->element('Footer/footer-information') ?>
-        <!--<php if ($logged == false): ?>
-            <= $this->element('Modal/create-account-modal') ?>
-            <= $this->element('Modal/login-modal') ?>
-        <php elseif($logged == true): ?>
-            <= $this->element('Modal/logout-modal') ?>
-        <php endif; ?>-->
+        <?php if ($logged == false): ?>
+            <?= $this->element('Modal/create-account-modal') ?>
+            <?= $this->element('Modal/login-modal') ?>
+        <?php elseif($logged == true): ?>
+            <?= $this->element('Modal/logout-modal') ?>
+        <?php endif; ?>
     </body>
 </html>
