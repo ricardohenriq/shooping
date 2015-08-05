@@ -17,11 +17,10 @@
 </div>
 <div class="product-info col-md-4">
     <span class="item-name">Smartphone Asus ZenFone 5 Dual Chip Desbloqueado Android 4.4 Tela 5" 8GB 3G Wi-Fi Câmera 8MP Preto</span>
-    <!--<php if($product['price'] < $product['old_price']): ?>
-        <span class="item-old-price">De R$ 600.00</span>
-    <php endif; ?>-->
-    <span class="item-old-price">De R$ 600.00</span>
-    <span class="item-price">R$ 400.50</span>
+    <?php if($product['price'] < $product['old_price']): ?>
+        <span class="item-old-price">De R$ <?= $product['old_price'] ?></span>
+    <?php endif; ?>
+    <span class="item-price">R$ <?= $product['price'] ?></span>
     <?= $this->Form->button('Reservar', ['type' => 'submit', 'class' => 'btn btn-success']) ?>
     <?= $this->Form->button('Favoritar', ['type' => 'submit', 'class' => 'btn btn-success']) ?>
 </div>
