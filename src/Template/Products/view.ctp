@@ -56,28 +56,15 @@
                     <?= $this->element('Body/product') ?>
                 </div>
                 <div class="row">
+                    <?= $this->element('Body/product_features') ?>
+                </div>
+                <div class="row">
                     <?= $this->element('Body/full-banner') ?>
                 </div>
                 <div class="row">
                     <?= $this->element('Footer/footer-newsletter') ?>
                 </div>
             </div>
-        </div>
-        <div>
-            <?= $this->Number->format($product['old_price']) ?><br>
-            <?= $this->Number->format($product['price']) ?><br>
-            <?= $product['product_name'] ?><br>
-            <?= $product['quantity'] ?><br>
-            <?= $product['sold'] ?><br>
-            <?= $product['description'] ?><br>
-            <?= $product['visited'] ?><br>
-            <?= $product['status'] ?><br>
-            <?php foreach ($product->product_features as $productFeatures): ?>
-                <?= ($productFeatures['feature_value']) ?><br>
-            <?php endforeach; ?>
-            <?php foreach ($product['features'] as $feature): ?>
-                <?= ($feature['feature_name']) ?><br>
-            <?php endforeach; ?>
         </div>
         <?= $this->element('Body/back-top') ?>
         <?= $this->element('Footer/footer-information') ?>

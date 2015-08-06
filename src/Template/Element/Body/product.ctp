@@ -16,7 +16,8 @@
     </div>
 </div>
 <div class="product-info col-md-4">
-    <span class="item-name">Smartphone Asus ZenFone 5 Dual Chip Desbloqueado Android 4.4 Tela 5" 8GB 3G Wi-Fi Câmera 8MP Preto</span>
+    <span class="item-name"><?= $product['product_name'] ?></span>
+    <span class="item-name"><?= $product['description'] ?></span>
     <?php if($product['price'] < $product['old_price']): ?>
         <span class="item-old-price">De R$ <?= $product['old_price'] ?></span>
     <?php endif; ?>
@@ -26,9 +27,9 @@
 </div>
 <div class="product-statistics col-md-2">
     <span class="label label-success">Vendidos</span>
-    <span>40000</span>
+    <span><?= $product['sold'] ?></span>
     <span class="label label-success">Visto</span>
-    <span>7800</span>
+    <span><?= $product['visited'] ?></span>
     <span class="label label-success">Status</span>
-    <span>Em Estoque</span>
+    <span><?= $product['status'] ?></span>
 </div>

@@ -195,6 +195,7 @@ function formatProducts(products)
 }
 
 $("#full").elevateZoom({
+    galleryActiveClass:'active',
     gallery:'product-gallery',
     cursor:'crosshair',
     zoomType:'inner'
