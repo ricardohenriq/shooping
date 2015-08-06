@@ -75,6 +75,9 @@
             <?php foreach ($product->product_features as $productFeatures): ?>
                 <?= ($productFeatures['feature_value']) ?><br>
             <?php endforeach; ?>
+            <?php foreach ($product['features'] as $feature): ?>
+                <?= ($feature['feature_name']) ?><br>
+            <?php endforeach; ?>
         </div>
         <?= $this->element('Body/back-top') ?>
         <?= $this->element('Footer/footer-information') ?>

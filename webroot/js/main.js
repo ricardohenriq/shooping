@@ -114,7 +114,8 @@ $('#most-pupular-subcat').change(function(){
     });
 });
 
-function formatProducts(products){
+function formatProducts(products)
+{
     console.log(JSON.stringify(products));
     //console.debug(products);
 
@@ -197,4 +198,10 @@ $("#full").elevateZoom({
     gallery:'product-gallery',
     cursor:'crosshair',
     zoomType:'inner'
+});
+
+$("#search-form").submit(function(event){
+    event.preventDefault();
+    action = $(this).attr('action') + '/' + document.getElementById('search').value;
+    window.location.href = action;
 });

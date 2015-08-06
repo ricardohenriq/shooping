@@ -38,6 +38,20 @@ class ProductsController extends AppController
             $product = $this->Products->get($id, [
                 'contain' => ['Stores', 'Bookings', 'ProductFeatures', 'ProductMedias']
             ]);
+
+            $this->loadModel('Features');
+            $recentFeatures = [];
+
+            foreach($product['product_features'] as $product_feature)
+            {
+                $recentFeatures[] = $this->Features->get($product_feature['feature_id']);
+            }
+
+            $product['features'] = $recentFeatures;
+
+            /*$product = $this->Products->find('all', [ 'conditions' => ['Products.id' => $id], 'contain' => ['Stores', 'Bookings', 'ProductFeatures', 'ProductMedias'] ]);
+            $product = $product->first();*/
+            //var_dump($product);
             $this->set('product', $product);
 
             $bannerType = 2;

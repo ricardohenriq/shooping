@@ -57,7 +57,7 @@ Router::scope('/', function ($routes) {
      */
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
-    $routes->connect('/products/most-popular',['controller' => 'Products', 'action' => 'mostPopular']);
+    //$routes->connect('/products/most-popular',['controller' => 'Products', 'action' => 'mostPopular']);
 
     $routes->connect('/products/search/:search', ['controller' => 'Products', 'action' => 'search'],
         [':search' => '\w+', 'pass' => ['search']]);
@@ -84,7 +84,7 @@ Router::scope('/', function ($routes) {
      * You can remove these routes once you've connected the
      * routes you want in your application.
      */
-    $routes->fallbacks('InflectedRoute');
+    $routes->fallbacks('DashedRoute');
 });
 
 /**

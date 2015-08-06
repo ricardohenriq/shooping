@@ -1,7 +1,7 @@
 <?php
 namespace App\Mailer;
 
-use Cake\Mailer\Mailer;
+//use Cake\Mailer\Mailer;
 
 class UserMailer extends Mailer
 {

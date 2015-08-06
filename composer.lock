@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ef2254b87b67630e4f4e3b4655ece177",
+    "hash": "f6a5be9da5928836e31a0a3a3f053606",
     "packages": [
         {
             "name": "aura/installer-default",
@@ -127,16 +127,16 @@
         },
         {
             "name": "cakephp/cakephp",
-            "version": "3.0.9",
+            "version": "3.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "c215331d9576942304b927e6f7fd849a86a956da"
+                "reference": "2bb38807a5a0ba91d27ec80e702dea6a3bb21e53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/c215331d9576942304b927e6f7fd849a86a956da",
-                "reference": "c215331d9576942304b927e6f7fd849a86a956da",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/2bb38807a5a0ba91d27ec80e702dea6a3bb21e53",
+                "reference": "2bb38807a5a0ba91d27ec80e702dea6a3bb21e53",
                 "shasum": ""
             },
             "require": {
@@ -198,20 +198,20 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-07-17 01:56:43"
+            "time": "2015-07-21 20:55:01"
         },
         {
             "name": "cakephp/migrations",
-            "version": "1.1.4",
+            "version": "1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/migrations.git",
-                "reference": "3342ab6714d02dcec5e443b59fde0cfc6959debd"
+                "reference": "2c0bec392cc77d5a8656dde9482c869153bfd615"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/migrations/zipball/3342ab6714d02dcec5e443b59fde0cfc6959debd",
-                "reference": "3342ab6714d02dcec5e443b59fde0cfc6959debd",
+                "url": "https://api.github.com/repos/cakephp/migrations/zipball/2c0bec392cc77d5a8656dde9482c869153bfd615",
+                "reference": "2c0bec392cc77d5a8656dde9482c869153bfd615",
                 "shasum": ""
             },
             "require": {
@@ -248,7 +248,7 @@
                 "cakephp",
                 "migrations"
             ],
-            "time": "2015-07-07 10:23:14"
+            "time": "2015-07-31 13:26:04"
         },
         {
             "name": "cakephp/plugin-installer",
@@ -291,6 +291,101 @@
             "time": "2015-06-10 10:35:13"
         },
         {
+            "name": "composer/installers",
+            "version": "v1.0.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "shasum": ""
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "grav",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2015-02-18 17:17:01"
+        },
+        {
             "name": "ircmaxell/password-compat",
             "version": "v1.0.4",
             "source": {
@@ -331,6 +426,102 @@
                 "password"
             ],
             "time": "2014-11-20 16:49:30"
+        },
+        {
+            "name": "leafo/lessphp",
+            "version": "v0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafo/lessphp.git",
+                "reference": "0f5a7f5545d2bcf4e9fad9a228c8ad89cc9aa283"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafo/lessphp/zipball/0f5a7f5545d2bcf4e9fad9a228c8ad89cc9aa283",
+                "reference": "0f5a7f5545d2bcf4e9fad9a228c8ad89cc9aa283",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.4.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "lessc.inc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                }
+            ],
+            "description": "lessphp is a compiler for LESS written in PHP.",
+            "homepage": "http://leafo.net/lessphp/",
+            "time": "2014-11-24 18:39:20"
+        },
+        {
+            "name": "leafo/scssphp",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/leafo/scssphp.git",
+                "reference": "8c08da585537e97efd528c7d278463d2b9396371"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/leafo/scssphp/zipball/8c08da585537e97efd528c7d278463d2b9396371",
+                "reference": "8c08da585537e97efd528c7d278463d2b9396371",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "bin": [
+                "bin/pscss"
+            ],
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "classmap.php"
+                ],
+                "psr-4": {
+                    "Leafo\\ScssPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                }
+            ],
+            "description": "scssphp is a compiler for SCSS written in PHP.",
+            "homepage": "http://leafo.net/scssphp/",
+            "keywords": [
+                "css",
+                "less",
+                "sass",
+                "scss",
+                "stylesheet"
+            ],
+            "time": "2014-08-12 22:41:53"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -385,6 +576,48 @@
                 "php mobile detect"
             ],
             "time": "2015-06-18 09:43:23"
+        },
+        {
+            "name": "natxet/CssMin",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/natxet/CssMin.git",
+                "reference": "afdcdbdb5fc332313f47a79ae60346df3e69a572"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/natxet/CssMin/zipball/afdcdbdb5fc332313f47a79ae60346df3e69a572",
+                "reference": "afdcdbdb5fc332313f47a79ae60346df3e69a572",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Scylla",
+                    "email": "joe.scylla@gmail.com",
+                    "homepage": "https://profiles.google.com/joe.scylla"
+                }
+            ],
+            "description": "Minifying CSS",
+            "homepage": "http://code.google.com/p/cssmin/",
+            "keywords": [
+                "css",
+                "minify"
+            ],
+            "time": "2013-07-02 20:53:35"
         },
         {
             "name": "nesbot/carbon",
@@ -534,7 +767,7 @@
         },
         {
             "name": "symfony/config",
-            "version": "v2.7.2",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Config.git",
@@ -584,16 +817,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.7.2",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "8cf484449130cabfd98dcb4694ca9945802a21ed"
+                "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/8cf484449130cabfd98dcb4694ca9945802a21ed",
-                "reference": "8cf484449130cabfd98dcb4694ca9945802a21ed",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/d6cf02fe73634c96677e428f840704bfbcaec29e",
+                "reference": "d6cf02fe73634c96677e428f840704bfbcaec29e",
                 "shasum": ""
             },
             "require": {
@@ -637,11 +870,11 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-09 16:07:40"
+            "time": "2015-07-28 15:18:12"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v2.7.2",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Filesystem.git",
@@ -690,16 +923,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.7.2",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "4bfbe0ed3909bfddd75b70c094391ec1f142f860"
+                "reference": "71340e996171474a53f3d29111d046be4ad8a0ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/4bfbe0ed3909bfddd75b70c094391ec1f142f860",
-                "reference": "4bfbe0ed3909bfddd75b70c094391ec1f142f860",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/71340e996171474a53f3d29111d046be4ad8a0ff",
+                "reference": "71340e996171474a53f3d29111d046be4ad8a0ff",
                 "shasum": ""
             },
             "require": {
@@ -735,22 +968,117 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-01 11:25:50"
+            "time": "2015-07-28 14:07:07"
+        },
+        {
+            "name": "tedivm/jshrink",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tedious/JShrink.git",
+                "reference": "688527a2e854d7935f24f24c7d5eb1b604742bf9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tedious/JShrink/zipball/688527a2e854d7935f24f24c7d5eb1b604742bf9",
+                "reference": "688527a2e854d7935f24f24c7d5eb1b604742bf9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "0.4.0",
+                "phpunit/phpunit": "4.0.*",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "JShrink": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Hafner",
+                    "email": "tedivm@tedivm.com"
+                }
+            ],
+            "description": "Javascript Minifier built in PHP",
+            "homepage": "http://github.com/tedious/JShrink",
+            "keywords": [
+                "javascript",
+                "minifier"
+            ],
+            "time": "2015-07-04 07:35:09"
+        },
+        {
+            "name": "trentrichardson/cakephp-shrink",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/trentrichardson/cakephp-shrink.git",
+                "reference": "2aadbe79d70f9fd276de125cc4ca2de0df40d945"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/trentrichardson/cakephp-shrink/zipball/2aadbe79d70f9fd276de125cc4ca2de0df40d945",
+                "reference": "2aadbe79d70f9fd276de125cc4ca2de0df40d945",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "leafo/lessphp": "0.5.0",
+                "leafo/scssphp": "0.1.1",
+                "natxet/cssmin": "3.0.2",
+                "php": ">=5.3.6",
+                "tedivm/jshrink": "~1.0"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "Shrink"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Shrink\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Compiles, combines, and minifies javascript, coffee, less, scss, and css",
+            "homepage": "http://github.com/trentrichardson/cakephp-shrink",
+            "keywords": [
+                "cakephp",
+                "coffee",
+                "css",
+                "javascript",
+                "less",
+                "minify",
+                "sass",
+                "scss"
+            ],
+            "time": "2015-04-23 00:11:42"
         }
     ],
     "packages-dev": [
         {
             "name": "cakephp/bake",
-            "version": "1.0.10",
+            "version": "1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/bake.git",
-                "reference": "dc76b9c768ed1003ecea4d4c53f392da3464868c"
+                "reference": "68dcbbf239a87265e81f2ebd44ae39135c3d186b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/bake/zipball/dc76b9c768ed1003ecea4d4c53f392da3464868c",
-                "reference": "dc76b9c768ed1003ecea4d4c53f392da3464868c",
+                "url": "https://api.github.com/repos/cakephp/bake/zipball/68dcbbf239a87265e81f2ebd44ae39135c3d186b",
+                "reference": "68dcbbf239a87265e81f2ebd44ae39135c3d186b",
                 "shasum": ""
             },
             "require": {
@@ -783,24 +1111,25 @@
                 "bake",
                 "cakephp"
             ],
-            "time": "2015-06-25 15:52:35"
+            "time": "2015-07-26 21:50:43"
         },
         {
             "name": "cakephp/debug_kit",
-            "version": "3.1.7",
+            "version": "3.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/debug_kit.git",
-                "reference": "669118b9530927235e039d15fec34baf8a7ce756"
+                "reference": "64f7daa081ea7be1c2c136801172ee7393ce09a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/669118b9530927235e039d15fec34baf8a7ce756",
-                "reference": "669118b9530927235e039d15fec34baf8a7ce756",
+                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/64f7daa081ea7be1c2c136801172ee7393ce09a2",
+                "reference": "64f7daa081ea7be1c2c136801172ee7393ce09a2",
                 "shasum": ""
             },
             "require": {
-                "cakephp/cakephp": "3.0.*"
+                "cakephp/cakephp": "3.0.*",
+                "jdorn/sql-formatter": "~1.2"
             },
             "require-dev": {
                 "cakephp/cakephp-codesniffer": "dev-master",
@@ -843,7 +1172,7 @@
                 "debug",
                 "kit"
             ],
-            "time": "2015-06-30 00:50:25"
+            "time": "2015-07-28 08:21:11"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -966,6 +1295,56 @@
             "time": "2015-04-20 18:58:01"
         },
         {
+            "name": "jdorn/sql-formatter",
+            "version": "v1.2.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jdorn/sql-formatter.git",
+                "reference": "64990d96e0959dff8e059dfcdc1af130728d92bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jdorn/sql-formatter/zipball/64990d96e0959dff8e059dfcdc1af130728d92bc",
+                "reference": "64990d96e0959dff8e059dfcdc1af130728d92bc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "lib"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Dorn",
+                    "email": "jeremy@jeremydorn.com",
+                    "homepage": "http://jeremydorn.com/"
+                }
+            ],
+            "description": "a PHP SQL highlighting library",
+            "homepage": "https://github.com/jdorn/sql-formatter/",
+            "keywords": [
+                "highlight",
+                "sql"
+            ],
+            "time": "2014-01-12 16:20:24"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v1.4.0",
             "source": {
@@ -1084,16 +1463,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v2.7.2",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "fde603d9f4b2418ff0f0315b93eb039c9aa41205"
+                "reference": "e8903ebba5eb019f5886ffce739ea9e3b7519579"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/fde603d9f4b2418ff0f0315b93eb039c9aa41205",
-                "reference": "fde603d9f4b2418ff0f0315b93eb039c9aa41205",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/e8903ebba5eb019f5886ffce739ea9e3b7519579",
+                "reference": "e8903ebba5eb019f5886ffce739ea9e3b7519579",
                 "shasum": ""
             },
             "require": {
@@ -1139,7 +1518,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2015-07-01 12:07:40"
+            "time": "2015-07-28 15:18:12"
         }
     ],
     "aliases": [],

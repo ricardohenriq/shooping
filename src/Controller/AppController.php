@@ -26,7 +26,6 @@ use Cake\Controller\Controller;
  */
 class AppController extends Controller
 {
-
     /**
      * Initialization hook method.
      *
@@ -37,6 +36,8 @@ class AppController extends Controller
     public function initialize()
     {
         parent::initialize();
+        $helpers = 'Shrink.Shrink';
+        //$this->helpers['Shrink.Shrink'];
         $this->loadComponent('Flash');
         $this->loadComponent('Search');
         $this->loadComponent('Paginator');
