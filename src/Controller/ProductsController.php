@@ -39,6 +39,7 @@ class ProductsController extends AppController
                 'contain' => ['Stores', 'Bookings', 'ProductFeatures', 'ProductMedias']
             ]);
 
+            //////----------------
             $this->loadModel('Features');
             $recentFeatures = [];
 
@@ -48,11 +49,12 @@ class ProductsController extends AppController
             }
 
             $product['features'] = $recentFeatures;
+            //////------------------
 
-            /*$product = $this->Products->find('all', [ 'conditions' => ['Products.id' => $id], 'contain' => ['Stores', 'Bookings', 'ProductFeatures', 'ProductMedias'] ]);
-            $product = $product->first();*/
-            //var_dump($product);
             $this->set('product', $product);
+
+            //$productImages = $this->Search->listAllProductsImages($product['id']);
+            //$this->set('productImages', $productImages);
 
             $bannerType = 2;
             $bannersQuantity = 1;

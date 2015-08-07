@@ -68,6 +68,8 @@ Router::scope('/', function ($routes) {
 
     $routes->connect('/perguntas-frequentes', ['controller' => 'Pages', 'action' => 'display', 'perguntas_frequentes']);
 
+    $routes->connect('/email', ['controller' => 'Pages', 'action' => 'display', 'email']);
+
     /**
      * Connect catchall routes for all controllers.
      *

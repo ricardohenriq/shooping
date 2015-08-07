@@ -261,93 +261,49 @@ VALUES ('Thumb', CURDATE(), CURDATE());
 INSERT INTO media_types(name_media_type , created, modified)
 VALUES ('Vídeo', CURDATE(), CURDATE());
 
-# 14 registros na tabela "medias" ------------------------------------------------------
+#  registros na tabela "medias" ------------------------------------------------------
 
 INSERT INTO medias (media_type_id, path, created, modified)
-VALUES (1, '/cama/pic/pic1.jpg', CURDATE(), CURDATE());
+VALUES (, , '', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, path, created, modified)
-VALUES (2, '/cama/vid/vid1.mp4', CURDATE(), CURDATE());
+VALUES (, , '', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, path, created, modified)
-VALUES (3, '/cama/thumb/thumb1.jpg', CURDATE(), CURDATE());
+VALUES (, , '', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, path, created, modified)
-VALUES (2, '/tenis/vid/vid1.mp4', CURDATE(), CURDATE());
+VALUES (, , '', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, path, created, modified)
-VALUES (2, '/camisa/vid/vid1.mp4', CURDATE(), CURDATE());
+VALUES (, , '', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, path, created, modified)
-VALUES (1, '/cama/pic/pic2.jpg', CURDATE(), CURDATE());
+VALUES (, , '', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, path, created, modified)
-VALUES (1, '/tenis/pic/pic1.jpg', CURDATE(), CURDATE());
+VALUES (, , '', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, path, created, modified)
-VALUES (1, '/camisa/pic/pic1.jpg', CURDATE(), CURDATE());
+VALUES (, , '', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, path, created, modified)
-VALUES (3, '/camisa/thumb/thumb1.jpg', CURDATE(), CURDATE());
+VALUES (, , '', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, path, created, modified)
-VALUES (3, '/camisa/thumb/thumb2.jpg', CURDATE(), CURDATE());
+VALUES (, , '', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, path, created, modified)
-VALUES (2, '/tenis/vid/vid2.mp4', CURDATE(), CURDATE());
+VALUES (, , '', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, path, created, modified)
-VALUES (1, '/tenis/pic/pic2.jpg', CURDATE(), CURDATE());
+VALUES (, , '', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, path, created, modified)
-VALUES (3, '/tenis/thumb/thumb1.jpg', CURDATE(), CURDATE());
+VALUES (, , '', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, path, created, modified)
-VALUES (1, '/tenis/pic/pic3.jpg', CURDATE(), CURDATE());
-
-# 14 registros na tabela "products_media" ----------------------------------------------
-
-INSERT INTO product_medias (product_id, media_id, created, modified)
-VALUES (1, 1, CURDATE(), CURDATE());
-
-INSERT INTO product_medias (product_id, media_id, created, modified)
-VALUES (2, 2, CURDATE(), CURDATE());
-
-INSERT INTO product_medias (product_id, media_id, created, modified)
-VALUES (3, 3, CURDATE(), CURDATE());
-
-INSERT INTO product_medias (product_id, media_id, created, modified)
-VALUES (4, 4, CURDATE(), CURDATE());
-
-INSERT INTO product_medias (product_id, media_id, created, modified)
-VALUES (5, 5, CURDATE(), CURDATE());
-
-INSERT INTO product_medias (product_id, media_id, created, modified)
-VALUES (6, 6, CURDATE(), CURDATE());
-
-INSERT INTO product_medias (product_id, media_id, created, modified)
-VALUES (7, 7, CURDATE(), CURDATE());
-
-INSERT INTO product_medias (product_id, media_id, created, modified)
-VALUES (1, 8, CURDATE(), CURDATE());
-
-INSERT INTO product_medias (product_id, media_id, created, modified)
-VALUES (2, 9, CURDATE(), CURDATE());
-
-INSERT INTO product_medias (product_id, media_id, created, modified)
-VALUES (3, 10, CURDATE(), CURDATE());
-
-INSERT INTO product_medias (product_id, media_id, created, modified)
-VALUES (4, 11, CURDATE(), CURDATE());
-
-INSERT INTO product_medias (product_id, media_id, created, modified)
-VALUES (5, 12, CURDATE(), CURDATE());
-
-INSERT INTO product_medias (product_id, media_id, created, modified)
-VALUES (6, 13, CURDATE(), CURDATE());
-
-INSERT INTO product_medias (product_id, media_id, created, modified)
-VALUES (7, 14, CURDATE(), CURDATE());
+VALUES (, , '', CURDATE(), CURDATE());
 
 # 5 registros na tabela "promotions" -------------------------------------------------
 

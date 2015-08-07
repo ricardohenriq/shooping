@@ -66,6 +66,11 @@
                 </div>
             </div>
         </div>
+
+        <?php foreach($productImages as $productImage): ?>
+            <?= $productImage['path'] ?>
+        <?php endforeach; ?>
+
         <?= $this->element('Body/back-top') ?>
         <?= $this->element('Footer/footer-information') ?>
         <?php if ($logged == false): ?>

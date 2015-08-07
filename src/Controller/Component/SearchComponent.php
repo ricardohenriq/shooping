@@ -78,4 +78,13 @@ class SearchComponent extends Component
             ->limit($newBannersQuantity);
         return $query->all();
     }
+
+    public function listAllProductsImages($productId)
+    {
+        $productMedias = TableRegistry::get('medias');
+        $query = $productMedias->find();
+        $query->select(['media_type_id', 'path'])
+            ->where(['product_id' => $productId]);
+        return $query->all();
+    }
 }

@@ -112,20 +112,12 @@ CREATE TABLE media_types (
 CREATE TABLE medias (
   id INT AUTO_INCREMENT PRIMARY KEY,
   media_type_id INT NOT NULL,
+  product_id INT NOT NULL,
   path VARCHAR(255) NOT NULL,
   created DATETIME,
   modified DATETIME,
-  FOREIGN KEY media_type_key (media_type_id) REFERENCES media_types(id)
-);
-
-CREATE TABLE product_medias (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  product_id INT NOT NULL,
-  media_id INT NOT NULL,
-  created DATETIME,
-  modified DATETIME,
-  FOREIGN KEY product_key (product_id) REFERENCES products(id),
-  FOREIGN KEY media_key (media_id) REFERENCES medias(id)
+  FOREIGN KEY media_type_key (media_type_id) REFERENCES media_types(id),
+  FOREIGN KEY product_key (product_id) REFERENCES products(id)
 );
 
 CREATE TABLE promotions (
