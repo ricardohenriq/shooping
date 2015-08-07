@@ -201,8 +201,13 @@ $("#full").elevateZoom({
     zoomType:'inner'
 });
 
-$("#search-form").submit(function(event){
+/*$("#search-form").submit(function(event){
     event.preventDefault();
     action = $(this).attr('action') + '/' + document.getElementById('search').value;
     window.location.href = action;
-});
+});*/
+
+function redirect(option)
+{
+    location = option.value;
+}

@@ -40,6 +40,7 @@ class AppController extends Controller
         //$this->helpers['Shrink.Shrink'];
         $this->loadComponent('Flash');
         $this->loadComponent('Search');
+        $this->loadComponent('Url');
         $this->loadComponent('Paginator');
         $this->loadComponent('Auth', [
             'authenticate' => [

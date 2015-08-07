@@ -151,34 +151,126 @@ class ProductsController extends AppController
         }
     }
 
-    public function search($search)
+    public function search()
     {
         if($this->request->is('get'))
         {
-            //$product = $this->request->params['pass'];
-            $this->paginate = [
-                'fields' => ['product_name', 'quantity', 'sold', 'description', 'price', 'old_price', 'thumbnail'],
-                'conditions' => ['product_name LIKE' => '%'.$search.'%'],
-                'order' => ['price' => 'DESC'],
-                'limit' => 3
-            ];
+            $search = $this->request->query['search'];
 
-            $this->set('products', $this->paginate($this->Products));
+            //-------------------------------------------------------------------------
+
+            $productsView = $this->Url->getQuerystringKey('products-view');
+            $this->set('productsView', $productsView);
+
+            //-------------------------------------------------------------------------
+
+            $urls = $this->Url->createUrl('products','search', 'products-view', ['3', '6', '9']);
+
+            $selectOptionsProductViews = array_combine($urls, ['3', '6', '9']);
+            $this->set('selectOptionsProductViews', $selectOptionsProductViews);
+
+            //-------------------------------------------------------------------------
+
+            $productsOrder = ['most-popular' => 'Mais Visitados', 'most-sold' => 'Mais Vendidos',
+                'lowest-price' => 'Menor Preço', 'highest-price' => 'Maior Preço'];
+            $this->set('orderView', $this->Url->getQuerystringKeyWithArray('products-order', $productsOrder));
+
+            //-------------------------------------------------------------------------
+
+            $urls = $this->Url->createUrl('products','search', 'products-order', ['most-popular', 'most-sold',
+                'lowest-price', 'highest-price']);
+
+            $selectOptionsOrderView = array_combine($urls, ['Mais Visitados', 'Mais Vendidos',
+                'Menor Preço', 'Maior Preço']);
+            $this->set('selectOptionsOrderView', $selectOptionsOrderView);
+
+            //-------------------------------------------------------------------------
+
+            $this->paginate = $this->Search->createProductsPaginate($search);
+            $products = $this->paginate($this->Products);
+            $this->set('products', $products);
+
+            //-------------------------------------------------------------------------
+
+            $startEndProducts = $this->calcStartEndPaginator($products, $this->request->query['page'],
+                $productsView);
+            $this->set('startEndProducts', $startEndProducts);
+
+            //-------------------------------------------------------------------------
+
+            $qtdProducts = $this->Search->countTotalProducts($search);
+            $this->set('qtdProducts', $qtdProducts);
+
+            //-------------------------------------------------------------------------
 
             $bannerType = 1;
             $bannersQuantity = 3;
             $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
             $this->set('smallBanners', $smallBanners);
 
+            //-------------------------------------------------------------------------
+
             $bannerType = 2;
             $bannersQuantity = 1;
             $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
             $this->set('fullBanners', $fullBanners);
 
+            //-------------------------------------------------------------------------
+
             $logged = $this->Auth->user();
             $this->set('logged', $logged);
 
+            //-------------------------------------------------------------------------
+
             $this->set('pageTitle', $search.' - Stores');
+
+            //-------------------------------------------------------------------------
+
+            @$pagina = $this->getCurrentPage();
+            @$this->set('pagina', $pagina);
+
+            //-------------------------------------------------------------------------
+
+            $this->set('numPaginas', $this->getNumPaginas($qtdProducts, $productsView));
+
+            //-------------------------------------------------------------------------
+
+            $this->set('url', $this->Url->getUrlWithoutParam('products','search','page'));
+
+            //-------------------------------------------------------------------------
+
+            $this->set('previousNextPage', $this->Url->getPreviousNextPage($pagina));
         }
+    }
+
+    private function getCurrentPage()
+    {
+        if($this->request->query['page'] > 1)
+        {
+            return $this->request->query['page'];
+        }else
+        {
+            return 1;
+        }
+    }
+
+    private function getNumPaginas($total, $productsView)
+    {
+        return ceil($total / $productsView);
+    }
+
+    private function calcStartEndPaginator($products, $pageNumber, $productsView)
+    {
+        if($pageNumber <= 1)
+        {
+            $startProducts = 1;
+        }else
+        {
+            $startProducts = ($pageNumber - 1) * $productsView + 1;
+        }
+
+        $endProducts = count($products) + $startProducts - 1;
+
+        return ['startProducts' => $startProducts, 'endProducts' => $endProducts];
     }
 }

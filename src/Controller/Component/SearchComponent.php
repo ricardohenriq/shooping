@@ -44,7 +44,8 @@ class SearchComponent extends Component
         return $query;
     }
 
-    public function listProductsByTrend($subCategoryId, $productsQuantity, $column, $order)
+    public function listProductsByTrend($subCategoryId, $productsQuantity,
+                                        $column, $order)
     {
         $products = TableRegistry::get('products');
         $query = $products->find();
@@ -86,5 +87,25 @@ class SearchComponent extends Component
         $query->select(['media_type_id', 'path'])
             ->where(['product_id' => $productId]);
         return $query->all();
+    }
+
+    public function createProductsPaginate($search)
+    {
+        $paginate = [
+            'fields' => ['product_name', 'quantity', 'sold', 'description', 'price', 'old_price', 'thumbnail'],
+            'conditions' => ['product_name LIKE' => '%'.$search.'%'],
+            'order' => ['price' => 'DESC'],
+            'limit' => 3
+        ];
+
+        return $paginate;
+    }
+
+    public function countTotalProducts($search)
+    {
+        $countProducts = TableRegistry::get('products');
+        $query = $countProducts->find()
+            ->where(['product_name LIKE' => '%'.$search.'%']);
+        return $query->count();
     }
 }

@@ -59,8 +59,8 @@ Router::scope('/', function ($routes) {
 
     //$routes->connect('/products/most-popular',['controller' => 'Products', 'action' => 'mostPopular']);
 
-    $routes->connect('/products/search/:search', ['controller' => 'Products', 'action' => 'search'],
-        [':search' => '\w+', 'pass' => ['search']]);
+    /*$routes->connect('/products/search/:search', ['controller' => 'Products', 'action' => 'search'],
+        [':search' => '\w+', 'pass' => ['search']]);*/
 
     $routes->connect('/termos-de-servico', ['controller' => 'Pages', 'action' => 'display', 'termos_de_servico']);
 
