@@ -20,17 +20,17 @@ class SearchComponent extends Component
         return $query;
     }
 
-    /*public function listAllSubCategories()
-    {
-        $subCategories = TableRegistry::get('SubCategories');
-        $query = $subCategories->find('all', ['contain' => ['Categories']]);
-        return $query;
-    }*/
-
     public function listAllSubCategories()
     {
         $subCategories = TableRegistry::get('SubCategories');
         $query = $subCategories->find();
+        return $query->all();
+    }
+
+    public function listAllSubCategoriesName()
+    {
+        $subCategories = TableRegistry::get('SubCategories');
+        $query = $subCategories->find('list');
         return $query->all();
     }
 

@@ -59,6 +59,11 @@ class PagesController extends AppController
 
         //-------------------------------------------------------------------------
 
+        $subCategoriesName = $this->Search->listAllSubCategoriesName();
+        $this->set('subCategoriesName', $subCategoriesName);
+
+        //-------------------------------------------------------------------------
+
         $userTypes = $this->Search->listAllUserTypes();
         $this->set('userTypes', $userTypes);
 

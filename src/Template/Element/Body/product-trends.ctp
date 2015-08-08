@@ -1,7 +1,7 @@
 <div class="col-lg-10 col-lg-offset-1">
     <div class="col-lg-4">
         <h3><i class="fa fa-user-plus"></i> Mais Populares</h3>
-        <?= $this->Form->input('most-popular-subcat', ['label' => false, 'options' => $subCategories, 'class' => 'form-control', 'empty' => 'Todas Subcategorias', 'id' => 'most-pupular-subcat']) ?>
+        <?= $this->Form->input('most-popular-subcat', ['label' => false, 'options' => $subCategoriesName, 'class' => 'form-control', 'empty' => 'Todas Subcategorias', 'id' => 'most-pupular-subcat']) ?>
         <div id="most-popular-container">
             <ul id="most-popular-products">
                 <?php foreach($productsMostPopular as $productMostPopular): ?>
@@ -22,7 +22,7 @@
     </div>
     <div class="col-lg-4">
         <h3><i class="fa fa-cart-plus"></i> Mais Vendidos</h3>
-        <?= $this->Form->input('best-sellers-subcat', ['label' => false, 'options' => $subCategories, 'class' => 'form-control', 'empty' => 'Todas Subcategorias', 'id' => 'best-sellers-subcat']) ?>
+        <?= $this->Form->input('best-sellers-subcat', ['label' => false, 'options' => $subCategoriesName, 'class' => 'form-control', 'empty' => 'Todas Subcategorias', 'id' => 'best-sellers-subcat']) ?>
         <div id="best-sellers-container">
             <ul id="best-sellers-products">
                 <?php foreach($productsBestSeller as $productBestSeller): ?>
@@ -43,7 +43,7 @@
     </div>
     <div class="col-lg-4">
         <h3><i class="fa fa-calendar"></i> Lançamentos</h3>
-        <?= $this->Form->input('releases-subcat', ['label' => false, 'options' => $subCategories, 'class' => 'form-control', 'empty' => 'Todas Subcategorias', 'id' => 'releases-subcat']) ?>
+        <?= $this->Form->input('releases-subcat', ['label' => false, 'options' => $subCategoriesName, 'class' => 'form-control', 'empty' => 'Todas Subcategorias', 'id' => 'releases-subcat']) ?>
         <div id="releases-container">
             <ul id="releases-products">
                 <?php foreach($productNewer as $productNewer): ?>
