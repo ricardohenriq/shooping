@@ -52,32 +52,20 @@ $('#news-slide').bxSlider({
     pager:false
 });
 
-$('#most-popular-products').bxSlider({
+trendProductsSliderConfig = {
     slideWidth:250,
     minSlides:1,
     maxSlides:1,
     moveSlides:1,
     auto:true,
     pager:false
-});
+};
 
-$('#best-sellers-products').bxSlider({
-    slideWidth:250,
-    minSlides:1,
-    maxSlides:1,
-    moveSlides:1,
-    auto:true,
-    pager:false
-});
+$('#most-popular-products').bxSlider(trendProductsSliderConfig);
 
-$('#releases-products').bxSlider({
-    slideWidth:250,
-    minSlides:1,
-    maxSlides:1,
-    moveSlides:1,
-    auto:true,
-    pager:false
-});
+$('#best-sellers-products').bxSlider(trendProductsSliderConfig);
+
+$('#releases-products').bxSlider(trendProductsSliderConfig);
 
 $('#back-top').click(function(){
     $('html, body').animate({scrollTop:0}, 'slow');
@@ -85,36 +73,53 @@ $('#back-top').click(function(){
 });
 
 $('#most-pupular-subcat').change(function(){
-    //alert($('#most-pupular-subcat').val());
+    selectId = '#most-pupular-subcat';
+    selectContainer = '#most-popular-container';
+    url = 'products/most-popular';
+    ulSlider = 'most-popular-products';
+    changeProducts(selectId, selectContainer, url, ulSlider);
+});
+
+$('#best-sellers-subcat').change(function(){
+    selectId = '#best-sellers-subcat';
+    selectContainer = '#best-sellers-container';
+    url = 'products/most-popular';
+    ulSlider = 'best-sellers-products';
+    changeProducts(selectId, selectContainer, url, ulSlider);
+});
+
+$('#releases-subcat').change(function(){
+    selectId = '#releases-subcat';
+    selectContainer = '#releases-container';
+    url = 'products/most-popular';
+    ulSlider = 'releases-products';
+    changeProducts(selectId, selectContainer, url, ulSlider);
+});
+
+function changeProducts(selectId, selectContainer, url, ulSlider)
+{
     $.ajax({
         type:'post',
-        url:'products/most-popular',
+        url:url,
         data:{
-            subCategory:$('#most-pupular-subcat').val()
+            subCategory:$(selectId).val()
         },
         beforeSend:function(){
-            $('#most-popular-container').empty();
-            //mostPopularSlider.destroySlider();
-            $('#most-popular-container').append('<img src="img/loader.gif" class="img-loader">');
-            //mostPopularSlider.stopAuto();
-            //alert('Send');
+            $(selectContainer).empty();
+            $(selectContainer).append('<img src="img/loader.gif" class="img-loader">');
         },
         success:function(products){
-            $('#most-popular-container').empty();
-            //$('#most-popular-container').append('Success');
-            formatProducts(products);
-            //alert('Success');
+            $(selectContainer).empty();
+            formatProducts(products, ulSlider);
         },
         error:function(response, error){
-            //$('#most-popular-products').html(error)
-            //alert(error);
         },
         dataType:'json',
         global:false
     });
-});
+}
 
-function formatProducts(products)
+function formatProducts(products, ulSlider)
 {
     console.log(JSON.stringify(products));
     //console.debug(products);
@@ -136,7 +141,7 @@ function formatProducts(products)
 
     var ul = document.createElement('ul');
     //var ul = document.getElementById('most-popular-products');
-    $(ul).attr('id','most-popular-products');
+    $(ul).attr('id', ulSlider);
     /*$(ul).css({
         'width': '615%',
         'position': 'relative',
@@ -183,15 +188,8 @@ function formatProducts(products)
     /*$(divWrapper).append('<div class="bx-controls bx-has-controls-direction">' +
     '<div class="bx-controls-direction"><a class="bx-prev disabled" href="">Prev</a>' +
     '<a class="bx-next disabled" href="">Next</a></div></div>');*/
-    $('#most-popular-container').append(ul);
-    $('#most-popular-products').bxSlider({
-        slideWidth:250,
-        minSlides:1,
-        maxSlides:1,
-        moveSlides:1,
-        auto:true,
-        pager:false
-    });
+    $(selectContainer).append(ul);
+    $('#' + ulSlider).bxSlider(trendProductsSliderConfig);
 }
 
 $("#full").elevateZoom({
