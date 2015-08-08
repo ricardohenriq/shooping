@@ -43,6 +43,8 @@ class PagesController extends AppController
         // Conta quantos argumentos foram passados para a função.
         $count = count($path);
 
+        //-------------------------------------------------------------------------
+
         // Por meio de um componente (Search) eu listo todas as 'categories'.
         $categories = $this->Search->listAllCategories();
 
@@ -50,47 +52,70 @@ class PagesController extends AppController
         // e atribuo a variavel 'categories' da view.
         $this->set('categories', $categories);
 
+        //-------------------------------------------------------------------------
+
         $subCategories = $this->Search->listAllSubCategories();
         $this->set('subCategories', $subCategories);
 
+        //-------------------------------------------------------------------------
+
         $userTypes = $this->Search->listAllUserTypes();
         $this->set('userTypes', $userTypes);
+
+        //-------------------------------------------------------------------------
 
         $bannerType = 1;
         $bannersQuantity = 3;
         $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
         $this->set('smallBanners', $smallBanners);
 
+        //-------------------------------------------------------------------------
+
         $bannerType = 2;
         $bannersQuantity = 1;
         $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
         $this->set('fullBanners', $fullBanners);
+
+        //-------------------------------------------------------------------------
 
         $productsQuantity = 4;
         $order = 'DESC';
 
         $subCategoryId = 0;
         $column = 'sold';
-        $productsBestSeller = $this->Search->listProductsByTrend($subCategoryId, $productsQuantity, $column, $order);
+        $productsBestSeller = $this->Search->listProductsByTrend($subCategoryId,
+            $productsQuantity, $column, $order);
         $this->set('productsBestSeller', $productsBestSeller);
+
+        //-------------------------------------------------------------------------
 
         $subCategoryId = 2;
         $column = 'created';
-        $productNewer = $this->Search->listProductsByTrend($subCategoryId, $productsQuantity, $column, $order);
+        $productNewer = $this->Search->listProductsByTrend($subCategoryId,
+            $productsQuantity, $column, $order);
         $this->set('productNewer', $productNewer);
+
+        //-------------------------------------------------------------------------
 
         $subCategoryId = 2;
         $column = 'visited';
-        $productsMostPopular = $this->Search->listProductsByTrend($subCategoryId, $productsQuantity, $column, $order);
+        $productsMostPopular = $this->Search->listProductsByTrend($subCategoryId,
+            $productsQuantity, $column, $order);
         $this->set('productsMostPopular', $productsMostPopular);
+
+        //-------------------------------------------------------------------------
 
         $newBannersQuantity = 5;
         $newBanners = $this->Search->listNewBanners($newBannersQuantity);
         $this->set('newBanners', $newBanners);
 
+        //-------------------------------------------------------------------------
+
         $offerBannersQuantity = 5;
         $offerBanners = $this->Search->listOfferBanners($offerBannersQuantity);
         $this->set('offerBanners', $offerBanners);
+
+        //-------------------------------------------------------------------------
 
         if($this->Auth->user())
         {

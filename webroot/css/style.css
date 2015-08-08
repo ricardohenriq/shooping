@@ -182,3 +182,8 @@ hr{
     background-color:#000;
     height:1px
 }
+
+.nav-side-menu{
+    max-height:420px;
+    overflow:auto
+}

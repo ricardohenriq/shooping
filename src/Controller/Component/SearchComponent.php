@@ -9,8 +9,8 @@ class SearchComponent extends Component
     public function listAllCategories()
     {
         $categories = TableRegistry::get('Categories');
-        $query = $categories->find('list');
-        return $query;
+        $query = $categories->find();
+        return $query->all();
     }
 
     public function listAllUserTypes()
@@ -30,8 +30,8 @@ class SearchComponent extends Component
     public function listAllSubCategories()
     {
         $subCategories = TableRegistry::get('SubCategories');
-        $query = $subCategories->find('list');
-        return $query;
+        $query = $subCategories->find();
+        return $query->all();
     }
 
     public function listAllBanners($bannerType, $bannersQuantity)

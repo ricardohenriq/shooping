@@ -192,7 +192,7 @@ class ProductsController extends AppController
 
             //-------------------------------------------------------------------------
 
-            $startEndProducts = $this->calcStartEndPaginator($products, $this->request->query['page'],
+            @$startEndProducts = $this->calcStartEndPaginator($products, $this->request->query['page'],
                 $productsView);
             $this->set('startEndProducts', $startEndProducts);
 

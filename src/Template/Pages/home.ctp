@@ -56,7 +56,7 @@
                     <?= $this->element('Body/news') ?>
                 </div>
                 <div class="row">
-                    <?= $this->element('Body/categories2') ?>
+                    <?= $this->element('Body/categories') ?>
                     <?= $this->element('Body/offers') ?>
                 </div>
                 <div class="row">
