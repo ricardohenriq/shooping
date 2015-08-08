@@ -41,7 +41,7 @@
             'Jquery-Validate/jquery.validate.min.js', 'datepicker/js/bootstrap-datepicker.js',
             'jquery-bxslider/jquery.bxslider.min.js', 'main.js']) ?>
         <?= $this->Shrink->fetch('css') ?>
-        <?= $this->Shrink->fetch('js', 'async') ?>
+        <?= $this->Shrink->fetch('js') ?>
     </head>
     <body>
         <?= $this->element('Navbar/navbar-main') ?>
