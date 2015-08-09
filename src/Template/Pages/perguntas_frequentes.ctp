@@ -33,19 +33,14 @@
         <?= $this->Html->meta('og:image','') ?>
         <?= $this->Html->meta('og:type','') ?>
         <?= $this->Html->meta('og:site_name','') ?>
-        <?= $this->Html->css('Bootstrap/css/bootstrap.min.css') ?>
-        <?= $this->Html->css('font-awesome-4.3.0/css/font-awesome.min.css') ?>
-        <?= $this->Html->css('datepicker/css/datepicker.css') ?>
-        <?= $this->Html->css('jquery-bxslider/jquery.bxslider.css') ?>
-        <?= $this->Html->css('style.css') ?>
-        <?= $this->Html->css('menu-plugin.css') ?>
-        <?= $this->Html->script('jquery-1.11.1.min.js') ?>
-        <?= $this->Html->script('bootstrap.min.js') ?>
-        <?= $this->Html->script('Jquery-Validate/jquery.validate.min.js') ?>
-        <?= $this->Html->script('datepicker/js/bootstrap-datepicker.js') ?>
-        <?= $this->Html->script('jquery-bxslider/jquery.bxslider.min.js') ?>
-        <?= $this->Html->script('elevatezoom/jquery.elevateZoom-3.0.8.min.js') ?>
-        <?= $this->Html->script('main.js',['defer' => true]) ?>
+        <?= $this->Shrink->css(['Bootstrap/css/bootstrap.min.css',
+            'font-awesome-4.3.0/css/font-awesome.min.css', 'datepicker/css/datepicker.css',
+            'jquery-bxslider/jquery.bxslider.css', 'style.css', 'menu-plugin.css']) ?>
+        <?= $this->Shrink->js(['jquery-1.11.1.min.js', 'bootstrap.min.js',
+            'Jquery-Validate/jquery.validate.min.js', 'datepicker/js/bootstrap-datepicker.js',
+            'jquery-bxslider/jquery.bxslider.min.js', 'main.js']) ?>
+        <?= $this->Shrink->fetch('css') ?>
+        <?= $this->Shrink->fetch('js') ?>
     </head>
     <body>
         <?= $this->element('Navbar/navbar-main') ?>
@@ -80,7 +75,7 @@
                             <hr>
                             <p><span class="title">- A velocidade de acesso esta muito ruim</span></p>
                             <hr>
-                            <p><span class="title">- How can I remove XVIDEOS from my computer?</span></p>
+                            <p><span class="title">- </span></p>
                             <hr>
                             <p><span class="title">- Como eu deleto um produto ?</span></p>
                             <hr>

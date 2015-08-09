@@ -1,0 +1,54 @@
+ARQUIVO COM OS LINKS TROCADOS DOS ARQUIVOS CSS E JS QUE SER홒 COMBINADOS, E POR 
+ESTE MOTIVO AS REFERENCIAS NECESSITARAM SER REFEITAS
+
+font-awesome.min.css
+
+ANTES DA COMBINA플O
+
+../fonts/fontawesome-webfont.eot?v=4.3.0
+../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0
+../fonts/fontawesome-webfont.woff2?v=4.3.0
+../fonts/fontawesome-webfont.woff?v=4.3.0
+../fonts/fontawesome-webfont.ttf?v=4.3.0
+../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular
+
+DEPOIS DA COMBINA플O
+
+/css/font-awesome-4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0
+/css/font-awesome-4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0
+/css/font-awesome-4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0
+/css/font-awesome-4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0
+/css/font-awesome-4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0
+/css/font-awesome-4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular
+
+boostrap.min.css
+
+ANTES DA COMBINA플O
+
+../fonts/glyphicons-halflings-regular.woff
+../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular
+../fonts/glyphicons-halflings-regular.ttf
+../fonts/glyphicons-halflings-regular.woff
+../fonts/glyphicons-halflings-regular.eot?#iefix
+../fonts/glyphicons-halflings-regular.eot
+
+DEPOIS DA COMBINA플O
+
+/css/Bootstrap/fonts/glyphicons-halflings-regular.woff
+/css/Bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular
+/css/Bootstrap/fonts/glyphicons-halflings-regular.ttf
+/css/Bootstrap/fonts/glyphicons-halflings-regular.woff
+/css/Bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix
+/css/Bootstrap/fonts/glyphicons-halflings-regular.eot
+
+jquery.bxslider.css
+
+ANTES DA COMBINA플O
+
+images/bx_loader.gif
+images/controls.png
+
+DEPOIS DA COMBINA플O
+
+/css/jquery-bxslider/images/bx_loader.gif
+/css/jquery-bxslider/images/controls.png

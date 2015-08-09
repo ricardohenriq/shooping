@@ -120,8 +120,6 @@ $( document ).ready(function(){
     }
 
     function formatProducts(products, ulSlider) {
-        console.log(JSON.stringify(products));
-        //console.debug(products);
 
         var divWrapper = document.createElement('div');
         $(divWrapper).css({
