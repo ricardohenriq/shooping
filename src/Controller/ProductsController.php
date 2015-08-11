@@ -36,7 +36,7 @@ class ProductsController extends AppController
         if($this->request->is('get'))
         {
             $product = $this->Products->get($id, [
-                'contain' => ['Stores', 'Bookings', 'ProductFeatures', 'ProductMedias']
+                'contain' => ['Stores', 'Bookings', 'ProductFeatures']
             ]);
 
             //////----------------
@@ -60,6 +60,10 @@ class ProductsController extends AppController
             $bannersQuantity = 1;
             $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
             $this->set('fullBanners', $fullBanners);
+
+            $mediaTypeId = 1;
+            $productImages = $this->Search->listAllProductsImages($id, $mediaTypeId);
+            $this->set('productImages', $productImages);
 
             $logged = $this->Auth->user();
             $this->set('logged', $logged);

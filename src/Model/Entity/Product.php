@@ -23,7 +23,6 @@ class Product extends Entity
         'status' => true,
         'store' => true,
         'bookings' => true,
-        'product_features' => true,
-        'product_medias' => true,
+        'product_features' => true
     ];
 }

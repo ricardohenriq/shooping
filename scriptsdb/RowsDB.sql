@@ -67,46 +67,6 @@ VALUES ('Loja C', 3, CURDATE(), CURDATE());
 INSERT INTO stores (store_name, user_id, created, modified)
 VALUES ('Loja D', 4, CURDATE(), CURDATE());
 
-# 7 registros na tabela "products" --------------------------------------------------
-
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, thumbnail, status, created, modified)
-VALUES ('Cama X', 1, 8, 20, 40, 'Muito Boa', 550.50, 400, 777, 'products/product2.jpg', 1, CURDATE(), CURDATE());
-
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, thumbnail, status, created, modified)
-VALUES ('Ferro de passar roupa W', 2, 7, 300, 200, 'Quente', 20.20, 25, 555, 'products/product1.jpg', 2, CURDATE(), CURDATE());
-
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, thumbnail, status, created, modified)
-VALUES ('Liquidificador B', 3, 6, 150, 900, 'Bom', 15, 12.90, 444, 'products/product5.jpg', 1, CURDATE(), CURDATE());
-
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, thumbnail, status, created, modified)
-VALUES ('MP3 N', 4, 5, 30, 60, 'Toca musica', 150.90, 140, 333, 'products/product4.jpg', 2, CURDATE(), CURDATE());
-
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, thumbnail, status, created, modified)
-VALUES ('Bacon T', 1, 3, 900, 1200, 'Bom dimais da conta', 5, 9.05, 222, 'products/product3.jpg', 1, CURDATE(), CURDATE());
-
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, thumbnail, status, created, modified)
-VALUES ('Camiseta U', 2, 1, 130, 200, 'Macia', 13.99, 20.00, 99, 'products/product2.jpg', 0, CURDATE(), CURDATE());
-
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, thumbnail, status, created, modified)
-VALUES ('Sapato R', 3, 2, 200, 400, 'Confortavel', 30.30, 25.00, 111, 'products/product1.jpg', 0, CURDATE(), CURDATE());
-
-# 5 registros na tabela "bookings" ---------------------------------------------------
-
-INSERT INTO bookings (product_id, quantity, user_id, created, modified)
-VALUES (1, 5, 1, CURDATE(), CURDATE());
-
-INSERT INTO bookings (product_id, quantity, user_id, created, modified)
-VALUES (2, 10, 2, CURDATE(), CURDATE());
-
-INSERT INTO bookings (product_id, quantity, user_id, created, modified)
-VALUES (3, 5, 3, CURDATE(), CURDATE());
-
-INSERT INTO bookings (product_id, quantity, user_id, created, modified)
-VALUES (4, 8, 4, CURDATE(), CURDATE());
-
-INSERT INTO bookings (product_id, quantity, user_id, created, modified)
-VALUES (5, 6, 5, CURDATE(), CURDATE());
-
 # 17 regsistros na tabela "categories" ------------------------------------------------
 
 INSERT INTO categories (category_name, created, modified)
@@ -195,6 +155,46 @@ VALUES ('Refrigerante', 2, CURDATE(), CURDATE());
 INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
 VALUES ('Outras', 2, CURDATE(), CURDATE());
 
+# 7 registros na tabela "products" --------------------------------------------------
+
+INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, thumbnail, status, created, modified)
+VALUES ('Cama X', 1, 8, 20, 40, 'Muito Boa', 550.50, 400, 777, 'products/product2.jpg', 1, CURDATE(), CURDATE());
+
+INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, thumbnail, status, created, modified)
+VALUES ('Ferro de passar roupa W', 2, 7, 300, 200, 'Quente', 20.20, 25, 555, 'products/product1.jpg', 2, CURDATE(), CURDATE());
+
+INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, thumbnail, status, created, modified)
+VALUES ('Liquidificador B', 3, 6, 150, 900, 'Bom', 15, 12.90, 444, 'products/product5.jpg', 1, CURDATE(), CURDATE());
+
+INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, thumbnail, status, created, modified)
+VALUES ('MP3 N', 4, 5, 30, 60, 'Toca musica', 150.90, 140, 333, 'products/product4.jpg', 2, CURDATE(), CURDATE());
+
+INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, thumbnail, status, created, modified)
+VALUES ('Bacon T', 1, 3, 900, 1200, 'Bom dimais da conta', 5, 9.05, 222, 'products/product3.jpg', 1, CURDATE(), CURDATE());
+
+INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, thumbnail, status, created, modified)
+VALUES ('Camiseta U', 2, 1, 130, 200, 'Macia', 13.99, 20.00, 99, 'products/product2.jpg', 0, CURDATE(), CURDATE());
+
+INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, thumbnail, status, created, modified)
+VALUES ('Sapato R', 3, 2, 200, 400, 'Confortavel', 30.30, 25.00, 111, 'products/product1.jpg', 0, CURDATE(), CURDATE());
+
+# 5 registros na tabela "bookings" ---------------------------------------------------
+
+INSERT INTO bookings (product_id, quantity, user_id, created, modified)
+VALUES (1, 5, 1, CURDATE(), CURDATE());
+
+INSERT INTO bookings (product_id, quantity, user_id, created, modified)
+VALUES (2, 10, 2, CURDATE(), CURDATE());
+
+INSERT INTO bookings (product_id, quantity, user_id, created, modified)
+VALUES (3, 5, 3, CURDATE(), CURDATE());
+
+INSERT INTO bookings (product_id, quantity, user_id, created, modified)
+VALUES (4, 8, 4, CURDATE(), CURDATE());
+
+INSERT INTO bookings (product_id, quantity, user_id, created, modified)
+VALUES (5, 6, 5, CURDATE(), CURDATE());
+
 # 7 registros na tabela "features" ----------------------------------------------------
 
 INSERT INTO features (feature_name, created, modified)
@@ -264,46 +264,52 @@ VALUES ('Vídeo', CURDATE(), CURDATE());
 #  registros na tabela "medias" ------------------------------------------------------
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , '', CURDATE(), CURDATE());
+VALUES (1, 1, 'http://localhost/PROJETOS/ShoppingResources/img/1/Samsung-Galaxy-A5-Duos-Branco-4G-Orange-1.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , '', CURDATE(), CURDATE());
+VALUES (1, 1, 'http://localhost/PROJETOS/ShoppingResources/img/1/Samsung-Galaxy-A5-Duos-Branco-4G-Orange-2.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , '', CURDATE(), CURDATE());
+VALUES (1, 1, 'http://localhost/PROJETOS/ShoppingResources/img/1/Samsung-Galaxy-A5-Duos-Branco-4G-Orange-3.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , '', CURDATE(), CURDATE());
+VALUES (1, 2, 'http://localhost/PROJETOS/ShoppingResources/img/2', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , '', CURDATE(), CURDATE());
+VALUES (1, 2, 'http://localhost/PROJETOS/ShoppingResources/img/2', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , '', CURDATE(), CURDATE());
+VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , '', CURDATE(), CURDATE());
+VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , '', CURDATE(), CURDATE());
+VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , '', CURDATE(), CURDATE());
+VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , '', CURDATE(), CURDATE());
+VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , '', CURDATE(), CURDATE());
+VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , '', CURDATE(), CURDATE());
+VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , '', CURDATE(), CURDATE());
+VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , '', CURDATE(), CURDATE());
+VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4', CURDATE(), CURDATE());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4', CURDATE(), CURDATE());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4', CURDATE(), CURDATE());
 
 # 5 registros na tabela "promotions" -------------------------------------------------
 

@@ -80,12 +80,13 @@ class SearchComponent extends Component
         return $query->all();
     }
 
-    public function listAllProductsImages($productId)
+    public function listAllProductsImages($productId, $mediaTypeId)
     {
         $productMedias = TableRegistry::get('medias');
         $query = $productMedias->find();
-        $query->select(['media_type_id', 'path'])
-            ->where(['product_id' => $productId]);
+        $query->select(['path'])
+            ->where(['product_id' => $productId])
+            ->andWhere(['media_type_id' => $mediaTypeId]);
         return $query->all();
     }
 

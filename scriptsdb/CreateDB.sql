@@ -38,6 +38,22 @@ CREATE TABLE stores (
   FOREIGN KEY user_key (user_id) REFERENCES users(id)
 );
 
+CREATE TABLE categories (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  category_name VARCHAR(255) NOT NULL,
+  created DATETIME,
+  modified DATETIME
+);
+
+CREATE TABLE sub_categories (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  sub_category_name VARCHAR(255) NOT NULL,
+  category_id INT NOT NULL,
+  created DATETIME,
+  modified DATETIME,
+  FOREIGN KEY category_key (category_id) REFERENCES categories(id)
+);
+
 CREATE TABLE products (
   id INT AUTO_INCREMENT PRIMARY KEY,
   product_name VARCHAR(255) NOT NULL,
@@ -66,22 +82,6 @@ CREATE TABLE bookings (
   modified DATETIME,
   FOREIGN KEY product_key (product_id) REFERENCES products(id),
   FOREIGN KEY user_key (user_id) REFERENCES users(id)
-);
-
-CREATE TABLE categories (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  category_name VARCHAR(255) NOT NULL,
-  created DATETIME,
-  modified DATETIME
-);
-
-CREATE TABLE sub_categories (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  sub_category_name VARCHAR(255) NOT NULL,
-  category_id INT NOT NULL,
-  created DATETIME,
-  modified DATETIME,
-  FOREIGN KEY category_key (category_id) REFERENCES categories(id)
 );
 
 CREATE TABLE features (
