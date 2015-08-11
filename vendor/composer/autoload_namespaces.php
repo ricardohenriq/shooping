@@ -11,6 +11,8 @@ return array(
     'JakubOnderka\\PhpConsoleHighlighter' => array($vendorDir . '/jakub-onderka/php-console-highlighter/src'),
     'JakubOnderka\\PhpConsoleColor' => array($vendorDir . '/jakub-onderka/php-console-color/src'),
     'JShrink' => array($vendorDir . '/tedivm/jshrink/src'),
+    'Imagine' => array($vendorDir . '/imagine/imagine/lib'),
+    'Gaufrette' => array($vendorDir . '/knplabs/gaufrette/src'),
     'Detection' => array($vendorDir . '/mobiledetect/mobiledetectlib/namespaced'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src'),
     'Carbon' => array($vendorDir . '/nesbot/carbon/src'),

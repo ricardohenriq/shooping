@@ -10,7 +10,9 @@
         "mobiledetect/mobiledetectlib": "2.*",
         "cakephp/migrations": "~1.0",
         "cakephp/plugin-installer": "*",
-        "trentrichardson/cakephp-shrink": "3.0"
+        "trentrichardson/cakephp-shrink": "3.0",
+        "burzum/cakephp-file-storage": "3.0.x-dev",
+        "burzum/cakephp-imagine-plugin": "3.0.x-dev"
     },
     "require-dev": {
         "psy/psysh": "@stable",

@@ -39,6 +39,8 @@ class AppController extends Controller
         $this->helpers[] = 'Shrink.Shrink';
         $this->loadComponent('Flash');
         $this->loadComponent('Search');
+		$this->loadComponent('Insert');
+        $this->loadComponent('UploadFile');
         $this->loadComponent('Url');
         $this->loadComponent('Paginator');
         $this->loadComponent('Auth', [

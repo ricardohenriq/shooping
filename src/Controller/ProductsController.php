@@ -273,4 +273,26 @@ class ProductsController extends AppController
 
         return ['startProducts' => $startProducts, 'endProducts' => $endProducts];
     }
+	
+	public function upload() 
+	{
+        if ($this->request->is('post')) {
+            $mediaTypeId = 1;
+            $productId = 2;
+            $path = $this->request->data['Media']['file']['tmp_name'];
+            $inserted = $this->Insert->insertMedia($mediaTypeId, $productId, $path);
+
+            //-------------------------------------------------------------------------
+
+            $stringSeparator = '_';
+            $storeName = 'Lojinha';
+            $productName = 'Gostosa';
+            $saved = $this->UploadFile->saveFileLFS($stringSeparator, $storeName,
+                $productName);
+
+            if($inserted === true && $saved === true){
+                $this->Flash->set(__('Upload successful!'));
+            }
+        }
+    }
 }
