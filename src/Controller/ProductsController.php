@@ -39,34 +39,41 @@ class ProductsController extends AppController
                 'contain' => ['Stores', 'Bookings', 'ProductFeatures']
             ]);
 
-            //////----------------
             $this->loadModel('Features');
-            $recentFeatures = [];
+            $product['features'] = [];
 
             foreach($product['product_features'] as $product_feature)
             {
-                $recentFeatures[] = $this->Features->get($product_feature['feature_id']);
+                $product['features'][] = $this->Features->get($product_feature['feature_id']);
             }
-
-            $product['features'] = $recentFeatures;
-            //////------------------
 
             $this->set('product', $product);
 
-            //$productImages = $this->Search->listAllProductsImages($product['id']);
-            //$this->set('productImages', $productImages);
+            //-------------------------------------------------------------------------
 
             $bannerType = 2;
             $bannersQuantity = 1;
             $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
             $this->set('fullBanners', $fullBanners);
 
+            //-------------------------------------------------------------------------
+
             $mediaTypeId = 1;
             $productImages = $this->Search->listAllProductsImages($id, $mediaTypeId);
             $this->set('productImages', $productImages);
 
+            //-------------------------------------------------------------------------
+
+            $mediaTypeId = 2;
+            $productMainImage = $this->Search->listOneProductImage($id, $mediaTypeId);
+            $this->set('productMainImage', $productMainImage);
+
+            //-------------------------------------------------------------------------
+
             $logged = $this->Auth->user();
             $this->set('logged', $logged);
+
+            //-------------------------------------------------------------------------
 
             $this->set('pageTitle', $product['product_name'].' - Stores');
         }

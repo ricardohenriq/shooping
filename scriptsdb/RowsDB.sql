@@ -256,15 +256,21 @@ INSERT INTO media_types(name_media_type , created, modified)
 VALUES ('Foto', CURDATE(), CURDATE());
 
 INSERT INTO media_types(name_media_type , created, modified)
+VALUES ('Foto Principal', CURDATE(), CURDATE());
+
+INSERT INTO media_types(name_media_type , created, modified)
 VALUES ('Thumb', CURDATE(), CURDATE());
 
 INSERT INTO media_types(name_media_type , created, modified)
-VALUES ('Vídeo', CURDATE(), CURDATE());
+VALUES ('Video', CURDATE(), CURDATE());
 
 #  registros na tabela "medias" ------------------------------------------------------
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (1, 1, 'http://localhost/PROJETOS/ShoppingResources/img/1/Samsung-Galaxy-A5-Duos-Branco-4G-Orange-1.jpg', CURDATE(), CURDATE());
+VALUES (2, 1, 'http://localhost/PROJETOS/ShoppingResources/img/1/Samsung-Galaxy-A5-Duos-Branco-4G-Orange-1.jpg', CURDATE(), CURDATE());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 1, 'http://localhost/PROJETOS/ShoppingResources/thumb/1/Samsung-Galaxy-A5-Duos-Branco-4G-Orange-1.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (1, 1, 'http://localhost/PROJETOS/ShoppingResources/img/1/Samsung-Galaxy-A5-Duos-Branco-4G-Orange-2.jpg', CURDATE(), CURDATE());
@@ -273,43 +279,46 @@ INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (1, 1, 'http://localhost/PROJETOS/ShoppingResources/img/1/Samsung-Galaxy-A5-Duos-Branco-4G-Orange-3.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (1, 2, 'http://localhost/PROJETOS/ShoppingResources/img/2', CURDATE(), CURDATE());
+VALUES (2, 2, 'http://localhost/PROJETOS/ShoppingResources/img/2/TV-LED-32-Smart-LiteUSB-HDMI-LE-3278i-Semp-Toshiba-1.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (1, 2, 'http://localhost/PROJETOS/ShoppingResources/img/2', CURDATE(), CURDATE());
+VALUES (3, 2, 'http://localhost/PROJETOS/ShoppingResources/thumb/2/TV-LED-32-Smart-LiteUSB-HDMI-LE-3278i-Semp-Toshiba-1.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3', CURDATE(), CURDATE());
+VALUES (1, 2, 'http://localhost/PROJETOS/ShoppingResources/img/2/TV-LED-32-Smart-LiteUSB-HDMI-LE-3278i-Semp-Toshiba-2.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3', CURDATE(), CURDATE());
+VALUES (3, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3/Motorola-Moto-X-Android-42-GPS-3G-2-Chips-13GHZ-1.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3', CURDATE(), CURDATE());
+VALUES (2, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3/Motorola-Moto-X-Android-42-GPS-3G-2-Chips-13GHZ-1.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3', CURDATE(), CURDATE());
+VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3/Motorola-Moto-X-Android-42-GPS-3G-2-Chips-13GHZ-2.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3', CURDATE(), CURDATE());
+VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3/Motorola-Moto-X-Android-42-GPS-3G-2-Chips-13GHZ-3.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3', CURDATE(), CURDATE());
+VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3/Motorola-Moto-X-Android-42-GPS-3G-2-Chips-13GHZ-4.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4', CURDATE(), CURDATE());
+VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3/Motorola-Moto-X-Android-42-GPS-3G-2-Chips-13GHZ-5.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4', CURDATE(), CURDATE());
+VALUES (3, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4/Liquidificador-e-Processador-Reverse-Red-Oster-110V-1.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4', CURDATE(), CURDATE());
+VALUES (2, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4/Liquidificador-e-Processador-Reverse-Red-Oster-110V-1.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4', CURDATE(), CURDATE());
+VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4/Liquidificador-e-Processador-Reverse-Red-Oster-110V-2.jpg', CURDATE(), CURDATE());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4', CURDATE(), CURDATE());
+VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4/Liquidificador-e-Processador-Reverse-Red-Oster-110V-3.jpg', CURDATE(), CURDATE());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4/Liquidificador-e-Processador-Reverse-Red-Oster-110V-4.jpg', CURDATE(), CURDATE());
 
 # 5 registros na tabela "promotions" -------------------------------------------------
 

@@ -1,18 +1,14 @@
 <div id="product-pic" class="col-md-6">
-    <?= $this->Html->image('products/full.jpg', ['alt' => 'Full', 'id' => 'full', 'data-zoom-image'=> '/img/products/full.jpg', 'class' => 'full-product']) ?>
+    <?= $this->Html->image($productMainImage['path'], ['id' => 'product-img', 'data-zoom-image'=> $productMainImage['path'], 'class' => 'full-product']) ?>
     <div id="product-gallery">
-        <a href="#" data-image="/img/products/full.jpg" data-zoom-image="/img/products/full.jpg">
-            <?= $this->Html->image('products/full.jpg', ['alt' => 'Full', 'id' => 'full', 'class' => 'thumb-product']) ?>
+        <a href="#" data-image="<?= $productMainImage['path'] ?>" data-zoom-image="<?= $productMainImage['path'] ?>" class="active">
+            <?= $this->Html->image($productMainImage['path'], ['id' => 'product-img', 'class' => 'thumb-product']) ?>
         </a>
-        <a href="#" class="thumb-product" data-image="/img/products/side.jpg" data-zoom-image="/img/products/side.jpg">
-            <?= $this->Html->image('products/side.jpg', ['alt' => 'Side', 'id' => 'side', 'class' => 'thumb-product']) ?>
-        </a>
-        <a href="#" class="thumb-product" data-image="/img/products/back.jpg" data-zoom-image="/img/products/back.jpg">
-            <?= $this->Html->image('products/back.jpg', ['alt' => 'Back', 'id' => 'back', 'class' => 'thumb-product']) ?>
-        </a>
-        <a href="#" class="thumb-product" data-image="/img/products/front.jpg" data-zoom-image="/img/products/front.jpg">
-            <?= $this->Html->image('products/front.jpg', ['alt' => 'Front', 'id' => 'front', 'class' => 'thumb-product']) ?>
-        </a>
+        <?php foreach($productImages as $productImage): ?>
+            <a href="#" data-image="<?= $productImage['path'] ?>" data-zoom-image="<?= $productImage['path'] ?>">
+                <?= $this->Html->image($productImage['path'], ['id' => 'product-img', 'class' => 'thumb-product']) ?>
+            </a>
+        <?php endforeach; ?>
     </div>
 </div>
 <div class="product-info col-md-4">

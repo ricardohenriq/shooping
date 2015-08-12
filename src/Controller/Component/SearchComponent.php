@@ -90,6 +90,16 @@ class SearchComponent extends Component
         return $query->all();
     }
 
+    public function listOneProductImage($productId, $mediaTypeId)
+    {
+        $productMedias = TableRegistry::get('medias');
+        $query = $productMedias->find();
+        $query->select(['path'])
+            ->where(['product_id' => $productId])
+            ->andWhere(['media_type_id' => $mediaTypeId]);
+        return $query->first();
+    }
+
     public function createProductsPaginate($search)
     {
         $paginate = [

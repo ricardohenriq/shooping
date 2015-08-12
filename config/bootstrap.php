@@ -57,7 +57,7 @@ use Cake\Utility\Security;
 
 // burzum/cakephp-file-storage
 StorageManager::config('Local', [
-    'adapterOptions' => [TMP, true],
+    'adapterOptions' => [dirname(ROOT) . DS . 'ShoppingResources' . DS],
     'adapterClass' => '\Gaufrette\Adapter\Local',
     'class' => '\Gaufrette\Filesystem']
 );

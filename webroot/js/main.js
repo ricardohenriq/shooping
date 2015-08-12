@@ -189,7 +189,7 @@ $( document ).ready(function(){
         $('#' + ulSlider).bxSlider(trendProductsSliderConfig);
     }
 
-    $("#full").elevateZoom({
+    $("#product-img").elevateZoom({
         galleryActiveClass: 'active',
         gallery: 'product-gallery',
         cursor: 'crosshair',
