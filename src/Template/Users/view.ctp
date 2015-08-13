@@ -1,114 +1,77 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Html->link(__('Edit User'), ['action' => 'edit', $user->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete User'), ['action' => 'delete', $user->id], ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List User Types'), ['controller' => 'UserTypes', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New User Type'), ['controller' => 'UserTypes', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Bookings'), ['controller' => 'Bookings', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Booking'), ['controller' => 'Bookings', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Stores'), ['controller' => 'Stores', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Store'), ['controller' => 'Stores', 'action' => 'add']) ?> </li>
-    </ul>
-</div>
-<div class="users view large-10 medium-9 columns">
-    <h2><?= h($user->id) ?></h2>
-    <div class="row">
-        <div class="large-5 columns strings">
-            <h6 class="subheader"><?= __('Email') ?></h6>
-            <p><?= h($user->email) ?></p>
-            <h6 class="subheader"><?= __('Password') ?></h6>
-            <p><?= h($user->password) ?></p>
-            <h6 class="subheader"><?= __('Username') ?></h6>
-            <p><?= h($user->username) ?></p>
-            <h6 class="subheader"><?= __('User Type') ?></h6>
-            <p><?= $user->has('user_type') ? $this->Html->link($user->user_type->id, ['controller' => 'UserTypes', 'action' => 'view', $user->user_type->id]) : '' ?></p>
+<?php
+    /**
+     * Página inicial do site, contém um login de usuário, exibe promoções,
+     * produtos e logistas mais acessados, um campo pesquisa, um menu de navegação
+     * completa por promoções, lojas, categorias de produtos, um rodapé com
+     * diversas informações incluindo formas de contato.
+     *
+     * @author          Ricardo Henrique
+     * @copyright       Copyright (c) Magma TI, LTDA. (http://magma.com)
+     * @link            http://magma.com/stores Stores Project
+     * @version         0.1
+     * @since           0.1
+     * @licence         http://www.opensource.org/licenses/mit-license.php MIT License
+     */
+
+    $this->layout = false;
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <?= $this->Html->charset() ?>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><?= $pageTitle ?></title>
+        <?= $this->Html->meta('favicon.ico','/cart.png', array('type' => 'icon')) ?>
+        <?= $this->Html->meta('keywords','palavra chave') ?>
+        <?= $this->Html->meta('description','descrição') ?>
+        <?= $this->Html->meta('robots','index,follow') ?>
+        <?= $this->Html->meta('author','Magma TI') ?>
+        <?= $this->Html->meta('reply-to','magma@gmail.com') ?>
+        <?= $this->Html->meta('og:title','') ?>
+        <?= $this->Html->meta('og:description','') ?>
+        <?= $this->Html->meta('og:url','') ?>
+        <?= $this->Html->meta('og:image','') ?>
+        <?= $this->Html->meta('og:type','') ?>
+        <?= $this->Html->meta('og:site_name','') ?>
+        <?= $this->Html->css('Bootstrap/css/bootstrap.min.css') ?>
+        <?= $this->Html->css('font-awesome-4.3.0/css/font-awesome.min.css') ?>
+        <?= $this->Html->css('datepicker/css/datepicker.css') ?>
+        <?= $this->Html->css('style.css') ?>
+        <?= $this->Html->css('menu-plugin.css') ?>
+        <?= $this->Html->script('jquery-1.11.1.min.js') ?>
+        <?= $this->Html->script('bootstrap.min.js') ?>
+        <?= $this->Html->script('Jquery-Validate/jquery.validate.min.js') ?>
+        <?= $this->Html->script('datepicker/js/bootstrap-datepicker.js') ?>
+        <?= $this->Html->script('main.js',['defer' => true]) ?>
+    </head>
+    <body>
+        <?= $this->element('Navbar/navbar-main') ?>
+        <?= $this->Flash->render() ?>
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <?= $this->element('Body/account_menu') ?>
+                    <?= $this->element('Body/profile') ?>
+                </div>
+                <div class="row">
+                    <?= $this->element('Body/small-banners') ?>
+                </div>
+                <div class="row">
+                    <?= $this->element('Body/full-banner') ?>
+                </div>
+                <div class="row">
+                    <?= $this->element('Footer/footer-newsletter') ?>
+                </div>
+            </div>
         </div>
-        <div class="large-2 columns numbers end">
-            <h6 class="subheader"><?= __('Id') ?></h6>
-            <p><?= $this->Number->format($user->id) ?></p>
-        </div>
-        <div class="large-2 columns dates end">
-            <h6 class="subheader"><?= __('Created') ?></h6>
-            <p><?= h($user->created) ?></p>
-            <h6 class="subheader"><?= __('Modified') ?></h6>
-            <p><?= h($user->modified) ?></p>
-        </div>
-    </div>
-</div>
-<div class="related row">
-    <div class="column large-12">
-    <h4 class="subheader"><?= __('Related Bookings') ?></h4>
-    <?php if (!empty($user->bookings)): ?>
-    <table cellpadding="0" cellspacing="0">
-        <tr>
-            <th><?= __('Id') ?></th>
-            <th><?= __('Product Id') ?></th>
-            <th><?= __('Quantity') ?></th>
-            <th><?= __('User Id') ?></th>
-            <th><?= __('Created') ?></th>
-            <th><?= __('Modified') ?></th>
-            <th class="actions"><?= __('Actions') ?></th>
-        </tr>
-        <?php foreach ($user->bookings as $bookings): ?>
-        <tr>
-            <td><?= h($bookings->id) ?></td>
-            <td><?= h($bookings->product_id) ?></td>
-            <td><?= h($bookings->quantity) ?></td>
-            <td><?= h($bookings->user_id) ?></td>
-            <td><?= h($bookings->created) ?></td>
-            <td><?= h($bookings->modified) ?></td>
-
-            <td class="actions">
-                <?= $this->Html->link(__('View'), ['controller' => 'Bookings', 'action' => 'view', $bookings->id]) ?>
-
-                <?= $this->Html->link(__('Edit'), ['controller' => 'Bookings', 'action' => 'edit', $bookings->id]) ?>
-
-                <?= $this->Form->postLink(__('Delete'), ['controller' => 'Bookings', 'action' => 'delete', $bookings->id], ['confirm' => __('Are you sure you want to delete # {0}?', $bookings->id)]) ?>
-
-            </td>
-        </tr>
-
-        <?php endforeach; ?>
-    </table>
-    <?php endif; ?>
-    </div>
-</div>
-<div class="related row">
-    <div class="column large-12">
-    <h4 class="subheader"><?= __('Related Stores') ?></h4>
-    <?php if (!empty($user->stores)): ?>
-    <table cellpadding="0" cellspacing="0">
-        <tr>
-            <th><?= __('Id') ?></th>
-            <th><?= __('Store Name') ?></th>
-            <th><?= __('User Id') ?></th>
-            <th><?= __('Created') ?></th>
-            <th><?= __('Modified') ?></th>
-            <th class="actions"><?= __('Actions') ?></th>
-        </tr>
-        <?php foreach ($user->stores as $stores): ?>
-        <tr>
-            <td><?= h($stores->id) ?></td>
-            <td><?= h($stores->store_name) ?></td>
-            <td><?= h($stores->user_id) ?></td>
-            <td><?= h($stores->created) ?></td>
-            <td><?= h($stores->modified) ?></td>
-
-            <td class="actions">
-                <?= $this->Html->link(__('View'), ['controller' => 'Stores', 'action' => 'view', $stores->id]) ?>
-
-                <?= $this->Html->link(__('Edit'), ['controller' => 'Stores', 'action' => 'edit', $stores->id]) ?>
-
-                <?= $this->Form->postLink(__('Delete'), ['controller' => 'Stores', 'action' => 'delete', $stores->id], ['confirm' => __('Are you sure you want to delete # {0}?', $stores->id)]) ?>
-
-            </td>
-        </tr>
-
-        <?php endforeach; ?>
-    </table>
-    <?php endif; ?>
-    </div>
-</div>
+        <?= $this->element('Body/back-top') ?>
+        <?= $this->element('Footer/footer-information') ?>
+        <?php if ($logged == false): ?>
+            <?= $this->element('Modal/create-account-modal') ?>
+            <?= $this->element('Modal/login-modal') ?>
+        <?php elseif($logged == true): ?>
+            <?= $this->element('Modal/logout-modal') ?>
+            <?= $this->element('Modal/edit-profile-modal') ?>
+        <?php endif; ?>
+    </body>
+</html>

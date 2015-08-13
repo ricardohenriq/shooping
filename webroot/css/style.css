@@ -187,3 +187,15 @@ hr{
     max-height:420px;
     overflow:auto
 }
+
+.user-picture{
+    float:left
+}
+
+.user-information{
+    margin-left:210px
+}
+
+.summary{
+    clear:both;padding-top:10px
+}

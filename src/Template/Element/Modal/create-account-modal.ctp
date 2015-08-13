@@ -17,13 +17,13 @@
                         <div class="form-group">
                             <label for="pass_ca" class="control-label col-md-3">Password</label>
                             <div class="col-md-9">
-                                <?= $this->Form->input('password', ['label' => false, 'class' => 'form-control', 'placeholder' => 'Senha', 'id' => 'pass_ca', 'data-html' => 'true']) ?>
+                                <?= $this->Form->input('password', ['label' => false, 'class' => 'form-control', 'placeholder' => 'Senha', 'id' => 'password', 'data-html' => 'true']) ?>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="re_pass" class="control-label col-md-3">Retype Pass</label>
                             <div class="col-md-9">
-                                <?= $this->Form->input('password', ['label' => false, 'class' => 'form-control', 'placeholder' => 'Redigite a Senha', 'name' => 're_pass_ca', 'id' => 're_pass_ca']) ?>
+                                <?= $this->Form->input('password', ['label' => false, 'class' => 'form-control', 'placeholder' => 'Redigite a Senha', 'name' => 're_password', 'id' => 're_password']) ?>
                             </div>
                         </div>
                         <div class="form-group">

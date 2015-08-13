@@ -39,17 +39,33 @@ class UsersController extends AppController
      */
     public function view($id = null)
     {
-        // Recupera a Entidade "User" (Linha da tabela "users") pelo "id"
-        // que é a Primary Key e o conteudo relacionado (user_types, bookings e stores)
-        // do usuário.
         $user = $this->Users->get($id, [
             'contain' => ['UserTypes', 'Bookings', 'Stores']
         ]);
-        // Atribui a variavel da view 'user' o valor da variavel (entidade) $user
         $this->set('user', $user);
-        // CARECE EXPLICAÇÃO
-        // Serializa a variavel 'users' para o formato json
-        $this->set('_serialize', ['user']);
+
+        //-------------------------------------------------------------------------
+
+        $bannerType = 1;
+        $bannersQuantity = 3;
+        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $this->set('smallBanners', $smallBanners);
+
+        //-------------------------------------------------------------------------
+
+        $bannerType = 2;
+        $bannersQuantity = 1;
+        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $this->set('fullBanners', $fullBanners);
+
+        //-------------------------------------------------------------------------
+
+        $logged = $this->Auth->user();
+        $this->set('logged', $logged);
+
+        //-------------------------------------------------------------------------
+
+        $this->set('pageTitle', $user['username'] . ' - Stores');
     }
 
     /**

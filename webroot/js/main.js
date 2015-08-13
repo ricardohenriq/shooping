@@ -10,7 +10,7 @@ $( document ).ready(function(){
         orientation: "top"
     });
 
-    $("#pass_ca").popover({
+    $("#password").popover({
         title: 'A senha deve conter entre 8 e 16 caracteres, incluindo:',
         content: '<ul><li>Letras Maiusculas</li><li>Letras Minusculas</li><li>Numeros</li></ul>',
         trigger: 'hover',
