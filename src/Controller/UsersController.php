@@ -42,6 +42,7 @@ class UsersController extends AppController
         $user = $this->Users->get($id, [
             'contain' => ['UserTypes', 'Bookings', 'Stores']
         ]);
+        $user['picture'] = 'face200x200.png';
         $this->set('user', $user);
 
         //-------------------------------------------------------------------------

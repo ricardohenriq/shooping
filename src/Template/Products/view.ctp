@@ -44,7 +44,7 @@
         <?= $this->Shrink->fetch('js') ?>
     </head>
     <body>
-        <?= $this->element('Navbar/navbar-main') ?>
+        <?= $this->element('Navbar/navbar_main') ?>
         <?= $this->Flash->render() ?>
         <div class="wrapper">
             <div class="container">
@@ -55,20 +55,20 @@
                     <?= $this->element('Body/product_features') ?>
                 </div>
                 <div class="row">
-                    <?= $this->element('Body/full-banner') ?>
+                    <?= $this->element('Body/full_banner') ?>
                 </div>
                 <div class="row">
-                    <?= $this->element('Footer/footer-newsletter') ?>
+                    <?= $this->element('Footer/footer_newsletter') ?>
                 </div>
             </div>
         </div>
-        <?= $this->element('Body/back-top') ?>
-        <?= $this->element('Footer/footer-information') ?>
+        <?= $this->element('Body/back_top') ?>
+        <?= $this->element('Footer/footer_information') ?>
         <?php if ($logged == false): ?>
-            <?= $this->element('Modal/create-account-modal') ?>
-            <?= $this->element('Modal/login-modal') ?>
+            <?= $this->element('Modal/create_account_modal') ?>
+            <?= $this->element('Modal/login_modal') ?>
         <?php elseif($logged == true): ?>
-            <?= $this->element('Modal/logout-modal') ?>
+            <?= $this->element('Modal/logout_modal') ?>
         <?php endif; ?>
     </body>
 </html>

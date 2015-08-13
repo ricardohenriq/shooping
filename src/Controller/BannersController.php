@@ -22,7 +22,32 @@ class BannersController extends AppController
             'contain' => ['BannerTypes', 'Users']
         ];
         $this->set('banners', $this->paginate($this->Banners));
-        $this->set('_serialize', ['banners']);
+        //$this->set('_serialize', ['banners']);
+
+        //-------------------------------------------------------------------------
+
+        $bannerType = 1;
+        $bannersQuantity = 3;
+        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity,
+            1);
+        $this->set('smallBanners', $smallBanners);
+
+        //-------------------------------------------------------------------------
+
+        $bannerType = 2;
+        $bannersQuantity = 1;
+        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity,
+            1);
+        $this->set('fullBanners', $fullBanners);
+
+        //-------------------------------------------------------------------------
+
+        $logged = $this->Auth->user();
+        $this->set('logged', $logged);
+
+        //-------------------------------------------------------------------------
+
+        $this->set('pageTitle', $this->Auth->User('username') . ' - Stores');
     }
 
     /**

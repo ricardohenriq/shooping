@@ -33,19 +33,17 @@
         <?= $this->Html->meta('og:image','') ?>
         <?= $this->Html->meta('og:type','') ?>
         <?= $this->Html->meta('og:site_name','') ?>
-        <?= $this->Html->css('Bootstrap/css/bootstrap.min.css') ?>
-        <?= $this->Html->css('font-awesome-4.3.0/css/font-awesome.min.css') ?>
-        <?= $this->Html->css('datepicker/css/datepicker.css') ?>
-        <?= $this->Html->css('style.css') ?>
-        <?= $this->Html->css('menu-plugin.css') ?>
-        <?= $this->Html->script('jquery-1.11.1.min.js') ?>
-        <?= $this->Html->script('bootstrap.min.js') ?>
-        <?= $this->Html->script('Jquery-Validate/jquery.validate.min.js') ?>
-        <?= $this->Html->script('datepicker/js/bootstrap-datepicker.js') ?>
-        <?= $this->Html->script('main.js',['defer' => true]) ?>
+        <?= $this->Shrink->css(['Bootstrap/css/bootstrap.min.css',
+            'font-awesome-4.3.0/css/font-awesome.min.css', 'datepicker/css/datepicker.css',
+            'jquery-bxslider/jquery.bxslider.css', 'style.css', 'menu-plugin.css']) ?>
+        <?= $this->Shrink->js(['jquery-1.11.1.min.js', 'bootstrap.min.js',
+            'Jquery-Validate/jquery.validate.min.js', 'datepicker/js/bootstrap-datepicker.js',
+            'jquery-bxslider/jquery.bxslider.min.js', 'main.js']) ?>
+        <?= $this->Shrink->fetch('css') ?>
+        <?= $this->Shrink->fetch('js') ?>
     </head>
     <body>
-        <?= $this->element('Navbar/navbar-main') ?>
+        <?= $this->element('Navbar/navbar_main') ?>
         <?= $this->Flash->render() ?>
         <div class="wrapper">
             <div class="container">
@@ -54,24 +52,24 @@
                     <?= $this->element('Body/profile') ?>
                 </div>
                 <div class="row">
-                    <?= $this->element('Body/small-banners') ?>
+                    <?= $this->element('Body/small_banners') ?>
                 </div>
                 <div class="row">
-                    <?= $this->element('Body/full-banner') ?>
+                    <?= $this->element('Body/full_banner') ?>
                 </div>
                 <div class="row">
-                    <?= $this->element('Footer/footer-newsletter') ?>
+                    <?= $this->element('Footer/footer_newsletter') ?>
                 </div>
             </div>
         </div>
-        <?= $this->element('Body/back-top') ?>
-        <?= $this->element('Footer/footer-information') ?>
+        <?= $this->element('Body/back_top') ?>
+        <?= $this->element('Footer/footer_information') ?>
         <?php if ($logged == false): ?>
-            <?= $this->element('Modal/create-account-modal') ?>
-            <?= $this->element('Modal/login-modal') ?>
+            <?= $this->element('Modal/create_account_modal') ?>
+            <?= $this->element('Modal/login_modal') ?>
         <?php elseif($logged == true): ?>
-            <?= $this->element('Modal/logout-modal') ?>
-            <?= $this->element('Modal/edit-profile-modal') ?>
+            <?= $this->element('Modal/logout_modal') ?>
+            <?= $this->element('Modal/edit_profile_modal') ?>
         <?php endif; ?>
     </body>
 </html>

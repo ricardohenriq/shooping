@@ -34,13 +34,18 @@ class SearchComponent extends Component
         return $query->all();
     }
 
-    public function listAllBanners($bannerType, $bannersQuantity)
+    public function listAllBanners($bannerType, $bannersQuantity, $userId = null)
     {
         $smallBanners = TableRegistry::get('banners');
         $query = $smallBanners->find();
-        $query->select(['banner_description', 'path_banner', 'url_redirect'])
-            ->where(['banner_type_id' => $bannerType])
-            ->limit($bannersQuantity);
+        $query->select(['banner_description', 'path_banner', 'url_redirect']);
+        $query->where(['banner_type_id' => $bannerType]);
+        if($userId === null){
+            $query->where(['user_id' => $userId]);
+        }
+        if($bannersQuantity > 0){
+            $query->limit($bannersQuantity);
+        }
         return $query;
     }
 
