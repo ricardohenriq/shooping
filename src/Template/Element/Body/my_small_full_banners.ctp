@@ -1,7 +1,7 @@
 <div class="col-md-9">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <button type="button" class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#edit_profile_modal">Adicionar Banner</button>
+            <button type="button" class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#add_banner_modal">Adicionar Banner</button>
             <h3 class="panel-title text-center title">Meus Banners</h3>
         </div>
         <div class="panel-body span7 text-center">
@@ -12,15 +12,19 @@
                     <?php foreach($smallBanners as $smallBanner): ?>
                         <div class="col-md-4 banner-block">
                             <div class="view view-first">
-                                <?= $this->Html->image($smallBanner['path_banner'], ['title' => $smallBanner['banner_description'], 'url' => $smallBanner['url_redirect'], 'class' => 'img-full-screen']) ?>
+                                <?= $this->Html->image($smallBanner['path_banner'],
+                                ['title' => $smallBanner['banner_description'],
+                                'url' => $smallBanner['url_redirect'], 'class' => 'img-full-screen']) ?>
                                 <div class="mask">
                                     <h2><?= $smallBanner['banner_description'] ?></h2>
                                     <a href="#" class="btn btn-info" title="Editar este Banner">
                                         <span class="glyphicon glyphicon-pencil"></span>
                                     </a>
-                                    <a href="#" class="btn btn-danger" title="Deletar este Banner">
-                                        <span class="glyphicon glyphicon-trash"></span>
-                                    </a>
+                                    <?= $this->Form->postLink('<span class="glyphicon glyphicon-trash"></span>',
+                                    ['controller' => 'Users', 'action' => 'delete', $smallBanner['id']],
+                                    ['class' => 'btn btn-danger', 'title' => 'Deletar este Banner', 'escape' => false,
+                                    'confirm' => __('Você deseja realmente deletar o Banner: #{0}?',
+                                    $smallBanner['banner_description'])]) ?>
                                 </div>
                             </div>
                         </div>
@@ -36,12 +40,14 @@
                             <?= $this->Html->image($fullBanner['path_banner'], ['title' => $fullBanner['banner_description'], 'url' => $fullBanner['url_redirect'], 'class' => 'img-full-screen']) ?>
                             <div class="mask">
                                 <h2><?= $fullBanner['banner_description'] ?></h2>
-                                <a href="#" class="btn btn-info">
-                                    <span class="glyphicon glyphicon-search"></span>
+                                <a href="#" class="btn btn-info" title="Editar este Banner">
+                                    <span class="glyphicon glyphicon-pencil"></span>
                                 </a>
-                                <a href="#" class="btn btn-info">
-                                    <span class="glyphicon glyphicon-link"></span>
-                                </a>
+                                <?= $this->Form->postLink('<span class="glyphicon glyphicon-trash"></span>',
+                                ['controller' => 'Users', 'action' => 'delete', $fullBanner['id']],
+                                ['class' => 'btn btn-danger', 'title' => 'Deletar este Banner', 'escape' => false,
+                                'confirm' => __('Você deseja realmente deletar o Banner: #{0}?',
+                                $fullBanner['banner_description'])]) ?>
                             </div>
                         </div>
                     </div>

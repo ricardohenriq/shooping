@@ -67,6 +67,7 @@
         <?php if ($logged == false): ?>
             <?= $this->element('Modal/create_account_modal') ?>
             <?= $this->element('Modal/login_modal') ?>
+            <?= $this->element('Modal/add_banner_modal') ?>
         <?php elseif($logged == true): ?>
             <?= $this->element('Modal/logout_modal') ?>
             <?= $this->element('Modal/edit_profile_modal') ?>

@@ -38,7 +38,7 @@ class SearchComponent extends Component
     {
         $smallBanners = TableRegistry::get('banners');
         $query = $smallBanners->find();
-        $query->select(['banner_description', 'path_banner', 'url_redirect']);
+        $query->select(['id', 'banner_description', 'path_banner', 'url_redirect']);
         $query->where(['banner_type_id' => $bannerType]);
         if($userId === null){
             $query->where(['user_id' => $userId]);
