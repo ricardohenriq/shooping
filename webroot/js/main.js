@@ -123,8 +123,6 @@ function changeProducts(selectId, selectContainer, url, ulSlider) {
             $(selectContainer).empty();
             formatProducts(products, ulSlider, selectContainer);
         },
-        error: function (response, error) {
-        },
         dataType: 'json',
         global: false
     });
@@ -209,19 +207,28 @@ function getBanner(url){
     $.ajax({
      type: 'post',
      url: url,
-     beforeSend: function () {
-     },
      success: function (response) {
-        formatBanner(response);
-     },
-     error: function (response, error) {
+        formatSmallFullBanner(response);
      },
      dataType: 'json',
      global: false
      });
 }
 
+function formatSmallFullBanner(banner){
+    if(banner.banner_type_id === 1){
+        $('#banner-pic-modal').addClass('picture-left');
+        $('#banner-info').addClass('banner-information');
+    }else if(banner.banner_type_id === 2){
+        $('#banner-pic-modal').removeClass('picture-left');
+        $('#banner-info').removeClass('banner-information');
+        $('#banner-pic-modal').css('max-width','100%');
+    }
+    formatBanner(banner);
+}
+
 function formatBanner(banner){
+    document.getElementById('banner-name-modal').innerHTML = banner.banner_description;
     document.getElementById('banner-pic-modal').src = '/img/' + banner.path_banner;
     document.getElementById('banner-id-modal').innerHTML = banner.id;
     document.getElementById('banner-type-modal').innerHTML = banner.banner_type_id;
