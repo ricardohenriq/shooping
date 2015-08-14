@@ -21,7 +21,7 @@
                                     <?= $this->Html->link('<span class="glyphicon glyphicon-eye-open"></span>','#',
                                     ['class' => 'btn btn-success', 'title' => 'Detalhes do Banner', 'data-toggle' => 'modal',
                                     'data-target' => '#view_banner_modal', 'onclick' =>
-                                    'getBanner(\'banners/get-banner-json/' . $smallBanner['id'] . '\')', 'escape' => false])?>
+                                    'getBanner(\'banners/get-banner-json/' . $smallBanner['id'] . '\', \'#view_banner_modal\')', 'escape' => false])?>
 
                                     <?= $this->Html->link('<span class="glyphicon glyphicon-pencil"></span>','#',
                                     ['class' => 'btn btn-info', 'title' => 'Editar este Banner', 'escape' => false])?>
@@ -52,7 +52,7 @@
                                 <?= $this->Html->link('<span class="glyphicon glyphicon-eye-open"></span>','#',
                                 ['class' => 'btn btn-success', 'title' => 'Detalhes do Banner', 'data-toggle' => 'modal',
                                 'data-target' => '#view_banner_modal', 'onclick' =>
-                                'getBanner(\'banners/get-banner-json/' . $fullBanner['id'] . '\')', 'escape' => false])?>
+                                'getBanner(\'banners/get-banner-json/' . $fullBanner['id'] . '\', \'#view_banner_modal\')', 'escape' => false])?>
 
                                 <?= $this->Html->link('<span class="glyphicon glyphicon-pencil"></span>','#',
                                 ['class' => 'btn btn-info', 'title' => 'Editar este Banner', 'escape' => false])?>
