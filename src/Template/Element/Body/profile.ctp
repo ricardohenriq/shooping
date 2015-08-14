@@ -5,14 +5,14 @@
             <h3 class="panel-title text-center title">Meu Perfil</h3>
         </div>
         <div class="panel-body">
-            <?= $this->Html->image($user['picture'], ['alt' => '', 'class' => 'user-picture']) ?>
-            <div class="user-information">
-                <strong>Nome:</strong>&nbsp;<?= $user['username'] ?><br>
-                <strong>Email:</strong>&nbsp;<?= $user['email'] ?><br>
-                <strong>Signed up:</strong>&nbsp;<?= $user['created'] ?><br>
-                <strong>Last activity:</strong>&nbsp;<?= $user['modified'] ?><br>
-                <strong>Age:</strong>&nbsp;19 Years (1997/09/12)<br>
-            </div>
+            <?= $this->Html->image($user['picture'], ['alt' => '', 'class' => 'picture-left']) ?>
+            <p class="user-information">
+                <span class="title">Nome:</span>&nbsp;<?= $user['username'] ?><br>
+                <span class="title">Email:</span>&nbsp;<?= $user['email'] ?><br>
+                <span class="title">Signed up:</span>&nbsp;<?= $user['created'] ?><br>
+                <span class="title">Last activity:</span>&nbsp;<?= $user['modified'] ?><br>
+                <span class="title">Age:</span>&nbsp;19 Years (1997/09/12)<br>
+            </p>
             <div class="summary">
                 <div class="comments-summary">
                     <h3><i class="fa fa-comment"></i> Comentários</h3>

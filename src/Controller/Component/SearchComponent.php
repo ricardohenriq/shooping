@@ -46,7 +46,17 @@ class SearchComponent extends Component
         if($bannersQuantity > 0){
             $query->limit($bannersQuantity);
         }
-        return $query;
+        return $query->all();
+    }
+
+    public function getBanner($bannerId)
+    {
+        $smallBanners = TableRegistry::get('banners');
+        $query = $smallBanners->find();
+        $query->select(['id', 'path_banner', 'banner_description', 'banner_type_id',
+            'url_redirect', 'created', 'modified'])
+            ->where(['id' => $bannerId]);
+        return $query->first();
     }
 
     public function listProductsByTrend($subCategoryId, $productsQuantity,
@@ -54,7 +64,8 @@ class SearchComponent extends Component
     {
         $products = TableRegistry::get('products');
         $query = $products->find();
-        $query->select(['product_name', 'quantity', 'sold', 'description', 'price', 'old_price', 'thumbnail']);
+        $query->select(['product_name', 'quantity', 'sold', 'description', 'price',
+            'old_price', 'thumbnail']);
             if ($subCategoryId > 0) {
                 $query = $query->where(['sub_category_id' => $subCategoryId]);
             }
@@ -108,7 +119,8 @@ class SearchComponent extends Component
     public function createProductsPaginate($search)
     {
         $paginate = [
-            'fields' => ['product_name', 'quantity', 'sold', 'description', 'price', 'old_price', 'thumbnail'],
+            'fields' => ['product_name', 'quantity', 'sold', 'description', 'price',
+                'old_price', 'thumbnail'],
             'conditions' => ['product_name LIKE' => '%'.$search.'%'],
             'order' => ['price' => 'DESC'],
             'limit' => 3

@@ -35,7 +35,8 @@
         <?= $this->Html->meta('og:site_name','') ?>
         <?= $this->Shrink->css(['Bootstrap/css/bootstrap.min.css',
             'font-awesome-4.3.0/css/font-awesome.min.css', 'datepicker/css/datepicker.css',
-            'jquery-bxslider/jquery.bxslider.css', 'style.css', 'menu-plugin.css']) ?>
+            'jquery-bxslider/jquery.bxslider.css', 'style.css', 'menu-plugin.css',
+            'hover-images.css']) ?>
         <?= $this->Shrink->js(['jquery-1.11.1.min.js', 'bootstrap.min.js',
             'Jquery-Validate/jquery.validate.min.js', 'datepicker/js/bootstrap-datepicker.js',
             'jquery-bxslider/jquery.bxslider.min.js', 'main.js']) ?>
@@ -51,15 +52,6 @@
                     <?= $this->element('Body/account_menu') ?>
                     <?= $this->element('Body/my_small_full_banners') ?>
                 </div>
-                <div class="row">
-                    <?= $this->element('Body/small_banners') ?>
-                </div>
-                <div class="row">
-                    <?= $this->element('Body/full_banner') ?>
-                </div>
-                <div class="row">
-                    <?= $this->element('Footer/footer_newsletter') ?>
-                </div>
             </div>
         </div>
         <?= $this->element('Body/back_top') ?>
@@ -68,6 +60,7 @@
             <?= $this->element('Modal/create_account_modal') ?>
             <?= $this->element('Modal/login_modal') ?>
             <?= $this->element('Modal/add_banner_modal') ?>
+            <?= $this->element('Modal/view_banner_modal') ?>
         <?php elseif($logged == true): ?>
             <?= $this->element('Modal/logout_modal') ?>
             <?= $this->element('Modal/edit_profile_modal') ?>

@@ -1,4 +1,4 @@
-<div class="modal fade" id="add_banner_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade" id="add_banner_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -13,7 +13,7 @@
                     <br>Submeta o Link Completo de Redirecionamento quando o Banner for clicado seguindo o exemplo:
                     (http://www.site.com/banner.gif)
                     <br><br>
-                </>
+                </p>
                 <?= $this->Form->create(null, ['url' => ['controller' => 'Banners', 'action' => 'add'], 'type' => 'file', 'id' => 'add-banner-form', 'class' => 'form-horizontal']) ?>
                     <div class="col-md-12">
                         <div class="form-group">

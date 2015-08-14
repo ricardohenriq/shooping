@@ -66,6 +66,13 @@ class BannersController extends AppController
         $this->set('_serialize', ['banner']);
     }
 
+    public function getBannerJson($id = null){
+        $this->autoRender = false;
+        $this->response->type('json');
+        $banner = $this->Search->getBanner($id);
+        $this->response->body(json_encode($banner));
+    }
+
     /**
      * Add method
      *

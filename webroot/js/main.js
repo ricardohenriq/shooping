@@ -148,14 +148,7 @@ function formatProducts(products, ulSlider, selectContainer) {
     });
 
     var ul = document.createElement('ul');
-    //var ul = document.getElementById('most-popular-products');
     $(ul).attr('id', ulSlider);
-    /*$(ul).css({
-     'width': '615%',
-     'position': 'relative',
-     'transition-duration': '0s',
-     'transform': 'translate3d(-280px, 0px, 0px)'
-     });*/
 
     var productsLength = products.length;
     for (var i = 0; i < productsLength; i++) {
@@ -189,13 +182,8 @@ function formatProducts(products, ulSlider, selectContainer) {
 
         $(li).append(div);
         $(ul).append(li);
-        //$('#teste').append('<span>'+products[0]['product_name']+'</span><br>');
     }
-    //$(divViewport).append(ul);
-    //$(divWrapper).append(divViewport);
-    /*$(divWrapper).append('<div class="bx-controls bx-has-controls-direction">' +
-     '<div class="bx-controls-direction"><a class="bx-prev disabled" href="">Prev</a>' +
-     '<a class="bx-next disabled" href="">Next</a></div></div>');*/
+
     $(selectContainer).append(ul);
     $('#' + ulSlider).bxSlider(trendProductsSliderConfig);
 }
@@ -217,3 +205,29 @@ function redirect(option){
     location = option.value;
 }
 
+function getBanner(url){
+    $.ajax({
+     type: 'post',
+     url: url,
+     beforeSend: function () {
+     },
+     success: function (response) {
+        formatBanner(response);
+     },
+     error: function (response, error) {
+     },
+     dataType: 'json',
+     global: false
+     });
+}
+
+function formatBanner(banner){
+    document.getElementById('banner-pic-modal').src = '/img/' + banner.path_banner;
+    document.getElementById('banner-id-modal').innerHTML = banner.id;
+    document.getElementById('banner-type-modal').innerHTML = banner.banner_type_id;
+    document.getElementById('banner-url-redirect-modal').innerHTML = banner.url_redirect;
+    document.getElementById('banner-created-modal').innerHTML = banner.created;
+    document.getElementById('banner-modified-modal').innerHTML = banner.modified;
+    /*document.getElementById('banner-clicks-modal').innerHTML = banner.clicks;*/
+    document.getElementById('banner-description-modal').innerHTML = banner.banner_description;
+}

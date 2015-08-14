@@ -151,6 +151,7 @@ class ProductsController extends AppController
         $this->autoRender = false;
         if($this->request->is('post'))
         {
+            $this->response->type('json');
             $productsQuantity = 4;
             $order = 'DESC';
             $column = 'visited';
@@ -158,7 +159,7 @@ class ProductsController extends AppController
             $productsMostPopular = $this->Search->listProductsByTrend($subCategoryId, $productsQuantity, $column, $order);
             //$this->set('productsMostPopular', $productsMostPopular);
             //$this->set('_serialize',array('productsMostPopular'));
-            echo json_encode($productsMostPopular);
+            $this->response->body(json_encode($productsMostPopular));
         }
     }
 
