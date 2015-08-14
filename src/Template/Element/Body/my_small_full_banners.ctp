@@ -17,9 +17,11 @@
                                 'url' => $smallBanner['url_redirect'], 'class' => 'img-full-screen']) ?>
                                 <div class="mask">
                                     <h2><?= $smallBanner['banner_description'] ?></h2>
-                                    <a href="#" class="btn btn-info" title="Editar este Banner">
-                                        <span class="glyphicon glyphicon-pencil"></span>
-                                    </a>
+                                    <?= $this->Html->link('<span class="glyphicon glyphicon-eye-open"></span>','#',
+                                    ['class' => 'btn btn-success', 'title' => 'Detalhes do Banner', 'escape' => false])?>
+
+                                    <?= $this->Html->link('<span class="glyphicon glyphicon-pencil"></span>','#',
+                                    ['class' => 'btn btn-info', 'title' => 'Editar este Banner', 'escape' => false])?>
                                     <?= $this->Form->postLink('<span class="glyphicon glyphicon-trash"></span>',
                                     ['controller' => 'Users', 'action' => 'delete', $smallBanner['id']],
                                     ['class' => 'btn btn-danger', 'title' => 'Deletar este Banner', 'escape' => false,
@@ -37,12 +39,17 @@
                 <?php foreach($fullBanners as $fullBanner): ?>
                     <div class="col-md-12 banner-block">
                         <div class="view view-first">
-                            <?= $this->Html->image($fullBanner['path_banner'], ['title' => $fullBanner['banner_description'], 'url' => $fullBanner['url_redirect'], 'class' => 'img-full-screen']) ?>
+                            <?= $this->Html->image($fullBanner['path_banner'],
+                            ['title' => $fullBanner['banner_description'], 'url' => $fullBanner['url_redirect'],
+                            'class' => 'img-full-screen']) ?>
                             <div class="mask">
                                 <h2><?= $fullBanner['banner_description'] ?></h2>
-                                <a href="#" class="btn btn-info" title="Editar este Banner">
-                                    <span class="glyphicon glyphicon-pencil"></span>
-                                </a>
+                                <?= $this->Html->link('<span class="glyphicon glyphicon-eye-open"></span>','#',
+                                ['class' => 'btn btn-success', 'title' => 'Detalhes do Banner', 'escape' => false])?>
+
+                                <?= $this->Html->link('<span class="glyphicon glyphicon-pencil"></span>','#',
+                                ['class' => 'btn btn-info', 'title' => 'Editar este Banner', 'escape' => false])?>
+
                                 <?= $this->Form->postLink('<span class="glyphicon glyphicon-trash"></span>',
                                 ['controller' => 'Users', 'action' => 'delete', $fullBanner['id']],
                                 ['class' => 'btn btn-danger', 'title' => 'Deletar este Banner', 'escape' => false,
