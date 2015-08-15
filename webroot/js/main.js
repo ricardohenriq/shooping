@@ -203,23 +203,25 @@ function redirect(option){
     location = option.value;
 }
 
-function getBanner(url,functionToCall){
+function ajaxJsonData(functionToExecute, url, dataProperties){
     $.ajax({
-     type: 'post',
-     url: url,
-     success: function (response) {
-         if(functionToCall == 'formatSmallFullBanner') {
-             formatSmallFullBanner(response);
-         }else if(functionToCall == 'formatEditBanner'){
-             formatEditBanner(response);
-         }
-     },
-     dataType: 'json',
-     global: false
-     });
+        type: 'post',
+        url: url,
+        data: dataProperties,
+        success: function (response) {
+            functionToExecute(response);
+        },
+        dataType: 'json',
+        global: false
+    });
 }
 
-function formatSmallFullBanner(banner){
+function viewBanner(url){
+    var dataProperties = null;
+    ajaxJsonData(formatViewSmallFullBanner, url, dataProperties);
+}
+
+function formatViewSmallFullBanner(banner){
     if(banner.banner_type_id === 1){
         $('#banner-pic-modal').addClass('picture-left');
         $('#banner-info').addClass('banner-information');
@@ -243,7 +245,25 @@ function formatViewBanner(banner){
     $('#banner-description-modal').text(banner.banner_description);
 }
 
+function formatEditSmallFullBanner(banner){
+    if(banner.banner_type_id === 1){
+        $('#banner-pic-modal').addClass('picture-left');
+        //$('#banner-info').addClass('banner-information');
+    }else if(banner.banner_type_id === 2){
+        $('#banner-pic-modal').removeClass('picture-left');
+        //$('#banner-info').removeClass('banner-information');
+        $('#banner-pic-modal').css('max-width','100%');
+    }
+    formatEditBanner(banner);
+}
+
+function editBanner(url){
+    var dataProperties = null;
+    ajaxJsonData(formatEditSmallFullBanner, url, dataProperties);
+}
+
 function formatEditBanner(banner){
+    $('#banner-pic-edit-modal').attr('src', '/img/' + banner.path_banner);
     $('#link-edit').attr('value', banner.url_redirect);
     $('#title-edit').attr('value', banner.banner_description);
     /*$('#show-times-edit').attr('value', banner.banner_description);*/

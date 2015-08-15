@@ -7,65 +7,143 @@ USE shopping;
 # 3 registros na tabela "user_types" -------------------------------------------------
 
 INSERT INTO user_types (type_name, created, modified)
-VALUES ('common', CURDATE(), CURDATE());
+VALUES ('Comum', CURDATE(), CURDATE());
 
 INSERT INTO user_types (type_name, created, modified)
-VALUES ('businessman', CURDATE(), CURDATE());
+VALUES ('Empresário', CURDATE(), CURDATE());
 
 INSERT INTO user_types (type_name, created, modified)
-VALUES ('admin', CURDATE(), CURDATE());
+VALUES ('Administrador', CURDATE(), CURDATE());
 
-# 11 registros na tabela "users" -----------------------------------------------------
-
-INSERT INTO users (email, password, username, user_type_id, created, modified)
-VALUES ('bill@outlook.com', '123456', 'bill', 1, CURDATE(), CURDATE());
+# 30 registros na tabela "users" -----------------------------------------------------
 
 INSERT INTO users (email, password, username, user_type_id, created, modified)
-VALUES ('larry@gmail.com', '098765', 'larry', 2, CURDATE(), CURDATE());
+VALUES ('jose@outlook.com', 'novembro', 'José Souza', 1, '2013-10-28 22:39:19', '2014-10-28 22:39:19');
 
 INSERT INTO users (email, password, username, user_type_id, created, modified)
-VALUES ('steve@apple.com', '1234567890', 'steve', 3, CURDATE(), CURDATE());
+VALUES ('joao@gmail.com', '987654321', 'Joao Magalhães', 1, '2013-10-28 22:39:19', '2014-10-28 22:39:19');
 
 INSERT INTO users (email, password, username, user_type_id, created, modified)
-VALUES ('maria@hotmail.com', 'qwerty', 'maria', 1, CURDATE(), CURDATE());
+VALUES ('bruna@apple.com', '123456789', 'Bruna Andrade', 1, '2013-10-28 22:39:19', '2014-10-28 22:39:19');
 
 INSERT INTO users (email, password, username, user_type_id, created, modified)
-VALUES ('jose@hotmail.com', 'asdfg', 'jose', 1, CURDATE(), CURDATE());
+VALUES ('maria@hotmail.com', 'novembro', 'Maria das Graças', 1, '2013-10-28 22:39:19', '2014-10-28 22:39:19');
 
 INSERT INTO users (email, password, username, user_type_id, created, modified)
-VALUES ('joao@hotmail.com', 'zxcv', 'joao', 1, CURDATE(), CURDATE());
+VALUES ('joaquim@hotmail.com', 'dezembro', 'Joaquim Damasceno', 1, '2013-10-28 22:39:19', '2014-10-28 22:39:19');
 
 INSERT INTO users (email, password, username, user_type_id, created, modified)
-VALUES ('ford@hotmail.com', 'mnbvc', 'ford', 2, CURDATE(), CURDATE());
+VALUES ('soares@hotmail.com', 'janeiro', 'Soares Siqueira', 1, '2013-10-28 22:39:19', '2014-10-28 22:39:19');
 
 INSERT INTO users (email, password, username, user_type_id, created, modified)
-VALUES ('toyota@hotmail.com', 'lkjhg', 'toyota', 1, CURDATE(), CURDATE());
+VALUES ('ana@hotmail.com', 'agosto', 'Ana Maria', 1, '2014-10-28 22:39:19', '2015-03-28 22:39:19');
 
 INSERT INTO users (email, password, username, user_type_id, created, modified)
-VALUES ('chevrolet@hotmail.com', 'poiuy', 'chevrolet', 1, CURDATE(), CURDATE());
+VALUES ('camila@hotmail.com', 'julho', 'Camila Silva', 1, '2014-10-28 22:39:19', '2015-03-28 22:39:19');
 
 INSERT INTO users (email, password, username, user_type_id, created, modified)
-VALUES ('benz@hotmail.com', 'trewq', 'benz', 1, CURDATE(), CURDATE());
+VALUES ('isabella@hotmail.com', 'junho', 'Isabela Silva', 1, '2014-10-28 22:39:19', '2015-03-28 22:39:19');
 
 INSERT INTO users (email, password, username, user_type_id, created, modified)
-VALUES ('dodge@hotmail.com', 'fdsa', 'dodge', 1, CURDATE(), CURDATE());
+VALUES ('isadora@hotmail.com', 'abril', 'Isadora Bulhões', 1, '2014-10-28 22:39:19', '2015-03-28 22:39:19');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('joana@hotmail.com', 'riodejaneiro', 'Joana Cardoso', 1, '2014-10-28 22:39:19', '2015-03-28 22:39:19');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('lurdes@hotmail.com', 'saopaulo', 'Lurdes Cardoso', 1, '2014-10-28 22:39:19', '2015-03-28 22:39:19');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('samela@hotmail.com', 'teresina', 'Samela Cardoso', 1, '2014-10-28 22:39:19', '2015-03-28 22:39:19');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('tamires@hotmail.com', 'paraguai', 'Tamires Andrade', 1, '2014-10-28 22:39:19', '2015-03-28 22:39:19');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('sandra@hotmail.com', 'argentina', 'Sandra Feitosa', 1, '2013-10-28 22:39:19', '2014-10-28 12:19:39');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('tatilla@hotmail.com', 'amazonas', 'Tatilla Amaral', 1, '2013-10-28 22:39:19', '2014-10-28 12:19:39');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('roseana@hotmail.com', 'salvador', 'Roseana Porto', 1, '2013-10-28 22:39:19', '2014-10-28 12:19:39');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('fernando@hotmail.com', 'cuiaba', 'Fernando Siqueira', 1, '2012-10-28 22:39:19', '2014-10-28 12:19:39');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('thiago@hotmail.com', 'matogrosso', 'Thiago Campos', 1, '2012-10-28 22:39:19', '2014-10-28 12:19:39');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('marcos@hotmail.com', 'goias', 'Marcos Andrade', 1, '2012-10-28 22:39:19', '2013-10-28 12:19:39');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('frederico@hotmail.com', 'roraima', 'Frederico Teixera', 1, '2012-10-28 22:39:19', '2013-10-28 12:19:39');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('pedro@hotmail.com', 'acre', 'Pedro Borges', 3, '2011-10-28 22:39:19', '2013-10-28 12:19:39');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('candido@hotmail.com', 'brasil', 'Candido Cardoso', 3, '2011-10-28 22:39:19', '2013-10-28 12:19:39');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('davi@hotmail.com', 'bahia', 'Davi Costa', 3, '2011-10-28 22:39:19', '2013-10-28 12:19:39');
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('renan@hotmail.com', 'fortaleza', 'Renan Rossi', 2, NOW(), NOW());
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('joelma@hotmail.com', 'acre', 'Joelma Brito', 2, NOW(), NOW());
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('geovana@hotmail.com', 'rondonia', 'Geovana Souza', 2, NOW(), NOW());
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('mirtes@hotmail.com', 'parana', 'Mirtes Fonseca', 2, NOW(), NOW());
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('mirela@hotmail.com', 'cimento', 'Mirela Barbosa', 2, NOW(), NOW());
+
+INSERT INTO users (email, password, username, user_type_id, created, modified)
+VALUES ('milena@hotmail.com', 'tocantins', 'Milena Carvalho', 2, NOW(), NOW());
 
 # INSERT INTO users (email, password, username, user_type_id, created, modified)
-# VALUES ('harley@hotmail.com', 'davidson', 'davidson', 1, CURDATE(), CURDATE());
+# VALUES ('silva@hotmail.com', 'silva', 'Silva', 1, NOW(), NOW());
 
-# 4 registros na tabela "stores" --------------------------------------------------
+# INSERT INTO users (email, password, username, user_type_id, created, modified)
+# VALUES ('santos@hotmail.com', 'santos', 'Santos', 2, NOW(), NOW());
 
-INSERT INTO stores (store_name, user_id, created, modified)
-VALUES ('Loja A', 1, CURDATE(), CURDATE());
+# INSERT INTO users (email, password, username, user_type_id, created, modified)
+# VALUES ('abravanel@hotmail.com', 'abravanel', 'Abravanel', 3, NOW(), NOW());
 
-INSERT INTO stores (store_name, user_id, created, modified)
-VALUES ('Loja B', 2, CURDATE(), CURDATE());
-
-INSERT INTO stores (store_name, user_id, created, modified)
-VALUES ('Loja C', 3, CURDATE(), CURDATE());
+# 9 registros na tabela "stores" --------------------------------------------------
 
 INSERT INTO stores (store_name, user_id, created, modified)
-VALUES ('Loja D', 4, CURDATE(), CURDATE());
+VALUES ('Loja A', 25, '2011-10-28 09:39:49', '2013-10-28 22:39:19');
+
+INSERT INTO stores (store_name, user_id, created, modified)
+VALUES ('Loja B', 26, '2011-10-28 09:39:49', '2013-10-28 22:39:19');
+
+INSERT INTO stores (store_name, user_id, created, modified)
+VALUES ('Loja C', 27, '2011-10-28 09:39:49', '2013-10-28 22:39:19');
+
+INSERT INTO stores (store_name, user_id, created, modified)
+VALUES ('Loja D', 27, NOW(), NOW());
+
+INSERT INTO stores (store_name, user_id, created, modified)
+VALUES ('Loja E', 28, '2012-10-28 09:39:49', '2014-10-28 22:39:19');
+
+INSERT INTO stores (store_name, user_id, created, modified)
+VALUES ('Loja F', 28, '2012-10-28 09:39:49', '2014-10-28 22:39:19');
+
+INSERT INTO stores (store_name, user_id, created, modified)
+VALUES ('Loja G', 29, '2012-10-28 09:39:49', '2014-10-28 22:39:19');
+
+INSERT INTO stores (store_name, user_id, created, modified)
+VALUES ('Loja H', 30, NOW(), NOW());
+
+INSERT INTO stores (store_name, user_id, created, modified)
+VALUES ('Loja I', 30, NOW(), NOW());
 
 # 17 regsistros na tabela "categories" ------------------------------------------------
 
