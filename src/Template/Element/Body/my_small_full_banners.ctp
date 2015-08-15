@@ -21,10 +21,12 @@
                                     <?= $this->Html->link('<span class="glyphicon glyphicon-eye-open"></span>','#',
                                     ['class' => 'btn btn-success', 'title' => 'Detalhes do Banner', 'data-toggle' => 'modal',
                                     'data-target' => '#view_banner_modal', 'onclick' =>
-                                    'getBanner(\'banners/get-banner-json/' . $smallBanner['id'] . '\', \'#view_banner_modal\')', 'escape' => false])?>
+                                    'getBanner(\'banners/get-banner-json/' . $smallBanner['id'] . '\',\'formatSmallFullBanner\')', 'escape' => false])?>
 
                                     <?= $this->Html->link('<span class="glyphicon glyphicon-pencil"></span>','#',
-                                    ['class' => 'btn btn-info', 'title' => 'Editar este Banner', 'escape' => false])?>
+                                    ['class' => 'btn btn-info', 'title' => 'Editar este Banner', 'data-toggle' => 'modal',
+                                    'data-target' => '#edit_banner_modal', 'onclick' =>
+                                    'getBanner(\'banners/get-banner-json/' . $smallBanner['id'] . '\',\'formatEditBanner\')', 'escape' => false])?>
 
                                     <?= $this->Form->postLink('<span class="glyphicon glyphicon-trash"></span>',
                                     ['controller' => 'Users', 'action' => 'delete', $smallBanner['id']],
@@ -52,10 +54,12 @@
                                 <?= $this->Html->link('<span class="glyphicon glyphicon-eye-open"></span>','#',
                                 ['class' => 'btn btn-success', 'title' => 'Detalhes do Banner', 'data-toggle' => 'modal',
                                 'data-target' => '#view_banner_modal', 'onclick' =>
-                                'getBanner(\'banners/get-banner-json/' . $fullBanner['id'] . '\', \'#view_banner_modal\')', 'escape' => false])?>
+                                'getBanner(\'banners/get-banner-json/' . $fullBanner['id'] . '\',\'formatSmallFullBanner\')', 'escape' => false])?>
 
                                 <?= $this->Html->link('<span class="glyphicon glyphicon-pencil"></span>','#',
-                                ['class' => 'btn btn-info', 'title' => 'Editar este Banner', 'escape' => false])?>
+                                ['class' => 'btn btn-info', 'title' => 'Editar este Banner', 'data-toggle' => 'modal',
+                                'data-target' => '#edit_banner_modal', 'onclick' =>
+                                'getBanner(\'banners/get-banner-json/' . $fullBanner['id'] . '\',\'formatEditBanner\')', 'escape' => false])?>
 
                                 <?= $this->Form->postLink('<span class="glyphicon glyphicon-trash"></span>',
                                 ['controller' => 'Users', 'action' => 'delete', $fullBanner['id']],

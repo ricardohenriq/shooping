@@ -7,17 +7,17 @@
             </div>
             <div class="modal-body">
                 <?= $this->Html->image('/img/loader.gif', ['title' => 'Arguarde o Download das Informações',
-                'class' => 'picture-left banner-pic-modal']) ?>
-                <p class="banner-info banner-information">
-                    <span class="title">Banner ID: </span><span class="banner-id-modal"></span><br>
-                    <span class="title">Tipo do Banner: </span><span class="banner-type-modal"></span><br>
-                    <span class="title">URL de Redirecionamento: </span><span class="banner-url-redirect-modal"></span><br>
-                    <span class="title">Adicionado em: </span><span class="banner-created-modal"></span><br>
-                    <span class="title">Ultima modificação em: </span><span class="banner-modified-modal"></span><br>
-                    <span class="title">Clicado: </span><span class="banner-clicks-modal"></span><br>
+                'id' => 'banner-pic-modal', 'class' => 'picture-left']) ?>
+                <p id="banner-info"class="banner-information">
+                    <span class="title">Banner ID: </span><span id="banner-id-modal"></span><br>
+                    <span class="title">Tipo do Banner: </span><span id="banner-type-modal"></span><br>
+                    <span class="title">URL de Redirecionamento: </span><span id="banner-url-redirect-modal"></span><br>
+                    <span class="title">Adicionado em: </span><span id="banner-created-modal"></span><br>
+                    <span class="title">Ultima modificação em: </span><span id="banner-modified-modal"></span><br>
+                    <span class="title">Clicado: </span><span id="banner-clicks-modal"></span><br>
                 </p>
                 <p class="summary">
-                    <span class="title">Descrição: </span><span class="banner-description-modal"></span>
+                    <span class="title">Descrição: </span><span id="banner-description-modal"></span>
                 </p>
             </div>
         </div>

@@ -94,7 +94,7 @@
 }
 
 .img-full-screen{
-    width:100%
+    max-width:100%
 }
 
 #news-slide .item-new .new-thumb{
