@@ -2,6 +2,9 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel_1_8_0/Classes" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel_1_8_0/Documentation" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/PHPExcel_1_8_0/Examples" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/burzum/cakephp-file-storage" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/burzum/cakephp-imagine-plugin" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/imagine/imagine" />
@@ -18,28 +21,34 @@
     <orderEntry type="module-library">
       <library name="PHP">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/knplabs/gaufrette" />
           <root url="file://$MODULE_DIR$/vendor/natxet/CssMin" />
-          <root url="file://$MODULE_DIR$/vendor/imagine/imagine" />
-          <root url="file://$MODULE_DIR$/vendor/burzum/cakephp-imagine-plugin" />
+          <root url="file://$MODULE_DIR$/vendor/knplabs/gaufrette" />
+          <root url="file://$MODULE_DIR$/vendor/PHPExcel_1_8_0/Classes" />
           <root url="file://$MODULE_DIR$/vendor/tedivm/jshrink" />
           <root url="file://$MODULE_DIR$/vendor/jdorn/sql-formatter" />
           <root url="file://$MODULE_DIR$/vendor/leafo/lessphp" />
-          <root url="file://$MODULE_DIR$/vendor/burzum/cakephp-file-storage" />
-          <root url="file://$MODULE_DIR$/vendor/leafo/scssphp" />
           <root url="file://$MODULE_DIR$/vendor/trentrichardson/Shrink" />
+          <root url="file://$MODULE_DIR$/vendor/leafo/scssphp" />
+          <root url="file://$MODULE_DIR$/vendor/PHPExcel_1_8_0/Documentation" />
+          <root url="file://$MODULE_DIR$/vendor/imagine/imagine" />
+          <root url="file://$MODULE_DIR$/vendor/burzum/cakephp-imagine-plugin" />
+          <root url="file://$MODULE_DIR$/vendor/burzum/cakephp-file-storage" />
+          <root url="file://$MODULE_DIR$/vendor/PHPExcel_1_8_0/Examples" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/knplabs/gaufrette" />
           <root url="file://$MODULE_DIR$/vendor/natxet/CssMin" />
-          <root url="file://$MODULE_DIR$/vendor/imagine/imagine" />
-          <root url="file://$MODULE_DIR$/vendor/burzum/cakephp-imagine-plugin" />
+          <root url="file://$MODULE_DIR$/vendor/knplabs/gaufrette" />
+          <root url="file://$MODULE_DIR$/vendor/PHPExcel_1_8_0/Classes" />
           <root url="file://$MODULE_DIR$/vendor/tedivm/jshrink" />
           <root url="file://$MODULE_DIR$/vendor/jdorn/sql-formatter" />
           <root url="file://$MODULE_DIR$/vendor/leafo/lessphp" />
-          <root url="file://$MODULE_DIR$/vendor/burzum/cakephp-file-storage" />
-          <root url="file://$MODULE_DIR$/vendor/leafo/scssphp" />
           <root url="file://$MODULE_DIR$/vendor/trentrichardson/Shrink" />
+          <root url="file://$MODULE_DIR$/vendor/leafo/scssphp" />
+          <root url="file://$MODULE_DIR$/vendor/PHPExcel_1_8_0/Documentation" />
+          <root url="file://$MODULE_DIR$/vendor/imagine/imagine" />
+          <root url="file://$MODULE_DIR$/vendor/burzum/cakephp-imagine-plugin" />
+          <root url="file://$MODULE_DIR$/vendor/burzum/cakephp-file-storage" />
+          <root url="file://$MODULE_DIR$/vendor/PHPExcel_1_8_0/Examples" />
         </SOURCES>
       </library>
     </orderEntry>

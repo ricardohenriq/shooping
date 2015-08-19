@@ -20,4 +20,10 @@ class InsertComponent extends Component
             return false;
         }
     }
+
+    public function insertMassEntities($entities, $entityName){
+        foreach($entities as $entity){
+            TableRegistry::get($entityName)->save($entity);
+        }
+    }
 }

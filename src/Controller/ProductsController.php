@@ -307,4 +307,20 @@ class ProductsController extends AppController
             }
         }
     }
+
+    public function importProductsFromExcel(){
+
+        $this->autoRender = false;
+
+        $sheetData = $this->Excel->importExcel('Produtos.xlsx', 'Produtos');
+
+        $productEntities = $this->Excel->transformRowIntoEntity($sheetData,
+            ['A' => 'product_name', 'B' => 'quantity', 'C' => 'price'], 2, 'Products');
+
+        $this->Insert->insertMassEntities($productEntities, 'Products');
+    }
+
+    public function exportProductsToExcel(){
+
+    }
 }

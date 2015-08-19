@@ -42,6 +42,7 @@ class AppController extends Controller
 		$this->loadComponent('Insert');
         $this->loadComponent('UploadFile');
         $this->loadComponent('Url');
+        $this->loadComponent('Excel');
         $this->loadComponent('Paginator');
         $this->loadComponent('Auth', [
             'authenticate' => [

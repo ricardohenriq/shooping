@@ -17,17 +17,12 @@ class UsersController extends AppController
      */
     public function index()
     {
-        // Cria uma consulta paginada de entidades "User" (Tabela 'users'). Esta paginação
-        // esta limitada a 10 resultados e irá trazer o conteudo relacionado 'UserTypes'.
         $this->paginate = [
             'limit' => 10,
             'contain' => ['UserTypes']
         ];
-        // Executa a consulta paginada sobre os usuarios (Tabela 'users'), e atribui a uma
-        // variavel que será usada na view
         $this->set('users', $this->paginate($this->Users));
-        // Serializa a variavel 'users' para o formato json
-        $this->set('_serialize', ['users']);
+        //$this->set('_serialize', ['users']);
     }
 
     /**

@@ -190,7 +190,7 @@ INSERT INTO categories (category_name, created, modified)
 VALUES ('Calçados', CURDATE(), CURDATE());
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Adereços', CURDATE(), CURDATE());
+VALUES ('Jóias e Relógios', CURDATE(), CURDATE());
 
 INSERT INTO categories (category_name, created, modified)
 VALUES ('Papelaria', CURDATE(), CURDATE());
