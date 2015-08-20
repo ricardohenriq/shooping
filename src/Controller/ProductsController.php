@@ -309,7 +309,6 @@ class ProductsController extends AppController
     }
 
     public function importProductsFromExcel(){
-
         $this->autoRender = false;
 
         $sheetData = $this->Excel->importExcel('Produtos.xlsx', 'Produtos');
@@ -321,6 +320,16 @@ class ProductsController extends AppController
     }
 
     public function exportProductsToExcel(){
+        $this->autoRender = false;
 
+        $objPHPExcel = $this->Excel->transformEntityIntoRow();
+
+        $fileName = 'Username' . '-Planilha-Produtos.xlsx';
+        $fileNameWithPath = TMP . DS . 'spreadsheet' . DS . $fileName;
+
+        $this->Excel->exportExcel($objPHPExcel, 'Excel2007', $fileNameWithPath);
+
+        $this->response->file($fileNameWithPath, ['download' => true, 'name' => $fileName]);
+        return $this->response;
     }
 }

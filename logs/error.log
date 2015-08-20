@@ -17595,3 +17595,121 @@ Stack Trace:
 #17 {main}
 
 
+2015-08-19 19:13:29 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`shopping`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`store_id`) REFERENCES `stores` (`id`))
+Request URL: /products/import-products-from-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1516): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1436): Cake\ORM\Table->_insert(Object(App\Model\Entity\Product), Array)
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1367): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Product), Object(ArrayObject))
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1368): Cake\Database\Connection->transactional(Object(Closure))
+#10 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\InsertComponent.php(26): Cake\ORM\Table->save(Object(App\Model\Entity\Product))
+#11 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(320): App\Controller\Component\InsertComponent->insertMassEntities(Array, 'Products')
+#12 [internal function]: App\Controller\ProductsController->importProductsFromExcel()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#14 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#15 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#16 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2015-08-19 23:44:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`shopping`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`store_id`) REFERENCES `stores` (`id`))
+Request URL: /products/import-products-from-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1516): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1436): Cake\ORM\Table->_insert(Object(App\Model\Entity\Product), Array)
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1367): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Product), Object(ArrayObject))
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#9 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1368): Cake\Database\Connection->transactional(Object(Closure))
+#10 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\InsertComponent.php(26): Cake\ORM\Table->save(Object(App\Model\Entity\Product))
+#11 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(320): App\Controller\Component\InsertComponent->insertMassEntities(Array, 'Products')
+#12 [internal function]: App\Controller\ProductsController->importProductsFromExcel()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#14 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#15 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#16 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2015-08-20 14:06:14 Error: [Cake\Controller\Exception\MissingActionException] Action ProductsController::exportProductsFromExcel() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'exportProductsFromExcel',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /products/export-products-from-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-08-20 14:06:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Favicon.ico could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.ico',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-20 14:10:19 Error: Fatal Error (1): Call to undefined method PHPExcel_Style_Font::getStyle() in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 78]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-20 14:10:20 Error: [Cake\Error\FatalErrorException] Call to undefined method PHPExcel_Style_Font::getStyle()
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 78)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-20 14:12:12 Warning: Warning (2): unlink(C:\xampp\htdocs\PROJETOS\Shopping\tmp\\spreadsheet\Username-Planilha-Produtos.xlsx): Permission denied in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Writer\Excel2007.php, line 236]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+unlink - [internal], line ??
+PHPExcel_Writer_Excel2007::save() - ROOT\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Writer\Excel2007.php, line 236
+App\Controller\Component\ExcelComponent::exportExcel() - APP/Controller\Component\ExcelComponent.php, line 61
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 330
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-20 14:16:19 Warning: Warning (2): unlink(C:\xampp\htdocs\PROJETOS\Shopping\tmp\\spreadsheet\Username-Planilha-Produtos.xlsx): Permission denied in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Writer\Excel2007.php, line 236]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+unlink - [internal], line ??
+PHPExcel_Writer_Excel2007::save() - ROOT\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Writer\Excel2007.php, line 236
+App\Controller\Component\ExcelComponent::exportExcel() - APP/Controller\Component\ExcelComponent.php, line 61
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 330
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
