@@ -17800,3 +17800,689 @@ Stack Trace:
 #7 {main}
 
 
+2015-08-21 12:53:52 Error: [PHPExcel_Exception] Invalid cell coordinate 2
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Worksheet.php(1227): PHPExcel_Cell::coordinateFromString('2')
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Worksheet.php(1186): PHPExcel_Worksheet->_createNewCell('2')
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Worksheet.php(1095): PHPExcel_Worksheet->getCell('2')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php(123): PHPExcel_Worksheet->setCellValue('2', 'Bacon T')
+#4 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(344): App\Controller\Component\ExcelComponent->transformEntityIntoRow(Array, Array)
+#5 [internal function]: App\Controller\ProductsController->exportProductsToExcel()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#9 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-08-21 12:53:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Favicon.ico could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.ico',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-21 13:23:07 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:23:07 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 13:25:22 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:25:23 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 13:45:03 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:45:03 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 13:45:58 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:45:59 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 13:46:15 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:46:16 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 13:47:08 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:47:08 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 13:47:21 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:47:22 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 13:49:45 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:49:46 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 13:51:35 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:51:36 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 13:52:05 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:52:05 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 13:52:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class DiamondFavicon32.png could not be found.
+Request URL: /diamond-favicon-32.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-21 13:52:10 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:52:10 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 13:52:28 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:52:28 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 13:55:09 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:55:09 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 13:57:42 Error: Fatal Error (4): syntax error, unexpected ')' in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 130]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:57:43 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')'
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 130)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 13:58:19 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 13:58:19 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 14:12:04 Warning: Warning (2): get_class() expects parameter 1 to be object, string given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:12:04 Warning: Warning (2): get_class() expects parameter 1 to be object, integer given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:12:04 Warning: Warning (2): get_class() expects parameter 1 to be object, integer given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:12:04 Warning: Warning (2): get_class() expects parameter 1 to be object, double given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:12:04 Warning: Warning (2): get_class() expects parameter 1 to be object, string given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:12:04 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 14:12:04 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 14:13:00 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 14:13:00 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 14:14:03 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 14:14:03 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 14:14:40 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 14:14:41 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 14:15:04 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 14:15:05 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 14:15:43 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 14:15:44 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 14:16:11 Warning: Warning (2): get_class() expects parameter 1 to be object, string given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:16:11 Warning: Warning (2): get_class() expects parameter 1 to be object, integer given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:16:11 Warning: Warning (2): get_class() expects parameter 1 to be object, integer given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:16:11 Warning: Warning (2): get_class() expects parameter 1 to be object, double given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:16:11 Warning: Warning (2): get_class() expects parameter 1 to be object, string given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:16:11 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 14:16:11 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 14:17:14 Warning: Warning (2): get_class() expects parameter 1 to be object, string given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:17:14 Warning: Warning (2): get_class() expects parameter 1 to be object, integer given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:17:14 Warning: Warning (2): get_class() expects parameter 1 to be object, integer given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:17:14 Warning: Warning (2): get_class() expects parameter 1 to be object, double given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:17:14 Warning: Warning (2): get_class() expects parameter 1 to be object, string given in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 129]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+get_class - [internal], line ??
+App\Controller\Component\ExcelComponent::transformEntityIntoRow() - APP/Controller\Component\ExcelComponent.php, line 129
+App\Controller\ProductsController::exportProductsToExcel() - APP/Controller\ProductsController.php, line 352
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-08-21 14:17:48 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\PHPExcel_1_8_0\Classes\PHPExcel\Cell\DefaultValueBinder.php, line 86]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 14:17:48 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 14:18:32 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 130]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 14:18:33 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 130)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 14:18:55 Error: [InvalidArgumentException] Unknown getter 'Time'
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php(130): Carbon\Carbon->__get('Time')
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(352): App\Controller\Component\ExcelComponent->transformEntityIntoRow(Array, Array, Array)
+#2 [internal function]: App\Controller\ProductsController->exportProductsToExcel()
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-08-21 14:20:50 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 132]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 14:20:51 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 132)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 14:21:05 Error: [InvalidArgumentException] Unknown getter 'time'
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php(132): Carbon\Carbon->__get('time')
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(352): App\Controller\Component\ExcelComponent->transformEntityIntoRow(Array, Array, Array)
+#2 [internal function]: App\Controller\ProductsController->exportProductsToExcel()
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-08-21 14:22:01 Error: Fatal Error (1): Cannot use object of type Cake\I18n\Time as array in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 131]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-21 14:22:01 Error: [Cake\Error\FatalErrorException] Cannot use object of type Cake\I18n\Time as array
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot use obje...', 'C:\\xampp\\htdocs...', 131)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-21 14:22:14 Error: [InvalidArgumentException] Unknown getter 'time'
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php(131): Carbon\Carbon->__get('time')
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(352): App\Controller\Component\ExcelComponent->transformEntityIntoRow(Array, Array, Array)
+#2 [internal function]: App\Controller\ProductsController->exportProductsToExcel()
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+

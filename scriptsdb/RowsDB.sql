@@ -4,18 +4,18 @@
 
 USE shopping;
 
-# 3 registros na tabela "user_types" -------------------------------------------------
+## 3 registros na tabela "user_types" -------------------------------------------------
 
 INSERT INTO user_types (type_name, created, modified)
-VALUES ('Comum', CURDATE(), CURDATE());
+VALUES ('Comum', NOW(), NOW());
 
 INSERT INTO user_types (type_name, created, modified)
-VALUES ('Empresário', CURDATE(), CURDATE());
+VALUES ('Empresário', NOW(), NOW());
 
 INSERT INTO user_types (type_name, created, modified)
-VALUES ('Administrador', CURDATE(), CURDATE());
+VALUES ('Administrador', NOW(), NOW());
 
-# 30 registros na tabela "users" -----------------------------------------------------
+## 30 registros na tabela "users" -----------------------------------------------------
 
 INSERT INTO users (email, password, username, user_type_id, created, modified)
 VALUES ('jose@outlook.com', 'novembro', 'José Souza', 1, '2013-10-28 22:39:19', '2014-10-28 22:39:19');
@@ -116,7 +116,7 @@ VALUES ('milena@hotmail.com', 'tocantins', 'Milena Carvalho', 2, NOW(), NOW());
 # INSERT INTO users (email, password, username, user_type_id, created, modified)
 # VALUES ('abravanel@hotmail.com', 'abravanel', 'Abravanel', 3, NOW(), NOW());
 
-# 9 registros na tabela "stores" --------------------------------------------------
+## 9 registros na tabela "stores" --------------------------------------------------
 
 INSERT INTO stores (store_name, user_id, created, modified)
 VALUES ('Loja A', 25, '2011-10-28 09:39:49', '2013-10-28 22:39:19');
@@ -145,93 +145,90 @@ VALUES ('Loja H', 30, NOW(), NOW());
 INSERT INTO stores (store_name, user_id, created, modified)
 VALUES ('Loja I', 30, NOW(), NOW());
 
-# 17 regsistros na tabela "categories" ------------------------------------------------
+## 17 regsistros na tabela "categories" ------------------------------------------------
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Alimentos', CURDATE(), CURDATE());
+VALUES ('Alimentos', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Bebidas', CURDATE(), CURDATE());
+VALUES ('Bebidas', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Móveis', CURDATE(), CURDATE());
+VALUES ('Móveis', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Eletrodomesticos', CURDATE(), CURDATE());
+VALUES ('Eletrodomesticos', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Bazar', CURDATE(), CURDATE());
+VALUES ('Bazar', '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Livros', CURDATE(), CURDATE());
+VALUES ('Livros', '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Eletroeletronicos', CURDATE(), CURDATE());
+VALUES ('Eletroeletronicos', '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Portáteis', CURDATE(), CURDATE());
+VALUES ('Portáteis', '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Informática', CURDATE(), CURDATE());
+VALUES ('Informática', '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Brinquedos', CURDATE(), CURDATE());
+VALUES ('Brinquedos', '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Automotivo', CURDATE(), CURDATE());
+VALUES ('Automotivo', '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Ferramentas', CURDATE(), CURDATE());
+VALUES ('Ferramentas', '2014-10-28 09:39:49', '2016-10-28 22:39:19');
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Vestuário', CURDATE(), CURDATE());
+VALUES ('Vestuário', '2014-10-28 09:39:49', '2016-10-28 22:39:19');
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Calçados', CURDATE(), CURDATE());
+VALUES ('Calçados', NOW(), NOW());
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Jóias e Relógios', CURDATE(), CURDATE());
+VALUES ('Jóias e Relógios', NOW(), NOW());
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Papelaria', CURDATE(), CURDATE());
+VALUES ('Papelaria', NOW(), NOW());
 
 INSERT INTO categories (category_name, created, modified)
-VALUES ('Outros', CURDATE(), CURDATE());
+VALUES ('Outros', NOW(), NOW());
 
 # 11 registros na tabela "sub_categories" ---------------------------------------------
 
 INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Industrilizado', 1, CURDATE(), CURDATE());
+VALUES ('Industrilizado', 1, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
 INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('In natura', 1, CURDATE(), CURDATE());
+VALUES ('In natura', 1, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
 INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Comida pronta', 1, CURDATE(), CURDATE());
+VALUES ('Comida pronta', 1, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
 INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Desidratado', 1, CURDATE(), CURDATE());
+VALUES ('Desidratado', 1, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
 INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Organico', 1, CURDATE(), CURDATE());
+VALUES ('Organico', 1, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
 INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Raizes', 1, CURDATE(), CURDATE());
+VALUES ('Raizes', 1, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
 INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Doces', 1, CURDATE(), CURDATE());
+VALUES ('Doces', 1, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
 INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Alcoolica', 2, CURDATE(), CURDATE());
+VALUES ('Alcoolica', 2, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
 INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Sucos', 2, CURDATE(), CURDATE());
+VALUES ('Sucos', 2, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
 INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Refrigerante', 2, CURDATE(), CURDATE());
-
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Outras', 2, CURDATE(), CURDATE());
+VALUES ('Refrigerante', 2, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
 # 7 registros na tabela "products" --------------------------------------------------
 
@@ -441,50 +438,77 @@ VALUES (7, 2, 10.50, 30, CURDATE(), CURDATE());
 INSERT INTO promotion_products (product_id, promotion_id, promotion_price, promotion_quantity, created, modified)
 VALUES (1, 3, 10.50, 30, CURDATE(), CURDATE());
 
-# 2 registros na tabela "subscribers" -------------------------------------------------
+## 2 registros na tabela "subscribers" -------------------------------------------------
 
 INSERT INTO subscribers (email, created, modified)
-VALUES ('ricardohenrique996@gmail.com', CURDATE(), CURDATE());
+VALUES ('ricardohenrique996@gmail.com', '2010-10-28 22:39:19', '2011-10-28 22:39:19');
 
 INSERT INTO subscribers (email, created, modified)
-VALUES ('ricardohenrique1@outlook.com', CURDATE(), CURDATE());
+VALUES ('ricardohenrique1@outlook.com', NOW(), NOW());
 
-# 2 registros na tabela "banner_types" -------------------------------------------------
-
-INSERT INTO banner_types (type_name, created, modified)
-VALUES ('Small-Banner', CURDATE(), CURDATE());
+## 2 registros na tabela "banner_types" -------------------------------------------------
 
 INSERT INTO banner_types (type_name, created, modified)
-VALUES ('Full-Banner', CURDATE(), CURDATE());
+VALUES ('Banner Pequeno', NOW(), NOW());
 
-# 9 registros na tabela "banners" ------------------------------------------------------
+INSERT INTO banner_types (type_name, created, modified)
+VALUES ('Banner Completo', NOW(), NOW());
 
-INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
-VALUES (1, 1, 'Banner 1', 'mini-banners/mini-banner1.png', 'http://pt.stackoverflow.com/review', CURDATE(), CURDATE());
-
-INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
-VALUES (1, 2, 'Banner 2', 'mini-banners/mini-banner2.png', 'http://pt.stackoverflow.com/questions', CURDATE(), CURDATE());
+## 18 registros na tabela "banners" ------------------------------------------------------
 
 INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
-VALUES (1, 3, 'Banner 3', 'mini-banners/mini-banner3.png', 'http://pt.stackoverflow.com/tags', CURDATE(), CURDATE());
+VALUES (1, 25, 'Kit dia dos Pais', 'http://localhost/PROJETOS/ShoppingResources/mini-banners/mini-banner1.png', 'https://pt.wikipedia.org/wiki/Acre', '2010-10-28 22:39:19', '2011-10-28 22:39:19');
 
 INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
-VALUES (1, 4, 'Banner 4', 'mini-banners/mini-banner4.png', 'http://pt.stackoverflow.com/users', CURDATE(), CURDATE());
+VALUES (1, 25, 'Kit dia das Mães', 'http://localhost/PROJETOS/ShoppingResources/mini-banners/mini-banner2.png', 'https://pt.wikipedia.org/wiki/Alagoas', '2010-10-28 22:39:19', '2011-10-28 22:39:19');
 
 INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
-VALUES (1, 5, 'Banner 5', 'mini-banners/mini-banner5.png', 'http://pt.stackoverflow.com/help/badges', CURDATE(), CURDATE());
+VALUES (1, 25, 'Kit dia das Crianças', 'http://localhost/PROJETOS/ShoppingResources/mini-banners/mini-banner3.png', 'https://pt.wikipedia.org/wiki/Amap%C3%A1', '2011-10-28 22:39:19', '2012-10-28 22:39:19');
 
 INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
-VALUES (1, 6, 'Banner 6', 'mini-banners/mini-banner6.png', 'http://pt.stackoverflow.com/unanswered', CURDATE(), CURDATE());
+VALUES (1, 26, 'Cesta de Natal', 'http://localhost/PROJETOS/ShoppingResources/mini-banners/mini-banner4.png', 'https://pt.wikipedia.org/wiki/Amazonas', '2011-10-28 22:39:19', '2012-10-28 22:39:19');
 
 INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
-VALUES (2, 7, 'Banner 7', 'full-banners/full-banner3.png', 'http://pt.stackoverflow.com/tour', CURDATE(), CURDATE());
+VALUES (1, 26, 'Os melhores Ovos de Páscoa', 'http://localhost/PROJETOS/ShoppingResources/mini-banners/mini-banner5.png', 'https://pt.wikipedia.org/wiki/Bahia', '2012-10-28 22:39:19', '2013-10-28 22:39:19');
 
 INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
-VALUES (2, 8, 'Banner 8', 'full-banners/full-banner4.png', 'http://pt.stackoverflow.com/help', CURDATE(), CURDATE());
+VALUES (1, 26, 'Black Friday', 'http://localhost/PROJETOS/ShoppingResources/mini-banners/mini-banner6.png', 'https://pt.wikipedia.org/wiki/Cear%C3%A1', '2014-10-28 22:39:19', '2016-10-28 22:39:19');
 
 INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
-VALUES (2, 9, 'Banner 9', 'full-banners/full-banner5.png', 'http://meta.pt.stackoverflow.com/', CURDATE(), CURDATE());
+VALUES (1, 27, 'Saldão de Inverno', 'http://localhost/PROJETOS/ShoppingResources/mini-banners/mini-banner7.png', 'https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)', '2014-10-28 22:39:19', '2016-10-28 22:39:19');
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (1, 27, 'Os melhores preços em informática', 'http://localhost/PROJETOS/ShoppingResources/mini-banners/mini-banner8.png', 'https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)', '2014-10-28 22:39:19', '2016-10-28 22:39:19');
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (1, 27, 'Prove comidas típicas', 'http://localhost/PROJETOS/ShoppingResources/mini-banners/mini-banner9.png', 'https://pt.wikipedia.org/wiki/Goi%C3%A1s', NOW(), NOW());
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (1, 28, 'Compre em até 3X sem Juros', 'http://localhost/PROJETOS/ShoppingResources/mini-banners/mini-banner10.png', 'https://pt.wikipedia.org/wiki/Maranh%C3%A3o', NOW(), NOW());
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (1, 28, 'Compre com cartão de Crédito e Debito', 'http://localhost/PROJETOS/ShoppingResources/mini-banners/mini-banner11.png', 'https://pt.wikipedia.org/wiki/Mato_Grosso', NOW(), NOW());
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (1, 28, 'Os mais novos produtos para o seu carros, confira', 'http://localhost/PROJETOS/ShoppingResources/mini-banners/mini-banner12.png', 'https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul', NOW(), NOW());
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (2, 28, 'Relógios, Pulseiras e Colares', 'http://localhost/PROJETOS/ShoppingResources/full-banners/full-banner1.png', 'https://pt.wikipedia.org/wiki/Minas_Gerais', '2012-10-28 22:39:19', '2013-10-28 22:39:19');
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (2, 29, 'Linha completa de brinquedos para as crianças', 'http://localhost/PROJETOS/ShoppingResources/full-banners/full-banner2.png', 'https://pt.wikipedia.org/wiki/Par%C3%A1', '2013-10-28 22:39:19', '2014-10-28 22:39:19');
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (2, 29, 'Roupas com todas as numerações', 'http://localhost/PROJETOS/ShoppingResources/full-banners/full-banner3.png', 'https://pt.wikipedia.org/wiki/Para%C3%ADba', '2014-10-28 22:39:19', '2016-10-28 22:39:19');
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (2, 30, 'Tênis e Sapatos com todas as numerações', 'http://localhost/PROJETOS/ShoppingResources/full-banners/full-banner4.png', 'https://pt.wikipedia.org/wiki/Paran%C3%A1', '2014-10-28 22:39:19', '2016-10-28 22:39:19');
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (2, 30, 'Na compra de um Sapato ganhe um Cinto', 'http://localhost/PROJETOS/ShoppingResources/full-banners/full-banner5.png', 'https://pt.wikipedia.org/wiki/Pernambuco', NOW(), NOW());
+
+INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
+VALUES (2, 30, 'Na compra de um Notebook ganhe um HD Externo', 'http://localhost/PROJETOS/ShoppingResources/full-banners/full-banner6.png', 'https://pt.wikipedia.org/wiki/Piau%C3%AD', NOW(), NOW());
 
 # 9 registros na tabela "new_banners" -------------------------------------------------
 

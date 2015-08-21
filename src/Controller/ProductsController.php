@@ -336,12 +336,20 @@ class ProductsController extends AppController
             'Ofertas' => ['A1' => 'Nome da Oferta', 'B1' => 'Data Inicio',
                 'C1' => 'Data Fim']];
 
-        $products = $this->Search->listAllProductsByStore(1, 'product_name', 'ASC');
+        $productsFields = ['product_name', 'quantity', 'sold', 'price'];
+        $products = $this->Search->listAllProductsByStore(1, 'product_name', 'ASC', $productsFields);
 
-        $offers = $this->Search->listAllOffersByUser(1, 'name', 'ASC');
+        $offersFields = ['name', 'date_start', 'date_end'];
+        $offers = $this->Search->listAllOffersByUser(1, 'name', 'ASC', $offersFields);
+
+        echo '<pre>';
+        $teste = [$productsFields, $offersFields];
+        //var_dump($teste[0]);
+        //var_dump($products);
+        echo '</pre>';
 
         $objPHPExcel = $this->Excel->transformEntityIntoRow($spreadSheetHeader,
-            [$products, $offers]);
+            [$products, $offers], [$productsFields, $offersFields]);
 
         //-------------------------------------------------------------------------
 

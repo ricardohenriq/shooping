@@ -136,19 +136,19 @@ class SearchComponent extends Component
         return $query->count();
     }
 
-    public function listAllProductsByStore($store, $column, $order){
+    public function listAllProductsByStore($store, $column, $order, $productsFields){
         $products = TableRegistry::get('products');
         $query = $products->find();
-        $query->select(['product_name', 'quantity', 'sold', 'price'])
+        $query->select($productsFields)
             ->where(['store_id' => $store])
             ->order([$column => $order]);
         return $query->all();
     }
 
-    public function listAllOffersByUser($user, $column, $order){
+    public function listAllOffersByUser($user, $column, $order, $offersFields){
         $offers = TableRegistry::get('offer_banners');
         $query = $offers->find();
-        $query->select(['name', 'date_start', 'date_end'])
+        $query->select($offersFields)
             ->where(['user_id' => $user])
             ->order([$column => $order]);
         return $query->all();
