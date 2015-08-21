@@ -125,7 +125,6 @@ class SearchComponent extends Component
             'order' => ['price' => 'DESC'],
             'limit' => 3
         ];
-
         return $paginate;
     }
 
@@ -135,5 +134,23 @@ class SearchComponent extends Component
         $query = $countProducts->find()
             ->where(['product_name LIKE' => '%'.$search.'%']);
         return $query->count();
+    }
+
+    public function listAllProductsByStore($store, $column, $order){
+        $products = TableRegistry::get('products');
+        $query = $products->find();
+        $query->select(['product_name', 'quantity', 'sold', 'price'])
+            ->where(['store_id' => $store])
+            ->order([$column => $order]);
+        return $query->all();
+    }
+
+    public function listAllOffersByUser($user, $column, $order){
+        $offers = TableRegistry::get('offer_banners');
+        $query = $offers->find();
+        $query->select(['name', 'date_start', 'date_end'])
+            ->where(['user_id' => $user])
+            ->order([$column => $order]);
+        return $query->all();
     }
 }

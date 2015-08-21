@@ -62,7 +62,7 @@ class ExcelComponent extends Component
         $objWriter->save($fileNameWithPath);
     }
 
-    public function transformEntityIntoRow(){
+    public function transformEntityIntoRow($spreadSheetHeader, $dataFromDataBase){
     //public function transformEntityIntoRow($bankData ,$entityName){
         // Instanciamos a classe
         $objPHPExcel = new PHPExcel();
@@ -74,7 +74,70 @@ class ExcelComponent extends Component
             ->setSubject('Produtos e Ofertas')
             ->setDescription('Planilha contendo Produtos e Ofertas do USUÁRIO');
 
-        // Criamos as colunas
+        $contSpreadSheet = 0;
+        $spreadSheetQuantity = count($spreadSheetHeader);
+
+        /**
+         * foreach responsável pela criação de cada planilha dentro
+         * do arquivo excel (note que é possivel ter varias planilhas
+         * dentro de um mesmo arquivo excel).
+         */
+        foreach ($spreadSheetHeader as $key => $value) {
+            $spreadSheetCell = 'A';
+            $spreadSheetRow = 2;
+
+            $objPHPExcel->setActiveSheetIndex($contSpreadSheet);
+            $objPHPExcel->getActiveSheet()->setTitle($key);
+
+            /**
+             * foreach responsável pelo povoamento do header de cada
+             * planilha.
+             */
+            foreach ($value as $cell => $header) {
+                $objPHPExcel->getActiveSheet()
+                    ->setCellValue($cell, $header);
+
+                $objPHPExcel->getActiveSheet()->getStyle($cell)
+                    ->getFont()->setBold(true);
+
+                $objPHPExcel->getActiveSheet()->getColumnDimension($cell[0])->setWidth(30);
+
+                $objPHPExcel->getActiveSheet()->getStyle($cell)->applyFromArray(
+                    ['fill' => [
+                        'type' => PHPExcel_Style_Fill::FILL_SOLID,
+                        'color' => array('rgb' => '333333')
+                    ],
+                    ]
+                );
+            }
+
+            /**
+             * foreach resposável por preencher a tabela com os valores vindos do banco
+             *
+             * INCOMPLETO falta fazer com que imprima todos os componentes da Row e de
+             * todas as planilhas, Creio que a solução passa por fazer iterações
+             * genericas nos indices do array $data
+             */
+            foreach($dataFromDataBase[$contSpreadSheet] as $data){
+                $objPHPExcel->setActiveSheetIndex($contSpreadSheet)
+                    ->setCellValue($spreadSheetCell . $spreadSheetRow,
+                        $data['product_name']);
+                $spreadSheetRow++;
+            }
+
+            /**
+             * if resposável por checar se existe uma próxima planilha caso tenha
+             * cria uma nova planilha.
+             */
+            if($contSpreadSheet + 1 < $spreadSheetQuantity) {
+                $objPHPExcel->createSheet();
+                $contSpreadSheet++;
+            }
+        }
+
+        $objPHPExcel->setActiveSheetIndex(0);
+
+        /*// Criamos as colunas
         $objPHPExcel->setActiveSheetIndex(0)
             ->setCellValue('A1', 'Produto')
             ->setCellValue('B1', 'Quantidade')
@@ -123,7 +186,7 @@ class ExcelComponent extends Component
 
         $objPHPExcel->getActiveSheet()->setTitle('Ofertas');
 
-        $objPHPExcel->setActiveSheetIndex(0);
+        $objPHPExcel->setActiveSheetIndex(0); */
 
         return $objPHPExcel;
     }

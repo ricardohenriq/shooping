@@ -17713,3 +17713,90 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2015-08-20 20:09:45 Error: Fatal Error (4): syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 81]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-20 20:09:50 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-20 20:09:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Favicon.ico could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.ico',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-20 20:10:03 Error: Fatal Error (4): syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 81]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-20 20:10:05 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-20 20:10:26 Error: Fatal Error (1): Call to undefined method PHPExcel::setCellValue() in [C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php, line 81]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-08-20 20:10:26 Error: [Cake\Error\FatalErrorException] Call to undefined method PHPExcel::setCellValue()
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-08-20 20:22:09 Error: [PHPExcel_Exception] You tried to set a sheet active by the out of bounds index: 1. The actual number of sheets is 1.
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php(79): PHPExcel->setActiveSheetIndex(1)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(330): App\Controller\Component\ExcelComponent->transformEntityIntoRow(Array)
+#2 [internal function]: App\Controller\ProductsController->exportProductsToExcel()
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-08-20 20:22:10 Error: [PHPExcel_Exception] You tried to set a sheet active by the out of bounds index: 1. The actual number of sheets is 1.
+Request URL: /products/export-products-to-excel
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\ExcelComponent.php(79): PHPExcel->setActiveSheetIndex(1)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(330): App\Controller\Component\ExcelComponent->transformEntityIntoRow(Array)
+#2 [internal function]: App\Controller\ProductsController->exportProductsToExcel()
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+

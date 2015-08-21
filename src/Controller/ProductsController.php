@@ -311,23 +311,46 @@ class ProductsController extends AppController
     public function importProductsFromExcel(){
         $this->autoRender = false;
 
+        //-------------------------------------------------------------------------
+
         $sheetData = $this->Excel->importExcel('Produtos.xlsx', 'Produtos');
+
+        //-------------------------------------------------------------------------
 
         $productEntities = $this->Excel->transformRowIntoEntity($sheetData,
             ['A' => 'product_name', 'B' => 'quantity', 'C' => 'price'], 2, 'Products');
+
+        //-------------------------------------------------------------------------
 
         $this->Insert->insertMassEntities($productEntities, 'Products');
     }
 
     public function exportProductsToExcel(){
-        $this->autoRender = false;
+        //$this->autoRender = false;
 
-        $objPHPExcel = $this->Excel->transformEntityIntoRow();
+        //-------------------------------------------------------------------------
+
+        $spreadSheetHeader =
+            ['Produtos' => ['A1' => 'Nome do Produto', 'B1' => 'Quantidade',
+                'C1' => 'Vendidos', 'D1' => 'Preço'],
+            'Ofertas' => ['A1' => 'Nome da Oferta', 'B1' => 'Data Inicio',
+                'C1' => 'Data Fim']];
+
+        $products = $this->Search->listAllProductsByStore(1, 'product_name', 'ASC');
+
+        $offers = $this->Search->listAllOffersByUser(1, 'name', 'ASC');
+
+        $objPHPExcel = $this->Excel->transformEntityIntoRow($spreadSheetHeader,
+            [$products, $offers]);
+
+        //-------------------------------------------------------------------------
 
         $fileName = 'Username' . '-Planilha-Produtos.xlsx';
         $fileNameWithPath = TMP . DS . 'spreadsheet' . DS . $fileName;
 
         $this->Excel->exportExcel($objPHPExcel, 'Excel2007', $fileNameWithPath);
+
+        //-------------------------------------------------------------------------
 
         $this->response->file($fileNameWithPath, ['download' => true, 'name' => $fileName]);
         return $this->response;
