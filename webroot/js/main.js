@@ -21,6 +21,47 @@ $('[data-target=#add_banner_modal]').click(function(){
     }
 });
 
+$.getJSON("../json/products.json", function (products) {
+    console.log(products);
+    autoCompleteMulti(products, '#search');
+});
+
+function autoCompleteMulti(words, selector){
+    $(selector).bind("keydown", function(event){
+        if(event.keyCode === $.ui.keyCode.TAB &&
+            $(this).autocomplete("instance").menu.active){
+            event.preventDefault();
+        }
+    })
+    .autocomplete({
+        minLength: 2,
+        source: function(request, response){
+            var results = $.ui.autocomplete.filter(
+                words, extractLast(request.term));
+            response(results.slice(0, 10));
+        },
+        focus: function(){
+            return false;
+        },
+        select: function(event, ui){
+            var terms = split(this.value);
+            terms.pop();
+            terms.push( ui.item.value );
+            terms.push("");
+            this.value = terms.join(" ");
+            return false;
+        }
+    });
+}
+
+function split(val){
+    return val.split(/ \s*/);
+}
+
+function extractLast(term){
+    return split(term).pop();
+}
+
 $("#password").popover({
     title: 'A senha deve conter entre 8 e 16 caracteres, incluindo:',
     content: '<ul><li>Letras Maiusculas</li><li>Letras Minusculas</li><li>Numeros</li></ul>',

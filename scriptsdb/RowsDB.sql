@@ -198,7 +198,7 @@ VALUES ('Papelaria', NOW(), NOW());
 INSERT INTO categories (category_name, created, modified)
 VALUES ('Outros', NOW(), NOW());
 
-# 11 registros na tabela "sub_categories" ---------------------------------------------
+#! 11 registros na tabela "sub_categories" ---------------------------------------------
 
 INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
 VALUES ('Industrilizado', 1, '2010-10-28 09:39:49', '2011-10-28 22:39:19');

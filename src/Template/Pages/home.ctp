@@ -36,10 +36,12 @@
         <?= $this->Html->meta('og:site_name','') ?>
         <?= $this->Shrink->css(['Bootstrap/css/bootstrap.min.css',
             'font-awesome-4.3.0/css/font-awesome.min.css', 'datepicker/css/datepicker.css',
-            'jquery-bxslider/jquery.bxslider.css', 'style.css', 'menu-plugin.css']) ?>
-        <?= $this->Shrink->js(['jquery-1.11.1.min.js', 'bootstrap.min.js',
-            'Jquery-Validate/jquery.validate.min.js', 'datepicker/js/bootstrap-datepicker.js',
-            'jquery-bxslider/jquery.bxslider.min.js', 'main.js']) ?>
+            'jquery-bxslider/jquery.bxslider.css', 'style.css', 'menu-plugin.css',
+            'jquery-ui-1.11.2.custom/jquery-ui.css']) ?>
+        <?= $this->Shrink->js(['jquery-1.11.1.min.js', 'jquery-ui-1.11.2.custom/jquery-ui.js',
+            'bootstrap.min.js', 'Jquery-Validate/jquery.validate.min.js',
+            'datepicker/js/bootstrap-datepicker.js', 'jquery-bxslider/jquery.bxslider.min.js',
+            'main.js']) ?>
         <?= $this->Shrink->fetch('css') ?>
         <?= $this->Shrink->fetch('js') ?>
     </head>
