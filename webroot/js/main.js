@@ -22,7 +22,6 @@ $('[data-target=#add_banner_modal]').click(function(){
 });
 
 $.getJSON("../json/products.json", function (products) {
-    console.log(products);
     autoCompleteMulti(products, '#search');
 });
 

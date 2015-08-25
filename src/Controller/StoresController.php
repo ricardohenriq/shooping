@@ -107,4 +107,32 @@ class StoresController extends AppController
         }
         return $this->redirect(['action' => 'index']);
     }
+
+    public function miniMap(){
+
+        $bannerType = 2;
+        $bannersQuantity = 1;
+        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $this->set('fullBanners', $fullBanners);
+
+        //-------------------------------------------------------------------------
+
+        $bannerType = 1;
+        $bannersQuantity = 3;
+        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $this->set('smallBanners', $smallBanners);
+
+        //-------------------------------------------------------------------------
+
+        $newBannersQuantity = 5;
+        $newBanners = $this->Search->listNewBanners($newBannersQuantity);
+        $this->set('newBanners', $newBanners);
+
+        //-------------------------------------------------------------------------
+
+        $logged = $this->Auth->user();
+        $this->set('logged', $logged);
+
+        //-------------------------------------------------------------------------
+    }
 }

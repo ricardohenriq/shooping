@@ -122,13 +122,8 @@ class PagesController extends AppController
 
         //-------------------------------------------------------------------------
 
-        if($this->Auth->user())
-        {
-            $this->set('logged',true);
-        }else
-        {
-            $this->set('logged',false);
-        }
+        $logged = $this->Auth->user();
+        $this->set('logged', $logged);
 
         if (!$count) {
             return $this->redirect('/');

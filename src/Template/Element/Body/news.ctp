@@ -6,7 +6,7 @@
         <li>
             <div class="item-new">
                 <div class="new-thumb">
-                    <img src="img/news-thumb/new-thumb1.png" />
+                    <img src="http://localhost:8765/img/news-thumb/new-thumb1.png">
                 </div>
                 <div class="new-description">
                     Texto Texto Texto Texto Texto Texto

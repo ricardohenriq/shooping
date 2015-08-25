@@ -326,7 +326,7 @@ class ProductsController extends AppController
     }
 
     public function exportProductsToExcel(){
-        //$this->autoRender = false;
+        $this->autoRender = false;
 
         //-------------------------------------------------------------------------
 
@@ -341,12 +341,6 @@ class ProductsController extends AppController
 
         $offersFields = ['name', 'date_start', 'date_end'];
         $offers = $this->Search->listAllOffersByUser(1, 'name', 'ASC', $offersFields);
-
-        echo '<pre>';
-        $teste = [$productsFields, $offersFields];
-        //var_dump($teste[0]);
-        //var_dump($products);
-        echo '</pre>';
 
         $objPHPExcel = $this->Excel->transformEntityIntoRow($spreadSheetHeader,
             [$products, $offers], [$productsFields, $offersFields]);

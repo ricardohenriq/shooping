@@ -22,7 +22,6 @@ class BannersController extends AppController
             'contain' => ['BannerTypes', 'Users']
         ];
         $this->set('banners', $this->paginate($this->Banners));
-        //$this->set('_serialize', ['banners']);
 
         //-------------------------------------------------------------------------
 
@@ -37,7 +36,7 @@ class BannersController extends AppController
         $bannerType = 2;
         $bannersQuantity = 1;
         $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity,
-            1);
+            7);
         $this->set('fullBanners', $fullBanners);
 
         //-------------------------------------------------------------------------
