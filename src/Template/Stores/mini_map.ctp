@@ -37,11 +37,12 @@
         <?= $this->Shrink->css(['Bootstrap/css/bootstrap.min.css',
             'font-awesome-4.3.0/css/font-awesome.min.css', 'datepicker/css/datepicker.css',
             'jquery-bxslider/jquery.bxslider.css', 'style.css', 'menu-plugin.css',
-            'jquery-ui-1.11.2.custom/jquery-ui.css']) ?>
+            'jquery-ui-1.11.2.custom/jquery-ui.css', 'jquery-jvectormap-2.0.4.css']) ?>
         <?= $this->Shrink->js(['jquery-1.11.1.min.js', 'jquery-ui-1.11.2.custom/jquery-ui.js',
             'bootstrap.min.js', 'Jquery-Validate/jquery.validate.min.js',
             'datepicker/js/bootstrap-datepicker.js', 'jquery-bxslider/jquery.bxslider.min.js',
-            'elevatezoom/jquery.elevateZoom-3.0.8.min.js', 'main.js']) ?>
+            'elevatezoom/jquery.elevateZoom-3.0.8.min.js', 'jquery-jvectormap-2.0.4.min.js',
+            'mall-jvectormap.js', 'main.js']) ?>
         <?= $this->Shrink->fetch('css') ?>
         <?= $this->Shrink->fetch('js') ?>
     </head>
@@ -52,6 +53,10 @@
             <div class="container">
                 <div class="row">
                     <?= $this->element('Body/news') ?>
+                </div>
+                <div class="row">
+                    <div id="mall-map" class="col-md-12"></div>
+                    <div id="mall-map-legend" class="span7 text-center"></div>
                 </div>
                 <div class="row">
                     <?= $this->element('Body/small_banners') ?>

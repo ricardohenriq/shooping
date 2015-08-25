@@ -212,3 +212,37 @@ hr{
 .banner-information{
     margin-left:354px
 }
+
+.jvectormap-tip{
+    max-width:250px
+}
+
+.jvectormap-tip img{
+    float:left !important;
+    margin-right:10px
+}
+
+#mall-map-legend{
+    margin-top:20px;
+    margin-left:40px
+}
+
+#mall-map svg{
+    height:800px
+}
+
+.legend-color{
+    width:30px;
+    height:30px;
+    display:inline-block
+}
+
+.legend-container{
+    margin-right:5px;
+    display:inline-block
+}
+
+.legend-container span{
+    position:relative;
+    bottom:10px
+}

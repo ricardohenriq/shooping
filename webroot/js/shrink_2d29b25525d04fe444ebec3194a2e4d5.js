@@ -1264,6 +1264,3008 @@ return;e.preventDefault();$this.datepicker('show');});$(function(){$('[data-prov
 /* jquery-bxslider/jquery.bxslider.min.js */
  
 !function(t){var e={},s={mode:"horizontal",slideSelector:"",infiniteLoop:!0,hideControlOnEnd:!1,speed:500,easing:null,slideMargin:0,startSlide:0,randomStart:!1,captions:!1,ticker:!1,tickerHover:!1,adaptiveHeight:!1,adaptiveHeightSpeed:500,video:!1,useCSS:!0,preloadImages:"visible",responsive:!0,slideZIndex:50,touchEnabled:!0,swipeThreshold:50,oneToOneTouch:!0,preventDefaultSwipeX:!0,preventDefaultSwipeY:!1,pager:!0,pagerType:"full",pagerShortSeparator:" / ",pagerSelector:null,buildPager:null,pagerCustom:null,controls:!0,nextText:"Next",prevText:"Prev",nextSelector:null,prevSelector:null,autoControls:!1,startText:"Start",stopText:"Stop",autoControlsCombine:!1,autoControlsSelector:null,auto:!1,pause:4e3,autoStart:!0,autoDirection:"next",autoHover:!1,autoDelay:0,minSlides:1,maxSlides:1,moveSlides:0,slideWidth:0,onSliderLoad:function(){},onSlideBefore:function(){},onSlideAfter:function(){},onSlideNext:function(){},onSlidePrev:function(){},onSliderResize:function(){}};t.fn.bxSlider=function(n){if(0==this.length)return this;if(this.length>1)return this.each(function(){t(this).bxSlider(n)}),this;var o={},r=this;e.el=this;var a=t(window).width(),l=t(window).height(),d=function(){o.settings=t.extend({},s,n),o.settings.slideWidth=parseInt(o.settings.slideWidth),o.children=r.children(o.settings.slideSelector),o.children.length<o.settings.minSlides&&(o.settings.minSlides=o.children.length),o.children.length<o.settings.maxSlides&&(o.settings.maxSlides=o.children.length),o.settings.randomStart&&(o.settings.startSlide=Math.floor(Math.random()*o.children.length)),o.active={index:o.settings.startSlide},o.carousel=o.settings.minSlides>1||o.settings.maxSlides>1,o.carousel&&(o.settings.preloadImages="all"),o.minThreshold=o.settings.minSlides*o.settings.slideWidth+(o.settings.minSlides-1)*o.settings.slideMargin,o.maxThreshold=o.settings.maxSlides*o.settings.slideWidth+(o.settings.maxSlides-1)*o.settings.slideMargin,o.working=!1,o.controls={},o.interval=null,o.animProp="vertical"==o.settings.mode?"top":"left",o.usingCSS=o.settings.useCSS&&"fade"!=o.settings.mode&&function(){var t=document.createElement("div"),e=["WebkitPerspective","MozPerspective","OPerspective","msPerspective"];for(var i in e)if(void 0!==t.style[e[i]])return o.cssPrefix=e[i].replace("Perspective","").toLowerCase(),o.animProp="-"+o.cssPrefix+"-transform",!0;return!1}(),"vertical"==o.settings.mode&&(o.settings.maxSlides=o.settings.minSlides),r.data("origStyle",r.attr("style")),r.children(o.settings.slideSelector).each(function(){t(this).data("origStyle",t(this).attr("style"))}),c()},c=function(){r.wrap('<div class="bx-wrapper"><div class="bx-viewport"></div></div>'),o.viewport=r.parent(),o.loader=t('<div class="bx-loading" />'),o.viewport.prepend(o.loader),r.css({width:"horizontal"==o.settings.mode?100*o.children.length+215+"%":"auto",position:"relative"}),o.usingCSS&&o.settings.easing?r.css("-"+o.cssPrefix+"-transition-timing-function",o.settings.easing):o.settings.easing||(o.settings.easing="swing"),f(),o.viewport.css({width:"100%",overflow:"hidden",position:"relative"}),o.viewport.parent().css({maxWidth:p()}),o.settings.pager||o.viewport.parent().css({margin:"0 auto 0px"}),o.children.css({"float":"horizontal"==o.settings.mode?"left":"none",listStyle:"none",position:"relative"}),o.children.css("width",u()),"horizontal"==o.settings.mode&&o.settings.slideMargin>0&&o.children.css("marginRight",o.settings.slideMargin),"vertical"==o.settings.mode&&o.settings.slideMargin>0&&o.children.css("marginBottom",o.settings.slideMargin),"fade"==o.settings.mode&&(o.children.css({position:"absolute",zIndex:0,display:"none"}),o.children.eq(o.settings.startSlide).css({zIndex:o.settings.slideZIndex,display:"block"})),o.controls.el=t('<div class="bx-controls" />'),o.settings.captions&&P(),o.active.last=o.settings.startSlide==x()-1,o.settings.video&&r.fitVids();var e=o.children.eq(o.settings.startSlide);"all"==o.settings.preloadImages&&(e=o.children),o.settings.ticker?o.settings.pager=!1:(o.settings.pager&&T(),o.settings.controls&&C(),o.settings.auto&&o.settings.autoControls&&E(),(o.settings.controls||o.settings.autoControls||o.settings.pager)&&o.viewport.after(o.controls.el)),g(e,h)},g=function(e,i){var s=e.find("img, iframe").length;if(0==s)return i(),void 0;var n=0;e.find("img, iframe").each(function(){t(this).one("load",function(){++n==s&&i()}).each(function(){this.complete&&t(this).load()})})},h=function(){if(o.settings.infiniteLoop&&"fade"!=o.settings.mode&&!o.settings.ticker){var e="vertical"==o.settings.mode?o.settings.minSlides:o.settings.maxSlides,i=o.children.slice(0,e).clone().addClass("bx-clone"),s=o.children.slice(-e).clone().addClass("bx-clone");r.append(i).prepend(s)}o.loader.remove(),S(),"vertical"==o.settings.mode&&(o.settings.adaptiveHeight=!0),o.viewport.height(v()),r.redrawSlider(),o.settings.onSliderLoad(o.active.index),o.initialized=!0,o.settings.responsive&&t(window).bind("resize",Z),o.settings.auto&&o.settings.autoStart&&H(),o.settings.ticker&&L(),o.settings.pager&&q(o.settings.startSlide),o.settings.controls&&W(),o.settings.touchEnabled&&!o.settings.ticker&&O()},v=function(){var e=0,s=t();if("vertical"==o.settings.mode||o.settings.adaptiveHeight)if(o.carousel){var n=1==o.settings.moveSlides?o.active.index:o.active.index*m();for(s=o.children.eq(n),i=1;i<=o.settings.maxSlides-1;i++)s=n+i>=o.children.length?s.add(o.children.eq(i-1)):s.add(o.children.eq(n+i))}else s=o.children.eq(o.active.index);else s=o.children;return"vertical"==o.settings.mode?(s.each(function(){e+=t(this).outerHeight()}),o.settings.slideMargin>0&&(e+=o.settings.slideMargin*(o.settings.minSlides-1))):e=Math.max.apply(Math,s.map(function(){return t(this).outerHeight(!1)}).get()),e},p=function(){var t="100%";return o.settings.slideWidth>0&&(t="horizontal"==o.settings.mode?o.settings.maxSlides*o.settings.slideWidth+(o.settings.maxSlides-1)*o.settings.slideMargin:o.settings.slideWidth),t},u=function(){var t=o.settings.slideWidth,e=o.viewport.width();return 0==o.settings.slideWidth||o.settings.slideWidth>e&&!o.carousel||"vertical"==o.settings.mode?t=e:o.settings.maxSlides>1&&"horizontal"==o.settings.mode&&(e>o.maxThreshold||e<o.minThreshold&&(t=(e-o.settings.slideMargin*(o.settings.minSlides-1))/o.settings.minSlides)),t},f=function(){var t=1;if("horizontal"==o.settings.mode&&o.settings.slideWidth>0)if(o.viewport.width()<o.minThreshold)t=o.settings.minSlides;else if(o.viewport.width()>o.maxThreshold)t=o.settings.maxSlides;else{var e=o.children.first().width();t=Math.floor(o.viewport.width()/e)}else"vertical"==o.settings.mode&&(t=o.settings.minSlides);return t},x=function(){var t=0;if(o.settings.moveSlides>0)if(o.settings.infiniteLoop)t=o.children.length/m();else for(var e=0,i=0;e<o.children.length;)++t,e=i+f(),i+=o.settings.moveSlides<=f()?o.settings.moveSlides:f();else t=Math.ceil(o.children.length/f());return t},m=function(){return o.settings.moveSlides>0&&o.settings.moveSlides<=f()?o.settings.moveSlides:f()},S=function(){if(o.children.length>o.settings.maxSlides&&o.active.last&&!o.settings.infiniteLoop){if("horizontal"==o.settings.mode){var t=o.children.last(),e=t.position();b(-(e.left-(o.viewport.width()-t.width())),"reset",0)}else if("vertical"==o.settings.mode){var i=o.children.length-o.settings.minSlides,e=o.children.eq(i).position();b(-e.top,"reset",0)}}else{var e=o.children.eq(o.active.index*m()).position();o.active.index==x()-1&&(o.active.last=!0),void 0!=e&&("horizontal"==o.settings.mode?b(-e.left,"reset",0):"vertical"==o.settings.mode&&b(-e.top,"reset",0))}},b=function(t,e,i,s){if(o.usingCSS){var n="vertical"==o.settings.mode?"translate3d(0, "+t+"px, 0)":"translate3d("+t+"px, 0, 0)";r.css("-"+o.cssPrefix+"-transition-duration",i/1e3+"s"),"slide"==e?(r.css(o.animProp,n),r.bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",function(){r.unbind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd"),D()})):"reset"==e?r.css(o.animProp,n):"ticker"==e&&(r.css("-"+o.cssPrefix+"-transition-timing-function","linear"),r.css(o.animProp,n),r.bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",function(){r.unbind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd"),b(s.resetValue,"reset",0),N()}))}else{var a={};a[o.animProp]=t,"slide"==e?r.animate(a,i,o.settings.easing,function(){D()}):"reset"==e?r.css(o.animProp,t):"ticker"==e&&r.animate(a,speed,"linear",function(){b(s.resetValue,"reset",0),N()})}},w=function(){for(var e="",i=x(),s=0;i>s;s++){var n="";o.settings.buildPager&&t.isFunction(o.settings.buildPager)?(n=o.settings.buildPager(s),o.pagerEl.addClass("bx-custom-pager")):(n=s+1,o.pagerEl.addClass("bx-default-pager")),e+='<div class="bx-pager-item"><a href="" data-slide-index="'+s+'" class="bx-pager-link">'+n+"</a></div>"}o.pagerEl.html(e)},T=function(){o.settings.pagerCustom?o.pagerEl=t(o.settings.pagerCustom):(o.pagerEl=t('<div class="bx-pager" />'),o.settings.pagerSelector?t(o.settings.pagerSelector).html(o.pagerEl):o.controls.el.addClass("bx-has-pager").append(o.pagerEl),w()),o.pagerEl.on("click","a",I)},C=function(){o.controls.next=t('<a class="bx-next" href="">'+o.settings.nextText+"</a>"),o.controls.prev=t('<a class="bx-prev" href="">'+o.settings.prevText+"</a>"),o.controls.next.bind("click",y),o.controls.prev.bind("click",z),o.settings.nextSelector&&t(o.settings.nextSelector).append(o.controls.next),o.settings.prevSelector&&t(o.settings.prevSelector).append(o.controls.prev),o.settings.nextSelector||o.settings.prevSelector||(o.controls.directionEl=t('<div class="bx-controls-direction" />'),o.controls.directionEl.append(o.controls.prev).append(o.controls.next),o.controls.el.addClass("bx-has-controls-direction").append(o.controls.directionEl))},E=function(){o.controls.start=t('<div class="bx-controls-auto-item"><a class="bx-start" href="">'+o.settings.startText+"</a></div>"),o.controls.stop=t('<div class="bx-controls-auto-item"><a class="bx-stop" href="">'+o.settings.stopText+"</a></div>"),o.controls.autoEl=t('<div class="bx-controls-auto" />'),o.controls.autoEl.on("click",".bx-start",k),o.controls.autoEl.on("click",".bx-stop",M),o.settings.autoControlsCombine?o.controls.autoEl.append(o.controls.start):o.controls.autoEl.append(o.controls.start).append(o.controls.stop),o.settings.autoControlsSelector?t(o.settings.autoControlsSelector).html(o.controls.autoEl):o.controls.el.addClass("bx-has-controls-auto").append(o.controls.autoEl),A(o.settings.autoStart?"stop":"start")},P=function(){o.children.each(function(){var e=t(this).find("img:first").attr("title");void 0!=e&&(""+e).length&&t(this).append('<div class="bx-caption"><span>'+e+"</span></div>")})},y=function(t){o.settings.auto&&r.stopAuto(),r.goToNextSlide(),t.preventDefault()},z=function(t){o.settings.auto&&r.stopAuto(),r.goToPrevSlide(),t.preventDefault()},k=function(t){r.startAuto(),t.preventDefault()},M=function(t){r.stopAuto(),t.preventDefault()},I=function(e){o.settings.auto&&r.stopAuto();var i=t(e.currentTarget),s=parseInt(i.attr("data-slide-index"));s!=o.active.index&&r.goToSlide(s),e.preventDefault()},q=function(e){var i=o.children.length;return"short"==o.settings.pagerType?(o.settings.maxSlides>1&&(i=Math.ceil(o.children.length/o.settings.maxSlides)),o.pagerEl.html(e+1+o.settings.pagerShortSeparator+i),void 0):(o.pagerEl.find("a").removeClass("active"),o.pagerEl.each(function(i,s){t(s).find("a").eq(e).addClass("active")}),void 0)},D=function(){if(o.settings.infiniteLoop){var t="";0==o.active.index?t=o.children.eq(0).position():o.active.index==x()-1&&o.carousel?t=o.children.eq((x()-1)*m()).position():o.active.index==o.children.length-1&&(t=o.children.eq(o.children.length-1).position()),t&&("horizontal"==o.settings.mode?b(-t.left,"reset",0):"vertical"==o.settings.mode&&b(-t.top,"reset",0))}o.working=!1,o.settings.onSlideAfter(o.children.eq(o.active.index),o.oldIndex,o.active.index)},A=function(t){o.settings.autoControlsCombine?o.controls.autoEl.html(o.controls[t]):(o.controls.autoEl.find("a").removeClass("active"),o.controls.autoEl.find("a:not(.bx-"+t+")").addClass("active"))},W=function(){1==x()?(o.controls.prev.addClass("disabled"),o.controls.next.addClass("disabled")):!o.settings.infiniteLoop&&o.settings.hideControlOnEnd&&(0==o.active.index?(o.controls.prev.addClass("disabled"),o.controls.next.removeClass("disabled")):o.active.index==x()-1?(o.controls.next.addClass("disabled"),o.controls.prev.removeClass("disabled")):(o.controls.prev.removeClass("disabled"),o.controls.next.removeClass("disabled")))},H=function(){o.settings.autoDelay>0?setTimeout(r.startAuto,o.settings.autoDelay):r.startAuto(),o.settings.autoHover&&r.hover(function(){o.interval&&(r.stopAuto(!0),o.autoPaused=!0)},function(){o.autoPaused&&(r.startAuto(!0),o.autoPaused=null)})},L=function(){var e=0;if("next"==o.settings.autoDirection)r.append(o.children.clone().addClass("bx-clone"));else{r.prepend(o.children.clone().addClass("bx-clone"));var i=o.children.first().position();e="horizontal"==o.settings.mode?-i.left:-i.top}b(e,"reset",0),o.settings.pager=!1,o.settings.controls=!1,o.settings.autoControls=!1,o.settings.tickerHover&&!o.usingCSS&&o.viewport.hover(function(){r.stop()},function(){var e=0;o.children.each(function(){e+="horizontal"==o.settings.mode?t(this).outerWidth(!0):t(this).outerHeight(!0)});var i=o.settings.speed/e,s="horizontal"==o.settings.mode?"left":"top",n=i*(e-Math.abs(parseInt(r.css(s))));N(n)}),N()},N=function(t){speed=t?t:o.settings.speed;var e={left:0,top:0},i={left:0,top:0};"next"==o.settings.autoDirection?e=r.find(".bx-clone").first().position():i=o.children.first().position();var s="horizontal"==o.settings.mode?-e.left:-e.top,n="horizontal"==o.settings.mode?-i.left:-i.top,a={resetValue:n};b(s,"ticker",speed,a)},O=function(){o.touch={start:{x:0,y:0},end:{x:0,y:0}},o.viewport.bind("touchstart",X)},X=function(t){if(o.working)t.preventDefault();else{o.touch.originalPos=r.position();var e=t.originalEvent;o.touch.start.x=e.changedTouches[0].pageX,o.touch.start.y=e.changedTouches[0].pageY,o.viewport.bind("touchmove",Y),o.viewport.bind("touchend",V)}},Y=function(t){var e=t.originalEvent,i=Math.abs(e.changedTouches[0].pageX-o.touch.start.x),s=Math.abs(e.changedTouches[0].pageY-o.touch.start.y);if(3*i>s&&o.settings.preventDefaultSwipeX?t.preventDefault():3*s>i&&o.settings.preventDefaultSwipeY&&t.preventDefault(),"fade"!=o.settings.mode&&o.settings.oneToOneTouch){var n=0;if("horizontal"==o.settings.mode){var r=e.changedTouches[0].pageX-o.touch.start.x;n=o.touch.originalPos.left+r}else{var r=e.changedTouches[0].pageY-o.touch.start.y;n=o.touch.originalPos.top+r}b(n,"reset",0)}},V=function(t){o.viewport.unbind("touchmove",Y);var e=t.originalEvent,i=0;if(o.touch.end.x=e.changedTouches[0].pageX,o.touch.end.y=e.changedTouches[0].pageY,"fade"==o.settings.mode){var s=Math.abs(o.touch.start.x-o.touch.end.x);s>=o.settings.swipeThreshold&&(o.touch.start.x>o.touch.end.x?r.goToNextSlide():r.goToPrevSlide(),r.stopAuto())}else{var s=0;"horizontal"==o.settings.mode?(s=o.touch.end.x-o.touch.start.x,i=o.touch.originalPos.left):(s=o.touch.end.y-o.touch.start.y,i=o.touch.originalPos.top),!o.settings.infiniteLoop&&(0==o.active.index&&s>0||o.active.last&&0>s)?b(i,"reset",200):Math.abs(s)>=o.settings.swipeThreshold?(0>s?r.goToNextSlide():r.goToPrevSlide(),r.stopAuto()):b(i,"reset",200)}o.viewport.unbind("touchend",V)},Z=function(){var e=t(window).width(),i=t(window).height();(a!=e||l!=i)&&(a=e,l=i,r.redrawSlider(),o.settings.onSliderResize.call(r,o.active.index))};return r.goToSlide=function(e,i){if(!o.working&&o.active.index!=e)if(o.working=!0,o.oldIndex=o.active.index,o.active.index=0>e?x()-1:e>=x()?0:e,o.settings.onSlideBefore(o.children.eq(o.active.index),o.oldIndex,o.active.index),"next"==i?o.settings.onSlideNext(o.children.eq(o.active.index),o.oldIndex,o.active.index):"prev"==i&&o.settings.onSlidePrev(o.children.eq(o.active.index),o.oldIndex,o.active.index),o.active.last=o.active.index>=x()-1,o.settings.pager&&q(o.active.index),o.settings.controls&&W(),"fade"==o.settings.mode)o.settings.adaptiveHeight&&o.viewport.height()!=v()&&o.viewport.animate({height:v()},o.settings.adaptiveHeightSpeed),o.children.filter(":visible").fadeOut(o.settings.speed).css({zIndex:0}),o.children.eq(o.active.index).css("zIndex",o.settings.slideZIndex+1).fadeIn(o.settings.speed,function(){t(this).css("zIndex",o.settings.slideZIndex),D()});else{o.settings.adaptiveHeight&&o.viewport.height()!=v()&&o.viewport.animate({height:v()},o.settings.adaptiveHeightSpeed);var s=0,n={left:0,top:0};if(!o.settings.infiniteLoop&&o.carousel&&o.active.last)if("horizontal"==o.settings.mode){var a=o.children.eq(o.children.length-1);n=a.position(),s=o.viewport.width()-a.outerWidth()}else{var l=o.children.length-o.settings.minSlides;n=o.children.eq(l).position()}else if(o.carousel&&o.active.last&&"prev"==i){var d=1==o.settings.moveSlides?o.settings.maxSlides-m():(x()-1)*m()-(o.children.length-o.settings.maxSlides),a=r.children(".bx-clone").eq(d);n=a.position()}else if("next"==i&&0==o.active.index)n=r.find("> .bx-clone").eq(o.settings.maxSlides).position(),o.active.last=!1;else if(e>=0){var c=e*m();n=o.children.eq(c).position()}if("undefined"!=typeof n){var g="horizontal"==o.settings.mode?-(n.left-s):-n.top;b(g,"slide",o.settings.speed)}}},r.goToNextSlide=function(){if(o.settings.infiniteLoop||!o.active.last){var t=parseInt(o.active.index)+1;r.goToSlide(t,"next")}},r.goToPrevSlide=function(){if(o.settings.infiniteLoop||0!=o.active.index){var t=parseInt(o.active.index)-1;r.goToSlide(t,"prev")}},r.startAuto=function(t){o.interval||(o.interval=setInterval(function(){"next"==o.settings.autoDirection?r.goToNextSlide():r.goToPrevSlide()},o.settings.pause),o.settings.autoControls&&1!=t&&A("stop"))},r.stopAuto=function(t){o.interval&&(clearInterval(o.interval),o.interval=null,o.settings.autoControls&&1!=t&&A("start"))},r.getCurrentSlide=function(){return o.active.index},r.getCurrentSlideElement=function(){return o.children.eq(o.active.index)},r.getSlideCount=function(){return o.children.length},r.redrawSlider=function(){o.children.add(r.find(".bx-clone")).outerWidth(u()),o.viewport.css("height",v()),o.settings.ticker||S(),o.active.last&&(o.active.index=x()-1),o.active.index>=x()&&(o.active.last=!0),o.settings.pager&&!o.settings.pagerCustom&&(w(),q(o.active.index))},r.destroySlider=function(){o.initialized&&(o.initialized=!1,t(".bx-clone",this).remove(),o.children.each(function(){void 0!=t(this).data("origStyle")?t(this).attr("style",t(this).data("origStyle")):t(this).removeAttr("style")}),void 0!=t(this).data("origStyle")?this.attr("style",t(this).data("origStyle")):t(this).removeAttr("style"),t(this).unwrap().unwrap(),o.controls.el&&o.controls.el.remove(),o.controls.next&&o.controls.next.remove(),o.controls.prev&&o.controls.prev.remove(),o.pagerEl&&o.settings.controls&&o.pagerEl.remove(),t(".bx-caption",this).remove(),o.controls.autoEl&&o.controls.autoEl.remove(),clearInterval(o.interval),o.settings.responsive&&t(window).unbind("resize",Z))},r.reloadSlider=function(t){void 0!=t&&(n=t),r.destroySlider(),d()},d(),this}}(jQuery);
+/* elevatezoom/jquery.elevateZoom-3.0.8.min.js */
+ 
+"function"!==typeof Object.create&&(Object.create=function(d){function h(){}h.prototype=d;return new h});
+(function(d,h,l,m){var k={init:function(b,a){var c=this;c.elem=a;c.$elem=d(a);c.imageSrc=c.$elem.data("zoom-image")?c.$elem.data("zoom-image"):c.$elem.attr("src");c.options=d.extend({},d.fn.elevateZoom.options,b);c.options.tint&&(c.options.lensColour="none",c.options.lensOpacity="1");"inner"==c.options.zoomType&&(c.options.showLens=!1);c.$elem.parent().removeAttr("title").removeAttr("alt");c.zoomImage=c.imageSrc;c.refresh(1);d("#"+c.options.gallery+" a").click(function(a){c.options.galleryActiveClass&&
+(d("#"+c.options.gallery+" a").removeClass(c.options.galleryActiveClass),d(this).addClass(c.options.galleryActiveClass));a.preventDefault();d(this).data("zoom-image")?c.zoomImagePre=d(this).data("zoom-image"):c.zoomImagePre=d(this).data("image");c.swaptheimage(d(this).data("image"),c.zoomImagePre);return!1})},refresh:function(b){var a=this;setTimeout(function(){a.fetch(a.imageSrc)},b||a.options.refresh)},fetch:function(b){var a=this,c=new Image;c.onload=function(){a.largeWidth=c.width;a.largeHeight=
+c.height;a.startZoom();a.currentImage=a.imageSrc;a.options.onZoomedImageLoaded(a.$elem)};c.src=b},startZoom:function(){var b=this;b.nzWidth=b.$elem.width();b.nzHeight=b.$elem.height();b.isWindowActive=!1;b.isLensActive=!1;b.isTintActive=!1;b.overWindow=!1;b.options.imageCrossfade&&(b.zoomWrap=b.$elem.wrap('<div style="height:'+b.nzHeight+"px;width:"+b.nzWidth+'px;" class="zoomWrapper" />'),b.$elem.css("position","absolute"));b.zoomLock=1;b.scrollingLock=!1;b.changeBgSize=!1;b.currentZoomLevel=b.options.zoomLevel;
+b.nzOffset=b.$elem.offset();b.widthRatio=b.largeWidth/b.currentZoomLevel/b.nzWidth;b.heightRatio=b.largeHeight/b.currentZoomLevel/b.nzHeight;"window"==b.options.zoomType&&(b.zoomWindowStyle="overflow: hidden;background-position: 0px 0px;text-align:center;background-color: "+String(b.options.zoomWindowBgColour)+";width: "+String(b.options.zoomWindowWidth)+"px;height: "+String(b.options.zoomWindowHeight)+"px;float: left;background-size: "+b.largeWidth/b.currentZoomLevel+"px "+b.largeHeight/b.currentZoomLevel+
+"px;display: none;z-index:100;border: "+String(b.options.borderSize)+"px solid "+b.options.borderColour+";background-repeat: no-repeat;position: absolute;");if("inner"==b.options.zoomType){var a=b.$elem.css("border-left-width");b.zoomWindowStyle="overflow: hidden;margin-left: "+String(a)+";margin-top: "+String(a)+";background-position: 0px 0px;width: "+String(b.nzWidth)+"px;height: "+String(b.nzHeight)+"px;float: left;display: none;cursor:"+b.options.cursor+";px solid "+b.options.borderColour+";background-repeat: no-repeat;position: absolute;"}"window"==
+b.options.zoomType&&(lensHeight=b.nzHeight<b.options.zoomWindowWidth/b.widthRatio?b.nzHeight:String(b.options.zoomWindowHeight/b.heightRatio),lensWidth=b.largeWidth<b.options.zoomWindowWidth?b.nzWidth:b.options.zoomWindowWidth/b.widthRatio,b.lensStyle="background-position: 0px 0px;width: "+String(b.options.zoomWindowWidth/b.widthRatio)+"px;height: "+String(b.options.zoomWindowHeight/b.heightRatio)+"px;float: right;display: none;overflow: hidden;z-index: 999;-webkit-transform: translateZ(0);opacity:"+
+b.options.lensOpacity+";filter: alpha(opacity = "+100*b.options.lensOpacity+"); zoom:1;width:"+lensWidth+"px;height:"+lensHeight+"px;background-color:"+b.options.lensColour+";cursor:"+b.options.cursor+";border: "+b.options.lensBorderSize+"px solid "+b.options.lensBorderColour+";background-repeat: no-repeat;position: absolute;");b.tintStyle="display: block;position: absolute;background-color: "+b.options.tintColour+";filter:alpha(opacity=0);opacity: 0;width: "+b.nzWidth+"px;height: "+b.nzHeight+"px;";
+b.lensRound="";"lens"==b.options.zoomType&&(b.lensStyle="background-position: 0px 0px;float: left;display: none;border: "+String(b.options.borderSize)+"px solid "+b.options.borderColour+";width:"+String(b.options.lensSize)+"px;height:"+String(b.options.lensSize)+"px;background-repeat: no-repeat;position: absolute;");"round"==b.options.lensShape&&(b.lensRound="border-top-left-radius: "+String(b.options.lensSize/2+b.options.borderSize)+"px;border-top-right-radius: "+String(b.options.lensSize/2+b.options.borderSize)+
+"px;border-bottom-left-radius: "+String(b.options.lensSize/2+b.options.borderSize)+"px;border-bottom-right-radius: "+String(b.options.lensSize/2+b.options.borderSize)+"px;");b.zoomContainer=d('<div class="zoomContainer" style="-webkit-transform: translateZ(0);position:absolute;left:'+b.nzOffset.left+"px;top:"+b.nzOffset.top+"px;height:"+b.nzHeight+"px;width:"+b.nzWidth+'px;"></div>');d("body").append(b.zoomContainer);b.options.containLensZoom&&"lens"==b.options.zoomType&&b.zoomContainer.css("overflow",
+"hidden");"inner"!=b.options.zoomType&&(b.zoomLens=d("<div class='zoomLens' style='"+b.lensStyle+b.lensRound+"'>&nbsp;</div>").appendTo(b.zoomContainer).click(function(){b.$elem.trigger("click")}),b.options.tint&&(b.tintContainer=d("<div/>").addClass("tintContainer"),b.zoomTint=d("<div class='zoomTint' style='"+b.tintStyle+"'></div>"),b.zoomLens.wrap(b.tintContainer),b.zoomTintcss=b.zoomLens.after(b.zoomTint),b.zoomTintImage=d('<img style="position: absolute; left: 0px; top: 0px; max-width: none; width: '+
+b.nzWidth+"px; height: "+b.nzHeight+'px;" src="'+b.imageSrc+'">').appendTo(b.zoomLens).click(function(){b.$elem.trigger("click")})));isNaN(b.options.zoomWindowPosition)?b.zoomWindow=d("<div style='z-index:999;left:"+b.windowOffsetLeft+"px;top:"+b.windowOffsetTop+"px;"+b.zoomWindowStyle+"' class='zoomWindow'>&nbsp;</div>").appendTo("body").click(function(){b.$elem.trigger("click")}):b.zoomWindow=d("<div style='z-index:999;left:"+b.windowOffsetLeft+"px;top:"+b.windowOffsetTop+"px;"+b.zoomWindowStyle+
+"' class='zoomWindow'>&nbsp;</div>").appendTo(b.zoomContainer).click(function(){b.$elem.trigger("click")});b.zoomWindowContainer=d("<div/>").addClass("zoomWindowContainer").css("width",b.options.zoomWindowWidth);b.zoomWindow.wrap(b.zoomWindowContainer);"lens"==b.options.zoomType&&b.zoomLens.css({backgroundImage:"url('"+b.imageSrc+"')"});"window"==b.options.zoomType&&b.zoomWindow.css({backgroundImage:"url('"+b.imageSrc+"')"});"inner"==b.options.zoomType&&b.zoomWindow.css({backgroundImage:"url('"+b.imageSrc+
+"')"});b.$elem.bind("touchmove",function(a){a.preventDefault();b.setPosition(a.originalEvent.touches[0]||a.originalEvent.changedTouches[0])});b.zoomContainer.bind("touchmove",function(a){"inner"==b.options.zoomType&&b.showHideWindow("show");a.preventDefault();b.setPosition(a.originalEvent.touches[0]||a.originalEvent.changedTouches[0])});b.zoomContainer.bind("touchend",function(a){b.showHideWindow("hide");b.options.showLens&&b.showHideLens("hide");b.options.tint&&"inner"!=b.options.zoomType&&b.showHideTint("hide")});
+b.$elem.bind("touchend",function(a){b.showHideWindow("hide");b.options.showLens&&b.showHideLens("hide");b.options.tint&&"inner"!=b.options.zoomType&&b.showHideTint("hide")});b.options.showLens&&(b.zoomLens.bind("touchmove",function(a){a.preventDefault();b.setPosition(a.originalEvent.touches[0]||a.originalEvent.changedTouches[0])}),b.zoomLens.bind("touchend",function(a){b.showHideWindow("hide");b.options.showLens&&b.showHideLens("hide");b.options.tint&&"inner"!=b.options.zoomType&&b.showHideTint("hide")}));
+b.$elem.bind("mousemove",function(a){!1==b.overWindow&&b.setElements("show");if(b.lastX!==a.clientX||b.lastY!==a.clientY)b.setPosition(a),b.currentLoc=a;b.lastX=a.clientX;b.lastY=a.clientY});b.zoomContainer.bind("mousemove",function(a){!1==b.overWindow&&b.setElements("show");if(b.lastX!==a.clientX||b.lastY!==a.clientY)b.setPosition(a),b.currentLoc=a;b.lastX=a.clientX;b.lastY=a.clientY});"inner"!=b.options.zoomType&&b.zoomLens.bind("mousemove",function(a){if(b.lastX!==a.clientX||b.lastY!==a.clientY)b.setPosition(a),
+b.currentLoc=a;b.lastX=a.clientX;b.lastY=a.clientY});b.options.tint&&"inner"!=b.options.zoomType&&b.zoomTint.bind("mousemove",function(a){if(b.lastX!==a.clientX||b.lastY!==a.clientY)b.setPosition(a),b.currentLoc=a;b.lastX=a.clientX;b.lastY=a.clientY});"inner"==b.options.zoomType&&b.zoomWindow.bind("mousemove",function(a){if(b.lastX!==a.clientX||b.lastY!==a.clientY)b.setPosition(a),b.currentLoc=a;b.lastX=a.clientX;b.lastY=a.clientY});b.zoomContainer.add(b.$elem).mouseenter(function(){!1==b.overWindow&&
+b.setElements("show")}).mouseleave(function(){b.scrollLock||b.setElements("hide")});"inner"!=b.options.zoomType&&b.zoomWindow.mouseenter(function(){b.overWindow=!0;b.setElements("hide")}).mouseleave(function(){b.overWindow=!1});b.minZoomLevel=b.options.minZoomLevel?b.options.minZoomLevel:2*b.options.scrollZoomIncrement;b.options.scrollZoom&&b.zoomContainer.add(b.$elem).bind("mousewheel DOMMouseScroll MozMousePixelScroll",function(a){b.scrollLock=!0;clearTimeout(d.data(this,"timer"));d.data(this,"timer",
+setTimeout(function(){b.scrollLock=!1},250));var e=a.originalEvent.wheelDelta||-1*a.originalEvent.detail;a.stopImmediatePropagation();a.stopPropagation();a.preventDefault();0<e/120?b.currentZoomLevel>=b.minZoomLevel&&b.changeZoomLevel(b.currentZoomLevel-b.options.scrollZoomIncrement):b.options.maxZoomLevel?b.currentZoomLevel<=b.options.maxZoomLevel&&b.changeZoomLevel(parseFloat(b.currentZoomLevel)+b.options.scrollZoomIncrement):b.changeZoomLevel(parseFloat(b.currentZoomLevel)+b.options.scrollZoomIncrement);
+return!1})},setElements:function(b){if(!this.options.zoomEnabled)return!1;"show"==b&&this.isWindowSet&&("inner"==this.options.zoomType&&this.showHideWindow("show"),"window"==this.options.zoomType&&this.showHideWindow("show"),this.options.showLens&&this.showHideLens("show"),this.options.tint&&"inner"!=this.options.zoomType&&this.showHideTint("show"));"hide"==b&&("window"==this.options.zoomType&&this.showHideWindow("hide"),this.options.tint||this.showHideWindow("hide"),this.options.showLens&&this.showHideLens("hide"),
+this.options.tint&&this.showHideTint("hide"))},setPosition:function(b){if(!this.options.zoomEnabled)return!1;this.nzHeight=this.$elem.height();this.nzWidth=this.$elem.width();this.nzOffset=this.$elem.offset();this.options.tint&&"inner"!=this.options.zoomType&&(this.zoomTint.css({top:0}),this.zoomTint.css({left:0}));this.options.responsive&&!this.options.scrollZoom&&this.options.showLens&&(lensHeight=this.nzHeight<this.options.zoomWindowWidth/this.widthRatio?this.nzHeight:String(this.options.zoomWindowHeight/
+this.heightRatio),lensWidth=this.largeWidth<this.options.zoomWindowWidth?this.nzWidth:this.options.zoomWindowWidth/this.widthRatio,this.widthRatio=this.largeWidth/this.nzWidth,this.heightRatio=this.largeHeight/this.nzHeight,"lens"!=this.options.zoomType&&(lensHeight=this.nzHeight<this.options.zoomWindowWidth/this.widthRatio?this.nzHeight:String(this.options.zoomWindowHeight/this.heightRatio),lensWidth=this.options.zoomWindowWidth<this.options.zoomWindowWidth?this.nzWidth:this.options.zoomWindowWidth/
+this.widthRatio,this.zoomLens.css("width",lensWidth),this.zoomLens.css("height",lensHeight),this.options.tint&&(this.zoomTintImage.css("width",this.nzWidth),this.zoomTintImage.css("height",this.nzHeight))),"lens"==this.options.zoomType&&this.zoomLens.css({width:String(this.options.lensSize)+"px",height:String(this.options.lensSize)+"px"}));this.zoomContainer.css({top:this.nzOffset.top});this.zoomContainer.css({left:this.nzOffset.left});this.mouseLeft=parseInt(b.pageX-this.nzOffset.left);this.mouseTop=
+parseInt(b.pageY-this.nzOffset.top);"window"==this.options.zoomType&&(this.Etoppos=this.mouseTop<this.zoomLens.height()/2,this.Eboppos=this.mouseTop>this.nzHeight-this.zoomLens.height()/2-2*this.options.lensBorderSize,this.Eloppos=this.mouseLeft<0+this.zoomLens.width()/2,this.Eroppos=this.mouseLeft>this.nzWidth-this.zoomLens.width()/2-2*this.options.lensBorderSize);"inner"==this.options.zoomType&&(this.Etoppos=this.mouseTop<this.nzHeight/2/this.heightRatio,this.Eboppos=this.mouseTop>this.nzHeight-
+this.nzHeight/2/this.heightRatio,this.Eloppos=this.mouseLeft<0+this.nzWidth/2/this.widthRatio,this.Eroppos=this.mouseLeft>this.nzWidth-this.nzWidth/2/this.widthRatio-2*this.options.lensBorderSize);0>=this.mouseLeft||0>this.mouseTop||this.mouseLeft>this.nzWidth||this.mouseTop>this.nzHeight?this.setElements("hide"):(this.options.showLens&&(this.lensLeftPos=String(this.mouseLeft-this.zoomLens.width()/2),this.lensTopPos=String(this.mouseTop-this.zoomLens.height()/2)),this.Etoppos&&(this.lensTopPos=0),
+this.Eloppos&&(this.tintpos=this.lensLeftPos=this.windowLeftPos=0),"window"==this.options.zoomType&&(this.Eboppos&&(this.lensTopPos=Math.max(this.nzHeight-this.zoomLens.height()-2*this.options.lensBorderSize,0)),this.Eroppos&&(this.lensLeftPos=this.nzWidth-this.zoomLens.width()-2*this.options.lensBorderSize)),"inner"==this.options.zoomType&&(this.Eboppos&&(this.lensTopPos=Math.max(this.nzHeight-2*this.options.lensBorderSize,0)),this.Eroppos&&(this.lensLeftPos=this.nzWidth-this.nzWidth-2*this.options.lensBorderSize)),
+"lens"==this.options.zoomType&&(this.windowLeftPos=String(-1*((b.pageX-this.nzOffset.left)*this.widthRatio-this.zoomLens.width()/2)),this.windowTopPos=String(-1*((b.pageY-this.nzOffset.top)*this.heightRatio-this.zoomLens.height()/2)),this.zoomLens.css({backgroundPosition:this.windowLeftPos+"px "+this.windowTopPos+"px"}),this.changeBgSize&&(this.nzHeight>this.nzWidth?("lens"==this.options.zoomType&&this.zoomLens.css({"background-size":this.largeWidth/this.newvalueheight+"px "+this.largeHeight/this.newvalueheight+
+"px"}),this.zoomWindow.css({"background-size":this.largeWidth/this.newvalueheight+"px "+this.largeHeight/this.newvalueheight+"px"})):("lens"==this.options.zoomType&&this.zoomLens.css({"background-size":this.largeWidth/this.newvaluewidth+"px "+this.largeHeight/this.newvaluewidth+"px"}),this.zoomWindow.css({"background-size":this.largeWidth/this.newvaluewidth+"px "+this.largeHeight/this.newvaluewidth+"px"})),this.changeBgSize=!1),this.setWindowPostition(b)),this.options.tint&&"inner"!=this.options.zoomType&&
+this.setTintPosition(b),"window"==this.options.zoomType&&this.setWindowPostition(b),"inner"==this.options.zoomType&&this.setWindowPostition(b),this.options.showLens&&(this.fullwidth&&"lens"!=this.options.zoomType&&(this.lensLeftPos=0),this.zoomLens.css({left:this.lensLeftPos+"px",top:this.lensTopPos+"px"})))},showHideWindow:function(b){"show"!=b||this.isWindowActive||(this.options.zoomWindowFadeIn?this.zoomWindow.stop(!0,!0,!1).fadeIn(this.options.zoomWindowFadeIn):this.zoomWindow.show(),this.isWindowActive=
+!0);"hide"==b&&this.isWindowActive&&(this.options.zoomWindowFadeOut?this.zoomWindow.stop(!0,!0).fadeOut(this.options.zoomWindowFadeOut):this.zoomWindow.hide(),this.isWindowActive=!1)},showHideLens:function(b){"show"!=b||this.isLensActive||(this.options.lensFadeIn?this.zoomLens.stop(!0,!0,!1).fadeIn(this.options.lensFadeIn):this.zoomLens.show(),this.isLensActive=!0);"hide"==b&&this.isLensActive&&(this.options.lensFadeOut?this.zoomLens.stop(!0,!0).fadeOut(this.options.lensFadeOut):this.zoomLens.hide(),
+this.isLensActive=!1)},showHideTint:function(b){"show"!=b||this.isTintActive||(this.options.zoomTintFadeIn?this.zoomTint.css({opacity:this.options.tintOpacity}).animate().stop(!0,!0).fadeIn("slow"):(this.zoomTint.css({opacity:this.options.tintOpacity}).animate(),this.zoomTint.show()),this.isTintActive=!0);"hide"==b&&this.isTintActive&&(this.options.zoomTintFadeOut?this.zoomTint.stop(!0,!0).fadeOut(this.options.zoomTintFadeOut):this.zoomTint.hide(),this.isTintActive=!1)},setLensPostition:function(b){},
+setWindowPostition:function(b){var a=this;if(isNaN(a.options.zoomWindowPosition))a.externalContainer=d("#"+a.options.zoomWindowPosition),a.externalContainerWidth=a.externalContainer.width(),a.externalContainerHeight=a.externalContainer.height(),a.externalContainerOffset=a.externalContainer.offset(),a.windowOffsetTop=a.externalContainerOffset.top,a.windowOffsetLeft=a.externalContainerOffset.left;else switch(a.options.zoomWindowPosition){case 1:a.windowOffsetTop=a.options.zoomWindowOffety;a.windowOffsetLeft=
++a.nzWidth;break;case 2:a.options.zoomWindowHeight>a.nzHeight&&(a.windowOffsetTop=-1*(a.options.zoomWindowHeight/2-a.nzHeight/2),a.windowOffsetLeft=a.nzWidth);break;case 3:a.windowOffsetTop=a.nzHeight-a.zoomWindow.height()-2*a.options.borderSize;a.windowOffsetLeft=a.nzWidth;break;case 4:a.windowOffsetTop=a.nzHeight;a.windowOffsetLeft=a.nzWidth;break;case 5:a.windowOffsetTop=a.nzHeight;a.windowOffsetLeft=a.nzWidth-a.zoomWindow.width()-2*a.options.borderSize;break;case 6:a.options.zoomWindowHeight>
+a.nzHeight&&(a.windowOffsetTop=a.nzHeight,a.windowOffsetLeft=-1*(a.options.zoomWindowWidth/2-a.nzWidth/2+2*a.options.borderSize));break;case 7:a.windowOffsetTop=a.nzHeight;a.windowOffsetLeft=0;break;case 8:a.windowOffsetTop=a.nzHeight;a.windowOffsetLeft=-1*(a.zoomWindow.width()+2*a.options.borderSize);break;case 9:a.windowOffsetTop=a.nzHeight-a.zoomWindow.height()-2*a.options.borderSize;a.windowOffsetLeft=-1*(a.zoomWindow.width()+2*a.options.borderSize);break;case 10:a.options.zoomWindowHeight>a.nzHeight&&
+(a.windowOffsetTop=-1*(a.options.zoomWindowHeight/2-a.nzHeight/2),a.windowOffsetLeft=-1*(a.zoomWindow.width()+2*a.options.borderSize));break;case 11:a.windowOffsetTop=a.options.zoomWindowOffety;a.windowOffsetLeft=-1*(a.zoomWindow.width()+2*a.options.borderSize);break;case 12:a.windowOffsetTop=-1*(a.zoomWindow.height()+2*a.options.borderSize);a.windowOffsetLeft=-1*(a.zoomWindow.width()+2*a.options.borderSize);break;case 13:a.windowOffsetTop=-1*(a.zoomWindow.height()+2*a.options.borderSize);a.windowOffsetLeft=
+0;break;case 14:a.options.zoomWindowHeight>a.nzHeight&&(a.windowOffsetTop=-1*(a.zoomWindow.height()+2*a.options.borderSize),a.windowOffsetLeft=-1*(a.options.zoomWindowWidth/2-a.nzWidth/2+2*a.options.borderSize));break;case 15:a.windowOffsetTop=-1*(a.zoomWindow.height()+2*a.options.borderSize);a.windowOffsetLeft=a.nzWidth-a.zoomWindow.width()-2*a.options.borderSize;break;case 16:a.windowOffsetTop=-1*(a.zoomWindow.height()+2*a.options.borderSize);a.windowOffsetLeft=a.nzWidth;break;default:a.windowOffsetTop=
+a.options.zoomWindowOffety,a.windowOffsetLeft=a.nzWidth}a.isWindowSet=!0;a.windowOffsetTop+=a.options.zoomWindowOffety;a.windowOffsetLeft+=a.options.zoomWindowOffetx;a.zoomWindow.css({top:a.windowOffsetTop});a.zoomWindow.css({left:a.windowOffsetLeft});"inner"==a.options.zoomType&&(a.zoomWindow.css({top:0}),a.zoomWindow.css({left:0}));a.windowLeftPos=String(-1*((b.pageX-a.nzOffset.left)*a.widthRatio-a.zoomWindow.width()/2));a.windowTopPos=String(-1*((b.pageY-a.nzOffset.top)*a.heightRatio-a.zoomWindow.height()/
+2));a.Etoppos&&(a.windowTopPos=0);a.Eloppos&&(a.windowLeftPos=0);a.Eboppos&&(a.windowTopPos=-1*(a.largeHeight/a.currentZoomLevel-a.zoomWindow.height()));a.Eroppos&&(a.windowLeftPos=-1*(a.largeWidth/a.currentZoomLevel-a.zoomWindow.width()));a.fullheight&&(a.windowTopPos=0);a.fullwidth&&(a.windowLeftPos=0);if("window"==a.options.zoomType||"inner"==a.options.zoomType)1==a.zoomLock&&(1>=a.widthRatio&&(a.windowLeftPos=0),1>=a.heightRatio&&(a.windowTopPos=0)),a.largeHeight<a.options.zoomWindowHeight&&(a.windowTopPos=
+0),a.largeWidth<a.options.zoomWindowWidth&&(a.windowLeftPos=0),a.options.easing?(a.xp||(a.xp=0),a.yp||(a.yp=0),a.loop||(a.loop=setInterval(function(){a.xp+=(a.windowLeftPos-a.xp)/a.options.easingAmount;a.yp+=(a.windowTopPos-a.yp)/a.options.easingAmount;a.scrollingLock?(clearInterval(a.loop),a.xp=a.windowLeftPos,a.yp=a.windowTopPos,a.xp=-1*((b.pageX-a.nzOffset.left)*a.widthRatio-a.zoomWindow.width()/2),a.yp=-1*((b.pageY-a.nzOffset.top)*a.heightRatio-a.zoomWindow.height()/2),a.changeBgSize&&(a.nzHeight>
+a.nzWidth?("lens"==a.options.zoomType&&a.zoomLens.css({"background-size":a.largeWidth/a.newvalueheight+"px "+a.largeHeight/a.newvalueheight+"px"}),a.zoomWindow.css({"background-size":a.largeWidth/a.newvalueheight+"px "+a.largeHeight/a.newvalueheight+"px"})):("lens"!=a.options.zoomType&&a.zoomLens.css({"background-size":a.largeWidth/a.newvaluewidth+"px "+a.largeHeight/a.newvalueheight+"px"}),a.zoomWindow.css({"background-size":a.largeWidth/a.newvaluewidth+"px "+a.largeHeight/a.newvaluewidth+"px"})),
+a.changeBgSize=!1),a.zoomWindow.css({backgroundPosition:a.windowLeftPos+"px "+a.windowTopPos+"px"}),a.scrollingLock=!1,a.loop=!1):(a.changeBgSize&&(a.nzHeight>a.nzWidth?("lens"==a.options.zoomType&&a.zoomLens.css({"background-size":a.largeWidth/a.newvalueheight+"px "+a.largeHeight/a.newvalueheight+"px"}),a.zoomWindow.css({"background-size":a.largeWidth/a.newvalueheight+"px "+a.largeHeight/a.newvalueheight+"px"})):("lens"!=a.options.zoomType&&a.zoomLens.css({"background-size":a.largeWidth/a.newvaluewidth+
+"px "+a.largeHeight/a.newvaluewidth+"px"}),a.zoomWindow.css({"background-size":a.largeWidth/a.newvaluewidth+"px "+a.largeHeight/a.newvaluewidth+"px"})),a.changeBgSize=!1),a.zoomWindow.css({backgroundPosition:a.xp+"px "+a.yp+"px"}))},16))):(a.changeBgSize&&(a.nzHeight>a.nzWidth?("lens"==a.options.zoomType&&a.zoomLens.css({"background-size":a.largeWidth/a.newvalueheight+"px "+a.largeHeight/a.newvalueheight+"px"}),a.zoomWindow.css({"background-size":a.largeWidth/a.newvalueheight+"px "+a.largeHeight/
+a.newvalueheight+"px"})):("lens"==a.options.zoomType&&a.zoomLens.css({"background-size":a.largeWidth/a.newvaluewidth+"px "+a.largeHeight/a.newvaluewidth+"px"}),a.largeHeight/a.newvaluewidth<a.options.zoomWindowHeight?a.zoomWindow.css({"background-size":a.largeWidth/a.newvaluewidth+"px "+a.largeHeight/a.newvaluewidth+"px"}):a.zoomWindow.css({"background-size":a.largeWidth/a.newvalueheight+"px "+a.largeHeight/a.newvalueheight+"px"})),a.changeBgSize=!1),a.zoomWindow.css({backgroundPosition:a.windowLeftPos+
+"px "+a.windowTopPos+"px"}))},setTintPosition:function(b){this.nzOffset=this.$elem.offset();this.tintpos=String(-1*(b.pageX-this.nzOffset.left-this.zoomLens.width()/2));this.tintposy=String(-1*(b.pageY-this.nzOffset.top-this.zoomLens.height()/2));this.Etoppos&&(this.tintposy=0);this.Eloppos&&(this.tintpos=0);this.Eboppos&&(this.tintposy=-1*(this.nzHeight-this.zoomLens.height()-2*this.options.lensBorderSize));this.Eroppos&&(this.tintpos=-1*(this.nzWidth-this.zoomLens.width()-2*this.options.lensBorderSize));
+this.options.tint&&(this.fullheight&&(this.tintposy=0),this.fullwidth&&(this.tintpos=0),this.zoomTintImage.css({left:this.tintpos+"px"}),this.zoomTintImage.css({top:this.tintposy+"px"}))},swaptheimage:function(b,a){var c=this,e=new Image;c.options.loadingIcon&&(c.spinner=d("<div style=\"background: url('"+c.options.loadingIcon+"') no-repeat center;height:"+c.nzHeight+"px;width:"+c.nzWidth+'px;z-index: 2000;position: absolute; background-position: center center;"></div>'),c.$elem.after(c.spinner));
+c.options.onImageSwap(c.$elem);e.onload=function(){c.largeWidth=e.width;c.largeHeight=e.height;c.zoomImage=a;c.zoomWindow.css({"background-size":c.largeWidth+"px "+c.largeHeight+"px"});c.zoomWindow.css({"background-size":c.largeWidth+"px "+c.largeHeight+"px"});c.swapAction(b,a)};e.src=a},swapAction:function(b,a){var c=this,e=new Image;e.onload=function(){c.nzHeight=e.height;c.nzWidth=e.width;c.options.onImageSwapComplete(c.$elem);c.doneCallback()};e.src=b;c.currentZoomLevel=c.options.zoomLevel;c.options.maxZoomLevel=
+!1;"lens"==c.options.zoomType&&c.zoomLens.css({backgroundImage:"url('"+a+"')"});"window"==c.options.zoomType&&c.zoomWindow.css({backgroundImage:"url('"+a+"')"});"inner"==c.options.zoomType&&c.zoomWindow.css({backgroundImage:"url('"+a+"')"});c.currentImage=a;if(c.options.imageCrossfade){var f=c.$elem,g=f.clone();c.$elem.attr("src",b);c.$elem.after(g);g.stop(!0).fadeOut(c.options.imageCrossfade,function(){d(this).remove()});c.$elem.width("auto").removeAttr("width");c.$elem.height("auto").removeAttr("height");
+f.fadeIn(c.options.imageCrossfade);c.options.tint&&"inner"!=c.options.zoomType&&(f=c.zoomTintImage,g=f.clone(),c.zoomTintImage.attr("src",a),c.zoomTintImage.after(g),g.stop(!0).fadeOut(c.options.imageCrossfade,function(){d(this).remove()}),f.fadeIn(c.options.imageCrossfade),c.zoomTint.css({height:c.$elem.height()}),c.zoomTint.css({width:c.$elem.width()}));c.zoomContainer.css("height",c.$elem.height());c.zoomContainer.css("width",c.$elem.width());"inner"!=c.options.zoomType||c.options.constrainType||
+(c.zoomWrap.parent().css("height",c.$elem.height()),c.zoomWrap.parent().css("width",c.$elem.width()),c.zoomWindow.css("height",c.$elem.height()),c.zoomWindow.css("width",c.$elem.width()))}else c.$elem.attr("src",b),c.options.tint&&(c.zoomTintImage.attr("src",a),c.zoomTintImage.attr("height",c.$elem.height()),c.zoomTintImage.css({height:c.$elem.height()}),c.zoomTint.css({height:c.$elem.height()})),c.zoomContainer.css("height",c.$elem.height()),c.zoomContainer.css("width",c.$elem.width());c.options.imageCrossfade&&
+(c.zoomWrap.css("height",c.$elem.height()),c.zoomWrap.css("width",c.$elem.width()));c.options.constrainType&&("height"==c.options.constrainType&&(c.zoomContainer.css("height",c.options.constrainSize),c.zoomContainer.css("width","auto"),c.options.imageCrossfade?(c.zoomWrap.css("height",c.options.constrainSize),c.zoomWrap.css("width","auto"),c.constwidth=c.zoomWrap.width()):(c.$elem.css("height",c.options.constrainSize),c.$elem.css("width","auto"),c.constwidth=c.$elem.width()),"inner"==c.options.zoomType&&
+(c.zoomWrap.parent().css("height",c.options.constrainSize),c.zoomWrap.parent().css("width",c.constwidth),c.zoomWindow.css("height",c.options.constrainSize),c.zoomWindow.css("width",c.constwidth)),c.options.tint&&(c.tintContainer.css("height",c.options.constrainSize),c.tintContainer.css("width",c.constwidth),c.zoomTint.css("height",c.options.constrainSize),c.zoomTint.css("width",c.constwidth),c.zoomTintImage.css("height",c.options.constrainSize),c.zoomTintImage.css("width",c.constwidth))),"width"==
+c.options.constrainType&&(c.zoomContainer.css("height","auto"),c.zoomContainer.css("width",c.options.constrainSize),c.options.imageCrossfade?(c.zoomWrap.css("height","auto"),c.zoomWrap.css("width",c.options.constrainSize),c.constheight=c.zoomWrap.height()):(c.$elem.css("height","auto"),c.$elem.css("width",c.options.constrainSize),c.constheight=c.$elem.height()),"inner"==c.options.zoomType&&(c.zoomWrap.parent().css("height",c.constheight),c.zoomWrap.parent().css("width",c.options.constrainSize),c.zoomWindow.css("height",
+c.constheight),c.zoomWindow.css("width",c.options.constrainSize)),c.options.tint&&(c.tintContainer.css("height",c.constheight),c.tintContainer.css("width",c.options.constrainSize),c.zoomTint.css("height",c.constheight),c.zoomTint.css("width",c.options.constrainSize),c.zoomTintImage.css("height",c.constheight),c.zoomTintImage.css("width",c.options.constrainSize))))},doneCallback:function(){this.options.loadingIcon&&this.spinner.hide();this.nzOffset=this.$elem.offset();this.nzWidth=this.$elem.width();
+this.nzHeight=this.$elem.height();this.currentZoomLevel=this.options.zoomLevel;this.widthRatio=this.largeWidth/this.nzWidth;this.heightRatio=this.largeHeight/this.nzHeight;"window"==this.options.zoomType&&(lensHeight=this.nzHeight<this.options.zoomWindowWidth/this.widthRatio?this.nzHeight:String(this.options.zoomWindowHeight/this.heightRatio),lensWidth=this.options.zoomWindowWidth<this.options.zoomWindowWidth?this.nzWidth:this.options.zoomWindowWidth/this.widthRatio,this.zoomLens&&(this.zoomLens.css("width",
+lensWidth),this.zoomLens.css("height",lensHeight)))},getCurrentImage:function(){return this.zoomImage},getGalleryList:function(){var b=this;b.gallerylist=[];b.options.gallery?d("#"+b.options.gallery+" a").each(function(){var a="";d(this).data("zoom-image")?a=d(this).data("zoom-image"):d(this).data("image")&&(a=d(this).data("image"));a==b.zoomImage?b.gallerylist.unshift({href:""+a+"",title:d(this).find("img").attr("title")}):b.gallerylist.push({href:""+a+"",title:d(this).find("img").attr("title")})}):
+b.gallerylist.push({href:""+b.zoomImage+"",title:d(this).find("img").attr("title")});return b.gallerylist},changeZoomLevel:function(b){this.scrollingLock=!0;this.newvalue=parseFloat(b).toFixed(2);newvalue=parseFloat(b).toFixed(2);maxheightnewvalue=this.largeHeight/(this.options.zoomWindowHeight/this.nzHeight*this.nzHeight);maxwidthtnewvalue=this.largeWidth/(this.options.zoomWindowWidth/this.nzWidth*this.nzWidth);"inner"!=this.options.zoomType&&(maxheightnewvalue<=newvalue?(this.heightRatio=this.largeHeight/
+maxheightnewvalue/this.nzHeight,this.newvalueheight=maxheightnewvalue,this.fullheight=!0):(this.heightRatio=this.largeHeight/newvalue/this.nzHeight,this.newvalueheight=newvalue,this.fullheight=!1),maxwidthtnewvalue<=newvalue?(this.widthRatio=this.largeWidth/maxwidthtnewvalue/this.nzWidth,this.newvaluewidth=maxwidthtnewvalue,this.fullwidth=!0):(this.widthRatio=this.largeWidth/newvalue/this.nzWidth,this.newvaluewidth=newvalue,this.fullwidth=!1),"lens"==this.options.zoomType&&(maxheightnewvalue<=newvalue?
+(this.fullwidth=!0,this.newvaluewidth=maxheightnewvalue):(this.widthRatio=this.largeWidth/newvalue/this.nzWidth,this.newvaluewidth=newvalue,this.fullwidth=!1)));"inner"==this.options.zoomType&&(maxheightnewvalue=parseFloat(this.largeHeight/this.nzHeight).toFixed(2),maxwidthtnewvalue=parseFloat(this.largeWidth/this.nzWidth).toFixed(2),newvalue>maxheightnewvalue&&(newvalue=maxheightnewvalue),newvalue>maxwidthtnewvalue&&(newvalue=maxwidthtnewvalue),maxheightnewvalue<=newvalue?(this.heightRatio=this.largeHeight/
+newvalue/this.nzHeight,this.newvalueheight=newvalue>maxheightnewvalue?maxheightnewvalue:newvalue,this.fullheight=!0):(this.heightRatio=this.largeHeight/newvalue/this.nzHeight,this.newvalueheight=newvalue>maxheightnewvalue?maxheightnewvalue:newvalue,this.fullheight=!1),maxwidthtnewvalue<=newvalue?(this.widthRatio=this.largeWidth/newvalue/this.nzWidth,this.newvaluewidth=newvalue>maxwidthtnewvalue?maxwidthtnewvalue:newvalue,this.fullwidth=!0):(this.widthRatio=this.largeWidth/newvalue/this.nzWidth,this.newvaluewidth=
+newvalue,this.fullwidth=!1));scrcontinue=!1;"inner"==this.options.zoomType&&(this.nzWidth>this.nzHeight&&(this.newvaluewidth<=maxwidthtnewvalue?scrcontinue=!0:(scrcontinue=!1,this.fullwidth=this.fullheight=!0)),this.nzHeight>this.nzWidth&&(this.newvaluewidth<=maxwidthtnewvalue?scrcontinue=!0:(scrcontinue=!1,this.fullwidth=this.fullheight=!0)));"inner"!=this.options.zoomType&&(scrcontinue=!0);scrcontinue&&(this.zoomLock=0,this.changeZoom=!0,this.options.zoomWindowHeight/this.heightRatio<=this.nzHeight&&
+(this.currentZoomLevel=this.newvalueheight,"lens"!=this.options.zoomType&&"inner"!=this.options.zoomType&&(this.changeBgSize=!0,this.zoomLens.css({height:String(this.options.zoomWindowHeight/this.heightRatio)+"px"})),"lens"==this.options.zoomType||"inner"==this.options.zoomType)&&(this.changeBgSize=!0),this.options.zoomWindowWidth/this.widthRatio<=this.nzWidth&&("inner"!=this.options.zoomType&&this.newvaluewidth>this.newvalueheight&&(this.currentZoomLevel=this.newvaluewidth),"lens"!=this.options.zoomType&&
+"inner"!=this.options.zoomType&&(this.changeBgSize=!0,this.zoomLens.css({width:String(this.options.zoomWindowWidth/this.widthRatio)+"px"})),"lens"==this.options.zoomType||"inner"==this.options.zoomType)&&(this.changeBgSize=!0),"inner"==this.options.zoomType&&(this.changeBgSize=!0,this.nzWidth>this.nzHeight&&(this.currentZoomLevel=this.newvaluewidth),this.nzHeight>this.nzWidth&&(this.currentZoomLevel=this.newvaluewidth)));this.setPosition(this.currentLoc)},closeAll:function(){self.zoomWindow&&self.zoomWindow.hide();
+self.zoomLens&&self.zoomLens.hide();self.zoomTint&&self.zoomTint.hide()},changeState:function(b){"enable"==b&&(this.options.zoomEnabled=!0);"disable"==b&&(this.options.zoomEnabled=!1)}};d.fn.elevateZoom=function(b){return this.each(function(){var a=Object.create(k);a.init(b,this);d.data(this,"elevateZoom",a)})};d.fn.elevateZoom.options={zoomActivation:"hover",zoomEnabled:!0,preloading:1,zoomLevel:1,scrollZoom:!1,scrollZoomIncrement:0.1,minZoomLevel:!1,maxZoomLevel:!1,easing:!1,easingAmount:12,lensSize:200,
+zoomWindowWidth:400,zoomWindowHeight:400,zoomWindowOffetx:0,zoomWindowOffety:0,zoomWindowPosition:1,zoomWindowBgColour:"#fff",lensFadeIn:!1,lensFadeOut:!1,debug:!1,zoomWindowFadeIn:!1,zoomWindowFadeOut:!1,zoomWindowAlwaysShow:!1,zoomTintFadeIn:!1,zoomTintFadeOut:!1,borderSize:4,showLens:!0,borderColour:"#888",lensBorderSize:1,lensBorderColour:"#000",lensShape:"square",zoomType:"window",containLensZoom:!1,lensColour:"white",lensOpacity:0.4,lenszoom:!1,tint:!1,tintColour:"#333",tintOpacity:0.4,gallery:!1,
+galleryActiveClass:"zoomGalleryActive",imageCrossfade:!1,constrainType:!1,constrainSize:!1,loadingIcon:!1,cursor:"default",responsive:!0,onComplete:d.noop,onZoomedImageLoaded:function(){},onImageSwap:d.noop,onImageSwapComplete:d.noop}})(jQuery,window,document);
+/* jquery-jvectormap-2.0.4.min.js */
+ 
+
+(function( $ ){
+  var apiParams = {
+        set: {
+          colors: 1,
+          values: 1,
+          backgroundColor: 1,
+          scaleColors: 1,
+          normalizeFunction: 1,
+          focus: 1
+        },
+        get: {
+          selectedRegions: 1,
+          selectedMarkers: 1,
+          mapObject: 1,
+          regionName: 1
+        }
+      };
+
+  $.fn.vectorMap = function(options) {
+    var map,
+        methodName,
+        map = this.children('.jvectormap-container').data('mapObject');
+
+    if (options === 'addMap') {
+      jvm.Map.maps[arguments[1]] = arguments[2];
+    } else if ((options === 'set' || options === 'get') && apiParams[options][arguments[1]]) {
+      methodName = arguments[1].charAt(0).toUpperCase()+arguments[1].substr(1);
+      return map[options+methodName].apply(map, Array.prototype.slice.call(arguments, 2));
+    } else {
+      options = options || {};
+      options.container = this;
+      map = new jvm.Map(options);
+    }
+
+    return this;
+  };
+})( jQuery );
+ 
+
+(function (factory) {
+    if ( typeof define === 'function' && define.amd ) {
+        // AMD. Register as an anonymous module.
+        define(['jquery'], factory);
+    } else if (typeof exports === 'object') {
+        // Node/CommonJS style for Browserify
+        module.exports = factory;
+    } else {
+        // Browser globals
+        factory(jQuery);
+    }
+}(function ($) {
+
+    var toFix  = ['wheel', 'mousewheel', 'DOMMouseScroll', 'MozMousePixelScroll'],
+        toBind = ( 'onwheel' in document || document.documentMode >= 9 ) ?
+                    ['wheel'] : ['mousewheel', 'DomMouseScroll', 'MozMousePixelScroll'],
+        slice  = Array.prototype.slice,
+        nullLowestDeltaTimeout, lowestDelta;
+
+    if ( $.event.fixHooks ) {
+        for ( var i = toFix.length; i; ) {
+            $.event.fixHooks[ toFix[--i] ] = $.event.mouseHooks;
+        }
+    }
+
+    var special = $.event.special.mousewheel = {
+        version: '3.1.9',
+
+        setup: function() {
+            if ( this.addEventListener ) {
+                for ( var i = toBind.length; i; ) {
+                    this.addEventListener( toBind[--i], handler, false );
+                }
+            } else {
+                this.onmousewheel = handler;
+            }
+            // Store the line height and page height for this particular element
+            $.data(this, 'mousewheel-line-height', special.getLineHeight(this));
+            $.data(this, 'mousewheel-page-height', special.getPageHeight(this));
+        },
+
+        teardown: function() {
+            if ( this.removeEventListener ) {
+                for ( var i = toBind.length; i; ) {
+                    this.removeEventListener( toBind[--i], handler, false );
+                }
+            } else {
+                this.onmousewheel = null;
+            }
+        },
+
+        getLineHeight: function(elem) {
+            return parseInt($(elem)['offsetParent' in $.fn ? 'offsetParent' : 'parent']().css('fontSize'), 10);
+        },
+
+        getPageHeight: function(elem) {
+            return $(elem).height();
+        },
+
+        settings: {
+            adjustOldDeltas: true
+        }
+    };
+
+    $.fn.extend({
+        mousewheel: function(fn) {
+            return fn ? this.bind('mousewheel', fn) : this.trigger('mousewheel');
+        },
+
+        unmousewheel: function(fn) {
+            return this.unbind('mousewheel', fn);
+        }
+    });
+
+
+    function handler(event) {
+        var orgEvent   = event || window.event,
+            args       = slice.call(arguments, 1),
+            delta      = 0,
+            deltaX     = 0,
+            deltaY     = 0,
+            absDelta   = 0;
+        event = $.event.fix(orgEvent);
+        event.type = 'mousewheel';
+
+        // Old school scrollwheel delta
+        if ( 'detail'      in orgEvent ) { deltaY = orgEvent.detail * -1;      }
+        if ( 'wheelDelta'  in orgEvent ) { deltaY = orgEvent.wheelDelta;       }
+        if ( 'wheelDeltaY' in orgEvent ) { deltaY = orgEvent.wheelDeltaY;      }
+        if ( 'wheelDeltaX' in orgEvent ) { deltaX = orgEvent.wheelDeltaX * -1; }
+
+        // Firefox < 17 horizontal scrolling related to DOMMouseScroll event
+        if ( 'axis' in orgEvent && orgEvent.axis === orgEvent.HORIZONTAL_AXIS ) {
+            deltaX = deltaY * -1;
+            deltaY = 0;
+        }
+
+        // Set delta to be deltaY or deltaX if deltaY is 0 for backwards compatabilitiy
+        delta = deltaY === 0 ? deltaX : deltaY;
+
+        // New school wheel delta (wheel event)
+        if ( 'deltaY' in orgEvent ) {
+            deltaY = orgEvent.deltaY * -1;
+            delta  = deltaY;
+        }
+        if ( 'deltaX' in orgEvent ) {
+            deltaX = orgEvent.deltaX;
+            if ( deltaY === 0 ) { delta  = deltaX * -1; }
+        }
+
+        // No change actually happened, no reason to go any further
+        if ( deltaY === 0 && deltaX === 0 ) { return; }
+
+        // Need to convert lines and pages to pixels if we aren't already in pixels
+        // There are three delta modes:
+        //   * deltaMode 0 is by pixels, nothing to do
+        //   * deltaMode 1 is by lines
+        //   * deltaMode 2 is by pages
+        if ( orgEvent.deltaMode === 1 ) {
+            var lineHeight = $.data(this, 'mousewheel-line-height');
+            delta  *= lineHeight;
+            deltaY *= lineHeight;
+            deltaX *= lineHeight;
+        } else if ( orgEvent.deltaMode === 2 ) {
+            var pageHeight = $.data(this, 'mousewheel-page-height');
+            delta  *= pageHeight;
+            deltaY *= pageHeight;
+            deltaX *= pageHeight;
+        }
+
+        // Store lowest absolute delta to normalize the delta values
+        absDelta = Math.max( Math.abs(deltaY), Math.abs(deltaX) );
+
+        if ( !lowestDelta || absDelta < lowestDelta ) {
+            lowestDelta = absDelta;
+
+            // Adjust older deltas if necessary
+            if ( shouldAdjustOldDeltas(orgEvent, absDelta) ) {
+                lowestDelta /= 40;
+            }
+        }
+
+        // Adjust older deltas if necessary
+        if ( shouldAdjustOldDeltas(orgEvent, absDelta) ) {
+            // Divide all the things by 40!
+            delta  /= 40;
+            deltaX /= 40;
+            deltaY /= 40;
+        }
+
+        // Get a whole, normalized value for the deltas
+        delta  = Math[ delta  >= 1 ? 'floor' : 'ceil' ](delta  / lowestDelta);
+        deltaX = Math[ deltaX >= 1 ? 'floor' : 'ceil' ](deltaX / lowestDelta);
+        deltaY = Math[ deltaY >= 1 ? 'floor' : 'ceil' ](deltaY / lowestDelta);
+
+        // Add information to the event object
+        event.deltaX = deltaX;
+        event.deltaY = deltaY;
+        event.deltaFactor = lowestDelta;
+        // Go ahead and set deltaMode to 0 since we converted to pixels
+        // Although this is a little odd since we overwrite the deltaX/Y
+        // properties with normalized deltas.
+        event.deltaMode = 0;
+
+        // Add event and delta to the front of the arguments
+        args.unshift(event, delta, deltaX, deltaY);
+
+        // Clearout lowestDelta after sometime to better
+        // handle multiple device types that give different
+        // a different lowestDelta
+        // Ex: trackpad = 3 and mouse wheel = 120
+        if (nullLowestDeltaTimeout) { clearTimeout(nullLowestDeltaTimeout); }
+        nullLowestDeltaTimeout = setTimeout(nullLowestDelta, 200);
+
+        return ($.event.dispatch || $.event.handle).apply(this, args);
+    }
+
+    function nullLowestDelta() {
+        lowestDelta = null;
+    }
+
+    function shouldAdjustOldDeltas(orgEvent, absDelta) {
+        // If this is an older event and the delta is divisable by 120,
+        // then we are assuming that the browser is treating this as an
+        // older mouse wheel event and that we should divide the deltas
+        // by 40 to try and get a more usable deltaFactor.
+        // Side note, this actually impacts the reported scroll distance
+        // in older browsers and can cause scrolling to be slower than native.
+        // Turn this off by setting $.event.special.mousewheel.settings.adjustOldDeltas to false.
+        return special.settings.adjustOldDeltas && orgEvent.type === 'mousewheel' && absDelta % 120 === 0;
+    }
+
+})); 
+var jvm = {
+
+   
+  inherits: function(child, parent) {
+    function temp() {}
+    temp.prototype = parent.prototype;
+    child.prototype = new temp();
+    child.prototype.constructor = child;
+    child.parentClass = parent;
+  },
+
+   
+  mixin: function(target, source){
+    var prop;
+
+    for (prop in source.prototype) {
+      if (source.prototype.hasOwnProperty(prop)) {
+        target.prototype[prop] = source.prototype[prop];
+      }
+    }
+  },
+
+  min: function(values){
+    var min = Number.MAX_VALUE,
+        i;
+
+    if (values instanceof Array) {
+      for (i = 0; i < values.length; i++) {
+        if (values[i] < min) {
+          min = values[i];
+        }
+      }
+    } else {
+      for (i in values) {
+        if (values[i] < min) {
+          min = values[i];
+        }
+      }
+    }
+    return min;
+  },
+
+  max: function(values){
+    var max = Number.MIN_VALUE,
+        i;
+
+    if (values instanceof Array) {
+      for (i = 0; i < values.length; i++) {
+        if (values[i] > max) {
+          max = values[i];
+        }
+      }
+    } else {
+      for (i in values) {
+        if (values[i] > max) {
+          max = values[i];
+        }
+      }
+    }
+    return max;
+  },
+
+  keys: function(object){
+    var keys = [],
+        key;
+
+    for (key in object) {
+      keys.push(key);
+    }
+    return keys;
+  },
+
+  values: function(object){
+    var values = [],
+        key,
+        i;
+
+    for (i = 0; i < arguments.length; i++) {
+      object = arguments[i];
+      for (key in object) {
+        values.push(object[key]);
+      }
+    }
+    return values;
+  },
+
+  whenImageLoaded: function(url){
+    var deferred = new jvm.$.Deferred(),
+        img = jvm.$('<img/>');
+
+    img.error(function(){
+      deferred.reject();
+    }).load(function(){
+      deferred.resolve(img);
+    });
+    img.attr('src', url);
+
+    return deferred;
+  },
+
+  isImageUrl: function(s){
+    return /\.\w{3,4}$/.test(s);
+  }
+};
+
+jvm.$ = jQuery;
+
+ 
+if (!Array.prototype.indexOf) {
+  Array.prototype.indexOf = function (searchElement, fromIndex) {
+
+    var k;
+
+    // 1. Let O be the result of calling ToObject passing
+    //    the this value as the argument.
+    if (this == null) {
+      throw new TypeError('"this" is null or not defined');
+    }
+
+    var O = Object(this);
+
+    // 2. Let lenValue be the result of calling the Get
+    //    internal method of O with the argument "length".
+    // 3. Let len be ToUint32(lenValue).
+    var len = O.length >>> 0;
+
+    // 4. If len is 0, return -1.
+    if (len === 0) {
+      return -1;
+    }
+
+    // 5. If argument fromIndex was passed let n be
+    //    ToInteger(fromIndex); else let n be 0.
+    var n = +fromIndex || 0;
+
+    if (Math.abs(n) === Infinity) {
+      n = 0;
+    }
+
+    // 6. If n >= len, return -1.
+    if (n >= len) {
+      return -1;
+    }
+
+    // 7. If n >= 0, then Let k be n.
+    // 8. Else, n<0, Let k be len - abs(n).
+    //    If k is less than 0, then let k be 0.
+    k = Math.max(n >= 0 ? n : len - Math.abs(n), 0);
+
+    // 9. Repeat, while k < len
+    while (k < len) {
+      // a. Let Pk be ToString(k).
+      //   This is implicit for LHS operands of the in operator
+      // b. Let kPresent be the result of calling the
+      //    HasProperty internal method of O with argument Pk.
+      //   This step can be combined with c
+      // c. If kPresent is true, then
+      //    i.  Let elementK be the result of calling the Get
+      //        internal method of O with the argument ToString(k).
+      //   ii.  Let same be the result of applying the
+      //        Strict Equality Comparison Algorithm to
+      //        searchElement and elementK.
+      //  iii.  If same is true, return k.
+      if (k in O && O[k] === searchElement) {
+        return k;
+      }
+      k++;
+    }
+    return -1;
+  };
+} 
+jvm.AbstractElement = function(name, config){
+   
+  this.node = this.createElement(name);
+
+   
+  this.name = name;
+
+   
+  this.properties = {};
+
+  if (config) {
+    this.set(config);
+  }
+};
+
+ 
+jvm.AbstractElement.prototype.set = function(property, value){
+  var key;
+
+  if (typeof property === 'object') {
+    for (key in property) {
+      this.properties[key] = property[key];
+      this.applyAttr(key, property[key]);
+    }
+  } else {
+    this.properties[property] = value;
+    this.applyAttr(property, value);
+  }
+};
+
+ 
+jvm.AbstractElement.prototype.get = function(property){
+  return this.properties[property];
+};
+
+ 
+jvm.AbstractElement.prototype.applyAttr = function(property, value){
+  this.node.setAttribute(property, value);
+};
+
+jvm.AbstractElement.prototype.remove = function(){
+  jvm.$(this.node).remove();
+}; 
+jvm.AbstractCanvasElement = function(container, width, height){
+  this.container = container;
+  this.setSize(width, height);
+  this.rootElement = new jvm[this.classPrefix+'GroupElement']();
+  this.node.appendChild( this.rootElement.node );
+  this.container.appendChild(this.node);
+}
+
+ 
+jvm.AbstractCanvasElement.prototype.add = function(element, group){
+  group = group || this.rootElement;
+  group.add(element);
+  element.canvas = this;
+}
+
+ 
+jvm.AbstractCanvasElement.prototype.addPath = function(config, style, group){
+  var el = new jvm[this.classPrefix+'PathElement'](config, style);
+
+  this.add(el, group);
+  return el;
+};
+
+ 
+jvm.AbstractCanvasElement.prototype.addCircle = function(config, style, group){
+  var el = new jvm[this.classPrefix+'CircleElement'](config, style);
+
+  this.add(el, group);
+  return el;
+};
+
+ 
+jvm.AbstractCanvasElement.prototype.addImage = function(config, style, group){
+  var el = new jvm[this.classPrefix+'ImageElement'](config, style);
+
+  this.add(el, group);
+  return el;
+};
+
+ 
+jvm.AbstractCanvasElement.prototype.addText = function(config, style, group){
+  var el = new jvm[this.classPrefix+'TextElement'](config, style);
+
+  this.add(el, group);
+  return el;
+};
+
+ 
+jvm.AbstractCanvasElement.prototype.addGroup = function(parentGroup){
+  var el = new jvm[this.classPrefix+'GroupElement']();
+
+  if (parentGroup) {
+    parentGroup.node.appendChild(el.node);
+  } else {
+    this.node.appendChild(el.node);
+  }
+  el.canvas = this;
+  return el;
+}; 
+jvm.AbstractShapeElement = function(name, config, style){
+  this.style = style || {};
+  this.style.current = this.style.current || {};
+  this.isHovered = false;
+  this.isSelected = false;
+  this.updateStyle();
+};
+
+ 
+jvm.AbstractShapeElement.prototype.setStyle = function(property, value){
+  var styles = {};
+
+  if (typeof property === 'object') {
+    styles = property;
+  } else {
+    styles[property] = value;
+  }
+  jvm.$.extend(this.style.current, styles);
+  this.updateStyle();
+};
+
+
+jvm.AbstractShapeElement.prototype.updateStyle = function(){
+  var attrs = {};
+
+  jvm.AbstractShapeElement.mergeStyles(attrs, this.style.initial);
+  jvm.AbstractShapeElement.mergeStyles(attrs, this.style.current);
+  if (this.isHovered) {
+    jvm.AbstractShapeElement.mergeStyles(attrs, this.style.hover);
+  }
+  if (this.isSelected) {
+    jvm.AbstractShapeElement.mergeStyles(attrs, this.style.selected);
+    if (this.isHovered) {
+      jvm.AbstractShapeElement.mergeStyles(attrs, this.style.selectedHover);
+    }
+  }
+  this.set(attrs);
+};
+
+jvm.AbstractShapeElement.mergeStyles = function(styles, newStyles){
+  var key;
+
+  newStyles = newStyles || {};
+  for (key in newStyles) {
+    if (newStyles[key] === null) {
+      delete styles[key];
+    } else {
+      styles[key] = newStyles[key];
+    }
+  }
+} 
+
+jvm.SVGElement = function(name, config){
+  jvm.SVGElement.parentClass.apply(this, arguments);
+}
+
+jvm.inherits(jvm.SVGElement, jvm.AbstractElement);
+
+jvm.SVGElement.svgns = "http://www.w3.org/2000/svg";
+
+ 
+jvm.SVGElement.prototype.createElement = function( tagName ){
+  return document.createElementNS( jvm.SVGElement.svgns, tagName );
+};
+
+ 
+jvm.SVGElement.prototype.addClass = function( className ){
+  this.node.setAttribute('class', className);
+};
+
+ 
+jvm.SVGElement.prototype.getElementCtr = function( ctr ){
+  return jvm['SVG'+ctr];
+};
+
+jvm.SVGElement.prototype.getBBox = function(){
+  return this.node.getBBox();
+};jvm.SVGGroupElement = function(){
+  jvm.SVGGroupElement.parentClass.call(this, 'g');
+}
+
+jvm.inherits(jvm.SVGGroupElement, jvm.SVGElement);
+
+jvm.SVGGroupElement.prototype.add = function(element){
+  this.node.appendChild( element.node );
+};jvm.SVGCanvasElement = function(container, width, height){
+  this.classPrefix = 'SVG';
+  jvm.SVGCanvasElement.parentClass.call(this, 'svg');
+
+  this.defsElement = new jvm.SVGElement('defs');
+  this.node.appendChild( this.defsElement.node );
+
+  jvm.AbstractCanvasElement.apply(this, arguments);
+}
+
+jvm.inherits(jvm.SVGCanvasElement, jvm.SVGElement);
+jvm.mixin(jvm.SVGCanvasElement, jvm.AbstractCanvasElement);
+
+jvm.SVGCanvasElement.prototype.setSize = function(width, height){
+  this.width = width;
+  this.height = height;
+  this.node.setAttribute('width', width);
+  this.node.setAttribute('height', height);
+};
+
+jvm.SVGCanvasElement.prototype.applyTransformParams = function(scale, transX, transY) {
+  this.scale = scale;
+  this.transX = transX;
+  this.transY = transY;
+  this.rootElement.node.setAttribute('transform', 'scale('+scale+') translate('+transX+', '+transY+')');
+};jvm.SVGShapeElement = function(name, config, style){
+  jvm.SVGShapeElement.parentClass.call(this, name, config);
+  jvm.AbstractShapeElement.apply(this, arguments);
+};
+
+jvm.inherits(jvm.SVGShapeElement, jvm.SVGElement);
+jvm.mixin(jvm.SVGShapeElement, jvm.AbstractShapeElement);
+
+jvm.SVGShapeElement.prototype.applyAttr = function(attr, value){
+  var patternEl,
+      imageEl,
+      that = this;
+
+  if (attr === 'fill' && jvm.isImageUrl(value)) {
+    if (!jvm.SVGShapeElement.images[value]) {
+      jvm.whenImageLoaded(value).then(function(img){
+        imageEl = new jvm.SVGElement('image');
+        imageEl.node.setAttributeNS('http://www.w3.org/1999/xlink', 'href', value);
+        imageEl.applyAttr('x', '0');
+        imageEl.applyAttr('y', '0');
+        imageEl.applyAttr('width', img[0].width);
+        imageEl.applyAttr('height', img[0].height);
+
+        patternEl = new jvm.SVGElement('pattern');
+        patternEl.applyAttr('id', 'image'+jvm.SVGShapeElement.imageCounter);
+        patternEl.applyAttr('x', 0);
+        patternEl.applyAttr('y', 0);
+        patternEl.applyAttr('width', img[0].width / 2);
+        patternEl.applyAttr('height', img[0].height / 2);
+        patternEl.applyAttr('viewBox', '0 0 '+img[0].width+' '+img[0].height);
+        patternEl.applyAttr('patternUnits', 'userSpaceOnUse');
+        patternEl.node.appendChild( imageEl.node );
+
+        that.canvas.defsElement.node.appendChild( patternEl.node );
+
+        jvm.SVGShapeElement.images[value] = jvm.SVGShapeElement.imageCounter++;
+
+        that.applyAttr('fill', 'url(#image'+jvm.SVGShapeElement.images[value]+')');
+      });
+    } else {
+      this.applyAttr('fill', 'url(#image'+jvm.SVGShapeElement.images[value]+')');
+    }
+  } else {
+    jvm.SVGShapeElement.parentClass.prototype.applyAttr.apply(this, arguments);
+  }
+};
+
+jvm.SVGShapeElement.imageCounter = 1;
+jvm.SVGShapeElement.images = {};jvm.SVGPathElement = function(config, style){
+  jvm.SVGPathElement.parentClass.call(this, 'path', config, style);
+  this.node.setAttribute('fill-rule', 'evenodd');
+}
+
+jvm.inherits(jvm.SVGPathElement, jvm.SVGShapeElement);jvm.SVGCircleElement = function(config, style){
+  jvm.SVGCircleElement.parentClass.call(this, 'circle', config, style);
+};
+
+jvm.inherits(jvm.SVGCircleElement, jvm.SVGShapeElement);jvm.SVGImageElement = function(config, style){
+  jvm.SVGImageElement.parentClass.call(this, 'image', config, style);
+};
+
+jvm.inherits(jvm.SVGImageElement, jvm.SVGShapeElement);
+
+jvm.SVGImageElement.prototype.applyAttr = function(attr, value){
+  var that = this;
+
+  if (attr == 'image') {
+    jvm.whenImageLoaded(value).then(function(img){
+      that.node.setAttributeNS('http://www.w3.org/1999/xlink', 'href', value);
+      that.width = img[0].width;
+      that.height = img[0].height;
+      that.applyAttr('width', that.width);
+      that.applyAttr('height', that.height);
+
+      that.applyAttr('x', that.cx - that.width / 2);
+      that.applyAttr('y', that.cy - that.height / 2);
+
+      jvm.$(that.node).trigger('imageloaded', [img]);
+    });
+  } else if(attr == 'cx') {
+    this.cx = value;
+    if (this.width) {
+      this.applyAttr('x', value - this.width / 2);
+    }
+  } else if(attr == 'cy') {
+    this.cy = value;
+    if (this.height) {
+      this.applyAttr('y', value - this.height / 2);
+    }
+  } else {
+    jvm.SVGImageElement.parentClass.prototype.applyAttr.apply(this, arguments);
+  }
+};jvm.SVGTextElement = function(config, style){
+  jvm.SVGTextElement.parentClass.call(this, 'text', config, style);
+}
+
+jvm.inherits(jvm.SVGTextElement, jvm.SVGShapeElement);
+
+jvm.SVGTextElement.prototype.applyAttr = function(attr, value){
+  if (attr === 'text') {
+    this.node.textContent = value;
+  } else {
+    jvm.SVGTextElement.parentClass.prototype.applyAttr.apply(this, arguments);
+  }
+}; 
+
+jvm.VMLElement = function(name, config){
+  if (!jvm.VMLElement.VMLInitialized) {
+    jvm.VMLElement.initializeVML();
+  }
+
+  jvm.VMLElement.parentClass.apply(this, arguments);
+};
+
+jvm.inherits(jvm.VMLElement, jvm.AbstractElement);
+
+ 
+jvm.VMLElement.VMLInitialized = false;
+
+ 
+
+ // The following method of VML handling is borrowed from the
+ // Raphael library by Dmitry Baranovsky.
+
+jvm.VMLElement.initializeVML = function(){
+  try {
+    if (!document.namespaces.rvml) {
+      document.namespaces.add("rvml","urn:schemas-microsoft-com:vml");
+    }
+     
+    jvm.VMLElement.prototype.createElement = function (tagName) {
+      return document.createElement('<rvml:' + tagName + ' class="rvml">');
+    };
+  } catch (e) {
+     
+    jvm.VMLElement.prototype.createElement = function (tagName) {
+      return document.createElement('<' + tagName + ' xmlns="urn:schemas-microsoft.com:vml" class="rvml">');
+    };
+  }
+  document.createStyleSheet().addRule(".rvml", "behavior:url(#default#VML)");
+  jvm.VMLElement.VMLInitialized = true;
+};
+
+ 
+jvm.VMLElement.prototype.getElementCtr = function( ctr ){
+  return jvm['VML'+ctr];
+};
+
+ 
+jvm.VMLElement.prototype.addClass = function( className ){
+  jvm.$(this.node).addClass(className);
+};
+
+ 
+jvm.VMLElement.prototype.applyAttr = function( attr, value ){
+  this.node[attr] = value;
+};
+
+ 
+jvm.VMLElement.prototype.getBBox = function(){
+  var node = jvm.$(this.node);
+
+  return {
+    x: node.position().left / this.canvas.scale,
+    y: node.position().top / this.canvas.scale,
+    width: node.width() / this.canvas.scale,
+    height: node.height() / this.canvas.scale
+  };
+};jvm.VMLGroupElement = function(){
+  jvm.VMLGroupElement.parentClass.call(this, 'group');
+
+  this.node.style.left = '0px';
+  this.node.style.top = '0px';
+  this.node.coordorigin = "0 0";
+};
+
+jvm.inherits(jvm.VMLGroupElement, jvm.VMLElement);
+
+jvm.VMLGroupElement.prototype.add = function(element){
+  this.node.appendChild( element.node );
+};jvm.VMLCanvasElement = function(container, width, height){
+  this.classPrefix = 'VML';
+  jvm.VMLCanvasElement.parentClass.call(this, 'group');
+  jvm.AbstractCanvasElement.apply(this, arguments);
+  this.node.style.position = 'absolute';
+};
+
+jvm.inherits(jvm.VMLCanvasElement, jvm.VMLElement);
+jvm.mixin(jvm.VMLCanvasElement, jvm.AbstractCanvasElement);
+
+jvm.VMLCanvasElement.prototype.setSize = function(width, height){
+  var paths,
+      groups,
+      i,
+      l;
+
+  this.width = width;
+  this.height = height;
+  this.node.style.width = width + "px";
+  this.node.style.height = height + "px";
+  this.node.coordsize = width+' '+height;
+  this.node.coordorigin = "0 0";
+  if (this.rootElement) {
+    paths = this.rootElement.node.getElementsByTagName('shape');
+    for(i = 0, l = paths.length; i < l; i++) {
+      paths[i].coordsize = width+' '+height;
+      paths[i].style.width = width+'px';
+      paths[i].style.height = height+'px';
+    }
+    groups = this.node.getElementsByTagName('group');
+    for(i = 0, l = groups.length; i < l; i++) {
+      groups[i].coordsize = width+' '+height;
+      groups[i].style.width = width+'px';
+      groups[i].style.height = height+'px';
+    }
+  }
+};
+
+jvm.VMLCanvasElement.prototype.applyTransformParams = function(scale, transX, transY) {
+  this.scale = scale;
+  this.transX = transX;
+  this.transY = transY;
+  this.rootElement.node.coordorigin = (this.width-transX-this.width/100)+','+(this.height-transY-this.height/100);
+  this.rootElement.node.coordsize = this.width/scale+','+this.height/scale;
+};jvm.VMLShapeElement = function(name, config){
+  jvm.VMLShapeElement.parentClass.call(this, name, config);
+
+  this.fillElement = new jvm.VMLElement('fill');
+  this.strokeElement = new jvm.VMLElement('stroke');
+  this.node.appendChild(this.fillElement.node);
+  this.node.appendChild(this.strokeElement.node);
+  this.node.stroked = false;
+
+  jvm.AbstractShapeElement.apply(this, arguments);
+};
+
+jvm.inherits(jvm.VMLShapeElement, jvm.VMLElement);
+jvm.mixin(jvm.VMLShapeElement, jvm.AbstractShapeElement);
+
+jvm.VMLShapeElement.prototype.applyAttr = function(attr, value){
+  switch (attr) {
+    case 'fill':
+      this.node.fillcolor = value;
+      break;
+    case 'fill-opacity':
+      this.fillElement.node.opacity = Math.round(value*100)+'%';
+      break;
+    case 'stroke':
+      if (value === 'none') {
+        this.node.stroked = false;
+      } else {
+        this.node.stroked = true;
+      }
+      this.node.strokecolor = value;
+      break;
+    case 'stroke-opacity':
+      this.strokeElement.node.opacity = Math.round(value*100)+'%';
+      break;
+    case 'stroke-width':
+      if (parseInt(value, 10) === 0) {
+        this.node.stroked = false;
+      } else {
+        this.node.stroked = true;
+      }
+      this.node.strokeweight = value;
+      break;
+    case 'd':
+      this.node.path = jvm.VMLPathElement.pathSvgToVml(value);
+      break;
+    default:
+      jvm.VMLShapeElement.parentClass.prototype.applyAttr.apply(this, arguments);
+  }
+};jvm.VMLPathElement = function(config, style){
+  var scale = new jvm.VMLElement('skew');
+
+  jvm.VMLPathElement.parentClass.call(this, 'shape', config, style);
+
+  this.node.coordorigin = "0 0";
+
+  scale.node.on = true;
+  scale.node.matrix = '0.01,0,0,0.01,0,0';
+  scale.node.offset = '0,0';
+
+  this.node.appendChild(scale.node);
+};
+
+jvm.inherits(jvm.VMLPathElement, jvm.VMLShapeElement);
+
+jvm.VMLPathElement.prototype.applyAttr = function(attr, value){
+  if (attr === 'd') {
+    this.node.path = jvm.VMLPathElement.pathSvgToVml(value);
+  } else {
+    jvm.VMLShapeElement.prototype.applyAttr.call(this, attr, value);
+  }
+};
+
+jvm.VMLPathElement.pathSvgToVml = function(path) {
+  var cx = 0, cy = 0, ctrlx, ctrly;
+
+  path = path.replace(/(-?\d+)e(-?\d+)/g, '0');
+  return path.replace(/([MmLlHhVvCcSs])\s*((?:-?\d*(?:\.\d+)?\s*,?\s*)+)/g, function(segment, letter, coords, index){
+    coords = coords.replace(/(\d)-/g, '$1,-')
+            .replace(/^\s+/g, '')
+            .replace(/\s+$/g, '')
+            .replace(/\s+/g, ',').split(',');
+    if (!coords[0]) coords.shift();
+    for (var i=0, l=coords.length; i<l; i++) {
+      coords[i] = Math.round(100*coords[i]);
+    }
+    switch (letter) {
+      case 'm':
+        cx += coords[0];
+        cy += coords[1];
+        return 't'+coords.join(',');
+      case 'M':
+        cx = coords[0];
+        cy = coords[1];
+        return 'm'+coords.join(',');
+      case 'l':
+        cx += coords[0];
+        cy += coords[1];
+        return 'r'+coords.join(',');
+      case 'L':
+        cx = coords[0];
+        cy = coords[1];
+        return 'l'+coords.join(',');
+      case 'h':
+        cx += coords[0];
+        return 'r'+coords[0]+',0';
+      case 'H':
+        cx = coords[0];
+        return 'l'+cx+','+cy;
+      case 'v':
+        cy += coords[0];
+        return 'r0,'+coords[0];
+      case 'V':
+        cy = coords[0];
+        return 'l'+cx+','+cy;
+      case 'c':
+        ctrlx = cx + coords[coords.length-4];
+        ctrly = cy + coords[coords.length-3];
+        cx += coords[coords.length-2];
+        cy += coords[coords.length-1];
+        return 'v'+coords.join(',');
+      case 'C':
+        ctrlx = coords[coords.length-4];
+        ctrly = coords[coords.length-3];
+        cx = coords[coords.length-2];
+        cy = coords[coords.length-1];
+        return 'c'+coords.join(',');
+      case 's':
+        coords.unshift(cy-ctrly);
+        coords.unshift(cx-ctrlx);
+        ctrlx = cx + coords[coords.length-4];
+        ctrly = cy + coords[coords.length-3];
+        cx += coords[coords.length-2];
+        cy += coords[coords.length-1];
+        return 'v'+coords.join(',');
+      case 'S':
+        coords.unshift(cy+cy-ctrly);
+        coords.unshift(cx+cx-ctrlx);
+        ctrlx = coords[coords.length-4];
+        ctrly = coords[coords.length-3];
+        cx = coords[coords.length-2];
+        cy = coords[coords.length-1];
+        return 'c'+coords.join(',');
+    }
+    return '';
+  }).replace(/z/g, 'e');
+};jvm.VMLCircleElement = function(config, style){
+  jvm.VMLCircleElement.parentClass.call(this, 'oval', config, style);
+};
+
+jvm.inherits(jvm.VMLCircleElement, jvm.VMLShapeElement);
+
+jvm.VMLCircleElement.prototype.applyAttr = function(attr, value){
+  switch (attr) {
+    case 'r':
+      this.node.style.width = value*2+'px';
+      this.node.style.height = value*2+'px';
+      this.applyAttr('cx', this.get('cx') || 0);
+      this.applyAttr('cy', this.get('cy') || 0);
+      break;
+    case 'cx':
+      if (!value) return;
+      this.node.style.left = value - (this.get('r') || 0) + 'px';
+      break;
+    case 'cy':
+      if (!value) return;
+      this.node.style.top = value - (this.get('r') || 0) + 'px';
+      break;
+    default:
+      jvm.VMLCircleElement.parentClass.prototype.applyAttr.call(this, attr, value);
+  }
+}; 
+jvm.VectorCanvas = function(container, width, height) {
+  this.mode = window.SVGAngle ? 'svg' : 'vml';
+
+  if (this.mode == 'svg') {
+    this.impl = new jvm.SVGCanvasElement(container, width, height);
+  } else {
+    this.impl = new jvm.VMLCanvasElement(container, width, height);
+  }
+  this.impl.mode = this.mode;
+  return this.impl;
+};jvm.SimpleScale = function(scale){
+  this.scale = scale;
+};
+
+jvm.SimpleScale.prototype.getValue = function(value){
+  return value;
+};jvm.OrdinalScale = function(scale){
+  this.scale = scale;
+};
+
+jvm.OrdinalScale.prototype.getValue = function(value){
+  return this.scale[value];
+};
+
+jvm.OrdinalScale.prototype.getTicks = function(){
+  var ticks = [],
+      key;
+
+  for (key in this.scale) {
+    ticks.push({
+      label: key,
+      value: this.scale[key]
+    });
+  }
+
+  return ticks;
+};jvm.NumericScale = function(scale, normalizeFunction, minValue, maxValue) {
+  this.scale = [];
+
+  normalizeFunction = normalizeFunction || 'linear';
+
+  if (scale) this.setScale(scale);
+  if (normalizeFunction) this.setNormalizeFunction(normalizeFunction);
+  if (typeof minValue !== 'undefined' ) this.setMin(minValue);
+  if (typeof maxValue !== 'undefined' ) this.setMax(maxValue);
+};
+
+jvm.NumericScale.prototype = {
+  setMin: function(min) {
+    this.clearMinValue = min;
+    if (typeof this.normalize === 'function') {
+      this.minValue = this.normalize(min);
+    } else {
+      this.minValue = min;
+    }
+  },
+
+  setMax: function(max) {
+    this.clearMaxValue = max;
+    if (typeof this.normalize === 'function') {
+      this.maxValue = this.normalize(max);
+    } else {
+      this.maxValue = max;
+    }
+  },
+
+  setScale: function(scale) {
+    var i;
+
+    this.scale = [];
+    for (i = 0; i < scale.length; i++) {
+      this.scale[i] = [scale[i]];
+    }
+  },
+
+  setNormalizeFunction: function(f) {
+    if (f === 'polynomial') {
+      this.normalize = function(value) {
+        return Math.pow(value, 0.2);
+      }
+    } else if (f === 'linear') {
+      delete this.normalize;
+    } else {
+      this.normalize = f;
+    }
+    this.setMin(this.clearMinValue);
+    this.setMax(this.clearMaxValue);
+  },
+
+  getValue: function(value) {
+    var lengthes = [],
+        fullLength = 0,
+        l,
+        i = 0,
+        c;
+
+    if (typeof this.normalize === 'function') {
+      value = this.normalize(value);
+    }
+    for (i = 0; i < this.scale.length-1; i++) {
+      l = this.vectorLength(this.vectorSubtract(this.scale[i+1], this.scale[i]));
+      lengthes.push(l);
+      fullLength += l;
+    }
+
+    c = (this.maxValue - this.minValue) / fullLength;
+    for (i=0; i<lengthes.length; i++) {
+      lengthes[i] *= c;
+    }
+
+    i = 0;
+    value -= this.minValue;
+    while (value - lengthes[i] >= 0) {
+      value -= lengthes[i];
+      i++;
+    }
+
+    if (i == this.scale.length - 1) {
+      value = this.vectorToNum(this.scale[i])
+    } else {
+      value = (
+        this.vectorToNum(
+          this.vectorAdd(this.scale[i],
+            this.vectorMult(
+              this.vectorSubtract(this.scale[i+1], this.scale[i]),
+              (value) / (lengthes[i])
+            )
+          )
+        )
+      );
+    }
+
+    return value;
+  },
+
+  vectorToNum: function(vector) {
+    var num = 0,
+        i;
+
+    for (i = 0; i < vector.length; i++) {
+      num += Math.round(vector[i])*Math.pow(256, vector.length-i-1);
+    }
+    return num;
+  },
+
+  vectorSubtract: function(vector1, vector2) {
+    var vector = [],
+        i;
+
+    for (i = 0; i < vector1.length; i++) {
+      vector[i] = vector1[i] - vector2[i];
+    }
+    return vector;
+  },
+
+  vectorAdd: function(vector1, vector2) {
+    var vector = [],
+        i;
+
+    for (i = 0; i < vector1.length; i++) {
+      vector[i] = vector1[i] + vector2[i];
+    }
+    return vector;
+  },
+
+  vectorMult: function(vector, num) {
+    var result = [],
+        i;
+
+    for (i = 0; i < vector.length; i++) {
+      result[i] = vector[i] * num;
+    }
+    return result;
+  },
+
+  vectorLength: function(vector) {
+    var result = 0,
+        i;
+    for (i = 0; i < vector.length; i++) {
+      result += vector[i] * vector[i];
+    }
+    return Math.sqrt(result);
+  },
+
+   
+  getTicks: function(){
+    var m = 5,
+        extent = [this.clearMinValue, this.clearMaxValue],
+        span = extent[1] - extent[0],
+        step = Math.pow(10, Math.floor(Math.log(span / m) / Math.LN10)),
+        err = m / span * step,
+        ticks = [],
+        tick,
+        v;
+
+    if (err <= .15) step *= 10;
+    else if (err <= .35) step *= 5;
+    else if (err <= .75) step *= 2;
+
+    extent[0] = Math.floor(extent[0] / step) * step;
+    extent[1] = Math.ceil(extent[1] / step) * step;
+
+    tick = extent[0];
+    while (tick <= extent[1]) {
+      if (tick == extent[0]) {
+        v = this.clearMinValue;
+      } else if (tick == extent[1]) {
+        v = this.clearMaxValue;
+      } else {
+        v = tick;
+      }
+      ticks.push({
+        label: tick,
+        value: this.getValue(v)
+      });
+      tick += step;
+    }
+
+    return ticks;
+  }
+};
+jvm.ColorScale = function(colors, normalizeFunction, minValue, maxValue) {
+  jvm.ColorScale.parentClass.apply(this, arguments);
+}
+
+jvm.inherits(jvm.ColorScale, jvm.NumericScale);
+
+jvm.ColorScale.prototype.setScale = function(scale) {
+  var i;
+
+  for (i = 0; i < scale.length; i++) {
+    this.scale[i] = jvm.ColorScale.rgbToArray(scale[i]);
+  }
+};
+
+jvm.ColorScale.prototype.getValue = function(value) {
+  return jvm.ColorScale.numToRgb(jvm.ColorScale.parentClass.prototype.getValue.call(this, value));
+};
+
+jvm.ColorScale.arrayToRgb = function(ar) {
+  var rgb = '#',
+      d,
+      i;
+
+  for (i = 0; i < ar.length; i++) {
+    d = ar[i].toString(16);
+    rgb += d.length == 1 ? '0'+d : d;
+  }
+  return rgb;
+};
+
+jvm.ColorScale.numToRgb = function(num) {
+  num = num.toString(16);
+
+  while (num.length < 6) {
+    num = '0' + num;
+  }
+
+  return '#'+num;
+};
+
+jvm.ColorScale.rgbToArray = function(rgb) {
+  rgb = rgb.substr(1);
+  return [parseInt(rgb.substr(0, 2), 16), parseInt(rgb.substr(2, 2), 16), parseInt(rgb.substr(4, 2), 16)];
+}; 
+jvm.Legend = function(params) {
+  this.params = params || {};
+  this.map = this.params.map;
+  this.series = this.params.series;
+  this.body = jvm.$('<div/>');
+  this.body.addClass('jvectormap-legend');
+  if (this.params.cssClass) {
+    this.body.addClass(this.params.cssClass);
+  }
+
+  if (params.vertical) {
+    this.map.legendCntVertical.append( this.body );
+  } else {
+    this.map.legendCntHorizontal.append( this.body );
+  }
+
+  this.render();
+}
+
+jvm.Legend.prototype.render = function(){
+  var ticks = this.series.scale.getTicks(),
+      i,
+      inner = jvm.$('<div/>').addClass('jvectormap-legend-inner'),
+      tick,
+      sample,
+      label;
+
+  this.body.html('');
+  if (this.params.title) {
+    this.body.append(
+      jvm.$('<div/>').addClass('jvectormap-legend-title').html(this.params.title)
+    );
+  }
+  this.body.append(inner);
+
+  for (i = 0; i < ticks.length; i++) {
+    tick = jvm.$('<div/>').addClass('jvectormap-legend-tick');
+    sample = jvm.$('<div/>').addClass('jvectormap-legend-tick-sample');
+
+    switch (this.series.params.attribute) {
+      case 'fill':
+        if (jvm.isImageUrl(ticks[i].value)) {
+          sample.css('background', 'url('+ticks[i].value+')');
+        } else {
+          sample.css('background', ticks[i].value);
+        }
+        break;
+      case 'stroke':
+        sample.css('background', ticks[i].value);
+        break;
+      case 'image':
+        sample.css('background', 'url('+ticks[i].value+') no-repeat center center');
+        break;
+      case 'r':
+        jvm.$('<div/>').css({
+          'border-radius': ticks[i].value,
+          border: this.map.params.markerStyle.initial['stroke-width']+'px '+
+                  this.map.params.markerStyle.initial['stroke']+' solid',
+          width: ticks[i].value * 2 + 'px',
+          height: ticks[i].value * 2 + 'px',
+          background: this.map.params.markerStyle.initial['fill']
+        }).appendTo(sample);
+        break;
+    }
+    tick.append( sample );
+    label = ticks[i].label;
+    if (this.params.labelRender) {
+      label = this.params.labelRender(label);
+    }
+    tick.append( jvm.$('<div>'+label+' </div>').addClass('jvectormap-legend-tick-text') );
+    inner.append(tick);
+  }
+  inner.append( jvm.$('<div/>').css('clear', 'both') );
+} 
+jvm.DataSeries = function(params, elements, map) {
+  var scaleConstructor;
+
+  params = params || {};
+  params.attribute = params.attribute || 'fill';
+
+  this.elements = elements;
+  this.params = params;
+  this.map = map;
+
+  if (params.attributes) {
+    this.setAttributes(params.attributes);
+  }
+
+  if (jvm.$.isArray(params.scale)) {
+    scaleConstructor = (params.attribute === 'fill' || params.attribute === 'stroke') ? jvm.ColorScale : jvm.NumericScale;
+    this.scale = new scaleConstructor(params.scale, params.normalizeFunction, params.min, params.max);
+  } else if (params.scale) {
+    this.scale = new jvm.OrdinalScale(params.scale);
+  } else {
+    this.scale = new jvm.SimpleScale(params.scale);
+  }
+
+  this.values = params.values || {};
+  this.setValues(this.values);
+
+  if (this.params.legend) {
+    this.legend = new jvm.Legend($.extend({
+      map: this.map,
+      series: this
+    }, this.params.legend))
+  }
+};
+
+jvm.DataSeries.prototype = {
+  setAttributes: function(key, attr){
+    var attrs = key,
+        code;
+
+    if (typeof key == 'string') {
+      if (this.elements[key]) {
+        this.elements[key].setStyle(this.params.attribute, attr);
+      }
+    } else {
+      for (code in attrs) {
+        if (this.elements[code]) {
+          this.elements[code].element.setStyle(this.params.attribute, attrs[code]);
+        }
+      }
+    }
+  },
+
+   
+  setValues: function(values) {
+    var max = -Number.MAX_VALUE,
+        min = Number.MAX_VALUE,
+        val,
+        cc,
+        attrs = {};
+
+    if (!(this.scale instanceof jvm.OrdinalScale) && !(this.scale instanceof jvm.SimpleScale)) {
+      // we have a color scale as an array
+      if (typeof this.params.min === 'undefined' || typeof this.params.max === 'undefined') {
+        // min and/or max are not defined, so calculate them
+        for (cc in values) {
+          val = parseFloat(values[cc]);
+          if (val > max) max = val;
+          if (val < min) min = val;
+        }
+      }
+
+      if (typeof this.params.min === 'undefined') {
+        this.scale.setMin(min);
+        this.params.min = min;
+      } else {
+        this.scale.setMin(this.params.min);
+      }
+
+      if (typeof this.params.max === 'undefined') {
+        this.scale.setMax(max);
+        this.params.max = max;
+      } else {
+        this.scale.setMax(this.params.max);
+      }
+
+      for (cc in values) {
+        if (cc != 'indexOf') {
+          val = parseFloat(values[cc]);
+          if (!isNaN(val)) {
+            attrs[cc] = this.scale.getValue(val);
+          } else {
+            attrs[cc] = this.elements[cc].element.style.initial[this.params.attribute];
+          }
+        }
+      }
+    } else {
+      for (cc in values) {
+        if (values[cc]) {
+          attrs[cc] = this.scale.getValue(values[cc]);
+        } else {
+          attrs[cc] = this.elements[cc].element.style.initial[this.params.attribute];
+        }
+      }
+    }
+
+    this.setAttributes(attrs);
+    jvm.$.extend(this.values, values);
+  },
+
+  clear: function(){
+    var key,
+        attrs = {};
+
+    for (key in this.values) {
+      if (this.elements[key]) {
+        attrs[key] = this.elements[key].element.shape.style.initial[this.params.attribute];
+      }
+    }
+    this.setAttributes(attrs);
+    this.values = {};
+  },
+
+   
+  setScale: function(scale) {
+    this.scale.setScale(scale);
+    if (this.values) {
+      this.setValues(this.values);
+    }
+  },
+
+   
+  setNormalizeFunction: function(f) {
+    this.scale.setNormalizeFunction(f);
+    if (this.values) {
+      this.setValues(this.values);
+    }
+  }
+};
+ 
+jvm.Proj = {
+  degRad: 180 / Math.PI,
+  radDeg: Math.PI / 180,
+  radius: 6381372,
+
+  sgn: function(n){
+    if (n > 0) {
+      return 1;
+    } else if (n < 0) {
+      return -1;
+    } else {
+      return n;
+    }
+  },
+
+   
+  mill: function(lat, lng, c){
+    return {
+      x: this.radius * (lng - c) * this.radDeg,
+      y: - this.radius * Math.log(Math.tan((45 + 0.4 * lat) * this.radDeg)) / 0.8
+    };
+  },
+
+   
+  mill_inv: function(x, y, c){
+    return {
+      lat: (2.5 * Math.atan(Math.exp(0.8 * y / this.radius)) - 5 * Math.PI / 8) * this.degRad,
+      lng: (c * this.radDeg + x / this.radius) * this.degRad
+    };
+  },
+
+   
+  merc: function(lat, lng, c){
+    return {
+      x: this.radius * (lng - c) * this.radDeg,
+      y: - this.radius * Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360))
+    };
+  },
+
+   
+  merc_inv: function(x, y, c){
+    return {
+      lat: (2 * Math.atan(Math.exp(y / this.radius)) - Math.PI / 2) * this.degRad,
+      lng: (c * this.radDeg + x / this.radius) * this.degRad
+    };
+  },
+
+   
+  aea: function(lat, lng, c){
+    var fi0 = 0,
+        lambda0 = c * this.radDeg,
+        fi1 = 29.5 * this.radDeg,
+        fi2 = 45.5 * this.radDeg,
+        fi = lat * this.radDeg,
+        lambda = lng * this.radDeg,
+        n = (Math.sin(fi1)+Math.sin(fi2)) / 2,
+        C = Math.cos(fi1)*Math.cos(fi1)+2*n*Math.sin(fi1),
+        theta = n*(lambda-lambda0),
+        ro = Math.sqrt(C-2*n*Math.sin(fi))/n,
+        ro0 = Math.sqrt(C-2*n*Math.sin(fi0))/n;
+
+    return {
+      x: ro * Math.sin(theta) * this.radius,
+      y: - (ro0 - ro * Math.cos(theta)) * this.radius
+    };
+  },
+
+   
+  aea_inv: function(xCoord, yCoord, c){
+    var x = xCoord / this.radius,
+        y = yCoord / this.radius,
+        fi0 = 0,
+        lambda0 = c * this.radDeg,
+        fi1 = 29.5 * this.radDeg,
+        fi2 = 45.5 * this.radDeg,
+        n = (Math.sin(fi1)+Math.sin(fi2)) / 2,
+        C = Math.cos(fi1)*Math.cos(fi1)+2*n*Math.sin(fi1),
+        ro0 = Math.sqrt(C-2*n*Math.sin(fi0))/n,
+        ro = Math.sqrt(x*x+(ro0-y)*(ro0-y)),
+        theta = Math.atan( x / (ro0 - y) );
+
+    return {
+      lat: (Math.asin((C - ro * ro * n * n) / (2 * n))) * this.degRad,
+      lng: (lambda0 + theta / n) * this.degRad
+    };
+  },
+
+   
+  lcc: function(lat, lng, c){
+    var fi0 = 0,
+        lambda0 = c * this.radDeg,
+        lambda = lng * this.radDeg,
+        fi1 = 33 * this.radDeg,
+        fi2 = 45 * this.radDeg,
+        fi = lat * this.radDeg,
+        n = Math.log( Math.cos(fi1) * (1 / Math.cos(fi2)) ) / Math.log( Math.tan( Math.PI / 4 + fi2 / 2) * (1 / Math.tan( Math.PI / 4 + fi1 / 2) ) ),
+        F = ( Math.cos(fi1) * Math.pow( Math.tan( Math.PI / 4 + fi1 / 2 ), n ) ) / n,
+        ro = F * Math.pow( 1 / Math.tan( Math.PI / 4 + fi / 2 ), n ),
+        ro0 = F * Math.pow( 1 / Math.tan( Math.PI / 4 + fi0 / 2 ), n );
+
+    return {
+      x: ro * Math.sin( n * (lambda - lambda0) ) * this.radius,
+      y: - (ro0 - ro * Math.cos( n * (lambda - lambda0) ) ) * this.radius
+    };
+  },
+
+   
+  lcc_inv: function(xCoord, yCoord, c){
+    var x = xCoord / this.radius,
+        y = yCoord / this.radius,
+        fi0 = 0,
+        lambda0 = c * this.radDeg,
+        fi1 = 33 * this.radDeg,
+        fi2 = 45 * this.radDeg,
+        n = Math.log( Math.cos(fi1) * (1 / Math.cos(fi2)) ) / Math.log( Math.tan( Math.PI / 4 + fi2 / 2) * (1 / Math.tan( Math.PI / 4 + fi1 / 2) ) ),
+        F = ( Math.cos(fi1) * Math.pow( Math.tan( Math.PI / 4 + fi1 / 2 ), n ) ) / n,
+        ro0 = F * Math.pow( 1 / Math.tan( Math.PI / 4 + fi0 / 2 ), n ),
+        ro = this.sgn(n) * Math.sqrt(x*x+(ro0-y)*(ro0-y)),
+        theta = Math.atan( x / (ro0 - y) );
+
+    return {
+      lat: (2 * Math.atan(Math.pow(F/ro, 1/n)) - Math.PI / 2) * this.degRad,
+      lng: (lambda0 + theta / n) * this.degRad
+    };
+  }
+};jvm.MapObject = function(config){};
+
+jvm.MapObject.prototype.getLabelText = function(key){
+  var text;
+
+  if (this.config.label) {
+    if (typeof this.config.label.render === 'function') {
+      text = this.config.label.render(key);
+    } else {
+      text = key;
+    }
+  } else {
+    text = null;
+  }
+  return text;
+}
+
+jvm.MapObject.prototype.getLabelOffsets = function(key){
+  var offsets;
+
+  if (this.config.label) {
+    if (typeof this.config.label.offsets === 'function') {
+      offsets = this.config.label.offsets(key);
+    } else if (typeof this.config.label.offsets === 'object') {
+      offsets = this.config.label.offsets[key];
+    }
+  }
+  return offsets || [0, 0];
+}
+
+ 
+jvm.MapObject.prototype.setHovered = function(isHovered){
+  if (this.isHovered !== isHovered) {
+    this.isHovered = isHovered;
+    this.shape.isHovered = isHovered;
+    this.shape.updateStyle();
+    if (this.label) {
+      this.label.isHovered = isHovered;
+      this.label.updateStyle();
+    }
+  }
+};
+
+ 
+jvm.MapObject.prototype.setSelected = function(isSelected){
+  if (this.isSelected !== isSelected) {
+    this.isSelected = isSelected;
+    this.shape.isSelected = isSelected;
+    this.shape.updateStyle();
+    if (this.label) {
+      this.label.isSelected = isSelected;
+      this.label.updateStyle();
+    }
+    jvm.$(this.shape).trigger('selected', [isSelected]);
+  }
+};
+
+jvm.MapObject.prototype.setStyle = function(){
+	this.shape.setStyle.apply(this.shape, arguments);
+};
+
+jvm.MapObject.prototype.remove = function(){
+  this.shape.remove();
+  if (this.label) {
+    this.label.remove();
+  }
+};jvm.Region = function(config){
+  var bbox,
+      text,
+      offsets,
+      labelDx,
+      labelDy;
+
+  this.config = config;
+  this.map = this.config.map;
+
+  this.shape = config.canvas.addPath({
+    d: config.path,
+    'data-code': config.code
+  }, config.style, config.canvas.rootElement);
+  this.shape.addClass('jvectormap-region jvectormap-element');
+
+  bbox = this.shape.getBBox();
+
+  text = this.getLabelText(config.code);
+  if (this.config.label && text) {
+    offsets = this.getLabelOffsets(config.code);
+    this.labelX = bbox.x + bbox.width / 2 + offsets[0];
+    this.labelY = bbox.y + bbox.height / 2 + offsets[1];
+    this.label = config.canvas.addText({
+      text: text,
+      'text-anchor': 'middle',
+      'alignment-baseline': 'central',
+      x: this.labelX,
+      y: this.labelY,
+      'data-code': config.code
+    }, config.labelStyle, config.labelsGroup);
+    this.label.addClass('jvectormap-region jvectormap-element');
+  }
+};
+
+jvm.inherits(jvm.Region, jvm.MapObject);
+
+jvm.Region.prototype.updateLabelPosition = function(){
+  if (this.label) {
+    this.label.set({
+      x: this.labelX * this.map.scale + this.map.transX * this.map.scale,
+      y: this.labelY * this.map.scale + this.map.transY * this.map.scale
+    });
+  }
+};jvm.Marker = function(config){
+  var text,
+      offsets;
+
+  this.config = config;
+  this.map = this.config.map;
+
+  this.isImage = !!this.config.style.initial.image;
+  this.createShape();
+
+  text = this.getLabelText(config.index);
+  if (this.config.label && text) {
+    this.offsets = this.getLabelOffsets(config.index);
+    this.labelX = config.cx / this.map.scale - this.map.transX;
+    this.labelY = config.cy / this.map.scale - this.map.transY;
+    this.label = config.canvas.addText({
+      text: text,
+      'data-index': config.index,
+      dy: "0.6ex",
+      x: this.labelX,
+      y: this.labelY
+    }, config.labelStyle, config.labelsGroup);
+
+    this.label.addClass('jvectormap-marker jvectormap-element');
+  }
+};
+
+jvm.inherits(jvm.Marker, jvm.MapObject);
+
+jvm.Marker.prototype.createShape = function(){
+  var that = this;
+
+  if (this.shape) {
+    this.shape.remove();
+  }
+  this.shape = this.config.canvas[this.isImage ? 'addImage' : 'addCircle']({
+    "data-index": this.config.index,
+    cx: this.config.cx,
+    cy: this.config.cy
+  }, this.config.style, this.config.group);
+
+  this.shape.addClass('jvectormap-marker jvectormap-element');
+
+  if (this.isImage) {
+    jvm.$(this.shape.node).on('imageloaded', function(){
+      that.updateLabelPosition();
+    });
+  }
+};
+
+jvm.Marker.prototype.updateLabelPosition = function(){
+  if (this.label) {
+    this.label.set({
+      x: this.labelX * this.map.scale + this.offsets[0] +
+         this.map.transX * this.map.scale + 5 + (this.isImage ? (this.shape.width || 0) / 2 : this.shape.properties.r),
+      y: this.labelY * this.map.scale + this.map.transY * this.map.scale + this.offsets[1]
+    });
+  }
+};
+
+jvm.Marker.prototype.setStyle = function(property, value){
+  var isImage;
+
+  jvm.Marker.parentClass.prototype.setStyle.apply(this, arguments);
+
+  if (property === 'r') {
+    this.updateLabelPosition();
+  }
+
+  isImage = !!this.shape.get('image');
+  if (isImage != this.isImage) {
+    this.isImage = isImage;
+    this.config.style = jvm.$.extend(true, {}, this.shape.style);
+    this.createShape();
+  }
+}; 
+jvm.Map = function(params) {
+  var map = this,
+      e;
+
+  this.params = jvm.$.extend(true, {}, jvm.Map.defaultParams, params);
+
+  if (!jvm.Map.maps[this.params.map]) {
+    throw new Error('Attempt to use map which was not loaded: '+this.params.map);
+  }
+
+  this.mapData = jvm.Map.maps[this.params.map];
+  this.markers = {};
+  this.regions = {};
+  this.regionsColors = {};
+  this.regionsData = {};
+
+  this.container = jvm.$('<div>').addClass('jvectormap-container');
+  if (this.params.container) {
+    this.params.container.append( this.container );
+  }
+  this.container.data('mapObject', this);
+
+  this.defaultWidth = this.mapData.width;
+  this.defaultHeight = this.mapData.height;
+
+  this.setBackgroundColor(this.params.backgroundColor);
+
+  this.onResize = function(){
+    map.updateSize();
+  }
+  jvm.$(window).resize(this.onResize);
+
+  for (e in jvm.Map.apiEvents) {
+    if (this.params[e]) {
+      this.container.bind(jvm.Map.apiEvents[e]+'.jvectormap', this.params[e]);
+    }
+  }
+
+  this.canvas = new jvm.VectorCanvas(this.container[0], this.width, this.height);
+
+  if (this.params.bindTouchEvents) {
+    if (('ontouchstart' in window) || (window.DocumentTouch && document instanceof DocumentTouch)) {
+      this.bindContainerTouchEvents();
+    } else if (window.MSGesture) {
+      this.bindContainerPointerEvents();
+    }
+  }
+  this.bindContainerEvents();
+  this.bindElementEvents();
+  this.createTip();
+  if (this.params.zoomButtons) {
+    this.bindZoomButtons();
+  }
+
+  this.createRegions();
+  this.createMarkers(this.params.markers || {});
+
+  this.updateSize();
+
+  if (this.params.focusOn) {
+    if (typeof this.params.focusOn === 'string') {
+      this.params.focusOn = {region: this.params.focusOn};
+    } else if (jvm.$.isArray(this.params.focusOn)) {
+      this.params.focusOn = {regions: this.params.focusOn};
+    }
+    this.setFocus(this.params.focusOn);
+  }
+
+  if (this.params.selectedRegions) {
+    this.setSelectedRegions(this.params.selectedRegions);
+  }
+  if (this.params.selectedMarkers) {
+    this.setSelectedMarkers(this.params.selectedMarkers);
+  }
+
+  this.legendCntHorizontal = jvm.$('<div/>').addClass('jvectormap-legend-cnt jvectormap-legend-cnt-h');
+  this.legendCntVertical = jvm.$('<div/>').addClass('jvectormap-legend-cnt jvectormap-legend-cnt-v');
+  this.container.append(this.legendCntHorizontal);
+  this.container.append(this.legendCntVertical);
+
+  if (this.params.series) {
+    this.createSeries();
+  }
+};
+
+jvm.Map.prototype = {
+  transX: 0,
+  transY: 0,
+  scale: 1,
+  baseTransX: 0,
+  baseTransY: 0,
+  baseScale: 1,
+
+  width: 0,
+  height: 0,
+
+   
+  setBackgroundColor: function(backgroundColor) {
+    this.container.css('background-color', backgroundColor);
+  },
+
+  resize: function() {
+    var curBaseScale = this.baseScale;
+    if (this.width / this.height > this.defaultWidth / this.defaultHeight) {
+      this.baseScale = this.height / this.defaultHeight;
+      this.baseTransX = Math.abs(this.width - this.defaultWidth * this.baseScale) / (2 * this.baseScale);
+    } else {
+      this.baseScale = this.width / this.defaultWidth;
+      this.baseTransY = Math.abs(this.height - this.defaultHeight * this.baseScale) / (2 * this.baseScale);
+    }
+    this.scale *= this.baseScale / curBaseScale;
+    this.transX *= this.baseScale / curBaseScale;
+    this.transY *= this.baseScale / curBaseScale;
+  },
+
+   
+  updateSize: function(){
+    this.width = this.container.width();
+    this.height = this.container.height();
+    this.resize();
+    this.canvas.setSize(this.width, this.height);
+    this.applyTransform();
+  },
+
+   
+  reset: function() {
+    var key,
+        i;
+
+    for (key in this.series) {
+      for (i = 0; i < this.series[key].length; i++) {
+        this.series[key][i].clear();
+      }
+    }
+    this.scale = this.baseScale;
+    this.transX = this.baseTransX;
+    this.transY = this.baseTransY;
+    this.applyTransform();
+  },
+
+  applyTransform: function() {
+    var maxTransX,
+        maxTransY,
+        minTransX,
+        minTransY;
+
+    if (this.defaultWidth * this.scale <= this.width) {
+      maxTransX = (this.width - this.defaultWidth * this.scale) / (2 * this.scale);
+      minTransX = (this.width - this.defaultWidth * this.scale) / (2 * this.scale);
+    } else {
+      maxTransX = 0;
+      minTransX = (this.width - this.defaultWidth * this.scale) / this.scale;
+    }
+
+    if (this.defaultHeight * this.scale <= this.height) {
+      maxTransY = (this.height - this.defaultHeight * this.scale) / (2 * this.scale);
+      minTransY = (this.height - this.defaultHeight * this.scale) / (2 * this.scale);
+    } else {
+      maxTransY = 0;
+      minTransY = (this.height - this.defaultHeight * this.scale) / this.scale;
+    }
+
+    if (this.transY > maxTransY) {
+      this.transY = maxTransY;
+    } else if (this.transY < minTransY) {
+      this.transY = minTransY;
+    }
+    if (this.transX > maxTransX) {
+      this.transX = maxTransX;
+    } else if (this.transX < minTransX) {
+      this.transX = minTransX;
+    }
+
+    this.canvas.applyTransformParams(this.scale, this.transX, this.transY);
+
+    if (this.markers) {
+      this.repositionMarkers();
+    }
+
+    this.repositionLabels();
+
+    this.container.trigger('viewportChange', [this.scale/this.baseScale, this.transX, this.transY]);
+  },
+
+  bindContainerEvents: function(){
+    var mouseDown = false,
+        oldPageX,
+        oldPageY,
+        map = this;
+
+    if (this.params.panOnDrag) {
+      this.container.mousemove(function(e){
+        if (mouseDown) {
+          map.transX -= (oldPageX - e.pageX) / map.scale;
+          map.transY -= (oldPageY - e.pageY) / map.scale;
+
+          map.applyTransform();
+
+          oldPageX = e.pageX;
+          oldPageY = e.pageY;
+        }
+        return false;
+      }).mousedown(function(e){
+        mouseDown = true;
+        oldPageX = e.pageX;
+        oldPageY = e.pageY;
+        return false;
+      });
+
+      this.onContainerMouseUp = function(){
+        mouseDown = false;
+      };
+      jvm.$('body').mouseup(this.onContainerMouseUp);
+    }
+
+    if (this.params.zoomOnScroll) {
+      this.container.mousewheel(function(event, delta, deltaX, deltaY) {
+        var offset = jvm.$(map.container).offset(),
+            centerX = event.pageX - offset.left,
+            centerY = event.pageY - offset.top,
+            zoomStep = Math.pow(1 + map.params.zoomOnScrollSpeed / 1000, event.deltaFactor * event.deltaY);
+
+        map.tip.hide();
+
+        map.setScale(map.scale * zoomStep, centerX, centerY);
+        event.preventDefault();
+      });
+    }
+  },
+
+  bindContainerTouchEvents: function(){
+    var touchStartScale,
+        touchStartDistance,
+        map = this,
+        touchX,
+        touchY,
+        centerTouchX,
+        centerTouchY,
+        lastTouchesLength,
+        handleTouchEvent = function(e){
+          var touches = e.originalEvent.touches,
+              offset,
+              scale,
+              transXOld,
+              transYOld;
+
+          if (e.type == 'touchstart') {
+            lastTouchesLength = 0;
+          }
+
+          if (touches.length == 1) {
+            if (lastTouchesLength == 1) {
+              transXOld = map.transX;
+              transYOld = map.transY;
+              map.transX -= (touchX - touches[0].pageX) / map.scale;
+              map.transY -= (touchY - touches[0].pageY) / map.scale;
+              map.applyTransform();
+              map.tip.hide();
+              if (transXOld != map.transX || transYOld != map.transY) {
+                e.preventDefault();
+              }
+            }
+            touchX = touches[0].pageX;
+            touchY = touches[0].pageY;
+          } else if (touches.length == 2) {
+            if (lastTouchesLength == 2) {
+              scale = Math.sqrt(
+                Math.pow(touches[0].pageX - touches[1].pageX, 2) +
+                Math.pow(touches[0].pageY - touches[1].pageY, 2)
+              ) / touchStartDistance;
+              map.setScale(
+                touchStartScale * scale,
+                centerTouchX,
+                centerTouchY
+              )
+              map.tip.hide();
+              e.preventDefault();
+            } else {
+              offset = jvm.$(map.container).offset();
+              if (touches[0].pageX > touches[1].pageX) {
+                centerTouchX = touches[1].pageX + (touches[0].pageX - touches[1].pageX) / 2;
+              } else {
+                centerTouchX = touches[0].pageX + (touches[1].pageX - touches[0].pageX) / 2;
+              }
+              if (touches[0].pageY > touches[1].pageY) {
+                centerTouchY = touches[1].pageY + (touches[0].pageY - touches[1].pageY) / 2;
+              } else {
+                centerTouchY = touches[0].pageY + (touches[1].pageY - touches[0].pageY) / 2;
+              }
+              centerTouchX -= offset.left;
+              centerTouchY -= offset.top;
+              touchStartScale = map.scale;
+              touchStartDistance = Math.sqrt(
+                Math.pow(touches[0].pageX - touches[1].pageX, 2) +
+                Math.pow(touches[0].pageY - touches[1].pageY, 2)
+              );
+            }
+          }
+
+          lastTouchesLength = touches.length;
+        };
+
+    jvm.$(this.container).bind('touchstart', handleTouchEvent);
+    jvm.$(this.container).bind('touchmove', handleTouchEvent);
+  },
+
+  bindContainerPointerEvents: function(){
+    var map = this,
+        gesture = new MSGesture(),
+        element = this.container[0],
+        handlePointerDownEvent = function(e){
+          gesture.addPointer(e.pointerId);
+        },
+        handleGestureEvent = function(e){
+          var offset,
+              scale,
+              transXOld,
+              transYOld;
+
+          if (e.translationX != 0 || e.translationY != 0) {
+            transXOld = map.transX;
+            transYOld = map.transY;
+            map.transX += e.translationX / map.scale;
+            map.transY += e.translationY / map.scale;
+            map.applyTransform();
+            map.tip.hide();
+            if (transXOld != map.transX || transYOld != map.transY) {
+              e.preventDefault();
+            }
+          }
+          if (e.scale != 1) {
+            map.setScale(
+              map.scale * e.scale,
+              e.offsetX,
+              e.offsetY
+            )
+            map.tip.hide();
+            e.preventDefault();
+          }
+        };
+
+    gesture.target = element;
+    element.addEventListener("MSGestureChange", handleGestureEvent, false);
+    element.addEventListener("pointerdown", handlePointerDownEvent, false);
+  },
+
+  bindElementEvents: function(){
+    var map = this,
+        pageX,
+        pageY,
+        mouseMoved;
+
+    this.container.mousemove(function(e){
+      if (Math.abs(pageX - e.pageX) + Math.abs(pageY - e.pageY) > 2) {
+        mouseMoved = true;
+      }
+    });
+
+     
+    this.container.delegate("[class~='jvectormap-element']", 'mouseover mouseout', function(e){
+      var baseVal = jvm.$(this).attr('class').baseVal || jvm.$(this).attr('class'),
+          type = baseVal.indexOf('jvectormap-region') === -1 ? 'marker' : 'region',
+          code = type == 'region' ? jvm.$(this).attr('data-code') : jvm.$(this).attr('data-index'),
+          element = type == 'region' ? map.regions[code].element : map.markers[code].element,
+          tipText = type == 'region' ? map.mapData.paths[code].name : (map.markers[code].config.name || ''),
+          tipShowEvent = jvm.$.Event(type+'TipShow.jvectormap'),
+          overEvent = jvm.$.Event(type+'Over.jvectormap');
+
+      if (e.type == 'mouseover') {
+        map.container.trigger(overEvent, [code]);
+        if (!overEvent.isDefaultPrevented()) {
+          element.setHovered(true);
+        }
+
+        map.tip.text(tipText);
+        map.container.trigger(tipShowEvent, [map.tip, code]);
+        if (!tipShowEvent.isDefaultPrevented()) {
+          map.tip.show();
+          map.tipWidth = map.tip.width();
+          map.tipHeight = map.tip.height();
+        }
+      } else {
+        element.setHovered(false);
+        map.tip.hide();
+        map.container.trigger(type+'Out.jvectormap', [code]);
+      }
+    });
+
+     
+    this.container.delegate("[class~='jvectormap-element']", 'mousedown', function(e){
+      pageX = e.pageX;
+      pageY = e.pageY;
+      mouseMoved = false;
+    });
+
+     
+    this.container.delegate("[class~='jvectormap-element']", 'mouseup', function(){
+      var baseVal = jvm.$(this).attr('class').baseVal ? jvm.$(this).attr('class').baseVal : jvm.$(this).attr('class'),
+          type = baseVal.indexOf('jvectormap-region') === -1 ? 'marker' : 'region',
+          code = type == 'region' ? jvm.$(this).attr('data-code') : jvm.$(this).attr('data-index'),
+          clickEvent = jvm.$.Event(type+'Click.jvectormap'),
+          element = type == 'region' ? map.regions[code].element : map.markers[code].element;
+
+      if (!mouseMoved) {
+        map.container.trigger(clickEvent, [code]);
+        if ((type === 'region' && map.params.regionsSelectable) || (type === 'marker' && map.params.markersSelectable)) {
+          if (!clickEvent.isDefaultPrevented()) {
+            if (map.params[type+'sSelectableOne']) {
+              map.clearSelected(type+'s');
+            }
+            element.setSelected(!element.isSelected);
+          }
+        }
+      }
+    });
+  },
+
+  bindZoomButtons: function() {
+    var map = this;
+
+    jvm.$('<div/>').addClass('jvectormap-zoomin').text('+').appendTo(this.container);
+    jvm.$('<div/>').addClass('jvectormap-zoomout').html('&#x2212;').appendTo(this.container);
+
+    this.container.find('.jvectormap-zoomin').click(function(){
+      map.setScale(map.scale * map.params.zoomStep, map.width / 2, map.height / 2, false, map.params.zoomAnimate);
+    });
+    this.container.find('.jvectormap-zoomout').click(function(){
+      map.setScale(map.scale / map.params.zoomStep, map.width / 2, map.height / 2, false, map.params.zoomAnimate);
+    });
+  },
+
+  createTip: function(){
+    var map = this;
+
+    this.tip = jvm.$('<div/>').addClass('jvectormap-tip').appendTo(jvm.$('body'));
+
+    this.container.mousemove(function(e){
+      var left = e.pageX-15-map.tipWidth,
+          top = e.pageY-15-map.tipHeight;
+
+      if (left < 5) {
+        left = e.pageX + 15;
+      }
+      if (top < 5) {
+        top = e.pageY + 15;
+      }
+
+      map.tip.css({
+        left: left,
+        top: top
+      });
+    });
+  },
+
+  setScale: function(scale, anchorX, anchorY, isCentered, animate) {
+    var viewportChangeEvent = jvm.$.Event('zoom.jvectormap'),
+        interval,
+        that = this,
+        i = 0,
+        count = Math.abs(Math.round((scale - this.scale) * 60 / Math.max(scale, this.scale))),
+        scaleStart,
+        scaleDiff,
+        transXStart,
+        transXDiff,
+        transYStart,
+        transYDiff,
+        transX,
+        transY,
+        deferred = new jvm.$.Deferred();
+
+    if (scale > this.params.zoomMax * this.baseScale) {
+      scale = this.params.zoomMax * this.baseScale;
+    } else if (scale < this.params.zoomMin * this.baseScale) {
+      scale = this.params.zoomMin * this.baseScale;
+    }
+
+    if (typeof anchorX != 'undefined' && typeof anchorY != 'undefined') {
+      zoomStep = scale / this.scale;
+      if (isCentered) {
+        transX = anchorX + this.defaultWidth * (this.width / (this.defaultWidth * scale)) / 2;
+        transY = anchorY + this.defaultHeight * (this.height / (this.defaultHeight * scale)) / 2;
+      } else {
+        transX = this.transX - (zoomStep - 1) / scale * anchorX;
+        transY = this.transY - (zoomStep - 1) / scale * anchorY;
+      }
+    }
+
+    if (animate && count > 0)  {
+      scaleStart = this.scale;
+      scaleDiff = (scale - scaleStart) / count;
+      transXStart = this.transX * this.scale;
+      transYStart = this.transY * this.scale;
+      transXDiff = (transX * scale - transXStart) / count;
+      transYDiff = (transY * scale - transYStart) / count;
+      interval = setInterval(function(){
+        i += 1;
+        that.scale = scaleStart + scaleDiff * i;
+        that.transX = (transXStart + transXDiff * i) / that.scale;
+        that.transY = (transYStart + transYDiff * i) / that.scale;
+        that.applyTransform();
+        if (i == count) {
+          clearInterval(interval);
+          that.container.trigger(viewportChangeEvent, [scale/that.baseScale]);
+          deferred.resolve();
+        }
+      }, 10);
+    } else {
+      this.transX = transX;
+      this.transY = transY;
+      this.scale = scale;
+      this.applyTransform();
+      this.container.trigger(viewportChangeEvent, [scale/this.baseScale]);
+      deferred.resolve();
+    }
+
+    return deferred;
+  },
+
+   
+  setFocus: function(config){
+    var bbox,
+        itemBbox,
+        newBbox,
+        codes,
+        i,
+        point;
+
+    config = config || {};
+
+    if (config.region) {
+      codes = [config.region];
+    } else if (config.regions) {
+      codes = config.regions;
+    }
+
+    if (codes) {
+      for (i = 0; i < codes.length; i++) {
+        if (this.regions[codes[i]]) {
+          itemBbox = this.regions[codes[i]].element.shape.getBBox();
+          if (itemBbox) {
+            if (typeof bbox == 'undefined') {
+              bbox = itemBbox;
+            } else {
+              newBbox = {
+                x: Math.min(bbox.x, itemBbox.x),
+                y: Math.min(bbox.y, itemBbox.y),
+                width: Math.max(bbox.x + bbox.width, itemBbox.x + itemBbox.width) - Math.min(bbox.x, itemBbox.x),
+                height: Math.max(bbox.y + bbox.height, itemBbox.y + itemBbox.height) - Math.min(bbox.y, itemBbox.y)
+              }
+              bbox = newBbox;
+            }
+          }
+        }
+      }
+      return this.setScale(
+        Math.min(this.width / bbox.width, this.height / bbox.height),
+        - (bbox.x + bbox.width / 2),
+        - (bbox.y + bbox.height / 2),
+        true,
+        config.animate
+      );
+    } else {
+      if (config.lat && config.lng) {
+        point = this.latLngToPoint(config.lat, config.lng);
+        config.x = this.transX - point.x / this.scale;
+        config.y = this.transY - point.y / this.scale;
+      } else if (config.x && config.y) {
+        config.x *= -this.defaultWidth;
+        config.y *= -this.defaultHeight;
+      }
+      return this.setScale(config.scale * this.baseScale, config.x, config.y, true, config.animate);
+    }
+  },
+
+  getSelected: function(type){
+    var key,
+        selected = [];
+
+    for (key in this[type]) {
+      if (this[type][key].element.isSelected) {
+        selected.push(key);
+      }
+    }
+    return selected;
+  },
+
+   
+  getSelectedRegions: function(){
+    return this.getSelected('regions');
+  },
+
+   
+  getSelectedMarkers: function(){
+    return this.getSelected('markers');
+  },
+
+  setSelected: function(type, keys){
+    var i;
+
+    if (typeof keys != 'object') {
+      keys = [keys];
+    }
+
+    if (jvm.$.isArray(keys)) {
+      for (i = 0; i < keys.length; i++) {
+        this[type][keys[i]].element.setSelected(true);
+      }
+    } else {
+      for (i in keys) {
+        this[type][i].element.setSelected(!!keys[i]);
+      }
+    }
+  },
+
+   
+  setSelectedRegions: function(keys){
+    this.setSelected('regions', keys);
+  },
+
+   
+  setSelectedMarkers: function(keys){
+    this.setSelected('markers', keys);
+  },
+
+  clearSelected: function(type){
+    var select = {},
+        selected = this.getSelected(type),
+        i;
+
+    for (i = 0; i < selected.length; i++) {
+      select[selected[i]] = false;
+    };
+
+    this.setSelected(type, select);
+  },
+
+   
+  clearSelectedRegions: function(){
+    this.clearSelected('regions');
+  },
+
+   
+  clearSelectedMarkers: function(){
+    this.clearSelected('markers');
+  },
+
+   
+  getMapObject: function(){
+    return this;
+  },
+
+   
+  getRegionName: function(code){
+    return this.mapData.paths[code].name;
+  },
+
+  createRegions: function(){
+    var key,
+        region,
+        map = this;
+
+    this.regionLabelsGroup = this.regionLabelsGroup || this.canvas.addGroup();
+
+    for (key in this.mapData.paths) {
+      region = new jvm.Region({
+        map: this,
+        path: this.mapData.paths[key].path,
+        code: key,
+        style: jvm.$.extend(true, {}, this.params.regionStyle),
+        labelStyle: jvm.$.extend(true, {}, this.params.regionLabelStyle),
+        canvas: this.canvas,
+        labelsGroup: this.regionLabelsGroup,
+        label: this.canvas.mode != 'vml' ? (this.params.labels && this.params.labels.regions) : null
+      });
+
+      jvm.$(region.shape).bind('selected', function(e, isSelected){
+        map.container.trigger('regionSelected.jvectormap', [jvm.$(this.node).attr('data-code'), isSelected, map.getSelectedRegions()]);
+      });
+      this.regions[key] = {
+        element: region,
+        config: this.mapData.paths[key]
+      };
+    }
+  },
+
+  createMarkers: function(markers) {
+    var i,
+        marker,
+        point,
+        markerConfig,
+        markersArray,
+        map = this;
+
+    this.markersGroup = this.markersGroup || this.canvas.addGroup();
+    this.markerLabelsGroup = this.markerLabelsGroup || this.canvas.addGroup();
+
+    if (jvm.$.isArray(markers)) {
+      markersArray = markers.slice();
+      markers = {};
+      for (i = 0; i < markersArray.length; i++) {
+        markers[i] = markersArray[i];
+      }
+    }
+
+    for (i in markers) {
+      markerConfig = markers[i] instanceof Array ? {latLng: markers[i]} : markers[i];
+      point = this.getMarkerPosition( markerConfig );
+
+      if (point !== false) {
+        marker = new jvm.Marker({
+          map: this,
+          style: jvm.$.extend(true, {}, this.params.markerStyle, {initial: markerConfig.style || {}}),
+          labelStyle: jvm.$.extend(true, {}, this.params.markerLabelStyle),
+          index: i,
+          cx: point.x,
+          cy: point.y,
+          group: this.markersGroup,
+          canvas: this.canvas,
+          labelsGroup: this.markerLabelsGroup,
+          label: this.canvas.mode != 'vml' ? (this.params.labels && this.params.labels.markers) : null
+        });
+
+        jvm.$(marker.shape).bind('selected', function(e, isSelected){
+          map.container.trigger('markerSelected.jvectormap', [jvm.$(this.node).attr('data-index'), isSelected, map.getSelectedMarkers()]);
+        });
+        if (this.markers[i]) {
+          this.removeMarkers([i]);
+        }
+        this.markers[i] = {element: marker, config: markerConfig};
+      }
+    }
+  },
+
+  repositionMarkers: function() {
+    var i,
+        point;
+
+    for (i in this.markers) {
+      point = this.getMarkerPosition( this.markers[i].config );
+      if (point !== false) {
+        this.markers[i].element.setStyle({cx: point.x, cy: point.y});
+      }
+    }
+  },
+
+  repositionLabels: function() {
+    var key;
+
+    for (key in this.regions) {
+      this.regions[key].element.updateLabelPosition();
+    }
+
+    for (key in this.markers) {
+      this.markers[key].element.updateLabelPosition();
+    }
+  },
+
+  getMarkerPosition: function(markerConfig) {
+    if (jvm.Map.maps[this.params.map].projection) {
+      return this.latLngToPoint.apply(this, markerConfig.latLng || [0, 0]);
+    } else {
+      return {
+        x: markerConfig.coords[0]*this.scale + this.transX*this.scale,
+        y: markerConfig.coords[1]*this.scale + this.transY*this.scale
+      };
+    }
+  },
+
+   
+  addMarker: function(key, marker, seriesData){
+    var markers = {},
+        data = [],
+        values,
+        i,
+        seriesData = seriesData || [];
+
+    markers[key] = marker;
+
+    for (i = 0; i < seriesData.length; i++) {
+      values = {};
+      if (typeof seriesData[i] !== 'undefined') {
+        values[key] = seriesData[i];
+      }
+      data.push(values);
+    }
+    this.addMarkers(markers, data);
+  },
+
+   
+  addMarkers: function(markers, seriesData){
+    var i;
+
+    seriesData = seriesData || [];
+
+    this.createMarkers(markers);
+    for (i = 0; i < seriesData.length; i++) {
+      this.series.markers[i].setValues(seriesData[i] || {});
+    };
+  },
+
+   
+  removeMarkers: function(markers){
+    var i;
+
+    for (i = 0; i < markers.length; i++) {
+      this.markers[ markers[i] ].element.remove();
+      delete this.markers[ markers[i] ];
+    };
+  },
+
+   
+  removeAllMarkers: function(){
+    var i,
+        markers = [];
+
+    for (i in this.markers) {
+      markers.push(i);
+    }
+    this.removeMarkers(markers)
+  },
+
+   
+  latLngToPoint: function(lat, lng) {
+    var point,
+        proj = jvm.Map.maps[this.params.map].projection,
+        centralMeridian = proj.centralMeridian,
+        inset,
+        bbox;
+
+    if (lng < (-180 + centralMeridian)) {
+      lng += 360;
+    }
+
+    point = jvm.Proj[proj.type](lat, lng, centralMeridian);
+
+    inset = this.getInsetForPoint(point.x, point.y);
+    if (inset) {
+      bbox = inset.bbox;
+
+      point.x = (point.x - bbox[0].x) / (bbox[1].x - bbox[0].x) * inset.width * this.scale;
+      point.y = (point.y - bbox[0].y) / (bbox[1].y - bbox[0].y) * inset.height * this.scale;
+
+      return {
+        x: point.x + this.transX*this.scale + inset.left*this.scale,
+        y: point.y + this.transY*this.scale + inset.top*this.scale
+      };
+     } else {
+       return false;
+     }
+  },
+
+   
+  pointToLatLng: function(x, y) {
+    var proj = jvm.Map.maps[this.params.map].projection,
+        centralMeridian = proj.centralMeridian,
+        insets = jvm.Map.maps[this.params.map].insets,
+        i,
+        inset,
+        bbox,
+        nx,
+        ny;
+
+    for (i = 0; i < insets.length; i++) {
+      inset = insets[i];
+      bbox = inset.bbox;
+
+      nx = x - (this.transX*this.scale + inset.left*this.scale);
+      ny = y - (this.transY*this.scale + inset.top*this.scale);
+
+      nx = (nx / (inset.width * this.scale)) * (bbox[1].x - bbox[0].x) + bbox[0].x;
+      ny = (ny / (inset.height * this.scale)) * (bbox[1].y - bbox[0].y) + bbox[0].y;
+
+      if (nx > bbox[0].x && nx < bbox[1].x && ny > bbox[0].y && ny < bbox[1].y) {
+        return jvm.Proj[proj.type + '_inv'](nx, -ny, centralMeridian);
+      }
+    }
+
+    return false;
+  },
+
+  getInsetForPoint: function(x, y){
+    var insets = jvm.Map.maps[this.params.map].insets,
+        i,
+        bbox;
+
+    for (i = 0; i < insets.length; i++) {
+      bbox = insets[i].bbox;
+      if (x > bbox[0].x && x < bbox[1].x && y > bbox[0].y && y < bbox[1].y) {
+        return insets[i];
+      }
+    }
+  },
+
+  createSeries: function(){
+    var i,
+        key;
+
+    this.series = {
+      markers: [],
+      regions: []
+    };
+
+    for (key in this.params.series) {
+      for (i = 0; i < this.params.series[key].length; i++) {
+        this.series[key][i] = new jvm.DataSeries(
+          this.params.series[key][i],
+          this[key],
+          this
+        );
+      }
+    }
+  },
+
+   
+  remove: function(){
+    this.tip.remove();
+    this.container.remove();
+    jvm.$(window).unbind('resize', this.onResize);
+    jvm.$('body').unbind('mouseup', this.onContainerMouseUp);
+  }
+};
+
+jvm.Map.maps = {};
+jvm.Map.defaultParams = {
+  map: 'world_mill_en',
+  backgroundColor: '#505050',
+  zoomButtons: true,
+  zoomOnScroll: true,
+  zoomOnScrollSpeed: 3,
+  panOnDrag: true,
+  zoomMax: 8,
+  zoomMin: 1,
+  zoomStep: 1.6,
+  zoomAnimate: true,
+  regionsSelectable: false,
+  markersSelectable: false,
+  bindTouchEvents: true,
+  regionStyle: {
+    initial: {
+      fill: 'white',
+      "fill-opacity": 1,
+      stroke: 'none',
+      "stroke-width": 0,
+      "stroke-opacity": 1
+    },
+    hover: {
+      "fill-opacity": 0.8,
+      cursor: 'pointer'
+    },
+    selected: {
+      fill: 'yellow'
+    },
+    selectedHover: {
+    }
+  },
+  regionLabelStyle: {
+    initial: {
+      'font-family': 'Verdana',
+      'font-size': '12',
+      'font-weight': 'bold',
+      cursor: 'default',
+      fill: 'black'
+    },
+    hover: {
+      cursor: 'pointer'
+    }
+  },
+  markerStyle: {
+    initial: {
+      fill: 'grey',
+      stroke: '#505050',
+      "fill-opacity": 1,
+      "stroke-width": 1,
+      "stroke-opacity": 1,
+      r: 5
+    },
+    hover: {
+      stroke: 'black',
+      "stroke-width": 2,
+      cursor: 'pointer'
+    },
+    selected: {
+      fill: 'blue'
+    },
+    selectedHover: {
+    }
+  },
+  markerLabelStyle: {
+    initial: {
+      'font-family': 'Verdana',
+      'font-size': '12',
+      'font-weight': 'bold',
+      cursor: 'default',
+      fill: 'black'
+    },
+    hover: {
+      cursor: 'pointer'
+    }
+  }
+};
+jvm.Map.apiEvents = {
+  onRegionTipShow: 'regionTipShow',
+  onRegionOver: 'regionOver',
+  onRegionOut: 'regionOut',
+  onRegionClick: 'regionClick',
+  onRegionSelected: 'regionSelected',
+  onMarkerTipShow: 'markerTipShow',
+  onMarkerOver: 'markerOver',
+  onMarkerOut: 'markerOut',
+  onMarkerClick: 'markerClick',
+  onMarkerSelected: 'markerSelected',
+  onViewportChange: 'viewportChange'
+}; 
+jvm.MultiMap = function(params) {
+  var that = this;
+
+  this.maps = {};
+  this.params = jvm.$.extend(true, {}, jvm.MultiMap.defaultParams, params);
+  this.params.maxLevel = this.params.maxLevel || Number.MAX_VALUE;
+  this.params.main = this.params.main || {};
+  this.params.main.multiMapLevel = 0;
+  this.history = [ this.addMap(this.params.main.map, this.params.main) ];
+  this.defaultProjection = this.history[0].mapData.projection.type;
+  this.mapsLoaded = {};
+
+  this.params.container.css({position: 'relative'});
+  this.backButton = jvm.$('<div/>').addClass('jvectormap-goback').text('Back').appendTo(this.params.container);
+  this.backButton.hide();
+  this.backButton.click(function(){
+    that.goBack();
+  });
+
+  this.spinner = jvm.$('<div/>').addClass('jvectormap-spinner').appendTo(this.params.container);
+  this.spinner.hide();
+};
+
+jvm.MultiMap.prototype = {
+  addMap: function(name, config){
+    var cnt = jvm.$('<div/>').css({
+      width: '100%',
+      height: '100%'
+    });
+
+    this.params.container.append(cnt);
+
+    this.maps[name] = new jvm.Map(jvm.$.extend(config, {container: cnt}));
+    if (this.params.maxLevel > config.multiMapLevel) {
+      this.maps[name].container.on('regionClick.jvectormap', {scope: this}, function(e, code){
+        var multimap = e.data.scope,
+            mapName = multimap.params.mapNameByCode(code, multimap);
+
+        if (!multimap.drillDownPromise || multimap.drillDownPromise.state() !== 'pending') {
+          multimap.drillDown(mapName, code);
+        }
+      });
+    }
+
+
+    return this.maps[name];
+  },
+
+  downloadMap: function(code){
+    var that = this,
+        deferred = jvm.$.Deferred();
+
+    if (!this.mapsLoaded[code]) {
+      jvm.$.get(this.params.mapUrlByCode(code, this)).then(function(){
+        that.mapsLoaded[code] = true;
+        deferred.resolve();
+      }, function(){
+        deferred.reject();
+      });
+    } else {
+      deferred.resolve();
+    }
+    return deferred;
+  },
+
+  drillDown: function(name, code){
+    var currentMap = this.history[this.history.length - 1],
+        that = this,
+        focusPromise = currentMap.setFocus({region: code, animate: true}),
+        downloadPromise = this.downloadMap(code);
+
+    focusPromise.then(function(){
+      if (downloadPromise.state() === 'pending') {
+        that.spinner.show();
+      }
+    });
+    downloadPromise.always(function(){
+      that.spinner.hide();
+    });
+    this.drillDownPromise = jvm.$.when(downloadPromise, focusPromise);
+    this.drillDownPromise.then(function(){
+      currentMap.params.container.hide();
+      if (!that.maps[name]) {
+        that.addMap(name, {map: name, multiMapLevel: currentMap.params.multiMapLevel + 1});
+      } else {
+        that.maps[name].params.container.show();
+      }
+      that.history.push( that.maps[name] );
+      that.backButton.show();
+    });
+  },
+
+  goBack: function(){
+    var currentMap = this.history.pop(),
+        prevMap = this.history[this.history.length - 1],
+        that = this;
+
+    currentMap.setFocus({scale: 1, x: 0.5, y: 0.5, animate: true}).then(function(){
+      currentMap.params.container.hide();
+      prevMap.params.container.show();
+      prevMap.updateSize();
+      if (that.history.length === 1) {
+        that.backButton.hide();
+      }
+      prevMap.setFocus({scale: 1, x: 0.5, y: 0.5, animate: true});
+    });
+  }
+};
+
+jvm.MultiMap.defaultParams = {
+  mapNameByCode: function(code, multiMap){
+    return code.toLowerCase()+'_'+multiMap.defaultProjection+'_en';
+  },
+  mapUrlByCode: function(code, multiMap){
+    return 'jquery-jvectormap-data-'+code.toLowerCase()+'-'+multiMap.defaultProjection+'-en.js';
+  }
+}
+
+/* mall-jvectormap.js */
+jQuery.fn.vectorMap('addMap','mall',{"width":"640","height":"480","paths":{"loja_A":{"name":"Disponível","path":"m45.33 45.33l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_B":{"name":"Loja_B","path":"m45.33 102.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_C":{"name":"Loja_C","path":"m45.33 159.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_D":{"name":"Loja_D","path":"m45.33 263.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_E":{"name":"Loja_E","path":"m45.33 319.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_F":{"name":"Loja_F","path":"m45.33 375.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_G":{"name":"Disponível","path":"m186.67 45.33l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_H":{"name":"Loja_H","path":"m186.67 101.33l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_I":{"name":"Disponível","path":"m186.67 157.33l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_J":{"name":"Loja_J","path":"m268.00 45.33l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_K":{"name":"Disponível","path":"m268.00 101.33l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_L":{"name":"Loja_L","path":"m268.00 157.33l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_M":{"name":"Loja_M","path":"m413.33 45.33l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_N":{"name":"Loja_N","path":"m413.33 101.33l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_O":{"name":"Loja_O","path":"m413.33 157.33l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_P":{"name":"Disponível","path":"m494.67 45.33l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_Q":{"name":"Loja_Q","path":"m494.67 101.33l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_R":{"name":"Disponível","path":"m494.67 157.33l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_S":{"name":"Loja_S","path":"m186.67 264.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_T":{"name":"Loja_T","path":"m186.67 320.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_U":{"name":"Disponível","path":"m186.67 376.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_V":{"name":"Loja_V","path":"m268.00 264.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_W":{"name":"Disponível","path":"m268.00 320.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_X":{"name":"Loja_X","path":"m268.00 376.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_Y":{"name":"Loja_Y","path":"m413.33 264.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_Z":{"name":"Disponível","path":"m413.33 320.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_1":{"name":"Loja_1","path":"m413.33 376.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_2":{"name":"Loja_2","path":"m494.67 264.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_3":{"name":"Loja_3","path":"m494.67 320.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"},"loja_4":{"name":"Loja_4","path":"m494.67 376.00l69.33 0.00l0.00 45.33l-69.33 0.00l0.00 -45.33z"}}});
 /* main.js */
 $('.date').datepicker({format:"yyyy/mm/dd",todayBtn:"linked",viewMode:"years",autoclose:true,todayHighlight:true,orientation:"top"});var addBannerModalClicked=false;$('[data-target=#add_banner_modal]').click(function(){if(addBannerModalClicked===false){$.getJSON("../json/countries.json",function(countries){for(var i=0;i<countries.length;i++){$('.country').append('<option value=\"'+countries[i].code+'\">'+countries[i].name+'</option>');}});addBannerModalClicked=true;}});$.getJSON("../json/products.json",function(products){autoCompleteMulti(products,'#search');});function autoCompleteMulti(words,selector){$(selector).bind("keydown",function(event){if(event.keyCode===$.ui.keyCode.TAB&&$(this).autocomplete("instance").menu.active){event.preventDefault();}}).autocomplete({minLength:2,source:function(request,response){var results=$.ui.autocomplete.filter(words,extractLast(request.term));response(results.slice(0,10));},focus:function(){return false;},select:function(event,ui){var terms=split(this.value);terms.pop();terms.push(ui.item.value);terms.push("");this.value=terms.join(" ");return false;}});}
 function split(val){return val.split(/ \s*/);}
