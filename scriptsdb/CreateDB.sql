@@ -61,7 +61,7 @@ CREATE TABLE products (
   sub_category_id INT NOT NULL,
   quantity INT NOT NULL,
   sold INT NOT NULL,
-  description VARCHAR(1000),
+  description VARCHAR(2500),
   price DECIMAL(7,2) NOT NULL,
   old_price DECIMAL(7,2) NOT NULL,
   visited INT NOT NULL,
