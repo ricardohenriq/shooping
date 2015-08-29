@@ -1289,7 +1289,7 @@ VALUES (14, 8, 4, NOW(), NOW());
 INSERT INTO bookings (product_id, quantity, user_id, created, modified)
 VALUES (15, 6, 5, NOW(), NOW());
 
-# 7 registros na tabela "features" ----------------------------------------------------
+## 7 registros na tabela "features" ----------------------------------------------------
 
 INSERT INTO features (feature_name, created, modified)
 VALUES ('Altura', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
@@ -1517,25 +1517,604 @@ INSERT INTO features (feature_name, created, modified)
 VALUES ('Código de Barras', NOW(), NOW());
 
 INSERT INTO features (feature_name, created, modified)
-VALUES ('', NOW(), NOW());
+VALUES ('Formatos reproduzidos de áudio', NOW(), NOW());
 
 INSERT INTO features (feature_name, created, modified)
-VALUES ('', NOW(), NOW());
+VALUES ('Formatos reproduzidos de vídeo', NOW(), NOW());
 
 INSERT INTO features (feature_name, created, modified)
-VALUES ('', NOW(), NOW());
+VALUES ('Formatos reproduzidos de fotos', NOW(), NOW());
 
 INSERT INTO features (feature_name, created, modified)
-VALUES ('', NOW(), NOW());
+VALUES ('Formatos reproduzidos de textos', NOW(), NOW());
 
 INSERT INTO features (feature_name, created, modified)
-VALUES ('', NOW(), NOW());
+VALUES ('Duração da Bateria em uso', NOW(), NOW());
 
 INSERT INTO features (feature_name, created, modified)
-VALUES ('', NOW(), NOW());
+VALUES ('Duração da Bateria em standby', NOW(), NOW());
 
 INSERT INTO features (feature_name, created, modified)
-VALUES ('', NOW(), NOW());
+VALUES ('Entrada para qual modelo de Cartão de Memória', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Memória interna', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Conexões', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Idiomas', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Alimentação', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Coleção', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Faixa de Peso Suportado (Kg)', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Classificação', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Acessórios', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Pés (Material)', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Acabamento', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Estrutura', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Assentos', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tampo', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Quantidade de itens', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tipo', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Fabricado em', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Sabor', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Validade', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Cultivo', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Usos', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Nome Cientifico', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Forma de entrega', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Nome popular', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Origem', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Caraterísticas', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Porte', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Flores', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Luz', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Solo', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Clima', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Regas', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Podas', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Adubação', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Graduação Alcoólica (%)', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Peso liquido', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Ingredientes', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Aroma', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Mais Informações Tecnicas', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Temperatura ideal', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Placa antiaderente', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Vapor', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Conteúdo da Embalagem', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Capacidade', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Lençol com elástico', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Medida do lençol de baixo', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Medida fronha', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Lençol com elástico', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Bordado', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Estampado', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Medidas do Colchão', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Antialérgico', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Observações', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Autor(a)', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Título', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Subtítulo', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('ISBN', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Páginas', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Edição', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tipo de capa', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Formato', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Editora', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Ano', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Idioma', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Processador', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Modelo Processador', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Cache', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Memória RAM', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Placa Mãe', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('HD', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Drives', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Placa de vídeo', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Teclado', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Mouse', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Sistema Operacional', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Conector', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Memória (GB)', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Resistente a Água', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Resistente a Quedas', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Leitor de Digitais - Biométrico', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Proteção com Criptografia', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Possui Tecnologia Ready Boost', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Sistema Operacional Compatível', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Softwares inclusos', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Velocidade de impressão', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Resolução de impressão', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Ciclo de trabalho mensal', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tempo para a primeira Preto e Branco', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tempo para a primeira Colorida', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Profundidade de Bits', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Resolução de Digitalização', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tipo de papel suportado', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Capacidade de papel suportado', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Capacidade de entrada e saída de papel', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Cartuchos/Toners compatíveis', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Certificações', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Nível de ruído', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Agenda', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Bobina inicial', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Identificador de chamada', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Memória de recepção sem papel', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Número de discagem rápida', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Rediscagem automática', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Registro de chamadas', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Transmissão programada', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Transmissão internacional', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Velocidade de transmissão', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Velocidade/Modem', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Sistema de compressão', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tipo de impressão', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Modo de discagem:', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Viva-voz', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Secretária eletrônica', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Acompanha ramal', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Expansível até', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Conferência de chamadas', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Ajuste no volume da campainha', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Fixável na parede', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Faixa etária', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Diâmetro do rotor principal', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Diâmetro do rotor de cauda', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tempo de vôo', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tempo de Recarga', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Distância de alcance', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Altura de vôo', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Rádio', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Mídias compatíveis', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Função Repeat', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Iluminação das teclas', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Painel removível', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Forração removível', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Forração lavavel', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Número De Canais', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Potência Máx.', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Sensibilidade de Entrada', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Distorção Harmônica Total (THD)', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Separação entre Canais (Crosstalk)', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Relação Sinal/Ruído', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Resposta De Frequência (Full Range)', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Crossover', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Impedância de Entrada', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Sistema de Proteção', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tensão de Alimentação Mínima', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tensão de Alimentação Máxima', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Consumo em Repouso', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Consumo Máximo Musical', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Consumo Máximo em Sinal Senoidal', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Uso Ideal', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Pré-encolhida', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Lavagem', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tamanho', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Manga Tipo', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Gola', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tecido Gola', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Ombro Tamanho', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Busto Tamanho', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Manga Tamanho', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Cintura Tamanho', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Quadril Tamanho', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Coxa Tamanho', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Canela Tamanho', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Gancho frente Tamanho', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Gancho traseiro Tamanho', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Entrepernas Tamanho', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Bolsos', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Fechamento/Abertura', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Numeração', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Cabedal (Parte Superior Externa)', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Solado', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Lingueta', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Palmilha', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Forro', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Ajuste', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tamanho do Cano', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Tamanho do Salto', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Embalagem', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Diâmetro da Caixa', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Profundidade da Caixa', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Largura da Pulseira', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Cor do mostrador', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Material da Caixa', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Material do Visor', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Material da Pulseira', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Prova d\'água', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Forro', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Movimento', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Touch Screen', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Vibra-call', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Mostrador de Horas', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Redes Sociais', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Alarme anti-perda', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Altimetro', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Hodometro', NOW(), NOW());
+
+INSERT INTO features (feature_name, created, modified)
+VALUES ('Sincronização', NOW(), NOW());
 
 # 10 registros na tabela "product_features" --------------------------------------------
 
