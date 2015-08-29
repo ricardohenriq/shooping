@@ -2162,7 +2162,7 @@ VALUES ('Thumb', NOW(), NOW());
 INSERT INTO media_types(name_media_type , created, modified)
 VALUES ('Video', NOW(), NOW());
 
-#  registros na tabela "medias" ------------------------------------------------------
+##  registros na tabela "medias" ------------------------------------------------------
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (2, 1, 'http://localhost/PROJETOS/ShoppingResources/img/1/Samsung-Galaxy-A5-Duos-Branco-4G-Orange-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
@@ -2818,52 +2818,208 @@ INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (1, 51, 'http://localhost/PROJETOS/ShoppingResources/img/51/Calca-Jeans-Preta-Skinny-Sarja-Jeans-3.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, 52, 'http://localhost/PROJETOS/ShoppingResources/img/52/.jpg', NOW(), NOW());
+VALUES (2, 52, 'http://localhost/PROJETOS/ShoppingResources/img/52/Calca-Combat-Forhonor-Top-de-Linha-Ripstop-Design-Marines-1.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (3, 52, 'http://localhost/PROJETOS/ShoppingResources/thumb/Calca-Combat-Forhonor-Top-de-Linha-Ripstop-Design-Marines-1.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (1, 52, 'http://localhost/PROJETOS/ShoppingResources/img/52/Calca-Combat-Forhonor-Top-de-Linha-Ripstop-Design-Marines-2.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (1, 52, 'http://localhost/PROJETOS/ShoppingResources/img/52/Calca-Combat-Forhonor-Top-de-Linha-Ripstop-Design-Marines-3.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (1, 52, 'http://localhost/PROJETOS/ShoppingResources/img/52/Calca-Combat-Forhonor-Top-de-Linha-Ripstop-Design-Marines-4.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (2, 53, 'http://localhost/PROJETOS/ShoppingResources/img/53/Kit-com-3-Cinto-em-Gorgoro-Cafetroy-1.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (3, 53, 'http://localhost/PROJETOS/ShoppingResources/thumb/Kit-com-3-Cinto-em-Gorgoro-Cafetroy-1.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (1, 53, 'http://localhost/PROJETOS/ShoppingResources/img/53/Kit-com-3-Cinto-em-Gorgoro-Cafetroy-2.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (1, 53, 'http://localhost/PROJETOS/ShoppingResources/img/53/Kit-com-3-Cinto-em-Gorgoro-Cafetroy-3.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (2, 54, 'http://localhost/PROJETOS/ShoppingResources/img/54/Adidas-Springblade-Drive-4-Original-20-Pronta-Entrega.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (3, 54, 'http://localhost/PROJETOS/ShoppingResources/thumb/Adidas-Springblade-Drive-4-Original-20-Pronta-Entrega.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (2, 55, 'http://localhost/PROJETOS/ShoppingResources/img/55/Tenis-Mizuno-Prophecy-2-Original-Frete-Gratis-Pronta-Entrega-1.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (3, 55, 'http://localhost/PROJETOS/ShoppingResources/thumb/Tenis-Mizuno-Prophecy-2-Original-Frete-Gratis-Pronta-Entrega-1.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (1, 55, 'http://localhost/PROJETOS/ShoppingResources/img/55/Tenis-Mizuno-Prophecy-2-Original-Frete-Gratis-Pronta-Entrega-2.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (1, 55, 'http://localhost/PROJETOS/ShoppingResources/img/55/Tenis-Mizuno-Prophecy-2-Original-Frete-Gratis-Pronta-Entrega-3.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+VALUES (2, 56, 'http://localhost/PROJETOS/ShoppingResources/img/56/Bota-Masculina-Sandro-Moscoloni-em-Couro-Worker-Amarelo-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 56, 'http://localhost/PROJETOS/ShoppingResources/thumb/Bota-Masculina-Sandro-Moscoloni-em-Couro-Worker-Amarelo-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 56, 'http://localhost/PROJETOS/ShoppingResources/img/56/Bota-Masculina-Sandro-Moscoloni-em-Couro-Worker-Amarelo-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 56, 'http://localhost/PROJETOS/ShoppingResources/img/56/Bota-Masculina-Sandro-Moscoloni-em-Couro-Worker-Amarelo-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 57, 'http://localhost/PROJETOS/ShoppingResources/img/57/Sapato-Social-em-Couro-Verniz-100-Legitimo-Frete-Gratis-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 57, 'http://localhost/PROJETOS/ShoppingResources/thumb/Sapato-Social-em-Couro-Verniz-100-Legitimo-Frete-Gratis-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 57, 'http://localhost/PROJETOS/ShoppingResources/img/57/Sapato-Social-em-Couro-Verniz-100-Legitimo-Frete-Gratis-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 57, 'http://localhost/PROJETOS/ShoppingResources/img/57/Sapato-Social-em-Couro-Verniz-100-Legitimo-Frete-Gratis-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 58, 'http://localhost/PROJETOS/ShoppingResources/img/58/Sapato-Importado-Feminino-Glitter-Pronta-Entrega-no-Brasil-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 58, 'http://localhost/PROJETOS/ShoppingResources/thumb/Sapato-Importado-Feminino-Glitter-Pronta-Entrega-no-Brasil-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 58, 'http://localhost/PROJETOS/ShoppingResources/img/58/Sapato-Importado-Feminino-Glitter-Pronta-Entrega-no-Brasil-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 58, 'http://localhost/PROJETOS/ShoppingResources/img/58/Sapato-Importado-Feminino-Glitter-Pronta-Entrega-no-Brasil-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 59, 'http://localhost/PROJETOS/ShoppingResources/img/59/Sapatenis-em-Couro-Legitimo-Sandro-Moscoloni-Street-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 59, 'http://localhost/PROJETOS/ShoppingResources/thumb/Sapatenis-em-Couro-Legitimo-Sandro-Moscoloni-Street-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 59, 'http://localhost/PROJETOS/ShoppingResources/img/59/Sapatenis-em-Couro-Legitimo-Sandro-Moscoloni-Street-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 59, 'http://localhost/PROJETOS/ShoppingResources/img/59/Sapatenis-em-Couro-Legitimo-Sandro-Moscoloni-Street-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 60, 'http://localhost/PROJETOS/ShoppingResources/img/60/Relogio-Invicta-Pro-Diver-6981-Ouro-18K-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 60, 'http://localhost/PROJETOS/ShoppingResources/thumb/Relogio-Invicta-Pro-Diver-6981-Ouro-18K-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 60, 'http://localhost/PROJETOS/ShoppingResources/img/60/Relogio-Invicta-Pro-Diver-6981-Ouro-18K-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 60, 'http://localhost/PROJETOS/ShoppingResources/img/60/Relogio-Invicta-Pro-Diver-6981-Ouro-18K-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 60, 'http://localhost/PROJETOS/ShoppingResources/img/60/Relogio-Invicta-Pro-Diver-6981-Ouro-18K-4.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 61, 'http://localhost/PROJETOS/ShoppingResources/img/61/Smartwatch-U8-Relogio-Inteligente-Bluetooth-Android-Iphone-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 61, 'http://localhost/PROJETOS/ShoppingResources/thumb/Smartwatch-U8-Relogio-Inteligente-Bluetooth-Android-Iphone-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 61, 'http://localhost/PROJETOS/ShoppingResources/img/61/Smartwatch-U8-Relogio-Inteligente-Bluetooth-Android-Iphone-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 61, 'http://localhost/PROJETOS/ShoppingResources/img/61/Smartwatch-U8-Relogio-Inteligente-Bluetooth-Android-Iphone-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 61, 'http://localhost/PROJETOS/ShoppingResources/img/61/Smartwatch-U8-Relogio-Inteligente-Bluetooth-Android-Iphone-4.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 62, 'http://localhost/PROJETOS/ShoppingResources/img/62/Relogio-Feminino-com-Estojo-26-Pulseiras-26-Aros-Relogios-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 62, 'http://localhost/PROJETOS/ShoppingResources/thumb/Relogio-Feminino-com-Estojo-26-Pulseiras-26-Aros-Relogios-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 62, 'http://localhost/PROJETOS/ShoppingResources/img/62/Relogio-Feminino-com-Estojo-26-Pulseiras-26-Aros-Relogios-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 63, 'http://localhost/PROJETOS/ShoppingResources/img/63/Relogio-de-Pulso-Vintage-Feminino-em-Couro-Brinde-Exclusivo-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 63, 'http://localhost/PROJETOS/ShoppingResources/thumb/Relogio-de-Pulso-Vintage-Feminino-em-Couro-Brinde-Exclusivo-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 63, 'http://localhost/PROJETOS/ShoppingResources/img/63/Relogio-de-Pulso-Vintage-Feminino-em-Couro-Brinde-Exclusivo-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 63, 'http://localhost/PROJETOS/ShoppingResources/img/63/Relogio-de-Pulso-Vintage-Feminino-em-Couro-Brinde-Exclusivo-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 64, 'http://localhost/PROJETOS/ShoppingResources/img/64/Pulseira-Bracelete-Masculina-Tribal-Couro-2-Unidades-Frete-Gratis-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 64, 'http://localhost/PROJETOS/ShoppingResources/thumb/Pulseira-Bracelete-Masculina-Tribal-Couro-2-Unidades-Frete-Gratis-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 64, 'http://localhost/PROJETOS/ShoppingResources/img/64/Pulseira-Bracelete-Masculina-Tribal-Couro-2-Unidades-Frete-Gratis-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 64, 'http://localhost/PROJETOS/ShoppingResources/img/64/Pulseira-Bracelete-Masculina-Tribal-Couro-2-Unidades-Frete-Gratis-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 65, 'http://localhost/PROJETOS/ShoppingResources/img/65/Pulseira-Masculina-Bracelete-Couro-Legitimo-Preto-Aco-Inox-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 65, 'http://localhost/PROJETOS/ShoppingResources/thumb/Pulseira-Masculina-Bracelete-Couro-Legitimo-Preto-Aco-Inox-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 65, 'http://localhost/PROJETOS/ShoppingResources/img/65/Pulseira-Masculina-Bracelete-Couro-Legitimo-Preto-Aco-Inox-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 65, 'http://localhost/PROJETOS/ShoppingResources/img/65/Pulseira-Masculina-Bracelete-Couro-Legitimo-Preto-Aco-Inox-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 66, 'http://localhost/PROJETOS/ShoppingResources/img/66/Pulseira-Feminina-Victoria-Secrets-Cristal-Banhado-Ouro-18K-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 66, 'http://localhost/PROJETOS/ShoppingResources/thumb/Pulseira-Feminina-Victoria-Secrets-Cristal-Banhado-Ouro-18K-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 66, 'http://localhost/PROJETOS/ShoppingResources/img/66/Pulseira-Feminina-Victoria-Secrets-Cristal-Banhado-Ouro-18K-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 66, 'http://localhost/PROJETOS/ShoppingResources/img/66/Pulseira-Feminina-Victoria-Secrets-Cristal-Banhado-Ouro-18K-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 67, 'http://localhost/PROJETOS/ShoppingResources/img/67/Caixa-com-10-Resmas-Papel-Folha-A4-75G-Reciclado-Chamex-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 67, 'http://localhost/PROJETOS/ShoppingResources/thumb/Caixa-com-10-Resmas-Papel-Folha-A4-75G-Reciclado-Chamex-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 67, 'http://localhost/PROJETOS/ShoppingResources/img/67/Caixa-com-10-Resmas-Papel-Folha-A4-75G-Reciclado-Chamex-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 67, 'http://localhost/PROJETOS/ShoppingResources/img/67/Caixa-com-10-Resmas-Papel-Folha-A4-75G-Reciclado-Chamex-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 68, 'http://localhost/PROJETOS/ShoppingResources/img/68/Carimbos-para-Professoras-Premium-20-Original-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 68, 'http://localhost/PROJETOS/ShoppingResources/thumb/Carimbos-para-Professoras-Premium-20-Original-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 68, 'http://localhost/PROJETOS/ShoppingResources/img/68/Carimbos-para-Professoras-Premium-20-Original-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 68, 'http://localhost/PROJETOS/ShoppingResources/img/68/Carimbos-para-Professoras-Premium-20-Original-3.jpg', NOW(), NOW());
 
 ## 5 registros na tabela "promotions" -------------------------------------------------
 
@@ -2983,57 +3139,75 @@ VALUES (2, 30, 'Na compra de um Notebook ganhe um HD Externo', 'http://localhost
 # 9 registros na tabela "new_banners" -------------------------------------------------
 
 INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (1, 'Banner 1', 'Noticia Fantastica', 'news/new1.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (1, 'Banner 1', 'Noticia Fantastica', 'news/new1.png', NOW(), '2019-11-11', NOW(), NOW());
 
 INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (2, 'Banner 2', 'Noticia Boa', 'news/new2.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (2, 'Banner 2', 'Noticia Boa', 'news/new2.png', NOW(), '2019-11-11', NOW(), NOW());
 
 INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (3, 'Banner 3', 'Noticia Muito Boa', 'news/new3.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (3, 'Banner 3', 'Noticia Muito Boa', 'news/new3.png', NOW(), '2019-11-11', NOW(), NOW());
 
 INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (4, 'Banner 4', 'Noticia Melhor', 'news/new4.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (4, 'Banner 4', 'Noticia Melhor', 'news/new4.png', NOW(), '2019-11-11', NOW(), NOW());
 
 INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (5, 'Banner 5', 'Noticia Top', 'news/new1.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (5, 'Banner 5', 'Noticia Top', 'news/new1.png', NOW(), '2019-11-11', NOW(), NOW());
 
 INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (6, 'Banner 6', 'Noticia Otima', 'news/new2.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (6, 'Banner 6', 'Noticia Otima', 'news/new2.png', NOW(), '2019-11-11', NOW(), NOW());
 
 INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (7, 'Banner 7', 'Noticia Excelente', 'news/new3.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (7, 'Banner 7', 'Noticia Excelente', 'news/new3.png', NOW(), '2019-11-11', NOW(), NOW());
 
 INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (8, 'Banner 8', 'Noticia Perfeita', 'news/new4.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (8, 'Banner 8', 'Noticia Perfeita', 'news/new4.png', NOW(), '2019-11-11', NOW(), NOW());
 
 INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (9, 'Banner 9', 'Noticia Boa Dimais da Conta', 'news/new1.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (9, 'Banner 9', 'Noticia Boa Dimais da Conta', 'news/new1.png', NOW(), '2019-11-11', NOW(), NOW());
 
-# 9 registros na tabela "offer_banners" -----------------------------------------------
-
-INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (1, 'Oferta 1', 'Oferta Boa', 'offers/offer1.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+## 9 registros na tabela "offer_banners" -----------------------------------------------
 
 INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (2, 'Oferta 2', 'Oferta Muito Boa', 'offers/offer2.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (1, 'Liquidificador abaixo do preço de Fábrica',
+        'Liquidificador abaixo do preço de Fábrica, oferta válida somente para a loja "A" e "C"',
+        'http://localhost/PROJETOS/ShoppingResources/offers/offer1.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
 INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (3, 'Oferta 3', 'Oferta Boa Dimais Da conta Sô', 'offers/offer3.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (2, 'iPod por R$ 200',
+        'iPod por R$ 200, oferta válida somente para a loja "D" e "E"',
+        'http://localhost/PROJETOS/ShoppingResources/offers/offer2.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
 INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (4, 'Oferta 4', 'Oferta Excelente', 'offers/offer4.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (3, 'Ovo de Páscoa R$ 10',
+        'Ovo de Páscoa R$ 10, oferta válida somente para a loja "A" e "C"',
+        'http://localhost/PROJETOS/ShoppingResources/offers/offer3.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
 INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (5, 'Oferta 5', 'Oferta Otima', 'offers/offer5.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (4, 'Notebook com garantia extendida com desconto',
+        'Notebook com garantia extendida com desconto, oferta válida somente para a loja "A" e "C"',
+        'http://localhost/PROJETOS/ShoppingResources/offers/offer4.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
 INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (6, 'Oferta 6', 'Oferta Razoavel', 'offers/offer6.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (5, 'Todos os sucos a partir de R$ 2.00',
+        ', oferta válida somente para a loja "A" e "C"',
+        'http://localhost/PROJETOS/ShoppingResources/offers/offer5.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
 INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (7, 'Oferta 7', 'Oferta Regular', 'offers/offer1.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (6, 'Tênis com 50% de desconto',
+        'Tênis com 50% de desconto, somente numeração 43 e 44',
+        'http://localhost/PROJETOS/ShoppingResources/offers/offer6.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
 INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (8, 'Oferta 8', 'Oferta Bacana', 'offers/offer2.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (7, '2 KG Castanha de Cajú por R$ 1.50',
+        '2 KG Castanha de Cajú por R$ 1.50, oferta válida somente para a loja "B" e "C"',
+        'http://localhost/PROJETOS/ShoppingResources/offers/offer1.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
 INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (9, 'Oferta 9', 'Oferta Fulera', 'offers/offer3.png', CURDATE(), '2019-11-11', CURDATE(), CURDATE());
+VALUES (8, '1 KG de Queijo por R$ 10',
+        '1 KG de Queijo por R$ 10, oferta válida no dia 12/12/2012',
+        'http://localhost/PROJETOS/ShoppingResources/offers/offer2.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
+
+INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+VALUES (9, '1 KG de Picanha por R$ 10',
+        '1 KG de Picanha por R$ 10, oferta válida somente para a loja "B" e "D"',
+        'http://localhost/PROJETOS/ShoppingResources/offers/offer3.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
