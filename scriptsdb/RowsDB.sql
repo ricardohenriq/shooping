@@ -2168,7 +2168,7 @@ INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (2, 1, 'http://localhost/PROJETOS/ShoppingResources/img/1/Samsung-Galaxy-A5-Duos-Branco-4G-Orange-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (3, 1, 'http://localhost/PROJETOS/ShoppingResources/thumb/1/Samsung-Galaxy-A5-Duos-Branco-4G-Orange-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 1, 'http://localhost/PROJETOS/ShoppingResources/thumb/Samsung-Galaxy-A5-Duos-Branco-4G-Orange-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (1, 1, 'http://localhost/PROJETOS/ShoppingResources/img/1/Samsung-Galaxy-A5-Duos-Branco-4G-Orange-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
@@ -2180,7 +2180,7 @@ INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (2, 2, 'http://localhost/PROJETOS/ShoppingResources/img/2/TV-LED-32-Smart-LiteUSB-HDMI-LE-3278i-Semp-Toshiba-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (3, 2, 'http://localhost/PROJETOS/ShoppingResources/thumb/2/TV-LED-32-Smart-LiteUSB-HDMI-LE-3278i-Semp-Toshiba-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 2, 'http://localhost/PROJETOS/ShoppingResources/thumb/TV-LED-32-Smart-LiteUSB-HDMI-LE-3278i-Semp-Toshiba-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (1, 2, 'http://localhost/PROJETOS/ShoppingResources/img/2/TV-LED-32-Smart-LiteUSB-HDMI-LE-3278i-Semp-Toshiba-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
@@ -2221,127 +2221,649 @@ VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4/Liquidificador-
 #-----
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (2, 5, 'http://localhost/PROJETOS/ShoppingResources/img/5/MP3-Player-Shuffle-Clip-FM-Cabo-USB-Fone-Suporta-ate-8G-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 5, 'http://localhost/PROJETOS/ShoppingResources/thumb/MP3-Player-Shuffle-Clip-FM-Cabo-USB-Fone-Suporta-ate-8G-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 5, 'http://localhost/PROJETOS/ShoppingResources/img/5/MP3-Player-Shuffle-Clip-FM-Cabo-USB-Fone-Suporta-ate-8G-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 5, 'http://localhost/PROJETOS/ShoppingResources/img/5/MP3-Player-Shuffle-Clip-FM-Cabo-USB-Fone-Suporta-ate-8G-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (2, 6, 'http://localhost/PROJETOS/ShoppingResources/img/6/Fone-de-Ouvido-Com-MP3-Player-C2-Sport-Entrada-Cartao-SD-micro-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 6, 'http://localhost/PROJETOS/ShoppingResources/thumb/Fone-de-Ouvido-Com-MP3-Player-C2-Sport-Entrada-Cartao-SD-micro-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 6, 'http://localhost/PROJETOS/ShoppingResources/img/6/Fone-de-Ouvido-Com-MP3-Player-C2-Sport-Entrada-Cartao-SD-micro-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 6, 'http://localhost/PROJETOS/ShoppingResources/img/6/Fone-de-Ouvido-Com-MP3-Player-C2-Sport-Entrada-Cartao-SD-micro-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 6, 'http://localhost/PROJETOS/ShoppingResources/img/6/Fone-de-Ouvido-Com-MP3-Player-C2-Sport-Entrada-Cartao-SD-micro-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (2, 7, 'http://localhost/PROJETOS/ShoppingResources/img/7/Bi-Cama-0735-Branco-Brilho-Multimoveis-Bebe-Store-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 7, 'http://localhost/PROJETOS/ShoppingResources/thumb/Bi-Cama-0735-Branco-Brilho-Multimoveis-Bebe-Store-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 7, 'http://localhost/PROJETOS/ShoppingResources/img/7/Bi-Cama-0735-Branco-Brilho-Multimoveis-Bebe-Store-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 7, 'http://localhost/PROJETOS/ShoppingResources/img/7/Bi-Cama-0735-Branco-Brilho-Multimoveis-Bebe-Store-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (2, 8, 'http://localhost/PROJETOS/ShoppingResources/img/8/Jogo-de-Mesa-com-4-Cadeiras-Tampo-de-Vidro-Temperado-Incolor-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 8, 'http://localhost/PROJETOS/ShoppingResources/thumb/Jogo-de-Mesa-com-4-Cadeiras-Tampo-de-Vidro-Temperado-Incolor-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 8, 'http://localhost/PROJETOS/ShoppingResources/img/8/Jogo-de-Mesa-com-4-Cadeiras-Tampo-de-Vidro-Temperado-Incolor-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (2, 9, 'http://localhost/PROJETOS/ShoppingResources/img/9/Cesta-Basica-de-Alimentos-Popular-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 9, 'http://localhost/PROJETOS/ShoppingResources/thumb/Cesta-Basica-de-Alimentos-Popular-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 9, 'http://localhost/PROJETOS/ShoppingResources/img/9/Cesta-Basica-de-Alimentos-Popular-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (2, 10, 'http://localhost/PROJETOS/ShoppingResources/img/10/Balas-Alemas-Fruit-Candies-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 10, 'http://localhost/PROJETOS/ShoppingResources/thumb/Balas-Alemas-Fruit-Candies-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 10, 'http://localhost/PROJETOS/ShoppingResources/img/10/Balas-Alemas-Fruit-Candies-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (2, 11, 'http://localhost/PROJETOS/ShoppingResources/img/11/Kit-Brigadeiro-Premium-Festa-Infantil-100-Unidades-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 11, 'http://localhost/PROJETOS/ShoppingResources/thumb/Kit-Brigadeiro-Premium-Festa-Infantil-100-Unidades-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 11, 'http://localhost/PROJETOS/ShoppingResources/img/11/Kit-Brigadeiro-Premium-Festa-Infantil-100-Unidades-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 11, 'http://localhost/PROJETOS/ShoppingResources/img/11/Kit-Brigadeiro-Premium-Festa-Infantil-100-Unidades-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 11, 'http://localhost/PROJETOS/ShoppingResources/img/11/Kit-Brigadeiro-Premium-Festa-Infantil-100-Unidades-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (2, 12, 'http://localhost/PROJETOS/ShoppingResources/img/12/Tamarillo-Tomate-de-Arvore-Gigante-Sementes-Fruta-para-Mudas-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 12, 'http://localhost/PROJETOS/ShoppingResources/thumb/Tamarillo-Tomate-de-Arvore-Gigante-Sementes-Fruta-para-Mudas-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 12, 'http://localhost/PROJETOS/ShoppingResources/img/12/Tamarillo-Tomate-de-Arvore-Gigante-Sementes-Fruta-para-Mudas-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 12, 'http://localhost/PROJETOS/ShoppingResources/img/12/Tamarillo-Tomate-de-Arvore-Gigante-Sementes-Fruta-para-Mudas-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 12, 'http://localhost/PROJETOS/ShoppingResources/img/12/Tamarillo-Tomate-de-Arvore-Gigante-Sementes-Fruta-para-Mudas-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 12, 'http://localhost/PROJETOS/ShoppingResources/img/12/Tamarillo-Tomate-de-Arvore-Gigante-Sementes-Fruta-para-Mudas-5.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (2, 13, 'http://localhost/PROJETOS/ShoppingResources/img/13/Frutos-de-Ora-Pro-Nobis-10-Frutos-Frete-Gratis-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 13, 'http://localhost/PROJETOS/ShoppingResources/thumb/Frutos-de-Ora-Pro-Nobis-10-Frutos-Frete-Gratis-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 13, 'http://localhost/PROJETOS/ShoppingResources/img/13/Frutos-de-Ora-Pro-Nobis-10-Frutos-Frete-Gratis-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 13, 'http://localhost/PROJETOS/ShoppingResources/img/13/Frutos-de-Ora-Pro-Nobis-10-Frutos-Frete-Gratis-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 13, 'http://localhost/PROJETOS/ShoppingResources/img/13/Frutos-de-Ora-Pro-Nobis-10-Frutos-Frete-Gratis-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (2, 14, 'http://localhost/PROJETOS/ShoppingResources/img/14/Mudas-Fruta-do-Milagre-Variedade-Gigante-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 14, 'http://localhost/PROJETOS/ShoppingResources/thumb/Mudas-Fruta-do-Milagre-Variedade-Gigante-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (1, 14, 'http://localhost/PROJETOS/ShoppingResources/img/14/Mudas-Fruta-do-Milagre-Variedade-Gigante-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 14, 'http://localhost/PROJETOS/ShoppingResources/img/14/Mudas-Fruta-do-Milagre-Variedade-Gigante-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 14, 'http://localhost/PROJETOS/ShoppingResources/img/14/Mudas-Fruta-do-Milagre-Variedade-Gigante-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 14, 'http://localhost/PROJETOS/ShoppingResources/img/14/Mudas-Fruta-do-Milagre-Variedade-Gigante-5.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 15, 'http://localhost/PROJETOS/ShoppingResources/img/15/Goji-Berry-1KG-Fruto-Desidratado-Pronta-Entrega-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 15, 'http://localhost/PROJETOS/ShoppingResources/thumb/Goji-Berry-1KG-Fruto-Desidratado-Pronta-Entrega-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 15, 'http://localhost/PROJETOS/ShoppingResources/img/15/Goji-Berry-1KG-Fruto-Desidratado-Pronta-Entrega-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 15, 'http://localhost/PROJETOS/ShoppingResources/img/15/Goji-Berry-1KG-Fruto-Desidratado-Pronta-Entrega-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 15, 'http://localhost/PROJETOS/ShoppingResources/img/15/Goji-Berry-1KG-Fruto-Desidratado-Pronta-Entrega-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 16, 'http://localhost/PROJETOS/ShoppingResources/img/16/Hibisco-Desidratado-Cha-500G-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 16, 'http://localhost/PROJETOS/ShoppingResources/thumb/Hibisco-Desidratado-Cha-500G-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 16, 'http://localhost/PROJETOS/ShoppingResources/img/16/Hibisco-Desidratado-Cha-500G-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 16, 'http://localhost/PROJETOS/ShoppingResources/img/16/Hibisco-Desidratado-Cha-500G-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 17, 'http://localhost/PROJETOS/ShoppingResources/img/17/Whisky-Johnnie-Walker-Double-Black-1000ML-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 17, 'http://localhost/PROJETOS/ShoppingResources/thumb/Whisky-Johnnie-Walker-Double-Black-1000ML-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 17, 'http://localhost/PROJETOS/ShoppingResources/img/17/Whisky-Johnnie-Walker-Double-Black-1000ML-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 18, 'http://localhost/PROJETOS/ShoppingResources/img/18/Vodka-Absolut-Unique-1L-Ed-Limitada-Raridade-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 18, 'http://localhost/PROJETOS/ShoppingResources/thumb/Vodka-Absolut-Unique-1L-Ed-Limitada-Raridade-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 18, 'http://localhost/PROJETOS/ShoppingResources/img/18/Vodka-Absolut-Unique-1L-Ed-Limitada-Raridade-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 18, 'http://localhost/PROJETOS/ShoppingResources/img/18/Vodka-Absolut-Unique-1L-Ed-Limitada-Raridade-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 19, 'http://localhost/PROJETOS/ShoppingResources/img/19/Espumante-Cava-Freixenet-Carta-Nevada-750ML-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 19, 'http://localhost/PROJETOS/ShoppingResources/thumb/Espumante-Cava-Freixenet-Carta-Nevada-750ML-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 19, 'http://localhost/PROJETOS/ShoppingResources/img/19/Espumante-Cava-Freixenet-Carta-Nevada-750ML-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 19, 'http://localhost/PROJETOS/ShoppingResources/img/19/Espumante-Cava-Freixenet-Carta-Nevada-750ML-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 19, 'http://localhost/PROJETOS/ShoppingResources/img/19/Espumante-Cava-Freixenet-Carta-Nevada-750ML-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 19, 'http://localhost/PROJETOS/ShoppingResources/img/19/Espumante-Cava-Freixenet-Carta-Nevada-750ML-5.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 20, 'http://localhost/PROJETOS/ShoppingResources/img/20/Coca-Cola-Vanilla-Sabores-Baunilha-Caixa-12-Latas-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 20, 'http://localhost/PROJETOS/ShoppingResources/thumb/Coca-Cola-Vanilla-Sabores-Baunilha-Caixa-12-Latas-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 20, 'http://localhost/PROJETOS/ShoppingResources/img/20/Coca-Cola-Vanilla-Sabores-Baunilha-Caixa-12-Latas-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 21, 'http://localhost/PROJETOS/ShoppingResources/img/21/Refrigerante-Crush-Orange-Importado-12-Latas-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 21, 'http://localhost/PROJETOS/ShoppingResources/thumb/Refrigerante-Crush-Orange-Importado-12-Latas-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 21, 'http://localhost/PROJETOS/ShoppingResources/img/21/Refrigerante-Crush-Orange-Importado-12-Latas-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 21, 'http://localhost/PROJETOS/ShoppingResources/img/21/Refrigerante-Crush-Orange-Importado-12-Latas-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 22, 'http://localhost/PROJETOS/ShoppingResources/img/22/Refrigerante-Canada-Dry-Ginger-Ale-Caixa-12-Latas-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 22, 'http://localhost/PROJETOS/ShoppingResources/img/22/Refrigerante-Canada-Dry-Ginger-Ale-Caixa-12-Latas-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 22, 'http://localhost/PROJETOS/ShoppingResources/img/22/Refrigerante-Canada-Dry-Ginger-Ale-Caixa-12-Latas-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 22, 'http://localhost/PROJETOS/ShoppingResources/img/22/Refrigerante-Canada-Dry-Ginger-Ale-Caixa-12-Latas-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 23, 'http://localhost/PROJETOS/ShoppingResources/img/23/Ferro-de-Passar-Roupa-a-Vapor-com-Caldeira-Delonghi-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 23, 'http://localhost/PROJETOS/ShoppingResources/thumb/Ferro-de-Passar-Roupa-a-Vapor-com-Caldeira-Delonghi-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 23, 'http://localhost/PROJETOS/ShoppingResources/img/23/Ferro-de-Passar-Roupa-a-Vapor-com-Caldeira-Delonghi-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 23, 'http://localhost/PROJETOS/ShoppingResources/img/23/Ferro-de-Passar-Roupa-a-Vapor-com-Caldeira-Delonghi-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 23, 'http://localhost/PROJETOS/ShoppingResources/img/23/Ferro-de-Passar-Roupa-a-Vapor-com-Caldeira-Delonghi-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 23, 'http://localhost/PROJETOS/ShoppingResources/img/23/Ferro-de-Passar-Roupa-a-Vapor-com-Caldeira-Delonghi-5.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 23, 'http://localhost/PROJETOS/ShoppingResources/img/23/Ferro-de-Passar-Roupa-a-Vapor-com-Caldeira-Delonghi-6.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 24, 'http://localhost/PROJETOS/ShoppingResources/img/24/Lencol-Elastico-2-Fronhas-Quenn-Malha-Penteada-100-Algodao-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 24, 'http://localhost/PROJETOS/ShoppingResources/thumb/Lencol-Elastico-2-Fronhas-Quenn-Malha-Penteada-100-Algodao-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 24, 'http://localhost/PROJETOS/ShoppingResources/img/24/Lencol-Elastico-2-Fronhas-Quenn-Malha-Penteada-100-Algodao-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 25, 'http://localhost/PROJETOS/ShoppingResources/img/25/Manta-de-Sofa-Gigante-Tipo-Capa-de-Sofa-Algodao-240X180M-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 25, 'http://localhost/PROJETOS/ShoppingResources/thumb/Manta-de-Sofa-Gigante-Tipo-Capa-de-Sofa-Algodao-240X180M-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 25, 'http://localhost/PROJETOS/ShoppingResources/img/25/Manta-de-Sofa-Gigante-Tipo-Capa-de-Sofa-Algodao-240X180M-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 25, 'http://localhost/PROJETOS/ShoppingResources/img/25/Manta-de-Sofa-Gigante-Tipo-Capa-de-Sofa-Algodao-240X180M-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 25, 'http://localhost/PROJETOS/ShoppingResources/img/25/Manta-de-Sofa-Gigante-Tipo-Capa-de-Sofa-Algodao-240X180M-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 26, 'http://localhost/PROJETOS/ShoppingResources/img/26/Divergente-Insurgente-Convergente-Quatro-04-Livros-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 26, 'http://localhost/PROJETOS/ShoppingResources/thumb/Divergente-Insurgente-Convergente-Quatro-04-Livros-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 26, 'http://localhost/PROJETOS/ShoppingResources/img/26/Divergente-Insurgente-Convergente-Quatro-04-Livros-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 26, 'http://localhost/PROJETOS/ShoppingResources/img/26/Divergente-Insurgente-Convergente-Quatro-04-Livros-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 26, 'http://localhost/PROJETOS/ShoppingResources/img/26/Divergente-Insurgente-Convergente-Quatro-04-Livros-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 26, 'http://localhost/PROJETOS/ShoppingResources/img/26/Divergente-Insurgente-Convergente-Quatro-04-Livros-5.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 27, 'http://localhost/PROJETOS/ShoppingResources/img/27/Box-Supernatural-Kit-com-05-Livros.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 27, 'http://localhost/PROJETOS/ShoppingResources/thumb/Box-Supernatural-Kit-com-05-Livros.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 28, 'http://localhost/PROJETOS/ShoppingResources/img/28/Colecao-8-Livros-Fabulas-a-Cigarra-e-a-Formiga-Lebre-Raposa-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 28, 'http://localhost/PROJETOS/ShoppingResources/thumb/Colecao-8-Livros-Fabulas-a-Cigarra-e-a-Formiga-Lebre-Raposa-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 28, 'http://localhost/PROJETOS/ShoppingResources/img/28/Colecao-8-Livros-Fabulas-a-Cigarra-e-a-Formiga-Lebre-Raposa-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 28, 'http://localhost/PROJETOS/ShoppingResources/img/28/Colecao-8-Livros-Fabulas-a-Cigarra-e-a-Formiga-Lebre-Raposa-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 28, 'http://localhost/PROJETOS/ShoppingResources/img/28/Colecao-8-Livros-Fabulas-a-Cigarra-e-a-Formiga-Lebre-Raposa-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 28, 'http://localhost/PROJETOS/ShoppingResources/img/28/Colecao-8-Livros-Fabulas-a-Cigarra-e-a-Formiga-Lebre-Raposa-5.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 29, 'http://localhost/PROJETOS/ShoppingResources/img/29/Tablet-Positivo-Duo-ZX3020-Prata-e-Preto-2-em-1-Quad-Core-16GB-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 29, 'http://localhost/PROJETOS/ShoppingResources/thumb/Tablet-Positivo-Duo-ZX3020-Prata-e-Preto-2-em-1-Quad-Core-16GB-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 29, 'http://localhost/PROJETOS/ShoppingResources/img/29/Tablet-Positivo-Duo-ZX3020-Prata-e-Preto-2-em-1-Quad-Core-16GB-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 29, 'http://localhost/PROJETOS/ShoppingResources/img/29/Tablet-Positivo-Duo-ZX3020-Prata-e-Preto-2-em-1-Quad-Core-16GB-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 29, 'http://localhost/PROJETOS/ShoppingResources/img/29/Tablet-Positivo-Duo-ZX3020-Prata-e-Preto-2-em-1-Quad-Core-16GB-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 30, 'http://localhost/PROJETOS/ShoppingResources/img/30/Pen-Drive-Titan-8GB-Preto-Multilaser-PD601-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 30, 'http://localhost/PROJETOS/ShoppingResources/thumb/Pen-Drive-Titan-8GB-Preto-Multilaser-PD601-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 30, 'http://localhost/PROJETOS/ShoppingResources/img/30/Pen-Drive-Titan-8GB-Preto-Multilaser-PD601-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 31, 'http://localhost/PROJETOS/ShoppingResources/img/31/HD-Externo-Portatil-Samsung-M3-1TB-USB-3-0-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 31, 'http://localhost/PROJETOS/ShoppingResources/thumb/HD-Externo-Portatil-Samsung-M3-1TB-USB-3-0-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 31, 'http://localhost/PROJETOS/ShoppingResources/img/31/HD-Externo-Portatil-Samsung-M3-1TB-USB-3-0-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 31, 'http://localhost/PROJETOS/ShoppingResources/img/31/HD-Externo-Portatil-Samsung-M3-1TB-USB-3-0-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 32, 'http://localhost/PROJETOS/ShoppingResources/img/32/Tablet-Semp-Toshiba-TA0703G-16GB-7-WI-FI-3G-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 32, 'http://localhost/PROJETOS/ShoppingResources/thumb/Tablet-Semp-Toshiba-TA0703G-16GB-7-WI-FI-3G-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 32, 'http://localhost/PROJETOS/ShoppingResources/img/32/Tablet-Semp-Toshiba-TA0703G-16GB-7-WI-FI-3G-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 32, 'http://localhost/PROJETOS/ShoppingResources/img/32/Tablet-Semp-Toshiba-TA0703G-16GB-7-WI-FI-3G-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 32, 'http://localhost/PROJETOS/ShoppingResources/img/32/Tablet-Semp-Toshiba-TA0703G-16GB-7-WI-FI-3G-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 33, 'http://localhost/PROJETOS/ShoppingResources/img/33/Multifuncional-Colorida-Wireless-2546-HP-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 33, 'http://localhost/PROJETOS/ShoppingResources/thumb/Multifuncional-Colorida-Wireless-2546-HP-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 33, 'http://localhost/PROJETOS/ShoppingResources/img/33/Multifuncional-Colorida-Wireless-2546-HP-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 33, 'http://localhost/PROJETOS/ShoppingResources/img/33/Multifuncional-Colorida-Wireless-2546-HP-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 33, 'http://localhost/PROJETOS/ShoppingResources/img/33/Multifuncional-Colorida-Wireless-2546-HP-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 34, 'http://localhost/PROJETOS/ShoppingResources/img/34/Fax-Panasonic-KX-FT932BR-com-Bina-Novo-Garantia-1-Ano-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 34, 'http://localhost/PROJETOS/ShoppingResources/thumb/Fax-Panasonic-KX-FT932BR-com-Bina-Novo-Garantia-1-Ano-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 34, 'http://localhost/PROJETOS/ShoppingResources/img/34/Fax-Panasonic-KX-FT932BR-com-Bina-Novo-Garantia-1-Ano-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 34, 'http://localhost/PROJETOS/ShoppingResources/img/34/Fax-Panasonic-KX-FT932BR-com-Bina-Novo-Garantia-1-Ano-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 35, 'http://localhost/PROJETOS/ShoppingResources/img/35/Telefone-Sem-Fio-Philips-D1201BBR-Dect-60-Bina-Preto-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 35, 'http://localhost/PROJETOS/ShoppingResources/thumb/Telefone-Sem-Fio-Philips-D1201BBR-Dect-60-Bina-Preto-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 35, 'http://localhost/PROJETOS/ShoppingResources/img/35/Telefone-Sem-Fio-Philips-D1201BBR-Dect-60-Bina-Preto-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 35, 'http://localhost/PROJETOS/ShoppingResources/img/35/Telefone-Sem-Fio-Philips-D1201BBR-Dect-60-Bina-Preto-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 36, 'http://localhost/PROJETOS/ShoppingResources/img/36/Bateria-Musical-Infantil-Transformers-100-Original-Kids-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 36, 'http://localhost/PROJETOS/ShoppingResources/thumb/Bateria-Musical-Infantil-Transformers-100-Original-Kids-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 36, 'http://localhost/PROJETOS/ShoppingResources/img/36/Bateria-Musical-Infantil-Transformers-100-Original-Kids-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 36, 'http://localhost/PROJETOS/ShoppingResources/img/36/Bateria-Musical-Infantil-Transformers-100-Original-Kids-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 36, 'http://localhost/PROJETOS/ShoppingResources/img/36/Bateria-Musical-Infantil-Transformers-100-Original-Kids-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 37, 'http://localhost/PROJETOS/ShoppingResources/img/37/Mini-Helicoptero-V911-4-Canais-com-Gyro-e-Controle-24GHZ-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 37, 'http://localhost/PROJETOS/ShoppingResources/thumb/Mini-Helicoptero-V911-4-Canais-com-Gyro-e-Controle-24GHZ-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 37, 'http://localhost/PROJETOS/ShoppingResources/img/37/Mini-Helicoptero-V911-4-Canais-com-Gyro-e-Controle-24GHZ-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 37, 'http://localhost/PROJETOS/ShoppingResources/img/37/Mini-Helicoptero-V911-4-Canais-com-Gyro-e-Controle-24GHZ-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 37, 'http://localhost/PROJETOS/ShoppingResources/img/37/Mini-Helicoptero-V911-4-Canais-com-Gyro-e-Controle-24GHZ-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 38, 'http://localhost/PROJETOS/ShoppingResources/img/38/Tapete-Infantil-EVA-Alfabeto-Numeros-Alfanumerico-Bebe-40PCS-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 38, 'http://localhost/PROJETOS/ShoppingResources/thumb/Tapete-Infantil-EVA-Alfabeto-Numeros-Alfanumerico-Bebe-40PCS-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 38, 'http://localhost/PROJETOS/ShoppingResources/img/38/Tapete-Infantil-EVA-Alfabeto-Numeros-Alfanumerico-Bebe-40PCS-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 39, 'http://localhost/PROJETOS/ShoppingResources/img/39/Piano-Teclado-Musical-Infantil-Sons-Eletrnico-Frete-Gratis-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 39, 'http://localhost/PROJETOS/ShoppingResources/thumb/Piano-Teclado-Musical-Infantil-Sons-Eletrnico-Frete-Gratis-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 39, 'http://localhost/PROJETOS/ShoppingResources/img/39/Piano-Teclado-Musical-Infantil-Sons-Eletrnico-Frete-Gratis-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 40, 'http://localhost/PROJETOS/ShoppingResources/img/40/DVD-Player-H-Buster-HBD-6680-Tela-27-Toca-CD-USB-MP3-Radio-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 40, 'http://localhost/PROJETOS/ShoppingResources/thumb/DVD-Player-H-Buster-HBD-6680-Tela-27-Toca-CD-USB-MP3-Radio-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 40, 'http://localhost/PROJETOS/ShoppingResources/img/40/DVD-Player-H-Buster-HBD-6680-Tela-27-Toca-CD-USB-MP3-Radio-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 40, 'http://localhost/PROJETOS/ShoppingResources/img/40/DVD-Player-H-Buster-HBD-6680-Tela-27-Toca-CD-USB-MP3-Radio-3.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 40, 'http://localhost/PROJETOS/ShoppingResources/img/40/DVD-Player-H-Buster-HBD-6680-Tela-27-Toca-CD-USB-MP3-Radio-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 41, 'http://localhost/PROJETOS/ShoppingResources/img/41/Caixa-Trio-100-Selenium-2-Modulos-Taramps-Frete-Gratis-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 41, 'http://localhost/PROJETOS/ShoppingResources/thumb/Caixa-Trio-100-Selenium-2-Modulos-Taramps-Frete-Gratis-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 41, 'http://localhost/PROJETOS/ShoppingResources/img/41/Caixa-Trio-100-Selenium-2-Modulos-Taramps-Frete-Gratis-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 41, 'http://localhost/PROJETOS/ShoppingResources/img/41/Caixa-Trio-100-Selenium-2-Modulos-Taramps-Frete-Gratis-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 41, 'http://localhost/PROJETOS/ShoppingResources/img/41/Caixa-Trio-100-Selenium-2-Modulos-Taramps-Frete-Gratis-4.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 42, 'http://localhost/PROJETOS/ShoppingResources/img/42/Capas-de-Courvin-para-Bancos-Automotivos-Frete-Gratis-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 42, 'http://localhost/PROJETOS/ShoppingResources/thumb/Capas-de-Courvin-para-Bancos-Automotivos-Frete-Gratis-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 42, 'http://localhost/PROJETOS/ShoppingResources/img/42/Capas-de-Courvin-para-Bancos-Automotivos-Frete-Gratis-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 42, 'http://localhost/PROJETOS/ShoppingResources/img/42/Capas-de-Courvin-para-Bancos-Automotivos-Frete-Gratis-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 43, 'http://localhost/PROJETOS/ShoppingResources/img/43/Kit-Caixa-Trio-Completa-7000W-2-12-4D-2T-Modulo-4000W-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 43, 'http://localhost/PROJETOS/ShoppingResources/thumb/Kit-Caixa-Trio-Completa-7000W-2-12-4D-2T-Modulo-4000W-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 43, 'http://localhost/PROJETOS/ShoppingResources/img/43/Kit-Caixa-Trio-Completa-7000W-2-12-4D-2T-Modulo-4000W-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 43, 'http://localhost/PROJETOS/ShoppingResources/img/43/Kit-Caixa-Trio-Completa-7000W-2-12-4D-2T-Modulo-4000W-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 44, 'http://localhost/PROJETOS/ShoppingResources/img/44/Modulo-Amplificador-Taramps-TS-800-X4-800W-RMS-RCA-Sedex-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 44, 'http://localhost/PROJETOS/ShoppingResources/thumb/Modulo-Amplificador-Taramps-TS-800-X4-800W-RMS-RCA-Sedex-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 44, 'http://localhost/PROJETOS/ShoppingResources/img/44/Modulo-Amplificador-Taramps-TS-800-X4-800W-RMS-RCA-Sedex-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 44, 'http://localhost/PROJETOS/ShoppingResources/img/44/Modulo-Amplificador-Taramps-TS-800-X4-800W-RMS-RCA-Sedex-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 44, 'http://localhost/PROJETOS/ShoppingResources/img/44/Modulo-Amplificador-Taramps-TS-800-X4-800W-RMS-RCA-Sedex-4.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 45, 'http://localhost/PROJETOS/ShoppingResources/img/45/Maleta-de-Ferramentas-com-142-Pecas-BR-Tools.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 45, 'http://localhost/PROJETOS/ShoppingResources/thumb/Maleta-de-Ferramentas-com-142-Pecas-BR-Tools.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 46, 'http://localhost/PROJETOS/ShoppingResources/img/46/Jogo-de-Ferramentas-110-Pecas-Mayle.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 46, 'http://localhost/PROJETOS/ShoppingResources/thumb/Jogo-de-Ferramentas-110-Pecas-Mayle.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 47, 'http://localhost/PROJETOS/ShoppingResources/img/47/Kit-Jogo-Ferramentas-e-Furadeira-Maleta-110PCS-Frete-Gratis-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 47, 'http://localhost/PROJETOS/ShoppingResources/thumb/Kit-Jogo-Ferramentas-e-Furadeira-Maleta-110PCS-Frete-Gratis-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 47, 'http://localhost/PROJETOS/ShoppingResources/img/47/Kit-Jogo-Ferramentas-e-Furadeira-Maleta-110PCS-Frete-Gratis-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 47, 'http://localhost/PROJETOS/ShoppingResources/img/47/Kit-Jogo-Ferramentas-e-Furadeira-Maleta-110PCS-Frete-Gratis-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 47, 'http://localhost/PROJETOS/ShoppingResources/img/47/Kit-Jogo-Ferramentas-e-Furadeira-Maleta-110PCS-Frete-Gratis-4.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 48, 'http://localhost/PROJETOS/ShoppingResources/img/48/Camisa-3D-Caveira-Breakthough-The-Mountain-no-Brasil-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 48, 'http://localhost/PROJETOS/ShoppingResources/thumb/Camisa-3D-Caveira-Breakthough-The-Mountain-no-Brasil-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 48, 'http://localhost/PROJETOS/ShoppingResources/img/48/Camisa-3D-Caveira-Breakthough-The-Mountain-no-Brasil-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 49, 'http://localhost/PROJETOS/ShoppingResources/img/49/Camisetas-Engracadas-Dandas-Filmes-Serie-Games-Super-Herois-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 49, 'http://localhost/PROJETOS/ShoppingResources/thumb/Camisetas-Engracadas-Dandas-Filmes-Serie-Games-Super-Herois-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 49, 'http://localhost/PROJETOS/ShoppingResources/img/49/Camisetas-Engracadas-Dandas-Filmes-Serie-Games-Super-Herois-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 49, 'http://localhost/PROJETOS/ShoppingResources/img/49/Camisetas-Engracadas-Dandas-Filmes-Serie-Games-Super-Herois-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 50, 'http://localhost/PROJETOS/ShoppingResources/img/50/Camisa-Social-Slim-Fit-Importada-200-Novos-Modelos-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 50, 'http://localhost/PROJETOS/ShoppingResources/thumb/Camisa-Social-Slim-Fit-Importada-200-Novos-Modelos-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 50, 'http://localhost/PROJETOS/ShoppingResources/img/50/Camisa-Social-Slim-Fit-Importada-200-Novos-Modelos-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 50, 'http://localhost/PROJETOS/ShoppingResources/img/50/Camisa-Social-Slim-Fit-Importada-200-Novos-Modelos-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (2, 51, 'http://localhost/PROJETOS/ShoppingResources/img/51/Calca-Jeans-Preta-Skinny-Sarja-Jeans-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (3, 51, 'http://localhost/PROJETOS/ShoppingResources/thumb/Calca-Jeans-Preta-Skinny-Sarja-Jeans-1.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 51, 'http://localhost/PROJETOS/ShoppingResources/img/51/Calca-Jeans-Preta-Skinny-Sarja-Jeans-2.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (1, 51, 'http://localhost/PROJETOS/ShoppingResources/img/51/Calca-Jeans-Preta-Skinny-Sarja-Jeans-3.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, 52, 'http://localhost/PROJETOS/ShoppingResources/img/52/.jpg', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
+
+INSERT INTO medias (media_type_id, product_id, path, created, modified)
+VALUES (, , 'http://localhost/PROJETOS/ShoppingResources/img/', NOW(), NOW());
 
 ## 5 registros na tabela "promotions" -------------------------------------------------
 
