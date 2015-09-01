@@ -2116,7 +2116,7 @@ VALUES ('Hodometro', NOW(), NOW());
 INSERT INTO features (feature_name, created, modified)
 VALUES ('Sincronização', NOW(), NOW());
 
-# 10 registros na tabela "product_features" --------------------------------------------
+#! 10 registros na tabela "product_features" --------------------------------------------
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
 VALUES ('30 Cm', 1, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
@@ -3038,7 +3038,7 @@ VALUES ('Promoção de verão', 2, '2013-10-28 09:39:49', '2014-10-28 09:39:49',
 INSERT INTO promotions (promotion_name, duration, date_start, date_end, created, modified)
 VALUES ('Promoção de inverno', 14, '2014-10-28 09:39:49', '2017-10-28 09:39:49', NOW(), NOW());
 
-# 8 registros na tabela "product_promotions" -----------------------------------------
+#@ 8 registros na tabela "product_promotions" -----------------------------------------
 
 INSERT INTO promotion_products (product_id, promotion_id, promotion_price, promotion_quantity, created, modified)
 VALUES (1, 1, 10.50, 30, NOW(), NOW());
@@ -3136,7 +3136,7 @@ VALUES (2, 30, 'Na compra de um Sapato ganhe um Cinto', 'http://localhost/PROJET
 INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
 VALUES (2, 30, 'Na compra de um Notebook ganhe um HD Externo', 'http://localhost/PROJETOS/ShoppingResources/full-banners/full-banner6.png', 'https://pt.wikipedia.org/wiki/Piau%C3%AD', NOW(), NOW());
 
-# 9 registros na tabela "new_banners" -------------------------------------------------
+#@ 9 registros na tabela "new_banners" -------------------------------------------------
 
 INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
 VALUES (1, 'Banner 1', 'Noticia Fantastica', 'news/new1.png', NOW(), '2019-11-11', NOW(), NOW());

@@ -43,11 +43,32 @@ class StoresFixture extends TestFixture
      */
     public $records = [
         [
-            'id' => 1,
-            'store_name' => 'Lorem ipsum dolor sit amet',
-            'user_id' => 1,
+            'id' => 900000,
+            'store_name' => 'Loja A',
+            'user_id' => 900005,
+            'created' => '2012-10-28 09:39:49',
+            'modified' => '2013-10-28 09:39:49'
+        ],
+        [
+            'id' => 900001,
+            'store_name' => 'Loja B',
+            'user_id' => 900006,
+            'created' => '2012-10-28 09:39:49',
+            'modified' => '2013-10-28 09:39:49'
+        ],
+        [
+            'id' => 900002,
+            'store_name' => 'Loja C',
+            'user_id' => 900007,
             'created' => '2015-07-17 18:52:26',
             'modified' => '2015-07-17 18:52:26'
         ],
+        [
+            'id' => 900003,
+            'store_name' => 'Loja D',
+            'user_id' => 900007,
+            'created' => '2015-07-17 18:52:26',
+            'modified' => '2015-07-17 18:52:26'
+        ]
     ];
 }

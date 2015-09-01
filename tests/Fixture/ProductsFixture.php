@@ -47,15 +47,26 @@ class ProductsFixture extends TestFixture
      */
     public $records = [
         [
-            'id' => 1,
-            'product_name' => 'Lorem ipsum dolor sit amet',
-            'store_id' => 1,
-            'quantity' => 1,
-            'description' => 'Lorem ipsum dolor sit amet',
-            'price' => '',
+            'id' => 900000,
+            'product_name' => 'produto1',
+            'store_id' => 900000,
+            'quantity' => 10,
+            'description' => 'produto1description',
+            'price' => '15.50',
             'status' => 1,
             'created' => '2015-07-17 18:52:35',
             'modified' => '2015-07-17 18:52:35'
         ],
+        [
+            'id' => 900001,
+            'product_name' => 'produto2',
+            'store_id' => 900001,
+            'quantity' => 15,
+            'description' => 'produto2description',
+            'price' => '25.00',
+            'status' => 1,
+            'created' => '2015-07-17 18:52:35',
+            'modified' => '2015-07-17 18:52:35'
+        ]
     ];
 }

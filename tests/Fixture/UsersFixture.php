@@ -7,11 +7,10 @@ use Cake\TestSuite\Fixture\TestFixture;
  * UsersFixture
  *
  */
-// Usado para gerar tabelas de dados temporarios (mockar os dados)
-// A vantagem de usar fixtures é que seu teste não tem chance de
-// corromper dados reais.
 class UsersFixture extends TestFixture
 {
+    //Importando informações da tabela (ao invés de declarar o $fields)
+    //public $import = ['table' => 'users'];
 
     /**
      * Fields
@@ -19,9 +18,9 @@ class UsersFixture extends TestFixture
      * @var array
      */
     // @codingStandardsIgnoreStart
-    // Define como a tabela é criada.
     public $fields = [
-        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        //'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
+        'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => false, 'precision' => null],
         'email' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'password' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
         'username' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null, 'fixed' => null],
@@ -47,16 +46,105 @@ class UsersFixture extends TestFixture
      *
      * @var array
      */
-    // Define um registro que será inserido na tabela para teste.
     public $records = [
         [
-            'id' => 1,
-            'email' => 'Lorem ipsum dolor sit amet',
-            'password' => 'Lorem ipsum dolor sit amet',
-            'username' => 'Lorem ipsum dolor sit amet',
-            'user_type_id' => 1,
+            'id' => 900000,
+            'email' => 'usuariocomum1@gmail.com',
+            'password' => 'usuariocomum1senha',
+            'username' => 'usuariocomum1username',
+            'user_type_id' => 900000,
             'created' => '2015-07-17 18:46:47',
             'modified' => '2015-07-17 18:46:47'
         ],
+        [
+            'id' => 900001,
+            'email' => 'usuariocomum2@gmail.com',
+            'password' => 'usuariocomum2senha',
+            'username' => 'usuariocomum2username',
+            'user_type_id' => 900000,
+            'created' => '2014-07-17 18:46:47',
+            'modified' => '2015-07-17 18:46:47'
+        ],
+        [
+            'id' => 900002,
+            'email' => 'usuariocomum3@gmail.com',
+            'password' => 'usuariocomum3senha',
+            'username' => 'usuariocomum3username',
+            'user_type_id' => 900000,
+            'created' => '2013-07-17 18:46:47',
+            'modified' => '2015-07-17 18:46:47'
+        ],
+        [
+            'id' => 900003,
+            'email' => 'usuariocomum4@gmail.com',
+            'password' => 'usuariocomum4senha',
+            'username' => 'usuariocomum4username',
+            'user_type_id' => 900000,
+            'created' => '2013-07-17 18:46:47',
+            'modified' => '2015-07-17 18:46:47'
+        ],
+        [
+            'id' => 900004,
+            'email' => 'usuariocomum5@gmail.com',
+            'password' => 'usuariocomum5senha',
+            'username' => 'usuariocomum5username',
+            'user_type_id' => 900000,
+            'created' => '2014-07-17 18:46:47',
+            'modified' => '2015-07-17 18:46:47'
+        ],
+        [
+            'id' => 900005,
+            'email' => 'usuariocomum6@gmail.com',
+            'password' => 'usuariocomum6senha',
+            'username' => 'usuariocomum6username',
+            'user_type_id' => 900000,
+            'created' => '2013-07-17 18:46:47',
+            'modified' => '2015-07-17 18:46:47'
+        ],
+        [
+            'id' => 900006,
+            'email' => 'usuariolojista1@gmail.com',
+            'password' => 'usuariolojista1senha',
+            'username' => 'usuariolojista1username',
+            'user_type_id' => 900001,
+            'created' => '2013-07-17 18:46:47',
+            'modified' => '2015-07-17 18:46:47'
+        ],
+        [
+            'id' => 900007,
+            'email' => 'usuariolojista2@gmail.com',
+            'password' => 'usuariolojista2senha',
+            'username' => 'usuariolojista2username',
+            'user_type_id' => 900001,
+            'created' => '2013-07-17 18:46:47',
+            'modified' => '2015-07-17 18:46:47'
+        ],
+        [
+            'id' => 900008,
+            'email' => 'usuariolojista3@gmail.com',
+            'password' => 'usuariolojista3senha',
+            'username' => 'usuariolojista3username',
+            'user_type_id' => 900001,
+            'created' => '2013-07-17 18:46:47',
+            'modified' => '2015-07-17 18:46:47'
+        ],
+        [
+            'id' => 900009,
+            'email' => 'usuarioadmin1@gmail.com',
+            'password' => 'usuarioadmin1senha',
+            'username' => 'usuarioadmin1username',
+            'user_type_id' => 900002,
+            'created' => '2013-07-17 18:46:47',
+            'modified' => '2015-07-17 18:46:47'
+        ],
+        [
+            'id' => 900010,
+            'email' => 'usuarioadmin2@gmail.com',
+            'password' => 'usuarioadmin2senha',
+            'username' => 'usuarioadmin2username',
+            'user_type_id' => 900002,
+            'created' => '2013-07-17 18:46:47',
+            'modified' => '2015-07-17 18:46:47'
+        ]
     ];
 }

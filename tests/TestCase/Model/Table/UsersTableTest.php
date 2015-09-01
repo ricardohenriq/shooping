@@ -4,6 +4,7 @@ namespace App\Test\TestCase\Model\Table;
 use App\Model\Table\UsersTable;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
+use Cake\I18n\Time;
 
 /**
  * App\Model\Table\UsersTable Test Case
@@ -16,9 +17,6 @@ class UsersTableTest extends TestCase
      *
      * @var array
      */
-    // Carregando as fixtures que serão usados nos casos de teste,
-    // neste caso todas as fixtures de todas as tabelas que estão
-    // relacionadas a tabela users incluindo-a.
     public $fixtures = [
         'app.users',
         'app.user_types',
@@ -31,19 +29,12 @@ class UsersTableTest extends TestCase
      *
      * @return void
      */
-    // Método que inicializa os objetos necessários para realizar os teste e qualquer
-    // outra operação que deve ser feita para realizar os testes como criar a tabela.
     public function setUp()
     {
         parent::setUp();
-        // O que esta sendo feito aqui ? Não encontrei o uso de TableRegistry::exists na
-        // na documentação.
-        // Configurar a tabela de acordo com as regras definidas.
-        $config = TableRegistry::exists('Users') ? [] : ['className' => 'App\Model\Table\UsersTable'];
-        // O que esta sendo feito aqui ? Não encontrei na documentação a presença do segundo
-        // parametro.
-        // Cria um objeto/tabela 'Users' mediante a configuração (de tipos de campos) obtida acima.
-        $this->Users = TableRegistry::get('Users', $config);
+        //$config = TableRegistry::exists('Users') ? [] : ['className' => 'App\Model\Table\UsersTable'];
+        //$this->Users = TableRegistry::get('Users', $config);
+        $this->Users = TableRegistry::get('Users');
     }
 
     /**
@@ -51,8 +42,6 @@ class UsersTableTest extends TestCase
      *
      * @return void
      */
-    // É chamado depois de cada método de teste.
-    // Deve ser usado para limpeza após a conclusão do teste como eliminar a tabela
     public function tearDown()
     {
         unset($this->Users);
@@ -65,9 +54,6 @@ class UsersTableTest extends TestCase
      *
      * @return void
      */
-    // Método que deverá testar o método "initialize()" de "UsersTable",
-    // mas como e quando este método será chamado?
-    // A ferramenta seleciona o método a ser executado
     public function testInitialize()
     {
         $this->markTestIncomplete('Not implemented yet.');
@@ -91,11 +77,55 @@ class UsersTableTest extends TestCase
      *
      * @return void
      */
-    // Método que deverá testar o método "buildRules()" de "UsersTable",
-    // mas como e quando este método será chamado?
-    // A ferramenta seleciona o método a ser executado
     public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    public function testFindUser(){
+        $query = $this->Users->find('user', [
+            'fields' => ['Users.id', 'Users.email', 'Users.password',
+                'Users.username', 'Users.user_type_id'],
+            'conditions' => ['Users.id' => 900000]
+        ]);
+        $this->assertInstanceOf('Cake\ORM\Query', $query);
+        $result = $query->hydrate(false)->toArray();
+
+        $expected = [
+            [
+                'id' => 900000,
+                'email' => 'usuariocomum1@gmail.com',
+                'password' => 'usuariocomum1senha',
+                'username' => 'usuariocomum1username',
+                'user_type_id' => 900000
+            ]
+        ];
+
+        $this->assertEquals($expected, $result);
+
+        //-------------------------------------------------------------------------
+
+        $query = $this->Users->find('user', [
+            'fields' => ['Users.id', 'Users.email', 'Users.password',
+                'Users.username', 'Users.user_type_id', 'Users.created',
+                'Users.modified'],
+            'conditions' => ['Users.id' => 900001]
+        ]);
+        $this->assertInstanceOf('Cake\ORM\Query', $query);
+        $result = $query->hydrate(false)->toArray();
+
+        $expected = [
+            [
+                'id' => 900001,
+                'email' => 'usuariocomum2@gmail.com',
+                'password' => 'usuariocomum2senha',
+                'username' => 'usuariocomum2username',
+                'user_type_id' => 900000,
+                'created' => new Time('2014-07-17 18:46:47'),
+                'modified' => new Time('2015-07-17 18:46:47')
+            ]
+        ];
+
+        $this->assertEquals($expected, $result);
     }
 }

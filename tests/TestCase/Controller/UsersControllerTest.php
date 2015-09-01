@@ -15,9 +15,6 @@ class UsersControllerTest extends IntegrationTestCase
      *
      * @var array
      */
-    // Carregando as fixtures que serão usados nos casos de teste,
-    // neste caso todas as fixtures de todas as tabelas que estão
-    // relacionadas a tabela users incluindo-a.
     public $fixtures = [
         'app.users',
         'app.user_types',

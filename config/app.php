@@ -257,7 +257,7 @@ return [
             //'port' => 'nonstandard_port_number',
             'username' => 'shop',
             'password' => 'shop',
-            'database' => 'shopping',
+            'database' => 'shoppingtest',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'cacheMetadata' => true,

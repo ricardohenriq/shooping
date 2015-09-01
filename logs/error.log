@@ -4530,7 +4530,8 @@ Stack Trace:
 #8 {main}
 
 
-2015-08-01 16:42:33 Error: Fatal Error (4): syntax error, unexpected '?>' in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Products\search.ctp, line 58]
+2015-08-01 16:42:33 Error: Fatal Error (4): syntax error, unexpected '?>
+' in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Products\search.ctp, line 58]
 Trace:
 Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
 Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
@@ -4538,7 +4539,8 @@ Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHa
 
 
 
-2015-08-01 16:42:33 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '?>'
+2015-08-01 16:42:33 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '?>
+'
 Request URL: /products/search
 Stack Trace:
 #0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 58)
@@ -4546,7 +4548,8 @@ Stack Trace:
 #2 {main}
 
 
-2015-08-01 16:42:53 Error: Fatal Error (4): syntax error, unexpected '?>' in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Products\search.ctp, line 58]
+2015-08-01 16:42:53 Error: Fatal Error (4): syntax error, unexpected '?>
+' in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Products\search.ctp, line 58]
 Trace:
 Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
 Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
@@ -4554,7 +4557,8 @@ Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHa
 
 
 
-2015-08-01 16:42:54 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '?>'
+2015-08-01 16:42:54 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '?>
+'
 Request URL: /products/search
 Stack Trace:
 #0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 58)
@@ -20264,6 +20268,72 @@ Stack Trace:
 
 
 2015-08-25 22:40:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-30 23:08:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tests could not be found.
+Exception Attributes: array (
+  'class' => 'Tests',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /PROJETOS/Shopping/tests/TestCase/Model/Table/UsersTableTest.php
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-30 23:08:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Favicon.ico could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.ico',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /PROJETOS/Shopping/favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-30 23:10:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tests could not be found.
+Request URL: /PROJETOS/Shopping/tests/TestCase/Model/Table/UsersTableTest.php
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-30 23:10:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class DiamondFavicon32.png could not be found.
+Request URL: /PROJETOS/Shopping/diamond-favicon-32.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-30 23:10:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Tests could not be found.
+Exception Attributes: array (
+  'class' => 'Tests',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /PROJETOS/Shopping/tests/TestCase/Model/Table/UsersTableTest.php
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-08-31 16:15:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
 Exception Attributes: array (
   'class' => 'Css',
   'plugin' => NULL,

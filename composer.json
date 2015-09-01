@@ -12,7 +12,8 @@
         "cakephp/plugin-installer": "*",
         "trentrichardson/cakephp-shrink": "3.0",
         "burzum/cakephp-file-storage": "3.0.x-dev",
-        "burzum/cakephp-imagine-plugin": "3.0.x-dev"
+        "burzum/cakephp-imagine-plugin": "3.0.x-dev",
+        "phpunit/phpunit": "4.8.6"
     },
     "require-dev": {
         "psy/psysh": "@stable",
