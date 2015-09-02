@@ -45,8 +45,8 @@ class UsersTableTest extends TestCase
     public function tearDown()
     {
         unset($this->Users);
-
         parent::tearDown();
+        TableRegistry::clear();
     }
 
     /**
@@ -64,9 +64,6 @@ class UsersTableTest extends TestCase
      *
      * @return void
      */
-    // Método que deverá testar o método "validationDefault()" de "UsersTable",
-    // mas como e quando este método será chamado?
-    // A ferramenta seleciona o método a ser executado
     public function testValidationDefault()
     {
         $this->markTestIncomplete('Not implemented yet.');
@@ -127,5 +124,37 @@ class UsersTableTest extends TestCase
         ];
 
         $this->assertEquals($expected, $result);
+
+        //-------------------------------------------------------------------------
+
+        $query = $this->Users->find('user', [
+            'fields' => ['Users.id'],
+            'conditions' => ['Users.id' => 1]
+        ]);
+        $this->assertInstanceOf('Cake\ORM\Query', $query);
+        $result = $query->hydrate(false)->toArray();
+
+        $expected = [
+            [
+                'id' => 1
+            ]
+        ];
+
+        $this->assertEquals($expected, $result);
     }
+
+    /*public function testSendingEmails()
+    {
+        //Indica que quer criar um mock do método 'send' do objeto 'EmailVerification'.
+        $model = $this->getMockForModel('EmailVerification', ['send']);
+        //Indica que este método 'mockado' será executado somente uma vez.
+        $model->expects($this->once())
+            ->method('send')
+            //Indica que o método send irá retornar 'true' quando chamado
+            ->will($this->returnValue(true));
+        //Executa o método que REALMENTE deverá ser testado (este método faz chamada ao
+        //método 'mockado''send' que por alguma razão é mas vantajoso 'falsificar' seu
+        //comportamento do que deixar ele executar seu comportamento abtual)
+        $model->verifyEmail('test@example.com');
+    }*/
 }

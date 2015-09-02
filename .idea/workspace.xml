@@ -2,75 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3de7e74c-9560-431a-a7d7-be3fec5c246d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scriptsdb/BackupDB.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Layout/Email/text/default.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Element/Flash/default.ctp" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\PROJETOS\Shopping\webroot\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scriptsdb/CreateDB.sql" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\PROJETOS\Shopping\plugins\empty" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Email/text/default.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Layout/Email/html/default.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/View/Helper/empty" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/app.default.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/cake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/bootstrap_cli.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Layout/ajax.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\PROJETOS\Shopping\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Email/html/default.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/Shopping.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scriptsdb/DeletarDB.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webroot/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/TestCase/View/Helper/empty" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/tests/TestCase/Model/Behavior/empty" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Layout/rss/default.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Model/Behavior/empty" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/phpunit.xml.dist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/View/AppView.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\PROJETOS\Shopping\webroot\js\empty" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/cake.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/composerJson.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Pages/home_ant.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/routes.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/bootstrap.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/paths.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webroot/img/cake.icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/TestCase/Controller/Component/empty" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/cake.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/schema/i18n.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Element/Flash/success.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Element/Flash/error.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Controller/AppController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Layout/default.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Layout/error.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Error/error500.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.editorconfig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scriptsdb/RowsDB.sql" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Error/error400.ctp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webroot/css/cake.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/webroot/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Shell/ConsoleShell.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Controller/PagesController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Console/Installer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Controller/AppController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Layout/rss/default.ctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config/app.default.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config/schema/i18n.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/View/Helper/empty" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PROJETOS\Shopping\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Layout/Email/text/default.ctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webroot/img/cake.icon.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/webroot/img/cake.power.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\empty" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/config/schema/sessions.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Element/Flash/success.ctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/Shopping.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/composerJson.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Layout/Email/html/default.ctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Layout/default.ctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webroot/css/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Email/html/default.ctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scriptsdb/DeletarDB.sql" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/webroot/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scriptsdb/CreateDB.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Console/Installer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/View/AppView.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/cake.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PROJETOS\Shopping\plugins\empty" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Layout/error.ctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/cake.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webroot/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\Component\empty" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scriptsdb/BackupDB.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webroot/css/cake.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/TestCase/View/Helper/empty" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PROJETOS\Shopping\webroot\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Shell/ConsoleShell.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config/paths.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scriptsdb/RowsDB.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config/bootstrap_cli.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Error/error500.ctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Element/Flash/error.ctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Element/Flash/default.ctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Model/Behavior/empty" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Pages/home_ant.ctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/TestCase/Controller/Component/empty" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config/routes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Email/text/default.ctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/cake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Controller/PagesController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config/bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\PROJETOS\Shopping\webroot\js\empty" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/phpunit.xml.dist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config/schema/sessions.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Template/Layout/ajax.ctp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="" />
     </list>
     <ignored path="Shopping.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,8 +103,8 @@
       <file leaf-file-name="RowsDB.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scriptsdb/RowsDB.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-33.072727" vertical-offset="1156" max-vertical-offset="80450">
-              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.2727275" vertical-offset="0" max-vertical-offset="80450">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -116,21 +116,21 @@
       <file leaf-file-name="UsersControllerTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/TestCase/Controller/UsersControllerTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.2058823" vertical-offset="1725" max-vertical-offset="2300">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-10.617647" vertical-offset="2764" max-vertical-offset="3375">
+              <caret line="125" column="10" selection-start-line="125" selection-start-column="10" selection-end-line="125" selection-end-column="10" />
+              <folding>
+                <element signature="e#47#82#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersTableTest.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/TestCase/Model/Table/UsersTableTest.php">
+      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5543672" vertical-offset="2839" max-vertical-offset="3400">
-              <caret line="126" column="10" selection-start-line="126" selection-start-column="10" selection-end-line="126" selection-end-column="10" />
-              <folding>
-                <element signature="e#48#79#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.54010695" vertical-offset="3497" max-vertical-offset="4875">
+              <caret line="152" column="26" selection-start-line="152" selection-start-column="26" selection-end-line="152" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,9 +138,23 @@
       <file leaf-file-name="UsersFixture.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Fixture/UsersFixture.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.9411764" vertical-offset="1380" max-vertical-offset="3900">
-              <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+            <state vertical-scroll-proportion="-9.323529" vertical-offset="1108" max-vertical-offset="3900">
+              <caret line="57" column="10" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersTableTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/TestCase/Model/Table/UsersTableTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="14.323529" vertical-offset="2487" max-vertical-offset="3825">
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+              <folding>
+                <element signature="e#48#79#0#PHP" expanded="true" />
+                <element signature="e#1617#1806#0#PHP" expanded="false" />
+                <element signature="e#1942#2215#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,7 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/config/bootstrap.php" />
         <option value="$PROJECT_DIR$/src/Template/Element/Modal/edit-profile-modal.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Element/Modal/create-account-modal.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Element/Body/account_menu.ctp" />
@@ -173,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/Template/Element/Modal/view_banner_modal.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Banners/index.ctp" />
         <option value="$PROJECT_DIR$/src/Template/Element/Modal/edit_banner_modal.ctp" />
-        <option value="$PROJECT_DIR$/src/Controller/UsersController.php" />
         <option value="$PROJECT_DIR$/src/Controller/AppController.php" />
         <option value="$PROJECT_DIR$/src/Controller/Component/InsertComponent.php" />
         <option value="$PROJECT_DIR$/src/Controller/Component/ExcelComponent.php" />
@@ -191,19 +203,21 @@
         <option value="$PROJECT_DIR$/webroot/js/main.js" />
         <option value="$PROJECT_DIR$/src/Template/Stores/mini_map.ctp" />
         <option value="$PROJECT_DIR$/scriptsdb/CreateDB.sql" />
-        <option value="$PROJECT_DIR$/tests/TestCase/Controller/UsersControllerTest.php" />
         <option value="$PROJECT_DIR$/scriptsdb/RowsDB.sql" />
         <option value="$PROJECT_DIR$/tests/Fixture/StoresFixture.php" />
         <option value="$PROJECT_DIR$/tests/Fixture/BookingsFixture.php" />
         <option value="$PROJECT_DIR$/tests/Fixture/ProductsFixture.php" />
         <option value="$PROJECT_DIR$/tests/Fixture/UserTypesFixture.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/vendor/cakephp/cakephp/src/TestSuite/TestCase.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/tests/Fixture/UsersFixture.php" />
         <option value="$PROJECT_DIR$/vendor/cakephp/cakephp/src/ORM/Table.php" />
         <option value="$PROJECT_DIR$/src/Model/Table/UsersTable.php" />
         <option value="$PROJECT_DIR$/tests/TestCase/Model/Table/UsersTableTest.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/src/Model/Entity/User.php" />
+        <option value="$PROJECT_DIR$/tests/TestCase/Controller/UsersControllerTest.php" />
+        <option value="$PROJECT_DIR$/src/Controller/UsersController.php" />
       </list>
     </option>
   </component>
@@ -369,17 +383,20 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -389,9 +406,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -425,13 +439,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -457,13 +471,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webroot/css/hover-images.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9177632" vertical-offset="1017" max-vertical-offset="1725">
-          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Template/Element/Body/profile.ctp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.084033616" vertical-offset="300" max-vertical-offset="1675">
@@ -529,13 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="650">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1425">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -758,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.349376" vertical-offset="6106" max-vertical-offset="8300">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.71301246" vertical-offset="0" max-vertical-offset="1250">
@@ -772,22 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scriptsdb/RowsDB.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.072727" vertical-offset="1156" max-vertical-offset="80450">
-          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Fixture/UserTypesFixture.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12477718" vertical-offset="830" max-vertical-offset="1650">
           <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,23 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23519164" vertical-offset="665" max-vertical-offset="4025">
           <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.3137255" vertical-offset="1783" max-vertical-offset="5525">
-          <caret line="213" column="5" selection-start-line="213" selection-start-column="5" selection-end-line="213" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26737967" vertical-offset="7750" max-vertical-offset="9125">
-          <caret line="316" column="0" selection-start-line="316" selection-start-column="0" selection-end-line="316" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,34 +792,89 @@
         <state vertical-scroll-proportion="0.7771836" vertical-offset="1764" max-vertical-offset="2400">
           <caret line="88" column="5" selection-start-line="88" selection-start-column="5" selection-end-line="88" selection-end-column="5" />
           <folding>
-            <element signature="e#34#60#0#PHP" expanded="true" />
+            <element signature="e#34#60#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.041811846" vertical-offset="624" max-vertical-offset="1425">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10873441" vertical-offset="6114" max-vertical-offset="8300">
+          <caret line="247" column="0" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ProductsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04634581" vertical-offset="7699" max-vertical-offset="9125">
+          <caret line="309" column="0" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3466899" vertical-offset="776" max-vertical-offset="1350">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scriptsdb/RowsDB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2727275" vertical-offset="0" max-vertical-offset="80450">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestCase/Model/Table/UsersTableTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="14.323529" vertical-offset="2487" max-vertical-offset="3825">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <element signature="e#48#79#0#PHP" expanded="true" />
+            <element signature="e#1617#1806#0#PHP" expanded="false" />
+            <element signature="e#1942#2215#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Fixture/UsersFixture.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.9411764" vertical-offset="1380" max-vertical-offset="3900">
-          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+        <state vertical-scroll-proportion="-9.323529" vertical-offset="1108" max-vertical-offset="3900">
+          <caret line="57" column="10" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/TestCase/Controller/UsersControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2058823" vertical-offset="1725" max-vertical-offset="2300">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-10.617647" vertical-offset="2764" max-vertical-offset="3375">
+          <caret line="125" column="10" selection-start-line="125" selection-start-column="10" selection-end-line="125" selection-end-column="10" />
+          <folding>
+            <element signature="e#47#82#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TestCase/Model/Table/UsersTableTest.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5543672" vertical-offset="2839" max-vertical-offset="3400">
-          <caret line="126" column="10" selection-start-line="126" selection-start-column="10" selection-end-line="126" selection-end-column="10" />
-          <folding>
-            <element signature="e#48#79#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.54010695" vertical-offset="3497" max-vertical-offset="4875">
+          <caret line="152" column="26" selection-start-line="152" selection-start-column="26" selection-end-line="152" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

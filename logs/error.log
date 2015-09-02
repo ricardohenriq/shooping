@@ -20346,3 +20346,76 @@ Stack Trace:
 #1 {main}
 
 
+2015-09-02 14:36:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class DiamondFavicon32.png could not be found.
+Exception Attributes: array (
+  'class' => 'DiamondFavicon32.png',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /diamond-favicon-32.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-02 14:36:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-02 20:54:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-02 20:58:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Favicon.ico could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.ico',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-02 21:41:25 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`shopping`.`banners`, CONSTRAINT `banners_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`))
+Request URL: /users/delete/3
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1699): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1631): Cake\ORM\Table->_processDelete(Object(App\Model\Entity\User), Object(ArrayObject))
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1636): Cake\Database\Connection->transactional(Object(Closure))
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UsersController.php(151): Cake\ORM\Table->delete(Object(App\Model\Entity\User))
+#10 [internal function]: App\Controller\UsersController->delete('3')
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+

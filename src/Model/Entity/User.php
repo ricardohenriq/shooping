@@ -34,16 +34,16 @@ class User extends Entity
 
     // Método acessor da propriedade "email" (coluna "email" da tabela),
     // este método será executado sempre que a proriedade for recuperada do banco.
-    protected function _getEmail($email)
+    /*protected function _getEmail($email)
     {
         return ucwords($email);
-    }
+    }*/
 
     // Método acessor da propriedade "password" (coluna "password" da tabela),
     // este método será executado sempre que a proriedade for inserida no banco.
-    protected function _setPassword($password)
+    /*protected function _setPassword($password)
     {
         $hasher = new DefaultPasswordHasher();
         return $hasher->hash($password);
-    }
+    }*/
 }

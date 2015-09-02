@@ -2,7 +2,9 @@
 namespace App\Test\TestCase\Controller;
 
 use App\Controller\UsersController;
+use Cake\ORM\TableRegistry;
 use Cake\TestSuite\IntegrationTestCase;
+use Cake\Routing\Router;
 
 /**
  * App\Controller\UsersController Test Case
@@ -27,9 +29,6 @@ class UsersControllerTest extends IntegrationTestCase
      *
      * @return void
      */
-    // Método que deverá testar o método "index()" de "User",
-    // mas como e quando este método será chamado?
-    // A ferramenta seleciona o método a ser executado
     public function testIndex()
     {
         $this->markTestIncomplete('Not implemented yet.');
@@ -40,8 +39,6 @@ class UsersControllerTest extends IntegrationTestCase
      *
      * @return void
      */
-    // Método que deverá testar o método "view()" de "User",
-    // mas como e quando este método será chamado?
     public function testView()
     {
         $this->markTestIncomplete('Not implemented yet.');
@@ -52,12 +49,49 @@ class UsersControllerTest extends IntegrationTestCase
      *
      * @return void
      */
-    // Método que deverá testar o método "add()" de "User",
-    // mas como e quando este método será chamado?
-    // A ferramenta seleciona o método a ser executado
     public function testAdd()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->get(Router::url(
+            ['controller' => 'users',
+                'action' => 'add'
+            ])
+        );
+        $this->assertResponseOk();
+
+        //-------------------------------------------------------------------------
+
+        $data = [
+            'email' => 'usuariocomum999999@gmail.com',
+            'password' => 'usuariocomum999999senha',
+            'username' => 'usuariocomum999999username',
+            'user_type_id' => 900000
+        ];
+
+        $this->post(Router::url(
+            ['controller' => 'users',
+                'action' => 'add'
+            ]), $data);
+        $this->assertResponseSuccess();
+
+        //-------------------------------------------------------------------------
+
+        $expected = [
+            [
+                'email' => 'usuariocomum999999@gmail.com',
+                'password' => 'usuariocomum999999senha',
+                'username' => 'usuariocomum999999username',
+                'user_type_id' => 900000
+            ]
+        ];
+
+        $users = TableRegistry::get('Users');
+        $query = $users->find('all', [
+            'fields' => ['Users.email', 'Users.password', 'Users.username',
+                'Users.user_type_id'],
+            'conditions' => ['Users.email' => 'usuariocomum999999@gmail.com']
+        ]);
+        $result = $query->hydrate(false)->toArray();
+        $this->assertEquals($expected, $result);
     }
 
     /**
@@ -65,8 +99,6 @@ class UsersControllerTest extends IntegrationTestCase
      *
      * @return void
      */
-    // Método que deverá testar o método "edit()" de "User",
-    // mas como e quando este método será chamado?
     public function testEdit()
     {
         $this->markTestIncomplete('Not implemented yet.');
@@ -77,11 +109,21 @@ class UsersControllerTest extends IntegrationTestCase
      *
      * @return void
      */
-    // Método que deverá testar o método "delete()" de "User",
-    // mas como e quando este método será chamado?
-    // A ferramenta seleciona o método a ser executado
     public function testDelete()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $id = 900000;
+        $this->get('/users/delete/' . $id);
+
+        $users = TableRegistry::get('Users');
+        $query = $users->find('all', [
+            'fields' => ['Users.id', 'Users.email', 'Users.password',
+                'Users.username', 'Users.user_type_id', 'Users.created',
+                'Users.modified'],
+            'conditions' => ['Users.id' => $id]
+        ]);
+
+        $result = $query->hydrate(false)->toArray();
+        //var_dump($result);
+        $this->assertEmpty($result);
     }
 }
