@@ -33,10 +33,14 @@ class UsersTable extends Table
             'foreignKey' => 'user_type_id'
         ]);
         $this->hasMany('Bookings', [
-            'foreignKey' => 'user_id'
+            'foreignKey' => 'user_id',
+            'dependent' => true,
+            'cascadeCallbacks' => true
         ]);
         $this->hasMany('Stores', [
-            'foreignKey' => 'user_id'
+            'foreignKey' => 'user_id',
+            'dependent' => true,
+            'cascadeCallbacks' => true
         ]);
     }
 

@@ -51,6 +51,9 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testAdd()
     {
+        /**
+         * Verifica se é possivel acessar a página.
+         */
         $this->get(Router::url(
             ['controller' => 'users',
                 'action' => 'add'
@@ -60,6 +63,9 @@ class UsersControllerTest extends IntegrationTestCase
 
         //-------------------------------------------------------------------------
 
+        /**
+         * Insere um registro (Users) no Banco.
+         */
         $data = [
             'email' => 'usuariocomum999999@gmail.com',
             'password' => 'usuariocomum999999senha',
@@ -75,6 +81,10 @@ class UsersControllerTest extends IntegrationTestCase
 
         //-------------------------------------------------------------------------
 
+        /**
+         * Verifica se o registro (Users) foi inserido no Banco comparando-o
+         * com uma expectativa.
+         */
         $expected = [
             [
                 'email' => 'usuariocomum999999@gmail.com',
@@ -101,7 +111,9 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        //$this->markTestIncomplete('Not implemented yet.');
+        $id = 900000;
+        
     }
 
     /**
@@ -111,19 +123,38 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testDelete()
     {
+        /**
+         * Variaveis usadas nas consultas.
+         */
         $id = 900000;
-        $this->get('/users/delete/' . $id);
-
-        $users = TableRegistry::get('Users');
-        $query = $users->find('all', [
+        $options = [
             'fields' => ['Users.id', 'Users.email', 'Users.password',
                 'Users.username', 'Users.user_type_id', 'Users.created',
                 'Users.modified'],
             'conditions' => ['Users.id' => $id]
-        ]);
+        ];
+
+        //-------------------------------------------------------------------------
+
+        /**
+         * Verifica se a entidade existe no Banco.
+         */
+        $users = TableRegistry::get('Users');
+        $query = $users->find('all', $options);
 
         $result = $query->hydrate(false)->toArray();
-        //var_dump($result);
+        $this->assertNotEmpty($result);
+
+        //-------------------------------------------------------------------------
+
+        /**
+         * Verifica se a operação delete realmente esta funcionando.
+         */
+        $this->post('/users/delete/' . $id);
+
+        $query = $users->find('all', $options);
+
+        $result = $query->hydrate(false)->toArray();
         $this->assertEmpty($result);
     }
 }

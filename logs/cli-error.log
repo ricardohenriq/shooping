@@ -121,3 +121,18 @@ PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.
 
 
 
+2015-09-03 12:19:48 Error: [Cake\Core\Exception\Exception] Unable to insert fixtures for "App\Test\TestCase\Controller\UsersControllerTest" test case. SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(144): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Controller\UsersControllerTest))
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestResult.php(325): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\UsersControllerTest))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestResult.php(541): PHPUnit_Framework_TestResult->startTest(Object(App\Test\TestCase\Controller\UsersControllerTest))
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestCase.php(702): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\UsersControllerTest))
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestSuite.php(735): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(432): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\Command.php(100): PHPUnit_TextUI_Command->run(Array, true)
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\phpunit(47): PHPUnit_TextUI_Command::main()
+#9 {main}
+
+
