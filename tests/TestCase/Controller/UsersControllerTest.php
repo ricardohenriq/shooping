@@ -64,7 +64,7 @@ class UsersControllerTest extends IntegrationTestCase
         //-------------------------------------------------------------------------
 
         /**
-         * Insere um registro (Users) no Banco.
+         * Verifica se a operação "add" realmente esta funcionando.
          */
         $data = [
             'email' => 'usuariocomum999999@gmail.com',
@@ -74,7 +74,8 @@ class UsersControllerTest extends IntegrationTestCase
         ];
 
         $this->post(Router::url(
-            ['controller' => 'users',
+            [
+                'controller' => 'users',
                 'action' => 'add'
             ]), $data);
         $this->assertResponseSuccess();
@@ -96,11 +97,12 @@ class UsersControllerTest extends IntegrationTestCase
 
         $users = TableRegistry::get('Users');
         $query = $users->find('all', [
-            'fields' => ['Users.email', 'Users.password', 'Users.username',
-                'Users.user_type_id'],
-            'conditions' => ['Users.email' => 'usuariocomum999999@gmail.com']
-        ]);
+                'fields' => ['Users.email', 'Users.password', 'Users.username',
+                    'Users.user_type_id'],
+                'conditions' => ['Users.email' => 'usuariocomum999999@gmail.com']
+            ]);
         $result = $query->hydrate(false)->toArray();
+
         $this->assertEquals($expected, $result);
     }
 
@@ -111,9 +113,72 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
-        //$this->markTestIncomplete('Not implemented yet.');
+        /**
+         * Variaveis usadas nas consultas.
+         */
         $id = 900000;
-        
+        $options = [
+            'fields' => ['Users.email', 'Users.password',
+                'Users.username', 'Users.user_type_id'],
+            'conditions' => ['Users.id' => $id]
+        ];
+
+        //-------------------------------------------------------------------------
+
+        /**
+         * Verifica se a operação "edit" esta acessivel.
+         */
+        $this->get(Router::url(
+            [
+                'controller' => 'users',
+                'action' => 'edit',
+                $id
+            ])
+        );
+        $this->assertResponseSuccess();
+
+        //-------------------------------------------------------------------------
+
+        /**
+         * Verifica se a operação "edit" esta preenchendo o HTML adequadamente,
+         * para isso é necessário usar um 'registro' que já esta no banco (e não
+         * uma fixture).
+         */
+        $HTMLPage = file_get_contents('http://localhost:8765/users/edit/1');
+        $this->assertContains('value="bill@outlook.com"', $HTMLPage);
+        $this->assertContains('selected="selected">common<', $HTMLPage);
+
+        //-------------------------------------------------------------------------
+
+        /**
+         * Verifica se a entidade existe no Banco e armazena para comparação.
+         */
+        $users = TableRegistry::get('Users');
+        $expected = $users->find('all', $options)->first()->toArray();
+        $this->assertNotEmpty($expected);
+
+        //-------------------------------------------------------------------------
+
+        /**
+         * Realiza a edição e checa se a mudança foi realizada.
+         */
+        $data = [
+            'email' => 'USUARIOCOMUM1@gmail.com',
+            'password' => 'USUARIOCOMUM1senha',
+            'username' => 'USUARIOCOMUM1username',
+            'user_type_id' => 900000
+        ];
+
+        $this->post(Router::url(
+            [
+                'controller' => 'users',
+                'action' => 'edit',
+                $id
+            ]), $data);
+
+        $edited = $users->find('all', $options)->first()->toArray();
+
+        $this->assertNotEquals($expected, $edited);
     }
 
     /**
@@ -148,9 +213,14 @@ class UsersControllerTest extends IntegrationTestCase
         //-------------------------------------------------------------------------
 
         /**
-         * Verifica se a operação delete realmente esta funcionando.
+         * Verifica se a operação "delete" realmente esta funcionando.
          */
-        $this->post('/users/delete/' . $id);
+        $this->post(Router::url(
+            [
+                'controller' => 'users',
+                'action' => 'delete',
+                $id
+            ]));
 
         $query = $users->find('all', $options);
 

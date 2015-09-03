@@ -1,0 +1,179 @@
+2015-09-01 15:07:23 Notice: Notice (8): Undefined variable: query in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php, line 921]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+Cake\ORM\Table::find() - CORE\src\ORM\Table.php, line 921
+App\Test\TestCase\Model\Table\UsersTableTest::testFindUser() - ROOT\tests\TestCase\Model\Table\UsersTableTest.php, line 89
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-01 15:08:27 Notice: Notice (8): Undefined variable: query in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php, line 921]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+Cake\ORM\Table::find() - CORE\src\ORM\Table.php, line 921
+App\Test\TestCase\Model\Table\UsersTableTest::testFindUser() - ROOT\tests\TestCase\Model\Table\UsersTableTest.php, line 89
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-01 16:53:54 Notice: Notice (8): Undefined index: fields in [C:\xampp\htdocs\PROJETOS\Shopping\src\Model\Table\UsersTable.php, line 87]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+App\Model\Table\UsersTable::findUser() - APP/Model\Table\UsersTable.php, line 87
+Cake\ORM\Table::callFinder() - CORE\src\ORM\Table.php, line 1744
+Cake\ORM\Table::find() - CORE\src\ORM\Table.php, line 923
+App\Test\TestCase\Model\Table\UsersTableTest::testFindUser() - ROOT\tests\TestCase\Model\Table\UsersTableTest.php, line 89
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-01 16:53:54 Notice: Notice (8): Undefined index: conditions in [C:\xampp\htdocs\PROJETOS\Shopping\src\Model\Table\UsersTable.php, line 88]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+App\Model\Table\UsersTable::findUser() - APP/Model\Table\UsersTable.php, line 88
+Cake\ORM\Table::callFinder() - CORE\src\ORM\Table.php, line 1744
+Cake\ORM\Table::find() - CORE\src\ORM\Table.php, line 923
+App\Test\TestCase\Model\Table\UsersTableTest::testFindUser() - ROOT\tests\TestCase\Model\Table\UsersTableTest.php, line 89
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-01 17:10:37 Notice: Notice (8): Undefined index: conditions in [C:\xampp\htdocs\PROJETOS\Shopping\src\Model\Table\UsersTable.php, line 87]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+App\Model\Table\UsersTable::findUser() - APP/Model\Table\UsersTable.php, line 87
+Cake\ORM\Table::callFinder() - CORE\src\ORM\Table.php, line 1744
+Cake\ORM\Table::find() - CORE\src\ORM\Table.php, line 923
+App\Test\TestCase\Model\Table\UsersTableTest::testFindUser() - ROOT\tests\TestCase\Model\Table\UsersTableTest.php, line 87
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-02 16:57:41 Notice: Notice (8): Array to string conversion in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\QueryCompiler.php, line 157]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+Cake\Database\QueryCompiler::_buildSelectPart() - CORE\src\Database\QueryCompiler.php, line 157
+Cake\Database\QueryCompiler::Cake\Database\{closure}() - CORE\src\Database\QueryCompiler.php, line 128
+Cake\Database\Query::traverse() - CORE\src\Database\Query.php, line 231
+Cake\Database\QueryCompiler::compile() - CORE\src\Database\QueryCompiler.php, line 102
+Cake\Database\Driver::compileQuery() - CORE\src\Database\Driver.php, line 315
+Cake\Database\Connection::compileQuery() - CORE\src\Database\Connection.php, line 260
+Cake\Database\Query::sql() - CORE\src\Database\Query.php, line 202
+Cake\ORM\Query::sql() - CORE\src\ORM\Query.php, line 639
+Cake\Database\Driver\Mysql::prepare() - CORE\src\Database\Driver\Mysql.php, line 120
+Cake\Database\Connection::prepare() - CORE\src\Database\Connection.php, line 220
+Cake\Database\Connection::run() - CORE\src\Database\Connection.php, line 272
+Cake\Database\Query::execute() - CORE\src\Database\Query.php, line 175
+Cake\ORM\Query::_execute() - CORE\src\ORM\Query.php, line 657
+Cake\ORM\Query::_all() - CORE\src\Datasource\QueryTrait.php, line 218
+Cake\ORM\Query::all() - CORE\src\ORM\Query.php, line 608
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 234
+App\Test\TestCase\Controller\UsersControllerTest::testAdd() - ROOT\tests\TestCase\Controller\UsersControllerTest.php, line 93
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-02 16:57:41 Notice: Notice (8): Array to string conversion in [C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\QueryCompiler.php, line 157]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+Cake\Database\QueryCompiler::_buildSelectPart() - CORE\src\Database\QueryCompiler.php, line 157
+Cake\Database\QueryCompiler::Cake\Database\{closure}() - CORE\src\Database\QueryCompiler.php, line 128
+Cake\Database\Query::traverse() - CORE\src\Database\Query.php, line 231
+Cake\Database\QueryCompiler::compile() - CORE\src\Database\QueryCompiler.php, line 102
+Cake\Database\Driver::compileQuery() - CORE\src\Database\Driver.php, line 315
+Cake\Database\Connection::compileQuery() - CORE\src\Database\Connection.php, line 260
+Cake\Database\Query::sql() - CORE\src\Database\Query.php, line 202
+Cake\ORM\Query::sql() - CORE\src\ORM\Query.php, line 639
+Cake\Database\Driver\Mysql::prepare() - CORE\src\Database\Driver\Mysql.php, line 120
+Cake\Database\Connection::prepare() - CORE\src\Database\Connection.php, line 220
+Cake\Database\Connection::run() - CORE\src\Database\Connection.php, line 272
+Cake\Database\Query::execute() - CORE\src\Database\Query.php, line 175
+Cake\ORM\Query::_execute() - CORE\src\ORM\Query.php, line 657
+Cake\ORM\Query::_all() - CORE\src\Datasource\QueryTrait.php, line 218
+Cake\ORM\Query::all() - CORE\src\ORM\Query.php, line 608
+Cake\ORM\Query::toArray() - CORE\src\Datasource\QueryTrait.php, line 234
+App\Test\TestCase\Controller\UsersControllerTest::testAdd() - ROOT\tests\TestCase\Controller\UsersControllerTest.php, line 93
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-03 13:10:41 Notice: Notice (8): Undefined variable: id in [C:\xampp\htdocs\PROJETOS\Shopping\tests\TestCase\Controller\UsersControllerTest.php, line 119]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+App\Test\TestCase\Controller\UsersControllerTest::testDelete() - ROOT\tests\TestCase\Controller\UsersControllerTest.php, line 119
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+

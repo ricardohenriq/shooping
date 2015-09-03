@@ -136,3 +136,168 @@ Stack Trace:
 #9 {main}
 
 
+2015-09-03 14:34:30 Warning: Warning (2): file_get_contents(/users/edit/900000): failed to open stream: No such file or directory in [C:\xampp\htdocs\PROJETOS\Shopping\tests\TestCase\Controller\UsersControllerTest.php, line 162]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+file_get_contents - [internal], line ??
+App\Test\TestCase\Controller\UsersControllerTest::testEdit() - ROOT\tests\TestCase\Controller\UsersControllerTest.php, line 162
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-03 14:37:12 Warning: Warning (2): file_get_contents(/users/edit/900000): failed to open stream: No such file or directory in [C:\xampp\htdocs\PROJETOS\Shopping\tests\TestCase\Controller\UsersControllerTest.php, line 162]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+file_get_contents - [internal], line ??
+App\Test\TestCase\Controller\UsersControllerTest::testEdit() - ROOT\tests\TestCase\Controller\UsersControllerTest.php, line 162
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-03 14:38:10 Warning: Warning (2): file_get_contents(http://localhost:8765/users/edit/900000): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in [C:\xampp\htdocs\PROJETOS\Shopping\tests\TestCase\Controller\UsersControllerTest.php, line 156]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+file_get_contents - [internal], line ??
+App\Test\TestCase\Controller\UsersControllerTest::testEdit() - ROOT\tests\TestCase\Controller\UsersControllerTest.php, line 156
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-03 14:38:41 Warning: Warning (2): file_get_contents(http://localhost:8765/users/edit/900002): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in [C:\xampp\htdocs\PROJETOS\Shopping\tests\TestCase\Controller\UsersControllerTest.php, line 156]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+file_get_contents - [internal], line ??
+App\Test\TestCase\Controller\UsersControllerTest::testEdit() - ROOT\tests\TestCase\Controller\UsersControllerTest.php, line 156
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-03 14:48:14 Warning: Warning (2): file_get_contents(/users/edit/1): failed to open stream: No such file or directory in [C:\xampp\htdocs\PROJETOS\Shopping\tests\TestCase\Controller\UsersControllerTest.php, line 163]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+file_get_contents - [internal], line ??
+App\Test\TestCase\Controller\UsersControllerTest::testEdit() - ROOT\tests\TestCase\Controller\UsersControllerTest.php, line 163
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-03 14:49:26 Warning: Warning (2): file_get_contents(/users/edit/1): failed to open stream: No such file or directory in [C:\xampp\htdocs\PROJETOS\Shopping\tests\TestCase\Controller\UsersControllerTest.php, line 162]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+file_get_contents - [internal], line ??
+App\Test\TestCase\Controller\UsersControllerTest::testEdit() - ROOT\tests\TestCase\Controller\UsersControllerTest.php, line 162
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-03 14:54:50 Warning: Warning (2): file_get_contents(/1/users/edit/900000): failed to open stream: No such file or directory in [C:\xampp\htdocs\PROJETOS\Shopping\tests\TestCase\Controller\UsersControllerTest.php, line 165]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+file_get_contents - [internal], line ??
+App\Test\TestCase\Controller\UsersControllerTest::testEdit() - ROOT\tests\TestCase\Controller\UsersControllerTest.php, line 165
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-03 14:55:18 Warning: Warning (2): file_get_contents(/1/users/edit/1): failed to open stream: No such file or directory in [C:\xampp\htdocs\PROJETOS\Shopping\tests\TestCase\Controller\UsersControllerTest.php, line 165]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+file_get_contents - [internal], line ??
+App\Test\TestCase\Controller\UsersControllerTest::testEdit() - ROOT\tests\TestCase\Controller\UsersControllerTest.php, line 165
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-03 17:08:08 Warning: Warning (2): file_get_contents(http://localhost:8765/users/edit/900000): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in [C:\xampp\htdocs\PROJETOS\Shopping\tests\TestCase\Controller\UsersControllerTest.php, line 158]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+file_get_contents - [internal], line ??
+App\Test\TestCase\Controller\UsersControllerTest::testEdit() - ROOT\tests\TestCase\Controller\UsersControllerTest.php, line 158
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
