@@ -1,0 +1,1728 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-09-04 20:28+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: /Controller/BannerTypesController.php:52;77
+msgid "The banner type has been saved."
+msgstr ""
+
+#: /Controller/BannerTypesController.php:55;80
+msgid "The banner type could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/BannerTypesController.php:99
+msgid "The banner type has been deleted."
+msgstr ""
+
+#: /Controller/BannerTypesController.php:101
+msgid "The banner type could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/BannersController.php:86;113
+msgid "The banner has been saved."
+msgstr ""
+
+#: /Controller/BannersController.php:89;116
+msgid "The banner could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/BannersController.php:137
+msgid "The banner has been deleted."
+msgstr ""
+
+#: /Controller/BannersController.php:139
+msgid "The banner could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/BookingsController.php:55;82
+msgid "The booking has been saved."
+msgstr ""
+
+#: /Controller/BookingsController.php:58;85
+msgid "The booking could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/BookingsController.php:106
+msgid "The booking has been deleted."
+msgstr ""
+
+#: /Controller/BookingsController.php:108
+msgid "The booking could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/CategoriesController.php:51;76
+msgid "The category has been saved."
+msgstr ""
+
+#: /Controller/CategoriesController.php:54;79
+msgid "The category could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/CategoriesController.php:98
+msgid "The category has been deleted."
+msgstr ""
+
+#: /Controller/CategoriesController.php:100
+msgid "The category could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/FeaturesController.php:52;77
+msgid "The feature has been saved."
+msgstr ""
+
+#: /Controller/FeaturesController.php:55;80
+msgid "The feature could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/FeaturesController.php:99
+msgid "The feature has been deleted."
+msgstr ""
+
+#: /Controller/FeaturesController.php:101
+msgid "The feature could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/MediaTypesController.php:52;77
+msgid "The media type has been saved."
+msgstr ""
+
+#: /Controller/MediaTypesController.php:55;80
+msgid "The media type could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/MediaTypesController.php:99
+msgid "The media type has been deleted."
+msgstr ""
+
+#: /Controller/MediaTypesController.php:101
+msgid "The media type could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/MediasController.php:55;81
+msgid "The media has been saved."
+msgstr ""
+
+#: /Controller/MediasController.php:58;84
+msgid "The media could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/MediasController.php:104
+msgid "The media has been deleted."
+msgstr ""
+
+#: /Controller/MediasController.php:106
+msgid "The media could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/ProductFeaturesController.php:55;82
+msgid "The product feature has been saved."
+msgstr ""
+
+#: /Controller/ProductFeaturesController.php:58;85
+msgid "The product feature could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/ProductFeaturesController.php:106
+msgid "The product feature has been deleted."
+msgstr ""
+
+#: /Controller/ProductFeaturesController.php:108
+msgid "The product feature could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/ProductsController.php:93;119
+msgid "The product has been saved."
+msgstr ""
+
+#: /Controller/ProductsController.php:96;122
+msgid "The product could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/ProductsController.php:142
+msgid "The product has been deleted."
+msgstr ""
+
+#: /Controller/ProductsController.php:144
+msgid "The product could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/ProductsController.php:306
+msgid "Upload successful!"
+msgstr ""
+
+#: /Controller/PromotionProductsController.php:55;82
+msgid "The promotion product has been saved."
+msgstr ""
+
+#: /Controller/PromotionProductsController.php:58;85
+msgid "The promotion product could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/PromotionProductsController.php:106
+msgid "The promotion product has been deleted."
+msgstr ""
+
+#: /Controller/PromotionProductsController.php:108
+msgid "The promotion product could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/PromotionsController.php:52;77
+msgid "The promotion has been saved."
+msgstr ""
+
+#: /Controller/PromotionsController.php:55;80
+msgid "The promotion could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/PromotionsController.php:99
+msgid "The promotion has been deleted."
+msgstr ""
+
+#: /Controller/PromotionsController.php:101
+msgid "The promotion could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/StoresController.php:55;81
+msgid "The store has been saved."
+msgstr ""
+
+#: /Controller/StoresController.php:58;84
+msgid "The store could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/StoresController.php:104
+msgid "The store has been deleted."
+msgstr ""
+
+#: /Controller/StoresController.php:106
+msgid "The store could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/SubCategoriesController.php:55;81
+msgid "The sub category has been saved."
+msgstr ""
+
+#: /Controller/SubCategoriesController.php:58;84
+msgid "The sub category could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/SubCategoriesController.php:104
+msgid "The sub category has been deleted."
+msgstr ""
+
+#: /Controller/SubCategoriesController.php:106
+msgid "The sub category could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/SubscribersController.php:52;77
+msgid "The subscriber has been saved."
+msgstr ""
+
+#: /Controller/SubscribersController.php:55;80
+msgid "The subscriber could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/SubscribersController.php:99
+msgid "The subscriber has been deleted."
+msgstr ""
+
+#: /Controller/SubscribersController.php:101
+msgid "The subscriber could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/UserTypesController.php:52;77
+msgid "The user type has been saved."
+msgstr ""
+
+#: /Controller/UserTypesController.php:55;80
+msgid "The user type could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/UserTypesController.php:99
+msgid "The user type has been deleted."
+msgstr ""
+
+#: /Controller/UserTypesController.php:101
+msgid "The user type could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/UsersController.php:78;104
+msgid "The user has been saved."
+msgstr ""
+
+#: /Controller/UsersController.php:81;107
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/UsersController.php:127
+msgid "The user has been deleted."
+msgstr ""
+
+#: /Controller/UsersController.php:129
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: /Template/BannerTypes/add.ctp:2
+#: /Template/BannerTypes/edit.ctp:2
+#: /Template/BannerTypes/index.ctp:2;17
+#: /Template/BannerTypes/view.ctp:2;45
+#: /Template/Banners/add.ctp:2
+#: /Template/Banners/edit.ctp:2
+#: /Template/Banners/index2.ctp:2;22
+#: /Template/Banners/view.ctp:2
+#: /Template/Bookings/add.ctp:2
+#: /Template/Bookings/edit.ctp:2
+#: /Template/Bookings/index.ctp:2;21
+#: /Template/Bookings/view.ctp:2
+#: /Template/Categories/add.ctp:2
+#: /Template/Categories/edit.ctp:2
+#: /Template/Categories/index.ctp:2;15
+#: /Template/Categories/view.ctp:2
+#: /Template/Features/add.ctp:2
+#: /Template/Features/edit.ctp:2
+#: /Template/Features/index.ctp:2;15
+#: /Template/Features/view.ctp:2
+#: /Template/MediaTypes/add.ctp:2
+#: /Template/MediaTypes/edit.ctp:2
+#: /Template/MediaTypes/index.ctp:2;17
+#: /Template/MediaTypes/view.ctp:2;42
+#: /Template/Medias/add.ctp:2
+#: /Template/Medias/edit.ctp:2
+#: /Template/Medias/index.ctp:2;18
+#: /Template/Medias/view.ctp:2
+#: /Template/ProductFeatures/add.ctp:2
+#: /Template/ProductFeatures/edit.ctp:2
+#: /Template/ProductFeatures/index.ctp:2;21
+#: /Template/ProductFeatures/view.ctp:2
+#: /Template/ProductMedias/add.ctp:2
+#: /Template/ProductMedias/edit.ctp:2
+#: /Template/ProductMedias/index.ctp:2;20
+#: /Template/ProductMedias/view.ctp:2
+#: /Template/Products/add.ctp:2
+#: /Template/Products/edit.ctp:2
+#: /Template/Products/index.ctp:2;26
+#: /Template/Products/view2.ctp:2;59;97;134
+#: /Template/PromotionProducts/add.ctp:2
+#: /Template/PromotionProducts/edit.ctp:2
+#: /Template/PromotionProducts/index.ctp:2;22
+#: /Template/PromotionProducts/view.ctp:2
+#: /Template/Promotions/add.ctp:2
+#: /Template/Promotions/edit.ctp:2
+#: /Template/Promotions/index.ctp:2;18
+#: /Template/Promotions/view.ctp:2;46
+#: /Template/Stores/add.ctp:2
+#: /Template/Stores/edit.ctp:2
+#: /Template/Stores/index.ctp:2;20
+#: /Template/Stores/view.ctp:2;50
+#: /Template/SubCategories/add.ctp:2
+#: /Template/SubCategories/edit.ctp:2
+#: /Template/SubCategories/index.ctp:2;18
+#: /Template/SubCategories/view.ctp:2
+#: /Template/Subscribers/add.ctp:2
+#: /Template/Subscribers/edit.ctp:2
+#: /Template/Subscribers/index.ctp:2;15
+#: /Template/Subscribers/view.ctp:2
+#: /Template/UserTypes/add.ctp:2
+#: /Template/UserTypes/edit.ctp:2
+#: /Template/UserTypes/index.ctp:2;17
+#: /Template/UserTypes/view.ctp:2;44
+#: /Template/Users/add.ctp:2
+#: /Template/Users/edit.ctp:4
+#: /Template/Users/index.ctp:2;24
+#: /Template/Users/view2.ctp:2;53;90
+msgid "Actions"
+msgstr ""
+
+#: /Template/BannerTypes/add.ctp:4
+#: /Template/BannerTypes/edit.ctp:10
+#: /Template/BannerTypes/view.ctp:6
+#: /Template/Banners/add.ctp:5
+#: /Template/Banners/edit.ctp:11
+#: /Template/Banners/index2.ctp:5
+#: /Template/Banners/view.ctp:8
+msgid "List Banner Types"
+msgstr ""
+
+#: /Template/BannerTypes/add.ctp:5
+#: /Template/BannerTypes/edit.ctp:11
+#: /Template/BannerTypes/index.ctp:5
+#: /Template/BannerTypes/view.ctp:8
+#: /Template/Banners/add.ctp:4
+#: /Template/Banners/edit.ctp:10
+#: /Template/Banners/view.ctp:6
+msgid "List Banners"
+msgstr ""
+
+#: /Template/BannerTypes/add.ctp:6
+#: /Template/BannerTypes/edit.ctp:12
+#: /Template/BannerTypes/index.ctp:6
+#: /Template/BannerTypes/view.ctp:9
+#: /Template/Banners/index2.ctp:4
+#: /Template/Banners/view.ctp:7
+msgid "New Banner"
+msgstr ""
+
+#: /Template/BannerTypes/add.ctp:12
+msgid "Add Banner Type"
+msgstr ""
+
+#: /Template/BannerTypes/add.ctp:17
+#: /Template/BannerTypes/edit.ctp:23
+#: /Template/Banners/add.ctp:23
+#: /Template/Banners/edit.ctp:29
+#: /Template/Bookings/add.ctp:21
+#: /Template/Bookings/edit.ctp:27
+#: /Template/Categories/add.ctp:15
+#: /Template/Categories/edit.ctp:21
+#: /Template/Features/add.ctp:15
+#: /Template/Features/edit.ctp:21
+#: /Template/MediaTypes/add.ctp:17
+#: /Template/MediaTypes/edit.ctp:23
+#: /Template/Medias/add.ctp:18
+#: /Template/Medias/edit.ctp:24
+#: /Template/ProductFeatures/add.ctp:21
+#: /Template/ProductFeatures/edit.ctp:27
+#: /Template/ProductMedias/add.ctp:20
+#: /Template/ProductMedias/edit.ctp:26
+#: /Template/Products/add.ctp:28
+#: /Template/Products/edit.ctp:34
+#: /Template/PromotionProducts/add.ctp:22
+#: /Template/PromotionProducts/edit.ctp:28
+#: /Template/Promotions/add.ctp:18
+#: /Template/Promotions/edit.ctp:24
+#: /Template/Stores/add.ctp:20
+#: /Template/Stores/edit.ctp:26
+#: /Template/SubCategories/add.ctp:18
+#: /Template/SubCategories/edit.ctp:24
+#: /Template/Subscribers/add.ctp:15
+#: /Template/Subscribers/edit.ctp:21
+#: /Template/UserTypes/add.ctp:17
+#: /Template/UserTypes/edit.ctp:23
+#: /Template/Users/add.ctp:24
+#: /Template/Users/edit.ctp:55
+#: View/Helper/FormHelper.php:1740
+msgid "Submit"
+msgstr ""
+
+#: /Template/BannerTypes/edit.ctp:5
+#: /Template/BannerTypes/index.ctp:30
+#: /Template/BannerTypes/view.ctp:63
+#: /Template/Banners/edit.ctp:5
+#: /Template/Banners/index2.ctp:42
+#: /Template/Bookings/edit.ctp:5
+#: /Template/Bookings/index.ctp:40
+#: /Template/Categories/edit.ctp:5
+#: /Template/Categories/index.ctp:28
+#: /Template/Features/edit.ctp:5
+#: /Template/Features/index.ctp:28
+#: /Template/MediaTypes/edit.ctp:5
+#: /Template/MediaTypes/index.ctp:30
+#: /Template/MediaTypes/view.ctp:57
+#: /Template/Medias/edit.ctp:5
+#: /Template/Medias/index.ctp:34
+#: /Template/ProductFeatures/edit.ctp:5
+#: /Template/ProductFeatures/index.ctp:40
+#: /Template/ProductMedias/edit.ctp:5
+#: /Template/ProductMedias/index.ctp:38
+#: /Template/Products/edit.ctp:5
+#: /Template/Products/index.ctp:44
+#: /Template/Products/view2.ctp:75;113;149
+#: /Template/PromotionProducts/edit.ctp:5
+#: /Template/PromotionProducts/index.ctp:42
+#: /Template/Promotions/edit.ctp:5
+#: /Template/Promotions/index.ctp:32
+#: /Template/Promotions/view.ctp:63
+#: /Template/Stores/edit.ctp:5
+#: /Template/Stores/index.ctp:36
+#: /Template/Stores/view.ctp:69
+#: /Template/SubCategories/edit.ctp:5
+#: /Template/SubCategories/index.ctp:34
+#: /Template/Subscribers/edit.ctp:5
+#: /Template/Subscribers/index.ctp:28
+#: /Template/UserTypes/edit.ctp:5
+#: /Template/UserTypes/index.ctp:30
+#: /Template/UserTypes/view.ctp:61
+#: /Template/Users/edit.ctp:11
+#: /Template/Users/index.ctp:42
+#: /Template/Users/view2.ctp:69;105
+msgid "Delete"
+msgstr ""
+
+#: /Template/BannerTypes/edit.ctp:7
+#: /Template/BannerTypes/index.ctp:30
+#: /Template/BannerTypes/view.ctp:5;63
+#: /Template/Banners/edit.ctp:7
+#: /Template/Banners/index2.ctp:42
+#: /Template/Banners/view.ctp:5
+#: /Template/Bookings/edit.ctp:7
+#: /Template/Bookings/index.ctp:40
+#: /Template/Bookings/view.ctp:5
+#: /Template/Categories/edit.ctp:7
+#: /Template/Categories/index.ctp:28
+#: /Template/Categories/view.ctp:5
+#: /Template/Features/edit.ctp:7
+#: /Template/Features/index.ctp:28
+#: /Template/Features/view.ctp:5
+#: /Template/MediaTypes/edit.ctp:7
+#: /Template/MediaTypes/index.ctp:30
+#: /Template/MediaTypes/view.ctp:5;57
+#: /Template/Medias/edit.ctp:7
+#: /Template/Medias/index.ctp:34
+#: /Template/Medias/view.ctp:5
+#: /Template/ProductFeatures/edit.ctp:7
+#: /Template/ProductFeatures/index.ctp:40
+#: /Template/ProductFeatures/view.ctp:5
+#: /Template/ProductMedias/edit.ctp:7
+#: /Template/ProductMedias/index.ctp:38
+#: /Template/ProductMedias/view.ctp:5
+#: /Template/Products/edit.ctp:7
+#: /Template/Products/index.ctp:44
+#: /Template/Products/view2.ctp:5;75;113;149
+#: /Template/PromotionProducts/edit.ctp:7
+#: /Template/PromotionProducts/index.ctp:42
+#: /Template/PromotionProducts/view.ctp:5
+#: /Template/Promotions/edit.ctp:7
+#: /Template/Promotions/index.ctp:32
+#: /Template/Promotions/view.ctp:5;63
+#: /Template/Stores/edit.ctp:7
+#: /Template/Stores/index.ctp:36
+#: /Template/Stores/view.ctp:5;69
+#: /Template/SubCategories/edit.ctp:7
+#: /Template/SubCategories/index.ctp:34
+#: /Template/SubCategories/view.ctp:5
+#: /Template/Subscribers/edit.ctp:7
+#: /Template/Subscribers/index.ctp:28
+#: /Template/Subscribers/view.ctp:5
+#: /Template/UserTypes/edit.ctp:7
+#: /Template/UserTypes/index.ctp:30
+#: /Template/UserTypes/view.ctp:5;61
+#: /Template/Users/edit.ctp:13
+#: /Template/Users/index.ctp:42
+#: /Template/Users/view2.ctp:5;69;105
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: /Template/BannerTypes/edit.ctp:18
+#: /Template/BannerTypes/view.ctp:4
+msgid "Edit Banner Type"
+msgstr ""
+
+#: /Template/BannerTypes/index.ctp:4
+#: /Template/BannerTypes/view.ctp:7
+#: /Template/Banners/add.ctp:6
+#: /Template/Banners/edit.ctp:12
+#: /Template/Banners/index2.ctp:6
+#: /Template/Banners/view.ctp:9
+msgid "New Banner Type"
+msgstr ""
+
+#: /Template/BannerTypes/index.ctp:28
+#: /Template/BannerTypes/view.ctp:59
+#: /Template/Banners/index2.ctp:40
+#: /Template/Bookings/index.ctp:38
+#: /Template/Categories/index.ctp:26
+#: /Template/Features/index.ctp:26
+#: /Template/MediaTypes/index.ctp:28
+#: /Template/MediaTypes/view.ctp:53
+#: /Template/Medias/index.ctp:32
+#: /Template/ProductFeatures/index.ctp:38
+#: /Template/ProductMedias/index.ctp:36
+#: /Template/Products/index.ctp:42
+#: /Template/Products/view2.ctp:71;109;145
+#: /Template/PromotionProducts/index.ctp:40
+#: /Template/Promotions/index.ctp:30
+#: /Template/Promotions/view.ctp:59
+#: /Template/Stores/index.ctp:34
+#: /Template/Stores/view.ctp:65
+#: /Template/SubCategories/index.ctp:32
+#: /Template/Subscribers/index.ctp:26
+#: /Template/UserTypes/index.ctp:28
+#: /Template/UserTypes/view.ctp:57
+#: /Template/Users/index.ctp:40
+#: /Template/Users/view2.ctp:65;101
+msgid "View"
+msgstr ""
+
+#: /Template/BannerTypes/index.ctp:29
+#: /Template/BannerTypes/view.ctp:61
+#: /Template/Banners/index2.ctp:41
+#: /Template/Bookings/index.ctp:39
+#: /Template/Categories/index.ctp:27
+#: /Template/Features/index.ctp:27
+#: /Template/MediaTypes/index.ctp:29
+#: /Template/MediaTypes/view.ctp:55
+#: /Template/Medias/index.ctp:33
+#: /Template/ProductFeatures/index.ctp:39
+#: /Template/ProductMedias/index.ctp:37
+#: /Template/Products/index.ctp:43
+#: /Template/Products/view2.ctp:73;111;147
+#: /Template/PromotionProducts/index.ctp:41
+#: /Template/Promotions/index.ctp:31
+#: /Template/Promotions/view.ctp:61
+#: /Template/Stores/index.ctp:35
+#: /Template/Stores/view.ctp:67
+#: /Template/SubCategories/index.ctp:33
+#: /Template/Subscribers/index.ctp:27
+#: /Template/UserTypes/index.ctp:29
+#: /Template/UserTypes/view.ctp:59
+#: /Template/Users/index.ctp:41
+#: /Template/Users/view2.ctp:67;103
+msgid "Edit"
+msgstr ""
+
+#: /Template/BannerTypes/index.ctp:39
+#: /Template/Banners/index2.ctp:51
+#: /Template/Bookings/index.ctp:49
+#: /Template/Categories/index.ctp:37
+#: /Template/Features/index.ctp:37
+#: /Template/MediaTypes/index.ctp:39
+#: /Template/Medias/index.ctp:43
+#: /Template/ProductFeatures/index.ctp:49
+#: /Template/ProductMedias/index.ctp:47
+#: /Template/Products/index.ctp:53
+#: /Template/PromotionProducts/index.ctp:51
+#: /Template/Promotions/index.ctp:41
+#: /Template/Stores/index.ctp:45
+#: /Template/SubCategories/index.ctp:43
+#: /Template/Subscribers/index.ctp:37
+#: /Template/UserTypes/index.ctp:39
+#: /Template/Users/index.ctp:51
+msgid "previous"
+msgstr ""
+
+#: /Template/BannerTypes/index.ctp:41
+#: /Template/Banners/index2.ctp:53
+#: /Template/Bookings/index.ctp:51
+#: /Template/Categories/index.ctp:39
+#: /Template/Features/index.ctp:39
+#: /Template/MediaTypes/index.ctp:41
+#: /Template/Medias/index.ctp:45
+#: /Template/ProductFeatures/index.ctp:51
+#: /Template/ProductMedias/index.ctp:49
+#: /Template/Products/index.ctp:55
+#: /Template/PromotionProducts/index.ctp:53
+#: /Template/Promotions/index.ctp:43
+#: /Template/Stores/index.ctp:47
+#: /Template/SubCategories/index.ctp:45
+#: /Template/Subscribers/index.ctp:39
+#: /Template/UserTypes/index.ctp:41
+#: /Template/Users/index.ctp:53
+msgid "next"
+msgstr ""
+
+#: /Template/BannerTypes/view.ctp:5
+msgid "Delete Banner Type"
+msgstr ""
+
+#: /Template/BannerTypes/view.ctp:16
+#: /Template/UserTypes/view.ctp:16
+msgid "Type Name"
+msgstr ""
+
+#: /Template/BannerTypes/view.ctp:20;37
+#: /Template/Banners/view.ctp:30
+#: /Template/Bookings/view.ctp:24
+#: /Template/Categories/view.ctp:18
+#: /Template/Features/view.ctp:18
+#: /Template/MediaTypes/view.ctp:20;37
+#: /Template/Medias/view.ctp:22
+#: /Template/ProductFeatures/view.ctp:26
+#: /Template/ProductMedias/view.ctp:24
+#: /Template/Products/view2.ctp:30;53;91;129
+#: /Template/PromotionProducts/view.ctp:24
+#: /Template/Promotions/view.ctp:20;39
+#: /Template/Stores/view.ctp:24;41
+#: /Template/SubCategories/view.ctp:22
+#: /Template/Subscribers/view.ctp:18
+#: /Template/UserTypes/view.ctp:20;37
+#: /Template/Users/view2.ctp:30;47;85
+msgid "Id"
+msgstr ""
+
+#: /Template/BannerTypes/view.ctp:24;43
+#: /Template/Banners/view.ctp:34
+#: /Template/Bookings/view.ctp:30
+#: /Template/Categories/view.ctp:22
+#: /Template/Features/view.ctp:22
+#: /Template/MediaTypes/view.ctp:24;40
+#: /Template/Medias/view.ctp:26
+#: /Template/ProductFeatures/view.ctp:30
+#: /Template/ProductMedias/view.ctp:28
+#: /Template/Products/view2.ctp:40;57;95;132
+#: /Template/PromotionProducts/view.ctp:32
+#: /Template/Promotions/view.ctp:26;44
+#: /Template/Stores/view.ctp:28;48
+#: /Template/SubCategories/view.ctp:26
+#: /Template/Subscribers/view.ctp:22
+#: /Template/UserTypes/view.ctp:24;42
+#: /Template/Users/view2.ctp:34;51;88
+msgid "Created"
+msgstr ""
+
+#: /Template/BannerTypes/view.ctp:26;44
+#: /Template/Banners/view.ctp:36
+#: /Template/Bookings/view.ctp:32
+#: /Template/Categories/view.ctp:24
+#: /Template/Features/view.ctp:24
+#: /Template/MediaTypes/view.ctp:26;41
+#: /Template/Medias/view.ctp:28
+#: /Template/ProductFeatures/view.ctp:32
+#: /Template/ProductMedias/view.ctp:30
+#: /Template/Products/view2.ctp:42;58;96;133
+#: /Template/PromotionProducts/view.ctp:34
+#: /Template/Promotions/view.ctp:28;45
+#: /Template/Stores/view.ctp:30;49
+#: /Template/SubCategories/view.ctp:28
+#: /Template/Subscribers/view.ctp:24
+#: /Template/UserTypes/view.ctp:26;43
+#: /Template/Users/view2.ctp:36;52;89
+msgid "Modified"
+msgstr ""
+
+#: /Template/BannerTypes/view.ctp:33
+msgid "Related Banners"
+msgstr ""
+
+#: /Template/BannerTypes/view.ctp:38
+msgid "Banner Type Id"
+msgstr ""
+
+#: /Template/BannerTypes/view.ctp:39
+#: /Template/Products/view2.ctp:56
+#: /Template/Users/view2.ctp:50;87
+msgid "User Id"
+msgstr ""
+
+#: /Template/BannerTypes/view.ctp:40
+#: /Template/Banners/view.ctp:22
+msgid "Banner Description"
+msgstr ""
+
+#: /Template/BannerTypes/view.ctp:41
+#: /Template/Banners/view.ctp:24
+msgid "Path Banner"
+msgstr ""
+
+#: /Template/BannerTypes/view.ctp:42
+#: /Template/Banners/view.ctp:26
+msgid "Url Redirect"
+msgstr ""
+
+#: /Template/Banners/add.ctp:7
+#: /Template/Banners/edit.ctp:13
+#: /Template/Banners/index2.ctp:7
+#: /Template/Banners/view.ctp:10
+#: /Template/Bookings/add.ctp:7
+#: /Template/Bookings/edit.ctp:13
+#: /Template/Bookings/index.ctp:7
+#: /Template/Bookings/view.ctp:10
+#: /Template/Stores/add.ctp:5
+#: /Template/Stores/edit.ctp:11
+#: /Template/Stores/index.ctp:5
+#: /Template/Stores/view.ctp:8
+#: /Template/UserTypes/add.ctp:5
+#: /Template/UserTypes/edit.ctp:11
+#: /Template/UserTypes/index.ctp:5
+#: /Template/UserTypes/view.ctp:8
+#: /Template/Users/add.ctp:4
+#: /Template/Users/edit.ctp:18
+#: /Template/Users/view2.ctp:6
+msgid "List Users"
+msgstr ""
+
+#: /Template/Banners/add.ctp:8
+#: /Template/Banners/edit.ctp:14
+#: /Template/Banners/index2.ctp:8
+#: /Template/Banners/view.ctp:11
+#: /Template/Bookings/add.ctp:8
+#: /Template/Bookings/edit.ctp:14
+#: /Template/Bookings/index.ctp:8
+#: /Template/Bookings/view.ctp:11
+#: /Template/Stores/add.ctp:6
+#: /Template/Stores/edit.ctp:12
+#: /Template/Stores/index.ctp:6
+#: /Template/Stores/view.ctp:9
+#: /Template/UserTypes/add.ctp:6
+#: /Template/UserTypes/edit.ctp:12
+#: /Template/UserTypes/index.ctp:6
+#: /Template/UserTypes/view.ctp:9
+#: /Template/Users/index.ctp:4
+#: /Template/Users/view2.ctp:7
+msgid "New User"
+msgstr ""
+
+#: /Template/Banners/add.ctp:14
+msgid "Add Banner"
+msgstr ""
+
+#: /Template/Banners/edit.ctp:20
+#: /Template/Banners/view.ctp:4
+msgid "Edit Banner"
+msgstr ""
+
+#: /Template/Banners/view.ctp:5
+msgid "Delete Banner"
+msgstr ""
+
+#: /Template/Banners/view.ctp:18
+msgid "Banner Type"
+msgstr ""
+
+#: /Template/Banners/view.ctp:20
+#: /Template/Bookings/view.ctp:20
+#: /Template/Stores/view.ctp:20
+msgid "User"
+msgstr ""
+
+#: /Template/Bookings/add.ctp:4
+#: /Template/Bookings/edit.ctp:10
+#: /Template/Bookings/view.ctp:6
+#: /Template/Products/add.ctp:7
+#: /Template/Products/edit.ctp:13
+#: /Template/Products/index.ctp:7
+#: /Template/Products/view2.ctp:10
+#: /Template/Users/add.ctp:7
+#: /Template/Users/edit.ctp:23
+#: /Template/Users/index.ctp:7
+#: /Template/Users/view2.ctp:10
+msgid "List Bookings"
+msgstr ""
+
+#: /Template/Bookings/add.ctp:5
+#: /Template/Bookings/edit.ctp:11
+#: /Template/Bookings/index.ctp:5
+#: /Template/Bookings/view.ctp:8
+#: /Template/ProductFeatures/add.ctp:7
+#: /Template/ProductFeatures/edit.ctp:13
+#: /Template/ProductFeatures/index.ctp:7
+#: /Template/ProductFeatures/view.ctp:10
+#: /Template/ProductMedias/add.ctp:5
+#: /Template/ProductMedias/edit.ctp:11
+#: /Template/ProductMedias/index.ctp:5
+#: /Template/ProductMedias/view.ctp:8
+#: /Template/Products/add.ctp:4
+#: /Template/Products/edit.ctp:10
+#: /Template/Products/view2.ctp:6
+#: /Template/PromotionProducts/add.ctp:5
+#: /Template/PromotionProducts/edit.ctp:11
+#: /Template/PromotionProducts/index.ctp:5
+#: /Template/PromotionProducts/view.ctp:8
+#: /Template/Stores/add.ctp:7
+#: /Template/Stores/edit.ctp:13
+#: /Template/Stores/index.ctp:7
+#: /Template/Stores/view.ctp:10
+msgid "List Products"
+msgstr ""
+
+#: /Template/Bookings/add.ctp:6
+#: /Template/Bookings/edit.ctp:12
+#: /Template/Bookings/index.ctp:6
+#: /Template/Bookings/view.ctp:9
+#: /Template/ProductFeatures/add.ctp:8
+#: /Template/ProductFeatures/edit.ctp:14
+#: /Template/ProductFeatures/index.ctp:8
+#: /Template/ProductFeatures/view.ctp:11
+#: /Template/ProductMedias/add.ctp:6
+#: /Template/ProductMedias/edit.ctp:12
+#: /Template/ProductMedias/index.ctp:6
+#: /Template/ProductMedias/view.ctp:9
+#: /Template/Products/index.ctp:4
+#: /Template/Products/view2.ctp:7
+#: /Template/PromotionProducts/add.ctp:6
+#: /Template/PromotionProducts/edit.ctp:12
+#: /Template/PromotionProducts/index.ctp:6
+#: /Template/PromotionProducts/view.ctp:9
+#: /Template/Stores/add.ctp:8
+#: /Template/Stores/edit.ctp:14
+#: /Template/Stores/index.ctp:8
+#: /Template/Stores/view.ctp:11
+msgid "New Product"
+msgstr ""
+
+#: /Template/Bookings/add.ctp:14
+msgid "Add Booking"
+msgstr ""
+
+#: /Template/Bookings/edit.ctp:20
+#: /Template/Bookings/view.ctp:4
+msgid "Edit Booking"
+msgstr ""
+
+#: /Template/Bookings/index.ctp:4
+#: /Template/Bookings/view.ctp:7
+#: /Template/Products/add.ctp:8
+#: /Template/Products/edit.ctp:14
+#: /Template/Products/index.ctp:8
+#: /Template/Products/view2.ctp:11
+#: /Template/Users/add.ctp:8
+#: /Template/Users/edit.ctp:24
+#: /Template/Users/index.ctp:8
+#: /Template/Users/view2.ctp:11
+msgid "New Booking"
+msgstr ""
+
+#: /Template/Bookings/view.ctp:5
+msgid "Delete Booking"
+msgstr ""
+
+#: /Template/Bookings/view.ctp:18
+#: /Template/ProductFeatures/view.ctp:22
+#: /Template/ProductMedias/view.ctp:18
+#: /Template/PromotionProducts/view.ctp:18
+msgid "Product"
+msgstr ""
+
+#: /Template/Bookings/view.ctp:26
+#: /Template/Products/view2.ctp:32;55
+#: /Template/Stores/view.ctp:44
+#: /Template/Users/view2.ctp:49
+msgid "Quantity"
+msgstr ""
+
+#: /Template/Categories/add.ctp:4
+#: /Template/Categories/edit.ctp:10
+#: /Template/Categories/view.ctp:6
+#: /Template/SubCategories/add.ctp:5
+#: /Template/SubCategories/edit.ctp:11
+#: /Template/SubCategories/index.ctp:5
+#: /Template/SubCategories/view.ctp:8
+msgid "List Categories"
+msgstr ""
+
+#: /Template/Categories/add.ctp:10
+msgid "Add Category"
+msgstr ""
+
+#: /Template/Categories/edit.ctp:16
+#: /Template/Categories/view.ctp:4
+msgid "Edit Category"
+msgstr ""
+
+#: /Template/Categories/index.ctp:4
+#: /Template/Categories/view.ctp:7
+#: /Template/SubCategories/add.ctp:6
+#: /Template/SubCategories/edit.ctp:12
+#: /Template/SubCategories/index.ctp:6
+#: /Template/SubCategories/view.ctp:9
+msgid "New Category"
+msgstr ""
+
+#: /Template/Categories/view.ctp:5
+msgid "Delete Category"
+msgstr ""
+
+#: /Template/Categories/view.ctp:14
+msgid "Category Name"
+msgstr ""
+
+#: /Template/Element/Body/my_small_full_banners.ctp:34;67
+msgid "Você deseja realmente deletar o Banner: #{0}?"
+msgstr ""
+
+#: /Template/Features/add.ctp:4
+#: /Template/Features/edit.ctp:10
+#: /Template/Features/view.ctp:6
+#: /Template/ProductFeatures/add.ctp:5
+#: /Template/ProductFeatures/edit.ctp:11
+#: /Template/ProductFeatures/index.ctp:5
+#: /Template/ProductFeatures/view.ctp:8
+msgid "List Features"
+msgstr ""
+
+#: /Template/Features/add.ctp:10
+msgid "Add Feature"
+msgstr ""
+
+#: /Template/Features/edit.ctp:16
+#: /Template/Features/view.ctp:4
+msgid "Edit Feature"
+msgstr ""
+
+#: /Template/Features/index.ctp:4
+#: /Template/Features/view.ctp:7
+#: /Template/ProductFeatures/add.ctp:6
+#: /Template/ProductFeatures/edit.ctp:12
+#: /Template/ProductFeatures/index.ctp:6
+#: /Template/ProductFeatures/view.ctp:9
+msgid "New Feature"
+msgstr ""
+
+#: /Template/Features/view.ctp:5
+msgid "Delete Feature"
+msgstr ""
+
+#: /Template/Features/view.ctp:14
+msgid "Feature Name"
+msgstr ""
+
+#: /Template/MediaTypes/add.ctp:4
+#: /Template/MediaTypes/edit.ctp:10
+#: /Template/MediaTypes/view.ctp:6
+#: /Template/Medias/add.ctp:5
+#: /Template/Medias/edit.ctp:11
+#: /Template/Medias/index.ctp:5
+#: /Template/Medias/view.ctp:8
+msgid "List Media Types"
+msgstr ""
+
+#: /Template/MediaTypes/add.ctp:5
+#: /Template/MediaTypes/edit.ctp:11
+#: /Template/MediaTypes/index.ctp:5
+#: /Template/MediaTypes/view.ctp:8
+#: /Template/Medias/add.ctp:4
+#: /Template/Medias/edit.ctp:10
+#: /Template/Medias/view.ctp:6
+#: /Template/ProductMedias/add.ctp:7
+#: /Template/ProductMedias/edit.ctp:13
+#: /Template/ProductMedias/index.ctp:7
+#: /Template/ProductMedias/view.ctp:10
+msgid "List Medias"
+msgstr ""
+
+#: /Template/MediaTypes/add.ctp:6
+#: /Template/MediaTypes/edit.ctp:12
+#: /Template/MediaTypes/index.ctp:6
+#: /Template/MediaTypes/view.ctp:9
+#: /Template/Medias/index.ctp:4
+#: /Template/Medias/view.ctp:7
+#: /Template/ProductMedias/add.ctp:8
+#: /Template/ProductMedias/edit.ctp:14
+#: /Template/ProductMedias/index.ctp:8
+#: /Template/ProductMedias/view.ctp:11
+msgid "New Media"
+msgstr ""
+
+#: /Template/MediaTypes/add.ctp:12
+msgid "Add Media Type"
+msgstr ""
+
+#: /Template/MediaTypes/edit.ctp:18
+#: /Template/MediaTypes/view.ctp:4
+msgid "Edit Media Type"
+msgstr ""
+
+#: /Template/MediaTypes/index.ctp:4
+#: /Template/MediaTypes/view.ctp:7
+#: /Template/Medias/add.ctp:6
+#: /Template/Medias/edit.ctp:12
+#: /Template/Medias/index.ctp:6
+#: /Template/Medias/view.ctp:9
+msgid "New Media Type"
+msgstr ""
+
+#: /Template/MediaTypes/view.ctp:5
+msgid "Delete Media Type"
+msgstr ""
+
+#: /Template/MediaTypes/view.ctp:16
+msgid "Name Media Type"
+msgstr ""
+
+#: /Template/MediaTypes/view.ctp:33
+msgid "Related Medias"
+msgstr ""
+
+#: /Template/MediaTypes/view.ctp:38
+msgid "Media Type Id"
+msgstr ""
+
+#: /Template/MediaTypes/view.ctp:39
+#: /Template/Medias/view.ctp:18
+msgid "Path"
+msgstr ""
+
+#: /Template/Medias/add.ctp:12
+msgid "Add Media"
+msgstr ""
+
+#: /Template/Medias/edit.ctp:18
+#: /Template/Medias/view.ctp:4
+msgid "Edit Media"
+msgstr ""
+
+#: /Template/Medias/view.ctp:5
+msgid "Delete Media"
+msgstr ""
+
+#: /Template/Medias/view.ctp:16
+msgid "Media Type"
+msgstr ""
+
+#: /Template/ProductFeatures/add.ctp:4
+#: /Template/ProductFeatures/edit.ctp:10
+#: /Template/ProductFeatures/view.ctp:6
+#: /Template/Products/add.ctp:9
+#: /Template/Products/edit.ctp:15
+#: /Template/Products/index.ctp:9
+#: /Template/Products/view2.ctp:12
+msgid "List Product Features"
+msgstr ""
+
+#: /Template/ProductFeatures/add.ctp:14
+msgid "Add Product Feature"
+msgstr ""
+
+#: /Template/ProductFeatures/edit.ctp:20
+#: /Template/ProductFeatures/view.ctp:4
+msgid "Edit Product Feature"
+msgstr ""
+
+#: /Template/ProductFeatures/index.ctp:4
+#: /Template/ProductFeatures/view.ctp:7
+#: /Template/Products/add.ctp:10
+#: /Template/Products/edit.ctp:16
+#: /Template/Products/index.ctp:10
+#: /Template/Products/view2.ctp:13
+msgid "New Product Feature"
+msgstr ""
+
+#: /Template/ProductFeatures/view.ctp:5
+msgid "Delete Product Feature"
+msgstr ""
+
+#: /Template/ProductFeatures/view.ctp:18
+#: /Template/Products/view2.ctp:92
+msgid "Feature Value"
+msgstr ""
+
+#: /Template/ProductFeatures/view.ctp:20
+msgid "Feature"
+msgstr ""
+
+#: /Template/ProductMedias/add.ctp:4
+#: /Template/ProductMedias/edit.ctp:10
+#: /Template/ProductMedias/view.ctp:6
+#: /Template/Products/add.ctp:11
+#: /Template/Products/edit.ctp:17
+#: /Template/Products/index.ctp:11
+#: /Template/Products/view2.ctp:14
+msgid "List Product Medias"
+msgstr ""
+
+#: /Template/ProductMedias/add.ctp:14
+msgid "Add Product Media"
+msgstr ""
+
+#: /Template/ProductMedias/edit.ctp:20
+#: /Template/ProductMedias/view.ctp:4
+msgid "Edit Product Media"
+msgstr ""
+
+#: /Template/ProductMedias/index.ctp:4
+#: /Template/ProductMedias/view.ctp:7
+#: /Template/Products/add.ctp:12
+#: /Template/Products/edit.ctp:18
+#: /Template/Products/index.ctp:12
+#: /Template/Products/view2.ctp:15
+msgid "New Product Media"
+msgstr ""
+
+#: /Template/ProductMedias/view.ctp:5
+msgid "Delete Product Media"
+msgstr ""
+
+#: /Template/ProductMedias/view.ctp:20
+msgid "Media"
+msgstr ""
+
+#: /Template/Products/add.ctp:5
+#: /Template/Products/edit.ctp:11
+#: /Template/Products/index.ctp:5
+#: /Template/Products/view2.ctp:8
+#: /Template/Stores/add.ctp:4
+#: /Template/Stores/edit.ctp:10
+#: /Template/Stores/view.ctp:6
+#: /Template/Users/add.ctp:9
+#: /Template/Users/edit.ctp:25
+#: /Template/Users/index.ctp:9
+#: /Template/Users/view2.ctp:12
+msgid "List Stores"
+msgstr ""
+
+#: /Template/Products/add.ctp:6
+#: /Template/Products/edit.ctp:12
+#: /Template/Products/index.ctp:6
+#: /Template/Products/view2.ctp:9
+#: /Template/Stores/index.ctp:4
+#: /Template/Stores/view.ctp:7
+#: /Template/Users/add.ctp:10
+#: /Template/Users/edit.ctp:26
+#: /Template/Users/index.ctp:10
+#: /Template/Users/view2.ctp:13
+msgid "New Store"
+msgstr ""
+
+#: /Template/Products/add.ctp:18
+msgid "Add Product"
+msgstr ""
+
+#: /Template/Products/edit.ctp:24
+#: /Template/Products/view2.ctp:4
+msgid "Edit Product"
+msgstr ""
+
+#: /Template/Products/upload.ctp:7
+msgid "Upload"
+msgstr ""
+
+#: /Template/Products/view2.ctp:5
+msgid "Delete Product"
+msgstr ""
+
+#: /Template/Products/view2.ctp:22
+#: /Template/Stores/view.ctp:42
+msgid "Product Name"
+msgstr ""
+
+#: /Template/Products/view2.ctp:24
+msgid "Store"
+msgstr ""
+
+#: /Template/Products/view2.ctp:26
+#: /Template/Stores/view.ctp:45
+msgid "Description"
+msgstr ""
+
+#: /Template/Products/view2.ctp:34
+#: /Template/Stores/view.ctp:46
+msgid "Price"
+msgstr ""
+
+#: /Template/Products/view2.ctp:36
+#: /Template/Stores/view.ctp:47
+msgid "Status"
+msgstr ""
+
+#: /Template/Products/view2.ctp:49
+#: /Template/Users/view2.ctp:43
+msgid "Related Bookings"
+msgstr ""
+
+#: /Template/Products/view2.ctp:54;94;130
+#: /Template/Promotions/view.ctp:40
+#: /Template/Users/view2.ctp:48
+msgid "Product Id"
+msgstr ""
+
+#: /Template/Products/view2.ctp:87
+msgid "Related Product Features"
+msgstr ""
+
+#: /Template/Products/view2.ctp:93
+msgid "Feature Id"
+msgstr ""
+
+#: /Template/Products/view2.ctp:125
+msgid "Related Product Medias"
+msgstr ""
+
+#: /Template/Products/view2.ctp:131
+msgid "Media Id"
+msgstr ""
+
+#: /Template/PromotionProducts/add.ctp:4
+#: /Template/PromotionProducts/edit.ctp:10
+#: /Template/PromotionProducts/view.ctp:6
+#: /Template/Promotions/add.ctp:5
+#: /Template/Promotions/edit.ctp:11
+#: /Template/Promotions/index.ctp:5
+#: /Template/Promotions/view.ctp:8
+msgid "List Promotion Products"
+msgstr ""
+
+#: /Template/PromotionProducts/add.ctp:7
+#: /Template/PromotionProducts/edit.ctp:13
+#: /Template/PromotionProducts/index.ctp:7
+#: /Template/PromotionProducts/view.ctp:10
+#: /Template/Promotions/add.ctp:4
+#: /Template/Promotions/edit.ctp:10
+#: /Template/Promotions/view.ctp:6
+msgid "List Promotions"
+msgstr ""
+
+#: /Template/PromotionProducts/add.ctp:8
+#: /Template/PromotionProducts/edit.ctp:14
+#: /Template/PromotionProducts/index.ctp:8
+#: /Template/PromotionProducts/view.ctp:11
+#: /Template/Promotions/index.ctp:4
+#: /Template/Promotions/view.ctp:7
+msgid "New Promotion"
+msgstr ""
+
+#: /Template/PromotionProducts/add.ctp:14
+msgid "Add Promotion Product"
+msgstr ""
+
+#: /Template/PromotionProducts/edit.ctp:20
+#: /Template/PromotionProducts/view.ctp:4
+msgid "Edit Promotion Product"
+msgstr ""
+
+#: /Template/PromotionProducts/index.ctp:4
+#: /Template/PromotionProducts/view.ctp:7
+#: /Template/Promotions/add.ctp:6
+#: /Template/Promotions/edit.ctp:12
+#: /Template/Promotions/index.ctp:6
+#: /Template/Promotions/view.ctp:9
+msgid "New Promotion Product"
+msgstr ""
+
+#: /Template/PromotionProducts/view.ctp:5
+msgid "Delete Promotion Product"
+msgstr ""
+
+#: /Template/PromotionProducts/view.ctp:20
+msgid "Promotion"
+msgstr ""
+
+#: /Template/PromotionProducts/view.ctp:26
+#: /Template/Promotions/view.ctp:42
+msgid "Promotion Price"
+msgstr ""
+
+#: /Template/PromotionProducts/view.ctp:28
+#: /Template/Promotions/view.ctp:43
+msgid "Promotion Quantity"
+msgstr ""
+
+#: /Template/Promotions/add.ctp:12
+msgid "Add Promotion"
+msgstr ""
+
+#: /Template/Promotions/edit.ctp:18
+#: /Template/Promotions/view.ctp:4
+msgid "Edit Promotion"
+msgstr ""
+
+#: /Template/Promotions/view.ctp:5
+msgid "Delete Promotion"
+msgstr ""
+
+#: /Template/Promotions/view.ctp:16
+msgid "Promotion Name"
+msgstr ""
+
+#: /Template/Promotions/view.ctp:22
+msgid "Duration"
+msgstr ""
+
+#: /Template/Promotions/view.ctp:35
+msgid "Related Promotion Products"
+msgstr ""
+
+#: /Template/Promotions/view.ctp:41
+msgid "Promotion Id"
+msgstr ""
+
+#: /Template/Stores/add.ctp:14
+msgid "Add Store"
+msgstr ""
+
+#: /Template/Stores/edit.ctp:20
+#: /Template/Stores/view.ctp:4
+msgid "Edit Store"
+msgstr ""
+
+#: /Template/Stores/view.ctp:5
+msgid "Delete Store"
+msgstr ""
+
+#: /Template/Stores/view.ctp:18
+#: /Template/Users/view2.ctp:86
+msgid "Store Name"
+msgstr ""
+
+#: /Template/Stores/view.ctp:37
+msgid "Related Products"
+msgstr ""
+
+#: /Template/Stores/view.ctp:43
+msgid "Store Id"
+msgstr ""
+
+#: /Template/SubCategories/add.ctp:4
+#: /Template/SubCategories/edit.ctp:10
+#: /Template/SubCategories/view.ctp:6
+msgid "List Sub Categories"
+msgstr ""
+
+#: /Template/SubCategories/add.ctp:12
+msgid "Add Sub Category"
+msgstr ""
+
+#: /Template/SubCategories/edit.ctp:18
+#: /Template/SubCategories/view.ctp:4
+msgid "Edit Sub Category"
+msgstr ""
+
+#: /Template/SubCategories/index.ctp:4
+#: /Template/SubCategories/view.ctp:7
+msgid "New Sub Category"
+msgstr ""
+
+#: /Template/SubCategories/view.ctp:5
+msgid "Delete Sub Category"
+msgstr ""
+
+#: /Template/SubCategories/view.ctp:16
+msgid "Sub Category Name"
+msgstr ""
+
+#: /Template/SubCategories/view.ctp:18
+msgid "Category"
+msgstr ""
+
+#: /Template/Subscribers/add.ctp:4
+#: /Template/Subscribers/edit.ctp:10
+#: /Template/Subscribers/view.ctp:6
+msgid "List Subscribers"
+msgstr ""
+
+#: /Template/Subscribers/add.ctp:10
+msgid "Add Subscriber"
+msgstr ""
+
+#: /Template/Subscribers/edit.ctp:16
+#: /Template/Subscribers/view.ctp:4
+msgid "Edit Subscriber"
+msgstr ""
+
+#: /Template/Subscribers/index.ctp:4
+#: /Template/Subscribers/view.ctp:7
+msgid "New Subscriber"
+msgstr ""
+
+#: /Template/Subscribers/view.ctp:5
+msgid "Delete Subscriber"
+msgstr ""
+
+#: /Template/Subscribers/view.ctp:14
+#: /Template/UserTypes/view.ctp:38
+#: /Template/Users/view2.ctp:20
+msgid "Email"
+msgstr ""
+
+#: /Template/UserTypes/add.ctp:4
+#: /Template/UserTypes/edit.ctp:10
+#: /Template/UserTypes/view.ctp:6
+#: /Template/Users/add.ctp:5
+#: /Template/Users/edit.ctp:21
+#: /Template/Users/index.ctp:5
+#: /Template/Users/view2.ctp:8
+msgid "List User Types"
+msgstr ""
+
+#: /Template/UserTypes/add.ctp:12
+msgid "Add User Type"
+msgstr ""
+
+#: /Template/UserTypes/edit.ctp:18
+#: /Template/UserTypes/view.ctp:4
+msgid "Edit User Type"
+msgstr ""
+
+#: /Template/UserTypes/index.ctp:4
+#: /Template/UserTypes/view.ctp:7
+#: /Template/Users/add.ctp:6
+#: /Template/Users/edit.ctp:22
+#: /Template/Users/index.ctp:6
+#: /Template/Users/view2.ctp:9
+msgid "New User Type"
+msgstr ""
+
+#: /Template/UserTypes/view.ctp:5
+msgid "Delete User Type"
+msgstr ""
+
+#: /Template/UserTypes/view.ctp:33
+msgid "Related Users"
+msgstr ""
+
+#: /Template/UserTypes/view.ctp:39
+#: /Template/Users/view2.ctp:22
+msgid "Password"
+msgstr ""
+
+#: /Template/UserTypes/view.ctp:40
+#: /Template/Users/view2.ctp:24
+msgid "Username"
+msgstr ""
+
+#: /Template/UserTypes/view.ctp:41
+msgid "User Type Id"
+msgstr ""
+
+#: /Template/Users/add.ctp:16
+msgid "Add User"
+msgstr ""
+
+#: /Template/Users/edit.ctp:37
+#: /Template/Users/view2.ctp:4
+msgid "Edit User"
+msgstr ""
+
+#: /Template/Users/view2.ctp:5
+msgid "Delete User"
+msgstr ""
+
+#: /Template/Users/view2.ctp:26
+msgid "User Type"
+msgstr ""
+
+#: /Template/Users/view2.ctp:81
+msgid "Related Stores"
+msgstr ""
+
+#: /Template/Error/error400.ctp:33
+#: /Template/Error/error500.ctp:35
+msgid "Error"
+msgstr ""
+
+#: /Template/Error/error400.ctp:35
+msgid "The requested address %s was not found on this server."
+msgstr ""
+
+#: /Template/Error/error500.ctp:33
+msgid "An Internal Error Has Occurred"
+msgstr ""
+
+#: Controller/Component/AuthComponent.php:435
+msgid "You are not authorized to access that location."
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:148;152
+msgid "Invalid CSRF token."
+msgstr ""
+
+#: Error/ExceptionRenderer.php:225
+msgid "Not Found"
+msgstr ""
+
+#: Error/ExceptionRenderer.php:227
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: I18n/Number.php:75
+msgid "{0,number,#,###.##} KB"
+msgstr ""
+
+#: I18n/Number.php:77
+msgid "{0,number,#,###.##} MB"
+msgstr ""
+
+#: I18n/Number.php:79
+msgid "{0,number,#,###.##} GB"
+msgstr ""
+
+#: I18n/Number.php:81
+msgid "{0,number,#,###.##} TB"
+msgstr ""
+
+#: I18n/Number.php:73
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/Time.php:254
+msgid "%s ago"
+msgstr ""
+
+#: I18n/Time.php:255
+msgid "on %s"
+msgstr ""
+
+#: I18n/Time.php:295
+msgid "just now"
+msgstr ""
+
+#: I18n/Time.php:411
+msgid "about a second ago"
+msgstr ""
+
+#: I18n/Time.php:412
+msgid "about a minute ago"
+msgstr ""
+
+#: I18n/Time.php:413
+msgid "about an hour ago"
+msgstr ""
+
+#: I18n/Time.php:414
+msgid "about a day ago"
+msgstr ""
+
+#: I18n/Time.php:415
+msgid "about a week ago"
+msgstr ""
+
+#: I18n/Time.php:416
+msgid "about a year ago"
+msgstr ""
+
+#: I18n/Time.php:425
+msgid "in about a second"
+msgstr ""
+
+#: I18n/Time.php:426
+msgid "in about a minute"
+msgstr ""
+
+#: I18n/Time.php:427
+msgid "in about an hour"
+msgstr ""
+
+#: I18n/Time.php:428
+msgid "in about a day"
+msgstr ""
+
+#: I18n/Time.php:429
+msgid "in about a week"
+msgstr ""
+
+#: I18n/Time.php:430
+msgid "in about a year"
+msgstr ""
+
+#: I18n/Time.php:384
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/Time.php:387
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/Time.php:390
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/Time.php:393
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/Time.php:396
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/Time.php:399
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/Time.php:402
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Network/Response.php:1435
+msgid "The requested file was not found"
+msgstr ""
+
+#: ORM/RulesChecker.php:49
+msgid "This value is already in use"
+msgstr ""
+
+#: ORM/RulesChecker.php:83
+msgid "This value does not exist"
+msgstr ""
+
+#: Utility/Text.php:724
+msgid "and"
+msgstr ""
+
+#: Validation/Validator.php:103
+msgid "This field is required"
+msgstr ""
+
+#: Validation/Validator.php:104
+msgid "This field cannot be left empty"
+msgstr ""
+
+#: Validation/Validator.php:652
+msgid "The provided value is invalid"
+msgstr ""
+
+#: View/Helper/FormHelper.php:943
+msgid "New %s"
+msgstr ""
+
+#: View/Helper/FormHelper.php:946
+msgid "Edit %s"
+msgstr ""
+
+#: View/Helper/HtmlHelper.php:770
+msgid "Home"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:513
+msgid "January"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:514
+msgid "February"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:515
+msgid "March"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:516
+msgid "April"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:517
+msgid "May"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:518
+msgid "June"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:519
+msgid "July"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:520
+msgid "August"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:521
+msgid "September"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:522
+msgid "October"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:523
+msgid "November"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:524
+msgid "December"
+msgstr ""
+

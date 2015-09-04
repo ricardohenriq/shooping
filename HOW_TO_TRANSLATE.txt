@@ -1,0 +1,49 @@
+**RECOMENDAÇÕES
+
+- BAIXAR O EDITOR "POEdit" (SERVE PARA AUXILIAR NO PROCESSO DE TRADUÇÃO)
+
+//---------------------------------------------------------------------------------------------
+
+- EXTRAIR TODAS AS STRINGS DO APLICATIVOS
+
+ACESSAR A PASTA "bin" DO PROJETO
+
+cd c:\xampp\htdocs\PROJETOS\Shopping\bin
+
+DIGITAR O COMANDO DE EXTRAÇÃO DE STRINGS
+
+cake i18n extract
+
+DIGITE O CAMINHO ABSOLUTO (ÚNICO QUE TESTEI) ATÉ A PASTA "src" DO PROJETO
+
+c:\xampp\htdocs\PROJETOS\Shopping\src
+
+CONFIRME SE ESTE É CAMINHO QUE TERÁ AS STRINGS EXTRAIDAS
+
+D (OU 'DONE')
+
+CONFIRME QUE DESEJA TAMBÉM EXTRAIR AS STRINGS DO "core" DO CAKEPHP
+
+y (OU 'yes')
+
+DIGITE O CAMINHO ABSOLUTO (ÚNICO QUE TESTEI) ATÉ A PASTA "Locale" DO PROJETO, QUE É
+ONDE SERÁ SALVO AS STRINGS EXTRAIDAS (cake.pot E default.pot)
+
+c:\xampp\htdocs\PROJETOS\Shopping\src\Locale
+
+CONFIRME QUE DESEJA QUE SEJE FEITO MERGE DE TODOS OS DOMAIN EM UM ÚNICO ARQUIVO "default.pot"
+
+y (OU 'yes')
+
+
+//---------------------------------------------------------------------------------------------
+
+PARA DEFINIR O IDIOMA PADRÃO TROQUE A SEGUINTE LINHA
+
+ini_set('intl.default_locale', 'en_US');
+
+POR
+
+ini_set('intl.default_locale', 'pt_BR');
+
+(EM ALGUNS CASOS O PRÓPRIO CAKEPHP IRÁ FAZER A CONVERSÃO DE DATA E HORA PARA O FORMATO BRASILEIRO)
