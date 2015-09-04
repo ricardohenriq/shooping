@@ -22,8 +22,7 @@ class BookingsTableTest extends TestCase
         'app.stores',
         'app.users',
         'app.user_types',
-        'app.product_features',
-        'app.product_medias'
+        'app.product_features'
     ];
 
     /**

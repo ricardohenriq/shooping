@@ -26,7 +26,6 @@ class BannersTableTest extends TestCase
         'app.stores',
         'app.product_features',
         'app.features',
-        'app.product_medias',
         'app.medias',
         'app.media_types'
     ];

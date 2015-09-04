@@ -1,3 +1,33 @@
+**RECOMENDAÇÕES
+
+- INICIAR O BANCO DE DADOS (MYSQL)
+
+PODE SER FEITO PELO PAINEL DO XAMPP OU PELO PAINEL DE SERVIÇOS DO WINDOWS
+
+ACESSAR PAINEL DE SERVIÇOS DO WINDOS
+
+DIGITE NA BUSCA DO MENU INICIAR
+
+Services
+
+PROCURE PELO SERVIÇO DO MYSQL E CLIQUE COM O MOUSE (BOTÕES ESQUERDO/DIREITO)
+PARA VER AS OPÇÕES DE INICIO
+
+
+- INICIAR O SERVIDOR DO CAKE
+
+ACESSAR A PASTA "bin" DO PROJETO
+
+cd c:\xampp\htdocs\PROJETOS\Shopping\bin
+
+DIGITAR O COMANDO DE INICIALIZAÇÃO DO SERVIDOR
+
+cake server
+
+
+
+//---------------------------------------------------------------------------------------------
+
 TESTAR 1 ARQUIVO DE TESTE POR VEZ
 
 ACESSAR A PASTA "RAIZ" DO PROJETO
@@ -8,3 +38,37 @@ COLAR O ENDEREÇO RELATIVO DO PHPUNIT SEM ASPAS SEGUIDO DO
 ENDEREÇO RELATIVO DO ARQUIVO DE TESTE
 
 vendor\bin\phpunit tests\TestCase\Model\Table\UsersTableTest
+
+
+
+//---------------------------------------------------------------------------------------------
+
+TESTAR "TODOS" OS ARQUIVOS DE TESTE DE UMA PASTA (BUSCADOS RECURSIVAMENTE 
+*TODOS OS ARQUIVOS DE TESTE DEVEM TER O SUFIXO: Test.php)
+
+ACESSAR A PASTA "RAIZ" DO PROJETO
+
+cd c:\xampp\htdocs\PROJETOS\Shopping
+
+COLAR O ENDEREÇO RELATIVO DO PHPUNIT SEM ASPAS SEGUIDO DO 
+ENDEREÇO RELATIVO DA PASTA
+
+vendor\bin\phpunit tests\TestCase
+
+OU CASO QUEIRA TESTAR SOMENTE OS CONTROLLERS
+
+vendor\bin\phpunit tests\TestCase\Controller
+
+
+//---------------------------------------------------------------------------------------------
+
+TESTAR UM "TestSuite" (DEFINIDO NO ARQUIVO phpunit.xml.dist NA RAIZ DO PROJETO)
+
+ACESSAR A PASTA "RAIZ" DO PROJETO
+
+cd c:\xampp\htdocs\PROJETOS\Shopping
+
+COLAR O ENDEREÇO RELATIVO DO PHPUNIT SEM ASPAS SEGUIDO DA 
+FLAG --testsuite E DO NOME DA TESTESUITE (ENTRE ASPAS SE HOUVER ESPAÇOS)
+
+vendor\bin\phpunit --testsuite "App Test Suite"

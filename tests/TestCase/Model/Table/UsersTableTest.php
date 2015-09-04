@@ -80,6 +80,10 @@ class UsersTableTest extends TestCase
     }
 
     public function testFindUser(){
+
+        /**
+         * Verifica se o usuário existe (retornando somente dados primitivos)
+         */
         $query = $this->Users->find('user', [
             'fields' => ['Users.id', 'Users.email', 'Users.password',
                 'Users.username', 'Users.user_type_id'],
@@ -102,6 +106,9 @@ class UsersTableTest extends TestCase
 
         //-------------------------------------------------------------------------
 
+        /**
+         * Verifica se o usuário existe (retornando dados primitivos e objetos)
+         */
         $query = $this->Users->find('user', [
             'fields' => ['Users.id', 'Users.email', 'Users.password',
                 'Users.username', 'Users.user_type_id', 'Users.created',
@@ -127,6 +134,10 @@ class UsersTableTest extends TestCase
 
         //-------------------------------------------------------------------------
 
+        /**
+         * Teste que verifica que não é possivel acessar as tabelas do banco de dados
+         * quando se esta executando os testes, somente as fixtures são acessiveis.
+         */
         $query = $this->Users->find('user', [
             'fields' => ['Users.id'],
             'conditions' => ['Users.id' => 1]
@@ -140,7 +151,7 @@ class UsersTableTest extends TestCase
             ]
         ];
 
-        $this->assertEquals($expected, $result);
+        $this->assertNotEquals($expected, $result);
     }
 
     /*public function testSendingEmails()

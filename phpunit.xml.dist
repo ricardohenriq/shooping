@@ -16,6 +16,13 @@
 		<testsuite name="App Test Suite">
 			<directory>./tests/TestCase</directory>
 		</testsuite>
+        <testsuite name="Controller Test Suite">
+            <directory>./tests/TestCase/Controller</directory>
+        </testsuite>
+        <testsuite name="Users Test Suite">
+            <file>./tests/TestCase/Controller/UsersControllerTest.php</file>
+            <file>./tests/TestCase/Model/Table/UsersTableTest.php</file>
+        </testsuite>
 		<!-- Add plugin test suites here. -->
 	</testsuites>
 

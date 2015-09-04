@@ -22,8 +22,7 @@ class ProductFeaturesControllerTest extends IntegrationTestCase
         'app.stores',
         'app.users',
         'app.user_types',
-        'app.bookings',
-        'app.product_medias'
+        'app.bookings'
     ];
 
     /**

@@ -24,7 +24,6 @@ class PromotionProductsControllerTest extends IntegrationTestCase
         'app.bookings',
         'app.product_features',
         'app.features',
-        'app.product_medias',
         'app.medias',
         'app.media_types',
         'app.promotions'

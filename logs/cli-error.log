@@ -301,3 +301,137 @@ PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.
 
 
 
+2015-09-04 13:58:46 Error: [Cake\Core\Exception\Exception] Unable to insert fixtures for "App\Test\TestCase\Model\Table\UsersTableTest" test case. SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(144): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Model\Table\UsersTableTest))
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestResult.php(325): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\UsersTableTest))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestResult.php(541): PHPUnit_Framework_TestResult->startTest(Object(App\Test\TestCase\Model\Table\UsersTableTest))
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestCase.php(702): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Model\Table\UsersTableTest))
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestSuite.php(735): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(432): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\Command.php(100): PHPUnit_TextUI_Command->run(Array, true)
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\phpunit(47): PHPUnit_TextUI_Command::main()
+#9 {main}
+
+
+2015-09-04 14:23:36 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\ProductMediasFixture" not found. Fixture "app.product_medias" was referenced in test case "App\Test\TestCase\Controller\BannersControllerTest".
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(67): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\BannersControllerTest))
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(143): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\BannersControllerTest))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestResult.php(325): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\BannersControllerTest))
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestResult.php(541): PHPUnit_Framework_TestResult->startTest(Object(App\Test\TestCase\Controller\BannersControllerTest))
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestCase.php(702): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\BannersControllerTest))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestSuite.php(735): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestSuite.php(735): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(432): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\Command.php(100): PHPUnit_TextUI_Command->run(Array, true)
+#10 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\phpunit(47): PHPUnit_TextUI_Command::main()
+#11 {main}
+
+
+2015-09-04 14:25:30 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\ProductMediasFixture" not found. Fixture "app.product_medias" was referenced in test case "App\Test\TestCase\Controller\BannersControllerTest".
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(67): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\BannersControllerTest))
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(143): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\BannersControllerTest))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestResult.php(325): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\BannersControllerTest))
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestResult.php(541): PHPUnit_Framework_TestResult->startTest(Object(App\Test\TestCase\Controller\BannersControllerTest))
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestCase.php(702): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\BannersControllerTest))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestSuite.php(735): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestSuite.php(735): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(432): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\Command.php(100): PHPUnit_TextUI_Command->run(Array, true)
+#10 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\phpunit(47): PHPUnit_TextUI_Command::main()
+#11 {main}
+
+
+2015-09-04 14:26:37 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\ProductMediasFixture" not found. Fixture "app.product_medias" was referenced in test case "App\Test\TestCase\Controller\BookingsControllerTest".
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(67): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\BookingsControllerTest))
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(143): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\BookingsControllerTest))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestResult.php(325): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\BookingsControllerTest))
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestResult.php(541): PHPUnit_Framework_TestResult->startTest(Object(App\Test\TestCase\Controller\BookingsControllerTest))
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestCase.php(702): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\BookingsControllerTest))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestSuite.php(735): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestSuite.php(735): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(432): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\Command.php(100): PHPUnit_TextUI_Command->run(Array, true)
+#10 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\phpunit(47): PHPUnit_TextUI_Command::main()
+#11 {main}
+
+
+2015-09-04 14:30:02 Error: [Cake\Core\Exception\Exception] Unable to insert fixtures for "App\Test\TestCase\Controller\PromotionProductsControllerTest" test case. SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'promotion_price' cannot be null
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(144): Cake\TestSuite\Fixture\FixtureManager->load(Object(App\Test\TestCase\Controller\PromotionProductsControllerTest))
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestResult.php(325): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\PromotionProductsControllerTest))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestResult.php(541): PHPUnit_Framework_TestResult->startTest(Object(App\Test\TestCase\Controller\PromotionProductsControllerTest))
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestCase.php(702): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Controller\PromotionProductsControllerTest))
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestSuite.php(735): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestSuite.php(735): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(432): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\Command.php(100): PHPUnit_TextUI_Command->run(Array, true)
+#9 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\phpunit(47): PHPUnit_TextUI_Command::main()
+#10 {main}
+
+
+2015-09-04 14:33:58 Warning: Warning (2): file_get_contents(http://localhost:8765/users/edit/1): failed to open stream: No connection could be made because the target machine actively refused it.
+ in [C:\xampp\htdocs\PROJETOS\Shopping\tests\TestCase\Controller\UsersControllerTest.php, line 147]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+file_get_contents - [internal], line ??
+App\Test\TestCase\Controller\UsersControllerTest::testEdit() - ROOT\tests\TestCase\Controller\UsersControllerTest.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+
+2015-09-04 14:34:00 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\ProductMediasFixture" not found. Fixture "app.product_medias" was referenced in test case "App\Test\TestCase\Model\Table\BannersTableTest".
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(67): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Model\Table\BannersTableTest))
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(143): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Model\Table\BannersTableTest))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestResult.php(325): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Model\Table\BannersTableTest))
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestResult.php(541): PHPUnit_Framework_TestResult->startTest(Object(App\Test\TestCase\Model\Table\BannersTableTest))
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestCase.php(702): PHPUnit_Framework_TestResult->run(Object(App\Test\TestCase\Model\Table\BannersTableTest))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestSuite.php(735): PHPUnit_Framework_TestCase->run(Object(PHPUnit_Framework_TestResult))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\Framework\TestSuite.php(735): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(432): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult))
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#9 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\src\TextUI\Command.php(100): PHPUnit_TextUI_Command->run(Array, true)
+#10 C:\xampp\htdocs\PROJETOS\Shopping\vendor\phpunit\phpunit\phpunit(47): PHPUnit_TextUI_Command::main()
+#11 {main}
+
+
+2015-09-04 14:40:25 Warning: Warning (2): file_get_contents(http://localhost:8765/users/edit/1): failed to open stream: No connection could be made because the target machine actively refused it.
+ in [C:\xampp\htdocs\PROJETOS\Shopping\tests\TestCase\Controller\UsersControllerTest.php, line 147]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+file_get_contents - [internal], line ??
+App\Test\TestCase\Controller\UsersControllerTest::testEdit() - ROOT\tests\TestCase\Controller\UsersControllerTest.php, line 147
+ReflectionMethod::invokeArgs() - [internal], line ??
+PHPUnit_Framework_TestCase::runTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 881
+PHPUnit_Framework_TestCase::runBare() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 746
+PHPUnit_Framework_TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 601
+PHPUnit_Framework_TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 702
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_Framework_TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 735
+PHPUnit_TextUI_TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 432
+PHPUnit_TextUI_Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+PHPUnit_TextUI_Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 100
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 47
+
+
+

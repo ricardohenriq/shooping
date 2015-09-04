@@ -50,7 +50,7 @@ class PromotionProductsFixture extends TestFixture
             'id' => 1,
             'product_id' => 1,
             'promotion_id' => 1,
-            'promotion_price' => '',
+            'promotion_price' => '10.50',
             'promotion_quantity' => 1,
             'created' => '2015-07-17 20:29:45',
             'modified' => '2015-07-17 20:29:45'
