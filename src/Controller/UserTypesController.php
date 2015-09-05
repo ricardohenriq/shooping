@@ -2,6 +2,9 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Core\Exception\Exception;
+use Cake\Datasource\Exception\RecordNotFoundException;
+use App\Exceptions\NotAccessException;
 
 /**
  * UserTypes Controller
@@ -31,11 +34,22 @@ class UserTypesController extends AppController
      */
     public function view($id = null)
     {
-        $userType = $this->UserTypes->get($id, [
-            'contain' => ['Users']
-        ]);
-        $this->set('userType', $userType);
-        $this->set('_serialize', ['userType']);
+        try {
+            $userType = $this->UserTypes->get($id, [
+                'contain' => ['Users']
+            ]);
+            $this->set('userType', $userType);
+            $this->set('_serialize', ['userType']);
+        }catch(RecordNotFoundException $e){
+            $this->Flash->error(__('Tipo de Usuário não encontrado'));
+            return $this->redirect(['action' => 'index']);
+        }catch(NotAccessException $e){
+            $this->Flash->error(__('Não foi possivel o acesso'));
+            return $this->redirect(['action' => 'index']);
+        }catch(Exception $e){
+            $this->Flash->error(__('Ocorreu um erro'));
+            return $this->redirect(['action' => 'index']);
+        }
     }
 
     /**

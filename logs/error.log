@@ -20730,3 +20730,250 @@ Stack Trace:
 #1 {main}
 
 
+2015-09-05 14:28:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class DiamondFavicon32.png could not be found.
+Exception Attributes: array (
+  'class' => 'DiamondFavicon32.png',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /diamond-favicon-32.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-05 14:29:21 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "user_types"
+Request URL: /user-types/view/199
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UserTypesController.php(36): Cake\ORM\Table->get('199', Array)
+#2 [internal function]: App\Controller\UserTypesController->view('199')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-05 14:29:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Favicon.ico could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.ico',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-05 14:29:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Favicon.ico could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.ico',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-05 14:32:33 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "user_types"
+Request URL: /user-types/view/199
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UserTypesController.php(37): Cake\ORM\Table->get('199', Array)
+#2 [internal function]: App\Controller\UserTypesController->view('199')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-05 14:33:28 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "user_types"
+Request URL: /user-types/view/199
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UserTypesController.php(37): Cake\ORM\Table->get('199', Array)
+#2 [internal function]: App\Controller\UserTypesController->view('199')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-05 14:33:44 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "user_types"
+Request URL: /user-types/view/199
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UserTypesController.php(37): Cake\ORM\Table->get('199', Array)
+#2 [internal function]: App\Controller\UserTypesController->view('199')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-05 14:35:08 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "user_types"
+Request URL: /user-types/view/199
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UserTypesController.php(37): Cake\ORM\Table->get('199', Array)
+#2 [internal function]: App\Controller\UserTypesController->view('199')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-05 14:35:43 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "user_types"
+Request URL: /user-types/view/199
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UserTypesController.php(37): Cake\ORM\Table->get('199', Array)
+#2 [internal function]: App\Controller\UserTypesController->view('199')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-05 14:35:58 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "user_types"
+Request URL: /user-types/view/199
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UserTypesController.php(37): Cake\ORM\Table->get('199', Array)
+#2 [internal function]: App\Controller\UserTypesController->view('199')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-05 14:36:17 Error: [Cake\Network\Exception\NotFoundException] Este tipo de usuário não existe
+Request URL: /user-types/view/1
+Stack Trace:
+#0 [internal function]: App\Controller\UserTypesController->view('1')
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#4 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-09-05 14:36:59 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "user_types"
+Request URL: /user-types/view/199
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UserTypesController.php(37): Cake\ORM\Table->get('199', Array)
+#2 [internal function]: App\Controller\UserTypesController->view('199')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-05 15:24:37 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "user_types"
+Request URL: /user-types/view/199
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UserTypesController.php(40): Cake\ORM\Table->get('199', Array)
+#2 [internal function]: App\Controller\UserTypesController->view('199')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-05 15:25:32 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "user_types"
+Request URL: /user-types/view/199
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UserTypesController.php(40): Cake\ORM\Table->get('199', Array)
+#2 [internal function]: App\Controller\UserTypesController->view('199')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-05 15:26:54 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "user_types"
+Request URL: /user-types/view/199
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UserTypesController.php(40): Cake\ORM\Table->get('199', Array)
+#2 [internal function]: App\Controller\UserTypesController->view('199')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-05 15:27:15 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "user_types"
+Request URL: /user-types/view/199
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UserTypesController.php(40): Cake\ORM\Table->get('199', Array)
+#2 [internal function]: App\Controller\UserTypesController->view('199')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-05 15:27:57 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "user_types"
+Request URL: /user-types/view/199
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UserTypesController.php(40): Cake\ORM\Table->get('199', Array)
+#2 [internal function]: App\Controller\UserTypesController->view('199')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-05 16:02:27 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "user_types"
+Request URL: /user-types/view/199
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UserTypesController.php(40): Cake\ORM\Table->get('199', Array)
+#2 [internal function]: App\Controller\UserTypesController->view('199')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-05 16:03:21 Error: [Cake\Controller\Exception\MissingActionException] Action UserTypesController::dfad() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UserTypesController',
+  'action' => 'dfad',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /user-types/dfad
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserTypesController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
