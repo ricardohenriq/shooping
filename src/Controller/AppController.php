@@ -15,6 +15,7 @@
 namespace App\Controller;
 
 use Cake\Controller\Controller;
+use Cake\Event\Event;
 
 /**
  * Application Controller
@@ -45,6 +46,7 @@ class AppController extends Controller
         $this->loadComponent('Excel');
         $this->loadComponent('Paginator');
         $this->loadComponent('Auth', [
+            'authorize' => 'Controller',
             'authenticate' => [
                 'Form' => [
                     'fields' => [
@@ -56,8 +58,33 @@ class AppController extends Controller
             'loginAction' => [
                 'controller' => 'Pages',
                 'action' => 'display'
+            ],
+            'logoutAction' => [
+                'controller' => 'Pages',
+                'action' => 'display'
             ]
         ]);
-        $this->Auth->allow();
+        //$this->Auth->allow();
+    }
+
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['display']);
+    }
+
+    public function isAuthorized($user = null)
+    {
+        // Only admins can access admin functions
+        if (@$this->request->params['prefix'] === 'admin') {
+            return (bool)($user['user_type_id'] === 3);
+        }
+
+        // Admin can access every action
+        if (isset($user['user_type_id']) && $user['user_type_id'] === 3) {
+            return true;
+        }
+
+        // Default deny
+        return false;
     }
 }

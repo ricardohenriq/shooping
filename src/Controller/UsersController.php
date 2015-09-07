@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Users Controller
@@ -121,6 +122,7 @@ class UsersController extends AppController
      */
     public function delete($id = null)
     {
+        //Quando acessado via GET é lançado a exceção: Method Not Allowed
         $this->request->allowMethod(['post', 'delete']);
         $user = $this->Users->get($id);
         if ($this->Users->delete($user)) {
@@ -152,8 +154,18 @@ class UsersController extends AppController
     // Este método é executado antes de cada ação dos controllers. É um ótimo lugar para
     // verificar se há uma sessão ativa ou inspecionar as permissões de um usuário.
     // Neste caso libera o acesso a action 'add' (bloqueado pelo AuthComponent)
-    public function beforeFilter(\Cake\Event\Event $event)
+    public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['add']);
+        $this->Auth->allow(['add', 'login', 'logout']);
+    }
+
+    public function isAuthorized($user = null)
+    {
+        // Only access action with your 'id'
+        if ((int) $this->request->params['pass'][0] === $user['id']){
+            return true;
+        }
+
+        return parent::isAuthorized($user);
     }
 }

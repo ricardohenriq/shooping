@@ -2,6 +2,7 @@
 namespace App\Test\TestCase\Controller;
 
 use App\Controller\UsersController;
+use Cake\Auth\DefaultPasswordHasher;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\IntegrationTestCase;
 use Cake\Routing\Router;
@@ -89,7 +90,6 @@ class UsersControllerTest extends IntegrationTestCase
         $expected = [
             [
                 'email' => 'usuariocomum999999@gmail.com',
-                'password' => 'usuariocomum999999senha',
                 'username' => 'usuariocomum999999username',
                 'user_type_id' => 900000
             ]
@@ -97,8 +97,7 @@ class UsersControllerTest extends IntegrationTestCase
 
         $users = TableRegistry::get('Users');
         $query = $users->find('all', [
-                'fields' => ['Users.email', 'Users.password', 'Users.username',
-                    'Users.user_type_id'],
+                'fields' => ['Users.email', 'Users.username', 'Users.user_type_id'],
                 'conditions' => ['Users.email' => 'usuariocomum999999@gmail.com']
             ]);
         $result = $query->hydrate(false)->toArray();
@@ -113,6 +112,26 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testEdit()
     {
+        /**
+         * Array de dados de autenticação de usuário do Banco "test"
+         */
+        $testUser = [
+            'Auth' => [
+                'User' => [
+                    'id' => 900000,
+                    'username' => 'usuariocomum1username',
+                    'password' => 'usuariocomum1senha'
+                ]
+            ]
+        ];
+
+        /**
+         * Adiciona o login de usuário (usuário no Banco "Default")
+         */
+        $this->session($testUser);
+
+        //-------------------------------------------------------------------------
+
         /**
          * Variaveis usadas nas consultas.
          */
@@ -143,10 +162,14 @@ class UsersControllerTest extends IntegrationTestCase
          * Verifica se a operação "edit" esta preenchendo o HTML adequadamente,
          * para isso é necessário usar um 'registro' que já esta no banco (e não
          * uma fixture).
+         *
+         * ESTE TESTE FOI REMOVIDO POIS A MESMA FUNCIONALIDADE DEVERÁ SER EXECUTADO
+         * USANDO O SELENIUM IDE, PORÉM O MESMO FUNCIONA DESDE QUE O ACESSO SEJA
+         * LIBERADO SEM LOGIN
          */
-        $HTMLPage = file_get_contents('http://localhost:8765/users/edit/1');
-        $this->assertContains('value="bill@outlook.com"', $HTMLPage);
-        $this->assertContains('selected="selected">common<', $HTMLPage);
+        //$HTMLPage = file_get_contents('http://localhost:8765/users/edit/1');
+        //$this->assertContains('value="bill@outlook.com"', $HTMLPage);
+        //$this->assertContains('selected="selected">common<', $HTMLPage);
 
         //-------------------------------------------------------------------------
 
@@ -188,6 +211,26 @@ class UsersControllerTest extends IntegrationTestCase
      */
     public function testDelete()
     {
+        /**
+         * Array de dados de autenticação de usuário do Banco "test"
+         */
+        $testUser = [
+            'Auth' => [
+                'User' => [
+                    'id' => 900000,
+                    'username' => 'usuariocomum1username',
+                    'password' => 'usuariocomum1senha'
+                ]
+            ]
+        ];
+
+        /**
+         * Adiciona o login de usuário (usuário no Banco "Default")
+         */
+        $this->session($testUser);
+
+        //-------------------------------------------------------------------------
+
         /**
          * Variaveis usadas nas consultas.
          */

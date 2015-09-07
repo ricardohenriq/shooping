@@ -41,9 +41,9 @@ class User extends Entity
 
     // Método acessor da propriedade "password" (coluna "password" da tabela),
     // este método será executado sempre que a proriedade for inserida no banco.
-    /*protected function _setPassword($password)
+    protected function _setPassword($password)
     {
         $hasher = new DefaultPasswordHasher();
         return $hasher->hash($password);
-    }*/
+    }
 }
