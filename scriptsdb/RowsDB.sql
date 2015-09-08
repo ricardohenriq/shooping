@@ -686,10 +686,10 @@ VALUES ('Gaveteiro', 22, NOW(), NOW());
 INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
 VALUES ('Estações de Trabalho', 22, NOW(), NOW());
 
-#! 7 registros na tabela "products" --------------------------------------------------
+#! 68 registros na tabela "products" --------------------------------------------------
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Samsung Galaxy A5 Duos Branco 4G Orange', 1, 8, 20, 40,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (1, 'Samsung Galaxy A5 Duos Branco 4G Orange', 1, 8, 20, 40,
         'Equipado com câmera frontal de 5 megapixel o Samsung Galaxy A5 4G Duos é um aparelho capaz de fazer Selfies incríveis e com uma excelente
         qualidade graças aos seus novos recursos. Agora você pode enquadrar todos os seus amigos em uma única foto com a função Selfie Panorâmica
         que captura um ângulo de até 120° do conteúdo.
@@ -703,8 +703,8 @@ VALUES ('Samsung Galaxy A5 Duos Branco 4G Orange', 1, 8, 20, 40,
         realmente precisar dele.',
         550.50, 400, 777, 1, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('TV LED 32 Smart LiteUSB HDMI LE 3278i Semp Toshiba', 2, 7, 300, 200,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (2, 'TV LED 32 Smart LiteUSB HDMI LE 3278i Semp Toshiba', 2, 7, 300, 200,
         'Agora é possível guardar os bons momentos, um bom conteúdo de programação, um filme, o capítulo da novela, aquele documentário, a final do
         campeonato com o gravador pessoal de vídeo PVR Ready. Você pode usar um HD externo ou um pen drive para gravar todo conteúdo digital da TV
         aberta.
@@ -717,8 +717,8 @@ VALUES ('TV LED 32 Smart LiteUSB HDMI LE 3278i Semp Toshiba', 2, 7, 300, 200,
         caso a emissora disponibilize esse acesso.',
         20.20, 25, 555, 2, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Motorola Moto X Android 42 GPS 3G 2 Chips 13GHZ', 3, 6, 150, 900,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (3, 'Motorola Moto X Android 42 GPS 3G 2 Chips 13GHZ', 3, 6, 150, 900,
         'Este é o novo Motorola Moto X 2ª Geração! Um Smartphone que é puro estilo e pura performance. Ele possui um design moderno e fino, com
         acabamento metálico na borda, feito com materiais nobres, perfeito para quem tem estilo e gosta sempre de inovar.
         Sua super tela Full HD de 5,2" AMOLED Gorilla Glass 3 Dual Touch possui uma imagem incrível com alto nível de nitidez. Além disso, ele
@@ -733,8 +733,8 @@ VALUES ('Motorola Moto X Android 42 GPS 3G 2 Chips 13GHZ', 3, 6, 150, 900,
         É modernidade, tecnologia e interação, em um aparelho criado especialmente para você!',
         15, 12.90, 444, 1, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Liquidificador e Processador Reverse Red Oster 110V', 4, 5, 30, 60,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (4, 'Liquidificador e Processador Reverse Red Oster 110V', 4, 5, 30, 60,
         'Liquidificador Delighter Oster. Possui potente motor reversível de 450 watts com 6 velocidades e funções pré-programadas para preparar
         coquetéis e batidas. Tem ainda jarra de vidro de 1,75 litros, a prova de choque térmico, com design fino que cabe na porta da geladeira.
         Pode ser lavada na lava-louças, tem tampa de bico acentuado e dobradiça para facilitar ao servir, lâmina removível de aço inoxidável ideal
@@ -742,8 +742,8 @@ VALUES ('Liquidificador e Processador Reverse Red Oster 110V', 4, 5, 30, 60,
         de controle de toque suave, simples e fácil de usar.',
         150.90, 140, 333, 2, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('MP3 Player Shuffle Clip FM Cabo USB Fone Suporta ate 8G', 1, 3, 900, 1200,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (5, 'MP3 Player Shuffle Clip FM Cabo USB Fone Suporta ate 8G', 1, 3, 900, 1200,
         'Controle suas músicas com um clique.
         Com o painel frontal do iPod shuffle, é mais fácil controlar as suas músicas. Pressione para reproduzir, pausar, avançar ou voltar. Clique
         onde quiser. O seu dedo está no comando.
@@ -752,8 +752,8 @@ VALUES ('MP3 Player Shuffle Clip FM Cabo USB Fone Suporta ate 8G', 1, 3, 900, 12
         ouvir suas músicas em ordem aleatória. Toque no meio para escutar as músicas em ordem.',
         5, 9.05, 222, 1, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Fone de Ouvido com MP3 Player C2 Sport Entrada Cartao SD Micro', 2, 1, 130, 200,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (6, 'Fone de Ouvido com MP3 Player C2 Sport Entrada Cartao SD Micro', 2, 1, 130, 200,
         'Fone sem fio com entrada para Cartão Micro SD igual ao usado para memória de celular, basta conectar o cartão com suas músicas preferidas
         e sair praticando o seu esporte predileto. Não é necessário nenhum acessório ou cabo. Mais mobilidade e liberdade para ir onde desejar Não
         se incomode com fios ou aparelhos. Detalhes ? Para carregar basta conectar o cabo USB ao seu aparelho, Mobilidade e prazer ao praticar o
@@ -762,39 +762,39 @@ VALUES ('Fone de Ouvido com MP3 Player C2 Sport Entrada Cartao SD Micro', 2, 1, 
         WAV Cartão Micro SD (Não Acompanha) Ruído: 86dB Frequência: 20HZ / 20KHZ Bateria: LiPo battery',
         13.99, 20.00, 99, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Bi Cama 0735 Branco Brilho Multimoveis Bebe Store', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (7, 'Bi Cama 0735 Branco Brilho Multimoveis Bebe Store', 3, 2, 200, 400,
         'Bicama mista, MDP/MDF, 15mm com pintura UV alto brilho.
          Todas as características de fabricação garantem um produto de qualidade comprovada, que combina tradição e modernidade de uma marca
          verdadeiramente conceituada neste segmento.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Jogo de Mesa com 4 Cadeiras Tampo de Vidro Temperado Incolor', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (8, 'Jogo de Mesa com 4 Cadeiras Tampo de Vidro Temperado Incolor', 3, 2, 200, 400,
         'Jogo de Mesa de Cozinha com 4 Cadeiras Tulipa com Tampo de Vidro Temperado Incolor, estrutura em aço carbono, acabamento em pintura epóxi,
         assentos em MDP de 12 mm com revestimento de espuma e corino.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Cesta Basica de Alimentos Popular', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (9, 'Cesta Basica de Alimentos Popular', 3, 2, 200, 400,
         'A Cesta Básica para Doação - Good Cestas, foi elaborada para atender de forma rápida, a demanda de compra dos seus clientes. Os seus
         produtos são de alta qualidade e de origem comprovada.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Balas Alemas Fruit Candies', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (10, 'Balas Alemas Fruit Candies', 3, 2, 200, 400,
         'BALAS ALEMÃS,UM PRODUTO COM GOSTINHO DIFERENTE UMA DELÍCIA, ALEM DE SER GOSTOSAS É UMA DECORAÇÃO PARA SUA CASA, PRODUTO LACRADO, COM PRAZO
         DE VALIDADE DE 3  ANOS, COM BALAS MISTAS SABORES, LARANJA, MORANGO, LIMÃO, FRAMBOESA, ABACAXI.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Kit Brigadeiro Premium Festa Infantil 100 Unidades', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (11, 'Kit Brigadeiro Premium Festa Infantil 100 Unidades', 3, 2, 200, 400,
         'TODOS OS NOSSOS DOCINHOS SÃO FEITOS COM LEITE CONDENSADO E CHOCOLATE DE PRIMEIRA LINHA.
         Nosso prazo de produção é de 2 dias úteis.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Tamarillo Tomate de Arvore Gigante Sementes Fruta para Mudas', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (12, 'Tamarillo Tomate de Arvore Gigante Sementes Fruta para Mudas', 3, 2, 200, 400,
         'O Tamarilho por vezes escrito tamarillo, tomate-japonês, tomate-maracujá, tomate-inglês ou tomate-arbóreo, é o fruto da espécie Solanum
         betaceum, (Sinônimo Cyphomandra betacea), pertencente à família Solanaceae.
         Nativa dos Andes na América do Sul, é rica em vitamina A, sendo indicada para controlar o colesterol. É apreciada ao natural e seu sabor
@@ -805,8 +805,8 @@ VALUES ('Tamarillo Tomate de Arvore Gigante Sementes Fruta para Mudas', 3, 2, 20
         Em Portugal também é conhecida como "tomate-inglês".',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Frutos de Ora Pro Nobis 10 Frutos Frete Gratis', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (13, 'Frutos de Ora Pro Nobis 10 Frutos Frete Gratis', 3, 2, 200, 400,
         'A ora-pro-nóbis (Pereskia aculeata Mill.) é uma cactácea não endêmica do Brasil. Suas folhas são aproveitadas como alimento em algumas
         regiões do interior de Minas Gerais e são conhecidas pelos altos teores de ferro e proteínas1.
         Seu fruto é comestível mas seu aproveitamento é muito restrito em função do desconhecimento de suas propriedades e das dificuldades de
@@ -814,30 +814,30 @@ VALUES ('Frutos de Ora Pro Nobis 10 Frutos Frete Gratis', 3, 2, 200, 400,
         sendo rico em substâncias bioativas2.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Mudas Fruta do Milagre Variedade Gigante', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (14, 'Mudas Fruta do Milagre Variedade Gigante', 3, 2, 200, 400,
         'Lindas mudas da fruta que tem despertado o mundo, agora na variedade "gigante", com frutos um pouco maiores e de maior produção;
         Possuem de 35 a 45cm e produzirão no primeiro ano (em média, 6 meses). São plantas em forma de arbustos rústicos, que exigem cuidados mínimos,
         podendo ser plantadas em vasos (40x40 ou 40 de diâmetro mínimos)',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Goji Berry 1KG Fruto Desidratado Pronta Entrega', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (15, 'Goji Berry 1KG Fruto Desidratado Pronta Entrega', 3, 2, 200, 400,
         'A Goji Berry é uma fruta originária do Tibete e da China que há muito tempo vem sendo utilizada para melhorar muitos aspectos da saúde humana.
         É rica em aminoácidos, vitaminas, ácidos graxos insaturados (como o ômega-3), poderosos antioxidantes e polissacarídeos. A melhor noticia é
         que, mesmo contendo tantos nutrientes importantes, essa frutinha tem poucas calorias.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Hibisco Desidratado Cha 500G', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (16, 'Hibisco Desidratado Cha 500G', 3, 2, 200, 400,
         'O hibisco (Hibiscus sinensis) é uma flor, rica em antocianina e polifenóis, potentes antioxidantes. Segundo estudos, a quantidade
         encontrada de antioxidante no hibisco é equivalente à quantidade encontrada nas uvas e vinho tinto.
         Os antioxidantes são capazes de neutralizar os radicais livres que são produzidos no organismo e podem ser prejudiciais à saúde, favorecendo,
         por exemplo, o envelhecimento precoce da pele e o aparecimento de algumas doenças.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Whisky Johnnie Walker Double Black 1000ML', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (17, 'Whisky Johnnie Walker Double Black 1000ML', 3, 2, 200, 400,
         'Diferentemente do Black Label Clássico (12 anos), o Double Black possue o sabor defumado mais intenso.As características de Johnnie
         Walker Black Label, especialmente as notas defumadas, são ainda mais intensas em Johnnie Walker Double Black.
         Produzido a partir da combinação de alguns maltes exclusivos, selecionados especialmente para garantir o sabor defumado e envelhecidos em
@@ -845,89 +845,89 @@ VALUES ('Whisky Johnnie Walker Double Black 1000ML', 3, 2, 200, 400,
         artesanal, feita em pequenos lotes, a partir de uísques de destilarias da costa oeste escocesa.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Vodka Absolut Unique 1L Ed. Limitada Raridade', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (18, 'Vodka Absolut Unique 1L Ed. Limitada Raridade', 3, 2, 200, 400,
         'Uma edição limitada com mais de quatro milhões de garrafas únicas em todo o Mundo, exclusivas e numeradas. Foram utilizadas 40 cores e
         aplicados diversos desenhos diferentes nas garrafas para chegar em quatro milhões de combinações artísticas únicas. Cada garrafa carrega
         um selo branco com seu número exclusivo de fabricação e com as informações sobre a bebida.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Espumante Cava Freixenet Carta Nevada 750ML', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (19, 'Espumante Cava Freixenet Carta Nevada 750ML', 3, 2, 200, 400,
         'De coloração amarelo palha com reflexos dourados, limpo e brilhante, com borbulhas de tamanho médio formando uma bela coroa. Nariz franco
         e limpo. Destacam-se aromas florais (flores blancas) e de fruta fresca, com sutis aromas cítricos. Boa estrutura em boca, fresco, suave
         acidez, bom comportamento do gás carbônico com um bouquet muito particular. Aparecem os tons florais no retronasal.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Coca-Cola Vanilla Sabores Baunilha Caixa 12 Latas', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (20, 'Coca-Cola Vanilla Sabores Baunilha Caixa 12 Latas', 3, 2, 200, 400,
         'Coca-Cola Vanilla Sabores Baunilha Caixa 12 Latas',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Refrigerante Crush Orange Importado 12 Latas', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (21, 'Refrigerante Crush Orange Importado 12 Latas', 3, 2, 200, 400,
         'Refrigerante Crush Orange Importado 12 Latas',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Refrigerante Canada Dry Ginger Ale Caixa 12 Latas', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (22, 'Refrigerante Canada Dry Ginger Ale Caixa 12 Latas', 3, 2, 200, 400,
         'Refrigerante Canada Dry Ginger Ale Caixa 12 Latas',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Ferro de Passar Roupa a Vapor com Caldeira Delonghi', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (23, 'Ferro de Passar Roupa a Vapor com Caldeira Delonghi', 3, 2, 200, 400,
         'Ferro de passar com caldeira VVX1475 da Delonghi. Possui compartimento para fios, base dupla (cerâmica + aço inox) patenteada o que
         resulta num deslizamento perfeito em todos os tipos de tecido e eficiência reforçada com o uso dos dois materiais, opção de vapor duplo
         que pode ser acionado de forma concentrada somente na ponta ou em toda a superfície da base, painel com tecla de liga/desliga e controle
         do nível de vapor, economia de água e energia de até 35% e maior durabilidade e eficiência.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Lencol Elastico 2 Fronhas Quenn Malha-Penteada 100 Algodao', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (24, 'Lencol Elastico 2 Fronhas Quenn Malha-Penteada 100 Algodao', 3, 2, 200, 400,
         'Nada mais gostoso do que uma boa noite de sono, em meio a lençóis com toque macio. Esta peça é feita em malha 100% algodão 30/1, fio
         penteado, o que garante máximo conforto e agradável descanso. Disponível em diversas cores, oferece várias opções para combinar com a
         decoração do quarto.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Manta de Sofa Gigante Tipo Capa de Sofa Algodao 240X180M', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (25, 'Manta de Sofa Gigante Tipo Capa de Sofa Algodao 240X180M', 3, 2, 200, 400,
         'Use no seu sofá lindas mantas em algodão,produto natural que realça a beleza de seu ambiente decorando sua sala dando um ar de sofisticação.
         Pode ser usada como  uma peça decorativa ou para proteger seu sofá.Usando-a dobrada como ilustra a foto, dá um ar de requinte e usando aberta
         protege de poeira e de animais que eventualmente podem estragar seu sofá .Protegendo seu sofá do dia a dia você pode economizar em uma reforma
         ou até mesmo na troca.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Divergente Insurgente Convergente Quatro 04 Livros', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (26, 'Divergente Insurgente Convergente Quatro 04 Livros', 3, 2, 200, 400,
         'Divergente é o primeiro livro da série de mesmo nome escrita pela autora norte-americana, Veronica Roth. Foi lançado nos Estados Unidos
         em 25 de Abril de 2011, chegando ao Brasil e Portugal em 2012. Seu segundo livro, Insurgente, foi lançado em 1º de Maio de 2012 nos Estados
         Unidos, enquanto o terceiro, Convergente em Outubro de 2013. A série foi comparada a Jogos Vorazes virando um grande sucesso e conquistando
         cada vez mais leitores. Conheça mais dessa trilogia imperdível!',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Box-Supernatural Kit com 05 Livros', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (27, 'Box-Supernatural Kit com 05 Livros', 3, 2, 200, 400,
         'Box Supernatural - Contendo 5 Títulos ; o Diário de John Winchester- Capa Dura. o Livro dos Monstros- Espíritos, Demônios e Ghouls. o
         Guia de Caça de Bobby Singer. Nunca Mais e Guerra dos Filhos.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Colecao 8 Livros Fabulas a Cigarra e a Formiga Lebre Raposa', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (28, 'Colecao 8 Livros Fabulas a Cigarra e a Formiga Lebre Raposa', 3, 2, 200, 400,
         'Ao mesmo tempo em que desenvolvem a capacidade de fantasia infantil, as consagradas fábulas de Esopo e La Fontaine fornecem importantes
         instruções de vida, favorecendo o poder de discernimento da criança e despertando-lhe coragem para trilhar seu caminho no mundo, consciente
         da possibilidade e importância de lutar por valores e comportamentos positivos.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Tablet Positivo Duo ZX3020 Prata e Preto 2 em 1 Quad-Core 16GB', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (29, 'Tablet Positivo Duo ZX3020 Prata e Preto 2 em 1 Quad-Core 16GB', 3, 2, 200, 400,
         'O novo notebook híbrido Positivo Duo ZX integra o que há de melhor em tablets e notebooks, unindo as duas tecnologias em um produto moderno
         e sofisticado. A tela touch destacável é um poderoso tablet de 10 polegadas, Quad-Core com Windows 8, para muito desempenho e diversão.
         Conectando à doca, transforme o tablet em um notebook e produza conteúdos de forma mais eficiente e confortável, com teclado, touchpad e porta
         USB extra para conectar dispositivos sem necessidade de adaptadores.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Pen Drive Titan 8GB Preto Multilaser PD601', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (30, 'Pen Drive Titan 8GB Preto Multilaser PD601', 3, 2, 200, 400,
         'Salve tudo que precisa e tenha sempre com você o Pen Drive Titan 8 GB. Leve e de formato anatômico ele permite que você tenha sempre à
         mão suas músicas, fotos, vídeos e arquivos pessoais.
         Compatível com Windows 98 e superiores/ Mac OS 9.0 e superiores; a conexão USB 2.0 e taxa de transmissão de 13 MB/s (leitura) e 5 MB/s
@@ -935,8 +935,8 @@ VALUES ('Pen Drive Titan 8GB Preto Multilaser PD601', 3, 2, 200, 400,
         O Titan ainda acompanha uma cordinha, para que você o prenda no estojo, chaveiro ou alça interno da bolsa, assim você sempre irá encontrá-lo.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('HD Externo Portatil Samsung M3 1TB USB 3.0', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (31, 'HD Externo Portatil Samsung M3 1TB USB 3.0', 3, 2, 200, 400,
         'Graças ao design leve e compacto, o Samsung M3 pode ser transportado com enorme facilidade. O HD externo garante que você consiga levar
         seus arquivos de fotos, vídeos, músicas e muito mais para qualquer lugar. Ao todo, o produto oferece um espaço generoso de 1TB. Para
         assegurar que os dados mais importantes não sejam violados, basta utilizar os recursos do SecretZone e SafetyKey. Compatível com Windows
@@ -945,29 +945,29 @@ VALUES ('HD Externo Portatil Samsung M3 1TB USB 3.0', 3, 2, 200, 400,
         softwares de instalação.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Tablet Semp-Toshiba TA0703G 16GB 7 WI-FI 3G', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (32, 'Tablet Semp-Toshiba TA0703G 16GB 7 WI-FI 3G', 3, 2, 200, 400,
         'O Tablet TA0703G foi desenvolvido para proporcionar aos usuários um desempenho incrível em todas as tarefas que serão utilizadas, com a
         performance do processador Rockchip Dual Core você terá uma navegação ágil e eficaz. Aliado a memória interna de 16 GB e capacidade de
         expansão para 32 GB, você terá armazenamento de sobra para se entreter a vontade e realizar todos os tipos de tarefa com segurança, sem perder nenhum arquivo.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Multifuncional Colorida Wireless 2546 HP', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (33, 'Multifuncional Colorida Wireless 2546 HP', 3, 2, 200, 400,
         'Esse all-in-one HP Deskjet de custo acessível oferece impressão sem fios fácil de qualquer lugar da sua casa, além de digitalização e
         cópia — por menos. Configure imediatamente e conte com os resultados de qualidade de que você precisa, usando cartuchos de tinta HP
         originais de baixo custo.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Fax Panasonic KX FT932BR com Bina Novo Garantia 1 Ano', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (34, 'Fax Panasonic KX FT932BR com Bina Novo Garantia 1 Ano', 3, 2, 200, 400,
         'Você pode enviar o mesmo documento para até 20 números, se você armazenar ítens na agenda telefônica ou na discagem rápida na memória de
         multitransmissão.
         Os números são mantidos na memória de multitransmissão , permitindo que sejam reutilizados com frequência.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Telefone Sem Fio Philips D1201BBR Dect 60 Bina Preto', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (35, 'Telefone Sem Fio Philips D1201BBR Dect 60 Bina Preto', 3, 2, 200, 400,
         'Telefone fixo, sem fio, é com a Philips Ideal para a sua casa ou escritório .
         O equívoco de quem diz que os telefones fixos chegaram ao fim é enorme. A utilidade deles é incrível e, se você não abre mão da eficiência,
         vai se surpreender ainda mais com esse aparelho da Philips.
@@ -981,16 +981,16 @@ VALUES ('Telefone Sem Fio Philips D1201BBR Dect 60 Bina Preto', 3, 2, 200, 400,
         Resiste longe da base Chega a até 180 horas em espera.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Bateria Musical Infantil Transformers 100 Original Kids', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (36, 'Bateria Musical Infantil Transformers 100 Original Kids', 3, 2, 200, 400,
         'Utilidades interativas Bateria Acúsitca com som radical para seu filho . Prato de metal e Bumbo com cor de metal reforçado , surporte de
         bumbo acabamento personalizado com o Maximo de uma Bateria proficional . A Bateria transformes vai criar muito momentos de emoção para
         você e seu filho invente suas batidas e torne-se um verdadeiro Rock Star Itens inclusos Acompanha: 01 - Tom Pequeno - 01 - Tom medio e tom
         grande - 01 - Prato - Suporte para Prato - 01 - Par de baquetas Marca Conthey By Kids',
         30.30, 25.00, 111, 0, '2012-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Mini Helicoptero V911 4 Canais com Gyro e Controle 24GHZ', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (37, 'Mini Helicoptero V911 4 Canais com Gyro e Controle 24GHZ', 3, 2, 200, 400,
         'O primeiro helicóptero RC que pode voar ao ar livre em clima de vento (eólica exterior grau 3-4).
         Projeto pioneiro única hélice, pode evitar consideravelmente a resistência do vento.
         Alta qualidade dossel de metal ultrafino com peso ultra-leve e forte resistência de impacto.
@@ -999,22 +999,22 @@ VALUES ('Mini Helicoptero V911 4 Canais com Gyro e Controle 24GHZ', 3, 2, 200, 4
         O controle remoto é projetado com um disply LCD para uma operação mais fácil e mais preciso.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Tapete Infantil EVA Alfabeto Numeros Alfanumerico Bebe 40PCS', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (38, 'Tapete Infantil EVA Alfabeto Numeros Alfanumerico Bebe 40PCS', 3, 2, 200, 400,
         'O Cubo Alfanumérico é um tapete colorido atóxico e lavável.
         Composto por quarenta peças em E.V.A para crianças a partir de três anos. Ele ajuda a criança estimulando a conhecer e a brincar com os
         números. Pode ser usado como decoração, para abafar o som e também amortecer impacto.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Piano Teclado Musical Infantil Sons Eletrnico Frete Gratis', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (39, 'Piano Teclado Musical Infantil Sons Eletrnico Frete Gratis', 3, 2, 200, 400,
         'BEBÊ MUSICAL PIANO, ALEGRE, DIVERTIDO, REPLETO DE CORES E SONS. AUXILIA NO DESENVOLVIMENTO PEDAGÓGICO DA CRIANÇA ESTIMULANDO A CAPACIDADE
         VISUAL, AUDITIVA E A COORDENAÇÃO MOTORA.
         POSSUI 3 FUNÇÕES DIFERENTES E LUZES PISCANTES, A CRIANÇADA VAI ADORAR!',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('DVD Player H Buster HBD 6680 Tela 27 Toca CD USB MP3 Radio', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (40, 'DVD Player H Buster HBD 6680 Tela 27 Toca CD USB MP3 Radio', 3, 2, 200, 400,
         'Esse DVD automotivo inovador e moderno possui frente Flip Down removível e controle remoto slim, assim você comanda a festa com
         tranquilidade e pode guardar o aparelho sempre que quiser.
         A tela LCD colorida tem formato Wide 16:9 e resolução 320x240, reproduzindo áudios, fotos e vídeos com excelente definição, através de CDs,
@@ -1022,14 +1022,14 @@ VALUES ('DVD Player H Buster HBD 6680 Tela 27 Toca CD USB MP3 Radio', 3, 2, 200,
         por muito menos.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Caixa Trio 100 Selenium 2 Modulos Taramps Frete Gratis', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (41, 'Caixa Trio 100 Selenium 2 Modulos Taramps Frete Gratis', 3, 2, 200, 400,
         'Através deste sistema você poderá reproduzir sons em todas as faixas de áudio.Reproduzindo entre 40Hz e 25000Hz, conseguindo assim uma
         qualidade incomparável.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Capas de Courvin para Bancos Automotivos Frete Gratis', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (42, 'Capas de Courvin para Bancos Automotivos Frete Gratis', 3, 2, 200, 400,
         'CAPAS AUTOMOTIVAS 1)ELEGÂNCIA: Capas personalizadas,com acabamentos refinados : costura dupla ,logotipo bordado.para dar um aspecto
         diferenciado em seu automóvel. seguindo a originaidade do seu carro. 2)CONFORTO : São capas desenvolvidas com a intenção de unir qualidade
         ao bem estar proporcionando.Conforto absoluto.(reforçados os encostos e assentos com uma pequena camada de espuma) 3)QUALIDADE: ?material
@@ -1046,40 +1046,40 @@ VALUES ('Capas de Courvin para Bancos Automotivos Frete Gratis', 3, 2, 200, 400,
         vender/trocar o veículo Com certeza um veículo com acabamento interno conservado,valoriza o bem, que é um patrimo patrimônio.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Kit Caixa Trio Completa 7000W 2 12 4D 2T Modulo 4000W', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (43, 'Kit Caixa Trio Completa 7000W 2 12 4D 2T Modulo 4000W', 3, 2, 200, 400,
         'Caixa de som automotivo completa: 2 - subwoofer de 12", + 4 driver, + 2 tweeter, + módulo de 1.950w Rms total e 4 corneta junto já com
         4 capacitores.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Modulo Amplificador Taramps TS 800 X4 800W RMS RCA Sedex', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (44, 'Modulo Amplificador Taramps TS 800 X4 800W RMS RCA Sedex', 3, 2, 200, 400,
         'Esse Módulo Amplificador Taramps TS 800x4 de 2 Ohms tem todos os requisitos que você precisa para deixar seu som muito mais potente e tunado.
         Elaborado para atender sons graves, médios e agudos, o Amplificador TS800X4 Taramps conta com 4 saídas de 240W a 13,8VDC, totalizando uma
         potência de 960W RMS. O Módulo Amplificador já possui crossover embutido e controle “bass boost” que ajuda controlar e reforçar mais ainda os
         graves. Além de possuir 4 entradas RCA, controle de ganho de potência e 2 Ohms',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Maleta de Ferramentas com 142 Pecas BR Tools', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (45, 'Maleta de Ferramentas com 142 Pecas BR Tools', 3, 2, 200, 400,
         'A Maleta de Ferramentas 142 peças BR Tools foi desenvolvida para facilitar sua vida na hora de transportar e armazenar suas ferramentas.
         Composto por 142 ferramentas é o kit ideal para você ter em sua residencia, escritório para auxiliar nos mais diversos reparos, as
         ferramentas são fabricadas em aço carbono que garantem maior durabilidade de seu produto. A maleta de ferramentas com 142 peças conta com
         a qualidade BR Tools, marca de máquinas e ferramentas com qualidade e desempenho avançados.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Jogo de Ferramentas 110 Pecas Mayle', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (46, 'Jogo de Ferramentas 110 Pecas Mayle', 3, 2, 200, 400,
         'Jogo de Ferramentas 110 Pecas Mayle',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Kit Jogo Ferramentas e Furadeira Maleta 110PCS Frete Gratis', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (47, 'Kit Jogo Ferramentas e Furadeira Maleta 110PCS Frete Gratis', 3, 2, 200, 400,
         'Kit Jogo Ferramentas e Furadeira Maleta 110PCS',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Camisa 3D Caveira Breakthough The Mountain no Brasil', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (48, 'Camisa 3D Caveira Breakthough The Mountain no Brasil', 3, 2, 200, 400,
         'As camisas são pré-encolhidas. São lavadas e secas no processo de tingimento, portanto, não deve haver nenhum encolhimento perceptível.
         Camisetas são feitas de 100% algodão e são tingidas à mão.
         Todos os desenhos camiseta são feitas a partir de água à base de tintas que são tingidos no tecido em si. O processo de impressão dá estas
@@ -1087,28 +1087,28 @@ VALUES ('Camisa 3D Caveira Breakthough The Mountain no Brasil', 3, 2, 200, 400,
         Lavagem: Antes de usar, lave-os separadamente em água fria.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Camisetas Engracadas Dandas Filmes Serie Games Super Herois', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (49, 'Camisetas Engracadas Dandas Filmes Serie Games Super Herois', 3, 2, 200, 400,
         'Camisetas Engracadas Dandas Filmes Serie Games Super Herois',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Camisa Social Slim Fit Importada 200 Novos Modelos', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (50, 'Camisa Social Slim Fit Importada 200 Novos Modelos', 3, 2, 200, 400,
         'FABRICAÇÃO PRÓPRIA, PRODUTO DISPONIVEL A PRONTA ENTREGA CASO NAO ESTEJA DISPONIVEL EM ESTOQUE SERÁ FABRICADO E ENVIADO NO PRAZO MAXIMO DE
         5 DIAS UTEIS.
         Acompanhamos a sua compra desde o pedido até a chegada dele à sua casa e assim, te damos toda a assistência necessária para uma compra segura.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Calca Jeans Preta Skinny Sarja Jeans', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (51, 'Calca Jeans Preta Skinny Sarja Jeans', 3, 2, 200, 400,
         'A calça skinny é um modelo que caiu no gosto de todas as mulheres, afinal, ela fica bem em todos os tipos de corpos e combina com tudo
         que é roupa. Mas lembre-se sempre da regra de ouro para compôr looks com esse tipo de calça: calça justa embaixo, a parte de cima deve
         ser larguinha! Fazer sobreposições deixa o look bem moderno. Aposte nas sobreposições camisa + cardigan ou sweater. Se você quiser um
         visual mais rocker, aposte nas jaquetas de couro modelo perfecto!',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Calca Combat Forhonor Top de Linha Ripstop Design Marines', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (52, 'Calca Combat Forhonor Top de Linha Ripstop Design Marines', 3, 2, 200, 400,
         'Produzida em tecido RIP STOP SUPER, composto por 67% algodão / 33% poliéster.
         Tecido Original, importado dos EUA - Tecido leve, superior às calças mais comuns.
         Conforto garantido, testado e aprovado pela Equipe VentureShop em Campos de Airsoft ! Pode ser usado também no dia-a-dia.
@@ -1122,20 +1122,20 @@ VALUES ('Calca Combat Forhonor Top de Linha Ripstop Design Marines', 3, 2, 200, 
         Protetor lombar para maior conforto na região lombar das costas.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Kit com 3 Cinto em Gorgoro Cafetroy', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (53, 'Kit com 3 Cinto em Gorgoro Cafetroy', 3, 2, 200, 400,
         'O Kit 3 Cinto Sandro Moscoloni são todos confeccionados em gorgorão com recortes em couro legítimo. Com largura de 4 cm. A fivela é presa
         com parafuso de regulagem, permitindo redução do tamanho original.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Adidas Springblade Drive 4 Original 20 Pronta Entrega', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (54, 'Adidas Springblade Drive 4 Original 20 Pronta Entrega', 3, 2, 200, 400,
         'Para os apaixonados por estilo e conforto, o Tênis Adidas Springblade Drive é a pedida de certa! Com uma energia explosiva aliada a um
         design inovador, proporciona impulso a cada passo.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Tenis Mizuno Prophecy 2 Original Frete Gratis Pronta Entrega', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (55, 'Tenis Mizuno Prophecy 2 Original Frete Gratis Pronta Entrega', 3, 2, 200, 400,
         'Em sua quarta versão, o Tênis Mizuno Wave Prophecy 4 Masculino mantém suas origens em proporcionar o máximo em amortecimento para o seu
         melhor desempenho nas atividades físicas. Seu cabedal todo envolto com “AIRmesh”, possui um tecido de tramas abertas que proporciona maior
         ventilação, garantindo o máximo de conforto e evitando odores indesejáveis aos seus pés. Com tecnologia “DINAMOTION FIT”, a peça permite a
@@ -1146,45 +1146,45 @@ VALUES ('Tenis Mizuno Prophecy 2 Original Frete Gratis Pronta Entrega', 3, 2, 20
         suas atividades para apenas oito horas, diferente do EVA, que necessita de vinte e quatro horas de descanso entre as atividades.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Bota Masculina Sandro Moscoloni em Couro Worker Amarelo', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (56, 'Bota Masculina Sandro Moscoloni em Couro Worker Amarelo', 3, 2, 200, 400,
         'Com um visual rústico, a Bota Challenger Off Road foi desenvolvida para proporcionar estilo, conforto e durabilidade. Confeccionada em
         couro floater, a Bota é indicada para operações de longa duração, operações em terrenos acidentados e úmidos. O modelo Challenger, também
         compõe diversos estilos mais charmosos, sempre ao lado de peças em diferentes tons. Devido ao seu visual moderno, o modelo faz o estilo
         de vários homens, que fazem de seu visual parte de sua personalidade. Ideal para quem gosta de aventuras!',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Sapato Social em Couro Verniz 100 Legitimo Frete Gratis', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (57, 'Sapato Social em Couro Verniz 100 Legitimo Frete Gratis', 3, 2, 200, 400,
         'Os sapatos masculinos são o acessório que mais valoriza a produção do homem em qualquer ocasião.
         Os sapatos em Couro Verniz são indicados para compor os looks mais formais e chiques. A linha Veneza é extremamente elegante, sofisticada,
         luxuosa e transforma um simples visual formal com muito requinte.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Sapato Importado Feminino Glitter Pronta Entrega no Brasil', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (58, 'Sapato Importado Feminino Glitter Pronta Entrega no Brasil', 3, 2, 200, 400,
         'Confeccionados com o mais alto padrão de qualidade Produto a pronta entrega!!
         Totalmente livre de qualquer tipo de tributação feita pela Alfândega.
         OBS: Os sapatos poderam ter solados vermelho ou preto, dependendo da disposição em estoque.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Sapatenis em Couro Legitimo Sandro Moscoloni Street', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (59, 'Sapatenis em Couro Legitimo Sandro Moscoloni Street', 3, 2, 200, 400,
         'Produzido em couro Látego em cor Marrone. O Sapato Sandro Moscoloni Streer, apresenta pespontos em torno do modelo e ilhoses nos passantes
         do cadarço. Detalhe de tira em gorgurão itálico na língua do calçado. Parte interior em couro com material têxtil. Palmilha macia com um
         sistema exclusivo (Flexibility 360°), proporcionando muito conforto durante o uso e um caminhar suave. Possui solado de borracha, com sistema
         de amortecimentos de impactos (SYSTEM GEL CONSTRUCTION); que garante maior conforto e estabilidade em diferentes tipos de solo.',
         30.30, 25.00, 111, 0, NOW(), NOW());
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Relogio Invicta Pro Diver 6981 Ouro 18K', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (60, 'Relogio Invicta Pro Diver 6981 Ouro 18K', 3, 2, 200, 400,
         'Um classico Invicta que não pode faltar na sua coleção. Sua pulseira em borracha com detalhes em aço inoxidável torna esse relógio um
         coringa, para uso com roupas mais formais ou esportivas. Tem sido a escolha de entrada de muitos colecionadores no mundo invicta. Um
         relógio facil de combinar e que agrada todos os gostos. Como presente é escolha certa e sem risco.',
         30.30, 25.00, 111, 0, NOW(), NOW());
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Smartwatch U8 Relogio Inteligente Bluetooth Android Iphone', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (61, 'Smartwatch U8 Relogio Inteligente Bluetooth Android Iphone', 3, 2, 200, 400,
         'Novo relógio inteligente U8 UWatch Fit para Smartphones IOS da Apple, Android, iphone 4 / 4S / 5 / 5C / 5S, Android Samsung S2 / S3 / S4 /
         Note 2 / Nota 3, HTC, Sony, Blackberry da LEMFO.
         Ideal para práticas de esportes outdoor, esse companheiro inteligente é Podômetro, Cronômetro, calendário, chamada Sync, Calculadora, Relógio,
@@ -1194,30 +1194,30 @@ VALUES ('Smartwatch U8 Relogio Inteligente Bluetooth Android Iphone', 3, 2, 200,
         smart no lugar pra tirar foto, e o clique fica por conta do U8.',
         30.30, 25.00, 111, 0, NOW(), NOW());
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Relogio Feminino com Estojo 26 Pulseiras 26 Aros Relogios', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (62, 'Relogio Feminino com Estojo 26 Pulseiras 26 Aros Relogios', 3, 2, 200, 400,
         'Este relógio analógico, além de super moderno, possui pulseira de silicone . Com 25 cores sortidas . Ideal para
         quem é pontual e gosta de estar sempre na moda!',
         30.30, 25.00, 111, 0, NOW(), NOW());
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Relogio de Pulso Vintage Feminino em Couro Brinde Exclusivo', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (63, 'Relogio de Pulso Vintage Feminino em Couro Brinde Exclusivo', 3, 2, 200, 400,
         'Relógio de pulso feminino, excelente qualidade e durabilidade! Pulseira de Couro Ajustavél. Analógico, Cores: Azul Pingente Folha,
         Vermelho Pingente Coração, Verde Pingente Coração, Marrom Pingente Folha.',
         30.30, 25.00, 111, 0, NOW(), NOW());
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Pulseira Bracelete Masculina Tribal Couro 2 Unidades Frete Gratis', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (64, 'Pulseira Bracelete Masculina Tribal Couro 2 Unidades Frete Gratis', 3, 2, 200, 400,
         'Pulseira Masculina Couro Legítimo (2 Peças)',
         30.30, 25.00, 111, 0, NOW(), NOW());
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Pulseira Masculina Bracelete Couro Legitimo Preto Aco Inox', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (65, 'Pulseira Masculina Bracelete Couro Legitimo Preto Aco Inox', 3, 2, 200, 400,
         'Pulseira Masculina confeccionada em couro legítimo, com detalhes em aço inoxidável Trabalhado.',
         30.30, 25.00, 111, 0, NOW(), NOW());
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Pulseira Feminina Victoria Secrets Cristal Banhado Ouro 18K', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (66, 'Pulseira Feminina Victoria Secrets Cristal Banhado Ouro 18K', 3, 2, 200, 400,
         'Linda Pulseira Feminina Victoria´s Secret Cristal  Swarovski Alto Brilho Banhada a Ouro 18k Tamanho da pulseira  23 centímetros, podendo
         ser ajustado para qualquer espessura de pulso menor que 23 cm.
         Linda e delicada pulseira para mulheres surpreendentes.
@@ -1225,8 +1225,8 @@ VALUES ('Pulseira Feminina Victoria Secrets Cristal Banhado Ouro 18K', 3, 2, 200
         Produto a pronta entrega com envio imediato após confirmação do pagamento.',
         30.30, 25.00, 111, 0, NOW(), NOW());
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Caixa com 10 Resmas Papel Folha A4 75G Reciclado Chamex', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (67, 'Caixa com 10 Resmas Papel Folha A4 75G Reciclado Chamex', 3, 2, 200, 400,
         'Papel de superfície lisa, totalmente reciclado, possui excelente qualidade de impressão. Ideal para diferenciar os trabalhos por possuir
         textura única e ser reciclado.
         Tipos de impressão.
@@ -1235,8 +1235,8 @@ VALUES ('Caixa com 10 Resmas Papel Folha A4 75G Reciclado Chamex', 3, 2, 200, 40
         Relatórios, cardápios, currículos, embalagens, cartazes, etc.',
         30.30, 25.00, 111, 0, NOW(), NOW());
 
-INSERT INTO products (product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES ('Carimbos para Professoras Premium 20 Original', 3, 2, 200, 400,
+INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
+VALUES (68, 'Carimbos para Professoras Premium 20 Original', 3, 2, 200, 400,
         'Carimbos personalizados para professores e profissionais da área pedagógica.
         + de 500 desenho e modelos para facilitar seu dia a dia. Ganhe mais tempo para ensinar!
         Bom, bonito e barato com a confiança de ser um produto Carimbarte.',
@@ -1289,864 +1289,1274 @@ VALUES (14, 8, 4, NOW(), NOW());
 INSERT INTO bookings (product_id, quantity, user_id, created, modified)
 VALUES (15, 6, 5, NOW(), NOW());
 
-## 7 registros na tabela "features" ----------------------------------------------------
+## 275 registros na tabela "features" ----------------------------------------------------
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Altura', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (1, 'Altura', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Largura', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (2, 'Largura', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Profundidade', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (3, 'Profundidade', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Peso', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (4, 'Peso', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Validade', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (5, 'Validade', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Garantia', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (6, 'Garantia', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Cor', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (7, 'Cor', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Material', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (8, 'Material', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Sistema Operacional', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (9, 'Sistema Operacional', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Modelo', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (10, 'Modelo', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Resolução da câmera', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (11, 'Resolução da câmera', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Câmera traseira', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (12, 'Câmera traseira', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Câmera frontal', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (13, 'Câmera frontal', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Som', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (14, 'Som', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Grava vídeo', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (15, 'Grava vídeo', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Slot para cartão', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (16, 'Slot para cartão', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Cartão incluso', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (17, 'Cartão incluso', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Rádio FM', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (18, 'Rádio FM', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('MP3 player', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (19, 'MP3 player', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Bluetooth', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (20, 'Bluetooth', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Bluetooth Estéreo (ouça suas músicas em um dispositivo Bluetooth)', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (21, 'Bluetooth Estéreo (ouça suas músicas em um dispositivo Bluetooth)', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Wi-Fi', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (22, 'Wi-Fi', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Conectividade', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (23, 'Conectividade', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Suporte a GPS', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (24, 'Suporte a GPS', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Mensagens', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (25, 'Mensagens', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Toques', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (26, 'Toques', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Processador', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (27, 'Processador', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('RAM', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (28, 'RAM', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Sintonizador de TV', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (29, 'Sintonizador de TV', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tecnologia', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (30, 'Tecnologia', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Quadriband GSM', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (31, 'Quadriband GSM', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Frequências', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (32, 'Frequências', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Dual Chip', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (33, 'Dual Chip', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tipo do Chip', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (34, 'Tipo do Chip', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Memória interna', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (35, 'Memória interna', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Resolução do visor/display (pixels)', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (36, 'Resolução do visor/display (pixels)', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tamanho do visor (cm)', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (37, 'Tamanho do visor (cm)', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Cor', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (38, 'Cor', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Observações', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (39, 'Observações', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tipo de tela', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (40, 'Tipo de tela', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('DTVi', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (41, 'DTVi', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('PVR Ready', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (42, 'PVR Ready', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Closed Caption', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (43, 'Closed Caption', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Canais Favoritos', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (44, 'Canais Favoritos', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Sleep Timer e Timer On', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (45, 'Sleep Timer e Timer On', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Bloquear canais e Bloqueio por classificação indicativa', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (46, 'Bloquear canais e Bloqueio por classificação indicativa', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('EPG', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (47, 'EPG', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('HDMI ARC', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (48, 'HDMI ARC', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Entradas HDMI', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (49, 'Entradas HDMI', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Entrada de Vídeo Composto (áudio e vídeo)', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (50, 'Entrada de Vídeo Composto (áudio e vídeo)', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Entrada para PC', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (51, 'Entrada para PC', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Porta LAN - para conexão de rede', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (52, 'Porta LAN - para conexão de rede', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Saída para fone de ouvido', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (53, 'Saída para fone de ouvido', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Entrada USB', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (54, 'Entrada USB', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Estéreo Surround', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (55, 'Estéreo Surround', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Modo preferencial de som', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (56, 'Modo preferencial de som', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Auto volume', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (57, 'Auto volume', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Potência de saída de áudio', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (58, 'Potência de saída de áudio', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Modo preferencial de imagem', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (59, 'Modo preferencial de imagem', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Ajuste da luz de fundo', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (60, 'Ajuste da luz de fundo', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Voltagem', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (61, 'Voltagem', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Stand by', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (62, 'Stand by', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Consumo Médio', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (63, 'Consumo Médio', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Wi-fi', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (64, 'Wi-fi', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Capacidade do Copo', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (65, 'Capacidade do Copo', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Código do Produto', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (66, 'Código do Produto', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Funções', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (67, 'Funções', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Velocidade', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (68, 'Velocidade', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Marca', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (69, 'Marca', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Alimentação', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (70, 'Alimentação', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Portátil (sem fio)', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (71, 'Portátil (sem fio)', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Cor', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (72, 'Cor', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('SAC', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (73, 'SAC', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Fornecedor', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (74, 'Fornecedor', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Código de Barras', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (75, 'Código de Barras', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Formatos reproduzidos de áudio', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (76, 'Formatos reproduzidos de áudio', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Formatos reproduzidos de vídeo', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (77, 'Formatos reproduzidos de vídeo', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Formatos reproduzidos de fotos', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (78, 'Formatos reproduzidos de fotos', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Formatos reproduzidos de textos', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (79, 'Formatos reproduzidos de textos', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Duração da Bateria em uso', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (80, 'Duração da Bateria em uso', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Duração da Bateria em standby', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (81, 'Duração da Bateria em standby', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Entrada para qual modelo de Cartão de Memória', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (82, 'Entrada para qual modelo de Cartão de Memória', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Memória interna', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (83, 'Memória interna', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Conexões', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (84, 'Conexões', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Idiomas', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (85, 'Idiomas', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Alimentação', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (86, 'Alimentação', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Coleção', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (87, 'Coleção', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Faixa de Peso Suportado (Kg)', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (88, 'Faixa de Peso Suportado (Kg)', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Classificação', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (89, 'Classificação', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Acessórios', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (90, 'Acessórios', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Pés (Material)', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (91, 'Pés (Material)', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Acabamento', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (92, 'Acabamento', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Estrutura', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (93, 'Estrutura', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Assentos', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (94, 'Assentos', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tampo', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (95, 'Tampo', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Quantidade de itens', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (96, 'Quantidade de itens', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tipo', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (97, 'Tipo', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Fabricado em', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (98, 'Fabricado em', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Sabor', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (99, 'Sabor', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Validade', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (100, 'Validade', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Cultivo', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (101, 'Cultivo', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Usos', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (102, 'Usos', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Nome Cientifico', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (103, 'Nome Cientifico', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Forma de entrega', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (104, 'Forma de entrega', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Nome popular', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (105, 'Nome popular', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Origem', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (106, 'Origem', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Caraterísticas', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (107, 'Caraterísticas', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Porte', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (108, 'Porte', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Flores', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (109, 'Flores', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Luz', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (110, 'Luz', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Solo', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (111, 'Solo', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Clima', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (112, 'Clima', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Regas', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (113, 'Regas', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Podas', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (114, 'Podas', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Adubação', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (115, 'Adubação', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Graduação Alcoólica (%)', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (116, 'Graduação Alcoólica (%)', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Peso liquido', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (117, 'Peso liquido', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Ingredientes', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (118, 'Ingredientes', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Aroma', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (119, 'Aroma', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Mais Informações Tecnicas', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (120, 'Mais Informações Tecnicas', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Temperatura ideal', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (121, 'Temperatura ideal', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Placa antiaderente', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (122, 'Placa antiaderente', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Vapor', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (123, 'Vapor', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Conteúdo da Embalagem', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (124, 'Conteúdo da Embalagem', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Capacidade', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (125, 'Capacidade', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Lençol com elástico', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (126, 'Lençol com elástico', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Medida do lençol de baixo', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (127, 'Medida do lençol de baixo', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Medida fronha', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (128, 'Medida fronha', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Lençol com elástico', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (129, 'Lençol com elástico', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Bordado', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (130, 'Bordado', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Estampado', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (131, 'Estampado', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Medidas do Colchão', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (132, 'Medidas do Colchão', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Antialérgico', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (133, 'Antialérgico', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Observações', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (134, 'Observações', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Autor(a)', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (135, 'Autor(a)', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Título', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (136, 'Título', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Subtítulo', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (137, 'Subtítulo', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('ISBN', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (138, 'ISBN', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Páginas', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (139, 'Páginas', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Edição', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (140, 'Edição', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tipo de capa', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (141, 'Tipo de capa', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Formato', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (142, 'Formato', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Editora', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (143, 'Editora', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Ano', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (144, 'Ano', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Idioma', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (145, 'Idioma', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Processador', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (146, 'Processador', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Modelo Processador', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (147, 'Modelo Processador', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Cache', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (148, 'Cache', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Memória RAM', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (149, 'Memória RAM', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Placa Mãe', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (150, 'Placa Mãe', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('HD', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (151, 'HD', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Drives', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (152, 'Drives', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Placa de vídeo', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (153, 'Placa de vídeo', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Teclado', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (154, 'Teclado', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Mouse', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (155, 'Mouse', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Sistema Operacional', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (156, 'Sistema Operacional', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Conector', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (157, 'Conector', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Memória (GB)', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (158, 'Memória (GB)', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Resistente a Água', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (159, 'Resistente a Água', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Resistente a Quedas', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (160, 'Resistente a Quedas', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Leitor de Digitais - Biométrico', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (161, 'Leitor de Digitais - Biométrico', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Proteção com Criptografia', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (162, 'Proteção com Criptografia', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Possui Tecnologia Ready Boost', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (163, 'Possui Tecnologia Ready Boost', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Sistema Operacional Compatível', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (164, 'Sistema Operacional Compatível', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Softwares inclusos', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (165, 'Softwares inclusos', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Velocidade de impressão', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (166, 'Velocidade de impressão', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Resolução de impressão', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (167, 'Resolução de impressão', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Ciclo de trabalho mensal', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (168, 'Ciclo de trabalho mensal', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tempo para a primeira Preto e Branco', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (169, 'Tempo para a primeira Preto e Branco', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tempo para a primeira Colorida', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (170, 'Tempo para a primeira Colorida', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Profundidade de Bits', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (171, 'Profundidade de Bits', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Resolução de Digitalização', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (172, 'Resolução de Digitalização', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tipo de papel suportado', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (173, 'Tipo de papel suportado', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Capacidade de papel suportado', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (174, 'Capacidade de papel suportado', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Capacidade de entrada e saída de papel', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (175, 'Capacidade de entrada e saída de papel', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Cartuchos/Toners compatíveis', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (176, 'Cartuchos/Toners compatíveis', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Certificações', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (177, 'Certificações', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Nível de ruído', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (178, 'Nível de ruído', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Agenda', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (179, 'Agenda', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Bobina inicial', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (180, 'Bobina inicial', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Identificador de chamada', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (181, 'Identificador de chamada', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Memória de recepção sem papel', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (182, 'Memória de recepção sem papel', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Número de discagem rápida', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (183, 'Número de discagem rápida', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Rediscagem automática', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (184, 'Rediscagem automática', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Registro de chamadas', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (185, 'Registro de chamadas', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Transmissão programada', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (186, 'Transmissão programada', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Transmissão internacional', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (187, 'Transmissão internacional', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Velocidade de transmissão', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (188, 'Velocidade de transmissão', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Velocidade/Modem', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (189, 'Velocidade/Modem', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Sistema de compressão', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (190, 'Sistema de compressão', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tipo de impressão', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (191, 'Tipo de impressão', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Modo de discagem:', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (192, 'Modo de discagem:', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Viva-voz', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (193, 'Viva-voz', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Secretária eletrônica', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (194, 'Secretária eletrônica', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Acompanha ramal', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (195, 'Acompanha ramal', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Expansível até', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (196, 'Expansível até', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Conferência de chamadas', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (197, 'Conferência de chamadas', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Ajuste no volume da campainha', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (198, 'Ajuste no volume da campainha', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Fixável na parede', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (199, 'Fixável na parede', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Faixa etária', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (200, 'Faixa etária', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Diâmetro do rotor principal', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (201, 'Diâmetro do rotor principal', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Diâmetro do rotor de cauda', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (202, 'Diâmetro do rotor de cauda', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tempo de vôo', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (203, 'Tempo de vôo', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tempo de Recarga', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (204, 'Tempo de Recarga', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Distância de alcance', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (205, 'Distância de alcance', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Altura de vôo', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (206, 'Altura de vôo', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Rádio', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (207, 'Rádio', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Mídias compatíveis', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (208, 'Mídias compatíveis', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Função Repeat', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (209, 'Função Repeat', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Iluminação das teclas', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (210, 'Iluminação das teclas', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Painel removível', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (211, 'Painel removível', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Forração removível', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (212, 'Forração removível', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Forração lavavel', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (213, 'Forração lavavel', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Número De Canais', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (214, 'Número De Canais', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Potência Máx.', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (215, 'Potência Máx.', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Sensibilidade de Entrada', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (216, 'Sensibilidade de Entrada', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Distorção Harmônica Total (THD)', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (217, 'Distorção Harmônica Total (THD)', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Separação entre Canais (Crosstalk)', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (218, 'Separação entre Canais (Crosstalk)', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Relação Sinal/Ruído', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (219, 'Relação Sinal/Ruído', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Resposta De Frequência (Full Range)', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (220, 'Resposta De Frequência (Full Range)', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Crossover', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (221, 'Crossover', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Impedância de Entrada', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (222, 'Impedância de Entrada', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Sistema de Proteção', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (223, 'Sistema de Proteção', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tensão de Alimentação Mínima', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (224, 'Tensão de Alimentação Mínima', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tensão de Alimentação Máxima', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (225, 'Tensão de Alimentação Máxima', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Consumo em Repouso', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (226, 'Consumo em Repouso', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Consumo Máximo Musical', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (227, 'Consumo Máximo Musical', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Consumo Máximo em Sinal Senoidal', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (228, 'Consumo Máximo em Sinal Senoidal', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Uso Ideal', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (229, 'Uso Ideal', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Pré-encolhida', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (230, 'Pré-encolhida', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Lavagem', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (231, 'Lavagem', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tamanho', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (232, 'Tamanho', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Manga Tipo', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (233, 'Manga Tipo', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Gola', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (234, 'Gola', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tecido Gola', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (235, 'Tecido Gola', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Ombro Tamanho', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (236, 'Ombro Tamanho', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Busto Tamanho', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (237, 'Busto Tamanho', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Manga Tamanho', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (238, 'Manga Tamanho', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Cintura Tamanho', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (239, 'Cintura Tamanho', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Quadril Tamanho', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (240, 'Quadril Tamanho', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Coxa Tamanho', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (241, 'Coxa Tamanho', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Canela Tamanho', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (242, 'Canela Tamanho', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Gancho frente Tamanho', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (243, 'Gancho frente Tamanho', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Gancho traseiro Tamanho', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (244, 'Gancho traseiro Tamanho', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Entrepernas Tamanho', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (245, 'Entrepernas Tamanho', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Bolsos', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (246, 'Bolsos', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Fechamento/Abertura', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (247, 'Fechamento/Abertura', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Numeração', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (248, 'Numeração', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Cabedal (Parte Superior Externa)', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (249, 'Cabedal (Parte Superior Externa)', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Solado', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (250, 'Solado', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Lingueta', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (251, 'Lingueta', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Palmilha', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (252, 'Palmilha', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Forro', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (253, 'Forro', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Ajuste', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (254, 'Ajuste', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tamanho do Cano', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (255, 'Tamanho do Cano', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Tamanho do Salto', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (256, 'Tamanho do Salto', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Embalagem', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (257, 'Embalagem', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Diâmetro da Caixa', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (258, 'Diâmetro da Caixa', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Profundidade da Caixa', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (259, 'Profundidade da Caixa', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Largura da Pulseira', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (260, 'Largura da Pulseira', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Cor do mostrador', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (261, 'Cor do mostrador', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Material da Caixa', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (262, 'Material da Caixa', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Material do Visor', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (263, 'Material do Visor', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Material da Pulseira', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (264, 'Material da Pulseira', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Prova d\'água', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (265, 'Prova d\'água', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Forro', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (266, 'Forro', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Movimento', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (267, 'Movimento', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Touch Screen', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (268, 'Touch Screen', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Vibra-call', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (269, 'Vibra-call', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Mostrador de Horas', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (270, 'Mostrador de Horas', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Redes Sociais', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (271, 'Redes Sociais', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Alarme anti-perda', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (272, 'Alarme anti-perda', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Altimetro', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (273, 'Altimetro', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Hodometro', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (274, 'Hodometro', NOW(), NOW());
 
-INSERT INTO features (feature_name, created, modified)
-VALUES ('Sincronização', NOW(), NOW());
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (275,'Sincronização', NOW(), NOW());
+
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (276, 'Tamanho do visor (Polegadas)', NOW(), NOW());
+
+INSERT INTO features (id, feature_name, created, modified)
+VALUES (277, 'Diagonal Visual (Cm)', NOW(), NOW());
 
 #! 10 registros na tabela "product_features" --------------------------------------------
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('30 Cm', 1, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES ('Android 4.4 KitKat', 9, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2 Kg', 2, 2, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES ('Barra', 10, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('30 Dias', 3, 3, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES ('Traseira 13MP e Frontal 5MP', 11, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('6 Meses', 4, 4, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES ('Sim', 12, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Azul', 5, 5, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES ('Sim', 13, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Madeira', 6, 6, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES ('Rádio FM,  MP3 Player', 14, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('40 Cm', 7, 7, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES ('Sim', 15, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('20 Kg', 2, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES ('MicroSD até 64 GB', 16, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('90 Dias', 3, 2, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES ('Não', 17, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2 Meses', 4, 3, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES ('Sim', 18, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 19, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 20, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Não', 21, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 22, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('USB 2.0, Bluetooth 4.0, Wi-Fi 802.11 a/b/g/n 2.4+5GHz, HT40, NFC', 23, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 24, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('SMS,  MMS,  E-mail', 25, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Polifônicos,  MP3', 26, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Quad Core de 1.2 Ghz', 27, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('2GB', 28, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Não', 29, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('GSM,  3G,  4G', 30, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 31, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('GSM 850/900/1800/1900 MHz', 32, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('sim', 33, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Nano SIM', 34, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('16GB Total sendo uma parte usada para o sistema operacional e aplicativos pré-instalados', 35, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('1280 x 720', 36, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('12,7', 37, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Branco', 38, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('- Aparelho Samsung Galaxy A5 4G Duos A500M/DS Branco - Tim
+        - Carregador
+        - Bateria
+        - Cabo USB
+        - Fone de Ouvido', 124, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('12 meses', 6, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('1.Para utilizar este celular é preciso ter um chip (vendido separadamente). Este aparelho
+        está habilitado para que funcione com operadoras nacionais com Tecnologia GSM (Vivo, Oi, Tim, Claro,
+        Brasil Telecom, CTBC, Sercomtel, Telemig).
+        2.Este é um celular Dual Chip, ou seja, funciona com dois chips no mesmo aparelho.
+        3.O desempenho da bateria pode variar dependendo de diversos fatores como: configuração do celular,
+        da rede, potência do sinal e temperatura de operação.
+        4. A capacidade de memória interna ROM ( Read-Only Memory ) disponível ao usuário é menor que a
+        capacidade especificada devido ao sistema operacional e às aplicações padrões que já vem instaladas
+        no aparelho, ocupando parte da memória. A capacidade disponível pode variar ao atualizar o aparelho.
+        5.O compartimento do chip 2 também funciona como compartimento de cartão de
+        memória. Entretanto, você não pode colocar ambos os chips e o cartão de memória
+        ao mesmo tempo.
+        ATENÇÃO: A rede 4G no Brasil é limitada. Consulte uma operadora de telefonia móvel para obter
+        informações de pacotes de dados e cidades de cobertura.', 39, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('13,93 (Cm)', 1, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('6,97 (Cm)', 2, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('6,70 (Cm)', 3, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('123,00 (Gramas)', 4, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('4444-4444 (capitais e grandes centros) / 0800-444-444 (demais cidades e regiões)', 73, 1, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Preta', 7, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Para uso de Rede sem Fio a Semp Toshiba tem os seguintes adaptadores Wi-Fi homologados
+        (não inclusos): TP-LINK modelo: TL-WN722N (Versão 1.10), TL-WN723N (Versão 2.0), TL-WN723N
+        (Versão 3.0), TL-WN725N (Versão 2.0), TL-WN821N (Versão 4.2), TL WN822N (Versão 3.0) e
+        TL-WN823N (Versão 1.2).', 22, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('32', 276, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('1366X768', 36, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 41, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('2', 49, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('2', 54, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Full Screen/Widescreen', 142, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('80', 277, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('4:3, cinema, legenda, nativo, tela cheia, panorâmico e full view.', 59, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 43, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 45, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 50, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('47,4 (Cm)', 1, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('73,2 (Cm)', 2, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('20 (Cm)', 3, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('6,7 (Kg)', 4, 2, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('', , , NOW(), NOW());
 
 ## 3 registros na tabela "media_types" --------------------------------------------------
 
