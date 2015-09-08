@@ -2310,163 +2310,176 @@ INSERT INTO product_features (feature_value, feature_id, product_id, created, mo
 VALUES ('6,7 (Kg)', 4, 2, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Android', 156, 3, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('5.2', 276, 3, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('4G', 30, 3, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Sim', 64, 3, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Sim', 20, 3, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('13MP', 13, 3, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('2.5 (GHz)', 27, 3, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('13,97 (Cm)', 1, 3, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('7,19 (Cm)', 2, 3, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('0,99 (Cm)', 3, 3, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('144 (Gramas)', 4, 3, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('110V ou 220V ', 61, 4, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('7 funções: Triturar Gelo, Processar Alimentos, Três velocidades manuais,
+        Pulsar Rápido e Pulsar Lento, ', 67, 4, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('600 (Watts)', 215, 4, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Metal e vidro', 8, 4, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('1,25 (Litros)', 65, 4, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('35 (Cm)', 1, 4, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('26 (Cm)', 2, 4, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('22 (Cm)', 3, 4, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('2 (Kg)', 4, 4, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('3 Horas', 80, 5, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('01 Mini MP3 player + Fones de Ouvido + Cabo USB', 124, 5, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('MP3, WMA', 76, 5, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('4,5 (Cm)', 1, 5, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('3,2 (Cm)', 2, 5, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('1,4 (Cm)', 3, 5, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Mp3 , WMA, WAV', 76, 6, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('20HZ / 20KHZ ', 32, 6, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Cartão Micro SD (Não Acompanha)', 82, 6, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Multimóveis', 69, 7, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Tradicional', 87, 7, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('71 a 110 (Kg)', 88, 7, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Solteiro', 89, 7, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('MDP', 8, 7, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Metal', 91, 7, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('90,5 (Cm)', 1, 7, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('193,5 (Cm)', 2, 7, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('85,5 (Cm)', 3, 7, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('38,5 (Kg)', 4, 7, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Tubos de aço carbono', 93, 8, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Pintura Epóxi', 92, 8, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Vidro incolor temperado com 6 mm', 95, 8, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('MDP de 12 mm, revestidos com espuma e corino', 94, 8, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Recomendamos que a montagem seja feita por um profissional.', 134, 8, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('80 (Cm)', 1, 8, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('80 (Cm)', 2, 8, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('77 (Cm)', 3, 8, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('13', 96, 9, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('12 (Kg)', 4, 9, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('1 Açúcar Refinado pt 1Kg SOLITO,
+        1 Arroz Agulhinha T.1 pt (5Kg) SOLITO,
+        1 Biscoito Recheado pt 125g VISCONTI,
+        1 Café Torrado e Moído Extra Forte pt 250g JARDIM,
+        2 Composto Lacteo c/ Açúcar (Leite em Pó) pt 200g MERILU,
+        1 Feijão Carioca T.1 pt 1kg 5 ESTRELAS,
+        1 Fubá Tipo Mimoso pt 500g AGROBAL / ZANIN,
+        1 Goiabada Tablete pt 300g VAL / PLOKY,
+        1 Macarrão Parafuso/Pene c/ Ovos pt 500g ADRIA,
+        1 Óleo de Soja Refinado pet 900ml LEVE / CONCORDIA,
+        1 Molho de Tomate tp 340g STELLA DORO,
+        1 Sal Refinado pt 1kg NOBRE,
+        1 Embalagem Papelão nr.05 RV', 124, 9, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('966 (Gramas)', 4, 10, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Sortidos: Laranja, Morango, Limão', 99, 10, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('3 Anos', 100, 10, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
 VALUES ('', , , NOW(), NOW());
