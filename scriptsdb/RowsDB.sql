@@ -2482,34 +2482,37 @@ INSERT INTO product_features (feature_value, feature_id, product_id, created, mo
 VALUES ('3 Anos', 100, 10, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('- 50 BRIGADEIROS
+        - 25 BEIJINHOS DE COCO
+        - 25 BRIGADEIROS DE MORANGO ( BICHO DE PÉ )', 124, 11, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('100', 96, 11, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('tomatão, tomate-francês, tomate-de-árvore, sangue-de-boi, tomate-japonês, tomate-inglês', 105, 12, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Andes na América do Sul', 106, 12, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Pequeno porte', 108, 12, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Não requer cuidados especiais, mas que sofre bastante com as geadas pelo que necessita de
+        ser protegida no Inverno. Propaga-se por semente e por estacas dos ramos.', 112, 12, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Proteção e alimento', 102, 13, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Flores perfumadas, pequenas, brancas com miolo alaranjado e ricas em pólen e néctar', 109, 13, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Plantado em vasos ou cercas (Cerca viva)', 101, 13, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Adubo de floração', 115, 13, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
 VALUES ('', , , NOW(), NOW());
