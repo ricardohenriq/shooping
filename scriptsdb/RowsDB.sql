@@ -2945,70 +2945,201 @@ INSERT INTO product_features (feature_value, feature_id, product_id, created, mo
 VALUES ('10 gramas', 4, 30, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('1 TB (1000 GB)', 158, 31, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Windows,  Mac', 164, 31, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('- Samsung SecretZone™: aplicação de segurança que previne o acesso a arquivos privativos
+        em área designada SecretZone™ - SafetyKey™: protege seus dados com senha', 165, 31, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('USB de alta velocidade (2.0 e 3.0)', 157, 31, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Não necessita de alimentação externa: direto da porta USB', 70, 31, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('- HD Externo Portátil Samsung
+        - Cabo USB
+        - Guia de instalação rápida', 124, 31, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Preto', 7, 31, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Bivolt 110V / 220V', 61, 31, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('3 meses', 6, 31, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('2,00 Cm', 1, 31, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('8,00 Cm', 2, 31, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('11,00 Cm', 3, 31, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('279,00 Gramas', 4, 31, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('TA0703G', 10, 32, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Dual Core', 147, 32, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Preto', 7, 32, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('3G', 23, 32, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Android 4.1', 156, 32, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('7', 276, 32, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('1024 x 600', 36, 32, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Capacitivo', 268, 32, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('16 GB', 35, 32, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Cartão micro SD', 82, 32, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('32 Gb', 196, 32, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('0,3 Mega Pixels', 13, 32, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('2 Mega Pixels', 12, 32, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Bivolt', 61, 32, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('12.6 cm', 1, 32, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('20 cm', 2, 32, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('1 cm', 3, 32, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('347 gramas', 4, 32, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('12 meses', 6, 32, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('- 1 Manual Simplificado
+        - 1 Cabo USB
+        - 1 Fone de Ouvido
+        - 1 Carregador
+        - 1 Tablet', 124, 32, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('HP', 69, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('A9U24A#AK4.', 10, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Branco', 38, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Jato de tinta', 191, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('- Impressora
+        - Copiadora
+        - Scanner', 67, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('LCD monocromático de alta resolução.', 40, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('2 (5 cm)', 276, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Wi-fi, USB', 23, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('- Preto (ISO): Até 7 ppm; Preto (rascunho, A4): Até 20 ppm; Preto (rascunho, carta): Até 20 ppm;
+        - Cor (ISO): Até 4 ppm; Colorido (rascunho, A4): Até 16 ppm; Colorido (rascunho, carta): Até 16 ppm;', 166, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('- Preto: Até 600 x 600 dpi renderizados;
+        - Cor: Até 4800 x 1200 dpi otimizados e 1200 X 1200 dpi de entrada.', 167, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Mensalmente, A4: Até 1000 páginas.', 168, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Saída da primeira página em preto (A4, pronta): Velocidade máxima 17 segundos;', 169, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Saída da primeira página em cores (A4, pronta): Até 24 segundos.', 170, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('256; 24 bits.', 171, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Hardware: Até 1200 x 1200 dpi; Ótica: Até 1200 dpi; Resolução de digitalização aprimorada:
+        Até 1200 dpi.', 172, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Papel (brochura, jato de tinta, normal), papel fotográfico, envelopes, etiquetas, cartões (saudações).
+        A4; B5; A5; A6; Envelope DL; Carta; Ofício; 4 x 6 pol.; 5 x 7 pol.; 8 x 10 pol.; Envelopes núm. 10', 173, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('- Bandeja de entrada para 60 folhas;
+        - Bandeja de saída para 25 folhas;
+        - Opções de frente e verso: Frente e verso manual;
+        - Alimentador de envelopes: Não;
+        - Bandejas para Papel Standard: 1.', 174, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Capacidade máxima de entrada: Até 60 folhas ofício, Até 10 folhas Etiqueta, Até 20 folhas papel
+        fotográfico, Até 20 folhas Foto 4x6, Até 20 cartões, Até 5 envelopes. Capacidade máxima de saída: Até 25
+        folhas ofício, Até 10 folhas Etiqueta, Até 20 folhas papel fotográfico, Até 20 cartões, Até 5 envelopes.', 175, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('- Tricolor CZ106AB HP 662XL
+        - Tricolor CZ104AB HP
+        - Preto CZ103AB HP 662
+        - Preto CZ105AB HP 662XL', 176, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Energy Star', 177, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('- Emissões de potência acústica: 6,1 B(A);
+        - Emissões de Pressão Acústica: 55 dB(A).', 178, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('25,219 Cm', 1, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('55,219 Cm', 2, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('42,523 Cm', 3, 33, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('3,6 Kg', 4, 33, NOW(), NOW());
 
 ## 3 registros na tabela "media_types" --------------------------------------------------
 
