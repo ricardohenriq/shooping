@@ -2652,97 +2652,297 @@ INSERT INTO product_features (feature_value, feature_id, product_id, created, mo
 VALUES ('Canada Dry', 69, 22, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Delonghi', 69, 23, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Sim', 122, 23, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Sim', 123, 23, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('110V', 61, 23, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('1750W', 215, 23, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('1,75kw/h', 63, 23, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Azul e Branco', 72, 23, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('30,2 (Cm)', 1, 23, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('24 (Cm)', 2, 23, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('39 (Cm)', 3, 23, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('3,85 (Kg)', 4, 23, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('1 Ferro de passar e 1 manual de instruções.', 124, 23, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('VVX1475-127V Ferro de Passar à Vapor DL', 10, 23, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Queen', 97, 24, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('100% Algodão', 8, 24, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('1,58x1,98x0,30 cm (Altura x Largura x Profundidade)', 127, 24, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('50x70 cm (Altura x Largura)', 128, 24, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Sim', 129, 24, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Não', 130, 24, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Sim', 131, 24, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('1,58x1,98x30 cm (Altura x Largura x Profundidade)', 132, 24, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Não', 133, 24, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('1.98 cm', 1, 24, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('1.58 cm', 2, 24, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('0.3 cm', 3, 24, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('2,40 M', 1, 25, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('1,80 M', 2, 25, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Algodão', 8, 25, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Diversas', 38, 25, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Utilize a manta aberta durante a semana para a proteção do seu sofá e dobrada
+        nos fins de semana decorar. Assim seu sofá ficará mais tempo bonito e apresentável.', 102, 25, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Divergente', 136, 26, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Veronica Roth', 135, 26, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Juvenil', 97, 26, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Rocco', 143, 26, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Português', 145, 26, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('2012', 144, 26, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Brochura', 92, 26, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Médio', 142, 26, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('13,4 cm', 1, 26, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('20 cm', 2, 26, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('7 cm', 3, 26, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Volume 1: 9788579801313, Volume 2: 9788579801314, Volume 3: 9788579801310,
+        Volume 4: 9788579801311', 138, 26, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Volume 1: 500, Volume 2: 520, Volume 3: 530, Volume 4: 540', 139, 26, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('4', 96, 26, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('5', 96, 27, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('O Diário De John Winchester- Capa Dura, O Livro Dos Monstros- Espíritos - Demônios E Ghouls,
+        O Guia De Caça De Bobby Singer, Nunca Mais E Guerra Dos Filhos', 136, 27, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('22.50 cm', 1, 27, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('16.00 cm', 2, 27, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('8.50 cm', 3, 27, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('1.65 Kg', 4, 27, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Gryphus', 143, 27, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('0742832415231', 138, 27, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('742832415231', 75, 27, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Português', 85, 27, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Kit (envolvendo os livros), Brocura (capa dos livros)', 92, 27, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('A Lebre e a Raposa / A Raposa e o Galo / A Cigarra e a Formiga / A Lebre e a Tartaruga /
+        O Lobo Disfrançado / O Pastor Brincalhão / Os Músicos de Bremen e O Leão e o Camundongo', 136, 28, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('8', 96, 28, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Bicho Esperto', 143, 28, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('12 páginas cada livro', 139, 28, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('18 cm', 1, 28, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('13 cm', 2, 28, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Infantil', 97, 28, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Positivo', 69, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Intel Atom', 146, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Quad Core', 147, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('2MB', 148, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('1GB', 149, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Positivo', 150, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('16GB', 151, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Não', 49, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Não se aplica ao produto', 152, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('10.1', 276, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Áudio de alta definição (HD Áudio), Microfone e alto-falantes estéreo embutidos', 14, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 22, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 20, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Rede sem fio IEEE 802.11 b/g/n TM e Bluetooth TM 4.0', 23, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Vídeo Processamento de vídeo integrado Intel HD Graphics / Aceleração gráfica integrada de
+        vídeos em alta definição (HD) e suporte Microsoft DirectX 11 e OpenGL 4.0', 153, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Português-Brasil', 154, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Touchpad-2botões', 155, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Windows 8.1', 156, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('18,4 Cm', 1, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('25,5 Cm', 2, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('1,7 Cm', 3, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('1,09 Kg', 4, 29, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('USB', 157, 30, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('8', 158, 30, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Não', 159, 30, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Não', 160, 30, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Não', 161, 30, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Não', 162, 30, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Não', 163, 30, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Widonws 98 e superiores/Mac 0S 9.0 e superiores', 164, 30, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('1,9 cm', 2, 30, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('1,3 cm', 3, 30, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('5,5 cm', 1, 30, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('10 gramas', 4, 30, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
 VALUES ('', , , NOW(), NOW());
