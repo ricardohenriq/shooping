@@ -3411,13 +3411,192 @@ INSERT INTO product_features (feature_value, feature_id, product_id, created, mo
 VALUES ('12 Meses', 6, 44, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Doméstico / Hobby', 102, 45, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('142', 96, 45, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Trabalhos manuais, apertar, parafusar e desparafusar.', 67, 45, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('6.4 cm', 1, 45, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('24 cm', 2, 45, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('31.5 cm', 3, 45, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('1.5 kg', 4, 45, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('3 meses', 6, 45, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('- 16 Chaves Allen
+        - 20 bits
+        - 2 mini Chave de fenda
+        - 1 Alicate de bico 6?
+        - 1 Chave de teste
+        - 1 Martelo 250 g
+        - 1 Punho para serra manual
+        - 1 Lamina de serra
+        - 1 Estilete
+        - 1 Fita isolante
+        - 1 Chave porta Bits
+        - 6 Chave de fenda de precisão
+        - 90 pequenas peças ( parafusos, porcas e conectores)', 124, 45, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Bracol Comercial e Importadora Ltda', 69, 45, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('(47) 3373-0648', 72, 45, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Aço cromo vanádio e aço carbono inoxidável', 8, 46, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Termoplástico', 262, 46, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('110', 96, 46, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('- 01 Alicate de corte diagonal 6"
+        - 01 Alicate de bico meia-cana 8"
+        - 01 Alicate bomba d´água 10"
+        - 01 Adaptador para bits com cabo e catraca encaixe de 1/4"
+        - 07 Bits fenda: 3,5 (02 peças) - 4 (02 peças) - 5,5 - 6,5 – 8 mm
+        - 03 Bits quadradas: S1 - S2 - S3
+        - 08 Bits phillips: #0 (02 peças) - #1 (02 peças) - #2 (02 peças) - #3 (02 peças)
+        - 02 Adaptadores
+        - 07Bits torx: T10 - T15 - T20 - T25 - T27 - T30 - T40
+        - 03 Bits pozidriv: PZ1 - PZ2 - PZ3
+        - 04 Bits tri-wing: 1 – 2 – 3 - 4
+        - 06 Bits hexagonais: 2 – 3 – 4 – 5 – 6 – 7 mm
+        - 01 Cabo T de 10" com extensão encaixe de 1/2"
+        - 01 Catraca reversível de 10” com encaixe de 1/2"
+        - 01 Catraca reversível de 6” com encaixe de 1/4"
+        - 02 Chaves de fenda: 5,5 x 75 mm - 6,5 x 100mm
+        - 02 Chaves phillips: #1 x 75 mm - #2 x 100 mm
+        - 11 Chaves combinadas: 8 – 9 – 10 – 11 – 12 – 13 – 14 – 15 – 17 – 18 – 19 mm
+        - 08 Chaves hexagonais: 1,5 – 2 - 2,5 – 3 – 4 – 5 - 5,5 – 6 mm
+        - 01 Extensão de 5" com encaixe de 1/2"
+        - 01 Extensão de 2" com encaixe de 1/4"
+        - 01 Extensão de 4" com encaixe de 1/4"
+        - 01 Extensão flexível 6" 1/4"(M) x 1/4"(F)
+        - 01 Junta universal com encaixe de 1/2"
+        - 01 Junta universal com encaixe de 1/4"
+        - 02 Soquetes de vela: 16 mm e 21 mm
+        - 15 Soquetes sextavados com encaixe de 1/2": 10 – 11 – 12 – 13 – 14 – 15 – 17 – 18 – 19 – 20 – 21 – 22 – 23 – 24 – 27 mm
+        - 11 Soquetes sextavados com encaixe de 1/4": 4 – 5 – 6 – 7 – 8 – 9 – 10 – 11 – 12 – 13 – 14 mm
+        - 01 Suporte para as chaves hexagonais
+        - 04 Suportes para os bits
+        - 01 Maleta com berços e identificação de medidas', 124, 46, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('12 meses (3 meses de garantia legal por lei, contando a partir da data de emissão
+        da Nota Fiscal de Venda e 9 meses de garantia concedido pelo fabricante contra
+        defeito de fabricação)', 6, 46, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Mayle', 69, 46, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('110', 96, 47, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('- 1 Furadeira de impacto
+        - 65 Buchas
+        - 1 Chave Magnética
+        - 1 Estilete
+        - 1 Trena
+        - 1 Barra de Extensão
+        - 1 Ponteira
+        - 5 Brocas Para Metal
+        - 5 Brocas Para Concreto
+        - 5 Brocas Para Madeira
+        - 1 Chave Ajustável 200mm
+        - 1 Alicate Universal
+        - 1 Empunhador
+        - 1 Furadeira de Impacto
+        - 11 Ponteiras
+        - 8 Soquetes
+        - 1 Martelo
+        - 1 Limitador
+        - 1 Mandril', 124, 47, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('2 velocidades: Velocidade 1: 2200 RPM, Velocidade 2: 2600 RPM', 68, 47, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('1 Ano', 6, 47, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('220 Volts', 61, 47, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('100% Algodão', 8, 48, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 230, 48, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Água fria', 231, 48, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('M, G, GG', 232, 48, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Redonda', 234, 48, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('100% Algodão', 8, 49, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 230, 49, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Água fria', 231, 49, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('M, G, GG', 232, 49, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Redonda', 234, 49, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Com imagens diversas', 131, 49, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('100% Algodão', 8, 50, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 230, 50, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Água fria', 231, 50, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('G', 232, 50, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Polo', 234, 50, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Manga Comprida', 233, 50, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('40 Cm', 236, 50, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('59 Cm', 238, 50, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('66 Cm', 237, 50, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
 VALUES ('', , , NOW(), NOW());
