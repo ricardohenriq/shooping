@@ -2122,7 +2122,7 @@ VALUES (276, 'Tamanho do visor (Polegadas)', NOW(), NOW());
 INSERT INTO features (id, feature_name, created, modified)
 VALUES (277, 'Diagonal Visual (Cm)', NOW(), NOW());
 
-#! 10 registros na tabela "product_features" --------------------------------------------
+## 585 registros na tabela "product_features" --------------------------------------------
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
 VALUES ('Android 4.4 KitKat', 9, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
@@ -3849,6 +3849,183 @@ VALUES ('331 gramas', 4, 59, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
 VALUES ('3 meses (Contra Defeito de Fabricação)', 6, 59, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Invicta', 69, 60, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Caixa oficial da Invicta', 257, 60, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('6981', 10, 60, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('49 mm', 258, 60, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('17 mm', 259, 60, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('26mm', 260, 60, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Preto', 261, 60, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Aço Inoxidável', 262, 60, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Cristal Mineral', 263, 60, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Poliuretano', 264, 60, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('100 metros', 265, 60, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Quartz Suiço (Caliber: 5040.D)', 267, 60, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('12 meses', 6, 60, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 268, 61, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 269, 61, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('4 Modelos (2 Digitais e 2 Analogicos)', 270, 61, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim (apenas android)', 271, 61, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim (avisa quando o celular se distancia do relógio)', 272, 61, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 273, 61, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 274, 61, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 275, 61, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Não informado', 69, 62, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Estojo', 257, 62, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Ref: 6981', 10, 62, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('49 mm', 258, 62, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('17 mm', 259, 62, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('26mm', 260, 62, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Preto', 261, 62, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Aço Inoxidável', 262, 62, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Cristal Mineral', 263, 62, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Poliuretano', 264, 62, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('100 metros', 265, 62, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Quartz Suiço (Caliber: 5040.D)', 267, 62, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('12 meses', 6, 62, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Não informado', 69, 63, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Estojo', 257, 63, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Ref: 6981', 10, 63, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('49 mm', 258, 63, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('17 mm', 259, 63, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('26 mm', 260, 63, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Preto', 261, 63, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Aço Inoxidável', 262, 63, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Cristal Mineral', 263, 63, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Couro', 264, 63, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('100 metros', 265, 63, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Quartz Suiço (Caliber: 5040.D)', 267, 63, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('12 meses', 6, 63, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Couro', 9, 64, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Ajsutavel de 15 a 23 Cm', 232, 64, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Borracha (Pulseira) e Metal (feicho)', 9, 65, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Ajsutavel de 19 Cm', 232, 65, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Metal com detalhes em pedras', 9, 66, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Ajsutavel de 15 a 23 Cm', 232, 66, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('10', 96, 67, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('10 Resmas de papel A4 75 gramas Reciclado (cada resma com 500 folhas)', 124, 67, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Off Set, Tipografia, Serigrafia, Relevo Seco, Hot Stamping ,Jato de tinta e Laser', 191, 67, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('6', 96, 68, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('05 CARIMBOS PERSONALIZADOS AUTOMÁTICOS + 01 TUBO DE TINTA 30ml', 124, 68, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Diversas', 7, 68, NOW(), NOW());
 
 ## 3 registros na tabela "media_types" --------------------------------------------------
 
