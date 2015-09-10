@@ -3599,34 +3599,256 @@ INSERT INTO product_features (feature_value, feature_id, product_id, created, mo
 VALUES ('66 Cm', 237, 50, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Sim', 230, 51, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Comum', 231, 51, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('44', 232, 51, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('45 Cm', 239, 51, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('55,5 Cm', 240, 51, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('33,5 Cm', 241, 51, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('28,5 Cm', 243, 51, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('38,5 Cm', 244, 51, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('86', 245, 51, NOW(), NOW());
 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('', , , NOW(), NOW());
+VALUES ('Jeans', 8, 51, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Preto', 38, 51, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('RIP STOP SUPER (35% Algodão / 65% Poliester)', 8, 52, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Preto', 38, 52, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sim', 230, 52, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Comum', 231, 52, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('44', 232, 52, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('45 Cm', 239, 52, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('55,5 Cm', 240, 52, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('33,5 Cm', 241, 52, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('28,5 Cm', 243, 52, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('38,5 Cm', 244, 52, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('86', 245, 52, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('3', 96, 53, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('3 Cinto em Gorgorão - Café/Troy ', 124, 53, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Gorgorão (cinta) e Metal (fivela)', 8, 53, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Preto, Café, Taupe', 38, 53, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sandro Moscoli', 69, 53, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Masculino', 97, 54, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Dia a Dia', 102, 54, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sintético', 8, 54, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Cardaço', 247, 54, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('42', 248, 54, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Engineered mesh', 249, 54, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Com lâminas de polímero', 250, 54, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('331 gramas', 4, 54, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Adiwear, Fitframe', 30, 54, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('3 meses (Contra Defeito de Fabricação)', 6, 54, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Masculino', 97, 55, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Dia a Dia', 102, 55, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sintético', 8, 55, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Cardaço', 247, 55, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('42', 248, 55, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Engineered mesh', 249, 55, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Com lâminas de polímero', 250, 55, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('331 gramas', 4, 55, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Adiwear, Fitframe', 30, 55, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('3 meses (Contra Defeito de Fabricação)', 6, 55, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Masculino', 97, 56, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Dia a Dia', 102, 56, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sintético', 8, 56, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Cardaço', 247, 56, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('42', 248, 56, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Engineered mesh', 249, 56, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Com lâminas de polímero', 250, 56, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('331 gramas', 4, 56, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Adiwear, Fitframe', 30, 56, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('3 meses (Contra Defeito de Fabricação)', 6, 56, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Masculino', 97, 57, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Dia a Dia', 102, 57, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Couro sintético', 8, 57, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Cardaço', 247, 57, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('42', 248, 57, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Engineered mesh', 249, 57, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Com lâminas de polímero', 250, 57, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('331 gramas', 4, 57, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('3 meses (Contra Defeito de Fabricação)', 6, 57, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Feminino', 97, 58, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Eventos de gala', 102, 58, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Sintético', 8, 58, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Encaixe', 247, 58, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('38', 248, 58, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('331 gramas', 4, 58, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('3 meses (Contra Defeito de Fabricação)', 6, 58, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('3 Cm', 255, 58, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('15 Cm', 256, 58, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Masculino', 97, 59, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Dia a Dia', 102, 59, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Couro legitimo', 8, 59, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Cardaço', 247, 59, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('42', 248, 59, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Engineered mesh', 249, 59, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('Com lâminas de polímero', 250, 59, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('331 gramas', 4, 59, NOW(), NOW());
+
+INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+VALUES ('3 meses (Contra Defeito de Fabricação)', 6, 59, NOW(), NOW());
 
 ## 3 registros na tabela "media_types" --------------------------------------------------
 
