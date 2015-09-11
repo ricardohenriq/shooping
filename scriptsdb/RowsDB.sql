@@ -145,551 +145,551 @@ VALUES ('Loja H', 30, NOW(), NOW());
 INSERT INTO stores (store_name, user_id, created, modified)
 VALUES ('Loja I', 30, NOW(), NOW());
 
-## 17 regsistros na tabela "categories" ------------------------------------------------
+## 21 regsistros na tabela "categories" ------------------------------------------------
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Alimentos', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (1, 'Alimentos', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Bebidas', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (2, 'Bebidas', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Móveis', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (3, 'Móveis', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Utensilios de Cozinha', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (4, 'Utensilios de Cozinha', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Utensilios de Banheiro', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (5, 'Utensilios de Banheiro', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Utensilios de Limpeza', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (6, 'Utensilios de Limpeza', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Utensilios de Mesa', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (7, 'Utensilios de Mesa', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Organizadores', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (8, 'Organizadores', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Eletrodomesticos', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (9, 'Eletrodomesticos', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Cama, Mesa e Banho', '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (10, 'Cama, Mesa e Banho', '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Livros', '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (11, 'Livros', '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Eletroeletronicos', '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (12, 'Eletroeletronicos', '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Portáteis', '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (13, 'Portáteis', '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Informática', '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (14, 'Informática', '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Brinquedos', '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (15, 'Brinquedos', '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Automotivo', '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (16, 'Automotivo', '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Ferramentas', '2014-10-28 09:39:49', '2016-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (17, 'Ferramentas', '2014-10-28 09:39:49', '2016-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Vestuário', '2014-10-28 09:39:49', '2016-10-28 22:39:19');
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (18, 'Vestuário', '2014-10-28 09:39:49', '2016-10-28 22:39:19');
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Calçados', NOW(), NOW());
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (19, 'Calçados', NOW(), NOW());
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Acessórios', NOW(), NOW());
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (20, 'Acessórios', NOW(), NOW());
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Escritório', NOW(), NOW());
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (21, 'Escritório', NOW(), NOW());
 
-INSERT INTO categories (category_name, created, modified)
-VALUES ('Outros', NOW(), NOW());
+INSERT INTO categories (id, category_name, created, modified)
+VALUES (22, 'Outros', NOW(), NOW());
 
-##  registros na tabela "sub_categories" ---------------------------------------------
+## 157 registros na tabela "sub_categories" ---------------------------------------------
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Industrilizado', 1, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (1, 'Industrilizado', 1, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('In natura', 1, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (2, 'In natura', 1, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Comida pronta', 1, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (3, 'Comida pronta', 1, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Desidratado', 1, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (4, 'Desidratado', 1, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Organico', 1, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (5, 'Organico', 1, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Raizes', 1, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (6, 'Raizes', 1, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Doces', 1, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (7, 'Doces', 1, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Alcoolica', 2, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (8, 'Alcoolica', 2, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Sucos', 2, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (9, 'Sucos', 2, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Refrigerante', 2, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (10, 'Refrigerante', 2, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Sofás', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (11, 'Sofás', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Guarda-Roupas', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (12, 'Guarda-Roupas', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Poltronas', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (13, 'Poltronas', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Cadeiras, Bancos e Banquetas', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (14, 'Cadeiras, Bancos e Banquetas', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Racks, Pinéis e Estantes', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (15, 'Racks, Pinéis e Estantes', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Cômodas e Sapateiras', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (16, 'Cômodas e Sapateiras', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Mesas', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (17, 'Mesas', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Camas', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (18, 'Camas', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Colchões', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (19, 'Colchões', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Armários', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (20, 'Armários', 3, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Panelas', 4, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (21, 'Panelas', 4, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Filtros', 4, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (22, 'Filtros', 4, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Formas', 4, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (23, 'Formas', 4, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Potes', 4, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (24, 'Potes', 4, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Tábuas', 4, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (25, 'Tábuas', 4, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Chaleiras', 4, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (26, 'Chaleiras', 4, '2008-10-28 09:39:49', '2009-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Acessórios', 4, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (27, 'Acessórios', 4, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Porta Algodões', 5, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (28, 'Porta Algodões', 5, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Porta Papel Higienico', 5, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (29, 'Porta Papel Higienico', 5, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Porta Cotonetes', 5, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (30, 'Porta Cotonetes', 5, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Kit Banheiro', 5, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (31, 'Kit Banheiro', 5, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Saboneteiras', 5, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (32, 'Saboneteiras', 5, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Escadas', 6, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (33, 'Escadas', 6, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Lixeiras', 6, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (34, 'Lixeiras', 6, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Rodos', 6, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (35, 'Rodos', 6, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Tábuas de Passar', 6, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (36, 'Tábuas de Passar', 6, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Varais e Acessórios', 6, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (37, 'Varais e Acessórios', 6, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Mangueiras e Acessórios', 6, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (38, 'Mangueiras e Acessórios', 6, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Copos', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (39, 'Copos', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Taças', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (40, 'Taças', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Jarras', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (41, 'Jarras', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Facas', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (42, 'Facas', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Faqueiros', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (43, 'Faqueiros', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Talheres', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (44, 'Talheres', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Bandejas', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (45, 'Bandejas', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Xícaras', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (46, 'Xícaras', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Garrafas Termicas', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (47, 'Garrafas Termicas', 7, '2009-10-28 09:39:49', '2010-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Bandeijas', 7, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (48, 'Bandeijas', 7, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Boleiras', 7, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (49, 'Boleiras', 7, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Acessórios para Bar', 7, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (50, 'Acessórios para Bar', 7, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Cabides de Armário', 8, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (51, 'Cabides de Armário', 8, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Suporte de Parede', 8, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (52, 'Suporte de Parede', 8, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Caixas', 8, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (53, 'Caixas', 8, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Módulos e Prateleiras', 8, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (54, 'Módulos e Prateleiras', 8, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Revisteiros', 8, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (55, 'Revisteiros', 8, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Organizadores de Fios', 8, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (56, 'Organizadores de Fios', 8, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Geladeira', 9, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (57, 'Geladeira', 9, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Freezer', 9, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (58, 'Freezer', 9, '2010-10-28 09:39:49', '2011-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Fogão', 9, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (59, 'Fogão', 9, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Micro-ondas', 9, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (60, 'Micro-ondas', 9, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Lavadoura de Roupas', 9, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (61, 'Lavadoura de Roupas', 9, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Lavadoura de Louças', 9, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (62, 'Lavadoura de Louças', 9, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Secadora de Roupas', 9, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (63, 'Secadora de Roupas', 9, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Arcondicinado', 9, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (64, 'Arcondicinado', 9, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Ventilador', 9, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (65, 'Ventilador', 9, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Jogo de Leçol', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (66, 'Jogo de Leçol', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Colcha', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (67, 'Colcha', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Edredom', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (68, 'Edredom', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Travesseiro', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (69, 'Travesseiro', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Almofada', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (70, 'Almofada', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Toalha de Banho', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (71, 'Toalha de Banho', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Toalha de Rosto', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (72, 'Toalha de Rosto', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Roupão', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (73, 'Roupão', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Pano de Prato', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (74, 'Pano de Prato', 10, '2011-10-28 09:39:49', '2012-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Jogo Americano', 10, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (75, 'Jogo Americano', 10, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Avental', 10, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (76, 'Avental', 10, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Toalha de Mesa', 10, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (77, 'Toalha de Mesa', 10, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Infantil', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (78, 'Infantil', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Administração e Negócios', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (79, 'Administração e Negócios', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Direito', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (80, 'Direito', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Auto-ajuda', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (81, 'Auto-ajuda', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Romance', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (82, 'Romance', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Fantasia', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (83, 'Fantasia', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Ficção Cientifica', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (84, 'Ficção Cientifica', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Informática', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (85, 'Informática', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Saúde', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (86, 'Saúde', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Poesia', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (87, 'Poesia', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Biografias', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (88, 'Biografias', 11, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('HDTV', 12, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (89, 'HDTV', 12, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Home Teather', 12, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (90, 'Home Teather', 12, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('DVD e Bluray', 12, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (91, 'DVD e Bluray', 12, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Mini/Micro System', 12, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (92, 'Mini/Micro System', 12, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Celular', 13, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (93, 'Celular', 13, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Smartphone', 13, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (94, 'Smartphone', 13, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Tablet', 13, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (95, 'Tablet', 13, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Telefone', 13, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (96, 'Telefone', 13, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Notebook', 14, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (97, 'Notebook', 14, '2012-10-28 09:39:49', '2013-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('PC', 14, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (98, 'PC', 14, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('HD Externo', 14, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (99, 'HD Externo', 14, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Roteador', 14, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (100, 'Roteador', 14, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Pen Drive', 14, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (101, 'Pen Drive', 14, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Blocos de Montar', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (102, 'Blocos de Montar', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Bonecos', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (103, 'Bonecos', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Bonecas', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (104, 'Bonecas', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Cadeiras, Mesinhas, Baús e Porta Objetos', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (105, 'Cadeiras, Mesinhas, Baús e Porta Objetos', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Carros, Trens e Aviões', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (106, 'Carros, Trens e Aviões', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Desenhos e Pintura', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (107, 'Desenhos e Pintura', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Instrumentos Musicais', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (108, 'Instrumentos Musicais', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Jogos', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (109, 'Jogos', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Playgrounds e Casinhas', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (110, 'Playgrounds e Casinhas', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Praia, Lazer e Esportes', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (111, 'Praia, Lazer e Esportes', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Massas de Modelar', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (112, 'Massas de Modelar', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Primeira Infância', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (113, 'Primeira Infância', 15, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Auto Som', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (114, 'Auto Som', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Pneu', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (115, 'Pneu', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Óleo', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (116, 'Óleo', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('GPS Automotivo', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (117, 'GPS Automotivo', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('DVD Automotivo', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (118, 'DVD Automotivo', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Auto Falantes', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (119, 'Auto Falantes', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Calotas', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (120, 'Calotas', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Capacete', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (121, 'Capacete', 16, '2013-10-28 09:39:49', '2014-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Acessórios', 16, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (122, 'Acessórios', 16, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Higienização e Polimento', 16, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (123, 'Higienização e Polimento', 16, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Ferramentas Manuais', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (124, 'Ferramentas Manuais', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Aparadores de Grama', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (125, 'Aparadores de Grama', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Cortadores de Grama', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (126, 'Cortadores de Grama', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Sopradores de Folhas', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (127, 'Sopradores de Folhas', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Furadeira', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (128, 'Furadeira', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Parafusadeira', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (129, 'Parafusadeira', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Serra Circular', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (130, 'Serra Circular', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Plaina', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (131, 'Plaina', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Esmerilhadeira e Esmeril', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (132, 'Esmerilhadeira e Esmeril', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Mini Retifica', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (133, 'Mini Retifica', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Acessórios de Pintura', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (134, 'Acessórios de Pintura', 17, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Bonés', 18, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (135, 'Bonés', 18, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Chapéus', 18, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (136, 'Chapéus', 18, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Camisa', 18, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (137, 'Camisa', 18, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Camiseta', 18, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (138, 'Camiseta', 18, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Cinto', 18, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (139, 'Cinto', 18, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Calça', 18, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (140, 'Calça', 18, '2014-10-28 09:39:49', '2015-10-28 22:39:19');
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Casacos e Jaquetas', 18, '2010-10-28 09:39:49', NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (141, 'Casacos e Jaquetas', 18, '2010-10-28 09:39:49', NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Praia', 18, '2010-10-28 09:39:49', NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (142, 'Praia', 18, '2010-10-28 09:39:49', NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Tênis', 19, '2010-10-28 09:39:49', NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (143, 'Tênis', 19, '2010-10-28 09:39:49', NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Sapatênis', 19, '2010-10-28 09:39:49', NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (144, 'Sapatênis', 19, '2010-10-28 09:39:49', NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Sapato', 19, '2010-10-28 09:39:49', NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (145, 'Sapato', 19, '2010-10-28 09:39:49', NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Chinela', 19, '2010-10-28 09:39:49', NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (146, 'Chinela', 19, '2010-10-28 09:39:49', NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Botas', 19, '2010-10-28 09:39:49', NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (147, 'Botas', 19, '2010-10-28 09:39:49', NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Relógios', 20, '2010-10-28 09:39:49', NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (148, 'Relógios', 20, '2010-10-28 09:39:49', NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Pulseiras', 20, '2010-10-28 09:39:49', NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (149, 'Pulseiras', 20, '2010-10-28 09:39:49', NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Brincos', 20, '2010-10-28 09:39:49', NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (150, 'Brincos', 20, '2010-10-28 09:39:49', NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Colares', 20, '2010-10-28 09:39:49', NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (151, 'Colares', 20, '2010-10-28 09:39:49', NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Multifuncional', 21, '2010-10-28 09:39:49', NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (152, 'Multifuncional', 21, '2010-10-28 09:39:49', NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Fax', 21, NOW(), NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (153, 'Fax', 21, NOW(), NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Papéis', 21, NOW(), NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (154, 'Papéis', 21, NOW(), NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Tonners e Tintas', 21, NOW(), NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (155, 'Tonners e Tintas', 21, NOW(), NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Gaveteiro', 22, NOW(), NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (156, 'Gaveteiro', 22, NOW(), NOW());
 
-INSERT INTO sub_categories (sub_category_name, category_id, created, modified)
-VALUES ('Estações de Trabalho', 22, NOW(), NOW());
+INSERT INTO sub_categories (id, sub_category_name, category_id, created, modified)
+VALUES (157, 'Estações de Trabalho', 22, NOW(), NOW());
 
-#! 68 registros na tabela "products" --------------------------------------------------
+## 68 registros na tabela "products" --------------------------------------------------
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (1, 'Samsung Galaxy A5 Duos Branco 4G Orange', 1, 8, 20, 40,
+VALUES (1, 'Samsung Galaxy A5 Duos Branco 4G Orange', 1, 94, 20, 40,
         'Equipado com câmera frontal de 5 megapixel o Samsung Galaxy A5 4G Duos é um aparelho capaz de fazer Selfies incríveis e com uma excelente
         qualidade graças aos seus novos recursos. Agora você pode enquadrar todos os seus amigos em uma única foto com a função Selfie Panorâmica
         que captura um ângulo de até 120° do conteúdo.
@@ -704,7 +704,7 @@ VALUES (1, 'Samsung Galaxy A5 Duos Branco 4G Orange', 1, 8, 20, 40,
         550.50, 400, 777, 1, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (2, 'TV LED 32 Smart LiteUSB HDMI LE 3278i Semp Toshiba', 2, 7, 300, 200,
+VALUES (2, 'TV LED 32 Smart LiteUSB HDMI LE 3278i Semp Toshiba', 2, 89, 300, 200,
         'Agora é possível guardar os bons momentos, um bom conteúdo de programação, um filme, o capítulo da novela, aquele documentário, a final do
         campeonato com o gravador pessoal de vídeo PVR Ready. Você pode usar um HD externo ou um pen drive para gravar todo conteúdo digital da TV
         aberta.
@@ -718,7 +718,7 @@ VALUES (2, 'TV LED 32 Smart LiteUSB HDMI LE 3278i Semp Toshiba', 2, 7, 300, 200,
         20.20, 25, 555, 2, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (3, 'Motorola Moto X Android 42 GPS 3G 2 Chips 13GHZ', 3, 6, 150, 900,
+VALUES (3, 'Motorola Moto X Android 42 GPS 3G 2 Chips 13GHZ', 3, 94, 150, 900,
         'Este é o novo Motorola Moto X 2ª Geração! Um Smartphone que é puro estilo e pura performance. Ele possui um design moderno e fino, com
         acabamento metálico na borda, feito com materiais nobres, perfeito para quem tem estilo e gosta sempre de inovar.
         Sua super tela Full HD de 5,2" AMOLED Gorilla Glass 3 Dual Touch possui uma imagem incrível com alto nível de nitidez. Além disso, ele
@@ -734,7 +734,7 @@ VALUES (3, 'Motorola Moto X Android 42 GPS 3G 2 Chips 13GHZ', 3, 6, 150, 900,
         15, 12.90, 444, 1, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (4, 'Liquidificador e Processador Reverse Red Oster 110V', 4, 5, 30, 60,
+VALUES (4, 'Liquidificador e Processador Reverse Red Oster 110V', 4, 47, 30, 60,
         'Liquidificador Delighter Oster. Possui potente motor reversível de 450 watts com 6 velocidades e funções pré-programadas para preparar
         coquetéis e batidas. Tem ainda jarra de vidro de 1,75 litros, a prova de choque térmico, com design fino que cabe na porta da geladeira.
         Pode ser lavada na lava-louças, tem tampa de bico acentuado e dobradiça para facilitar ao servir, lâmina removível de aço inoxidável ideal
@@ -743,7 +743,7 @@ VALUES (4, 'Liquidificador e Processador Reverse Red Oster 110V', 4, 5, 30, 60,
         150.90, 140, 333, 2, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (5, 'MP3 Player Shuffle Clip FM Cabo USB Fone Suporta ate 8G', 1, 3, 900, 1200,
+VALUES (5, 'MP3 Player Shuffle Clip FM Cabo USB Fone Suporta ate 8G', 1, 94, 900, 1200,
         'Controle suas músicas com um clique.
         Com o painel frontal do iPod shuffle, é mais fácil controlar as suas músicas. Pressione para reproduzir, pausar, avançar ou voltar. Clique
         onde quiser. O seu dedo está no comando.
@@ -753,7 +753,7 @@ VALUES (5, 'MP3 Player Shuffle Clip FM Cabo USB Fone Suporta ate 8G', 1, 3, 900,
         5, 9.05, 222, 1, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (6, 'Fone de Ouvido com MP3 Player C2 Sport Entrada Cartao SD Micro', 2, 1, 130, 200,
+VALUES (6, 'Fone de Ouvido com MP3 Player C2 Sport Entrada Cartao SD Micro', 2, 94, 130, 200,
         'Fone sem fio com entrada para Cartão Micro SD igual ao usado para memória de celular, basta conectar o cartão com suas músicas preferidas
         e sair praticando o seu esporte predileto. Não é necessário nenhum acessório ou cabo. Mais mobilidade e liberdade para ir onde desejar Não
         se incomode com fios ou aparelhos. Detalhes ? Para carregar basta conectar o cabo USB ao seu aparelho, Mobilidade e prazer ao praticar o
@@ -763,32 +763,32 @@ VALUES (6, 'Fone de Ouvido com MP3 Player C2 Sport Entrada Cartao SD Micro', 2, 
         13.99, 20.00, 99, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (7, 'Bi Cama 0735 Branco Brilho Multimoveis Bebe Store', 3, 2, 200, 400,
+VALUES (7, 'Bi Cama 0735 Branco Brilho Multimoveis Bebe Store', 3, 18, 200, 400,
         'Bicama mista, MDP/MDF, 15mm com pintura UV alto brilho.
          Todas as características de fabricação garantem um produto de qualidade comprovada, que combina tradição e modernidade de uma marca
          verdadeiramente conceituada neste segmento.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (8, 'Jogo de Mesa com 4 Cadeiras Tampo de Vidro Temperado Incolor', 3, 2, 200, 400,
+VALUES (8, 'Jogo de Mesa com 4 Cadeiras Tampo de Vidro Temperado Incolor', 3, 17, 200, 400,
         'Jogo de Mesa de Cozinha com 4 Cadeiras Tulipa com Tampo de Vidro Temperado Incolor, estrutura em aço carbono, acabamento em pintura epóxi,
         assentos em MDP de 12 mm com revestimento de espuma e corino.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (9, 'Cesta Basica de Alimentos Popular', 3, 2, 200, 400,
+VALUES (9, 'Cesta Basica de Alimentos Popular', 3, 1, 200, 400,
         'A Cesta Básica para Doação - Good Cestas, foi elaborada para atender de forma rápida, a demanda de compra dos seus clientes. Os seus
         produtos são de alta qualidade e de origem comprovada.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (10, 'Balas Alemas Fruit Candies', 3, 2, 200, 400,
+VALUES (10, 'Balas Alemas Fruit Candies', 3, 7, 200, 400,
         'BALAS ALEMÃS,UM PRODUTO COM GOSTINHO DIFERENTE UMA DELÍCIA, ALEM DE SER GOSTOSAS É UMA DECORAÇÃO PARA SUA CASA, PRODUTO LACRADO, COM PRAZO
         DE VALIDADE DE 3  ANOS, COM BALAS MISTAS SABORES, LARANJA, MORANGO, LIMÃO, FRAMBOESA, ABACAXI.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (11, 'Kit Brigadeiro Premium Festa Infantil 100 Unidades', 3, 2, 200, 400,
+VALUES (11, 'Kit Brigadeiro Premium Festa Infantil 100 Unidades', 3, 7, 200, 400,
         'TODOS OS NOSSOS DOCINHOS SÃO FEITOS COM LEITE CONDENSADO E CHOCOLATE DE PRIMEIRA LINHA.
         Nosso prazo de produção é de 2 dias úteis.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
@@ -822,14 +822,14 @@ VALUES (14, 'Mudas Fruta do Milagre Variedade Gigante', 3, 2, 200, 400,
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (15, 'Goji Berry 1KG Fruto Desidratado Pronta Entrega', 3, 2, 200, 400,
+VALUES (15, 'Goji Berry 1KG Fruto Desidratado Pronta Entrega', 3, 4, 200, 400,
         'A Goji Berry é uma fruta originária do Tibete e da China que há muito tempo vem sendo utilizada para melhorar muitos aspectos da saúde humana.
         É rica em aminoácidos, vitaminas, ácidos graxos insaturados (como o ômega-3), poderosos antioxidantes e polissacarídeos. A melhor noticia é
         que, mesmo contendo tantos nutrientes importantes, essa frutinha tem poucas calorias.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (16, 'Hibisco Desidratado Cha 500G', 3, 2, 200, 400,
+VALUES (16, 'Hibisco Desidratado Cha 500G', 3, 4, 200, 400,
         'O hibisco (Hibiscus sinensis) é uma flor, rica em antocianina e polifenóis, potentes antioxidantes. Segundo estudos, a quantidade
         encontrada de antioxidante no hibisco é equivalente à quantidade encontrada nas uvas e vinho tinto.
         Os antioxidantes são capazes de neutralizar os radicais livres que são produzidos no organismo e podem ser prejudiciais à saúde, favorecendo,
@@ -837,7 +837,7 @@ VALUES (16, 'Hibisco Desidratado Cha 500G', 3, 2, 200, 400,
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (17, 'Whisky Johnnie Walker Double Black 1000ML', 3, 2, 200, 400,
+VALUES (17, 'Whisky Johnnie Walker Double Black 1000ML', 3, 8, 200, 400,
         'Diferentemente do Black Label Clássico (12 anos), o Double Black possue o sabor defumado mais intenso.As características de Johnnie
         Walker Black Label, especialmente as notas defumadas, são ainda mais intensas em Johnnie Walker Double Black.
         Produzido a partir da combinação de alguns maltes exclusivos, selecionados especialmente para garantir o sabor defumado e envelhecidos em
@@ -846,36 +846,36 @@ VALUES (17, 'Whisky Johnnie Walker Double Black 1000ML', 3, 2, 200, 400,
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (18, 'Vodka Absolut Unique 1L Ed. Limitada Raridade', 3, 2, 200, 400,
+VALUES (18, 'Vodka Absolut Unique 1L Ed. Limitada Raridade', 3, 8, 200, 400,
         'Uma edição limitada com mais de quatro milhões de garrafas únicas em todo o Mundo, exclusivas e numeradas. Foram utilizadas 40 cores e
         aplicados diversos desenhos diferentes nas garrafas para chegar em quatro milhões de combinações artísticas únicas. Cada garrafa carrega
         um selo branco com seu número exclusivo de fabricação e com as informações sobre a bebida.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (19, 'Espumante Cava Freixenet Carta Nevada 750ML', 3, 2, 200, 400,
+VALUES (19, 'Espumante Cava Freixenet Carta Nevada 750ML', 3, 8, 200, 400,
         'De coloração amarelo palha com reflexos dourados, limpo e brilhante, com borbulhas de tamanho médio formando uma bela coroa. Nariz franco
         e limpo. Destacam-se aromas florais (flores blancas) e de fruta fresca, com sutis aromas cítricos. Boa estrutura em boca, fresco, suave
         acidez, bom comportamento do gás carbônico com um bouquet muito particular. Aparecem os tons florais no retronasal.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (20, 'Coca-Cola Vanilla Sabores Baunilha Caixa 12 Latas', 3, 2, 200, 400,
+VALUES (20, 'Coca-Cola Vanilla Sabores Baunilha Caixa 12 Latas', 3, 10, 200, 400,
         'Coca-Cola Vanilla Sabores Baunilha Caixa 12 Latas',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (21, 'Refrigerante Crush Orange Importado 12 Latas', 3, 2, 200, 400,
+VALUES (21, 'Refrigerante Crush Orange Importado 12 Latas', 3, 10, 200, 400,
         'Refrigerante Crush Orange Importado 12 Latas',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (22, 'Refrigerante Canada Dry Ginger Ale Caixa 12 Latas', 3, 2, 200, 400,
+VALUES (22, 'Refrigerante Canada Dry Ginger Ale Caixa 12 Latas', 3, 10, 200, 400,
         'Refrigerante Canada Dry Ginger Ale Caixa 12 Latas',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (23, 'Ferro de Passar Roupa a Vapor com Caldeira Delonghi', 3, 2, 200, 400,
+VALUES (23, 'Ferro de Passar Roupa a Vapor com Caldeira Delonghi', 3, 27, 200, 400,
         'Ferro de passar com caldeira VVX1475 da Delonghi. Possui compartimento para fios, base dupla (cerâmica + aço inox) patenteada o que
         resulta num deslizamento perfeito em todos os tipos de tecido e eficiência reforçada com o uso dos dois materiais, opção de vapor duplo
         que pode ser acionado de forma concentrada somente na ponta ou em toda a superfície da base, painel com tecla de liga/desliga e controle
@@ -883,14 +883,14 @@ VALUES (23, 'Ferro de Passar Roupa a Vapor com Caldeira Delonghi', 3, 2, 200, 40
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (24, 'Lencol Elastico 2 Fronhas Quenn Malha-Penteada 100 Algodao', 3, 2, 200, 400,
+VALUES (24, 'Lencol Elastico 2 Fronhas Quenn Malha-Penteada 100 Algodao', 3, 18, 200, 400,
         'Nada mais gostoso do que uma boa noite de sono, em meio a lençóis com toque macio. Esta peça é feita em malha 100% algodão 30/1, fio
         penteado, o que garante máximo conforto e agradável descanso. Disponível em diversas cores, oferece várias opções para combinar com a
         decoração do quarto.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (25, 'Manta de Sofa Gigante Tipo Capa de Sofa Algodao 240X180M', 3, 2, 200, 400,
+VALUES (25, 'Manta de Sofa Gigante Tipo Capa de Sofa Algodao 240X180M', 3, 11, 200, 400,
         'Use no seu sofá lindas mantas em algodão,produto natural que realça a beleza de seu ambiente decorando sua sala dando um ar de sofisticação.
         Pode ser usada como  uma peça decorativa ou para proteger seu sofá.Usando-a dobrada como ilustra a foto, dá um ar de requinte e usando aberta
         protege de poeira e de animais que eventualmente podem estragar seu sofá .Protegendo seu sofá do dia a dia você pode economizar em uma reforma
@@ -898,7 +898,7 @@ VALUES (25, 'Manta de Sofa Gigante Tipo Capa de Sofa Algodao 240X180M', 3, 2, 20
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (26, 'Divergente Insurgente Convergente Quatro 04 Livros', 3, 2, 200, 400,
+VALUES (26, 'Divergente Insurgente Convergente Quatro 04 Livros', 3, 83, 200, 400,
         'Divergente é o primeiro livro da série de mesmo nome escrita pela autora norte-americana, Veronica Roth. Foi lançado nos Estados Unidos
         em 25 de Abril de 2011, chegando ao Brasil e Portugal em 2012. Seu segundo livro, Insurgente, foi lançado em 1º de Maio de 2012 nos Estados
         Unidos, enquanto o terceiro, Convergente em Outubro de 2013. A série foi comparada a Jogos Vorazes virando um grande sucesso e conquistando
@@ -906,20 +906,20 @@ VALUES (26, 'Divergente Insurgente Convergente Quatro 04 Livros', 3, 2, 200, 400
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (27, 'Box-Supernatural Kit com 05 Livros', 3, 2, 200, 400,
+VALUES (27, 'Box-Supernatural Kit com 05 Livros', 3, 83, 200, 400,
         'Box Supernatural - Contendo 5 Títulos ; o Diário de John Winchester- Capa Dura. o Livro dos Monstros- Espíritos, Demônios e Ghouls. o
         Guia de Caça de Bobby Singer. Nunca Mais e Guerra dos Filhos.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (28, 'Colecao 8 Livros Fabulas a Cigarra e a Formiga Lebre Raposa', 3, 2, 200, 400,
+VALUES (28, 'Colecao 8 Livros Fabulas a Cigarra e a Formiga Lebre Raposa', 3, 78, 200, 400,
         'Ao mesmo tempo em que desenvolvem a capacidade de fantasia infantil, as consagradas fábulas de Esopo e La Fontaine fornecem importantes
         instruções de vida, favorecendo o poder de discernimento da criança e despertando-lhe coragem para trilhar seu caminho no mundo, consciente
         da possibilidade e importância de lutar por valores e comportamentos positivos.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (29, 'Tablet Positivo Duo ZX3020 Prata e Preto 2 em 1 Quad-Core 16GB', 3, 2, 200, 400,
+VALUES (29, 'Tablet Positivo Duo ZX3020 Prata e Preto 2 em 1 Quad-Core 16GB', 3, 95, 200, 400,
         'O novo notebook híbrido Positivo Duo ZX integra o que há de melhor em tablets e notebooks, unindo as duas tecnologias em um produto moderno
         e sofisticado. A tela touch destacável é um poderoso tablet de 10 polegadas, Quad-Core com Windows 8, para muito desempenho e diversão.
         Conectando à doca, transforme o tablet em um notebook e produza conteúdos de forma mais eficiente e confortável, com teclado, touchpad e porta
@@ -927,7 +927,7 @@ VALUES (29, 'Tablet Positivo Duo ZX3020 Prata e Preto 2 em 1 Quad-Core 16GB', 3,
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (30, 'Pen Drive Titan 8GB Preto Multilaser PD601', 3, 2, 200, 400,
+VALUES (30, 'Pen Drive Titan 8GB Preto Multilaser PD601', 3, 101, 200, 400,
         'Salve tudo que precisa e tenha sempre com você o Pen Drive Titan 8 GB. Leve e de formato anatômico ele permite que você tenha sempre à
         mão suas músicas, fotos, vídeos e arquivos pessoais.
         Compatível com Windows 98 e superiores/ Mac OS 9.0 e superiores; a conexão USB 2.0 e taxa de transmissão de 13 MB/s (leitura) e 5 MB/s
@@ -936,7 +936,7 @@ VALUES (30, 'Pen Drive Titan 8GB Preto Multilaser PD601', 3, 2, 200, 400,
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (31, 'HD Externo Portatil Samsung M3 1TB USB 3.0', 3, 2, 200, 400,
+VALUES (31, 'HD Externo Portatil Samsung M3 1TB USB 3.0', 3, 99, 200, 400,
         'Graças ao design leve e compacto, o Samsung M3 pode ser transportado com enorme facilidade. O HD externo garante que você consiga levar
         seus arquivos de fotos, vídeos, músicas e muito mais para qualquer lugar. Ao todo, o produto oferece um espaço generoso de 1TB. Para
         assegurar que os dados mais importantes não sejam violados, basta utilizar os recursos do SecretZone e SafetyKey. Compatível com Windows
@@ -946,28 +946,28 @@ VALUES (31, 'HD Externo Portatil Samsung M3 1TB USB 3.0', 3, 2, 200, 400,
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (32, 'Tablet Semp-Toshiba TA0703G 16GB 7 WI-FI 3G', 3, 2, 200, 400,
+VALUES (32, 'Tablet Semp-Toshiba TA0703G 16GB 7 WI-FI 3G', 3, 95, 200, 400,
         'O Tablet TA0703G foi desenvolvido para proporcionar aos usuários um desempenho incrível em todas as tarefas que serão utilizadas, com a
         performance do processador Rockchip Dual Core você terá uma navegação ágil e eficaz. Aliado a memória interna de 16 GB e capacidade de
         expansão para 32 GB, você terá armazenamento de sobra para se entreter a vontade e realizar todos os tipos de tarefa com segurança, sem perder nenhum arquivo.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (33, 'Multifuncional Colorida Wireless 2546 HP', 3, 2, 200, 400,
+VALUES (33, 'Multifuncional Colorida Wireless 2546 HP', 3, 152, 200, 400,
         'Esse all-in-one HP Deskjet de custo acessível oferece impressão sem fios fácil de qualquer lugar da sua casa, além de digitalização e
         cópia — por menos. Configure imediatamente e conte com os resultados de qualidade de que você precisa, usando cartuchos de tinta HP
         originais de baixo custo.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (34, 'Fax Panasonic KX FT932BR com Bina Novo Garantia 1 Ano', 3, 2, 200, 400,
+VALUES (34, 'Fax Panasonic KX FT932BR com Bina Novo Garantia 1 Ano', 3, 153, 200, 400,
         'Você pode enviar o mesmo documento para até 20 números, se você armazenar ítens na agenda telefônica ou na discagem rápida na memória de
         multitransmissão.
         Os números são mantidos na memória de multitransmissão , permitindo que sejam reutilizados com frequência.',
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (35, 'Telefone Sem Fio Philips D1201BBR Dect 60 Bina Preto', 3, 2, 200, 400,
+VALUES (35, 'Telefone Sem Fio Philips D1201BBR Dect 60 Bina Preto', 3, 96, 200, 400,
         'Telefone fixo, sem fio, é com a Philips Ideal para a sua casa ou escritório .
         O equívoco de quem diz que os telefones fixos chegaram ao fim é enorme. A utilidade deles é incrível e, se você não abre mão da eficiência,
         vai se surpreender ainda mais com esse aparelho da Philips.
@@ -982,7 +982,7 @@ VALUES (35, 'Telefone Sem Fio Philips D1201BBR Dect 60 Bina Preto', 3, 2, 200, 4
         30.30, 25.00, 111, 0, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (36, 'Bateria Musical Infantil Transformers 100 Original Kids', 3, 2, 200, 400,
+VALUES (36, 'Bateria Musical Infantil Transformers 100 Original Kids', 3, 110, 200, 400,
         'Utilidades interativas Bateria Acúsitca com som radical para seu filho . Prato de metal e Bumbo com cor de metal reforçado , surporte de
         bumbo acabamento personalizado com o Maximo de uma Bateria proficional . A Bateria transformes vai criar muito momentos de emoção para
         você e seu filho invente suas batidas e torne-se um verdadeiro Rock Star Itens inclusos Acompanha: 01 - Tom Pequeno - 01 - Tom medio e tom
@@ -990,7 +990,7 @@ VALUES (36, 'Bateria Musical Infantil Transformers 100 Original Kids', 3, 2, 200
         30.30, 25.00, 111, 0, '2012-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (37, 'Mini Helicoptero V911 4 Canais com Gyro e Controle 24GHZ', 3, 2, 200, 400,
+VALUES (37, 'Mini Helicoptero V911 4 Canais com Gyro e Controle 24GHZ', 3, 106, 200, 400,
         'O primeiro helicóptero RC que pode voar ao ar livre em clima de vento (eólica exterior grau 3-4).
         Projeto pioneiro única hélice, pode evitar consideravelmente a resistência do vento.
         Alta qualidade dossel de metal ultrafino com peso ultra-leve e forte resistência de impacto.
@@ -1000,21 +1000,21 @@ VALUES (37, 'Mini Helicoptero V911 4 Canais com Gyro e Controle 24GHZ', 3, 2, 20
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (38, 'Tapete Infantil EVA Alfabeto Numeros Alfanumerico Bebe 40PCS', 3, 2, 200, 400,
+VALUES (38, 'Tapete Infantil EVA Alfabeto Numeros Alfanumerico Bebe 40PCS', 3, 113, 200, 400,
         'O Cubo Alfanumérico é um tapete colorido atóxico e lavável.
         Composto por quarenta peças em E.V.A para crianças a partir de três anos. Ele ajuda a criança estimulando a conhecer e a brincar com os
         números. Pode ser usado como decoração, para abafar o som e também amortecer impacto.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (39, 'Piano Teclado Musical Infantil Sons Eletrnico Frete Gratis', 3, 2, 200, 400,
+VALUES (39, 'Piano Teclado Musical Infantil Sons Eletrnico Frete Gratis', 3, 110, 200, 400,
         'BEBÊ MUSICAL PIANO, ALEGRE, DIVERTIDO, REPLETO DE CORES E SONS. AUXILIA NO DESENVOLVIMENTO PEDAGÓGICO DA CRIANÇA ESTIMULANDO A CAPACIDADE
         VISUAL, AUDITIVA E A COORDENAÇÃO MOTORA.
         POSSUI 3 FUNÇÕES DIFERENTES E LUZES PISCANTES, A CRIANÇADA VAI ADORAR!',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (40, 'DVD Player H Buster HBD 6680 Tela 27 Toca CD USB MP3 Radio', 3, 2, 200, 400,
+VALUES (40, 'DVD Player H Buster HBD 6680 Tela 27 Toca CD USB MP3 Radio', 3, 118, 200, 400,
         'Esse DVD automotivo inovador e moderno possui frente Flip Down removível e controle remoto slim, assim você comanda a festa com
         tranquilidade e pode guardar o aparelho sempre que quiser.
         A tela LCD colorida tem formato Wide 16:9 e resolução 320x240, reproduzindo áudios, fotos e vídeos com excelente definição, através de CDs,
@@ -1023,13 +1023,13 @@ VALUES (40, 'DVD Player H Buster HBD 6680 Tela 27 Toca CD USB MP3 Radio', 3, 2, 
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (41, 'Caixa Trio 100 Selenium 2 Modulos Taramps Frete Gratis', 3, 2, 200, 400,
+VALUES (41, 'Caixa Trio 100 Selenium 2 Modulos Taramps Frete Gratis', 3, 114, 200, 400,
         'Através deste sistema você poderá reproduzir sons em todas as faixas de áudio.Reproduzindo entre 40Hz e 25000Hz, conseguindo assim uma
         qualidade incomparável.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (42, 'Capas de Courvin para Bancos Automotivos Frete Gratis', 3, 2, 200, 400,
+VALUES (42, 'Capas de Courvin para Bancos Automotivos Frete Gratis', 3, 122, 200, 400,
         'CAPAS AUTOMOTIVAS 1)ELEGÂNCIA: Capas personalizadas,com acabamentos refinados : costura dupla ,logotipo bordado.para dar um aspecto
         diferenciado em seu automóvel. seguindo a originaidade do seu carro. 2)CONFORTO : São capas desenvolvidas com a intenção de unir qualidade
         ao bem estar proporcionando.Conforto absoluto.(reforçados os encostos e assentos com uma pequena camada de espuma) 3)QUALIDADE: ?material
@@ -1047,13 +1047,13 @@ VALUES (42, 'Capas de Courvin para Bancos Automotivos Frete Gratis', 3, 2, 200, 
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (43, 'Kit Caixa Trio Completa 7000W 2 12 4D 2T Modulo 4000W', 3, 2, 200, 400,
+VALUES (43, 'Kit Caixa Trio Completa 7000W 2 12 4D 2T Modulo 4000W', 3, 114, 200, 400,
         'Caixa de som automotivo completa: 2 - subwoofer de 12", + 4 driver, + 2 tweeter, + módulo de 1.950w Rms total e 4 corneta junto já com
         4 capacitores.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (44, 'Modulo Amplificador Taramps TS 800 X4 800W RMS RCA Sedex', 3, 2, 200, 400,
+VALUES (44, 'Modulo Amplificador Taramps TS 800 X4 800W RMS RCA Sedex', 3, 114, 200, 400,
         'Esse Módulo Amplificador Taramps TS 800x4 de 2 Ohms tem todos os requisitos que você precisa para deixar seu som muito mais potente e tunado.
         Elaborado para atender sons graves, médios e agudos, o Amplificador TS800X4 Taramps conta com 4 saídas de 240W a 13,8VDC, totalizando uma
         potência de 960W RMS. O Módulo Amplificador já possui crossover embutido e controle “bass boost” que ajuda controlar e reforçar mais ainda os
@@ -1061,7 +1061,7 @@ VALUES (44, 'Modulo Amplificador Taramps TS 800 X4 800W RMS RCA Sedex', 3, 2, 20
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (45, 'Maleta de Ferramentas com 142 Pecas BR Tools', 3, 2, 200, 400,
+VALUES (45, 'Maleta de Ferramentas com 142 Pecas BR Tools', 3, 124, 200, 400,
         'A Maleta de Ferramentas 142 peças BR Tools foi desenvolvida para facilitar sua vida na hora de transportar e armazenar suas ferramentas.
         Composto por 142 ferramentas é o kit ideal para você ter em sua residencia, escritório para auxiliar nos mais diversos reparos, as
         ferramentas são fabricadas em aço carbono que garantem maior durabilidade de seu produto. A maleta de ferramentas com 142 peças conta com
@@ -1069,17 +1069,17 @@ VALUES (45, 'Maleta de Ferramentas com 142 Pecas BR Tools', 3, 2, 200, 400,
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (46, 'Jogo de Ferramentas 110 Pecas Mayle', 3, 2, 200, 400,
+VALUES (46, 'Jogo de Ferramentas 110 Pecas Mayle', 3, 124, 200, 400,
         'Jogo de Ferramentas 110 Pecas Mayle',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (47, 'Kit Jogo Ferramentas e Furadeira Maleta 110PCS Frete Gratis', 3, 2, 200, 400,
+VALUES (47, 'Kit Jogo Ferramentas e Furadeira Maleta 110PCS Frete Gratis', 3, 124, 200, 400,
         'Kit Jogo Ferramentas e Furadeira Maleta 110PCS',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (48, 'Camisa 3D Caveira Breakthough The Mountain no Brasil', 3, 2, 200, 400,
+VALUES (48, 'Camisa 3D Caveira Breakthough The Mountain no Brasil', 3, 138, 200, 400,
         'As camisas são pré-encolhidas. São lavadas e secas no processo de tingimento, portanto, não deve haver nenhum encolhimento perceptível.
         Camisetas são feitas de 100% algodão e são tingidas à mão.
         Todos os desenhos camiseta são feitas a partir de água à base de tintas que são tingidos no tecido em si. O processo de impressão dá estas
@@ -1088,19 +1088,19 @@ VALUES (48, 'Camisa 3D Caveira Breakthough The Mountain no Brasil', 3, 2, 200, 4
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (49, 'Camisetas Engracadas Dandas Filmes Serie Games Super Herois', 3, 2, 200, 400,
+VALUES (49, 'Camisetas Engracadas Dandas Filmes Serie Games Super Herois', 3, 138, 200, 400,
         'Camisetas Engracadas Dandas Filmes Serie Games Super Herois',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (50, 'Camisa Social Slim Fit Importada 200 Novos Modelos', 3, 2, 200, 400,
+VALUES (50, 'Camisa Social Slim Fit Importada 200 Novos Modelos', 3, 137, 200, 400,
         'FABRICAÇÃO PRÓPRIA, PRODUTO DISPONIVEL A PRONTA ENTREGA CASO NAO ESTEJA DISPONIVEL EM ESTOQUE SERÁ FABRICADO E ENVIADO NO PRAZO MAXIMO DE
         5 DIAS UTEIS.
         Acompanhamos a sua compra desde o pedido até a chegada dele à sua casa e assim, te damos toda a assistência necessária para uma compra segura.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (51, 'Calca Jeans Preta Skinny Sarja Jeans', 3, 2, 200, 400,
+VALUES (51, 'Calca Jeans Preta Skinny Sarja Jeans', 3, 140, 200, 400,
         'A calça skinny é um modelo que caiu no gosto de todas as mulheres, afinal, ela fica bem em todos os tipos de corpos e combina com tudo
         que é roupa. Mas lembre-se sempre da regra de ouro para compôr looks com esse tipo de calça: calça justa embaixo, a parte de cima deve
         ser larguinha! Fazer sobreposições deixa o look bem moderno. Aposte nas sobreposições camisa + cardigan ou sweater. Se você quiser um
@@ -1108,7 +1108,7 @@ VALUES (51, 'Calca Jeans Preta Skinny Sarja Jeans', 3, 2, 200, 400,
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (52, 'Calca Combat Forhonor Top de Linha Ripstop Design Marines', 3, 2, 200, 400,
+VALUES (52, 'Calca Combat Forhonor Top de Linha Ripstop Design Marines', 3, 140, 200, 400,
         'Produzida em tecido RIP STOP SUPER, composto por 67% algodão / 33% poliéster.
         Tecido Original, importado dos EUA - Tecido leve, superior às calças mais comuns.
         Conforto garantido, testado e aprovado pela Equipe VentureShop em Campos de Airsoft ! Pode ser usado também no dia-a-dia.
@@ -1123,19 +1123,19 @@ VALUES (52, 'Calca Combat Forhonor Top de Linha Ripstop Design Marines', 3, 2, 2
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (53, 'Kit com 3 Cinto em Gorgoro Cafetroy', 3, 2, 200, 400,
+VALUES (53, 'Kit com 3 Cinto em Gorgoro Cafetroy', 3, 139, 200, 400,
         'O Kit 3 Cinto Sandro Moscoloni são todos confeccionados em gorgorão com recortes em couro legítimo. Com largura de 4 cm. A fivela é presa
         com parafuso de regulagem, permitindo redução do tamanho original.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (54, 'Adidas Springblade Drive 4 Original 20 Pronta Entrega', 3, 2, 200, 400,
+VALUES (54, 'Adidas Springblade Drive 4 Original 20 Pronta Entrega', 3, 143, 200, 400,
         'Para os apaixonados por estilo e conforto, o Tênis Adidas Springblade Drive é a pedida de certa! Com uma energia explosiva aliada a um
         design inovador, proporciona impulso a cada passo.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (55, 'Tenis Mizuno Prophecy 2 Original Frete Gratis Pronta Entrega', 3, 2, 200, 400,
+VALUES (55, 'Tenis Mizuno Prophecy 2 Original Frete Gratis Pronta Entrega', 3, 143, 200, 400,
         'Em sua quarta versão, o Tênis Mizuno Wave Prophecy 4 Masculino mantém suas origens em proporcionar o máximo em amortecimento para o seu
         melhor desempenho nas atividades físicas. Seu cabedal todo envolto com “AIRmesh”, possui um tecido de tramas abertas que proporciona maior
         ventilação, garantindo o máximo de conforto e evitando odores indesejáveis aos seus pés. Com tecnologia “DINAMOTION FIT”, a peça permite a
@@ -1147,7 +1147,7 @@ VALUES (55, 'Tenis Mizuno Prophecy 2 Original Frete Gratis Pronta Entrega', 3, 2
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (56, 'Bota Masculina Sandro Moscoloni em Couro Worker Amarelo', 3, 2, 200, 400,
+VALUES (56, 'Bota Masculina Sandro Moscoloni em Couro Worker Amarelo', 3, 147, 200, 400,
         'Com um visual rústico, a Bota Challenger Off Road foi desenvolvida para proporcionar estilo, conforto e durabilidade. Confeccionada em
         couro floater, a Bota é indicada para operações de longa duração, operações em terrenos acidentados e úmidos. O modelo Challenger, também
         compõe diversos estilos mais charmosos, sempre ao lado de peças em diferentes tons. Devido ao seu visual moderno, o modelo faz o estilo
@@ -1155,21 +1155,21 @@ VALUES (56, 'Bota Masculina Sandro Moscoloni em Couro Worker Amarelo', 3, 2, 200
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (57, 'Sapato Social em Couro Verniz 100 Legitimo Frete Gratis', 3, 2, 200, 400,
+VALUES (57, 'Sapato Social em Couro Verniz 100 Legitimo Frete Gratis', 3, 145, 200, 400,
         'Os sapatos masculinos são o acessório que mais valoriza a produção do homem em qualquer ocasião.
         Os sapatos em Couro Verniz são indicados para compor os looks mais formais e chiques. A linha Veneza é extremamente elegante, sofisticada,
         luxuosa e transforma um simples visual formal com muito requinte.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (58, 'Sapato Importado Feminino Glitter Pronta Entrega no Brasil', 3, 2, 200, 400,
+VALUES (58, 'Sapato Importado Feminino Glitter Pronta Entrega no Brasil', 3, 145, 200, 400,
         'Confeccionados com o mais alto padrão de qualidade Produto a pronta entrega!!
         Totalmente livre de qualquer tipo de tributação feita pela Alfândega.
         OBS: Os sapatos poderam ter solados vermelho ou preto, dependendo da disposição em estoque.',
         30.30, 25.00, 111, 0, '2010-10-28 09:39:49', '2011-10-28 09:39:49');
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (59, 'Sapatenis em Couro Legitimo Sandro Moscoloni Street', 3, 2, 200, 400,
+VALUES (59, 'Sapatenis em Couro Legitimo Sandro Moscoloni Street', 3, 144, 200, 400,
         'Produzido em couro Látego em cor Marrone. O Sapato Sandro Moscoloni Streer, apresenta pespontos em torno do modelo e ilhoses nos passantes
         do cadarço. Detalhe de tira em gorgurão itálico na língua do calçado. Parte interior em couro com material têxtil. Palmilha macia com um
         sistema exclusivo (Flexibility 360°), proporcionando muito conforto durante o uso e um caminhar suave. Possui solado de borracha, com sistema
@@ -1177,14 +1177,14 @@ VALUES (59, 'Sapatenis em Couro Legitimo Sandro Moscoloni Street', 3, 2, 200, 40
         30.30, 25.00, 111, 0, NOW(), NOW());
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (60, 'Relogio Invicta Pro Diver 6981 Ouro 18K', 3, 2, 200, 400,
+VALUES (60, 'Relogio Invicta Pro Diver 6981 Ouro 18K', 3, 148, 200, 400,
         'Um classico Invicta que não pode faltar na sua coleção. Sua pulseira em borracha com detalhes em aço inoxidável torna esse relógio um
         coringa, para uso com roupas mais formais ou esportivas. Tem sido a escolha de entrada de muitos colecionadores no mundo invicta. Um
         relógio facil de combinar e que agrada todos os gostos. Como presente é escolha certa e sem risco.',
         30.30, 25.00, 111, 0, NOW(), NOW());
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (61, 'Smartwatch U8 Relogio Inteligente Bluetooth Android Iphone', 3, 2, 200, 400,
+VALUES (61, 'Smartwatch U8 Relogio Inteligente Bluetooth Android Iphone', 3, 148, 200, 400,
         'Novo relógio inteligente U8 UWatch Fit para Smartphones IOS da Apple, Android, iphone 4 / 4S / 5 / 5C / 5S, Android Samsung S2 / S3 / S4 /
         Note 2 / Nota 3, HTC, Sony, Blackberry da LEMFO.
         Ideal para práticas de esportes outdoor, esse companheiro inteligente é Podômetro, Cronômetro, calendário, chamada Sync, Calculadora, Relógio,
@@ -1195,29 +1195,29 @@ VALUES (61, 'Smartwatch U8 Relogio Inteligente Bluetooth Android Iphone', 3, 2, 
         30.30, 25.00, 111, 0, NOW(), NOW());
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (62, 'Relogio Feminino com Estojo 26 Pulseiras 26 Aros Relogios', 3, 2, 200, 400,
+VALUES (62, 'Relogio Feminino com Estojo 26 Pulseiras 26 Aros Relogios', 3, 148, 200, 400,
         'Este relógio analógico, além de super moderno, possui pulseira de silicone . Com 25 cores sortidas . Ideal para
         quem é pontual e gosta de estar sempre na moda!',
         30.30, 25.00, 111, 0, NOW(), NOW());
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (63, 'Relogio de Pulso Vintage Feminino em Couro Brinde Exclusivo', 3, 2, 200, 400,
+VALUES (63, 'Relogio de Pulso Vintage Feminino em Couro Brinde Exclusivo', 3, 148, 200, 400,
         'Relógio de pulso feminino, excelente qualidade e durabilidade! Pulseira de Couro Ajustavél. Analógico, Cores: Azul Pingente Folha,
         Vermelho Pingente Coração, Verde Pingente Coração, Marrom Pingente Folha.',
         30.30, 25.00, 111, 0, NOW(), NOW());
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (64, 'Pulseira Bracelete Masculina Tribal Couro 2 Unidades Frete Gratis', 3, 2, 200, 400,
+VALUES (64, 'Pulseira Bracelete Masculina Tribal Couro 2 Unidades Frete Gratis', 3, 149, 200, 400,
         'Pulseira Masculina Couro Legítimo (2 Peças)',
         30.30, 25.00, 111, 0, NOW(), NOW());
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (65, 'Pulseira Masculina Bracelete Couro Legitimo Preto Aco Inox', 3, 2, 200, 400,
+VALUES (65, 'Pulseira Masculina Bracelete Couro Legitimo Preto Aco Inox', 3, 149, 200, 400,
         'Pulseira Masculina confeccionada em couro legítimo, com detalhes em aço inoxidável Trabalhado.',
         30.30, 25.00, 111, 0, NOW(), NOW());
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (66, 'Pulseira Feminina Victoria Secrets Cristal Banhado Ouro 18K', 3, 2, 200, 400,
+VALUES (66, 'Pulseira Feminina Victoria Secrets Cristal Banhado Ouro 18K', 3, 149, 200, 400,
         'Linda Pulseira Feminina Victoria´s Secret Cristal  Swarovski Alto Brilho Banhada a Ouro 18k Tamanho da pulseira  23 centímetros, podendo
         ser ajustado para qualquer espessura de pulso menor que 23 cm.
         Linda e delicada pulseira para mulheres surpreendentes.
@@ -1226,7 +1226,7 @@ VALUES (66, 'Pulseira Feminina Victoria Secrets Cristal Banhado Ouro 18K', 3, 2,
         30.30, 25.00, 111, 0, NOW(), NOW());
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (67, 'Caixa com 10 Resmas Papel Folha A4 75G Reciclado Chamex', 3, 2, 200, 400,
+VALUES (67, 'Caixa com 10 Resmas Papel Folha A4 75G Reciclado Chamex', 3, 154, 200, 400,
         'Papel de superfície lisa, totalmente reciclado, possui excelente qualidade de impressão. Ideal para diferenciar os trabalhos por possuir
         textura única e ser reciclado.
         Tipos de impressão.
@@ -1236,7 +1236,7 @@ VALUES (67, 'Caixa com 10 Resmas Papel Folha A4 75G Reciclado Chamex', 3, 2, 200
         30.30, 25.00, 111, 0, NOW(), NOW());
 
 INSERT INTO products (id, product_name, store_id, sub_category_id, quantity, sold, description, price, old_price, visited, status, created, modified)
-VALUES (68, 'Carimbos para Professoras Premium 20 Original', 3, 2, 200, 400,
+VALUES (68, 'Carimbos para Professoras Premium 20 Original', 3, 155, 200, 400,
         'Carimbos personalizados para professores e profissionais da área pedagógica.
         + de 500 desenho e modelos para facilitar seu dia a dia. Ganhe mais tempo para ensinar!
         Bom, bonito e barato com a confiança de ser um produto Carimbarte.',
