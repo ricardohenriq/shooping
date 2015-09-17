@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Categories Controller
@@ -100,5 +101,15 @@ class CategoriesController extends AppController
             $this->Flash->error(__('The category could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['index']);
+    }
+
+    public function isAuthorized($user = null)
+    {
+        return parent::isAuthorized($user);
     }
 }

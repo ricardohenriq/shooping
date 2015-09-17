@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Features Controller
@@ -101,5 +102,15 @@ class FeaturesController extends AppController
             $this->Flash->error(__('The feature could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['index']);
+    }
+
+    public function isAuthorized($user = null)
+    {
+        return parent::isAuthorized($user);
     }
 }

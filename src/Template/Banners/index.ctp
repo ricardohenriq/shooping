@@ -56,15 +56,15 @@
         </div>
         <?= $this->element('Body/back_top') ?>
         <?= $this->element('Footer/footer_information') ?>
-        <?php if ($logged == false): ?>
+        <?php if ($logged == tre): ?>
             <?= $this->element('Modal/create_account_modal') ?>
             <?= $this->element('Modal/login_modal') ?>
-            <?= $this->element('Modal/add_banner_modal') ?>
-            <?= $this->element('Modal/view_banner_modal') ?>
-            <?= $this->element('Modal/edit_banner_modal') ?>
         <?php elseif($logged == true): ?>
             <?= $this->element('Modal/logout_modal') ?>
             <?= $this->element('Modal/edit_profile_modal') ?>
+            <?= $this->element('Modal/add_banner_modal') ?>
+            <?= $this->element('Modal/view_banner_modal') ?>
+            <?= $this->element('Modal/edit_banner_modal') ?>
         <?php endif; ?>
     </body>
 </html>

@@ -55,4 +55,9 @@ class PromotionsTable extends Table
 
         return $validator;
     }
+
+    public function isOwnedBy($promotionId, $userId)
+    {
+        return $this->exists(['id' => $promotionId, 'user_id' => $userId]);
+    }
 }

@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Products Controller
@@ -356,5 +357,24 @@ class ProductsController extends AppController
 
         $this->response->file($fileNameWithPath, ['download' => true, 'name' => $fileName]);
         return $this->response;
+    }
+
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['index', 'upload']);
+    }
+
+    public function isAuthorized($user = null)
+    {
+        // Only access action with your 'id'
+        // The owner of an banner can edit and delete it
+        if (in_array($this->request->action, ['edit', 'delete'])) {
+            $bannerId = (int)$this->request->params['pass'][0];
+            if ($this->Banners->isOwnedBy($bannerId, $user['id'])) {
+                return true;
+            }
+        }
+
+        return parent::isAuthorized($user);
     }
 }

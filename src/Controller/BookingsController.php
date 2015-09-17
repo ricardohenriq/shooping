@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Bookings Controller
@@ -108,5 +109,24 @@ class BookingsController extends AppController
             $this->Flash->error(__('The booking could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['index']);
+    }
+
+    public function isAuthorized($user = null)
+    {
+        // Only access action with your 'id'
+        // The owner of an banner can edit and delete it
+        if (in_array($this->request->action, ['edit', 'delete', 'view'])) {
+            $bookingId = (int)$this->request->params['pass'][0];
+            if ($this->Bookings->isOwnedBy($bookingId, $user['id'])) {
+                return true;
+            }
+        }
+
+        return parent::isAuthorized($user);
     }
 }

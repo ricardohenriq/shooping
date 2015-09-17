@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Promotions Controller
@@ -101,5 +102,24 @@ class PromotionsController extends AppController
             $this->Flash->error(__('The promotion could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['index']);
+    }
+
+    public function isAuthorized($user = null)
+    {
+        // Only access action with your 'id'
+        // The owner of an banner can edit and delete it
+        if (in_array($this->request->action, ['edit', 'delete', 'view'])) {
+            $promotionId = (int)$this->request->params['pass'][0];
+            if ($this->Banners->isOwnedBy($promotionId, $user['id'])) {
+                return true;
+            }
+        }
+
+        return parent::isAuthorized($user);
     }
 }

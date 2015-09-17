@@ -71,4 +71,9 @@ class BookingsTable extends Table
         $rules->add($rules->existsIn(['user_id'], 'Users'));
         return $rules;
     }
+
+    public function isOwnedBy($bookingId, $userId)
+    {
+        return $this->exists(['id' => $bookingId, 'user_id' => $userId]);
+    }
 }

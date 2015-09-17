@@ -123,6 +123,7 @@ CREATE TABLE promotions (
   id INT AUTO_INCREMENT PRIMARY KEY,
   promotion_name VARCHAR(255) NOT NULL,
   duration INT NOT NULL,
+  user_id INT NOT NULL,
   date_start DATETIME,
   date_end DATETIME,
   created DATETIME,

@@ -4097,8 +4097,6 @@ VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4/Liquidificador-
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (1, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4/Liquidificador-e-Processador-Reverse-Red-Oster-110V-4.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-#-----
-
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (2, 5, 'http://localhost/PROJETOS/ShoppingResources/img/5/MP3-Player-Shuffle-Clip-FM-Cabo-USB-Fone-Suporta-ate-8G-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
@@ -4902,20 +4900,20 @@ VALUES (1, 68, 'http://localhost/PROJETOS/ShoppingResources/img/68/Carimbos-para
 
 ## 5 registros na tabela "promotions" -------------------------------------------------
 
-INSERT INTO promotions (promotion_name, duration, date_start, date_end, created, modified)
-VALUES ('Promoção de férias', 5, '2010-10-28 09:39:49', '2011-10-28 09:39:49', NOW(), NOW());
+INSERT INTO promotions (promotion_name, duration, user_id, date_start, date_end, created, modified)
+VALUES ('Promoção de férias', 5, 25, '2010-10-28 09:39:49', '2011-10-28 09:39:49', NOW(), NOW());
 
-INSERT INTO promotions (promotion_name, duration, date_start, date_end, created, modified)
-VALUES ('Promoção de primavera', 7, '2011-10-28 09:39:49', '2012-10-28 09:39:49', NOW(), NOW());
+INSERT INTO promotions (promotion_name, duration, user_id, date_start, date_end, created, modified)
+VALUES ('Promoção de primavera', 7, 26, '2011-10-28 09:39:49', '2012-10-28 09:39:49', NOW(), NOW());
 
-INSERT INTO promotions (promotion_name, duration, date_start, date_end, created, modified)
-VALUES ('Promoção de outono', 9, '2012-10-28 09:39:49', '2013-10-28 09:39:49', NOW(), NOW());
+INSERT INTO promotions (promotion_name, duration, user_id, date_start, date_end, created, modified)
+VALUES ('Promoção de outono', 9, 27, '2012-10-28 09:39:49', '2013-10-28 09:39:49', NOW(), NOW());
 
-INSERT INTO promotions (promotion_name, duration, date_start, date_end, created, modified)
-VALUES ('Promoção de verão', 2, '2013-10-28 09:39:49', '2014-10-28 09:39:49', NOW(), NOW());
+INSERT INTO promotions (promotion_name, duration, user_id, date_start, date_end, created, modified)
+VALUES ('Promoção de verão', 2, 28, '2013-10-28 09:39:49', '2014-10-28 09:39:49', NOW(), NOW());
 
-INSERT INTO promotions (promotion_name, duration, date_start, date_end, created, modified)
-VALUES ('Promoção de inverno', 14, '2014-10-28 09:39:49', '2017-10-28 09:39:49', NOW(), NOW());
+INSERT INTO promotions (promotion_name, duration, user_id, date_start, date_end, created, modified)
+VALUES ('Promoção de inverno', 14, 29, '2014-10-28 09:39:49', '2017-10-28 09:39:49', NOW(), NOW());
 
 #@ 8 registros na tabela "product_promotions" -----------------------------------------
 

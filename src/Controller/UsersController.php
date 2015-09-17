@@ -151,9 +151,6 @@ class UsersController extends AppController
         return $this->redirect($this->Auth->logout());
     }
 
-    // Este método é executado antes de cada ação dos controllers. É um ótimo lugar para
-    // verificar se há uma sessão ativa ou inspecionar as permissões de um usuário.
-    // Neste caso libera o acesso a action 'add' (bloqueado pelo AuthComponent)
     public function beforeFilter(Event $event)
     {
         $this->Auth->allow(['add', 'login', 'logout']);
