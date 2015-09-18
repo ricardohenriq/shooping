@@ -21,6 +21,46 @@ $('[data-target=#add_banner_modal]').click(function(){
     }
 });
 
+$('#submit-login').click(function(){
+    var url = 'users/login';
+    var formData = $('#login-form').serialize();
+    ajaxJsonData(displayLoginMessage, url, formData)
+});
+
+function displayLoginMessage(response){
+    var parentId = '#login_modal';
+    var messageLocal = '.message';
+    printMessage(parentId, messageLocal, response);
+    styleMessage(parentId, messageLocal, response);
+    if(response['code'] === 2){
+        location.reload();
+    }
+}
+
+function printMessage(parentId, messageLocal, response){
+    var message = '';
+    for(var item in response){
+        if(response[item] != null){
+            message += response[item] + ' - ';
+        }
+    }
+    $(parentId + ' ' + messageLocal).text(message.slice(0,-3));
+}
+
+var possibleErrorCodes = [1,3,5];
+var possibleSuccessCodes = [2,4,7];
+var possibleWarningCodes = [6];
+
+function styleMessage(parentId, messageLocal, response){
+    if($.inArray(response['code'], possibleErrorCodes) !== -1){
+        $(parentId + ' ' + messageLocal).addClass('error');
+    }else if($.inArray(response['code'], possibleSuccessCodes) !== -1){
+        $(parentId + ' ' + messageLocal).addClass('success');
+    }else if($.inArray(response['code'], possibleWarningCodes) !== -1){
+        $(parentId + ' ' + messageLocal).addClass('warning');
+    }
+}
+
 $.getJSON("../json/products.json", function (products) {
     autoCompleteMulti(products, '#search');
 });

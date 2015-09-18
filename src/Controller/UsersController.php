@@ -1,8 +1,12 @@
 <?php
 namespace App\Controller;
 
+use App\AppClasses\EnumClasses\CodeEnum;
+use App\AppClasses\EnumClasses\MessageEnum;
+use App\AppClasses\EnumClasses\NameEnum;
 use App\Controller\AppController;
 use Cake\Event\Event;
+use App\AppClasses\DataClasses\ResponseMessage;
 
 /**
  * Users Controller
@@ -135,13 +139,24 @@ class UsersController extends AppController
 
     public function login()
     {
+        $this->autoRender = false;
+        $this->response->type('json');
         if ($this->request->is('post')) {
             $user = $this->Auth->identify();
             if ($user) {
                 $this->Auth->setUser($user);
-                return $this->redirect($this->Auth->redirectUrl());
+                //return $this->redirect($this->Auth->redirectUrl());
+                $response = new ResponseMessage();
+                $response->code = CodeEnum::LOGIN_GRANTED;
+                $response->name = NameEnum::LOGIN_GRANTED;
+                $this->response->body(json_encode($response));
+            }else {
+                $response = new ResponseMessage();
+                $response->code = CodeEnum::LOGIN_DENIED;
+                $response->name = NameEnum::LOGIN_DENIED;
+                $response->message = MessageEnum::USER_PASS_INCORRECT;
+                $this->response->body(json_encode($response));
             }
-            $this->Flash->error('Your username or password is incorrect.');
         }
     }
 

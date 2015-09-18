@@ -246,3 +246,18 @@ hr{
     position:relative;
     bottom:10px
 }
+
+.error{
+    color:#FF0000;
+    font-weight:bold
+}
+
+.success{
+    color:#00FF2B;
+    font-weight:bold
+}
+
+.warning{
+    color:#F0FF00;
+    font-weight:bold
+}
