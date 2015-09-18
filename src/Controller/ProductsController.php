@@ -361,7 +361,7 @@ class ProductsController extends AppController
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index', 'upload']);
+        $this->Auth->allow(['index', 'upload', 'mostPopular', 'search']);
     }
 
     public function isAuthorized($user = null)
