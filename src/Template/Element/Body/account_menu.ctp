@@ -4,7 +4,7 @@
             <h3 class="panel-title span7 text-center title">Conta</h3>
         </div>
         <div class="panel-body">
-            <?= $this->Html->link('Meu Perfil', ['controller' => 'Users', 'action' => '', 'target' => '_blank']) ?><br>
+            <?= $this->Html->link('Meu Perfil', ['controller' => 'Users', 'action' => 'view', $userId]) ?><br>
             <?= $this->Html->link('Meus Produtos', ['controller' => 'Users', 'action' => '', 'target' => '_blank']) ?><br>
             <?= $this->Html->link('Meus Comentários', ['controller' => 'Users', 'action' => '', 'target' => '_blank']) ?><br>
             Email:&nbsp;<?= $this->Html->link('Não Verificado', ['controller' => 'Users', 'action' => '', 'target' => '_blank']) ?>

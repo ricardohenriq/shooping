@@ -1,7 +1,8 @@
 <div class="col-md-9">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <button type="button" class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#edit_profile_modal">Edit</button>
+            <?= $this->Form->button(__('Editar Perfil'), ['type' => 'button', 'class' => 'btn btn-primary btn-xs pull-right',
+            'data-toggle' => 'modal', 'data-target' => '#edit_profile_modal']) ?>
             <h3 class="panel-title text-center title">Meu Perfil</h3>
         </div>
         <div class="panel-body">
@@ -57,6 +58,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="panel-footer">
+            <?= $this->Form->button(__('Deletar Conta'), ['type' => 'button', 'class' => 'btn btn-danger btn-xs',
+            'data-toggle' => 'modal', 'data-target' => '#delete_account_modal']) ?>
         </div>
     </div>
 </div>

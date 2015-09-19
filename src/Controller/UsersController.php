@@ -4,6 +4,7 @@ namespace App\Controller;
 use App\AppClasses\EnumClasses\CodeEnum;
 use App\AppClasses\EnumClasses\MessageEnum;
 use App\AppClasses\EnumClasses\NameEnum;
+use App\AppClasses\EnumClasses\TypeMessageEnum;
 use App\Controller\AppController;
 use Cake\Event\Event;
 use App\AppClasses\DataClasses\ResponseMessage;
@@ -63,6 +64,21 @@ class UsersController extends AppController
 
         $logged = $this->Auth->user();
         $this->set('logged', $logged);
+
+        //-------------------------------------------------------------------------
+
+        $userId = $this->Auth->user('id');
+        $this->set('userId', $userId);
+
+        //-------------------------------------------------------------------------
+
+        $username = $this->Auth->user('username');
+        $this->set('username', $username);
+
+        //-------------------------------------------------------------------------
+
+        $email = $this->Auth->user('email');
+        $this->set('email', $email);
 
         //-------------------------------------------------------------------------
 
@@ -126,15 +142,28 @@ class UsersController extends AppController
      */
     public function delete($id = null)
     {
+        $this->autoRender = false;
+        $this->response->type('json');
         //Quando acessado via GET é lançado a exceção: Method Not Allowed
         $this->request->allowMethod(['post', 'delete']);
         $user = $this->Users->get($id);
         if ($this->Users->delete($user)) {
-            $this->Flash->success(__('The user has been deleted.'));
+            //$this->Flash->success(__('The user has been deleted.'));
+            //return $this->redirect(['action' => 'index']);
+            $response = new ResponseMessage();
+            $response->code = CodeEnum::USER_DELETED;
+            $response->name = NameEnum::USER_DELETED;
+            $response->type = TypeMessageEnum::SUCCESS;
+            $this->response->body(json_encode($response));
         } else {
-            $this->Flash->error(__('The user could not be deleted. Please, try again.'));
+            //$this->Flash->error(__('The user could not be deleted. Please, try again.'));
+            $response = new ResponseMessage();
+            $response->code = CodeEnum::USER_NOT_DELETED;
+            $response->name = NameEnum::USER_NOT_DELETED;
+            $response->type = TypeMessageEnum::SUCCESS;
+            $this->response->body(json_encode($response));
         }
-        return $this->redirect(['action' => 'index']);
+        //return $this->redirect(['action' => 'index']);
     }
 
     public function login()
@@ -149,12 +178,14 @@ class UsersController extends AppController
                 $response = new ResponseMessage();
                 $response->code = CodeEnum::LOGIN_GRANTED;
                 $response->name = NameEnum::LOGIN_GRANTED;
+                $response->type = TypeMessageEnum::SUCCESS;
                 $this->response->body(json_encode($response));
             }else {
                 $response = new ResponseMessage();
                 $response->code = CodeEnum::LOGIN_DENIED;
                 $response->name = NameEnum::LOGIN_DENIED;
                 $response->message = MessageEnum::USER_PASS_INCORRECT;
+                $response->type = TypeMessageEnum::ERROR;
                 $this->response->body(json_encode($response));
             }
         }
@@ -168,7 +199,7 @@ class UsersController extends AppController
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['add', 'login', 'logout']);
+        $this->Auth->allow(['add', 'login', 'logout', 'index']);
     }
 
     public function isAuthorized($user = null)

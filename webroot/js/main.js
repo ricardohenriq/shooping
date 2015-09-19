@@ -32,7 +32,7 @@ function displayLoginMessage(response){
     var messageLocal = '.message';
     printMessage(parentId, messageLocal, response);
     styleMessage(parentId, messageLocal, response);
-    if(response['code'] === 2){
+    if(response['type'] === 'Sucesso'){
         location.reload();
     }
 }
@@ -47,18 +47,29 @@ function printMessage(parentId, messageLocal, response){
     $(parentId + ' ' + messageLocal).text(message.slice(0,-3));
 }
 
-var possibleErrorCodes = [1,3,5];
-var possibleSuccessCodes = [2,4,7];
-var possibleWarningCodes = [6];
-
 function styleMessage(parentId, messageLocal, response){
-    if($.inArray(response['code'], possibleErrorCodes) !== -1){
+    if(response['type'] === 'Erro'){
         $(parentId + ' ' + messageLocal).addClass('error');
-    }else if($.inArray(response['code'], possibleSuccessCodes) !== -1){
+    }else if(response['type'] === 'Sucesso'){
         $(parentId + ' ' + messageLocal).addClass('success');
-    }else if($.inArray(response['code'], possibleWarningCodes) !== -1){
+    }else if(response['type'] === 'Cuidado'){
         $(parentId + ' ' + messageLocal).addClass('warning');
     }
+}
+
+function displayDeleteMessage(response){
+    var parentId = '#delete_account_modal';
+    var messageLocal = '.message';
+    printMessage(parentId, messageLocal, response);
+    styleMessage(parentId, messageLocal, response);
+    if(response['type'] === 'Sucesso'){
+        location.reload();
+    }
+}
+
+function deleteAccount(url){
+    var formData = $('#delete-account-form').serialize();
+    ajaxJsonData(displayDeleteMessage, url, formData)
 }
 
 $.getJSON("../json/products.json", function (products) {
@@ -290,6 +301,11 @@ function ajaxJsonData(functionToExecute, url, dataProperties){
         data: dataProperties,
         success: function (response) {
             functionToExecute(response);
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown){
+            console.log(XMLHttpRequest);
+            console.log(textStatus);
+            console.log(errorThrown);
         },
         dataType: 'json',
         global: false

@@ -34,8 +34,9 @@
                     </div>
                     <div class="form-group text-center">
                         <div class="col-md-6 col-md-offset-3">
-                            <?= $this->Form->button('Reset', ['type' => 'reset', 'class' => 'btn btn-danger']) ?>
-                            <input type="button" value="Login" class="btn btn-info" id="submit-login">
+                            <?= $this->Form->button('Limpar', ['type' => 'reset', 'class' => 'btn btn-danger']) ?>
+                            <?= $this->Form->button('Login', ['type' => 'button', 'class' => 'btn btn-info',
+                            'id' =>'submit-login']) ?>
                         </div>
                     </div>
                 </form>

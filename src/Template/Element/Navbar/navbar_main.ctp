@@ -30,10 +30,10 @@
                     <li>
                         <div class="btn-group navbar-btn">
                             <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                Bill Gates&nbsp;<span class="caret"></span>
+                                <?= $username ?>&nbsp;<span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">My Profile</a></li>
+                                <li><?= $this->Html->link('Meu Perfil', ['controller' => 'Users', 'action' => 'view', $userId]) ?></li>
                                 <li><a href="#">My Favorites</a></li>
                                 <li><a href="#">My History</a></li>
                                 <li><a href="#">My Advertises</a></li>

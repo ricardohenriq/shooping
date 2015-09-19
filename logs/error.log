@@ -23215,3 +23215,1517 @@ Stack Trace:
 #1 {main}
 
 
+2015-09-19 11:48:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 11:48:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 11:56:11 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:04:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 12:04:35 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:07:51 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:08:43 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:08:48 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:14:27 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:15:18 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:15:47 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:17:31 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:17:58 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:18:17 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:21:39 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:21:51 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:23:10 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:23:18 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:29:28 Error: Fatal Error (4): syntax error, unexpected 'Deletar' (T_STRING) in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\profile.ctp, line 62]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-09-19 12:29:29 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'Deletar' (T_STRING)
+Request URL: /users/view/12
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 62)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-09-19 12:29:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Favicon.ico could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.ico',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /favicon.ico
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 12:30:33 Error: Fatal Error (4): syntax error, unexpected ')', expecting ']' in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\profile.ctp, line 66]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-09-19 12:30:34 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ')', expecting ']'
+Request URL: /users/view/12
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 66)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-09-19 12:31:28 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:31:54 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "users"
+Request URL: /users/view/12
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UsersController.php(44): Cake\ORM\Table->get('12', Array)
+#2 [internal function]: App\Controller\UsersController->view('12')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-19 12:32:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 12:32:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 12:32:47 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "users"
+Request URL: /users/view/12
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UsersController.php(44): Cake\ORM\Table->get('12', Array)
+#2 [internal function]: App\Controller\UsersController->view('12')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-19 12:32:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 12:33:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 12:34:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 12:34:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 12:35:19 Error: Fatal Error (4): syntax error, unexpected 'Deletar' (T_STRING) in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\profile.ctp, line 62]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-09-19 12:35:20 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'Deletar' (T_STRING)
+Request URL: /users/view/14
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 62)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-09-19 12:35:35 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:36:04 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:36:23 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:36:55 Error: Fatal Error (4): syntax error, unexpected 'Deletar' (T_STRING) in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\profile.ctp, line 62]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-09-19 12:36:55 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'Deletar' (T_STRING)
+Request URL: /users/view/14
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 62)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-09-19 12:39:13 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:41:06 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:42:06 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\profile.ctp, line 62]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-09-19 12:42:06 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '<'
+Request URL: /users/view/14
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 62)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-09-19 12:42:47 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\profile.ctp, line 62]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 192
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 91
+[main] - [internal], line ??
+
+
+
+2015-09-19 12:42:47 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '<'
+Request URL: /users/view/14
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(91): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 62)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-09-19 12:43:10 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:43:57 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:44:24 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:46:42 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 12:47:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 13:02:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 13:03:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 13:06:22 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 13:08:57 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 13:09:34 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 13:10:44 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 13:11:46 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 13:12:10 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 13:13:48 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 13:38:56 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 13:39:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 13:40:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 13:40:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 13:41:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 13:41:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 13:42:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 13:42:52 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 13:56:41 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 13:57:21 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:02:39 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:03:56 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:04:37 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:05:19 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:05:44 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:07:11 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:10:22 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:12:48 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:13:32 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:14:16 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:14:35 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:16:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:17:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:19:45 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:20:56 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:23:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:23:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:24:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class DiamondFavicon32.png could not be found.
+Exception Attributes: array (
+  'class' => 'DiamondFavicon32.png',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /diamond-favicon-32.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:29:13 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:30:47 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:31:50 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:33:54 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "users"
+Request URL: /users/view/14
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UsersController.php(45): Cake\ORM\Table->get('14', Array)
+#2 [internal function]: App\Controller\UsersController->view('14')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-19 14:34:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:34:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:35:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:35:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:35:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:35:48 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:39:52 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:40:09 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:41:14 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:41:19 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "users"
+Request URL: /users/view/15
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UsersController.php(45): Cake\ORM\Table->get('15', Array)
+#2 [internal function]: App\Controller\UsersController->view('15')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-19 14:41:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:41:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:42:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:43:17 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:43:24 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-19 14:44:07 Error: [Cake\Datasource\Exception\RecordNotFoundException] Record not found in table "users"
+Request URL: /users/view/16
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Table.php(1177): Cake\ORM\Query->firstOrFail()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\UsersController.php(45): Cake\ORM\Table->get('16', Array)
+#2 [internal function]: App\Controller\UsersController->view('16')
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#6 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-09-19 14:44:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:44:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:45:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:46:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-19 14:53:56 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /users/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+

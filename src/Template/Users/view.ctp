@@ -70,6 +70,7 @@
         <?php elseif($logged == true): ?>
             <?= $this->element('Modal/logout_modal') ?>
             <?= $this->element('Modal/edit_profile_modal') ?>
+            <?= $this->element('Modal/delete_account_modal') ?>
         <?php endif; ?>
     </body>
 </html>

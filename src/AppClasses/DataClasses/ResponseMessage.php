@@ -12,4 +12,5 @@ class ResponseMessage {
     public $code;
     public $name;
     public $message;
+    public $type;
 }

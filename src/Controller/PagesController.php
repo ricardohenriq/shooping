@@ -125,6 +125,18 @@ class PagesController extends AppController
         $logged = $this->Auth->user();
         $this->set('logged', $logged);
 
+        //-------------------------------------------------------------------------
+
+        $userId = $this->Auth->user('id');
+        $this->set('userId', $userId);
+
+        //-------------------------------------------------------------------------
+
+        $username = $this->Auth->user('username');
+        $this->set('username', $username);
+
+        //-------------------------------------------------------------------------
+
         if (!$count) {
             return $this->redirect('/');
         }
