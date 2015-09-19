@@ -6,7 +6,8 @@
                 <h4 class="modal-title span7 text-center" id="myModalLabel"><span class="title">Create Account</span></h4>
             </div>
             <div class="modal-body">
-                <?= $this->Form->create(null, ['url' => ['controller' => 'Users', 'action' => 'add'], 'type' => 'post', 'id' => 'create-account-form', 'class' => 'form-horizontal']) ?>
+                <span class="message"></span>
+                <?= $this->Form->create(null, ['id' => 'create-account-form', 'class' => 'form-horizontal']) ?>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="email_ca" class="control-label col-md-3">Your Email (login)</label>
@@ -58,8 +59,8 @@
                     </div>
                     <div class="form-group text-center">
                         <div class="col-md-6 col-md-offset-3">
-                            <?= $this->Form->button('Reset', ['type' => 'reset', 'class' => 'btn btn-danger']) ?>
-                            <?= $this->Form->button('Criar Conta', ['type' => 'submit', 'class' => 'btn btn-info']) ?>
+                            <?= $this->Form->button('Limpar Formulário', ['type' => 'reset', 'class' => 'btn btn-danger']) ?>
+                            <?= $this->Form->button('Criar Conta', ['type' => 'button', 'class' => 'btn btn-info', 'id' => 'submit-crete-account']) ?>
                         </div>
                     </div>
                 <?= $this->Form->end() ?>

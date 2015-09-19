@@ -92,18 +92,30 @@ class UsersController extends AppController
      */
     public function add()
     {
+        $this->autoRender = false;
+        $this->response->type('json');
         $user = $this->Users->newEntity();
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->data);
             if ($this->Users->save($user)) {
-                $this->Flash->success(__('The user has been saved.'));
-                return $this->redirect(['action' => 'index']);
+                //$this->Flash->success(__('The user has been saved.'));
+                //return $this->redirect(['action' => 'index']);
+                $response = new ResponseMessage();
+                $response->code = CodeEnum::USER_ADDED;
+                $response->name = NameEnum::USER_ADDED;
+                $response->type = TypeMessageEnum::SUCCESS;
+                $this->response->body(json_encode($response));
             } else {
-                $this->Flash->error(__('The user could not be saved. Please, try again.'));
+                //$this->Flash->error(__('The user could not be saved. Please, try again.'));
+                $response = new ResponseMessage();
+                $response->code = CodeEnum::USER_NOT_ADDED;
+                $response->name = NameEnum::USER_NOT_ADDED;
+                $response->type = TypeMessageEnum::ERROR;
+                $this->response->body(json_encode($response));
             }
         }
-        $userTypes = $this->Users->UserTypes->find('list', ['limit' => 200]);
-        $this->set(compact('user', 'userTypes'));
+        //$userTypes = $this->Users->UserTypes->find('list', ['limit' => 200]);
+        //$this->set(compact('user', 'userTypes'));
         //$this->set('_serialize', ['user']);
     }
 
@@ -116,20 +128,30 @@ class UsersController extends AppController
      */
     public function edit($id = null)
     {
-        $user = $this->Users->get($id, [
-            'contain' => []
-        ]);
+        $this->autoRender = false;
+        $this->response->type('json');
+        $user = $this->Users->get($id);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $user = $this->Users->patchEntity($user, $this->request->data);
             if ($this->Users->save($user)) {
-                $this->Flash->success(__('The user has been saved.'));
-                return $this->redirect(['action' => 'index']);
+                //$this->Flash->success(__('The user has been saved.'));
+                //return $this->redirect(['action' => 'index']);
+                $response = new ResponseMessage();
+                $response->code = CodeEnum::USER_EDITED;
+                $response->name = NameEnum::USER_EDITED;
+                $response->type = TypeMessageEnum::SUCCESS;
+                $this->response->body(json_encode($response));
             } else {
-                $this->Flash->error(__('The user could not be saved. Please, try again.'));
+                //$this->Flash->error(__('The user could not be saved. Please, try again.'));
+                $response = new ResponseMessage();
+                $response->code = CodeEnum::USER_NOT_EDITED;
+                $response->name = NameEnum::USER_NOT_EDITED;
+                $response->type = TypeMessageEnum::ERROR;
+                $this->response->body(json_encode($response));
             }
         }
-        $userTypes = $this->Users->UserTypes->find('list', ['limit' => 200]);
-        $this->set(compact('user', 'userTypes'));
+        //$userTypes = $this->Users->UserTypes->find('list', ['limit' => 200]);
+        //$this->set(compact('user', 'userTypes'));
         //$this->set('_serialize', ['user']);
     }
 
@@ -160,7 +182,7 @@ class UsersController extends AppController
             $response = new ResponseMessage();
             $response->code = CodeEnum::USER_NOT_DELETED;
             $response->name = NameEnum::USER_NOT_DELETED;
-            $response->type = TypeMessageEnum::SUCCESS;
+            $response->type = TypeMessageEnum::ERROR;
             $this->response->body(json_encode($response));
         }
         //return $this->redirect(['action' => 'index']);

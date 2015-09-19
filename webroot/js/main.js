@@ -72,6 +72,37 @@ function deleteAccount(url){
     ajaxJsonData(displayDeleteMessage, url, formData)
 }
 
+function displayEditMessage(response){
+    var parentId = '#edit_profile_modal';
+    var messageLocal = '.message';
+    printMessage(parentId, messageLocal, response);
+    styleMessage(parentId, messageLocal, response);
+    if(response['type'] === 'Sucesso'){
+        location.reload();
+    }
+}
+
+function editAccount(url){
+    var formData = $('#edit-profile-form').serialize();
+    ajaxJsonData(displayEditMessage, url, formData)
+}
+
+$('#submit-crete-account').click(function(){
+    var url = 'users/add';
+    var formData = $('#create-account-form').serialize();
+    ajaxJsonData(displayAddMessage, url, formData)
+});
+
+function displayAddMessage(response){
+    var parentId = '#create_account_modal';
+    var messageLocal = '.message';
+    printMessage(parentId, messageLocal, response);
+    styleMessage(parentId, messageLocal, response);
+    if(response['type'] === 'Sucesso'){
+        location.reload();
+    }
+}
+
 $.getJSON("../json/products.json", function (products) {
     autoCompleteMulti(products, '#search');
 });

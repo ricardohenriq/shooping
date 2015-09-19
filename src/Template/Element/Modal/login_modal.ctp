@@ -6,7 +6,7 @@
                 <h4 class="modal-title span7 text-center title" id="myModalLabel">Login</h4>
             </div>
             <div class="modal-body">
-                <span class="message text-center"></span>
+                <span class="message"></span>
                 <form id="login-form" class="form-horizontal">
                     <div class="col-md-6">
                         <div class="form-group">
