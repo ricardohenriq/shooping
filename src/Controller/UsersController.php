@@ -98,6 +98,7 @@ class UsersController extends AppController
         if ($this->request->is('post')) {
             $user = $this->Users->patchEntity($user, $this->request->data);
             if ($this->Users->save($user)) {
+                $this->Auth->setUser($user->toArray());
                 //$this->Flash->success(__('The user has been saved.'));
                 //return $this->redirect(['action' => 'index']);
                 $response = new ResponseMessage();
@@ -170,6 +171,7 @@ class UsersController extends AppController
         $this->request->allowMethod(['post', 'delete']);
         $user = $this->Users->get($id);
         if ($this->Users->delete($user)) {
+            $this->request->session()->destroy();
             //$this->Flash->success(__('The user has been deleted.'));
             //return $this->redirect(['action' => 'index']);
             $response = new ResponseMessage();
@@ -215,7 +217,7 @@ class UsersController extends AppController
 
     public function logout()
     {
-        $this->Flash->success('You are now logged out.');
+        //$this->Flash->success('You are now logged out.');
         return $this->redirect($this->Auth->logout());
     }
 
