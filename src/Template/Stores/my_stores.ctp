@@ -1,9 +1,6 @@
 <?php
     /**
-     * Página inicial do site, contém um login de usuário, exibe promoções,
-     * produtos e logistas mais acessados, um campo pesquisa, um menu de navegação
-     * completa por promoções, lojas, categorias de produtos, um rodapé com
-     * diversas informações incluindo formas de contato.
+     * Página que lista todas as lojas do cliente.
      *
      * @author          Ricardo Henrique
      * @copyright       Copyright (c) Magma TI, LTDA. (http://magma.com)
@@ -14,7 +11,7 @@
      */
 
     $this->layout = false;
-    $pageTitle = 'Mapa de Lojas';
+    $pageTitle = 'Minhas Lojas';
 ?>
 <!DOCTYPE html>
 <html>
@@ -54,8 +51,8 @@
                     <?= $this->element('Body/news') ?>
                 </div>
                 <div class="row">
-                    <div id="mall-map" class="col-md-12"></div>
-                    <div id="mall-map-legend" class="span7 text-center"></div>
+                    <?= $this->element('Body/account_menu') ?>
+                    <?= $this->element('Body/list_stores') ?>
                 </div>
                 <div class="row">
                     <?= $this->element('Body/small_banners') ?>

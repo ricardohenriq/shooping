@@ -261,3 +261,8 @@ hr{
     color:#F0FF00;
     font-weight:bold
 }
+
+.overflow{
+    max-height:420px;
+    overflow:auto
+}

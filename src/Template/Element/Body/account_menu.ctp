@@ -31,7 +31,9 @@
     </div>
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title span7 text-center title">Minhas Lojas</h3>
+            <h3 class="panel-title span7 text-center title">
+                <?= $this->Html->link('Minhas Lojas', ['controller' => 'Stores', 'action' => 'myStores', $userId]) ?>
+            </h3>
         </div>
         <div class="panel-body">
             <?= $this->Html->link('Loja 1', ['controller' => 'Users', 'action' => '', 'target' => '_blank']) ?>

@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Stores Controller
@@ -134,5 +135,56 @@ class StoresController extends AppController
         $this->set('logged', $logged);
 
         //-------------------------------------------------------------------------
+    }
+
+    public function myStores(){
+
+        $bannerType = 2;
+        $bannersQuantity = 1;
+        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $this->set('fullBanners', $fullBanners);
+
+        //-------------------------------------------------------------------------
+
+        $bannerType = 1;
+        $bannersQuantity = 3;
+        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $this->set('smallBanners', $smallBanners);
+
+        //-------------------------------------------------------------------------
+
+        $newBannersQuantity = 5;
+        $newBanners = $this->Search->listNewBanners($newBannersQuantity);
+        $this->set('newBanners', $newBanners);
+
+        //-------------------------------------------------------------------------
+
+        $logged = $this->Auth->user();
+        $this->set('logged', $logged);
+
+        //-------------------------------------------------------------------------
+
+        $userId = $this->Auth->user('id');
+        $this->set('userId', $userId);
+
+        //-------------------------------------------------------------------------
+
+        $username = $this->Auth->user('username');
+        $this->set('username', $username);
+    }
+
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['index', 'myStores']);
+    }
+
+    public function isAuthorized($user = null)
+    {
+        // Only access action with your 'id'
+        if ((int) $this->request->params['pass'][0] === $user['id']){
+            return true;
+        }
+
+        return parent::isAuthorized($user);
     }
 }
