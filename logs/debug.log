@@ -35247,3 +35247,686 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2015-09-21 12:23:48 Notice: Notice (8): Undefined variable: username in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Navbar\navbar_main.ctp, line 33]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Navbar\navbar_main.ctp, line 33
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 47
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:23:48 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Navbar\navbar_main.ctp, line 36]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Navbar\navbar_main.ctp, line 36
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 47
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:23:48 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 7]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 7
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:23:48 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 35]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 35
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:23:48 Notice: Notice (8): Undefined variable: stores in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 39]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 39
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:23:49 Notice: Notice (8): Use of undefined constant tre - assumed 'tre' in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Banners\index.ctp, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Banners\index.ctp, line 59
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:23:49 Notice: Notice (8): Undefined variable: user in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Modal\edit_profile_modal.ctp, line 10]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Modal\edit_profile_modal.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 64
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:23:49 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Modal\edit_profile_modal.ctp, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Modal\edit_profile_modal.ctp, line 59
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 64
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:27:52 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Navbar\navbar_main.ctp, line 36]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Navbar\navbar_main.ctp, line 36
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 47
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:27:52 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 7]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 7
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:27:52 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 35]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 35
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:27:52 Notice: Notice (8): Undefined variable: stores in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 39]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 39
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:27:52 Notice: Notice (8): Use of undefined constant tre - assumed 'tre' in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Banners\index.ctp, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Banners\index.ctp, line 59
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:27:52 Notice: Notice (8): Undefined variable: user in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Modal\edit_profile_modal.ctp, line 10]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Modal\edit_profile_modal.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 64
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:27:52 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Modal\edit_profile_modal.ctp, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Modal\edit_profile_modal.ctp, line 59
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 64
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:31:19 Notice: Notice (8): Undefined variable: userTypes in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Modal\create_account_modal.ctp, line 46]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Modal\create_account_modal.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Products\search.ctp, line 82
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:32:53 Notice: Notice (8): Undefined variable: username in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Navbar\navbar_main.ctp, line 33]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Navbar\navbar_main.ctp, line 33
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Products\search.ctp, line 51
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:32:53 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Navbar\navbar_main.ctp, line 36]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Navbar\navbar_main.ctp, line 36
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Products\search.ctp, line 51
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:35:08 Notice: Notice (8): Undefined variable: userTypes in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Modal\create_account_modal.ctp, line 46]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Modal\create_account_modal.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Products\search.ctp, line 82
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:35:22 Notice: Notice (8): Undefined variable: username in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Navbar\navbar_main.ctp, line 33]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Navbar\navbar_main.ctp, line 33
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Products\search.ctp, line 51
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:35:22 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Navbar\navbar_main.ctp, line 36]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Navbar\navbar_main.ctp, line 36
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Products\search.ctp, line 51
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:36:37 Notice: Notice (8): Undefined variable: username in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Navbar\navbar_main.ctp, line 33]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Navbar\navbar_main.ctp, line 33
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Products\search.ctp, line 51
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:36:37 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Navbar\navbar_main.ctp, line 36]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Navbar\navbar_main.ctp, line 36
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Products\search.ctp, line 51
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:36:57 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Navbar\navbar_main.ctp, line 36]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Navbar\navbar_main.ctp, line 36
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 47
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:36:57 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 7]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 7
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:36:57 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 35]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 35
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:36:57 Notice: Notice (8): Undefined variable: stores in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 39]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 39
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:36:57 Notice: Notice (8): Use of undefined constant tre - assumed 'tre' in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Banners\index.ctp, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Banners\index.ctp, line 59
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:36:57 Notice: Notice (8): Undefined variable: user in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Modal\edit_profile_modal.ctp, line 10]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Modal\edit_profile_modal.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 64
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:36:57 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Modal\edit_profile_modal.ctp, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Modal\edit_profile_modal.ctp, line 59
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 64
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:49:28 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Navbar\navbar_main.ctp, line 36]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Navbar\navbar_main.ctp, line 36
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 47
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:49:28 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 7]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 7
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:49:28 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 35]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 35
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:49:28 Notice: Notice (8): Undefined variable: stores in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 39]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 39
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:49:29 Notice: Notice (8): Use of undefined constant tre - assumed 'tre' in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Banners\index.ctp, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Banners\index.ctp, line 59
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:49:29 Notice: Notice (8): Undefined variable: user in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Modal\edit_profile_modal.ctp, line 10]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Modal\edit_profile_modal.ctp, line 10
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 64
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:49:29 Notice: Notice (8): Undefined variable: userId in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Modal\edit_profile_modal.ctp, line 59]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Modal\edit_profile_modal.ctp, line 59
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 64
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+

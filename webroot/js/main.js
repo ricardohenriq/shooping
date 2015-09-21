@@ -12,7 +12,7 @@ $('.date').datepicker({
 var addBannerModalClicked = false;
 $('[data-target=#add_banner_modal]').click(function(){
     if(addBannerModalClicked === false) {
-        $.getJSON("../json/countries.json", function (countries) {
+        $.getJSON("http://localhost:8765/json/countries.json", function (countries) {
             for (var i = 0; i < countries.length; i++) {
                 $('.country').append('<option value=\"' + countries[i].code + '\">' + countries[i].name + '</option>');
             }
@@ -22,7 +22,7 @@ $('[data-target=#add_banner_modal]').click(function(){
 });
 
 $('#submit-login').click(function(){
-    var url = 'users/login';
+    var url = 'http://localhost:8765/users/login';
     var formData = $('#login-form').serialize();
     ajaxJsonData(displayLoginMessage, url, formData)
 });
@@ -88,7 +88,7 @@ function editAccount(url){
 }
 
 $('#submit-crete-account').click(function(){
-    var url = 'users/add';
+    var url = 'http://localhost:8765/users/add';
     var formData = $('#create-account-form').serialize();
     ajaxJsonData(displayAddMessage, url, formData)
 });
@@ -103,7 +103,7 @@ function displayAddMessage(response){
     }
 }
 
-$.getJSON("../json/products.json", function (products) {
+$.getJSON("http://localhost:8765/json/products.json", function (products) {
     autoCompleteMulti(products, '#search');
 });
 
@@ -209,7 +209,7 @@ $('#back-top').click(function(){
 $('#most-pupular-subcat').change(function(){
     var selectId = '#most-pupular-subcat';
     var selectContainer = '#most-popular-container';
-    var url = 'products/most-popular';
+    var url = 'http://localhost:8765/products/most-popular';
     var ulSlider = 'most-popular-products';
     changeProducts(selectId, selectContainer, url, ulSlider);
 });
@@ -217,7 +217,7 @@ $('#most-pupular-subcat').change(function(){
 $('#best-sellers-subcat').change(function(){
     var selectId = '#best-sellers-subcat';
     var selectContainer = '#best-sellers-container';
-    var url = 'products/most-popular';
+    var url = 'http://localhost:8765/products/most-popular';
     var ulSlider = 'best-sellers-products';
     changeProducts(selectId, selectContainer, url, ulSlider);
 });
@@ -225,7 +225,7 @@ $('#best-sellers-subcat').change(function(){
 $('#releases-subcat').change(function(){
     var selectId = '#releases-subcat';
     var selectContainer = '#releases-container';
-    var url = 'products/most-popular';
+    var url = 'http://localhost:8765/products/most-popular';
     var ulSlider = 'releases-products';
     changeProducts(selectId, selectContainer, url, ulSlider);
 });

@@ -48,6 +48,15 @@ class BannersController extends AppController
         //-------------------------------------------------------------------------
 
         $this->set('pageTitle', $this->Auth->User('username') . ' - Banners');
+
+        //-------------------------------------------------------------------------
+
+        $username = $this->Auth->user('username');
+        $this->set('username', $username);
+    }
+
+    public function myBanners(){
+
     }
 
     /**
@@ -144,7 +153,7 @@ class BannersController extends AppController
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index', 'getBannerJson']);
+        $this->Auth->allow(['index', 'getBannerJson', 'myBanners']);
     }
 
     public function isAuthorized($user = null)

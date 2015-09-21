@@ -26568,3 +26568,291 @@ Stack Trace:
 #3 {main}
 
 
+2015-09-21 12:23:48 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 39]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 39
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:26:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-21 12:26:35 Error: [Cake\View\Exception\MissingTemplateException] Template file "Banners\my_banners.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Banners\\my_banners.ctp',
+)
+Request URL: /banners/my-banners
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\View\View.php(462): Cake\View\View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(582): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BannersController))
+#4 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-09-21 12:27:42 Error: [Cake\View\Exception\MissingTemplateException] Template file "Banners\my_banners.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Banners\\my_banners.ctp',
+)
+Request URL: /banners/my-banners
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\View\View.php(462): Cake\View\View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(582): Cake\View\View->render(NULL, NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BannersController))
+#4 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-09-21 12:27:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class BannersmyBanners could not be found.
+Exception Attributes: array (
+  'class' => 'BannersmyBanners',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /bannersmy-banners
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-21 12:27:52 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 39]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 39
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:30:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-21 12:31:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-21 12:31:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-21 12:33:11 Error: [Cake\Controller\Exception\MissingActionException] Action StoresController::json() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'StoresController',
+  'action' => 'json',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /stores/json/products.json
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\StoresController))
+#2 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-09-21 12:34:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-21 12:35:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-21 12:35:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-21 12:36:57 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 39]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 39
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:44:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-21 12:45:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-21 12:46:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-21 12:47:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-09-21 12:49:29 Warning: Warning (2): Invalid argument supplied for foreach() in [C:\xampp\htdocs\PROJETOS\Shopping\src\Template\Element\Body\account_menu.ctp, line 39]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+include - APP/Template\Element\Body\account_menu.ctp, line 39
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1155
+Cake\View\View::element() - CORE\src\View\View.php, line 376
+include - APP/Template\Banners\index.ctp, line 52
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 828
+Cake\View\View::_render() - CORE\src\View\View.php, line 788
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-09-21 12:49:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/ui-bg_flat_75_ffffff_40x100.png
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
