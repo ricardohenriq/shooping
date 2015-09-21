@@ -361,7 +361,8 @@ class ProductsController extends AppController
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index', 'upload', 'mostPopular', 'search']);
+        $this->Auth->allow(['index', 'upload', 'mostPopular', 'search',
+            'favoriteProducts', 'view']);
     }
 
     public function isAuthorized($user = null)
@@ -376,5 +377,50 @@ class ProductsController extends AppController
         }
 
         return parent::isAuthorized($user);
+    }
+
+    public function favoriteProducts(){
+        $bannerType = 2;
+        $bannersQuantity = 1;
+        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $this->set('fullBanners', $fullBanners);
+
+        //-------------------------------------------------------------------------
+
+        $bannerType = 1;
+        $bannersQuantity = 3;
+        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $this->set('smallBanners', $smallBanners);
+
+        //-------------------------------------------------------------------------
+
+        $newBannersQuantity = 5;
+        $newBanners = $this->Search->listNewBanners($newBannersQuantity);
+        $this->set('newBanners', $newBanners);
+
+        //-------------------------------------------------------------------------
+
+        $logged = $this->Auth->user();
+        $this->set('logged', $logged);
+
+        //-------------------------------------------------------------------------
+
+        $userId = $this->Auth->user('id');
+        $this->set('userId', $userId);
+
+        //-------------------------------------------------------------------------
+
+        $username = $this->Auth->user('username');
+        $this->set('username', $username);
+
+        //-------------------------------------------------------------------------
+
+        $stores = $this->Search->listAllStoresByUser($userId);
+        $this->set('stores', $stores);
+
+        //-------------------------------------------------------------------------
+
+        $favoriteProducts = $this->Search->listAllFavoriteProductsByUser($userId);
+        $this->set('products', $favoriteProducts);
     }
 }

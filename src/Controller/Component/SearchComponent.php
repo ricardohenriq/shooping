@@ -36,7 +36,7 @@ class SearchComponent extends Component
 
     public function listAllBanners($bannerType, $bannersQuantity, $userId = null)
     {
-        $smallBanners = TableRegistry::get('banners');
+        $smallBanners = TableRegistry::get('Banners');
         $query = $smallBanners->find();
         $query->select(['id', 'banner_description', 'path_banner', 'url_redirect']);
         $query->where(['banner_type_id' => $bannerType]);
@@ -51,7 +51,7 @@ class SearchComponent extends Component
 
     public function getBanner($bannerId)
     {
-        $smallBanners = TableRegistry::get('banners');
+        $smallBanners = TableRegistry::get('Banners');
         $query = $smallBanners->find();
         $query->select(['id', 'path_banner', 'banner_description', 'banner_type_id',
             'url_redirect', 'created', 'modified'])
@@ -62,7 +62,7 @@ class SearchComponent extends Component
     public function listProductsByTrend($subCategoryId, $productsQuantity,
                                         $column, $order)
     {
-        $products = TableRegistry::get('products');
+        $products = TableRegistry::get('Products');
         $query = $products->find();
         $query->select(['product_name', 'quantity', 'sold', 'description', 'price',
             'old_price', 'thumbnail']);
@@ -76,7 +76,7 @@ class SearchComponent extends Component
 
     public function listOfferBanners($offerBannersQuantity)
     {
-        $offerBanners = TableRegistry::get('offer_banners');
+        $offerBanners = TableRegistry::get('OfferBanners');
         $query = $offerBanners->find();
         $query->select(['path_banner', 'date_start', 'date_end', 'name', 'description'])
             ->where(['date_start <=' => new \DateTime('today')])
@@ -87,7 +87,7 @@ class SearchComponent extends Component
 
     public function listNewBanners($newBannersQuantity)
     {
-        $newBanners = TableRegistry::get('new_banners');
+        $newBanners = TableRegistry::get('NewBanners');
         $query = $newBanners->find();
         $query->select(['path_banner', 'date_start', 'date_end', 'name', 'description'])
             ->where(['date_start <=' => new \DateTime('today')])
@@ -98,7 +98,7 @@ class SearchComponent extends Component
 
     public function listAllProductsImages($productId, $mediaTypeId)
     {
-        $productMedias = TableRegistry::get('medias');
+        $productMedias = TableRegistry::get('Medias');
         $query = $productMedias->find();
         $query->select(['path'])
             ->where(['product_id' => $productId])
@@ -108,7 +108,7 @@ class SearchComponent extends Component
 
     public function listOneProductImage($productId, $mediaTypeId)
     {
-        $productMedias = TableRegistry::get('medias');
+        $productMedias = TableRegistry::get('Medias');
         $query = $productMedias->find();
         $query->select(['path'])
             ->where(['product_id' => $productId])
@@ -130,14 +130,14 @@ class SearchComponent extends Component
 
     public function countTotalProducts($search)
     {
-        $countProducts = TableRegistry::get('products');
+        $countProducts = TableRegistry::get('Products');
         $query = $countProducts->find()
             ->where(['product_name LIKE' => '%'.$search.'%']);
         return $query->count();
     }
 
     public function listAllProductsByStore($store, $column, $order, $productsFields){
-        $products = TableRegistry::get('products');
+        $products = TableRegistry::get('Products');
         $query = $products->find();
         $query->select($productsFields)
             ->where(['store_id' => $store])
@@ -146,7 +146,7 @@ class SearchComponent extends Component
     }
 
     public function listAllOffersByUser($user, $column, $order, $offersFields){
-        $offers = TableRegistry::get('offer_banners');
+        $offers = TableRegistry::get('OfferBanners');
         $query = $offers->find();
         $query->select($offersFields)
             ->where(['user_id' => $user])
@@ -158,6 +158,31 @@ class SearchComponent extends Component
         $query = TableRegistry::get('Stores')->find('all');
         $query->select(['store_name', 'id', 'created', 'modified'])
             ->where(['user_id' => $userId]);
+        return $query->hydrate(false)->toArray();
+    }
+
+    public function listAllBookingsByUser($userId){
+        $query = TableRegistry::get('Bookings')->find('all');
+        $query->select(['id', 'product_id', 'quantity', 'created', 'modified'])
+            ->where(['user_id' => $userId]);
+        return $query->hydrate(false)->toArray();
+    }
+
+    public function listAllFavoriteProductsByUser($userId){
+        //ESTE MÉTODO DEVERÁ SER REFEITO QUANDO FOR CRIADA A
+        //TABELA DE FAVORITOS, ATUALMENE ESTA SOMENTE "EMULANDO"
+        //UM RESULTADO ESPERADO.
+        $query = TableRegistry::get('Products')->find('all');
+        $query->select(['id', 'product_name', 'created', 'modified']);
+        return $query->hydrate(false)->toArray();
+    }
+
+    public function listAllFavoriteStoresByUser($userId){
+        //ESTE MÉTODO DEVERÁ SER REFEITO QUANDO FOR CRIADA A
+        //TABELA DE FAVORITOS, ATUALMENE ESTA SOMENTE "EMULANDO"
+        //UM RESULTADO ESPERADO.
+        $query = TableRegistry::get('Stores')->find('all');
+        $query->select(['id', 'store_name', 'created', 'modified']);
         return $query->hydrate(false)->toArray();
     }
 }

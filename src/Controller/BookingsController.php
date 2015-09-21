@@ -113,7 +113,7 @@ class BookingsController extends AppController
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index']);
+        $this->Auth->allow(['index', 'myBookings']);
     }
 
     public function isAuthorized($user = null)
@@ -128,5 +128,50 @@ class BookingsController extends AppController
         }
 
         return parent::isAuthorized($user);
+    }
+
+    public function myBookings(){
+        $bannerType = 2;
+        $bannersQuantity = 1;
+        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $this->set('fullBanners', $fullBanners);
+
+        //-------------------------------------------------------------------------
+
+        $bannerType = 1;
+        $bannersQuantity = 3;
+        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $this->set('smallBanners', $smallBanners);
+
+        //-------------------------------------------------------------------------
+
+        $newBannersQuantity = 5;
+        $newBanners = $this->Search->listNewBanners($newBannersQuantity);
+        $this->set('newBanners', $newBanners);
+
+        //-------------------------------------------------------------------------
+
+        $logged = $this->Auth->user();
+        $this->set('logged', $logged);
+
+        //-------------------------------------------------------------------------
+
+        $userId = $this->Auth->user('id');
+        $this->set('userId', $userId);
+
+        //-------------------------------------------------------------------------
+
+        $username = $this->Auth->user('username');
+        $this->set('username', $username);
+
+        //-------------------------------------------------------------------------
+
+        $stores = $this->Search->listAllStoresByUser($userId);
+        $this->set('stores', $stores);
+
+        //-------------------------------------------------------------------------
+
+        $bookings = $this->Search->listAllBookingsByUser($userId);
+        $this->set('bookings', $bookings);
     }
 }

@@ -141,7 +141,6 @@ class StoresController extends AppController
     }
 
     public function myStores(){
-
         $bannerType = 2;
         $bannersQuantity = 1;
         $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
@@ -181,9 +180,54 @@ class StoresController extends AppController
         $this->set('stores', $stores);
     }
 
+    public function favoriteStores(){
+        $bannerType = 2;
+        $bannersQuantity = 1;
+        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $this->set('fullBanners', $fullBanners);
+
+        //-------------------------------------------------------------------------
+
+        $bannerType = 1;
+        $bannersQuantity = 3;
+        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $this->set('smallBanners', $smallBanners);
+
+        //-------------------------------------------------------------------------
+
+        $newBannersQuantity = 5;
+        $newBanners = $this->Search->listNewBanners($newBannersQuantity);
+        $this->set('newBanners', $newBanners);
+
+        //-------------------------------------------------------------------------
+
+        $logged = $this->Auth->user();
+        $this->set('logged', $logged);
+
+        //-------------------------------------------------------------------------
+
+        $userId = $this->Auth->user('id');
+        $this->set('userId', $userId);
+
+        //-------------------------------------------------------------------------
+
+        $username = $this->Auth->user('username');
+        $this->set('username', $username);
+
+        //-------------------------------------------------------------------------
+
+        $stores = $this->Search->listAllStoresByUser($userId);
+        $this->set('stores', $stores);
+
+        //-------------------------------------------------------------------------
+
+        $favoriteStores = $this->Search->listAllFavoriteStoresByUser($userId);
+        $this->set('favoriteStores', $favoriteStores);
+    }
+
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index', 'myStores', 'miniMap', 'view']);
+        $this->Auth->allow(['index', 'myStores', 'miniMap', 'view', 'favoriteStores']);
     }
 
     public function isAuthorized($user = null)

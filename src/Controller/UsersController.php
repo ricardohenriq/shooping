@@ -84,7 +84,7 @@ class UsersController extends AppController
 
         //-------------------------------------------------------------------------
 
-        $stores = $this->Search->listAllStoresByUser($userId);
+        $stores = $this->Search->listAllStoresByUser($user['id']);
         $this->set('stores', $stores);
     }
 
