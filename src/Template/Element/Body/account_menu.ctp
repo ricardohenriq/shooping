@@ -36,7 +36,9 @@
             </h3>
         </div>
         <div class="panel-body">
-            <?= $this->Html->link('Loja 1', ['controller' => 'Users', 'action' => '', 'target' => '_blank']) ?>
+            <?php foreach($stores as $store): ?>
+                <?= $this->Html->link($store['store_name'], ['controller' => 'Stores', 'action' => 'view', $store['id']], ['target' => '_blank']) ?>
+            <?php endforeach; ?>
         </div>
     </div>
     <div class="panel panel-default">

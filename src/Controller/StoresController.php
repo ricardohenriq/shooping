@@ -135,6 +135,9 @@ class StoresController extends AppController
         $this->set('logged', $logged);
 
         //-------------------------------------------------------------------------
+
+        $username = $this->Auth->user('username');
+        $this->set('username', $username);
     }
 
     public function myStores(){
@@ -171,11 +174,16 @@ class StoresController extends AppController
 
         $username = $this->Auth->user('username');
         $this->set('username', $username);
+
+        //-------------------------------------------------------------------------
+
+        $stores = $this->Search->listAllStoresByUser($userId);
+        $this->set('stores', $stores);
     }
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index', 'myStores']);
+        $this->Auth->allow(['index', 'myStores', 'miniMap', 'view']);
     }
 
     public function isAuthorized($user = null)

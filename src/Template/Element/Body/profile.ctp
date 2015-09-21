@@ -21,12 +21,12 @@
                     <div>
                         <span class="badge">42</span>
                         <?= $this->Html->link('Comentários ainda não respondidos',
-                        ['controller' => 'Users', 'action' => '', 'target' => '_blank']) ?>
+                        ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
                     </div>
                     <div>
                         <span class="badge">23</span>
                         <?= $this->Html->link('Comentários Respondidos',
-                        ['controller' => 'Users', 'action' => '', 'target' => '_blank']) ?>
+                        ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
                     </div>
                 </div>
                 <div class="ads-summary">
@@ -35,17 +35,17 @@
                     <div>
                         <span class="badge">42</span>
                         <?= $this->Html->link('Anúncios Ativos',
-                        ['controller' => 'Users', 'action' => '', 'target' => '_blank']) ?>
+                        ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
                     </div>
                     <div>
                         <span class="badge">23</span>
                         <?= $this->Html->link('Anúncios Pausados',
-                        ['controller' => 'Users', 'action' => '', 'target' => '_blank']) ?>
+                        ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
                     </div>
                     <div>
                         <span class="badge">23</span>
                         <?= $this->Html->link('Anúncios Finalizados',
-                        ['controller' => 'Users', 'action' => '', 'target' => '_blank']) ?>
+                        ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
                     </div>
                 </div>
                 <div class="negotiation-summary">
@@ -54,7 +54,7 @@
                     <div>
                         <span class="badge">42</span>
                         <?= $this->Html->link('Reservas',
-                        ['controller' => 'Users', 'action' => '', 'target' => '_blank']) ?>
+                        ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
                     </div>
                 </div>
             </div>

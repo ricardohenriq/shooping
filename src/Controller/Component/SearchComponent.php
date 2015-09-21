@@ -153,4 +153,11 @@ class SearchComponent extends Component
             ->order([$column => $order]);
         return $query->all();
     }
+
+    public function listAllStoresByUser($userId){
+        $query = TableRegistry::get('Stores')->find('all');
+        $query->select(['store_name', 'id', 'created', 'modified'])
+            ->where(['user_id' => $userId]);
+        return $query->hydrate(false)->toArray();
+    }
 }

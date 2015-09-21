@@ -25,7 +25,7 @@ class StoresTable extends Table
     public function initialize(array $config)
     {
         $this->table('stores');
-        $this->displayField('id');
+        $this->displayField('store_name');
         $this->primaryKey('id');
         $this->addBehavior('Timestamp');
         $this->belongsTo('Users', [

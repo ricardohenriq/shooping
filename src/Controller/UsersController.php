@@ -40,9 +40,7 @@ class UsersController extends AppController
      */
     public function view($id = null)
     {
-        $user = $this->Users->get($id, [
-            'contain' => ['UserTypes', 'Bookings', 'Stores']
-        ]);
+        $user = $this->Users->get($id);
         $user['picture'] = 'face200x200.png';
         $this->set('user', $user);
 
@@ -83,6 +81,11 @@ class UsersController extends AppController
         //-------------------------------------------------------------------------
 
         $this->set('pageTitle', $user['username'] . ' - Stores');
+
+        //-------------------------------------------------------------------------
+
+        $stores = $this->Search->listAllStoresByUser($userId);
+        $this->set('stores', $stores);
     }
 
     /**
