@@ -86,6 +86,29 @@ class UsersController extends AppController
 
         $stores = $this->Search->listAllStoresByUser($user['id']);
         $this->set('stores', $stores);
+
+        //-------------------------------------------------------------------------
+
+        $quantityBookings = $this->Search->countBookingsByUser($user['id']);
+        $this->set('quantityBookings', $quantityBookings);
+
+        //-------------------------------------------------------------------------
+
+        //Após a remodelagem do banco passeremos o status da "Offer"
+        $quantityActiveOffers = $this->Search->countOffersByUser($user['id']);
+        $this->set('quantityActiveOffers', $quantityActiveOffers);
+
+        //-------------------------------------------------------------------------
+
+        //Após a remodelagem do banco passeremos o status da "Offer"
+        $quantityPausedOffers = $this->Search->countOffersByUser($user['id']);
+        $this->set('quantityPausedOffers', $quantityPausedOffers);
+
+        //-------------------------------------------------------------------------
+
+        //Após a remodelagem do banco passeremos o status da "Offer"
+        $quantityEndedOffers = $this->Search->countOffersByUser($user['id']);
+        $this->set('quantityEndedOffers', $quantityEndedOffers);
     }
 
     /**

@@ -194,3 +194,5 @@ CREATE TABLE new_banners (
   modified DATETIME,
   FOREIGN KEY user_key (user_id) REFERENCES users(id)
 );
+
+# comments

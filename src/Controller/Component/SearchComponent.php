@@ -145,12 +145,15 @@ class SearchComponent extends Component
         return $query->all();
     }
 
-    public function listAllOffersByUser($user, $column, $order, $offersFields){
+    public function listAllOffersByUser($user, $column, $order, $offersFields, $status = false){
         $offers = TableRegistry::get('OfferBanners');
         $query = $offers->find();
-        $query->select($offersFields)
-            ->where(['user_id' => $user])
-            ->order([$column => $order]);
+        $query->select($offersFields);
+        $query->where(['user_id' => $user]);
+        if($status !== false){
+            $query->andWhere(['status' => $status]);
+        }
+        $query->order([$column => $order]);
         return $query->all();
     }
 
@@ -184,5 +187,40 @@ class SearchComponent extends Component
         $query = TableRegistry::get('Stores')->find('all');
         $query->select(['id', 'store_name', 'created', 'modified']);
         return $query->hydrate(false)->toArray();
+    }
+
+    public function listAllCommentsByUser($userId){
+        //ESTE MÉTODO DEVERÁ SER REFEITO QUANDO FOR CRIADA A
+        //TABELA DE FAVORITOS, ATUALMENE ESTA SOMENTE "EMULANDO"
+        //UM RESULTADO ESPERADO.
+
+    }
+
+    public function listAllFavoriteSubcategoriesByUser($userId){
+        //ESTE MÉTODO DEVERÁ SER REFEITO QUANDO FOR CRIADA A
+        //TABELA DE FAVORITOS, ATUALMENE ESTA SOMENTE "EMULANDO"
+        //UM RESULTADO ESPERADO.
+        $query = TableRegistry::get('SubCategories')->find('all');
+        $query->select(['id', 'sub_category_name', 'created', 'modified']);
+        return $query->hydrate(false)->toArray();
+    }
+
+    public function countCommentsByUser($userId){
+
+    }
+
+    public function countBookingsByUser($userId){
+        $query = TableRegistry::get('Bookings')->find('all');
+        $query->where(['user_id' => $userId]);
+        return $query->count();
+    }
+
+    public function countOffersByUser($user, $status = false){
+        $query = TableRegistry::get('OfferBanners')->find('all');
+        $query->where(['user_id' => $user]);
+        if($status !== false){
+            $query->andWhere(['status' => $status]);
+        }
+        return $query->count();
     }
 }

@@ -33,28 +33,28 @@
                     <h3><i class="fa fa-bullhorn"></i> Anúncios</h3>
                     <hr>
                     <div>
-                        <span class="badge">42</span>
-                        <?= $this->Html->link('Anúncios Ativos',
-                        ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
+                        <span class="badge"><?= $quantityActiveOffers ?></span>
+                        <?= $this->Html->link('Ofertas Ativos',
+                        ['controller' => 'OfferBanners', 'action' => 'myOffers', 1], ['target' => '_blank']) ?>
                     </div>
                     <div>
-                        <span class="badge">23</span>
-                        <?= $this->Html->link('Anúncios Pausados',
-                        ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
+                        <span class="badge"><?= $quantityPausedOffers ?></span>
+                        <?= $this->Html->link('Ofertas Pausadas',
+                        ['controller' => 'OfferBanners', 'action' => 'myOffers', 2], ['target' => '_blank']) ?>
                     </div>
                     <div>
-                        <span class="badge">23</span>
-                        <?= $this->Html->link('Anúncios Finalizados',
-                        ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
+                        <span class="badge"><?= $quantityEndedOffers ?></span>
+                        <?= $this->Html->link('Ofertas Finalizados',
+                        ['controller' => 'OfferBanners', 'action' => 'myOffers', 3], ['target' => '_blank']) ?>
                     </div>
                 </div>
                 <div class="negotiation-summary">
                     <h3><i class="fa fa-shopping-cart"></i> Negociações</h3>
                     <hr>
                     <div>
-                        <span class="badge">42</span>
+                        <span class="badge"><?= $quantityBookings ?></span>
                         <?= $this->Html->link('Reservas',
-                        ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
+                        ['controller' => 'Bookings', 'action' => 'myBookings'], ['target' => '_blank']) ?>
                     </div>
                 </div>
             </div>

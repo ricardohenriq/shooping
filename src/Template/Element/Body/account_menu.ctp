@@ -6,8 +6,8 @@
         <div class="panel-body">
             <?= $this->Html->link('Meu Perfil', ['controller' => 'Users', 'action' => 'view', $userId]) ?><br>
             <?= $this->Html->link('Minhas Reservas', ['controller' => 'Bookings', 'action' => 'myBookings'], ['target' => '_blank']) ?><br>
-            <?= $this->Html->link('Meus Comentários', ['controller' => 'Users', 'action' => '', 'target' => '_blank']) ?><br>
-            Email:&nbsp;<?= $this->Html->link('Não Verificado', ['controller' => 'Users', 'action' => '', 'target' => '_blank']) ?>
+            <?= $this->Html->link('Meus Comentários', ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?><br>
+            Email:&nbsp;<?= $this->Html->link('Não Verificado', ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
         </div>
     </div>
     <div class="panel panel-default">
@@ -17,8 +17,7 @@
         <div class="panel-body">
             <?= $this->Html->link('Meus Produtos Favoritos', ['controller' => 'Products', 'action' => 'favoriteProducts'], ['target' => '_blank']) ?><br>
             <?= $this->Html->link('Meus Lojistas Favoritos', ['controller' => 'Stores', 'action' => 'favoriteStores'], ['target' => '_blank']) ?><br>
-            <?= $this->Html->link('Minhas Subcategorias Favoritas', ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?><br>
-            <?= $this->Html->link('Minha Lista de Desejos', ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
+            <?= $this->Html->link('Minhas Subcategorias Favoritas', ['controller' => 'SubCategories', 'action' => 'favoriteSubcategories'], ['target' => '_blank']) ?><br>
         </div>
     </div>
     <div class="panel panel-default">
