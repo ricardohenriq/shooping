@@ -19,14 +19,14 @@
                     <h3><i class="fa fa-comment"></i> Comentários</h3>
                     <hr>
                     <div>
-                        <span class="badge">42</span>
+                        <span class="badge"><?= $quantityUnansweredComments ?></span>
                         <?= $this->Html->link('Comentários ainda não respondidos',
-                        ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
+                        ['controller' => 'Comments', 'action' => 'myComments', 1], ['target' => '_blank']) ?>
                     </div>
                     <div>
-                        <span class="badge">23</span>
+                        <span class="badge"><?= $quantityAnsweredComments ?></span>
                         <?= $this->Html->link('Comentários Respondidos',
-                        ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
+                        ['controller' => 'Comments', 'action' => 'myComments', 2], ['target' => '_blank']) ?>
                     </div>
                 </div>
                 <div class="ads-summary">

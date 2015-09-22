@@ -6,7 +6,7 @@
         <div class="panel-body">
             <?= $this->Html->link('Meu Perfil', ['controller' => 'Users', 'action' => 'view', $userId]) ?><br>
             <?= $this->Html->link('Minhas Reservas', ['controller' => 'Bookings', 'action' => 'myBookings'], ['target' => '_blank']) ?><br>
-            <?= $this->Html->link('Meus Comentários', ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?><br>
+            <?= $this->Html->link('Minhas Ofertas', ['controller' => '', 'action' => ''], ['target' => '_blank']) ?><br>
             Email:&nbsp;<?= $this->Html->link('Não Verificado', ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
         </div>
     </div>
@@ -30,14 +30,6 @@
             <?php foreach($stores as $store): ?>
                 <?= $this->Html->link($store['store_name'], ['controller' => 'Stores', 'action' => 'view', $store['id']], ['target' => '_blank']) ?>
             <?php endforeach; ?>
-        </div>
-    </div>
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title span7 text-center title">Minhas Ofertas</h3>
-        </div>
-        <div class="panel-body">
-            <?= $this->Html->link('Oferta 1', ['controller' => 'Users', 'action' => ''], ['target' => '_blank']) ?>
         </div>
     </div>
     <div class="panel panel-default">

@@ -5088,3 +5088,57 @@ INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, 
 VALUES (9, '1 KG de Picanha por R$ 10',
         '1 KG de Picanha por R$ 10, oferta válida somente para a loja "B" e "D"',
         'http://localhost/PROJETOS/ShoppingResources/offers/offer3.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
+
+## 2 registros na tabela "comment_types" --------------------------------------------------
+
+INSERT INTO comment_types(id, type_name, created, modified)
+VALUES (1, 'Pergunta', NOW(), NOW());
+
+INSERT INTO comment_types(id, type_name, created, modified)
+VALUES (2, 'Resposta', NOW(), NOW());
+
+## 2 registros na tabela "comment_answered" -------------------------------------------
+
+INSERT INTO comment_types(id, type_name, created, modified)
+VALUES (1, 'Não Respondida', NOW(), NOW());
+
+INSERT INTO comment_types(id, type_name, created, modified)
+VALUES (2, 'Respondida', NOW(), NOW());
+
+## 12 registros na tabela "comments" --------------------------------------------------
+
+INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
+VALUES (1, 'Qual o frete para 45.987.330 ? Obrigado', 1, 1, 2, 0, 1, NOW(), NOW());
+
+INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
+VALUES (2, 'R$ 34.00', 2, 1, 26, 1, 0, NOW(), NOW());
+
+INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
+VALUES (3, 'Comprando 3 tenho desconto ?', 1, 1, 3, 0, 1, NOW(), NOW());
+
+INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
+VALUES (4, 'Tem sim, já calculou o frete ?', 2, 1, 26, 3, 0, NOW(), NOW());
+
+INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
+VALUES (5, 'Entrega em Manaus (AM) ?', 1, 1, 4, 0, 1, NOW(), NOW());
+
+INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
+VALUES (6, 'Sim, o frete fica em R$ 45.00', 2, 1, 26, 5, 0, NOW(), NOW());
+
+INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
+VALUES (7, 'Qual o frete para 45.987.330 ? Obrigado', 1, 2, 3, 0, 1, NOW(), NOW());
+
+INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
+VALUES (8, 'R$ 34.00', 2, 2, 27, 7, 0, NOW(), NOW());
+
+INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
+VALUES (9, 'Comprando 3 tenho desconto ?', 1, 2, 4, 0, 1, NOW(), NOW());
+
+INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
+VALUES (10, 'Tem sim, já calculou o frete ?', 2, 2, 27, 9, 0, NOW(), NOW());
+
+INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
+VALUES (11, 'Entrega em Manaus (AM) ?', 1, 2, 5, 0, 1, NOW(), NOW());
+
+INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
+VALUES (12, 'Sim, o frete fica em R$ 45.00', 2, 2, 27, 11, 0, NOW(), NOW());

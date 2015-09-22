@@ -109,6 +109,22 @@ class UsersController extends AppController
         //Após a remodelagem do banco passeremos o status da "Offer"
         $quantityEndedOffers = $this->Search->countOffersByUser($user['id']);
         $this->set('quantityEndedOffers', $quantityEndedOffers);
+
+        //-------------------------------------------------------------------------
+
+        $questionType = 1;
+        $answered = 1;
+        $quantityUnansweredComments = $this->Search->countCommentsByUser($user['id'],
+            $questionType, $answered);
+        $this->set('quantityUnansweredComments', $quantityUnansweredComments);
+
+        //-------------------------------------------------------------------------
+
+        $questionType = 1;
+        $answered = 2;
+        $quantityAnsweredComments = $this->Search->countCommentsByUser($user['id'],
+            $questionType, $answered);
+        $this->set('quantityAnsweredComments', $quantityAnsweredComments);
     }
 
     /**

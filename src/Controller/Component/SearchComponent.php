@@ -205,8 +205,22 @@ class SearchComponent extends Component
         return $query->hydrate(false)->toArray();
     }
 
-    public function countCommentsByUser($userId){
+    public function countCommentsByUser($userId, $type, $answered){
+        $query = TableRegistry::get('Comments')->find('all');
+        $query->where(['user_id' => $userId])
+            ->andWhere(['comment_type_id' => $type])
+            ->andWhere(['answered' => $answered]);
+        return $query->count();
+    }
 
+    public function listCommentsByUser($userId, $type, $answered){
+        $query = TableRegistry::get('Comments')->find('all');
+        $query->select(['id', 'comment_text', 'product_id',
+            'answered', 'created'])
+            ->where(['user_id' => $userId])
+            ->andWhere(['comment_type_id' => $type])
+            ->andWhere(['answered' => $answered]);
+        return $query->hydrate(false)->toArray();
     }
 
     public function countBookingsByUser($userId){

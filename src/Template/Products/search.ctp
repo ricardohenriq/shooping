@@ -49,7 +49,6 @@
     </head>
     <body>
         <?= $this->element('Navbar/navbar_main') ?>
-        <?= $this->Flash->render() ?>
         <div class="wrapper">
             <div class="container">
                 <div class="row">
@@ -59,7 +58,7 @@
                     <?= $this->element('Body/filter_display') ?>
                 </div>
                 <div class="row">
-                    <?= $this->element('Body/filters') ?>
+                    <?= $this->element('Body/categories') ?>
                     <?= $this->element('Body/products') ?>
                 </div>
                 <div class="row">

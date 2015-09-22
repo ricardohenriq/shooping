@@ -239,6 +239,21 @@ class ProductsController extends AppController
 
             //-------------------------------------------------------------------------
 
+            $username = $this->Auth->user('username');
+            $this->set('username', $username);
+
+            //-------------------------------------------------------------------------
+
+            $categories = $this->Search->listAllCategories();
+            $this->set('categories', $categories);
+
+            //-------------------------------------------------------------------------
+
+            $subCategories = $this->Search->listAllSubCategories();
+            $this->set('subCategories', $subCategories);
+
+            //-------------------------------------------------------------------------
+
             @$pagina = $this->getCurrentPage();
             @$this->set('pagina', $pagina);
 

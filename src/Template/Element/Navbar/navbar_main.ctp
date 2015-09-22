@@ -34,9 +34,6 @@
                             </button>
                             <ul class="dropdown-menu" role="menu">
                                 <li><?= $this->Html->link('Meu Perfil', ['controller' => 'Users', 'action' => 'view', $userId]) ?></li>
-                                <li><a href="#">My Favorites</a></li>
-                                <li><a href="#">My History</a></li>
-                                <li><a href="#">My Advertises</a></li>
                                 <li class="divider"></li>
                                 <li><a href="#" data-toggle="modal" data-target="#logout_modal">Logout</a></li>
                             </ul>

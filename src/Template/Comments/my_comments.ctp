@@ -1,9 +1,6 @@
 <?php
     /**
-     * Página inicial do site, contém um login de usuário, exibe promoções,
-     * produtos e logistas mais acessados, um campo pesquisa, um menu de navegação
-     * completa por promoções, lojas, categorias de produtos, um rodapé com
-     * diversas informações incluindo formas de contato.
+     * Página que lista todas as lojas do cliente.
      *
      * @author          Ricardo Henrique
      * @copyright       Copyright (c) Magma TI, LTDA. (http://magma.com)
@@ -14,7 +11,7 @@
      */
 
     $this->layout = false;
-    $pageTitle = 'Stores';
+    $pageTitle = 'Meus Comentários';
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,11 +34,12 @@
         <?= $this->Shrink->css(['Bootstrap/css/bootstrap.min.css',
             'font-awesome-4.3.0/css/font-awesome.min.css', 'datepicker/css/datepicker.css',
             'jquery-bxslider/jquery.bxslider.css', 'style.css', 'menu-plugin.css',
-            'jquery-ui-1.11.2.custom/jquery-ui.css']) ?>
+            'jquery-ui-1.11.2.custom/jquery-ui.css', 'jquery-jvectormap-2.0.4.css']) ?>
         <?= $this->Shrink->js(['jquery-1.11.1.min.js', 'jquery-ui-1.11.2.custom/jquery-ui.js',
             'bootstrap.min.js', 'Jquery-Validate/jquery.validate.min.js',
             'datepicker/js/bootstrap-datepicker.js', 'jquery-bxslider/jquery.bxslider.min.js',
-            'main.js']) ?>
+            'elevatezoom/jquery.elevateZoom-3.0.8.min.js', 'jquery-jvectormap-2.0.4.min.js',
+            'mall-jvectormap.js', 'main.js']) ?>
         <?= $this->Shrink->fetch('css') ?>
         <?= $this->Shrink->fetch('js') ?>
     </head>
@@ -53,14 +51,11 @@
                     <?= $this->element('Body/news') ?>
                 </div>
                 <div class="row">
-                    <?= $this->element('Body/categories') ?>
-                    <?= $this->element('Body/offers') ?>
+                    <?= $this->element('Body/account_menu') ?>
+                    <?= $this->element('Body/list_comments') ?>
                 </div>
                 <div class="row">
                     <?= $this->element('Body/small_banners') ?>
-                </div>
-                <div class="row">
-                    <?= $this->element('Body/product_trends') ?>
                 </div>
                 <div class="row">
                     <?= $this->element('Body/full_banner') ?>
