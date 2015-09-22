@@ -50,10 +50,16 @@ function printMessage(parentId, messageLocal, response){
 function styleMessage(parentId, messageLocal, response){
     if(response['type'] === 'Erro'){
         $(parentId + ' ' + messageLocal).addClass('error');
+        $(parentId + ' ' + messageLocal).removeClass('success');
+        $(parentId + ' ' + messageLocal).removeClass('warning');
     }else if(response['type'] === 'Sucesso'){
         $(parentId + ' ' + messageLocal).addClass('success');
+        $(parentId + ' ' + messageLocal).removeClass('warning');
+        $(parentId + ' ' + messageLocal).removeClass('error');
     }else if(response['type'] === 'Cuidado'){
         $(parentId + ' ' + messageLocal).addClass('warning');
+        $(parentId + ' ' + messageLocal).removeClass('error');
+        $(parentId + ' ' + messageLocal).removeClass('success');
     }
 }
 
@@ -86,6 +92,19 @@ function editAccount(url){
     var formData = $('#edit-profile-form').serialize();
     ajaxJsonData(displayEditMessage, url, formData)
 }
+
+function displaySubscribeMessage(response){
+    var parentId = '#subscribe-area';
+    var messageLocal = '.message';
+    printMessage(parentId, messageLocal, response);
+    styleMessage(parentId, messageLocal, response);
+}
+
+$('#submit-subscribe-form').click(function(){
+    var url = 'http://localhost:8765/subscribers/add';
+    var formData = $('#subscribe-form').serialize();
+    ajaxJsonData(displaySubscribeMessage, url, formData)
+});
 
 $('#submit-crete-account').click(function(){
     var url = 'http://localhost:8765/users/add';

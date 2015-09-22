@@ -17,4 +17,6 @@ abstract class NameEnum extends BasicEnum{
     const USER_NOT_EDITED = 'Usuário não pode ser editado.';
     const USER_ADDED = 'Usuário adicionado com sucesso.';
     const USER_NOT_ADDED = 'Usuário não pode ser adicionado.';
+    const SUBSCRIBE_ADDED = 'Subscrição realizada com sucesso.';
+    const SUBSCRIBE_NOT_ADDED = 'Subscrição não pode ser realiza.';
 }

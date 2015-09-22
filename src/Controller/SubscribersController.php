@@ -1,7 +1,12 @@
 <?php
 namespace App\Controller;
 
+use App\AppClasses\DataClasses\ResponseMessage;
+use App\AppClasses\EnumClasses\CodeEnum;
+use App\AppClasses\EnumClasses\NameEnum;
+use App\AppClasses\EnumClasses\TypeMessageEnum;
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Subscribers Controller
@@ -45,18 +50,30 @@ class SubscribersController extends AppController
      */
     public function add()
     {
+        $this->autoRender = false;
+        $this->response->type('json');
         $subscriber = $this->Subscribers->newEntity();
         if ($this->request->is('post')) {
             $subscriber = $this->Subscribers->patchEntity($subscriber, $this->request->data);
             if ($this->Subscribers->save($subscriber)) {
-                $this->Flash->success(__('The subscriber has been saved.'));
-                return $this->redirect(['action' => 'index']);
+                //$this->Flash->success(__('The subscriber has been saved.'));
+                //return $this->redirect(['action' => 'index']);
+                $response = new ResponseMessage();
+                $response->code = CodeEnum::SUBSCRIBE_ADDED;
+                $response->name = NameEnum::SUBSCRIBE_ADDED;
+                $response->type = TypeMessageEnum::SUCCESS;
+                $this->response->body(json_encode($response));
             } else {
-                $this->Flash->error(__('The subscriber could not be saved. Please, try again.'));
+                //$this->Flash->error(__('The subscriber could not be saved. Please, try again.'));
+                $response = new ResponseMessage();
+                $response->code = CodeEnum::SUBSCRIBE_NOT_ADDED;
+                $response->name = NameEnum::SUBSCRIBE_NOT_ADDED;
+                $response->type = TypeMessageEnum::ERROR;
+                $this->response->body(json_encode($response));
             }
         }
-        $this->set(compact('subscriber'));
-        $this->set('_serialize', ['subscriber']);
+        //$this->set(compact('subscriber'));
+        //$this->set('_serialize', ['subscriber']);
     }
 
     /**
@@ -101,5 +118,10 @@ class SubscribersController extends AppController
             $this->Flash->error(__('The subscriber could not be deleted. Please, try again.'));
         }
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['add', 'index']);
     }
 }

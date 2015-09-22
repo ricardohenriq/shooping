@@ -17,4 +17,6 @@ abstract class CodeEnum extends BasicEnum{
     const USER_NOT_EDITED = 6;
     const USER_ADDED = 7;
     const USER_NOT_ADDED = 8;
+    const SUBSCRIBE_ADDED = 9;
+    const SUBSCRIBE_NOT_ADDED = 10;
 }
