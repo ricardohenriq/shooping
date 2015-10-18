@@ -11,6 +11,8 @@ GRANT ALL PRIVILEGES ON *.* TO 'shop'@'%' IDENTIFIED BY 'shop';
 GRANT ALL PRIVILEGES ON *.* TO 'shop'@'localhost' IDENTIFIED BY 'shop';
 FLUSH PRIVILEGES;
 
+## 20 Tabelas -------------------------------------------------------------------
+
 CREATE TABLE user_types (
   id INT AUTO_INCREMENT PRIMARY KEY,
   type_name VARCHAR(255) NOT NULL,
