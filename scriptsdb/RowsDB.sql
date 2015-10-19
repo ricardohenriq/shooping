@@ -145,7 +145,7 @@ VALUES ('Loja H', 30, NOW(), NOW());
 INSERT INTO stores (store_name, user_id, created, modified)
 VALUES ('Loja I', 30, NOW(), NOW());
 
-## 21 regsistros na tabela "categories" ------------------------------------------------
+## 22 regsistros na tabela "categories" ------------------------------------------------
 
 INSERT INTO categories (id, category_name, created, modified)
 VALUES (1, 'Alimentos', '2010-10-28 09:39:49', '2011-10-28 22:39:19');
@@ -1289,7 +1289,7 @@ VALUES (14, 8, 4, NOW(), NOW());
 INSERT INTO bookings (product_id, quantity, user_id, created, modified)
 VALUES (15, 6, 5, NOW(), NOW());
 
-## 275 registros na tabela "features" ----------------------------------------------------
+## 277 registros na tabela "features" ----------------------------------------------------
 
 INSERT INTO features (id, feature_name, created, modified)
 VALUES (1, 'Altura', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
@@ -4027,7 +4027,7 @@ VALUES ('05 CARIMBOS PERSONALIZADOS AUTOMÁTICOS + 01 TUBO DE TINTA 30ml', 124, 
 INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
 VALUES ('Diversas', 7, 68, NOW(), NOW());
 
-## 3 registros na tabela "media_types" --------------------------------------------------
+## 4 registros na tabela "media_types" --------------------------------------------------
 
 INSERT INTO media_types(name_media_type , created, modified)
 VALUES ('Foto', NOW(), NOW());
@@ -4041,7 +4041,7 @@ VALUES ('Thumb', NOW(), NOW());
 INSERT INTO media_types(name_media_type , created, modified)
 VALUES ('Video', NOW(), NOW());
 
-##  registros na tabela "medias" ------------------------------------------------------
+## 285 registros na tabela "medias" ------------------------------------------------------
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (2, 1, 'http://localhost/PROJETOS/ShoppingResources/img/1/Samsung-Galaxy-A5-Duos-Branco-4G-Orange-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');

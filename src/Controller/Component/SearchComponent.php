@@ -65,7 +65,8 @@ class SearchComponent extends Component
         $products = TableRegistry::get('Products');
         $query = $products->find();
         $query->select(['product_name', 'quantity', 'sold', 'description', 'price',
-            'old_price', 'thumbnail']);
+            'old_price']);
+            //'old_price', 'thumbnail']);
             if ($subCategoryId > 0) {
                 $query = $query->where(['sub_category_id' => $subCategoryId]);
             }
@@ -120,7 +121,8 @@ class SearchComponent extends Component
     {
         $paginate = [
             'fields' => ['product_name', 'quantity', 'sold', 'description', 'price',
-                'old_price', 'thumbnail'],
+                'old_price'],
+                //'old_price', 'thumbnail'],
             'conditions' => ['product_name LIKE' => '%'.$search.'%'],
             'order' => ['price' => 'DESC'],
             'limit' => 3
