@@ -210,7 +210,7 @@ class UsersController extends AppController
         $this->autoRender = false;
         $this->response->type('json');
         //Quando acessado via GET é lançado a exceção: Method Not Allowed
-        $this->request->allowMethod(['post', 'delete']);
+        //$this->request->allowMethod(['post', 'delete']);
         $user = $this->Users->get($id);
         if ($this->Users->delete($user)) {
             $this->request->session()->destroy();

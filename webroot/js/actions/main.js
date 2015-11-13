@@ -1,0 +1,229 @@
+/**
+ * Usado no cadastro da cada do modal de cadastramento de usuário 
+ * contido no "Navbar" (componente usado em todas as telas).
+ * 
+ * Gera o calendário da data de nascimento.
+ *
+ * Independe e não relaciona com qualquer outra função.
+ */
+$('.date').datepicker({
+    format: "yyyy/mm/dd",
+    //startDate:"2012-01-01",
+    //endDate:"2015-01-01",
+    todayBtn: "linked",
+    viewMode: "years",
+    autoclose: true,
+    todayHighlight: true,
+    orientation: "top"
+});
+
+$('#news-slide').bxSlider({
+    slideWidth: 240,
+    minSlides: 1,
+    maxSlides: 5,
+    moveSlides: 1,
+    slideMargin: 10,
+    infiniteLoop: false,
+    auto: true,
+    pager: false
+});
+
+$('#submit-login').click(function(){
+    var settings = [];
+	settings['url'] = 'http://localhost:8765/users/login';
+	settings['type'] = 'post';
+	settings['data'] = $('#login-form').serialize();
+	settings['beforeSend'] = '';
+	settings['success'] = function(response){
+			displayMessage('#login_modal', '.message', response);
+		}
+	settings['error'] = function(XMLHttpRequest, textStatus, errorThrown){
+            defaultAjaxErrorHandler(XMLHttpRequest,textStatus,errorThrown);
+        }
+	settings['dataType'] = 'json';
+	settings['global'] = false;
+	functionAjax(settings);
+});
+
+function displayMessage(parentId, messageLocal, response){
+    printMessage(parentId, messageLocal, response);
+    styleMessage(parentId, messageLocal, response);
+    if(response['type'] === 'Sucesso'){
+        location.reload();
+    }
+}
+
+function printMessage(parentId, messageLocal, response){
+    var message = '';
+    for(var item in response){
+        if(response[item] != null){
+            message += response[item] + ' - ';
+        }
+    }
+    $(parentId + ' ' + messageLocal).text(message.slice(0,-3));
+}
+
+function styleMessage(parentId, messageLocal, response){
+    if(response['type'] === 'Erro'){
+        $(parentId + ' ' + messageLocal).addClass('error');
+        $(parentId + ' ' + messageLocal).removeClass('success');
+        $(parentId + ' ' + messageLocal).removeClass('warning');
+    }else if(response['type'] === 'Sucesso'){
+        $(parentId + ' ' + messageLocal).addClass('success');
+        $(parentId + ' ' + messageLocal).removeClass('warning');
+        $(parentId + ' ' + messageLocal).removeClass('error');
+    }else if(response['type'] === 'Cuidado'){
+        $(parentId + ' ' + messageLocal).addClass('warning');
+        $(parentId + ' ' + messageLocal).removeClass('error');
+        $(parentId + ' ' + messageLocal).removeClass('success');
+    }
+}
+
+function deleteAccount(url){
+    var settings = [];
+	settings['url'] = url;
+	settings['type'] = 'post';
+	settings['data'] = '';
+	settings['beforeSend'] = '';
+	settings['success'] = function(response){
+			displayMessage('#delete_account_modal', '.message', response);
+		}
+	settings['error'] = function(XMLHttpRequest, textStatus, errorThrown){
+            defaultAjaxErrorHandler(XMLHttpRequest,textStatus,errorThrown);
+        }
+	settings['dataType'] = 'json';
+	settings['global'] = false;
+	functionAjax(settings);
+}
+
+function editAccount(url){	
+	var settings = [];
+	settings['url'] = url;
+	settings['type'] = 'post';
+	settings['data'] = $('#edit-profile-form').serialize();
+	settings['beforeSend'] = '';
+	settings['success'] = function(response){
+			displayMessage('#edit_profile_modal', '.message', response);
+		}
+	settings['error'] = function(XMLHttpRequest, textStatus, errorThrown){
+            defaultAjaxErrorHandler(XMLHttpRequest,textStatus,errorThrown);
+        }
+	settings['dataType'] = 'json';
+	settings['global'] = false;
+	functionAjax(settings);
+}
+
+$('#submit-crete-account').click(function(){
+	var settings = [];
+	settings['url'] = 'http://localhost:8765/users/add';
+	settings['type'] = 'post';
+	settings['data'] = $('#create-account-form').serialize();
+	settings['beforeSend'] = '';
+	settings['success'] = function(response){
+			displayMessage('#create_account_modal', '.message', response);
+		}
+	settings['error'] = function(XMLHttpRequest, textStatus, errorThrown){
+            defaultAjaxErrorHandler(XMLHttpRequest,textStatus,errorThrown);
+        }
+	settings['dataType'] = 'json';
+	settings['global'] = false;
+	functionAjax(settings);
+});
+
+$.getJSON("http://localhost:8765/json/products.json", function (products) {
+    autoCompleteMulti(products, '#search');
+});
+
+function autoCompleteMulti(words, selector){
+    $(selector).bind("keydown", function(event){
+        if(event.keyCode === $.ui.keyCode.TAB &&
+            $(this).autocomplete("instance").menu.active){
+            event.preventDefault();
+        }
+    })
+    .autocomplete({
+        minLength: 2,
+        source: function(request, response){
+            var results = $.ui.autocomplete.filter(
+                words, extractLast(request.term));
+            response(results.slice(0, 10));
+        },
+        focus: function(){
+            return false;
+        },
+        select: function(event, ui){
+            var terms = split(this.value);
+            terms.pop();
+            terms.push( ui.item.value );
+            terms.push("");
+            this.value = terms.join(" ");
+            return false;
+        }
+    });
+}
+
+function split(val){
+    return val.split(/ \s*/);
+}
+
+function extractLast(term){
+    return split(term).pop();
+}
+
+$("#password").popover({
+    title: 'A senha deve conter entre 8 e 16 caracteres, incluindo:',
+    content: '<ul><li>Letras Maiusculas</li><li>Letras Minusculas</li><li>Numeros</li></ul>',
+    trigger: 'hover',
+    placement: 'right'
+});
+
+$("#login-form").validate({
+    rules: {
+        email: {
+            required: true,
+            minlength: 8
+        },
+        password: "required"
+    },
+    messages: {
+        email: {
+            required: "Please provide your Login",
+            minlength: "Your Login must be at least 8 characters"
+        },
+        pass: "Please provide your password"
+    }
+});
+
+$('#back-top').click(function(){
+    $('html, body').animate({scrollTop: 0}, 'slow');
+    return false;
+});
+
+/*$("#search-form").submit(function(event){
+ event.preventDefault();
+ action = $(this).attr('action') + '/' + document.getElementById('search').value;
+ window.location.href = action;
+ });*/
+
+function redirect(option){
+    location = option.value;
+}
+
+function defaultAjaxErrorHandler(XMLHttpRequest,textStatus,errorThrown){
+	console.log(XMLHttpRequest);
+	console.log(textStatus);
+	console.log(errorThrown);
+}
+
+function functionAjax(settings){
+    $.ajax({
+		type: settings['type'],
+        url: settings['url'],
+		data: settings['data'],
+		beforeSend: settings['beforeSend'],
+        success: settings['success'],
+        error: settings['error'],
+        dataType: settings['dataType'],
+        global: settings['global']
+    });
+}

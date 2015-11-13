@@ -15,7 +15,7 @@
                 </p>
                 <?= $this->Html->image('/img/loader.gif', ['title' => 'Arguarde o Download das Informações',
                 'id' => 'banner-pic-edit-modal', 'class' => 'img-full-screen']) ?>
-                <?= $this->Form->create(null, ['url' => ['controller' => 'Banners', 'action' => 'add'], 'type' => 'file', 'id' => 'add-banner-form', 'class' => 'form-horizontal']) ?>
+                <?= $this->Form->create(null, ['url' => ['controller' => 'Banners', 'action' => 'edit'], 'type' => 'file', 'id' => 'add-banner-form', 'class' => 'form-horizontal']) ?>
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="link" class="control-label col-md-3">Link de Redirecionamento</label>
@@ -117,7 +117,7 @@
                     <div class="form-group text-center">
                         <div class="col-md-6 col-md-offset-3">
                             <?= $this->Form->button('Reset', ['type' => 'reset', 'class' => 'btn btn-danger']) ?>
-                            <?= $this->Form->button('Adicionar', ['type' => 'submit', 'class' => 'btn btn-info']) ?>
+                            <?= $this->Form->button('Atualizar', ['type' => 'submit', 'class' => 'btn btn-info']) ?>
                         </div>
                     </div>
                 <?= $this->Form->end() ?>

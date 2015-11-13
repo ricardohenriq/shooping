@@ -30,13 +30,13 @@
                     <div class="form-group">
                         <label for="re-new-password" class="control-label col-md-3"><?= __('Redigite Nova Senha') ?></label>
                         <div class="col-md-9">
-                            <?= $this->Form->input('re-new-password', ['label' => false, 'class' => 'form-control', 'id' => 're-new-password']) ?>
+                            <?= $this->Form->input('re-new-password', ['label' => false, 'class' => 'form-control', 'id' => 're-new-password', 'type' => 'password']) ?>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="old-password" class="control-label col-md-3"><?= __('Digite Senha Antiga') ?></label>
                         <div class="col-md-9">
-                            <?= $this->Form->input('old-password', ['label' => false, 'class' => 'form-control', 'id' => 'old-password']) ?>
+                            <?= $this->Form->input('old-password', ['label' => false, 'class' => 'form-control', 'id' => 'old-password', 'type' => 'password']) ?>
                         </div>
                     </div>
                     <div class="form-group">

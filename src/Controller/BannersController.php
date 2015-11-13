@@ -17,7 +17,7 @@ class BannersController extends AppController
      *
      * @return void
      */
-    public function index()
+    public function myBanners($userId)
     {
         $this->paginate = [
             'contain' => ['BannerTypes', 'Users']
@@ -29,7 +29,7 @@ class BannersController extends AppController
         $bannerType = 1;
         $bannersQuantity = 3;
         $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity,
-            1);
+            $userId);
         $this->set('smallBanners', $smallBanners);
 
         //-------------------------------------------------------------------------
@@ -53,10 +53,6 @@ class BannersController extends AppController
 
         $username = $this->Auth->user('username');
         $this->set('username', $username);
-    }
-
-    public function myBanners(){
-
     }
 
     /**
@@ -153,7 +149,7 @@ class BannersController extends AppController
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index', 'getBannerJson', 'myBanners']);
+        $this->Auth->allow(['getBannerJson', 'myBanners']);
     }
 
     public function isAuthorized($user = null)

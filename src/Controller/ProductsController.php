@@ -147,16 +147,15 @@ class ProductsController extends AppController
         return $this->redirect(['action' => 'index']);
     }
 
-    public function mostPopular()
+    public function productTrends($subCategoryId = 0)
     {
         $this->autoRender = false;
-        if($this->request->is('post'))
+        if($this->request->is('get'))
         {
             $this->response->type('json');
             $productsQuantity = 4;
             $order = 'DESC';
             $column = 'visited';
-            $subCategoryId = $this->request->data['subCategory'];
             $productsMostPopular = $this->Search->listProductsByTrend($subCategoryId, $productsQuantity, $column, $order);
             //$this->set('productsMostPopular', $productsMostPopular);
             //$this->set('_serialize',array('productsMostPopular'));
@@ -376,7 +375,7 @@ class ProductsController extends AppController
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index', 'upload', 'mostPopular', 'search',
+        $this->Auth->allow(['index', 'upload', 'productTrends', 'search',
             'favoriteProducts', 'view']);
     }
 

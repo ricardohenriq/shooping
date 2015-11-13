@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title span7 text-center title" id="banner-name-modal"></h4>
+                <h4 class="modal-title span7 text-center title" id="banner-name-modal">Banner #</h4>
             </div>
             <div class="modal-body">
                 <?= $this->Html->image('/img/loader.gif', ['title' => 'Arguarde o Download das Informações',
