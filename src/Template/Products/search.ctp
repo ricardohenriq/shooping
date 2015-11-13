@@ -34,14 +34,18 @@
         <?= $this->Html->css('library/Bootstrap/css/bootstrap.min.css') ?>
         <?= $this->Html->css('library/font-awesome-4.4.0/css/font-awesome.min.css') ?>
         <?= $this->Html->css('library/datepicker/css/datepicker.css') ?>
-        <?= $this->Html->css('styles/style.css') ?>
+        <?= $this->Html->css('library/bxslider-4-4.1.2/jquery.bxslider.css') ?>
+        <?= $this->Shrink->css(['styles/style.css', 'styles/menu-plugin.css']) ?>
 
         <?= $this->Html->script('library/jquery-1.11.1/jquery-1.11.1.min.js',['defer' => true]) ?>
         <?= $this->Html->script('library/jquery-ui-1.11.2.custom/jquery-ui.min.js',['defer' => true]) ?>
         <?= $this->Html->script('library/Bootstrap/js/bootstrap.min.js',['defer' => true]) ?>
         <?= $this->Html->script('library/Jquery-Validate/jquery.validate.min.js',['defer' => true]) ?>
         <?= $this->Html->script('library/datepicker/js/bootstrap-datepicker.js',['defer' => true]) ?>
+        <?= $this->Html->script('library/bxslider-4-4.1.2/jquery.bxslider.min.js',['defer' => true]) ?>
         <?= $this->Html->script('actions/main.js',['defer' => true]) ?>
+
+        <?= $this->Shrink->fetch('css') ?>
     </head>
     <body>
         <?= $this->element('Navbar/navbar_main') ?>

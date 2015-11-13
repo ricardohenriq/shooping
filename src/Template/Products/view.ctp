@@ -18,7 +18,7 @@
         <?= $this->Html->meta('viewport','width=device-width, initial-scale=1.0') ?>
         <?= $this->Html->meta('title',$pageTitle) ?>
         <?= $this->Html->meta('favicon.ico','/cart.png', ['type' => 'icon']) ?>
-        <?= $this->Html->meta('keywords','')) ?>
+        <?= $this->Html->meta('keywords','') ?>
         <?= $this->Html->meta('description','') ?>
         <?= $this->Html->meta('robots','index,follow') ?>
         <?= $this->Html->meta('author','Ricardo Henrique') ?>
@@ -34,6 +34,7 @@
         <?= $this->Html->css('library/Bootstrap/css/bootstrap.min.css') ?>
         <?= $this->Html->css('library/font-awesome-4.4.0/css/font-awesome.min.css') ?>
         <?= $this->Html->css('library/datepicker/css/datepicker.css') ?>
+        <?= $this->Html->css('library/bxslider-4-4.1.2/jquery.bxslider.css') ?>
         <?= $this->Html->css('styles/style.css') ?>
 
         <?= $this->Html->script('library/jquery-1.11.1/jquery-1.11.1.min.js',['defer' => true]) ?>
@@ -42,6 +43,7 @@
         <?= $this->Html->script('library/Jquery-Validate/jquery.validate.min.js',['defer' => true]) ?>
         <?= $this->Html->script('library/datepicker/js/bootstrap-datepicker.js',['defer' => true]) ?>
         <?= $this->Html->script('library/elevatezoom/jquery.elevateZoom-3.0.8.min.js',['defer' => true]) ?>
+        <?= $this->Html->script('library/bxslider-4-4.1.2/jquery.bxslider.min.js',['defer' => true]) ?>
         <?= $this->Shrink->js(['actions/main.js', 'actions/view-product.js']) ?>
         <?= $this->Shrink->fetch('js') ?>
     </head>

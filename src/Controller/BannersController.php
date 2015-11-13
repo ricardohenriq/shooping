@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\Event\Event;
+use Cake\ORM\TableRegistry;
 
 /**
  * Banners Controller
@@ -11,39 +12,40 @@ use Cake\Event\Event;
  */
 class BannersController extends AppController
 {
-
     /**
-     * Index method
+     * myBanners method
+     * Gera a página http://localhost:8765/banners/my-banners/:$userId
      *
+     * Faz as chamadas ao banco para buscar os "banners" de determinado
+     * usuário que serão exibidos e os dados do "usuário" que serão
+     * exibidos implicitamente.
+     *
+     * @param string $userId User id.
      * @return void
      */
     public function myBanners($userId)
     {
-        $this->paginate = [
-            'contain' => ['BannerTypes', 'Users']
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 1, 'user_id' => $userId]
         ];
-        $this->set('banners', $this->paginate($this->Banners));
-
-        //-------------------------------------------------------------------------
-
-        $bannerType = 1;
-        $bannersQuantity = 3;
-        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity,
-            $userId);
+        $smallBanners = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('smallBanners', $smallBanners);
 
         //-------------------------------------------------------------------------
 
-        $bannerType = 2;
-        $bannersQuantity = 1;
-        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity,
-            7);
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 2, 'user_id' => $userId]
+        ];
+        $fullBanners = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('fullBanners', $fullBanners);
 
         //-------------------------------------------------------------------------
 
-        $logged = $this->Auth->user();
-        $this->set('logged', $logged);
+        $this->set('logged', $this->Auth->user());
 
         //-------------------------------------------------------------------------
 
@@ -51,8 +53,11 @@ class BannersController extends AppController
 
         //-------------------------------------------------------------------------
 
-        $username = $this->Auth->user('username');
-        $this->set('username', $username);
+        $this->set('username', $this->Auth->user('username'));
+
+        //-------------------------------------------------------------------------
+
+        $this->set('userId', $this->Auth->user('id'));
     }
 
     /**

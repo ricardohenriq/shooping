@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\Event\Event;
+use Cake\ORM\TableRegistry;
 
 /**
  * Products Controller
@@ -26,9 +27,13 @@ class ProductsController extends AppController
     }
 
     /**
-     * View method
+     * view method
+     * Gera a página http://localhost:8765/products/view/:$id
      *
-     * @param string|null $id Product id.
+     * Faz uma chamada ao banco para retornar os dados do produto cujo id é
+     * passado pela URL.
+     *
+     * @param string $id Product id
      * @return void
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
@@ -52,27 +57,46 @@ class ProductsController extends AppController
 
             //-------------------------------------------------------------------------
 
-            $bannerType = 2;
-            $bannersQuantity = 1;
-            $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+            $setting = [
+                'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+                'conditions' => ['banner_type_id' => 2],
+                'limit' => 1
+            ];
+            $fullBanners = TableRegistry::get('Banners')
+                ->find('all', $setting)->hydrate(false)->toArray();
             $this->set('fullBanners', $fullBanners);
 
             //-------------------------------------------------------------------------
 
-            $mediaTypeId = 1;
-            $productImages = $this->Search->listAllProductsImages($id, $mediaTypeId);
+            $setting = [
+                'fields' => ['path'],
+                'conditions' => ['product_id' => $id, 'media_type_id' => 1]
+            ];
+            $productImages = TableRegistry::get('Medias')
+                ->find('all', $setting)->hydrate(false)->toArray();
             $this->set('productImages', $productImages);
 
             //-------------------------------------------------------------------------
 
-            $mediaTypeId = 2;
-            $productMainImage = $this->Search->listOneProductImage($id, $mediaTypeId);
+            $setting = [
+                'fields' => ['path'],
+                'conditions' => ['product_id' => $id, 'media_type_id' => 2]
+            ];
+            $productMainImage = TableRegistry::get('Medias')
+                ->find('all', $setting)->hydrate(false)->first();
             $this->set('productMainImage', $productMainImage);
 
             //-------------------------------------------------------------------------
 
-            $logged = $this->Auth->user();
-            $this->set('logged', $logged);
+            $this->set('logged', $this->Auth->user());
+
+            //-------------------------------------------------------------------------
+
+            $this->set('userId', $this->Auth->user('id'));
+
+            //-------------------------------------------------------------------------
+
+            $this->set('username', $this->Auth->user('username'));
 
             //-------------------------------------------------------------------------
 
@@ -147,19 +171,34 @@ class ProductsController extends AppController
         return $this->redirect(['action' => 'index']);
     }
 
+    /**
+     * productTrends method
+     * Retorna .json em http://localhost:8765/products/product-trends/:$subCategoryId
+     *
+     * Faz uma chamada ao banco para retornar os produtos de determinada subcategoria
+     * que é mais vendido, mais visitado ou mais novos.
+     *
+     * @param string|int $subCategoryId
+     * @return void
+     */
     public function productTrends($subCategoryId = 0)
     {
         $this->autoRender = false;
+        $this->response->type('json');
         if($this->request->is('get'))
         {
-            $this->response->type('json');
-            $productsQuantity = 4;
-            $order = 'DESC';
-            $column = 'visited';
-            $productsMostPopular = $this->Search->listProductsByTrend($subCategoryId, $productsQuantity, $column, $order);
-            //$this->set('productsMostPopular', $productsMostPopular);
-            //$this->set('_serialize',array('productsMostPopular'));
-            $this->response->body(json_encode($productsMostPopular));
+            $setting = [
+                'fields' => ['product_name', 'quantity', 'sold', 'description', 'price',
+                    'old_price'],
+                'limit' => 4
+            ];
+            if($subCategoryId != 0){
+                $setting['conditions'] = ['sub_category_id' => $subCategoryId];
+            }
+
+            $products = TableRegistry::get('Products')
+                ->find('all', $setting)->hydrate(false)->toArray();
+            $this->response->body(json_encode($products));
         }
     }
 
@@ -215,22 +254,29 @@ class ProductsController extends AppController
 
             //-------------------------------------------------------------------------
 
-            $bannerType = 1;
-            $bannersQuantity = 3;
-            $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
-            $this->set('smallBanners', $smallBanners);
-
-            //-------------------------------------------------------------------------
-
-            $bannerType = 2;
-            $bannersQuantity = 1;
-            $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+            $setting = [
+                'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+                'conditions' => ['banner_type_id' => 2],
+                'limit' => 1
+            ];
+            $fullBanners = TableRegistry::get('Banners')
+                ->find('all', $setting)->hydrate(false)->toArray();
             $this->set('fullBanners', $fullBanners);
 
             //-------------------------------------------------------------------------
 
-            $logged = $this->Auth->user();
-            $this->set('logged', $logged);
+            $setting = [
+                'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+                'conditions' => ['banner_type_id' => 1],
+                'limit' => 3
+            ];
+            $smallBanners = TableRegistry::get('Banners')
+                ->find('all', $setting)->hydrate(false)->toArray();
+            $this->set('smallBanners', $smallBanners);
+
+            //-------------------------------------------------------------------------
+
+            $this->set('logged', $this->Auth->user());
 
             //-------------------------------------------------------------------------
 
@@ -238,17 +284,18 @@ class ProductsController extends AppController
 
             //-------------------------------------------------------------------------
 
-            $username = $this->Auth->user('username');
-            $this->set('username', $username);
+            $this->set('username', $this->Auth->user('username'));
 
             //-------------------------------------------------------------------------
 
-            $categories = $this->Search->listAllCategories();
+            $categories = TableRegistry::get('Categories')
+                ->find()->hydrate(false)->toArray();
             $this->set('categories', $categories);
 
             //-------------------------------------------------------------------------
 
-            $subCategories = $this->Search->listAllSubCategories();
+            $subCategories = TableRegistry::get('SubCategories')
+                ->find()->hydrate(false)->toArray();
             $this->set('subCategories', $subCategories);
 
             //-------------------------------------------------------------------------
@@ -393,48 +440,70 @@ class ProductsController extends AppController
         return parent::isAuthorized($user);
     }
 
-    public function favoriteProducts(){
-        $bannerType = 2;
-        $bannersQuantity = 1;
-        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+    /**
+     * favoriteProducts method
+     * Gera a página http://localhost:8765/products/favorite-products
+     *
+     * Faz as chamadas ao banco para buscar os "banners" de exibição de
+     * produtos, ofertas, promoções e eventos, dados do "usuário" que serão
+     * exibidos implicitamente e os produtos favoritos do usuário.
+     *
+     * @return void
+     */
+    public function favoriteProducts()
+    {
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 2],
+            'limit' => 1
+        ];
+        $fullBanners = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('fullBanners', $fullBanners);
 
         //-------------------------------------------------------------------------
 
-        $bannerType = 1;
-        $bannersQuantity = 3;
-        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 1],
+            'limit' => 3
+        ];
+        $smallBanners = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('smallBanners', $smallBanners);
 
         //-------------------------------------------------------------------------
 
-        $newBannersQuantity = 5;
-        $newBanners = $this->Search->listNewBanners($newBannersQuantity);
-        $this->set('newBanners', $newBanners);
+        $this->set('logged', $this->Auth->user());
 
         //-------------------------------------------------------------------------
 
-        $logged = $this->Auth->user();
-        $this->set('logged', $logged);
+        $this->set('userId', $this->Auth->user('id'));
 
         //-------------------------------------------------------------------------
 
-        $userId = $this->Auth->user('id');
-        $this->set('userId', $userId);
+        $this->set('username', $this->Auth->user('username'));
 
         //-------------------------------------------------------------------------
 
-        $username = $this->Auth->user('username');
-        $this->set('username', $username);
-
-        //-------------------------------------------------------------------------
-
-        $stores = $this->Search->listAllStoresByUser($userId);
+        $setting = [
+            'fields' => ['store_name', 'id'],
+            'conditions' => ['user_id' => $this->Auth->user('id')]
+        ];
+        $stores = TableRegistry::get('Stores')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('stores', $stores);
 
         //-------------------------------------------------------------------------
 
-        $favoriteProducts = $this->Search->listAllFavoriteProductsByUser($userId);
+        //ESTE MÉTODO DEVERÁ SER REFEITO QUANDO FOR CRIADA A
+        //TABELA DE FAVORITOS, ATUALMENE ESTA SOMENTE "EMULANDO"
+        //UM RESULTADO ESPERADO.
+        $setting = [
+            'fields' => ['id', 'product_name', 'created', 'modified']
+        ];
+        $favoriteProducts = TableRegistry::get('Products')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('products', $favoriteProducts);
     }
 }

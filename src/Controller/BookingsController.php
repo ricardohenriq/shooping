@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\Event\Event;
+use Cake\ORM\TableRegistry;
 
 /**
  * Bookings Controller
@@ -130,48 +131,68 @@ class BookingsController extends AppController
         return parent::isAuthorized($user);
     }
 
-    public function myBookings(){
-        $bannerType = 2;
-        $bannersQuantity = 1;
-        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+    /**
+     * myBookings method
+     * Gera a página http://localhost:8765/bookings/my-bookings
+     *
+     * Faz as chamadas ao banco para buscar os "banners" de exibição de
+     * produtos, ofertas, promoções e eventos, dados do "usuário" que serão
+     * exibidos implicitamente e lojas "stores" e reservas "bookings" do usuário
+     *
+     * @return void
+     */
+    public function myBookings()
+    {
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 2],
+            'limit' => 1
+        ];
+        $fullBanners = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('fullBanners', $fullBanners);
 
         //-------------------------------------------------------------------------
 
-        $bannerType = 1;
-        $bannersQuantity = 3;
-        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 1],
+            'limit' => 3
+        ];
+        $smallBanners = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('smallBanners', $smallBanners);
 
         //-------------------------------------------------------------------------
 
-        $newBannersQuantity = 5;
-        $newBanners = $this->Search->listNewBanners($newBannersQuantity);
-        $this->set('newBanners', $newBanners);
+        $this->set('logged', $this->Auth->user());
 
         //-------------------------------------------------------------------------
 
-        $logged = $this->Auth->user();
-        $this->set('logged', $logged);
+        $this->set('userId', $this->Auth->user('id'));
 
         //-------------------------------------------------------------------------
 
-        $userId = $this->Auth->user('id');
-        $this->set('userId', $userId);
+        $this->set('username', $this->Auth->user('username'));
 
         //-------------------------------------------------------------------------
 
-        $username = $this->Auth->user('username');
-        $this->set('username', $username);
-
-        //-------------------------------------------------------------------------
-
-        $stores = $this->Search->listAllStoresByUser($userId);
+        $setting = [
+            'fields' => ['store_name', 'id'],
+            'conditions' => ['user_id' => $this->Auth->user('id')]
+        ];
+        $stores = TableRegistry::get('Stores')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('stores', $stores);
 
         //-------------------------------------------------------------------------
 
-        $bookings = $this->Search->listAllBookingsByUser($userId);
+        $setting = [
+            'fields' => ['id', 'product_id', 'quantity'],
+            'conditions' => ['user_id' => $this->Auth->user('id')]
+        ];
+        $bookings = TableRegistry::get('Bookings')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('bookings', $bookings);
     }
 }
