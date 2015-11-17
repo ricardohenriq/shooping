@@ -78,7 +78,7 @@
                 <button class="btn btn-info" title="Favorite o Site">
                     <span class="glyphicon glyphicon-star"></span>
                 </button>
-                <?= $this->Form->text('search', ['class' => 'form-control', 'placeholder' => 'Search', 'id' => 'search']) ?>
+                <?= $this->Form->text('search', ['class' => 'form-control', 'placeholder' => 'Search', 'id' => 'search', 'value' => $search]) ?>
                 <?= $this->Form->button('Buscar <span class="glyphicon glyphicon-search"></span>', ['type' => 'submit', 'class' => 'btn btn-default']) ?>
             <?= $this->Form->end() ?>
         </div>

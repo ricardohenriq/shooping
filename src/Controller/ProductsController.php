@@ -218,6 +218,7 @@ class ProductsController extends AppController
             $search = $this->request->query['search'];
             @$productsView = $this->request->query['products-view'] ?: 3;
             @$productsOrder = $this->request->query['products-order'];
+            @$page = $this->request->query['page'] ?: 1;
 
             //-------------------------------------------------------------------------
 
@@ -248,14 +249,26 @@ class ProductsController extends AppController
             //-------------------------------------------------------------------------
 
             $setting = [
-                'fields' => ['product_name', 'quantity', 'sold', 'description', 'price',
+                'fields' => ['id', 'product_name', 'quantity', 'sold', 'description', 'price',
                     'old_price'],
                 'conditions' => ['product_name LIKE' => '%'.$search.'%'],
                 'order' => ['price' => 'DESC'],
-                'limit' => $productsView
+                'limit' => $productsView,
+                'offset' => ($page * $productsView) - $productsView
             ];
             $products = TableRegistry::get('Products')
                 ->find('all', $setting)->hydrate(false)->toArray();
+
+            $productsSize = count($products);
+            for($i = 0; $i < $productsSize ; $i++)
+            {
+                $setting = [
+                    'fields' => ['path'],
+                    'conditions' => ['product_id' => $products[$i]['id'], 'media_type_id' => 3]
+                ];
+                $products[$i]['thumb'] = TableRegistry::get('Medias')
+                    ->find('all', $setting)->hydrate(false)->first()['path'];
+            }
             $this->set('products', $products);
 
             //-------------------------------------------------------------------------
@@ -335,6 +348,10 @@ class ProductsController extends AppController
             //-------------------------------------------------------------------------
 
             $this->set('previousNextPage', $this->Url->getPreviousNextPage($pagina));
+
+            //-------------------------------------------------------------------------
+
+            $this->set('search', $search);
         }
     }
 

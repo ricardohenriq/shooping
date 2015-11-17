@@ -35187,3 +35187,357 @@ Stack Trace:
 #1 {main}
 
 
+2015-11-17 16:01:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /img/
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-11-17 16:01:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /img/
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-11-17 16:01:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /img/
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-11-17 16:35:16 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-6' at line 1
+Request URL: /products/search?search=relogio
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(260): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-11-17 16:38:15 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 1
+Request URL: /products/search?search=relogio
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(260): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-11-17 16:38:41 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 1
+Request URL: /products/search?search=relogio&page=1
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(260): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-11-17 16:39:28 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 1
+Request URL: /products/search?search=relogio&page=1
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(260): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-11-17 16:40:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 1
+Request URL: /products/search?search=relogio&page=1
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(260): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-11-17 16:42:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 1
+Request URL: /products/search?search=relogio&page=1
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(265): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-11-17 16:42:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 1
+Request URL: /products/search?search=relogio&page=1
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(261): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-11-17 16:43:16 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 1
+Request URL: /products/search?search=relogio&page=1
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(262): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-11-17 16:43:33 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 1
+Request URL: /products/search?search=relogio&page=1
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(262): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-11-17 16:44:39 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 1
+Request URL: /products/search?search=relogio&page=1
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(262): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-11-17 16:44:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 1
+Request URL: /products/search?search=relogio&page=1
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(262): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-11-17 16:44:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 1
+Request URL: /products/search?search=relogio
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(262): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-11-17 16:45:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 1
+Request URL: /products/search?search=relogio
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(262): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-11-17 16:45:08 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 1
+Request URL: /products/search?search=relogio
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(262): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
+2015-11-17 16:45:22 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-3' at line 1
+Request URL: /products/search?search=relogio
+Stack Trace:
+#0 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Database\Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(657): Cake\Database\Query->execute()
+#6 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\ORM\Query.php(608): Cake\ORM\Query->_all()
+#8 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(234): Cake\ORM\Query->all()
+#9 C:\xampp\htdocs\PROJETOS\Shopping\src\Controller\ProductsController.php(262): Cake\ORM\Query->toArray()
+#10 [internal function]: App\Controller\ProductsController->search()
+#11 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Controller\Controller.php(411): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#13 C:\xampp\htdocs\PROJETOS\Shopping\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProductsController))
+#14 C:\xampp\htdocs\PROJETOS\Shopping\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#15 {main}
+
+
