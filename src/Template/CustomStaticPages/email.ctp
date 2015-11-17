@@ -16,7 +16,7 @@
     <head>
         <?= $this->Html->charset() ?>
         <?= $this->Html->meta('viewport','width=device-width, initial-scale=1.0') ?>
-        <?= $this->Html->meta('title',__('Perguntas Frequentes')) ?>
+        <?= $this->Html->meta('title',__('Fomulário de Email')) ?>
         <?= $this->Html->meta('favicon.ico','/cart.png', ['type' => 'icon']) ?>
         <?= $this->Html->meta('keywords','') ?>
         <?= $this->Html->meta('description','') ?>
@@ -48,43 +48,46 @@
         <div class="wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="panel panel-default col-md-10 col-md-offset-1">
+                    <div class="panel panel-default col-md-6 col-md-offset-3">
                         <div class="panel-heading">
-                            <h3 class="panel-title span7 text-center title">Stores - Perguntas Frequentes</h3>
+                            <h3 class="panel-title span7 text-center title">Formulário de Email</h3>
                         </div>
                         <div class="panel-body">
-                            <p><span class="title">- </span></p>
-                            <hr>
-                            <p><span class="title">- O faço para ter acesso as ofertas ?</span></p>
-                            <hr>
-                            <p><span class="title">- Como posso recuperar meu Login ou Senha ?</span></p>
-                            <hr>
-                            <p><span class="title">- </span></p>
-                            <hr>
-                            <p><span class="title">- Como posso favoritar um produto ?</span></p>
-                            <hr>
-                            <p><span class="title">- Porque fui redirecionado para a página mobile ?</span></p>
-                            <hr>
-                            <p><span class="title">- Posso acessar o site pelo Smartphone ?</span></p>
-                            <hr>
-                            <p><span class="title">- É possivel receber notificações de novos produtos ?</span></p>
-                            <hr>
-                            <p><span class="title">- </span></p>
-                            <hr>
-                            <p><span class="title">- Como eu reporto um produto ?</span></p>
-                            <hr>
-                            <p><span class="title">- A velocidade de acesso esta muito ruim</span></p>
-                            <hr>
-                            <p><span class="title">- </span></p>
-                            <hr>
-                            <p><span class="title">- Como eu deleto um produto ?</span></p>
-                            <hr>
-                            <p><span class="title">- Como eu faço para anúnciar no Site ?</span></p>
-                            <hr>
-                            <p><span class="title">- Troca de Links</span></p>
+                            <?= $this->Form->create(null, ['url' => ['controller' => '', 'action' => ''], 'type' => 'post', 'id' => 'email-form', 'class' => 'form-horizontal']) ?>
+                                <div class="form-group">
+                                    <label for="email" class="control-label col-md-3">Seu Email</label>
+                                    <div class="col-md-9">
+                                        <?= $this->Form->text('email', ['type' => 'email', 'class' => 'form-control', 'placeholder' => 'Email']) ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="control-label col-md-3">Seu Nome</label>
+                                    <div class="col-md-9">
+                                        <?= $this->Form->text('name', ['class' => 'form-control', 'placeholder' => 'Nome']) ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject" class="control-label col-md-3">Assunto</label>
+                                    <div class="col-md-9">
+                                        <?= $this->Form->text('subject', ['class' => 'form-control', 'placeholder' => 'Assunto']) ?>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="control-label col-md-3">Mensagem</label>
+                                    <div class="col-md-9">
+                                        <?= $this->Form->textarea('message', ['class' => 'form-control', 'rows' => '3', 'placeholder' => 'Mensagens']) ?>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center">
+                                    <div class="col-md-6 col-md-offset-3">
+                                        <?= $this->Form->button('Limpar', ['type' => 'reset', 'class' => 'btn btn-danger']) ?>
+                                        <?= $this->Form->button('Enviar', ['type' => 'submit', 'class' => 'btn btn-info']) ?>
+                                    </div>
+                                </div>
+                            <?= $this->Form->end() ?>
                         </div>
                         <div class="panel-footer span7 text-center">
-                            <?= $this->Html->link('Mais dúvidas? Envie-nos um Email',['controller' => 'Pages', 'action' => 'display', 'email']) ?>
+                            <?= $this->Html->link('Voltar ao Site',['controller' => 'CustomStaticPages', 'action' => 'index']) ?>
                         </div>
                     </div>
                 </div>
@@ -92,7 +95,7 @@
         </div>
         <?= $this->element('Body/back_top') ?>
         <?= $this->element('Footer/footer_information') ?>
-        <?php if ($logged == false): ?>
+        <?php if ($userId == false): ?>
             <?= $this->element('Modal/create_account_modal') ?>
             <?= $this->element('Modal/login_modal') ?>
         <?php else: ?>

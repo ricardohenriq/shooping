@@ -4065,7 +4065,7 @@ INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (1, 2, 'http://localhost/PROJETOS/ShoppingResources/img/2/TV-LED-32-Smart-LiteUSB-HDMI-LE-3278i-Semp-Toshiba-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (3, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3/Motorola-Moto-X-Android-42-GPS-3G-2-Chips-13GHZ-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 3, 'http://localhost/PROJETOS/ShoppingResources/thumb/Motorola-Moto-X-Android-42-GPS-3G-2-Chips-13GHZ-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (2, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3/Motorola-Moto-X-Android-42-GPS-3G-2-Chips-13GHZ-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
@@ -4083,7 +4083,7 @@ INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (1, 3, 'http://localhost/PROJETOS/ShoppingResources/img/3/Motorola-Moto-X-Android-42-GPS-3G-2-Chips-13GHZ-5.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (3, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4/Liquidificador-e-Processador-Reverse-Red-Oster-110V-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 4, 'http://localhost/PROJETOS/ShoppingResources/thumb/Liquidificador-e-Processador-Reverse-Red-Oster-110V-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (2, 4, 'http://localhost/PROJETOS/ShoppingResources/img/4/Liquidificador-e-Processador-Reverse-Red-Oster-110V-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
@@ -4320,7 +4320,7 @@ INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (2, 22, 'http://localhost/PROJETOS/ShoppingResources/img/22/Refrigerante-Canada-Dry-Ginger-Ale-Caixa-12-Latas-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (3, 22, 'http://localhost/PROJETOS/ShoppingResources/img/22/Refrigerante-Canada-Dry-Ginger-Ale-Caixa-12-Latas-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+VALUES (3, 22, 'http://localhost/PROJETOS/ShoppingResources/thumb/Refrigerante-Canada-Dry-Ginger-Ale-Caixa-12-Latas-1.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (1, 22, 'http://localhost/PROJETOS/ShoppingResources/img/22/Refrigerante-Canada-Dry-Ginger-Ale-Caixa-12-Latas-2.jpg', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
@@ -4803,7 +4803,7 @@ INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (1, 60, 'http://localhost/PROJETOS/ShoppingResources/img/60/Relogio-Invicta-Pro-Diver-6981-Ouro-18K-4.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
-VALUES (3, 61, 'http://localhost/PROJETOS/ShoppingResources/img/61/Smartwatch-U8-Relogio-Inteligente-Bluetooth-Android-Iphone-1.jpg', NOW(), NOW());
+VALUES (3, 61, 'http://localhost/PROJETOS/ShoppingResources/thumb/Smartwatch-U8-Relogio-Inteligente-Bluetooth-Android-Iphone-1.jpg', NOW(), NOW());
 
 INSERT INTO medias (media_type_id, product_id, path, created, modified)
 VALUES (2, 61, 'http://localhost/PROJETOS/ShoppingResources/thumb/Smartwatch-U8-Relogio-Inteligente-Bluetooth-Android-Iphone-1.jpg', NOW(), NOW());

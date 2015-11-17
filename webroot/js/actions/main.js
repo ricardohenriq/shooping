@@ -1,10 +1,10 @@
 /**
- * Usado no cadastro da cada do modal de cadastramento de usuário 
- * contido no "Navbar" (componente usado em todas as telas).
+ * Usado no cadastro da cada usuário dentro do modal de cadastramento de 
+ * usuário contido no "Navbar" (componente usado em todas as telas).
  * 
- * Gera o calendário da data de nascimento.
+ * Objetivo: gerar o calendário da data de nascimento.
  *
- * Independe e não relaciona com qualquer outra função.
+ * Independente e não relaciona com qualquer outra função.
  */
 $('.date').datepicker({
     format: "yyyy/mm/dd",
@@ -17,17 +17,15 @@ $('.date').datepicker({
     orientation: "top"
 });
 
-$('#news-slide').bxSlider({
-    slideWidth: 240,
-    minSlides: 1,
-    maxSlides: 5,
-    moveSlides: 1,
-    slideMargin: 10,
-    infiniteLoop: false,
-    auto: true,
-    pager: false
-});
-
+/**
+ * Usado no login da cada usuário dentro do modal de login de 
+ * usuário contido no "Navbar" (componente usado em todas as telas). 
+ * 
+ * Objetivo: submeter o formulário de cadastro do usuário e exibir
+ * o resultado do cadastro (conseguiu ou não se cadastrar).
+ *
+ * Utiliza a função: "displayMessage", "defaultAjaxErrorHandler" e "functionAjax".
+ */
 $('#submit-login').click(function(){
     var settings = [];
 	settings['url'] = 'http://localhost:8765/users/login';
@@ -45,6 +43,20 @@ $('#submit-login').click(function(){
 	functionAjax(settings);
 });
 
+/**
+ * Usado em diversas telas e modais por ser uma função generica e essencial 
+ * para exibição e estilização de mensagens do back-end para o front-end.
+ *
+ * Objetivo: encapsular as chamadas para as funções que imprimem e estilizão
+ * as mensagens vindas do back-end e recarregar a página.
+ * 
+ * Utiliza a função: "printMessage" e "styleMessage".
+ * 
+ * @param string parentId
+ * @param string messageLocal
+ * @param Object response
+ * @return void
+ */
 function displayMessage(parentId, messageLocal, response){
     printMessage(parentId, messageLocal, response);
     styleMessage(parentId, messageLocal, response);
@@ -53,6 +65,20 @@ function displayMessage(parentId, messageLocal, response){
     }
 }
 
+/**
+ * Usado em diversas telas e modais por ser uma função generica e essencial 
+ * para impressão de mensagens do back-end para o front-end.
+ *
+ * Objetivo: imprimir no formato de frase as propriedades do objeto retornado 
+ * pelo back-end.
+ * 
+ * Independente mas é chamada por outras funções.
+ * 
+ * @param string parentId
+ * @param string messageLocal
+ * @param Object response
+ * @return void
+ */
 function printMessage(parentId, messageLocal, response){
     var message = '';
     for(var item in response){
@@ -63,6 +89,20 @@ function printMessage(parentId, messageLocal, response){
     $(parentId + ' ' + messageLocal).text(message.slice(0,-3));
 }
 
+/**
+ * Usado em diversas telas e modais por ser uma função generica e essencial 
+ * para estilização de mensagens do back-end para o front-end.
+ *
+ * Objetivo: estilizar a frase por meio de adição de classes a frase construida
+ * pelas propriedades do objeto retornado pelo back-end.
+ * 
+ * Independente mas é chamada por outras funções.
+ * 
+ * @param string parentId
+ * @param string messageLocal
+ * @param Object response
+ * @return void
+ */
 function styleMessage(parentId, messageLocal, response){
     if(response['type'] === 'Erro'){
         $(parentId + ' ' + messageLocal).addClass('error');
@@ -79,6 +119,16 @@ function styleMessage(parentId, messageLocal, response){
     }
 }
 
+/**
+ * Usado no processo de exclusão de cadastro de usuário dentro da página 
+ * de perfil do usuário. 
+ * 
+ * Objetivo: submeter o formulário de exclusão de perfil do usuário e exibir
+ * o resultado da exclusão (conseguiu ou não se excluir).
+ *
+ * Utiliza a função: "displayMessage", "defaultAjaxErrorHandler" e "functionAjax".
+ * @param string URL de exclusão de perfis de usuário.
+ */
 function deleteAccount(url){
     var settings = [];
 	settings['url'] = url;
@@ -96,6 +146,16 @@ function deleteAccount(url){
 	functionAjax(settings);
 }
 
+/**
+ * Usado no processo de edição de perfil de usuário dentro do modal de edição 
+ * de perfil dentro da página de perfil do usuário. 
+ * 
+ * Objetivo: submeter o formulário de edição de perfil do usuário e exibir
+ * o resultado da edição (conseguiu ou não editar).
+ *
+ * Utiliza a função: "displayMessage", "defaultAjaxErrorHandler" e "functionAjax".
+ * @param string URL de edição de perfis de usuário.
+ */
 function editAccount(url){	
 	var settings = [];
 	settings['url'] = url;
@@ -113,6 +173,15 @@ function editAccount(url){
 	functionAjax(settings);
 }
 
+/**
+ * Usado no cadastro da cada usuário dentro do modal de cadastramento de 
+ * usuário contido no "Navbar" (componente usado em todas as telas). 
+ * 
+ * Objetivo: submeter o formulário de cadastro do usuário e exibir
+ * o resultado do cadastro (conseguiu ou não se cadastrar).
+ *
+ * Utiliza a função: "displayMessage", "defaultAjaxErrorHandler" e "functionAjax".
+ */
 $('#submit-crete-account').click(function(){
 	var settings = [];
 	settings['url'] = 'http://localhost:8765/users/add';
@@ -130,10 +199,24 @@ $('#submit-crete-account').click(function(){
 	functionAjax(settings);
 });
 
+/**
+ * Faz download das strings (dentro de um arquivo .json) do que serão usadas 
+ * no autocomplete e chama a função responsável pelo autocomplete que esta 
+ * contido no navbar e presente em todas as telas do site.
+ *
+ * Utiliza a função: "autoCompleteMulti".
+ */
 $.getJSON("http://localhost:8765/json/products.json", function (products) {
     autoCompleteMulti(products, '#search');
 });
 
+/**
+ * Realiza o bind do autocomplete ao input expecifico.
+ *
+ * Independente mas é chamada por outra função.
+ * @param array Array de palavras usadas no autocomplete.
+ * @param string String com o seletor do elemento que terá o autocomplete.
+ */
 function autoCompleteMulti(words, selector){
     $(selector).bind("keydown", function(event){
         if(event.keyCode === $.ui.keyCode.TAB &&
@@ -162,14 +245,35 @@ function autoCompleteMulti(words, selector){
     });
 }
 
+/**
+ * Função auxiliar à "autoCompleteMulti" na criação do auto complete 
+ * multiplo.
+ *
+ * Independente mas é chamada pela função "autoCompleteMulti".
+ */
 function split(val){
     return val.split(/ \s*/);
 }
 
+/**
+ * Função auxiliar à "autoCompleteMulti" na criação do auto complete 
+ * multiplo.
+ *
+ * Independente mas é chamada pela função "autoCompleteMulti".
+ */
 function extractLast(term){
     return split(term).pop();
 }
 
+/**
+ * Usado no cadastro da cada usuário dentro do modal de cadastramento de 
+ * usuário contido no "Navbar" (componente usado em todas as telas). 
+ * 
+ * Objetivo: gerar um popover com as informações de como deve ser a senha
+ * do usuário.
+ *
+ * Independente e não relaciona com qualquer outra função.
+ */
 $("#password").popover({
     title: 'A senha deve conter entre 8 e 16 caracteres, incluindo:',
     content: '<ul><li>Letras Maiusculas</li><li>Letras Minusculas</li><li>Numeros</li></ul>',
@@ -177,6 +281,15 @@ $("#password").popover({
     placement: 'right'
 });
 
+/**
+ * Usado no cadastro da cada usuário dentro do modal de cadastramento de 
+ * usuário contido no "Navbar" (componente usado em todas as telas). 
+ * 
+ * Objetivo: passar as regras de validação de cadastro de usuário no front-end 
+ * pelo plugin jquery-validate. 
+ *
+ * Independente e não relaciona com qualquer outra função.
+ */
 $("#login-form").validate({
     rules: {
         email: {
@@ -194,6 +307,12 @@ $("#login-form").validate({
     }
 });
 
+/**
+ * Usado em todas as telas para fazer com que o usuario seja lançado ao topo
+ * da página assim que o elemento seja clicado. presente em todas as telas.
+ *
+ * Independente e não relaciona com qualquer outra função.
+ */
 $('#back-top').click(function(){
     $('html, body').animate({scrollTop: 0}, 'slow');
     return false;
@@ -204,17 +323,49 @@ $('#back-top').click(function(){
  action = $(this).attr('action') + '/' + document.getElementById('search').value;
  window.location.href = action;
  });*/
-
+ 
+/**
+ * Usado na tela de localhost/product/search.
+ * 
+ * Objetivo: redirecionar automaticamente quando o usuário clicar em uma opção 
+ * do combobox.
+ *
+ * Independente e não relaciona com qualquer outra função.
+ * @param DOMElement elemento option
+ * @return void
+ */
 function redirect(option){
     location = option.value;
 }
 
+/**
+ * Usado em todas as telas.
+ * 
+ * Objetivo: imprimir no console o resultado de erro de uma função ajax.
+ *
+ * Independente mas é chamada por todas as funções ajax.
+ * 
+ * @param Object
+ * @param Object 
+ * @param Object 
+ * @return void
+ */
 function defaultAjaxErrorHandler(XMLHttpRequest,textStatus,errorThrown){
 	console.log(XMLHttpRequest);
 	console.log(textStatus);
 	console.log(errorThrown);
 }
 
+/**
+ * Usado em todas as telas.
+ * 
+ * Objetivo: emcapsular um função ajax.
+ *
+ * Independente mas é chamada por outras funções.
+ * 
+ * @param array Array associativo com os parametros usados na função ajax.
+ * @return void
+ */
 function functionAjax(settings){
     $.ajax({
 		type: settings['type'],

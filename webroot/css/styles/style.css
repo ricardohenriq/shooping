@@ -97,14 +97,6 @@
     max-width:100%
 }
 
-#news-slide .item-new .new-thumb{
-    float: left
-}
-
-#news-slide .item-new .new-description {
-    margin-left: 45%;
-}
-
 .item-offer{
     margin-top: 10%;
     margin-left:15%;
@@ -269,4 +261,12 @@ hr{
 
 textarea{
     width:100%
+}
+
+#product-trends .bx-viewport{
+	min-height:320px !important
+}
+
+#news .bx-viewport{
+	min-height:30px !important
 }

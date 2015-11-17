@@ -53,9 +53,6 @@
         <div class="wrapper">
             <div class="container">
                 <div class="row">
-                    <?= $this->element('Body/news') ?>
-                </div>
-                <div class="row">
                     <div id="mall-map" class="col-md-12"></div>
                     <div id="mall-map-legend" class="span7 text-center"></div>
                 </div>
@@ -72,7 +69,7 @@
         </div>
         <?= $this->element('Body/back_top') ?>
         <?= $this->element('Footer/footer_information') ?>
-        <?php if ($logged == false): ?>
+        <?php if ($userId == false): ?>
             <?= $this->element('Modal/create_account_modal') ?>
             <?= $this->element('Modal/login_modal') ?>
         <?php else: ?>

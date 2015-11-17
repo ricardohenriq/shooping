@@ -48,27 +48,27 @@ Router::scope('/', function ($routes) {
      * its action called 'display', and we pass a param to select the view file
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
-    $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+    $routes->connect('/', ['controller' => 'CustomStaticPages', 'action' => 'index']);
 
     // tendo pages após o dominio (sequido de qualquer coisa) será redirecionado para o controller pages,
     // método display, qualquer coisa após o * será passado como parametro
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
      */
-    $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
+    $routes->connect('/pages/*', ['controller' => 'CustomStaticPages', 'action' => 'index']);
 
     //$routes->connect('/products/most-popular',['controller' => 'Products', 'action' => 'mostPopular']);
 
     /*$routes->connect('/products/search/:search', ['controller' => 'Products', 'action' => 'search'],
         [':search' => '\w+', 'pass' => ['search']]);*/
 
-    $routes->connect('/termos-de-servico', ['controller' => 'Pages', 'action' => 'display', 'termos_de_servico']);
+    $routes->connect('/termos-de-servico', ['controller' => 'CustomStaticPages', 'action' => 'termosDeServico']);
 
-    $routes->connect('/politicas-de-privacidade', ['controller' => 'Pages', 'action' => 'display', 'politicas_de_privacidade']);
+    $routes->connect('/politicas-de-privacidade', ['controller' => 'CustomStaticPages', 'action' => 'politicasDePrivacidade']);
 
-    $routes->connect('/perguntas-frequentes', ['controller' => 'Pages', 'action' => 'display', 'perguntas_frequentes']);
+    $routes->connect('/perguntas-frequentes', ['controller' => 'CustomStaticPages', 'action' => 'perguntasFrequentes']);
 
-    $routes->connect('/email', ['controller' => 'Pages', 'action' => 'display', 'email']);
+    $routes->connect('/email', ['controller' => 'CustomStaticPages', 'action' => 'email']);
 
     /**
      * Connect catchall routes for all controllers.

@@ -79,7 +79,7 @@
         </div>
         <?= $this->element('Body/back_top') ?>
         <?= $this->element('Footer/footer_information') ?>
-        <?php if ($logged == false): ?>
+        <?php if ($userId == false): ?>
             <?= $this->element('Modal/create_account_modal') ?>
             <?= $this->element('Modal/login_modal') ?>
         <?php else: ?>

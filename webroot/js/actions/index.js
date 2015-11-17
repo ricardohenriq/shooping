@@ -1,3 +1,11 @@
+/**
+ * Usado na página inicial do site e somente nela.
+ * CustomStaticPages/home.tpl
+ * 
+ * Objetivo: gerar um slider de ofertas.
+ *
+ * Independente e não relaciona com qualquer outra função.
+ */
 $('#offers-slide').bxSlider({
     slideWidth: 812,
     minSlides: 1,
@@ -6,6 +14,28 @@ $('#offers-slide').bxSlider({
     auto: true
 });
 
+/**
+ * Usado na página inicial do site e somente nela.
+ * CustomStaticPages/home.tpl
+ * 
+ * Objetivo: gerar um slider de noticias.
+ *
+ * Independente e não relaciona com qualquer outra função.
+ */
+$('#news-slide').bxSlider({
+	slideWidth: 500,
+	minSlides: 1,
+	maxSlides: 6,
+	moveSlides: 1,
+	auto: true,
+    pager: false,
+	controls: false
+});
+
+/**
+ * Objeto global com as configurações padrão dos sliders de 
+ * produtos "Mais vendidos", "Mais visitados" e "Mais novos".
+ */
 trendProductsSliderConfig = {
     slideWidth: 250,
     minSlides: 1,
@@ -15,12 +45,46 @@ trendProductsSliderConfig = {
     pager: false
 };
 
+/**
+ * Usado na página inicial do site e somente nela.
+ * CustomStaticPages/home.tpl
+ * 
+ * Objetivo: gerar um slider de produtos "Mais visitados".
+ *
+ * Independente e não relaciona com qualquer outra função.
+ */
 $('#most-popular-products').bxSlider(trendProductsSliderConfig);
 
+/**
+ * Usado na página inicial do site e somente nela.
+ * CustomStaticPages/home.tpl
+ * 
+ * Objetivo: gerar um slider de produtos "Mais vendidos".
+ *
+ * Independente e não relaciona com qualquer outra função.
+ */
 $('#best-sellers-products').bxSlider(trendProductsSliderConfig);
 
+/**
+ * Usado na página inicial do site e somente nela.
+ * CustomStaticPages/home.tpl
+ * 
+ * Objetivo: gerar um slider de produtos "Mais novos".
+ *
+ * Independente e não relaciona com qualquer outra função.
+ */
 $('#releases-products').bxSlider(trendProductsSliderConfig);
 
+/**
+ * Usado na página inicial do site e somente nela.
+ * CustomStaticPages/home.tpl
+ * 
+ * Objetivo: criar um array de configuração de chamada ajax e chamar a 
+ * função ajax que retornará um json com os pordutos "Mais visitados" de 
+ * determinada categoria.
+ *
+ * Independente mas chama função ajax.
+ */
 $('#most-pupular-subcat').change(function(){
 	var settings = [];
 	settings['url'] = 'http://localhost:8765/products/product-trends/' + $('#most-pupular-subcat').val();
@@ -42,6 +106,16 @@ $('#most-pupular-subcat').change(function(){
 	functionAjax(settings);
 });
 
+/**
+ * Usado na página inicial do site e somente nela.
+ * CustomStaticPages/home.tpl
+ * 
+ * Objetivo: criar um array de configuração de chamada ajax e chamar a 
+ * função ajax que retornará um json com os pordutos "Mais vendidos" de 
+ * determinada categoria.
+ *
+ * Independente mas chama função ajax.
+ */
 $('#best-sellers-subcat').change(function(){	
 	var settings = [];
 	settings['url'] = 'http://localhost:8765/products/product-trends/' + $('#best-sellers-subcat').val();
@@ -63,6 +137,16 @@ $('#best-sellers-subcat').change(function(){
 	functionAjax(settings);
 });
 
+/**
+ * Usado na página inicial do site e somente nela.
+ * CustomStaticPages/home.tpl
+ * 
+ * Objetivo: criar um array de configuração de chamada ajax e chamar a 
+ * função ajax que retornará um json com os pordutos "Mais novos" de 
+ * determinada categoria.
+ *
+ * Independente mas chama função ajax.
+ */
 $('#releases-subcat').change(function(){
 	var settings = [];
 	settings['url'] = 'http://localhost:8765/products/product-trends/' + $('#releases-subcat').val();
@@ -84,6 +168,21 @@ $('#releases-subcat').change(function(){
 	functionAjax(settings);
 });
 
+/**
+ * Usado na página inicial do site e somente nela.
+ * CustomStaticPages/home.tpl
+ * 
+ * Objetivo: criar todos os containers (adicionar seus atributos, classes e css) e 
+ * adicionar as imagens dentro do container; Este container é especifico, é 
+ * o de um slide já gerado pelo plugin bx.slider.
+ *
+ * É chamada dentro dos: $('#most-pupular-subcat').change | $('#best-sellers-subcat').change |
+ * $('#releases-subcat').change
+ * 
+ * @param Object json Contendo os produtos retornados pela função ajax.
+ * @param string onde deverá ficar o slide.
+ * @param string o container do slide.
+ */
 function formatProducts(products, ulSlider, selectContainer) {
 
     var divWrapper = document.createElement('div');
@@ -113,7 +212,7 @@ function formatProducts(products, ulSlider, selectContainer) {
 
         var img = document.createElement("img");
         $(img).attr('alt', products[i]['product_name']);
-        $(img).attr('src', 'img/' + products[i]['thumbnail']);
+        $(img).attr('src', products[i]['thumb']);
         $(div).append(img);
 
         var spanName = document.createElement("span");
@@ -142,6 +241,16 @@ function formatProducts(products, ulSlider, selectContainer) {
     $('#' + ulSlider).bxSlider(trendProductsSliderConfig);
 }
 
+/**
+ * Usado na página inicial do site e somente nela.
+ * CustomStaticPages/home.tpl
+ * 
+ * Objetivo: criar um array de configuração de chamada ajax e chamar a 
+ * função ajax que retornará um json com o estado da subscrição do formulário 
+ * de newsletter.
+ *
+ * Independente mas chama função ajax.
+ */
 $('#submit-subscribe-form').click(function(){
 	var settings = [];
 	settings['url'] = 'http://localhost:8765/subscribers/add';

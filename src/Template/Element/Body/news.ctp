@@ -1,17 +1,34 @@
 <div id="news" class="col-md-12">
     <ul id="news-slide">
-        <?php foreach($newBanners as $newBanner): ?>
-            <li><?= $this->Html->image($newBanner['path_banner'], ['alt' => $newBanner['description'], 'title' => $newBanner['name']]) ?></li>
-        <?php endforeach; ?>
         <li>
-            <div class="item-new">
-                <div class="new-thumb">
-                    <img src="http://localhost:8765/img/news-thumb/new-thumb1.png">
-                </div>
-                <div class="new-description">
-                    Texto Texto Texto Texto Texto Texto
-                </div>
-            </div>
+            <span>
+                New 1 New 1 New 1 New 1 New 1 New 1 New 1 New 1 New 1 New 1
+            </span>
+        </li>
+        <li>
+            <span>
+                New 2 New 2 New 2 New 2 New 2 New 2 New 2 New 2 New 2 New 2
+            </span>
+        </li>
+        <li>
+            <span>
+                New 3 New 3 New 3 New 3 New 3 New 3 New 3 New 3 New 3 New 3
+            </span>
+        </li>
+        <li>
+            <span>
+                New 4 New 4 New 4 New 4 New 4 New 4 New 4 New 4 New 4 New 4
+            </span>
+        </li>
+        <li>
+            <span>
+                New 5 New 5 New 5 New 5 New 5 New 5 New 5 New 5 New 5 New 5
+            </span>
+        </li>
+        <li>
+            <span>
+                New 6 New 6 New 6 New 6 New 6 New 6 New 6 New 6 New 6 New 6
+            </span>
         </li>
     </ul>
 </div>

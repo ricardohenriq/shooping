@@ -64,7 +64,7 @@
                             <p><span class="title">- </span></p>
                         </div>
                         <div class="panel-footer span7 text-center">
-                            <?= $this->Html->link('Mais dúvidas? Envie-nos um Email',['controller' => 'Pages', 'action' => 'display', 'email']) ?>
+                            <?= $this->Html->link('Mais dúvidas? Envie-nos um Email',['controller' => 'CustomStaticPages', 'action' => 'email']) ?>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
         </div>
         <?= $this->element('Body/back_top') ?>
         <?= $this->element('Footer/footer_information') ?>
-        <?php if ($logged == false): ?>
+        <?php if ($userId == false): ?>
             <?= $this->element('Modal/create_account_modal') ?>
             <?= $this->element('Modal/login_modal') ?>
         <?php else: ?>

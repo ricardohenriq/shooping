@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\Event\Event;
+use Cake\ORM\TableRegistry;
 
 /**
  * Stores Controller
@@ -109,119 +110,128 @@ class StoresController extends AppController
         return $this->redirect(['action' => 'index']);
     }
 
-    public function miniMap(){
-
-        $bannerType = 2;
-        $bannersQuantity = 1;
-        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+    public function miniMap()
+    {
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 2],
+            'limit' => 1
+        ];
+        $fullBanners = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('fullBanners', $fullBanners);
 
         //-------------------------------------------------------------------------
 
-        $bannerType = 1;
-        $bannersQuantity = 3;
-        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 1],
+            'limit' => 3
+        ];
+        $smallBanners = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('smallBanners', $smallBanners);
 
         //-------------------------------------------------------------------------
 
-        $newBannersQuantity = 5;
-        $newBanners = $this->Search->listNewBanners($newBannersQuantity);
-        $this->set('newBanners', $newBanners);
+        $this->set('userId', $this->Auth->user('id'));
 
         //-------------------------------------------------------------------------
 
-        $logged = $this->Auth->user();
-        $this->set('logged', $logged);
-
-        //-------------------------------------------------------------------------
-
-        $username = $this->Auth->user('username');
-        $this->set('username', $username);
+        $this->set('username', $this->Auth->user('username'));
     }
 
-    public function myStores(){
-        $bannerType = 2;
-        $bannersQuantity = 1;
-        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+    public function myStores()
+    {
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 2],
+            'limit' => 1
+        ];
+        $fullBanners = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('fullBanners', $fullBanners);
 
         //-------------------------------------------------------------------------
 
-        $bannerType = 1;
-        $bannersQuantity = 3;
-        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 1],
+            'limit' => 3
+        ];
+        $smallBanners = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('smallBanners', $smallBanners);
 
         //-------------------------------------------------------------------------
 
-        $newBannersQuantity = 5;
-        $newBanners = $this->Search->listNewBanners($newBannersQuantity);
-        $this->set('newBanners', $newBanners);
+        $this->set('userId', $this->Auth->user('id'));
 
         //-------------------------------------------------------------------------
 
-        $logged = $this->Auth->user();
-        $this->set('logged', $logged);
+        $this->set('username', $this->Auth->user('username'));
 
         //-------------------------------------------------------------------------
 
-        $userId = $this->Auth->user('id');
-        $this->set('userId', $userId);
-
-        //-------------------------------------------------------------------------
-
-        $username = $this->Auth->user('username');
-        $this->set('username', $username);
-
-        //-------------------------------------------------------------------------
-
-        $stores = $this->Search->listAllStoresByUser($userId);
+        $setting = [
+            'fields' => ['store_name', 'id', 'created', 'modified'],
+            'conditions' => ['user_id' => $this->Auth->user('username')]
+        ];
+        $stores = TableRegistry::get('Stores')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('stores', $stores);
     }
 
-    public function favoriteStores(){
-        $bannerType = 2;
-        $bannersQuantity = 1;
-        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+    public function favoriteStores()
+    {
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 2],
+            'limit' => 1
+        ];
+        $fullBanners = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('fullBanners', $fullBanners);
 
         //-------------------------------------------------------------------------
 
-        $bannerType = 1;
-        $bannersQuantity = 3;
-        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 1],
+            'limit' => 3
+        ];
+        $smallBanners = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('smallBanners', $smallBanners);
 
         //-------------------------------------------------------------------------
 
-        $newBannersQuantity = 5;
-        $newBanners = $this->Search->listNewBanners($newBannersQuantity);
-        $this->set('newBanners', $newBanners);
+        $this->set('userId', $this->Auth->user('id'));
 
         //-------------------------------------------------------------------------
 
-        $logged = $this->Auth->user();
-        $this->set('logged', $logged);
+        $this->set('username', $this->Auth->user('username'));
 
         //-------------------------------------------------------------------------
 
-        $userId = $this->Auth->user('id');
-        $this->set('userId', $userId);
-
-        //-------------------------------------------------------------------------
-
-        $username = $this->Auth->user('username');
-        $this->set('username', $username);
-
-        //-------------------------------------------------------------------------
-
-        $stores = $this->Search->listAllStoresByUser($userId);
+        $setting = [
+            'fields' => ['store_name', 'id', 'created', 'modified'],
+            'conditions' => ['user_id' => $this->Auth->user('username')]
+        ];
+        $stores = TableRegistry::get('Stores')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('stores', $stores);
 
         //-------------------------------------------------------------------------
 
-        $favoriteStores = $this->Search->listAllFavoriteStoresByUser($userId);
+        //ESTE MÉTODO DEVERÁ SER REFEITO QUANDO FOR CRIADA A
+        //TABELA DE FAVORITOS, ATUALMENE ESTA SOMENTE "EMULANDO"
+        //UM RESULTADO ESPERADO.
+        $setting = [
+            'fields' => ['store_name', 'id', 'created', 'modified']
+        ];
+        $favoriteStores = TableRegistry::get('Stores')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('favoriteStores', $favoriteStores);
     }
 

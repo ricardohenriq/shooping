@@ -1,3 +1,10 @@
+/**
+ * Usado dentro da página "Products/mini_map.tpl" e somente nela.
+ * 
+ * Objetivo: criar as regiões do mini mapa
+ *
+ * Indenpendente mas chama a função "createMapLegend"
+ */
 $(function(){
     var legendKeyValue = {
         "VAGA":"#CF000F",
@@ -65,6 +72,16 @@ $(function(){
     createMapLegend(legendKeyValue);
 });
 
+/**
+ * Usado dentro da página "Products/mini_map.tpl" e somente nela.
+ * 
+ * Objetivo: criar uma legenda com as cores determinas passadas pelo parametro e 
+ * formatar por meio de adição de classes e de estilos css inline.
+ *
+ * É chamada pela função anonima que gera a descrição dos mapas.
+ * 
+ * @param Array associativo contendo as cores e que ela representa.
+ */
 function createMapLegend(legendKeyValue){
     for(var key in legendKeyValue){
         var divContainer = document.createElement('div');

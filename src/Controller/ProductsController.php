@@ -42,7 +42,7 @@ class ProductsController extends AppController
         if($this->request->is('get'))
         {
             $product = $this->Products->get($id, [
-                'contain' => ['Stores', 'Bookings', 'ProductFeatures']
+                'contain' => ['Stores', 'ProductFeatures']
             ]);
 
             $this->loadModel('Features');
@@ -85,10 +85,6 @@ class ProductsController extends AppController
             $productMainImage = TableRegistry::get('Medias')
                 ->find('all', $setting)->hydrate(false)->first();
             $this->set('productMainImage', $productMainImage);
-
-            //-------------------------------------------------------------------------
-
-            $this->set('logged', $this->Auth->user());
 
             //-------------------------------------------------------------------------
 
@@ -187,10 +183,11 @@ class ProductsController extends AppController
         $this->response->type('json');
         if($this->request->is('get'))
         {
+            $limit = 4;
             $setting = [
-                'fields' => ['product_name', 'quantity', 'sold', 'description', 'price',
+                'fields' => ['id', 'product_name', 'quantity', 'sold', 'description', 'price',
                     'old_price'],
-                'limit' => 4
+                'limit' => $limit
             ];
             if($subCategoryId != 0){
                 $setting['conditions'] = ['sub_category_id' => $subCategoryId];
@@ -198,6 +195,18 @@ class ProductsController extends AppController
 
             $products = TableRegistry::get('Products')
                 ->find('all', $setting)->hydrate(false)->toArray();
+
+            $productsSize = count($products);
+            for($i = 0; $i < $productsSize; $i++)
+            {
+                $setting = [
+                    'fields' => ['path'],
+                    'conditions' => ['product_id' => $products[$i]['id'], 'media_type_id' => 3]
+                ];
+                $products[$i]['thumb'] = TableRegistry::get('Medias')
+                    ->find('all', $setting)->hydrate(false)->first()['path'];
+            }
+
             $this->response->body(json_encode($products));
         }
     }
@@ -207,10 +216,11 @@ class ProductsController extends AppController
         if($this->request->is('get'))
         {
             $search = $this->request->query['search'];
+            @$productsView = $this->request->query['products-view'] ?: 3;
+            @$productsOrder = $this->request->query['products-order'];
 
             //-------------------------------------------------------------------------
 
-            $productsView = $this->Url->getQuerystringKey('products-view');
             $this->set('productsView', $productsView);
 
             //-------------------------------------------------------------------------
@@ -237,19 +247,30 @@ class ProductsController extends AppController
 
             //-------------------------------------------------------------------------
 
-            $this->paginate = $this->Search->createProductsPaginate($search);
-            $products = $this->paginate($this->Products);
+            $setting = [
+                'fields' => ['product_name', 'quantity', 'sold', 'description', 'price',
+                    'old_price'],
+                'conditions' => ['product_name LIKE' => '%'.$search.'%'],
+                'order' => ['price' => 'DESC'],
+                'limit' => $productsView
+            ];
+            $products = TableRegistry::get('Products')
+                ->find('all', $setting)->hydrate(false)->toArray();
             $this->set('products', $products);
 
             //-------------------------------------------------------------------------
 
-            @$startEndProducts = $this->calcStartEndPaginator($products, $this->request->query['page'],
+            @$startEndProducts = $this->CustomPagination->calcStartEndPaginator($products, $this->request->query['page'],
                 $productsView);
             $this->set('startEndProducts', $startEndProducts);
 
             //-------------------------------------------------------------------------
 
-            $qtdProducts = $this->Search->countTotalProducts($search);
+            $setting = [
+                'conditions' => ['product_name LIKE' => '%'.$search.'%']
+            ];
+            $qtdProducts = TableRegistry::get('Products')
+                ->find('all', $setting)->count();
             $this->set('qtdProducts', $qtdProducts);
 
             //-------------------------------------------------------------------------
@@ -276,7 +297,7 @@ class ProductsController extends AppController
 
             //-------------------------------------------------------------------------
 
-            $this->set('logged', $this->Auth->user());
+            $this->set('userId', $this->Auth->user('id'));
 
             //-------------------------------------------------------------------------
 
@@ -300,12 +321,12 @@ class ProductsController extends AppController
 
             //-------------------------------------------------------------------------
 
-            @$pagina = $this->getCurrentPage();
+            @$pagina = $this->CustomPagination->getCurrentPage();
             @$this->set('pagina', $pagina);
 
             //-------------------------------------------------------------------------
 
-            $this->set('numPaginas', $this->getNumPaginas($qtdProducts, $productsView));
+            $this->set('numPaginas', $this->CustomPagination->getNumPaginas($qtdProducts, $productsView));
 
             //-------------------------------------------------------------------------
 
@@ -317,37 +338,6 @@ class ProductsController extends AppController
         }
     }
 
-    private function getCurrentPage()
-    {
-        if($this->request->query['page'] > 1)
-        {
-            return $this->request->query['page'];
-        }else
-        {
-            return 1;
-        }
-    }
-
-    private function getNumPaginas($total, $productsView)
-    {
-        return ceil($total / $productsView);
-    }
-
-    private function calcStartEndPaginator($products, $pageNumber, $productsView)
-    {
-        if($pageNumber <= 1)
-        {
-            $startProducts = 1;
-        }else
-        {
-            $startProducts = ($pageNumber - 1) * $productsView + 1;
-        }
-
-        $endProducts = count($products) + $startProducts - 1;
-
-        return ['startProducts' => $startProducts, 'endProducts' => $endProducts];
-    }
-	
 	public function upload() 
 	{
         if ($this->request->is('post')) {
@@ -359,8 +349,8 @@ class ProductsController extends AppController
             //-------------------------------------------------------------------------
 
             $stringSeparator = '_';
-            $storeName = 'Lojinha';
-            $productName = 'Gostosa';
+            $storeName = 'Loja Teste';
+            $productName = 'Produto Teste';
             $saved = $this->UploadFile->saveFileLFS($stringSeparator, $storeName,
                 $productName);
 
@@ -387,7 +377,7 @@ class ProductsController extends AppController
         $this->Insert->insertMassEntities($productEntities, 'Products');
     }
 
-    public function exportProductsToExcel(){
+    public function exportProductsToExcel($store){
         $this->autoRender = false;
 
         //-------------------------------------------------------------------------
@@ -398,14 +388,25 @@ class ProductsController extends AppController
             'Ofertas' => ['A1' => 'Nome da Oferta', 'B1' => 'Data Inicio',
                 'C1' => 'Data Fim']];
 
-        $productsFields = ['product_name', 'quantity', 'sold', 'price'];
-        $products = $this->Search->listAllProductsByStore(1, 'product_name', 'ASC', $productsFields);
+        $setting = [
+            'fields' => ['product_name', 'quantity', 'sold', 'price'],
+            'conditions' => ['store_id' => $store],
+            'order' => ['product_name' => 'ASC']
+        ];
+        $products = TableRegistry::get('Products')
+            ->find('all', $setting)->hydrate(false)->toArray();
 
-        $offersFields = ['name', 'date_start', 'date_end'];
-        $offers = $this->Search->listAllOffersByUser(1, 'name', 'ASC', $offersFields);
+        $setting = [
+            'fields' => ['name', 'date_start', 'date_end'],
+            'conditions' => ['store_id' => $store],
+            'order' => ['name' => 'ASC']
+        ];
+        $offers = TableRegistry::get('Offers')
+            ->find('all', $setting)->hydrate(false)->toArray();
 
         $objPHPExcel = $this->Excel->transformEntityIntoRow($spreadSheetHeader,
-            [$products, $offers], [$productsFields, $offersFields]);
+            [$products, $offers], [['product_name', 'quantity', 'sold', 'price'],
+                ['name', 'date_start', 'date_end']]);
 
         //-------------------------------------------------------------------------
 
@@ -471,10 +472,6 @@ class ProductsController extends AppController
         $smallBanners = TableRegistry::get('Banners')
             ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('smallBanners', $smallBanners);
-
-        //-------------------------------------------------------------------------
-
-        $this->set('logged', $this->Auth->user());
 
         //-------------------------------------------------------------------------
 

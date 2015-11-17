@@ -1,4 +1,4 @@
-<div class="col-lg-10 col-lg-offset-1">
+<div id="product-trends" class="col-lg-10 col-lg-offset-1">
     <div class="col-lg-4">
         <h3><i class="fa fa-user-plus"></i> Mais Populares</h3>
         <?= $this->Form->input('most-popular-subcat', ['label' => false, 'options' => $subCategoriesName, 'class' => 'form-control', 'empty' => 'Todas Subcategorias', 'id' => 'most-pupular-subcat']) ?>
@@ -7,7 +7,7 @@
                 <?php foreach($productsMostPopular as $productMostPopular): ?>
                     <li>
                         <div class="item-block">
-                            <?= $this->Html->image($productMostPopular['thumbnail'], ['alt' => $productMostPopular['product_name']]) ?>
+                            <?= $this->Html->image($productMostPopular['thumb'], ['alt' => $productMostPopular['product_name']]) ?>
                             <span class="item-name"><?= $productMostPopular['product_name'] ?></span>
                             <?php if($productMostPopular['price'] < $productMostPopular['old_price']): ?>
                                 <span class="item-old-price">De R$ <?= $productMostPopular['old_price'] ?></span>
@@ -28,7 +28,7 @@
                 <?php foreach($productsBestSeller as $productBestSeller): ?>
                     <li>
                         <div class="item-block">
-                            <?= $this->Html->image($productBestSeller['thumbnail'], ['alt' => $productMostPopular['product_name']]) ?>
+                            <?= $this->Html->image($productBestSeller['thumb'], ['alt' => $productBestSeller['product_name']]) ?>
                             <span class="item-name"><?= $productBestSeller['product_name'] ?></span>
                             <?php if($productBestSeller['price'] < $productBestSeller['old_price']): ?>
                                 <span class="item-old-price">De R$ <?= $productBestSeller['old_price'] ?></span>
@@ -49,7 +49,7 @@
                 <?php foreach($productNewer as $productNewer): ?>
                     <li>
                         <div class="item-block">
-                            <?= $this->Html->image($productNewer['thumbnail'], ['alt' => $productNewer['product_name']]) ?>
+                            <?= $this->Html->image($productNewer['thumb'], ['alt' => $productNewer['product_name']]) ?>
                             <span class="item-name"><?= $productNewer['product_name'] ?></span>
                             <?php if($productNewer['price'] < $productNewer['old_price']): ?>
                                 <span class="item-old-price">De R$ <?= $productNewer['old_price'] ?></span>

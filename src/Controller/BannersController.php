@@ -45,10 +45,6 @@ class BannersController extends AppController
 
         //-------------------------------------------------------------------------
 
-        $this->set('logged', $this->Auth->user());
-
-        //-------------------------------------------------------------------------
-
         $this->set('pageTitle', $this->Auth->User('username') . ' - Banners');
 
         //-------------------------------------------------------------------------
@@ -79,7 +75,13 @@ class BannersController extends AppController
     public function getBannerJson($id = null){
         $this->autoRender = false;
         $this->response->type('json');
-        $banner = $this->Search->getBanner($id);
+        $setting = [
+            'fields' => ['id', 'path_banner', 'banner_description', 'banner_type_id',
+                'url_redirect', 'created', 'modified'],
+            'conditions' => ['id' => $id]
+        ];
+        $banner = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->first();
         $this->response->body(json_encode($banner));
     }
 

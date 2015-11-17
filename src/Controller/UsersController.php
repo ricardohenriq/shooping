@@ -8,6 +8,7 @@ use App\AppClasses\EnumClasses\TypeMessageEnum;
 use App\Controller\AppController;
 use Cake\Event\Event;
 use App\AppClasses\DataClasses\ResponseMessage;
+use Cake\ORM\TableRegistry;
 
 /**
  * Users Controller
@@ -46,37 +47,37 @@ class UsersController extends AppController
 
         //-------------------------------------------------------------------------
 
-        $bannerType = 1;
-        $bannersQuantity = 3;
-        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
-        $this->set('smallBanners', $smallBanners);
-
-        //-------------------------------------------------------------------------
-
-        $bannerType = 2;
-        $bannersQuantity = 1;
-        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 2],
+            'limit' => 1
+        ];
+        $fullBanners = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('fullBanners', $fullBanners);
 
         //-------------------------------------------------------------------------
 
-        $logged = $this->Auth->user();
-        $this->set('logged', $logged);
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 1],
+            'limit' => 3
+        ];
+        $smallBanners = TableRegistry::get('Banners')
+            ->find('all', $setting)->hydrate(false)->toArray();
+        $this->set('smallBanners', $smallBanners);
 
         //-------------------------------------------------------------------------
 
-        $userId = $this->Auth->user('id');
-        $this->set('userId', $userId);
+        $this->set('userId', $this->Auth->user('id'));
 
         //-------------------------------------------------------------------------
 
-        $username = $this->Auth->user('username');
-        $this->set('username', $username);
+        $this->set('username', $this->Auth->user('username'));
 
         //-------------------------------------------------------------------------
 
-        $email = $this->Auth->user('email');
-        $this->set('email', $email);
+        $this->set('email', $this->Auth->user('email'));
 
         //-------------------------------------------------------------------------
 
@@ -84,46 +85,73 @@ class UsersController extends AppController
 
         //-------------------------------------------------------------------------
 
-        $stores = $this->Search->listAllStoresByUser($user['id']);
+        $setting = [
+            'fields' => ['store_name', 'id', 'created', 'modified'],
+            'conditions' => ['user_id' => $this->Auth->user('username')]
+        ];
+        $stores = TableRegistry::get('Stores')
+            ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('stores', $stores);
 
         //-------------------------------------------------------------------------
 
-        $quantityBookings = $this->Search->countBookingsByUser($user['id']);
+        $setting = [
+            'conditions' => ['user_id' => $this->Auth->user('username')]
+        ];
+        $quantityBookings = TableRegistry::get('Bookings')
+            ->find('all', $setting)->count();
         $this->set('quantityBookings', $quantityBookings);
 
         //-------------------------------------------------------------------------
 
         //Após a remodelagem do banco passeremos o status da "Offer"
-        $quantityActiveOffers = $this->Search->countOffersByUser($user['id']);
+        $setting = [
+            'conditions' => ['user_id' => $this->Auth->user('username')]
+        ];
+        $quantityActiveOffers = TableRegistry::get('OfferBanners')
+            ->find('all', $setting)->count();
         $this->set('quantityActiveOffers', $quantityActiveOffers);
 
         //-------------------------------------------------------------------------
 
         //Após a remodelagem do banco passeremos o status da "Offer"
-        $quantityPausedOffers = $this->Search->countOffersByUser($user['id']);
+        $setting = [
+            'conditions' => ['user_id' => $this->Auth->user('username')]
+        ];
+        $quantityPausedOffers = TableRegistry::get('OfferBanners')
+            ->find('all', $setting)->count();
         $this->set('quantityPausedOffers', $quantityPausedOffers);
 
         //-------------------------------------------------------------------------
 
         //Após a remodelagem do banco passeremos o status da "Offer"
-        $quantityEndedOffers = $this->Search->countOffersByUser($user['id']);
+        $setting = [
+            'conditions' => ['user_id' => $this->Auth->user('username')]
+        ];
+        $quantityEndedOffers = TableRegistry::get('OfferBanners')
+            ->find('all', $setting)->count();
         $this->set('quantityEndedOffers', $quantityEndedOffers);
 
         //-------------------------------------------------------------------------
 
-        $questionType = 1;
-        $answered = 1;
-        $quantityUnansweredComments = $this->Search->countCommentsByUser($user['id'],
-            $questionType, $answered);
+        $setting = [
+            'conditions' => ['user_id' => $this->Auth->user('username'),
+                    'comment_type_id' => 1, 'answered' => 1
+                ]
+        ];
+        $quantityUnansweredComments = TableRegistry::get('Comments')
+            ->find('all', $setting)->count();
         $this->set('quantityUnansweredComments', $quantityUnansweredComments);
 
         //-------------------------------------------------------------------------
 
-        $questionType = 1;
-        $answered = 2;
-        $quantityAnsweredComments = $this->Search->countCommentsByUser($user['id'],
-            $questionType, $answered);
+        $setting = [
+            'conditions' => ['user_id' => $this->Auth->user('username'),
+                'comment_type_id' => 1, 'answered' => 2
+            ]
+        ];
+        $quantityAnsweredComments = TableRegistry::get('Comments')
+            ->find('all', $setting)->count();
         $this->set('quantityAnsweredComments', $quantityAnsweredComments);
     }
 
@@ -141,15 +169,12 @@ class UsersController extends AppController
             $user = $this->Users->patchEntity($user, $this->request->data);
             if ($this->Users->save($user)) {
                 $this->Auth->setUser($user->toArray());
-                //$this->Flash->success(__('The user has been saved.'));
-                //return $this->redirect(['action' => 'index']);
                 $response = new ResponseMessage();
                 $response->code = CodeEnum::USER_ADDED;
                 $response->name = NameEnum::USER_ADDED;
                 $response->type = TypeMessageEnum::SUCCESS;
                 $this->response->body(json_encode($response));
             } else {
-                //$this->Flash->error(__('The user could not be saved. Please, try again.'));
                 $response = new ResponseMessage();
                 $response->code = CodeEnum::USER_NOT_ADDED;
                 $response->name = NameEnum::USER_NOT_ADDED;
@@ -157,9 +182,6 @@ class UsersController extends AppController
                 $this->response->body(json_encode($response));
             }
         }
-        //$userTypes = $this->Users->UserTypes->find('list', ['limit' => 200]);
-        //$this->set(compact('user', 'userTypes'));
-        //$this->set('_serialize', ['user']);
     }
 
     /**
@@ -177,15 +199,12 @@ class UsersController extends AppController
         if ($this->request->is(['patch', 'post', 'put'])) {
             $user = $this->Users->patchEntity($user, $this->request->data);
             if ($this->Users->save($user)) {
-                //$this->Flash->success(__('The user has been saved.'));
-                //return $this->redirect(['action' => 'index']);
                 $response = new ResponseMessage();
                 $response->code = CodeEnum::USER_EDITED;
                 $response->name = NameEnum::USER_EDITED;
                 $response->type = TypeMessageEnum::SUCCESS;
                 $this->response->body(json_encode($response));
             } else {
-                //$this->Flash->error(__('The user could not be saved. Please, try again.'));
                 $response = new ResponseMessage();
                 $response->code = CodeEnum::USER_NOT_EDITED;
                 $response->name = NameEnum::USER_NOT_EDITED;
@@ -193,9 +212,6 @@ class UsersController extends AppController
                 $this->response->body(json_encode($response));
             }
         }
-        //$userTypes = $this->Users->UserTypes->find('list', ['limit' => 200]);
-        //$this->set(compact('user', 'userTypes'));
-        //$this->set('_serialize', ['user']);
     }
 
     /**
@@ -210,26 +226,22 @@ class UsersController extends AppController
         $this->autoRender = false;
         $this->response->type('json');
         //Quando acessado via GET é lançado a exceção: Method Not Allowed
-        //$this->request->allowMethod(['post', 'delete']);
+        $this->request->allowMethod(['post', 'delete']);
         $user = $this->Users->get($id);
         if ($this->Users->delete($user)) {
             $this->request->session()->destroy();
-            //$this->Flash->success(__('The user has been deleted.'));
-            //return $this->redirect(['action' => 'index']);
             $response = new ResponseMessage();
             $response->code = CodeEnum::USER_DELETED;
             $response->name = NameEnum::USER_DELETED;
             $response->type = TypeMessageEnum::SUCCESS;
             $this->response->body(json_encode($response));
         } else {
-            //$this->Flash->error(__('The user could not be deleted. Please, try again.'));
             $response = new ResponseMessage();
             $response->code = CodeEnum::USER_NOT_DELETED;
             $response->name = NameEnum::USER_NOT_DELETED;
             $response->type = TypeMessageEnum::ERROR;
             $this->response->body(json_encode($response));
         }
-        //return $this->redirect(['action' => 'index']);
     }
 
     public function login()
@@ -240,7 +252,6 @@ class UsersController extends AppController
             $user = $this->Auth->identify();
             if ($user) {
                 $this->Auth->setUser($user);
-                //return $this->redirect($this->Auth->redirectUrl());
                 $response = new ResponseMessage();
                 $response->code = CodeEnum::LOGIN_GRANTED;
                 $response->name = NameEnum::LOGIN_GRANTED;
@@ -259,7 +270,6 @@ class UsersController extends AppController
 
     public function logout()
     {
-        //$this->Flash->success('You are now logged out.');
         return $this->redirect($this->Auth->logout());
     }
 
