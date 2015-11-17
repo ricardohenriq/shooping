@@ -166,5 +166,9 @@ class SubCategoriesController extends AppController
         $favoriteSubcategories = TableRegistry::get('SubCategories')
             ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('favoriteSubcategories', $favoriteSubcategories);
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
     }
 }

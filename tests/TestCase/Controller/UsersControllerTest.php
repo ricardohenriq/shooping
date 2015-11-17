@@ -1,6 +1,10 @@
 <?php
 namespace App\Test\TestCase\Controller;
 
+use App\AppClasses\DataClasses\ResponseMessage;
+use App\AppClasses\EnumClasses\CodeEnum;
+use App\AppClasses\EnumClasses\NameEnum;
+use App\AppClasses\EnumClasses\TypeMessageEnum;
 use App\Controller\UsersController;
 use Cake\Auth\DefaultPasswordHasher;
 use Cake\ORM\TableRegistry;
@@ -45,28 +49,8 @@ class UsersControllerTest extends IntegrationTestCase
         $this->markTestIncomplete('Not implemented yet.');
     }
 
-    /**
-     * Test add method
-     *
-     * @return void
-     */
-    public function testAdd()
+    public function testAddSuccessNonExistentResponseJson()
     {
-        /**
-         * Verifica se é possivel acessar a página.
-         */
-        $this->get(Router::url(
-            ['controller' => 'users',
-                'action' => 'add'
-            ])
-        );
-        $this->assertResponseOk();
-
-        //-------------------------------------------------------------------------
-
-        /**
-         * Verifica se a operação "add" realmente esta funcionando.
-         */
         $data = [
             'email' => 'usuariocomum999999@gmail.com',
             'password' => 'usuariocomum999999senha',
@@ -79,38 +63,50 @@ class UsersControllerTest extends IntegrationTestCase
                 'controller' => 'users',
                 'action' => 'add'
             ]), $data);
-        $this->assertResponseSuccess();
 
-        //-------------------------------------------------------------------------
+        $expected = new ResponseMessage();
+        $expected->code = CodeEnum::USER_ADDED;
+        $expected->name = NameEnum::USER_ADDED;
+        $expected->type = TypeMessageEnum::SUCCESS;
+        $expected = json_encode($expected);
 
-        /**
-         * Verifica se o registro (Users) foi inserido no Banco comparando-o
-         * com uma expectativa.
-         */
+        $this->assertEquals($expected, $this->_response->body());
+    }
+
+    public function testAddSuccessNonExistent()
+    {
+        $data = [
+            'email' => 'usuariocomum888888@gmail.com',
+            'password' => 'usuariocomum888888senha',
+            'username' => 'usuariocomum888888username',
+            'user_type_id' => 900000
+        ];
+
+        $this->post(Router::url(
+            [
+                'controller' => 'users',
+                'action' => 'add'
+            ]), $data);
+
         $expected = [
             [
-                'email' => 'usuariocomum999999@gmail.com',
-                'username' => 'usuariocomum999999username',
+                'email' => 'usuariocomum888888@gmail.com',
+                'username' => 'usuariocomum888888username',
                 'user_type_id' => 900000
             ]
         ];
 
-        $users = TableRegistry::get('Users');
-        $query = $users->find('all', [
-                'fields' => ['Users.email', 'Users.username', 'Users.user_type_id'],
-                'conditions' => ['Users.email' => 'usuariocomum999999@gmail.com']
-            ]);
-        $result = $query->hydrate(false)->toArray();
+        $settings = [
+            'fields' => ['email', 'username', 'user_type_id'],
+            'conditions' => ['email' => 'usuariocomum888888@gmail.com']
+        ];
+        $result  = TableRegistry::get('Users')->find('all', $settings)
+            ->hydrate(false)->toArray();
 
         $this->assertEquals($expected, $result);
     }
 
-    /**
-     * Test edit method
-     *
-     * @return void
-     */
-    public function testEdit()
+    public function testEditSuccessResponseJson()
     {
         /**
          * Array de dados de autenticação de usuário do Banco "test"
@@ -118,9 +114,9 @@ class UsersControllerTest extends IntegrationTestCase
         $testUser = [
             'Auth' => [
                 'User' => [
-                    'id' => 900000,
-                    'username' => 'usuariocomum1username',
-                    'password' => 'usuariocomum1senha'
+                    'id' => 900005,
+                    'username' => 'usuariocomum6@gmail.com',
+                    'password' => 'usuariocomum6senha'
                 ]
             ]
         ];
@@ -129,56 +125,6 @@ class UsersControllerTest extends IntegrationTestCase
          * Adiciona o login de usuário (usuário no Banco "Default")
          */
         $this->session($testUser);
-
-        //-------------------------------------------------------------------------
-
-        /**
-         * Variaveis usadas nas consultas.
-         */
-        $id = 900000;
-        $options = [
-            'fields' => ['Users.email', 'Users.password',
-                'Users.username', 'Users.user_type_id'],
-            'conditions' => ['Users.id' => $id]
-        ];
-
-        //-------------------------------------------------------------------------
-
-        /**
-         * Verifica se a operação "edit" esta acessivel.
-         */
-        $this->get(Router::url(
-            [
-                'controller' => 'users',
-                'action' => 'edit',
-                $id
-            ])
-        );
-        $this->assertResponseSuccess();
-
-        //-------------------------------------------------------------------------
-
-        /**
-         * Verifica se a operação "edit" esta preenchendo o HTML adequadamente,
-         * para isso é necessário usar um 'registro' que já esta no banco (e não
-         * uma fixture).
-         *
-         * ESTE TESTE FOI REMOVIDO POIS A MESMA FUNCIONALIDADE DEVERÁ SER EXECUTADO
-         * USANDO O SELENIUM IDE, PORÉM O MESMO FUNCIONA DESDE QUE O ACESSO SEJA
-         * LIBERADO SEM LOGIN
-         */
-        //$HTMLPage = file_get_contents('http://localhost:8765/users/edit/1');
-        //$this->assertContains('value="bill@outlook.com"', $HTMLPage);
-        //$this->assertContains('selected="selected">common<', $HTMLPage);
-
-        //-------------------------------------------------------------------------
-
-        /**
-         * Verifica se a entidade existe no Banco e armazena para comparação.
-         */
-        $users = TableRegistry::get('Users');
-        $expected = $users->find('all', $options)->first()->toArray();
-        $this->assertNotEmpty($expected);
 
         //-------------------------------------------------------------------------
 
@@ -186,9 +132,9 @@ class UsersControllerTest extends IntegrationTestCase
          * Realiza a edição e checa se a mudança foi realizada.
          */
         $data = [
-            'email' => 'USUARIOCOMUM1@gmail.com',
-            'password' => 'USUARIOCOMUM1senha',
-            'username' => 'USUARIOCOMUM1username',
+            'email' => 'USUARIOCOMUM6@gmail.com',
+            'password' => 'USUARIOCOMUM6senha',
+            'username' => 'USUARIOCOMUM6username',
             'user_type_id' => 900000
         ];
 
@@ -196,20 +142,71 @@ class UsersControllerTest extends IntegrationTestCase
             [
                 'controller' => 'users',
                 'action' => 'edit',
-                $id
+                900005
             ]), $data);
 
-        $edited = $users->find('all', $options)->first()->toArray();
+        $expected = new ResponseMessage();
+        $expected->code = CodeEnum::USER_EDITED;
+        $expected->name = NameEnum::USER_EDITED;
+        $expected->type = TypeMessageEnum::SUCCESS;
+        $expected = json_encode($expected);
 
-        $this->assertNotEquals($expected, $edited);
+        $this->assertEquals($expected, $this->_response->body());
     }
 
-    /**
-     * Test delete method
-     *
-     * @return void
-     */
-    public function testDelete()
+    public function testEditSuccess()
+    {
+        /**
+         * Array de dados de autenticação de usuário do Banco "test"
+         */
+        $testUser = [
+            'Auth' => [
+                'User' => [
+                    'id' => 900005,
+                    'username' => 'usuariocomum6@gmail.com',
+                    'password' => 'usuariocomum6senha'
+                ]
+            ]
+        ];
+
+        /**
+         * Adiciona o login de usuário (usuário no Banco "Default")
+         */
+        $this->session($testUser);
+
+        /**
+         * Realiza a edição e checa se a mudança foi realizada.
+         */
+        $data = [
+            'email' => 'USUARIOCOMUM6@gmail.com',
+            'password' => 'USUARIOCOMUM6senha',
+            'username' => 'USUARIOCOMUM6username',
+            'user_type_id' => 900000
+        ];
+
+        $this->post(Router::url(
+            [
+                'controller' => 'users',
+                'action' => 'edit',
+                900005
+            ]), $data);
+
+        $expected = [
+            'email' => 'USUARIOCOMUM1@gmail.com',
+            'username' => 'USUARIOCOMUM1username'
+        ];
+
+        $settings = [
+            'fields' => ['email', 'password', 'username', 'user_type_id'],
+            'conditions' => ['id' => 900000]
+        ];
+        $result = TableRegistry::get('Users')
+            ->find('all', $settings)->first()->toArray();
+
+        $this->assertNotEquals($expected, $result);
+    }
+
+    public function testDeleteSuccess()
     {
         /**
          * Array de dados de autenticação de usuário do Banco "test"
@@ -229,29 +226,47 @@ class UsersControllerTest extends IntegrationTestCase
          */
         $this->session($testUser);
 
-        //-------------------------------------------------------------------------
-
         /**
-         * Variaveis usadas nas consultas.
+         * Verifica se a operação "delete" realmente esta funcionando.
          */
-        $id = 900000;
-        $options = [
-            'fields' => ['Users.id', 'Users.email', 'Users.password',
-                'Users.username', 'Users.user_type_id', 'Users.created',
-                'Users.modified'],
-            'conditions' => ['Users.id' => $id]
+        $this->post(Router::url(
+            [
+                'controller' => 'users',
+                'action' => 'delete',
+                900000
+            ]));
+
+        $settings = [
+            'fields' => ['id', 'email', 'password',
+                'username', 'user_type_id', 'created',
+                'modified'],
+            'conditions' => ['id' => 900000]
+        ];
+        $result = TableRegistry::get('Users')->find('all', $settings)
+            ->hydrate(false)->toArray();
+
+        $this->assertEmpty($result);
+    }
+
+    public function testDeleteSuccessResponseJson()
+    {
+        /**
+         * Array de dados de autenticação de usuário do Banco "test"
+         */
+        $testUser = [
+            'Auth' => [
+                'User' => [
+                    'id' => 900000,
+                    'username' => 'usuariocomum1username',
+                    'password' => 'usuariocomum1senha'
+                ]
+            ]
         ];
 
-        //-------------------------------------------------------------------------
-
         /**
-         * Verifica se a entidade existe no Banco.
+         * Adiciona o login de usuário (usuário no Banco "Default")
          */
-        $users = TableRegistry::get('Users');
-        $query = $users->find('all', $options);
-
-        $result = $query->hydrate(false)->toArray();
-        $this->assertNotEmpty($result);
+        $this->session($testUser);
 
         //-------------------------------------------------------------------------
 
@@ -262,12 +277,15 @@ class UsersControllerTest extends IntegrationTestCase
             [
                 'controller' => 'users',
                 'action' => 'delete',
-                $id
+                900000
             ]));
 
-        $query = $users->find('all', $options);
+        $expected = new ResponseMessage();
+        $expected->code = CodeEnum::USER_DELETED;
+        $expected->name = NameEnum::USER_DELETED;
+        $expected->type = TypeMessageEnum::SUCCESS;
+        $expected = json_encode($expected);
 
-        $result = $query->hydrate(false)->toArray();
-        $this->assertEmpty($result);
+        $this->assertEquals($expected, $this->_response->body());
     }
 }

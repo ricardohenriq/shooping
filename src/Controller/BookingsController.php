@@ -190,5 +190,9 @@ class BookingsController extends AppController
         $bookings = TableRegistry::get('Bookings')
             ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('bookings', $bookings);
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
     }
 }

@@ -139,6 +139,10 @@ class StoresController extends AppController
         //-------------------------------------------------------------------------
 
         $this->set('username', $this->Auth->user('username'));
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
     }
 
     public function myStores()
@@ -180,6 +184,10 @@ class StoresController extends AppController
         $stores = TableRegistry::get('Stores')
             ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('stores', $stores);
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
     }
 
     public function favoriteStores()
@@ -233,6 +241,10 @@ class StoresController extends AppController
         $favoriteStores = TableRegistry::get('Stores')
             ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('favoriteStores', $favoriteStores);
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
     }
 
     public function beforeFilter(Event $event)

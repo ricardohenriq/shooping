@@ -97,6 +97,10 @@ class ProductsController extends AppController
             //-------------------------------------------------------------------------
 
             $this->set('pageTitle', $product['product_name'].' - Stores');
+
+            //-------------------------------------------------------------------------
+
+            $this->set('search', '');
         }
     }
 
@@ -519,5 +523,9 @@ class ProductsController extends AppController
         $favoriteProducts = TableRegistry::get('Products')
             ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('products', $favoriteProducts);
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
     }
 }

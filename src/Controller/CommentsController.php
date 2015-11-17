@@ -77,6 +77,10 @@ class CommentsController extends AppController
 
         $answeredValues = ['1' => 'Não Respondidos', '2' => 'Respondidos'];
         $this->set('answered', $answeredValues[$answered]);
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
     }
 
     public function beforeFilter(Event $event)

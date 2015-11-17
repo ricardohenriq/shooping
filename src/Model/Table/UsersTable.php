@@ -86,9 +86,4 @@ class UsersTable extends Table
         $rules->add($rules->existsIn(['user_type_id'], 'UserTypes'));
         return $rules;
     }
-
-    public function findUser(Query $query, array $options){
-        $query->select($options);
-        return $query;
-    }
 }

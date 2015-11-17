@@ -146,6 +146,10 @@ class CustomStaticPagesController extends AppController
         //-------------------------------------------------------------------------
 
         $this->set('username', $this->Auth->user('username'));
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
     }
 
     public function perguntasFrequentes()
@@ -161,6 +165,10 @@ class CustomStaticPagesController extends AppController
         //-------------------------------------------------------------------------
 
         $this->set('username', $this->Auth->user('username'));
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
     }
 
     public function termosDeServico()
@@ -176,6 +184,10 @@ class CustomStaticPagesController extends AppController
         //-------------------------------------------------------------------------
 
         $this->set('username', $this->Auth->user('username'));
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
     }
 
     public function politicasDePrivacidade()
@@ -191,6 +203,10 @@ class CustomStaticPagesController extends AppController
         //-------------------------------------------------------------------------
 
         $this->set('username', $this->Auth->user('username'));
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
     }
 
     public function email()
@@ -206,6 +222,10 @@ class CustomStaticPagesController extends AppController
         //-------------------------------------------------------------------------
 
         $this->set('username', $this->Auth->user('username'));
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
     }
 
     public function beforeFilter(Event $event)

@@ -79,18 +79,15 @@ class UsersTableTest extends TestCase
         $this->markTestIncomplete('Not implemented yet.');
     }
 
-    public function testFindUser(){
-
-        /**
-         * Verifica se o usuário existe (retornando somente dados primitivos)
-         */
-        $query = $this->Users->find('user', [
+    public function testGetUserPrimitive()
+    {
+        $settings = [
             'fields' => ['Users.id', 'Users.email', 'Users.password',
                 'Users.username', 'Users.user_type_id'],
             'conditions' => ['Users.id' => 900000]
-        ]);
-        $this->assertInstanceOf('Cake\ORM\Query', $query);
-        $result = $query->hydrate(false)->toArray();
+        ];
+
+        $result = $this->Users->find('all', $settings)->hydrate(false)->toArray();
 
         $expected = [
             [
@@ -103,20 +100,18 @@ class UsersTableTest extends TestCase
         ];
 
         $this->assertEquals($expected, $result);
+    }
 
-        //-------------------------------------------------------------------------
-
-        /**
-         * Verifica se o usuário existe (retornando dados primitivos e objetos)
-         */
-        $query = $this->Users->find('user', [
+    public function testGetUserObject()
+    {
+        $settings = [
             'fields' => ['Users.id', 'Users.email', 'Users.password',
                 'Users.username', 'Users.user_type_id', 'Users.created',
                 'Users.modified'],
             'conditions' => ['Users.id' => 900001]
-        ]);
-        $this->assertInstanceOf('Cake\ORM\Query', $query);
-        $result = $query->hydrate(false)->toArray();
+        ];
+
+        $result = $this->Users->find('all', $settings)->hydrate(false)->toArray();
 
         $expected = [
             [
@@ -131,27 +126,6 @@ class UsersTableTest extends TestCase
         ];
 
         $this->assertEquals($expected, $result);
-
-        //-------------------------------------------------------------------------
-
-        /**
-         * Teste que verifica que não é possivel acessar as tabelas do banco de dados
-         * quando se esta executando os testes, somente as fixtures são acessiveis.
-         */
-        $query = $this->Users->find('user', [
-            'fields' => ['Users.id'],
-            'conditions' => ['Users.id' => 1]
-        ]);
-        $this->assertInstanceOf('Cake\ORM\Query', $query);
-        $result = $query->hydrate(false)->toArray();
-
-        $expected = [
-            [
-                'id' => 1
-            ]
-        ];
-
-        $this->assertNotEquals($expected, $result);
     }
 
     /*public function testSendingEmails()

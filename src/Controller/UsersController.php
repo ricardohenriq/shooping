@@ -153,6 +153,10 @@ class UsersController extends AppController
         $quantityAnsweredComments = TableRegistry::get('Comments')
             ->find('all', $setting)->count();
         $this->set('quantityAnsweredComments', $quantityAnsweredComments);
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
     }
 
     /**
