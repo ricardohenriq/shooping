@@ -1,0 +1,10 @@
+#add-product-modal .modal-body{
+	text-align:center !important
+}
+
+#add-products-complement input,
+#add-products-complement select,
+#add-products-complement label{
+	display:inline;
+	width:300px
+}

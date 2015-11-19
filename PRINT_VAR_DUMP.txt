@@ -1,0 +1,35 @@
+array(3) {
+  ["FEA001"]=>
+  string(6) "Altura"
+  ["FEA002"]=>
+  string(7) "Largura"
+  ["file"]=>
+  array(2) {
+    [0]=>
+    array(5) {
+      ["name"]=>
+      string(14) "Anja Rubik.jpg"
+      ["type"]=>
+      string(10) "image/jpeg"
+      ["tmp_name"]=>
+      string(24) "C:\xampp\tmp\phpBA84.tmp"
+      ["error"]=>
+      int(0)
+      ["size"]=>
+      int(52618)
+    }
+    [1]=>
+    array(5) {
+      ["name"]=>
+      string(24) "Diora-Baird-Miami-FL.jpg"
+      ["type"]=>
+      string(10) "image/jpeg"
+      ["tmp_name"]=>
+      string(24) "C:\xampp\tmp\phpBA94.tmp"
+      ["error"]=>
+      int(0)
+      ["size"]=>
+      int(233933)
+    }
+  }
+}

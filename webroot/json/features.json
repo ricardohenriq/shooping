@@ -1,0 +1,17 @@
+[
+	{"tag":"input", "id":"FEA001", "name":"FEA001", "label":"Altura"},
+	{"tag":"input", "id":"FEA002", "name":"FEA002", "label":"Largura"},
+	{"tag":"input", "id":"FEA003", "name":"FEA003", "label":"Profundidade"},
+	{"tag":"input", "id":"FEA004", "name":"FEA004", "label":"Peso"},
+	{"tag":"input", "id":"FEA005", "name":"FEA005", "label":"Validade"},
+	{"tag":"input", "id":"FEA006", "name":"FEA006", "label":"Garantia"},
+	{"tag":"input", "id":"FEA007", "name":"FEA007", "label":"Cor"},
+	{"tag":"input", "id":"FEA008", "name":"FEA008", "label":"Material"},
+	{"tag":"input", "id":"FEA009", "name":"FEA009", "label":"Sistema Operacional"},
+	{"tag":"input", "id":"FEA010", "name":"FEA010", "label":"Modelo"},
+	{"tag":"input", "id":"FEA011", "name":"FEA011", "label":"Resolução da câmera"},
+	{"tag":"input", "id":"FEA012", "name":"FEA012", "label":"Câmera traseira"},
+	{"tag":"input", "id":"FEA013", "name":"FEA013", "label":"Câmera frontal"},
+	{"tag":"input", "id":"FEA014", "name":"FEA014", "label":"Som"},
+	{"tag":"input", "id":"FEA015", "name":"FEA015", "label":"Grava vídeo"}
+]

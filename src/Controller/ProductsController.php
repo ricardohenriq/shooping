@@ -360,9 +360,16 @@ class ProductsController extends AppController
     }
 
 	public function upload() 
-	{
+	{		
         if ($this->request->is('post')) {
-            $mediaTypeId = 1;
+		
+		ob_start();
+		var_dump($this->request->data);
+		$result = ob_get_clean();
+		$file = 'C:\xampp\htdocs\PROJETOS\Shopping\PRINT_VAR_DUMP.txt';
+		file_put_contents($file, $result);
+		
+            /*$mediaTypeId = 1;
             $productId = 2;
             $path = $this->request->data['Media']['file']['tmp_name'];
             $inserted = $this->Insert->insertMedia($mediaTypeId, $productId, $path);
@@ -377,7 +384,7 @@ class ProductsController extends AppController
 
             if($inserted === true && $saved === true){
                 $this->Flash->set(__('Upload successful!'));
-            }
+            }*/
         }
     }
 
