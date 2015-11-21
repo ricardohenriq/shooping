@@ -378,3 +378,21 @@ function functionAjax(settings){
         global: settings['global']
     });
 }
+
+var productThumbSlider = {
+    slideWidth: 250,
+    minSlides: 1,
+    maxSlides: 3,
+    moveSlides: 1,
+    auto: false
+};
+
+var viewProductSlider = $("#view-product-modal .product-slider").bxSlider(productThumbSlider);
+$('#view-product-modal').on('shown.bs.modal',function(e){
+    viewProductSlider.reloadSlider();
+});
+
+var editProductSlider = $("#edit-product-modal .product-slider").bxSlider(productThumbSlider);
+$('#edit-product-modal').on('shown.bs.modal',function(e){
+    editProductSlider.reloadSlider();
+});

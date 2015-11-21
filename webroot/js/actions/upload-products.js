@@ -6,7 +6,7 @@ var myDropzone = new Dropzone('#myDropzone', { // The camelized version of the I
 	parallelUploads: 100,
 	maxFiles: 3,
 	previewsContainer: ".dropzone-previews"
-})
+});
 
 $("#submit-all").click(function (e){
 	 myDropzone.on("sending", function(file, xhr, formData) {

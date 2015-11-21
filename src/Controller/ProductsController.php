@@ -452,7 +452,7 @@ class ProductsController extends AppController
     public function beforeFilter(Event $event)
     {
         $this->Auth->allow(['index', 'upload', 'productTrends', 'search',
-            'favoriteProducts', 'view']);
+            'favoriteProducts', 'view', 'productsByStore']);
     }
 
     public function isAuthorized($user = null)
@@ -530,6 +530,33 @@ class ProductsController extends AppController
         $favoriteProducts = TableRegistry::get('Products')
             ->find('all', $setting)->hydrate(false)->toArray();
         $this->set('products', $favoriteProducts);
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
+    }
+
+    public function productsByStore($storeID)
+    {
+        $setting = [
+            'fields' => ['store_name', 'id', 'created', 'modified'],
+            'conditions' => ['user_id' => $this->Auth->user('username')]
+        ];
+        $stores = TableRegistry::get('Stores')
+            ->find('all', $setting)->hydrate(false)->toArray();
+        $this->set('stores', $stores);
+
+        //-------------------------------------------------------------------------
+
+        $this->set('pageTitle', $this->Auth->User('username') . ' - Banners');
+
+        //-------------------------------------------------------------------------
+
+        $this->set('username', $this->Auth->user('username'));
+
+        //-------------------------------------------------------------------------
+
+        $this->set('userId', $this->Auth->user('id'));
 
         //-------------------------------------------------------------------------
 

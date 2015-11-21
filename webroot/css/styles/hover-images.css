@@ -19,8 +19,15 @@
     text-align:center;
     font-size:17px;
     padding:13px;
-    background:#BBBDBF;
-    margin:20px 0 0 0
+    background:#BBBDBF
+}
+
+#store-products .view h2{
+    margin:50px 0 20px 0
+}
+
+#my-banners .view h2{
+    margin:20px 0 20px 0
 }
 
 .info{

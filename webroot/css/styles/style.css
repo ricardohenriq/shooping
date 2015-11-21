@@ -272,3 +272,9 @@ textarea{
 #news .bx-viewport{
 	min-height:30px !important
 }
+
+#view-product-modal .product-pic,
+#edit-product-modal .product-pic{
+    width:250px;
+    height:250px
+}

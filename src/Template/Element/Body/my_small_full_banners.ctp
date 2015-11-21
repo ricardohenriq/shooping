@@ -1,4 +1,4 @@
-<div class="col-md-9">
+<div class="col-md-9" id="my-banners">
     <div class="panel panel-default">
         <div class="panel-heading">
             <button type="button" class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#add_banner_modal">Adicionar Banner</button>

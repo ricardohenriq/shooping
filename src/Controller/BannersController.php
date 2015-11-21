@@ -26,6 +26,16 @@ class BannersController extends AppController
     public function myBanners($userId)
     {
         $setting = [
+            'fields' => ['store_name', 'id', 'created', 'modified'],
+            'conditions' => ['user_id' => $this->Auth->user('username')]
+        ];
+        $stores = TableRegistry::get('Stores')
+            ->find('all', $setting)->hydrate(false)->toArray();
+        $this->set('stores', $stores);
+
+        //-------------------------------------------------------------------------
+
+        $setting = [
             'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
             'conditions' => ['banner_type_id' => 1, 'user_id' => $userId]
         ];
