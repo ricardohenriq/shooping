@@ -22,6 +22,8 @@
     background:#BBBDBF
 }
 
+#edit-store-products .view h2,
+#edit-store .view h2,
 #store-products .view h2{
     margin:50px 0 20px 0
 }

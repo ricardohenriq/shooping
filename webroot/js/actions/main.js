@@ -392,7 +392,6 @@ $('#view-product-modal').on('shown.bs.modal',function(e){
     viewProductSlider.reloadSlider();
 });
 
-var editProductSlider = $("#edit-product-modal .product-slider").bxSlider(productThumbSlider);
-$('#edit-product-modal').on('shown.bs.modal',function(e){
-    editProductSlider.reloadSlider();
-});
+$('#edit-store-products .product-slider').bxSlider(productThumbSlider);
+
+$('#edit-store .product-slider').bxSlider(productThumbSlider);

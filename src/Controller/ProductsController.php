@@ -133,9 +133,33 @@ class ProductsController extends AppController
      * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($id = null)
+    public function edit($productID)
     {
-        $product = $this->Products->get($id, [
+        $setting = [
+            'fields' => ['store_name', 'id', 'created', 'modified'],
+            'conditions' => ['user_id' => $this->Auth->user('username')]
+        ];
+        $stores = TableRegistry::get('Stores')
+            ->find('all', $setting)->hydrate(false)->toArray();
+        $this->set('stores', $stores);
+
+        //-------------------------------------------------------------------------
+
+        $this->set('pageTitle', $this->Auth->User('username') . ' - Banners');
+
+        //-------------------------------------------------------------------------
+
+        $this->set('username', $this->Auth->user('username'));
+
+        //-------------------------------------------------------------------------
+
+        $this->set('userId', $this->Auth->user('id'));
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
+
+        /*$product = $this->Products->get($id, [
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
@@ -149,7 +173,7 @@ class ProductsController extends AppController
         }
         $stores = $this->Products->Stores->find('list', ['limit' => 200]);
         $this->set(compact('product', 'stores'));
-        $this->set('_serialize', ['product']);
+        $this->set('_serialize', ['product']);*/
     }
 
     /**
@@ -452,7 +476,7 @@ class ProductsController extends AppController
     public function beforeFilter(Event $event)
     {
         $this->Auth->allow(['index', 'upload', 'productTrends', 'search',
-            'favoriteProducts', 'view', 'productsByStore']);
+            'favoriteProducts', 'view', 'productsByStore', 'edit']);
     }
 
     public function isAuthorized($user = null)

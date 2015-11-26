@@ -69,7 +69,6 @@
             <?= $this->element('Modal/logout_modal') ?>
             <?= $this->element('Modal/add_product_modal') ?>
             <?= $this->element('Modal/view_product_modal') ?>
-            <?= $this->element('Modal/edit_product_modal') ?>
         <?php endif; ?>
     </body>
 </html>

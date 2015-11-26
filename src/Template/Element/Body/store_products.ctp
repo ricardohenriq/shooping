@@ -12,7 +12,7 @@
 
                     <a href="#" class="btn btn-success" title="Detalhes do Produto" data-toggle="modal" data-target="#view-product-modal" id="view-product-button" onclick=""><span class="glyphicon glyphicon-eye-open"></span></a>
 
-                    <a href="#" class="btn btn-info" title="Editar este Produto" data-toggle="modal" data-target="#edit-product-modal" onclick=""><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-info" title="Editar este Produto"><span class="glyphicon glyphicon-pencil"></span></a>
 
                     <?= $this->Form->postLink('<span class="glyphicon glyphicon-trash"></span>',
                     ['controller' => '', 'action' => '', 0],
@@ -28,7 +28,7 @@
 
                     <a href="#" class="btn btn-success" title="Detalhes do Produto" data-toggle="modal" data-target="#view-product-modal" onclick=""><span class="glyphicon glyphicon-eye-open"></span></a>
 
-                    <a href="#" class="btn btn-info" title="Editar este Produto" data-toggle="modal" data-target="#edit-product-modal" onclick=""><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-info" title="Editar este Produto"><span class="glyphicon glyphicon-pencil"></span></a>
 
                     <?= $this->Form->postLink('<span class="glyphicon glyphicon-trash"></span>',
                     ['controller' => '', 'action' => '', 0],
@@ -44,7 +44,7 @@
 
                     <a href="#" class="btn btn-success" title="Detalhes do Produto" data-toggle="modal" data-target="#view-product-modal" onclick=""><span class="glyphicon glyphicon-eye-open"></span></a>
 
-                    <a href="#" class="btn btn-info" title="Editar este Produto" data-toggle="modal" data-target="#edit-product-modal" onclick=""><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-info" title="Editar este Produto"><span class="glyphicon glyphicon-pencil"></span></a>
 
                     <?= $this->Form->postLink('<span class="glyphicon glyphicon-trash"></span>',
                     ['controller' => '', 'action' => '', 0],
@@ -60,7 +60,7 @@
 
                     <a href="#" class="btn btn-success" title="Detalhes do Produto" data-toggle="modal" data-target="#view-product-modal" onclick=""><span class="glyphicon glyphicon-eye-open"></span></a>
 
-                    <a href="#" class="btn btn-info" title="Editar este Produto" data-toggle="modal" data-target="#edit-product-modal" onclick=""><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="btn btn-info" title="Editar este Produto"><span class="glyphicon glyphicon-pencil"></span></a>
 
                     <?= $this->Form->postLink('<span class="glyphicon glyphicon-trash"></span>',
                     ['controller' => '', 'action' => '', 0],

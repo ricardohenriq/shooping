@@ -273,8 +273,11 @@ textarea{
 	min-height:30px !important
 }
 
-#view-product-modal .product-pic,
-#edit-product-modal .product-pic{
+.product-pic{
     width:250px;
     height:250px
+}
+
+.main-product-picture{
+    border:4px solid #000;
 }

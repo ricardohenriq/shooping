@@ -81,7 +81,7 @@
 							<div class="dropzone-previews"></div> <!-- this is were the previews should be shown. -->
 							<div class="fallback">
 								<!-- this is the fallback if JS isn't working -->
-								<input name="file" type="file" multiple>
+								<input name="secondary-pictures" type="file" multiple>
 							</div>
 							<div class="dz-message" data-dz-message><span>Arraste as fotos do Produto</span></div>
 						</form>

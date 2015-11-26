@@ -1291,836 +1291,836 @@ VALUES (15, 6, 5, NOW(), NOW());
 
 ## 277 registros na tabela "features" ----------------------------------------------------
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (1, 'Altura', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (1, 'FEA001', 'Altura', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (2, 'Largura', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (2, 'FEA002', 'Largura', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (3, 'Profundidade', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (3, 'FEA003', 'Profundidade', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (4, 'Peso', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (4, 'FEA004', 'Peso', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (5, 'Validade', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (5, 'FEA005', 'Validade', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (6, 'Garantia', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (6, 'FEA006', 'Garantia', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (7, 'Cor', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (7, 'FEA007', 'Cor', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (8, 'Material', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (8, 'FEA008', 'Material', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (9, 'Sistema Operacional', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (9, 'FEA009', 'Sistema Operacional', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (10, 'Modelo', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (10, 'FEA010', 'Modelo', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (11, 'Resolução da câmera', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (11, 'FEA011', 'Resolução da câmera', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (12, 'Câmera traseira', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (12, 'FEA012', 'Câmera traseira', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (13, 'Câmera frontal', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (13, 'FEA013', 'Câmera frontal', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (14, 'Som', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (14, 'FEA014', 'Som', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (15, 'Grava vídeo', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (15, 'FEA015', 'Grava vídeo', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (16, 'Slot para cartão', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (16, 'FEA016', 'Slot para cartão', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (17, 'Cartão incluso', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (17, 'FEA017', 'Cartão incluso', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (18, 'Rádio FM', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (18, 'FEA018', 'Rádio FM', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (19, 'MP3 player', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (19, 'FEA019', 'MP3 player', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (20, 'Bluetooth', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (20, 'FEA020', 'Bluetooth', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (21, 'Bluetooth Estéreo (ouça suas músicas em um dispositivo Bluetooth)', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (21, 'FEA021', 'Bluetooth Estéreo (ouça suas músicas em um dispositivo Bluetooth)', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (22, 'Wi-Fi', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (22, 'FEA022', 'Wi-Fi', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (23, 'Conectividade', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (23, 'FEA023', 'Conectividade', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (24, 'Suporte a GPS', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (24, 'FEA024', 'Suporte a GPS', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (25, 'Mensagens', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (25, 'FEA025', 'Mensagens', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (26, 'Toques', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (26, 'FEA026', 'Toques', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (27, 'Processador', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (27, 'FEA027', 'Processador', '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (28, 'RAM', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (28, 'FEA028', 'RAM', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (29, 'Sintonizador de TV', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (29, 'FEA029', 'Sintonizador de TV', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (30, 'Tecnologia', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (30, 'FEA030', 'Tecnologia', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (31, 'Quadriband GSM', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (31, 'FEA031', 'Quadriband GSM', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (32, 'Frequências', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (32, 'FEA032', 'Frequências', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (33, 'Dual Chip', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (33, 'FEA033', 'Dual Chip', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (34, 'Tipo do Chip', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (34, 'FEA034', 'Tipo do Chip', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (35, 'Memória interna', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (35, 'FEA035', 'Memória interna', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (36, 'Resolução do visor/display (pixels)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (36, 'FEA036', 'Resolução do visor/display (pixels)', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (37, 'Tamanho do visor (cm)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (37, 'FEA037', 'Tamanho do visor (cm)', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (38, 'Cor', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (38, 'FEA038', 'Cor', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (39, 'Observações', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (39, 'FEA039', 'Observações', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (40, 'Tipo de tela', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (40, 'FEA040', 'Tipo de tela', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (41, 'DTVi', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (41, 'FEA041', 'DTVi', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (42, 'PVR Ready', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (42, 'FEA042', 'PVR Ready', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (43, 'Closed Caption', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (43, 'FEA043', 'Closed Caption', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (44, 'Canais Favoritos', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (44, 'FEA044', 'Canais Favoritos', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (45, 'Sleep Timer e Timer On', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (45, 'FEA045', 'Sleep Timer e Timer On', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (46, 'Bloquear canais e Bloqueio por classificação indicativa', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (46, 'FEA046', 'Bloquear canais e Bloqueio por classificação indicativa', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (47, 'EPG', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (47, 'FEA047', 'EPG', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (48, 'HDMI ARC', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (48, 'FEA048', 'HDMI ARC', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (49, 'Entradas HDMI', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (49, 'FEA049', 'Entradas HDMI', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (50, 'Entrada de Vídeo Composto (áudio e vídeo)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (50, 'FEA050', 'Entrada de Vídeo Composto (áudio e vídeo)', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (51, 'Entrada para PC', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (51, 'FEA051', 'Entrada para PC', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (52, 'Porta LAN - para conexão de rede', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (52, 'FEA052', 'Porta LAN - para conexão de rede', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (53, 'Saída para fone de ouvido', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (53, 'FEA053', 'Saída para fone de ouvido', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (54, 'Entrada USB', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (54, 'FEA054', 'Entrada USB', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (55, 'Estéreo Surround', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (55, 'FEA055', 'Estéreo Surround', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (56, 'Modo preferencial de som', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (56, 'FEA056', 'Modo preferencial de som', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (57, 'Auto volume', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (57, 'FEA057', 'Auto volume', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (58, 'Potência de saída de áudio', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (58, 'FEA058', 'Potência de saída de áudio', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (59, 'Modo preferencial de imagem', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (59, 'FEA059', 'Modo preferencial de imagem', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (60, 'Ajuste da luz de fundo', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (60, 'FEA060', 'Ajuste da luz de fundo', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (61, 'Voltagem', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (61, 'FEA061', 'Voltagem', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (62, 'Stand by', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (62, 'FEA062', 'Stand by', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (63, 'Consumo Médio', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (63, 'FEA063', 'Consumo Médio', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (64, 'Wi-fi', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (64, 'FEA064', 'Wi-fi', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (65, 'Capacidade do Copo', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (65, 'FEA065', 'Capacidade do Copo', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (66, 'Código do Produto', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (66, 'FEA066', 'Código do Produto', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (67, 'Funções', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (67, 'FEA067', 'Funções', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (68, 'Velocidade', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (68, 'FEA068', 'Velocidade', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (69, 'Marca', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (69, 'FEA069', 'Marca', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (70, 'Alimentação', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (70, 'FEA070', 'Alimentação', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (71, 'Portátil (sem fio)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (71, 'FEA071', 'Portátil (sem fio)', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (72, 'Cor', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (72, 'FEA072', 'Cor', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (73, 'SAC', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (73, 'FEA073', 'SAC', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (74, 'Fornecedor', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (74, 'FEA074', 'Fornecedor', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (75, 'Código de Barras', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (75, 'FEA075', 'Código de Barras', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (76, 'Formatos reproduzidos de áudio', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (76, 'FEA076', 'Formatos reproduzidos de áudio', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (77, 'Formatos reproduzidos de vídeo', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (77, 'FEA077', 'Formatos reproduzidos de vídeo', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (78, 'Formatos reproduzidos de fotos', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (78, 'FEA078', 'Formatos reproduzidos de fotos', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (79, 'Formatos reproduzidos de textos', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (79, 'FEA079', 'Formatos reproduzidos de textos', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (80, 'Duração da Bateria em uso', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (80, 'FEA080', 'Duração da Bateria em uso', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (81, 'Duração da Bateria em standby', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (81, 'FEA081', 'Duração da Bateria em standby', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (82, 'Entrada para qual modelo de Cartão de Memória', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (82, 'FEA082', 'Entrada para qual modelo de Cartão de Memória', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (83, 'Memória interna', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (83, 'FEA083', 'Memória interna', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (84, 'Conexões', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (84, 'FEA084', 'Conexões', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (85, 'Idiomas', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (85, 'FEA085', 'Idiomas', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (86, 'Alimentação', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (86, 'FEA086', 'Alimentação', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (87, 'Coleção', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (87, 'FEA087', 'Coleção', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (88, 'Faixa de Peso Suportado (Kg)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (88, 'FEA088', 'Faixa de Peso Suportado (Kg)', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (89, 'Classificação', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (89, 'FEA089', 'Classificação', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (90, 'Acessórios', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (90, 'FEA090', 'Acessórios', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (91, 'Pés (Material)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (91, 'FEA091', 'Pés (Material)', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (92, 'Acabamento', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (92, 'FEA092', 'Acabamento', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (93, 'Estrutura', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (93, 'FEA093', 'Estrutura', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (94, 'Assentos', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (94, 'FEA094', 'Assentos', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (95, 'Tampo', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (95, 'FEA095', 'Tampo', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (96, 'Quantidade de itens', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (96, 'FEA096', 'Quantidade de itens', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (97, 'Tipo', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (97, 'FEA097', 'Tipo', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (98, 'Fabricado em', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (98, 'FEA098', 'Fabricado em', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (99, 'Sabor', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (99, 'FEA099', 'Sabor', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (100, 'Validade', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (100, 'FEA100', 'Validade', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (101, 'Cultivo', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (101, 'FEA101', 'Cultivo', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (102, 'Usos', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (102, 'FEA102', 'Usos', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (103, 'Nome Cientifico', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (103, 'FEA103', 'Nome Cientifico', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (104, 'Forma de entrega', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (104, 'FEA104', 'Forma de entrega', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (105, 'Nome popular', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (105, 'FEA105', 'Nome popular', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (106, 'Origem', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (106, 'FEA106', 'Origem', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (107, 'Caraterísticas', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (107, 'FEA107', 'Caraterísticas', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (108, 'Porte', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (108, 'FEA108', 'Porte', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (109, 'Flores', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (109, 'FEA109', 'Flores', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (110, 'Luz', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (110, 'FEA110', 'Luz', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (111, 'Solo', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (111, 'FEA111', 'Solo', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (112, 'Clima', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (112, 'FEA112', 'Clima', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (113, 'Regas', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (113, 'FEA113', 'Regas', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (114, 'Podas', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (114, 'FEA114', 'Podas', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (115, 'Adubação', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (115, 'FEA115', 'Adubação', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (116, 'Graduação Alcoólica (%)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (116, 'FEA116', 'Graduação Alcoólica (%)', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (117, 'Peso liquido', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (117, 'FEA117', 'Peso liquido', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (118, 'Ingredientes', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (118, 'FEA118', 'Ingredientes', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (119, 'Aroma', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (119, 'FEA119', 'Aroma', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (120, 'Mais Informações Tecnicas', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (120, 'FEA120', 'Mais Informações Tecnicas', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (121, 'Temperatura ideal', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (121, 'FEA121', 'Temperatura ideal', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (122, 'Placa antiaderente', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (122, 'FEA122', 'Placa antiaderente', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (123, 'Vapor', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (123, 'FEA123', 'Vapor', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (124, 'Conteúdo da Embalagem', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (124, 'FEA124', 'Conteúdo da Embalagem', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (125, 'Capacidade', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (125, 'FEA125', 'Capacidade', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (126, 'Lençol com elástico', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (126, 'FEA126', 'Lençol com elástico', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (127, 'Medida do lençol de baixo', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (127, 'FEA127', 'Medida do lençol de baixo', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (128, 'Medida fronha', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (128, 'FEA128', 'Medida fronha', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (129, 'Lençol com elástico', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (129, 'FEA129', 'Lençol com elástico', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (130, 'Bordado', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (130, 'FEA130', 'Bordado', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (131, 'Estampado', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (131, 'FEA131', 'Estampado', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (132, 'Medidas do Colchão', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (132, 'FEA132', 'Medidas do Colchão', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (133, 'Antialérgico', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (133, 'FEA133', 'Antialérgico', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (134, 'Observações', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (134, 'FEA134', 'Observações', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (135, 'Autor(a)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (135, 'FEA135', 'Autor(a)', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (136, 'Título', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (136, 'FEA136', 'Título', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (137, 'Subtítulo', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (137, 'FEA137', 'Subtítulo', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (138, 'ISBN', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (138, 'FEA138', 'ISBN', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (139, 'Páginas', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (139, 'FEA139', 'Páginas', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (140, 'Edição', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (140, 'FEA140', 'Edição', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (141, 'Tipo de capa', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (141, 'FEA141', 'Tipo de capa', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (142, 'Formato', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (142, 'FEA142', 'Formato', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (143, 'Editora', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (143, 'FEA143', 'Editora', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (144, 'Ano', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (144, 'FEA144', 'Ano', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (145, 'Idioma', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (145, 'FEA145', 'Idioma', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (146, 'Processador', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (146, 'FEA146', 'Processador', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (147, 'Modelo Processador', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (147, 'FEA147', 'Modelo Processador', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (148, 'Cache', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (148, 'FEA148', 'Cache', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (149, 'Memória RAM', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (149, 'FEA149', 'Memória RAM', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (150, 'Placa Mãe', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (150, 'FEA150', 'Placa Mãe', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (151, 'HD', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (151, 'FEA151', 'HD', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (152, 'Drives', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (152, 'FEA152', 'Drives', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (153, 'Placa de vídeo', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (153, 'FEA153', 'Placa de vídeo', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (154, 'Teclado', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (154, 'FEA154', 'Teclado', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (155, 'Mouse', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (155, 'FEA155', 'Mouse', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (156, 'Sistema Operacional', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (156, 'FEA156', 'Sistema Operacional', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (157, 'Conector', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (157, 'FEA157', 'Conector', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (158, 'Memória (GB)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (158, 'FEA158', 'Memória (GB)', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (159, 'Resistente a Água', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (159, 'FEA159', 'Resistente a Água', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (160, 'Resistente a Quedas', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (160, 'FEA160', 'Resistente a Quedas', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (161, 'Leitor de Digitais - Biométrico', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (161, 'FEA161', 'Leitor de Digitais - Biométrico', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (162, 'Proteção com Criptografia', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (162, 'FEA162', 'Proteção com Criptografia', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (163, 'Possui Tecnologia Ready Boost', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (163, 'FEA163', 'Possui Tecnologia Ready Boost', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (164, 'Sistema Operacional Compatível', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (164, 'FEA164', 'Sistema Operacional Compatível', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (165, 'Softwares inclusos', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (165, 'FEA165', 'Softwares inclusos', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (166, 'Velocidade de impressão', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (166, 'FEA166', 'Velocidade de impressão', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (167, 'Resolução de impressão', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (167, 'FEA167', 'Resolução de impressão', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (168, 'Ciclo de trabalho mensal', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (168, 'FEA168', 'Ciclo de trabalho mensal', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (169, 'Tempo para a primeira Preto e Branco', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (169, 'FEA169', 'Tempo para a primeira Preto e Branco', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (170, 'Tempo para a primeira Colorida', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (170, 'FEA170', 'Tempo para a primeira Colorida', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (171, 'Profundidade de Bits', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (171, 'FEA171', 'Profundidade de Bits', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (172, 'Resolução de Digitalização', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (172, 'FEA172', 'Resolução de Digitalização', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (173, 'Tipo de papel suportado', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (173, 'FEA173', 'Tipo de papel suportado', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (174, 'Capacidade de papel suportado', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (174, 'FEA174', 'Capacidade de papel suportado', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (175, 'Capacidade de entrada e saída de papel', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (175, 'FEA175', 'Capacidade de entrada e saída de papel', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (176, 'Cartuchos/Toners compatíveis', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (176, 'FEA176', 'Cartuchos/Toners compatíveis', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (177, 'Certificações', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (177, 'FEA177', 'Certificações', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (178, 'Nível de ruído', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (178, 'FEA178', 'Nível de ruído', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (179, 'Agenda', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (179, 'FEA179', 'Agenda', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (180, 'Bobina inicial', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (180, 'FEA180', 'Bobina inicial', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (181, 'Identificador de chamada', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (181, 'FEA181', 'Identificador de chamada', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (182, 'Memória de recepção sem papel', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (182, 'FEA182', 'Memória de recepção sem papel', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (183, 'Número de discagem rápida', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (183, 'FEA183', 'Número de discagem rápida', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (184, 'Rediscagem automática', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (184, 'FEA184', 'Rediscagem automática', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (185, 'Registro de chamadas', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (185, 'FEA185', 'Registro de chamadas', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (186, 'Transmissão programada', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (186, 'FEA186', 'Transmissão programada', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (187, 'Transmissão internacional', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (187, 'FEA187', 'Transmissão internacional', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (188, 'Velocidade de transmissão', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (188, 'FEA188', 'Velocidade de transmissão', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (189, 'Velocidade/Modem', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (189, 'FEA189', 'Velocidade/Modem', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (190, 'Sistema de compressão', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (190, 'FEA190', 'Sistema de compressão', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (191, 'Tipo de impressão', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (191, 'FEA191', 'Tipo de impressão', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (192, 'Modo de discagem', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (192, 'FEA192', 'Modo de discagem', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (193, 'Viva-voz', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (193, 'FEA193', 'Viva-voz', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (194, 'Secretária eletrônica', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (194, 'FEA194', 'Secretária eletrônica', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (195, 'Acompanha ramal', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (195, 'FEA195', 'Acompanha ramal', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (196, 'Expansível até', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (196, 'FEA196', 'Expansível até', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (197, 'Conferência de chamadas', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (197, 'FEA197', 'Conferência de chamadas', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (198, 'Ajuste no volume da campainha', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (198, 'FEA198', 'Ajuste no volume da campainha', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (199, 'Fixável na parede', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (199, 'FEA199', 'Fixável na parede', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (200, 'Faixa etária', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (200, 'FEA200', 'Faixa etária', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (201, 'Diâmetro do rotor principal', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (201, 'FEA201', 'Diâmetro do rotor principal', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (202, 'Diâmetro do rotor de cauda', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (202, 'FEA202', 'Diâmetro do rotor de cauda', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (203, 'Tempo de vôo', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (203, 'FEA203', 'Tempo de vôo', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (204, 'Tempo de Recarga', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (204, 'FEA204', 'Tempo de Recarga', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (205, 'Distância de alcance', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (205, 'FEA205', 'Distância de alcance', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (206, 'Altura de vôo', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (206, 'FEA206', 'Altura de vôo', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (207, 'Rádio', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (207, 'FEA207', 'Rádio', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (208, 'Mídias compatíveis', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (208, 'FEA208', 'Mídias compatíveis', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (209, 'Função Repeat', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (209, 'FEA209', 'Função Repeat', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (210, 'Iluminação das teclas', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (210, 'FEA210', 'Iluminação das teclas', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (211, 'Painel removível', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (211, 'FEA211', 'Painel removível', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (212, 'Forração removível', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (212, 'FEA212', 'Forração removível', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (213, 'Forração lavavel', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (213, 'FEA213', 'Forração lavavel', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (214, 'Número De Canais', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (214, 'FEA214', 'Número De Canais', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (215, 'Potência Máx.', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (215, 'FEA215', 'Potência Máx.', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (216, 'Sensibilidade de Entrada', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (216, 'FEA216', 'Sensibilidade de Entrada', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (217, 'Distorção Harmônica Total (THD)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (217, 'FEA217', 'Distorção Harmônica Total (THD)', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (218, 'Separação entre Canais (Crosstalk)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (218, 'FEA218', 'Separação entre Canais (Crosstalk)', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (219, 'Relação Sinal/Ruído', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (219, 'FEA219', 'Relação Sinal/Ruído', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (220, 'Resposta De Frequência (Full Range)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (220, 'FEA220', 'Resposta De Frequência (Full Range)', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (221, 'Crossover', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (221, 'FEA221', 'Crossover', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (222, 'Impedância de Entrada', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (222, 'FEA222', 'Impedância de Entrada', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (223, 'Sistema de Proteção', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (223, 'FEA223', 'Sistema de Proteção', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (224, 'Tensão de Alimentação Mínima', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (224, 'FEA224', 'Tensão de Alimentação Mínima', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (225, 'Tensão de Alimentação Máxima', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (225, 'FEA225', 'Tensão de Alimentação Máxima', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (226, 'Consumo em Repouso', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (226, 'FEA226', 'Consumo em Repouso', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (227, 'Consumo Máximo Musical', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (227, 'FEA227', 'Consumo Máximo Musical', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (228, 'Consumo Máximo em Sinal Senoidal', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (228, 'FEA228', 'Consumo Máximo em Sinal Senoidal', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (229, 'Uso Ideal', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (229, 'FEA229', 'Uso Ideal', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (230, 'Pré-encolhida', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (230, 'FEA230', 'Pré-encolhida', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (231, 'Lavagem', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (231, 'FEA231', 'Lavagem', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (232, 'Tamanho', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (232, 'FEA232', 'Tamanho', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (233, 'Manga Tipo', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (233, 'FEA233', 'Manga Tipo', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (234, 'Gola', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (234, 'FEA234', 'Gola', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (235, 'Tecido Gola', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (235, 'FEA235', 'Tecido Gola', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (236, 'Ombro Tamanho', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (236, 'FEA236', 'Ombro Tamanho', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (237, 'Busto Tamanho', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (237, 'FEA237', 'Busto Tamanho', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (238, 'Manga Tamanho', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (238, 'FEA238', 'Manga Tamanho', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (239, 'Cintura Tamanho', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (239, 'FEA239', 'Cintura Tamanho', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (240, 'Quadril Tamanho', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (240, 'FEA240', 'Quadril Tamanho', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (241, 'Coxa Tamanho', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (241, 'FEA241', 'Coxa Tamanho', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (242, 'Canela Tamanho', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (242, 'FEA242', 'Canela Tamanho', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (243, 'Gancho frente Tamanho', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (243, 'FEA243', 'Gancho frente Tamanho', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (244, 'Gancho traseiro Tamanho', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (244, 'FEA244', 'Gancho traseiro Tamanho', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (245, 'Entrepernas Tamanho', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (245, 'FEA245', 'Entrepernas Tamanho', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (246, 'Bolsos', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (246, 'FEA246', 'Bolsos', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (247, 'Fechamento/Abertura', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (247, 'FEA247', 'Fechamento/Abertura', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (248, 'Numeração', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (248, 'FEA248', 'Numeração', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (249, 'Cabedal (Parte Superior Externa)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (249, 'FEA249', 'Cabedal (Parte Superior Externa)', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (250, 'Solado', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (250, 'FEA250', 'Solado', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (251, 'Lingueta', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (251, 'FEA251', 'Lingueta', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (252, 'Palmilha', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (252, 'FEA252', 'Palmilha', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (253, 'Forro', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (253, 'FEA253', 'Forro', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (254, 'Ajuste', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (254, 'FEA254', 'Ajuste', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (255, 'Tamanho do Cano', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (255, 'FEA255', 'Tamanho do Cano', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (256, 'Tamanho do Salto', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (256, 'FEA256', 'Tamanho do Salto', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (257, 'Embalagem', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (257, 'FEA257', 'Embalagem', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (258, 'Diâmetro da Caixa', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (258, 'FEA258', 'Diâmetro da Caixa', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (259, 'Profundidade da Caixa', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (259, 'FEA259', 'Profundidade da Caixa', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (260, 'Largura da Pulseira', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (260, 'FEA260', 'Largura da Pulseira', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (261, 'Cor do mostrador', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (261, 'FEA261', 'Cor do mostrador', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (262, 'Material da Caixa', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (262, 'FEA262', 'Material da Caixa', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (263, 'Material do Visor', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (263, 'FEA263', 'Material do Visor', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (264, 'Material da Pulseira', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (264, 'FEA264', 'Material da Pulseira', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (265, 'Prova d\'água', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (265, 'FEA265', 'Prova d\'água', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (266, 'Forro', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (266, 'FEA266', 'Forro', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (267, 'Movimento', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (267, 'FEA267', 'Movimento', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (268, 'Touch Screen', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (268, 'FEA268', 'Touch Screen', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (269, 'Vibra-call', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (269, 'FEA269', 'Vibra-call', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (270, 'Mostrador de Horas', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (270, 'FEA270', 'Mostrador de Horas', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (271, 'Redes Sociais', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (271, 'FEA271', 'Redes Sociais', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (272, 'Alarme anti-perda', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (272, 'FEA272', 'Alarme anti-perda', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (273, 'Altimetro', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (273, 'FEA273', 'Altimetro', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (274, 'Hodometro', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (274, 'FEA274', 'Hodometro', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (275,'Sincronização', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (275, 'FEA275','Sincronização', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (276, 'Tamanho do visor (Polegadas)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (276, 'FEA276', 'Tamanho do visor (Polegadas)', NOW(), NOW());
 
-INSERT INTO features (id, feature_name, created, modified)
-VALUES (277, 'Diagonal Visual (Cm)', NOW(), NOW());
+INSERT INTO features (id, intern_code, feature_name, created, modified)
+VALUES (277, 'FEA277', 'Diagonal Visual (Cm)', NOW(), NOW());
 
 ## 585 registros na tabela "product_features" --------------------------------------------
 

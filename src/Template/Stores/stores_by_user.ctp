@@ -16,7 +16,7 @@
     <head>
         <?= $this->Html->charset() ?>
         <?= $this->Html->meta('viewport','width=device-width, initial-scale=1.0') ?>
-        <?= $this->Html->meta('title',__('Loja Produtos')) ?>
+        <?= $this->Html->meta('title',__('Loja Usuário')) ?>
         <?= $this->Html->meta('favicon.ico','/cart.png', ['type' => 'icon']) ?>
         <?= $this->Html->meta('keywords','') ?>
         <?= $this->Html->meta('description','') ?>
@@ -56,7 +56,7 @@
             <div class="container">
                 <div class="row">
                     <?= $this->element('Body/account_menu') ?>
-                    <?= $this->element('Body/edit_store_products') ?>
+                    <?= $this->element('Body/store_users') ?>
                 </div>
             </div>
         </div>
@@ -67,8 +67,8 @@
             <?= $this->element('Modal/login_modal') ?>
         <?php else: ?>
             <?= $this->element('Modal/logout_modal') ?>
-            <?= $this->element('Modal/add_product_modal') ?>
-            <?= $this->element('Modal/view_product_modal') ?>
+            <!--<?= $this->element('Modal/add_stores_modal') ?>-->
+            <!--<?= $this->element('Modal/view_stores_modal') ?>-->
         <?php endif; ?>
     </body>
 </html>

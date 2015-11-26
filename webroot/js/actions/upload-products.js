@@ -12,10 +12,10 @@ $("#submit-all").click(function (e){
 	 myDropzone.on("sending", function(file, xhr, formData) {
 		alert('submit');
 		var fieldsAssociativeArray = getComplementedFields('#add-products-complement :input');
-		appendAllFieldsToDropzone(formData, fieldsAssociativeArray); 
+		appendAllFieldsToDropzone(formData, fieldsAssociativeArray);
 	});
 	myDropzone.processQueue();
-	
+
 	 //$('#myDropzone').submit();
 	//e.preventDefault();
 	//e.stopPropagation();

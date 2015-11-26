@@ -74,7 +74,31 @@ class StoresController extends AppController
      */
     public function edit($id = null)
     {
-        $store = $this->Stores->get($id, [
+        $setting = [
+            'fields' => ['store_name', 'id', 'created', 'modified'],
+            'conditions' => ['user_id' => $this->Auth->user('username')]
+        ];
+        $stores = TableRegistry::get('Stores')
+            ->find('all', $setting)->hydrate(false)->toArray();
+        $this->set('stores', $stores);
+
+        //-------------------------------------------------------------------------
+
+        $this->set('pageTitle', $this->Auth->User('username') . ' - Banners');
+
+        //-------------------------------------------------------------------------
+
+        $this->set('username', $this->Auth->user('username'));
+
+        //-------------------------------------------------------------------------
+
+        $this->set('userId', $this->Auth->user('id'));
+
+        //-------------------------------------------------------------------------
+
+        $this->set('search', '');
+
+        /*$store = $this->Stores->get($id, [
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
@@ -88,7 +112,7 @@ class StoresController extends AppController
         }
         $users = $this->Stores->Users->find('list', ['limit' => 200]);
         $this->set(compact('store', 'users'));
-        $this->set('_serialize', ['store']);
+        $this->set('_serialize', ['store']);*/
     }
 
     /**
