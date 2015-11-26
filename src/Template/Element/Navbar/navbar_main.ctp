@@ -40,39 +40,6 @@
                         </div>
                     </li>
                 <?php endif; ?>
-                <li>
-                    <div class="btn-group navbar-btn">
-                        <button type="button" class="btn btn-info">
-                            <span class="glyphicon glyphicon-star"></span></i>
-                        </button>
-                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu social-container" role="menu">
-                            <li class="social">
-                                <button type="button" class="btn red">
-                                    <i class="fa fa-youtube-play"></i>
-                                </button>
-                            </li>
-                            <li class="social">
-                                <button type="button" class="btn blue">
-                                    <i class="fa fa-facebook"></i>
-                                </button>
-                            </li>
-                            <li class="social">
-                                <button type="button" class="btn blue-dark">
-                                    <i class="fa fa-tumblr"></i>
-                                </button>
-                            </li>
-                            <li class="social">
-                                <button type="button" class="btn blue-light">
-                                    <i class="fa fa-twitter"></i>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
             </ul>
             <?= $this->Form->create(null, ['url' => ['controller' => 'Products', 'action' => 'search'], 'type' => 'get', 'id' => 'search-form', 'class' => 'navbar-form span7 text-center']) ?>
                 <button class="btn btn-info" title="Favorite o Site">

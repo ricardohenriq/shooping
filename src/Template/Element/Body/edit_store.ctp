@@ -67,14 +67,7 @@
             </div>
             <div class="product-description">
                 <h4><i class="fa fa-commenting"></i> Descrição</h4>
-                <textarea rows="6" class="product-description" name="" id="">
-                    Fone sem fio com entrada para Cart├úo Micro SD igual ao usado para mem├│ria de celular, basta conectar o cart├úo com suas m├║sicas preferidas
-                    e sair praticando o seu esporte predileto. N├úo ├® necess├írio nenhum acess├│rio ou cabo. Mais mobilidade e liberdade para ir onde desejar N├úo
-                    se incomode com fios ou aparelhos. Detalhes ? Para carregar basta conectar o cabo USB ao seu aparelho, Mobilidade e prazer ao praticar o
-                    seu esporte preferido, e para momentos de descontra├º├úo. MP3 Port├ítil em Formato de Fone de Ouvido Sem Fio Cabo USB 2.0 Conte├║do da caixa?
-                    1 Fone De Ouvido Sem Fio C2 Sport Mp3 Player Entrada Cart├úo Sd ? preto + Cabo USB Especifica├º├Áes t├®cnicas ? Formatos de ├íudio: Mp3 , WMA,
-                    WAV Cart├úo Micro SD (N├úo Acompanha) Ru├¡do: 86dB Frequ├¬ncia: 20HZ / 20KHZ Bateria: LiPo battery
-                </textarea>
+                <textarea rows="6" class="product-description" name="" id=""></textarea>
             </div>
             <div class="comercial-information">
                 <h4><i class="fa fa-bar-chart"></i> Informações Comerciais</h4>
