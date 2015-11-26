@@ -6,7 +6,7 @@
                 <h4 class="modal-title span7 text-center" id="myModalLabel">Cadastrar Produtos</h4>
             </div>
             <div class="modal-body">
-                <form class="form-horizontal dropzone" id="myDropzone" action="#" method="post">
+                <form class="form-horizontal dropzone" id="addProductDropzone" action="#" method="post">
                     <div class="dropzone-previews"></div> <!-- this is were the previews should be shown. -->
                     <div class="fallback">
                         <!-- this is the fallback if JS isn't working -->

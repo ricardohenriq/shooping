@@ -67,8 +67,6 @@
             <?= $this->element('Modal/login_modal') ?>
         <?php else: ?>
             <?= $this->element('Modal/logout_modal') ?>
-            <!--<?= $this->element('Modal/add_stores_modal') ?>-->
-            <!--<?= $this->element('Modal/view_stores_modal') ?>-->
         <?php endif; ?>
     </body>
 </html>

@@ -1,5 +1,5 @@
 Dropzone.autoDiscover = false;
-var myDropzone = new Dropzone('#myDropzone', { // The camelized version of the ID of the form element
+var addProductDropzone = new Dropzone('#addProductDropzone', { // The camelized version of the ID of the form element
 	url: 'http://localhost:8765/products/upload',
 	autoProcessQueue: false,
 	uploadMultiple: true,
@@ -9,19 +9,12 @@ var myDropzone = new Dropzone('#myDropzone', { // The camelized version of the I
 });
 
 $("#submit-all").click(function (e){
-	 myDropzone.on("sending", function(file, xhr, formData) {
+    addProductDropzone.on("sending", function(file, xhr, formData) {
 		alert('submit');
 		var fieldsAssociativeArray = getComplementedFields('#add-products-complement :input');
 		appendAllFieldsToDropzone(formData, fieldsAssociativeArray);
 	});
-	myDropzone.processQueue();
-
-	 //$('#myDropzone').submit();
-	//e.preventDefault();
-	//e.stopPropagation();
-	//myDropzone.processQueue();
-	//appendAllFieldsToDropzone(fieldsAssociativeArray);
-	//console.log(fieldsAssociativeArray);
+    addProductDropzone.processQueue();
 });
 
 function getComplementedFields(fieldId){

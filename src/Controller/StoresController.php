@@ -273,7 +273,7 @@ class StoresController extends AppController
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index', 'myStores', 'miniMap', 'view', 'favoriteStores']);
+        $this->Auth->allow(['index', 'myStores', 'miniMap', 'view', 'favoriteStores', 'edit']);
     }
 
     public function isAuthorized($user = null)

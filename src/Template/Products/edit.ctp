@@ -45,7 +45,7 @@
         <?= $this->Html->script('library/datepicker/js/bootstrap-datepicker.js',['defer' => true]) ?>
         <?= $this->Html->script('library/bxslider-4-4.1.2/jquery.bxslider.min.js',['defer' => true]) ?>
         <?= $this->Html->script('library/dropzone/dropzone.js',['defer' => true]) ?>
-        <?= $this->Shrink->js(['actions/main.js', 'actions/index-banners.js', 'actions/upload-products.js']) ?>
+        <?= $this->Shrink->js(['actions/main.js', 'actions/index-banners.js', 'actions/product-edit.js']) ?>
 
         <?= $this->Shrink->fetch('css') ?>
         <?= $this->Shrink->fetch('js') ?>
@@ -67,8 +67,7 @@
             <?= $this->element('Modal/login_modal') ?>
         <?php else: ?>
             <?= $this->element('Modal/logout_modal') ?>
-            <?= $this->element('Modal/add_product_modal') ?>
-            <?= $this->element('Modal/view_product_modal') ?>
+            <?= $this->element('Modal/add_product_media_modal') ?>
         <?php endif; ?>
     </body>
 </html>

@@ -1,7 +1,7 @@
 <div class="col-md-9" id="edit-store">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <button type="button" class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#add-product-modal" id="add-product-button">Novas imagens</button>
+            <button type="button" class="btn btn-primary btn-xs pull-right" data-toggle="modal" data-target="#add-store-media-modal" id="add-product-button">Novas imagens</button>
             <h3 class="panel-title span7 text-center title">Loja #1</h3>
         </div>
         <div class="panel-body">
