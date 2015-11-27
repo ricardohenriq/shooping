@@ -389,18 +389,18 @@ class ProductsController extends AppController
 
             $product = $this->Products->newEntity();
             $product = $this->Products->patchEntity($product, $this->request->data);
-            /*$product->visited = 999;
-            $product->old_price = 87.9;
-            $product->sold = 19;*/
             $product->sub_category_id = 18;
             $product->store_id = 1;
             $productSaved = $this->Products->save($product);
 
-            if($productSaved) {
-
+            if($productSaved)
+            {
+                $featuresArray = $this->Insert->getFeatuesArray($this->request->data);
+                $featuresEntities = $this->Insert->createMassFeaturesEntities($featuresArray, $productSaved['id']);
+                $this->Insert->insertMassEntities($featuresEntities, 'ProductFeatures');
 
                 ob_start();
-                var_dump($product);
+                var_dump($featuresEntities);
                 $result = ob_get_clean();
                 $file = 'C:\xampp\htdocs\PROJETOS\Shopping\PRINT_VAR_DUMP.txt';
                 file_put_contents($file, $result);

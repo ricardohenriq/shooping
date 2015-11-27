@@ -1,73 +1,118 @@
-object(App\Model\Entity\Product)#114 (17) {
-  ["product_name"]=>
-  string(11) "Produto Bom"
-  ["quantity"]=>
-  int(99)
-  ["description"]=>
-  string(23) "Produto muito bom mesmo"
-  ["price"]=>
-  float(99)
-  ["status"]=>
-  int(1)
-  ["sub_category_id"]=>
-  int(18)
-  ["store_id"]=>
-  int(1)
-  ["created"]=>
-  object(Cake\I18n\Time)#140 (3) {
-    ["time"]=>
-    string(24) "2015-11-27T12:11:04+0000"
-    ["timezone"]=>
-    string(3) "UTC"
-    ["fixedNowTime"]=>
+array(2) {
+  [0]=>
+  object(App\Model\Entity\ProductFeature)#179 (13) {
+    ["product_id"]=>
+    int(88)
+    ["feature_value"]=>
+    string(9) "1.79 Anja"
+    ["feature_intern_code"]=>
+    string(6) "FEA001"
+    ["created"]=>
+    object(Cake\I18n\Time)#191 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:51:57+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#206 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:51:57+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["id"]=>
+    int(2)
+    ["[new]"]=>
     bool(false)
+    ["[accessible]"]=>
+    array(5) {
+      ["feature_value"]=>
+      bool(true)
+      ["feature_id"]=>
+      bool(true)
+      ["product_id"]=>
+      bool(true)
+      ["feature"]=>
+      bool(true)
+      ["product"]=>
+      bool(true)
+    }
+    ["[dirty]"]=>
+    array(0) {
+    }
+    ["[original]"]=>
+    array(0) {
+    }
+    ["[virtual]"]=>
+    array(0) {
+    }
+    ["[errors]"]=>
+    array(0) {
+    }
+    ["[repository]"]=>
+    string(15) "ProductFeatures"
   }
-  ["modified"]=>
-  object(Cake\I18n\Time)#177 (3) {
-    ["time"]=>
-    string(24) "2015-11-27T12:11:04+0000"
-    ["timezone"]=>
-    string(3) "UTC"
-    ["fixedNowTime"]=>
+  [1]=>
+  object(App\Model\Entity\ProductFeature)#181 (13) {
+    ["product_id"]=>
+    int(88)
+    ["feature_value"]=>
+    string(7) "60 Anja"
+    ["feature_intern_code"]=>
+    string(6) "FEA002"
+    ["created"]=>
+    object(Cake\I18n\Time)#215 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:51:57+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#225 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:51:57+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["id"]=>
+    int(3)
+    ["[new]"]=>
     bool(false)
+    ["[accessible]"]=>
+    array(5) {
+      ["feature_value"]=>
+      bool(true)
+      ["feature_id"]=>
+      bool(true)
+      ["product_id"]=>
+      bool(true)
+      ["feature"]=>
+      bool(true)
+      ["product"]=>
+      bool(true)
+    }
+    ["[dirty]"]=>
+    array(0) {
+    }
+    ["[original]"]=>
+    array(0) {
+    }
+    ["[virtual]"]=>
+    array(0) {
+    }
+    ["[errors]"]=>
+    array(0) {
+    }
+    ["[repository]"]=>
+    string(15) "ProductFeatures"
   }
-  ["id"]=>
-  int(75)
-  ["[new]"]=>
-  bool(false)
-  ["[accessible]"]=>
-  array(9) {
-    ["product_name"]=>
-    bool(true)
-    ["store_id"]=>
-    bool(true)
-    ["quantity"]=>
-    bool(true)
-    ["description"]=>
-    bool(true)
-    ["price"]=>
-    bool(true)
-    ["status"]=>
-    bool(true)
-    ["store"]=>
-    bool(true)
-    ["bookings"]=>
-    bool(true)
-    ["product_features"]=>
-    bool(true)
-  }
-  ["[dirty]"]=>
-  array(0) {
-  }
-  ["[original]"]=>
-  array(0) {
-  }
-  ["[virtual]"]=>
-  array(0) {
-  }
-  ["[errors]"]=>
-  array(0) {
-  }
-  ["[repository]"]=>
-  string(8) "Products"
 }

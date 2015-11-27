@@ -87,20 +87,20 @@ CREATE TABLE bookings (
 
 CREATE TABLE features (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  intern_code CHAR(6) NOT NULL,
-  feature_name VARCHAR(255) NOT NULL,
+  intern_code CHAR(6) NOT NULL UNIQUE,
+  feature_name VARCHAR(255) NOT NULL UNIQUE,
   created DATETIME,
   modified DATETIME
 );
 
 CREATE TABLE product_features (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  feature_value VARCHAR(255) NOT NULL,
-  feature_id INT NOT NULL,
+  feature_value VARCHAR(255) NOT NULL UNIQUE,
+  feature_intern_code CHAR(6) NOT NULL UNIQUE,
   product_id INT NOT NULL,
   created DATETIME,
   modified DATETIME,
-  FOREIGN KEY feature_key (feature_id) REFERENCES features(id),
+  FOREIGN KEY feature_key (feature_intern_code) REFERENCES features(intern_code),
   FOREIGN KEY product_key (product_id) REFERENCES products(id)
 );
 
