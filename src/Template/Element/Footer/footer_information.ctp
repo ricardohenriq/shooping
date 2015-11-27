@@ -28,7 +28,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <span>Magma TI</span>
+                    <span>Empresa TI</span>
                     <ul>
                         <li><?= $this->Html->link('Quem somos','/quem-somos', ['target' => '_blank']) ?></li>
                         <li><?= $this->Html->link('Contato','/contato', ['target' => '_blank']) ?></li>
