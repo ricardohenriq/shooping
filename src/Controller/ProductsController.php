@@ -386,13 +386,25 @@ class ProductsController extends AppController
 	public function upload() 
 	{		
         if ($this->request->is('post')) {
-		
-		ob_start();
-		var_dump($this->request->data);
-		$result = ob_get_clean();
-		$file = 'C:\xampp\htdocs\PROJETOS\Shopping\PRINT_VAR_DUMP.txt';
-		file_put_contents($file, $result);
-		
+
+            $product = $this->Products->newEntity();
+            $product = $this->Products->patchEntity($product, $this->request->data);
+            /*$product->visited = 999;
+            $product->old_price = 87.9;
+            $product->sold = 19;*/
+            $product->sub_category_id = 18;
+            $product->store_id = 1;
+            $productSaved = $this->Products->save($product);
+
+            if($productSaved) {
+
+
+                ob_start();
+                var_dump($product);
+                $result = ob_get_clean();
+                $file = 'C:\xampp\htdocs\PROJETOS\Shopping\PRINT_VAR_DUMP.txt';
+                file_put_contents($file, $result);
+            }
             /*$mediaTypeId = 1;
             $productId = 2;
             $path = $this->request->data['Media']['file']['tmp_name'];

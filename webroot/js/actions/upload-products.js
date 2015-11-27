@@ -12,6 +12,7 @@ $("#submit-all").click(function (e){
     addProductDropzone.on("sending", function(file, xhr, formData) {
 		alert('submit');
 		var fieldsAssociativeArray = getComplementedFields('#add-products-complement :input');
+        fieldsAssociativeArray = fieldsAssociativeArray.concat(getComplementedFields('#add-products-properties :input'));
 		appendAllFieldsToDropzone(formData, fieldsAssociativeArray);
 	});
     addProductDropzone.processQueue();
@@ -20,7 +21,7 @@ $("#submit-all").click(function (e){
 function getComplementedFields(fieldId){
 	var fieldsAssociativeArray = [];
 	$(fieldId).each(function(){
-		if(['INPUT'].indexOf($(this).context.tagName) >= 0){
+		if(['INPUT', 'SELECT', 'TEXTAREA'].indexOf($(this).context.tagName) >= 0){
 			fieldsAssociativeArray.push({name:$(this).context.name, value:$(this).context.value});
 		}
 	});

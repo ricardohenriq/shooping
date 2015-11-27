@@ -1,44 +1,73 @@
-array(1) {
-  ["file"]=>
-  array(3) {
-    [0]=>
-    array(5) {
-      ["name"]=>
-      string(22) "Lamborghini Veneno.jpg"
-      ["type"]=>
-      string(10) "image/jpeg"
-      ["tmp_name"]=>
-      string(24) "C:\xampp\tmp\php95F3.tmp"
-      ["error"]=>
-      int(0)
-      ["size"]=>
-      int(207915)
-    }
-    [1]=>
-    array(5) {
-      ["name"]=>
-      string(14) "Anja Rubik.jpg"
-      ["type"]=>
-      string(10) "image/jpeg"
-      ["tmp_name"]=>
-      string(24) "C:\xampp\tmp\php9604.tmp"
-      ["error"]=>
-      int(0)
-      ["size"]=>
-      int(52618)
-    }
-    [2]=>
-    array(5) {
-      ["name"]=>
-      string(24) "Diora-Baird-Miami-FL.jpg"
-      ["type"]=>
-      string(10) "image/jpeg"
-      ["tmp_name"]=>
-      string(24) "C:\xampp\tmp\php9614.tmp"
-      ["error"]=>
-      int(0)
-      ["size"]=>
-      int(233933)
-    }
+object(App\Model\Entity\Product)#114 (17) {
+  ["product_name"]=>
+  string(11) "Produto Bom"
+  ["quantity"]=>
+  int(99)
+  ["description"]=>
+  string(23) "Produto muito bom mesmo"
+  ["price"]=>
+  float(99)
+  ["status"]=>
+  int(1)
+  ["sub_category_id"]=>
+  int(18)
+  ["store_id"]=>
+  int(1)
+  ["created"]=>
+  object(Cake\I18n\Time)#140 (3) {
+    ["time"]=>
+    string(24) "2015-11-27T12:11:04+0000"
+    ["timezone"]=>
+    string(3) "UTC"
+    ["fixedNowTime"]=>
+    bool(false)
   }
+  ["modified"]=>
+  object(Cake\I18n\Time)#177 (3) {
+    ["time"]=>
+    string(24) "2015-11-27T12:11:04+0000"
+    ["timezone"]=>
+    string(3) "UTC"
+    ["fixedNowTime"]=>
+    bool(false)
+  }
+  ["id"]=>
+  int(75)
+  ["[new]"]=>
+  bool(false)
+  ["[accessible]"]=>
+  array(9) {
+    ["product_name"]=>
+    bool(true)
+    ["store_id"]=>
+    bool(true)
+    ["quantity"]=>
+    bool(true)
+    ["description"]=>
+    bool(true)
+    ["price"]=>
+    bool(true)
+    ["status"]=>
+    bool(true)
+    ["store"]=>
+    bool(true)
+    ["bookings"]=>
+    bool(true)
+    ["product_features"]=>
+    bool(true)
+  }
+  ["[dirty]"]=>
+  array(0) {
+  }
+  ["[original]"]=>
+  array(0) {
+  }
+  ["[virtual]"]=>
+  array(0) {
+  }
+  ["[errors]"]=>
+  array(0) {
+  }
+  ["[repository]"]=>
+  string(8) "Products"
 }

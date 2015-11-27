@@ -62,12 +62,12 @@ CREATE TABLE products (
   store_id INT NOT NULL,
   sub_category_id INT NOT NULL,
   quantity INT NOT NULL,
-  sold INT NOT NULL,
-  description VARCHAR(2500),
+  sold INT,
+  description VARCHAR(2500) NOT NULL,
   price DECIMAL(7,2) NOT NULL,
-  old_price DECIMAL(7,2) NOT NULL,
-  visited INT NOT NULL,
-  status INT NOT NULL,
+  old_price DECIMAL(7,2),
+  visited INT,
+  status INT,
   created DATETIME,
   modified DATETIME,
   FOREIGN KEY store_key (store_id) REFERENCES stores(id),
@@ -87,6 +87,7 @@ CREATE TABLE bookings (
 
 CREATE TABLE features (
   id INT AUTO_INCREMENT PRIMARY KEY,
+  intern_code CHAR(6) NOT NULL,
   feature_name VARCHAR(255) NOT NULL,
   created DATETIME,
   modified DATETIME
