@@ -399,8 +399,10 @@ class ProductsController extends AppController
                 $featuresEntities = $this->Insert->createMassFeaturesEntities($featuresArray, $productSaved['id']);
                 $this->Insert->insertMassEntities($featuresEntities, 'ProductFeatures');
 
+                $mediasEntities = $this->Insert->createMassMediasEntities($this->request->data['file'], $productSaved['id']);
+
                 ob_start();
-                var_dump($featuresEntities);
+                var_dump($mediasEntities);
                 $result = ob_get_clean();
                 $file = 'C:\xampp\htdocs\PROJETOS\Shopping\PRINT_VAR_DUMP.txt';
                 file_put_contents($file, $result);

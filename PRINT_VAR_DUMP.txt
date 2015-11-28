@@ -1,49 +1,31 @@
 array(2) {
   [0]=>
-  object(App\Model\Entity\ProductFeature)#179 (13) {
+  object(App\Model\Entity\Media)#178 (10) {
     ["product_id"]=>
-    int(88)
-    ["feature_value"]=>
-    string(9) "1.79 Anja"
-    ["feature_intern_code"]=>
-    string(6) "FEA001"
-    ["created"]=>
-    object(Cake\I18n\Time)#191 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:51:57+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#206 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:51:57+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["id"]=>
+    int(93)
+    ["media_type_id"]=>
     int(2)
+    ["path"]=>
+    string(24) "C:\xampp\tmp\phpFF19.tmp"
     ["[new]"]=>
-    bool(false)
+    bool(true)
     ["[accessible]"]=>
-    array(5) {
-      ["feature_value"]=>
+    array(3) {
+      ["media_type_id"]=>
       bool(true)
-      ["feature_id"]=>
+      ["path"]=>
       bool(true)
-      ["product_id"]=>
-      bool(true)
-      ["feature"]=>
-      bool(true)
-      ["product"]=>
+      ["media_type"]=>
       bool(true)
     }
     ["[dirty]"]=>
-    array(0) {
+    array(3) {
+      ["product_id"]=>
+      bool(true)
+      ["media_type_id"]=>
+      bool(true)
+      ["path"]=>
+      bool(true)
     }
     ["[original]"]=>
     array(0) {
@@ -55,53 +37,35 @@ array(2) {
     array(0) {
     }
     ["[repository]"]=>
-    string(15) "ProductFeatures"
+    string(6) "Medias"
   }
   [1]=>
-  object(App\Model\Entity\ProductFeature)#181 (13) {
+  object(App\Model\Entity\Media)#179 (10) {
     ["product_id"]=>
-    int(88)
-    ["feature_value"]=>
-    string(7) "60 Anja"
-    ["feature_intern_code"]=>
-    string(6) "FEA002"
-    ["created"]=>
-    object(Cake\I18n\Time)#215 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:51:57+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#225 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:51:57+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["id"]=>
-    int(3)
+    int(93)
+    ["media_type_id"]=>
+    int(2)
+    ["path"]=>
+    string(24) "C:\xampp\tmp\phpFF39.tmp"
     ["[new]"]=>
-    bool(false)
+    bool(true)
     ["[accessible]"]=>
-    array(5) {
-      ["feature_value"]=>
+    array(3) {
+      ["media_type_id"]=>
       bool(true)
-      ["feature_id"]=>
+      ["path"]=>
       bool(true)
-      ["product_id"]=>
-      bool(true)
-      ["feature"]=>
-      bool(true)
-      ["product"]=>
+      ["media_type"]=>
       bool(true)
     }
     ["[dirty]"]=>
-    array(0) {
+    array(3) {
+      ["product_id"]=>
+      bool(true)
+      ["media_type_id"]=>
+      bool(true)
+      ["path"]=>
+      bool(true)
     }
     ["[original]"]=>
     array(0) {
@@ -113,6 +77,6 @@ array(2) {
     array(0) {
     }
     ["[repository]"]=>
-    string(15) "ProductFeatures"
+    string(6) "Medias"
   }
 }

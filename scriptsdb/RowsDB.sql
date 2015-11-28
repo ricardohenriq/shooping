@@ -2084,7 +2084,7 @@ INSERT INTO features (id, intern_code, feature_name, created, modified)
 VALUES (264, 'FEA264', 'Material da Pulseira', NOW(), NOW());
 
 INSERT INTO features (id, intern_code, feature_name, created, modified)
-VALUES (265, 'FEA265', 'Prova d\'água', NOW(), NOW());
+VALUES (265, 'FEA265', 'Prova dágua', NOW(), NOW());
 
 INSERT INTO features (id, intern_code, feature_name, created, modified)
 VALUES (266, 'FEA266', 'Forro', NOW(), NOW());
@@ -2124,107 +2124,107 @@ VALUES (277, 'FEA277', 'Diagonal Visual (Cm)', NOW(), NOW());
 
 ## 585 registros na tabela "product_features" --------------------------------------------
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Android 4.4 KitKat', 9, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Android 4.4 KitKat', 'FEA009', 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Barra', 10, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Barra', 'FEA010', 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Traseira 13MP e Frontal 5MP', 11, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Traseira 13MP e Frontal 5MP', 'FEA011', 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 12, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA012', 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 13, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA013', 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Rádio FM,  MP3 Player', 14, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Rádio FM,  MP3 Player', 'FEA014', 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 15, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA015', 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('MicroSD até 64 GB', 16, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('MicroSD até 64 GB', 'FEA016', 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 17, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA017', 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 18, 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA018', 1, '2011-10-28 09:39:49', '2012-10-28 09:39:49');
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 19, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA019', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 20, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA020', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 21, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA021', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 22, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA022', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('USB 2.0, Bluetooth 4.0, Wi-Fi 802.11 a/b/g/n 2.4+5GHz, HT40, NFC', 23, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('USB 2.0, Bluetooth 4.0, Wi-Fi 802.11 a/b/g/n 2.4+5GHz, HT40, NFC', 'FEA023', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 24, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA024', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('SMS,  MMS,  E-mail', 25, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('SMS,  MMS,  E-mail', 'FEA025', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Polifônicos,  MP3', 26, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Polifônicos,  MP3', 'FEA026', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Quad Core de 1.2 Ghz', 27, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Quad Core de 1.2 Ghz', 'FEA027', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2GB', 28, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('2GB', 'FEA028', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 29, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA029', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('GSM,  3G,  4G', 30, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('GSM,  3G,  4G', 'FEA030', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 31, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA031', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('GSM 850/900/1800/1900 MHz', 32, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('GSM 850/900/1800/1900 MHz', 'FEA032', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('sim', 33, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('sim', 'FEA033', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Nano SIM', 34, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Nano SIM', 'FEA034', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('16GB Total sendo uma parte usada para o sistema operacional e aplicativos pré-instalados', 35, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('16GB Total sendo uma parte usada para o sistema operacional e aplicativos pré-instalados', 'FEA035', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1280 x 720', 36, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1280 x 720', 'FEA036', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('12,7', 37, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('12,7', 'FEA037', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Branco', 38, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Branco', 'FEA038', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- Aparelho Samsung Galaxy A5 4G Duos A500M/DS Branco - Tim
         - Carregador
         - Bateria
         - Cabo USB
-        - Fone de Ouvido', 124, 1, NOW(), NOW());
+        - Fone de Ouvido', 'FEA124', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('12 meses', 6, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('12 meses', 'FEA006', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('1.Para utilizar este celular é preciso ter um chip (vendido separadamente). Este aparelho
         está habilitado para que funcione com operadoras nacionais com Tecnologia GSM (Vivo, Oi, Tim, Claro,
         Brasil Telecom, CTBC, Sercomtel, Telemig).
@@ -2238,226 +2238,226 @@ VALUES ('1.Para utilizar este celular é preciso ter um chip (vendido separadame
         memória. Entretanto, você não pode colocar ambos os chips e o cartão de memória
         ao mesmo tempo.
         ATENÇÃO: A rede 4G no Brasil é limitada. Consulte uma operadora de telefonia móvel para obter
-        informações de pacotes de dados e cidades de cobertura.', 39, 1, NOW(), NOW());
+        informações de pacotes de dados e cidades de cobertura.', 'FEA039', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('13,93 (Cm)', 1, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('13,93 (Cm)', 'FEA001', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('6,97 (Cm)', 2, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('6,97 (Cm)', 'FEA002', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('6,70 (Cm)', 3, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('6,70 (Cm)', 'FEA003', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('123,00 (Gramas)', 4, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('123,00 (Gramas)', 'FEA004', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('4444-4444 (capitais e grandes centros) / 0800-444-444 (demais cidades e regiões)', 73, 1, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('4444-4444 (capitais e grandes centros) / 0800-444-444 (demais cidades e regiões)', 'FEA073', 1, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Preta', 7, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Preta', 'FEA007', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('Para uso de Rede sem Fio a Semp Toshiba tem os seguintes adaptadores Wi-Fi homologados
         (não inclusos): TP-LINK modelo: TL-WN722N (Versão 1.10), TL-WN723N (Versão 2.0), TL-WN723N
         (Versão 3.0), TL-WN725N (Versão 2.0), TL-WN821N (Versão 4.2), TL WN822N (Versão 3.0) e
-        TL-WN823N (Versão 1.2).', 22, 2, NOW(), NOW());
+        TL-WN823N (Versão 1.2).', 'FEA022', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('32', 276, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('32', 'FEA276', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1366X768', 36, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1366X768', 'FEA036', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 41, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA041', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2', 49, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('2', 'FEA049', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2', 54, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('2', 'FEA054', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Full Screen/Widescreen', 142, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Full Screen/Widescreen', 'FEA142', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('80', 277, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('80', 'FEA277', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('4:3, cinema, legenda, nativo, tela cheia, panorâmico e full view.', 59, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('4:3, cinema, legenda, nativo, tela cheia, panorâmico e full view.', 'FEA059', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 43, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA043', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 45, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA045', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 50, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA050', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('47,4 (Cm)', 1, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('47,4 (Cm)', 'FEA001', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('73,2 (Cm)', 2, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('73,2 (Cm)', 'FEA002', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('20 (Cm)', 3, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('20 (Cm)', 'FEA003', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('6,7 (Kg)', 4, 2, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('6,7 (Kg)', 'FEA004', 2, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Android', 156, 3, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Android', 'FEA156', 3, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('5.2', 276, 3, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('5.2', 'FEA276', 3, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('4G', 30, 3, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('4G', 'FEA030', 3, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 64, 3, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA064', 3, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 20, 3, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA020', 3, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('13MP', 13, 3, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('13MP', 'FEA013', 3, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2.5 (GHz)', 27, 3, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('2.5 (GHz)', 'FEA027', 3, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('13,97 (Cm)', 1, 3, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('13,97 (Cm)', 'FEA001', 3, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('7,19 (Cm)', 2, 3, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('7,19 (Cm)', 'FEA002', 3, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('0,99 (Cm)', 3, 3, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('0,99 (Cm)', 'FEA003', 3, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('144 (Gramas)', 4, 3, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('144 (Gramas)', 'FEA004', 3, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('110V ou 220V ', 61, 4, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('110V ou 220V ', 'FEA061', 4, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('7 funções: Triturar Gelo, Processar Alimentos, Três velocidades manuais,
-        Pulsar Rápido e Pulsar Lento, ', 67, 4, NOW(), NOW());
+        Pulsar Rápido e Pulsar Lento', 'FEA067', 4, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('600 (Watts)', 215, 4, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('600 (Watts)', 'FEA215', 4, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Metal e vidro', 8, 4, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Metal e vidro', 'FEA008', 4, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1,25 (Litros)', 65, 4, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1,25 (Litros)', 'FEA065', 4, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('35 (Cm)', 1, 4, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('35 (Cm)', 'FEA001', 4, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('26 (Cm)', 2, 4, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('26 (Cm)', 'FEA002', 4, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('22 (Cm)', 3, 4, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('22 (Cm)', 'FEA003', 4, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2 (Kg)', 4, 4, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('2 (Kg)', 'FEA004', 4, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3 Horas', 80, 5, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3 Horas', 'FEA080', 5, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('01 Mini MP3 player + Fones de Ouvido + Cabo USB', 124, 5, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('01 Mini MP3 player + Fones de Ouvido + Cabo USB', 'FEA124', 5, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('MP3, WMA', 76, 5, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('MP3, WMA', 'FEA076', 5, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('4,5 (Cm)', 1, 5, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('4,5 (Cm)', 'FEA001', 5, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3,2 (Cm)', 2, 5, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3,2 (Cm)', 'FEA002', 5, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1,4 (Cm)', 3, 5, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1,4 (Cm)', 'FEA003', 5, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Mp3 , WMA, WAV', 76, 6, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Mp3 , WMA, WAV', 'FEA076', 6, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('20HZ / 20KHZ ', 32, 6, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('20HZ / 20KHZ ', 'FEA032', 6, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Cartão Micro SD (Não Acompanha)', 82, 6, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Cartão Micro SD (Não Acompanha)', 'FEA082', 6, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Multimóveis', 69, 7, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Multimóveis', 'FEA069', 7, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Tradicional', 87, 7, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Tradicional', 'FEA087', 7, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('71 a 110 (Kg)', 88, 7, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('71 a 110 (Kg)', 'FEA088', 7, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Solteiro', 89, 7, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Solteiro', 'FEA089', 7, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('MDP', 8, 7, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('MDP', 'FEA008', 7, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Metal', 91, 7, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Metal', 'FEA091', 7, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('90,5 (Cm)', 1, 7, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('90,5 (Cm)', 'FEA001', 7, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('193,5 (Cm)', 2, 7, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('193,5 (Cm)', 'FEA002', 7, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('85,5 (Cm)', 3, 7, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('85,5 (Cm)', 'FEA003', 7, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('38,5 (Kg)', 4, 7, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('38,5 (Kg)', 'FEA004', 7, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Tubos de aço carbono', 93, 8, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Tubos de aço carbono', 'FEA093', 8, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Pintura Epóxi', 92, 8, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Pintura Epóxi', 'FEA092', 8, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Vidro incolor temperado com 6 mm', 95, 8, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Vidro incolor temperado com 6 mm', 'FEA095', 8, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('MDP de 12 mm, revestidos com espuma e corino', 94, 8, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('MDP de 12 mm, revestidos com espuma e corino', 'FEA094', 8, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Recomendamos que a montagem seja feita por um profissional.', 134, 8, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Recomendamos que a montagem seja feita por um profissional.', 'FEA134', 8, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('80 (Cm)', 1, 8, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('80 (Cm)', 'FEA001', 8, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('80 (Cm)', 2, 8, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('80 (Cm)', 'FEA002', 8, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('77 (Cm)', 3, 8, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('77 (Cm)', 'FEA003', 8, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('13', 96, 9, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('13', 'FEA096', 9, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('12 (Kg)', 4, 9, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('12 (Kg)', 'FEA004', 9, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('1 Açúcar Refinado pt 1Kg SOLITO,
         1 Arroz Agulhinha T.1 pt (5Kg) SOLITO,
         1 Biscoito Recheado pt 125g VISCONTI,
@@ -2470,823 +2470,824 @@ VALUES ('1 Açúcar Refinado pt 1Kg SOLITO,
         1 Óleo de Soja Refinado pet 900ml LEVE / CONCORDIA,
         1 Molho de Tomate tp 340g STELLA DORO,
         1 Sal Refinado pt 1kg NOBRE,
-        1 Embalagem Papelão nr.05 RV', 124, 9, NOW(), NOW());
+        1 Embalagem Papelão nr.05 RV', 'FEA124', 9, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('966 (Gramas)', 4, 10, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('966 (Gramas)', 'FEA004', 10, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sortidos: Laranja, Morango, Limão', 99, 10, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sortidos: Laranja, Morango, Limão', 'FEA099', 10, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3 Anos', 100, 10, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3 Anos', 'FEA100', 10, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- 50 BRIGADEIROS
         - 25 BEIJINHOS DE COCO
-        - 25 BRIGADEIROS DE MORANGO ( BICHO DE PÉ )', 124, 11, NOW(), NOW());
+        - 25 BRIGADEIROS DE MORANGO ( BICHO DE PÉ )', 'FEA124', 11, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('100', 96, 11, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('100', 'FEA096', 11, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('tomatão, tomate-francês, tomate-de-árvore, sangue-de-boi, tomate-japonês, tomate-inglês', 105, 12, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('tomatão, tomate-francês, tomate-de-árvore, sangue-de-boi, tomate-japonês, tomate-inglês', 'FEA105', 12, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Andes na América do Sul', 106, 12, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Andes na América do Sul', 'FEA106', 12, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Pequeno porte', 108, 12, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Pequeno porte', 'FEA108', 12, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('Não requer cuidados especiais, mas que sofre bastante com as geadas pelo que necessita de
-        ser protegida no Inverno. Propaga-se por semente e por estacas dos ramos.', 112, 12, NOW(), NOW());
+        ser protegida no Inverno. Propaga-se por semente e por estacas dos ramos.', 'FEA112', 12, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Proteção e alimento', 102, 13, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Proteção e alimento', 'FEA102', 13, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Flores perfumadas, pequenas, brancas com miolo alaranjado e ricas em pólen e néctar', 109, 13, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Flores perfumadas, pequenas, brancas com miolo alaranjado e ricas em pólen e néctar', 'FEA109', 13, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Plantado em vasos ou cercas (Cerca viva)', 101, 13, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Plantado em vasos ou cercas (Cerca viva)', 'FEA101', 13, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Adubo de floração', 115, 13, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Adubo de floração', 'FEA115', 13, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Synsepalum Dulcificum Var. Giganteum', 103, 14, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Synsepalum Dulcificum Var. Giganteum', 'FEA103', 14, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Porte Médio 35 a 45cm', 108, 14, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Porte Médio 35 a 45cm', 'FEA108', 14, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não exige podas', 114, 14, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não exige podas', 'FEA114', 14, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Regas regulares com pouca água, quando o substrato estiver seco', 113, 14, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Regas regulares com pouca água, quando o substrato estiver seco', 'FEA113', 14, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Em pleno sol ou meia-sombra (apenas sol da manhã ou da tarde)', 110, 14, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Em pleno sol ou meia-sombra (apenas sol da manhã ou da tarde)', 'FEA110', 14, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('África Ocidental', 106, 14, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('África Ocidental', 'FEA106', 14, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Arbusto caducifólio de pequeno porte e crescimento lento', 107, 14, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Arbusto caducifólio de pequeno porte e crescimento lento', 'FEA107', 14, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Brancas e pequenas', 109, 14, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Brancas e pequenas', 'FEA109', 14, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Preferencialmente ácido – com pH de 4,5 a 5,8; fértil e bem drenado', 111, 14, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Preferencialmente ácido – com pH de 4,5 a 5,8; fértil e bem drenado', 'FEA111', 14, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Tropical ou subtropical', 112, 14, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Tropical ou subtropical', 'FEA112', 14, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Trimestral com NPK 10-10-10', 115, 14, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Trimestral com NPK 10-10-10', 'FEA115', 14, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Consumida in natura, ou em bolos, pães, sucos, iogurtes, etc. Uma colher de sopa possui em torno de 50cal apenas.', 102, 15, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Consumida in natura, ou em bolos, pães, sucos, iogurtes, etc. Uma colher de sopa 
+		possui em torno de 50cal apenas.', 'FEA102', 15, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1 (Kg)', 4, 15, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1 (Kg)', 'FEA004', 15, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Lycium barbarum', 103, 15, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Lycium barbarum', 'FEA103', 15, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('China e regiões do Himalaia', 106, 15, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('China e regiões do Himalaia', 'FEA106', 15, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('500 (Gramas)', 4, 16, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('500 (Gramas)', 'FEA004', 16, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Hibiscus sinensis', 103, 16, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Hibiscus sinensis', 'FEA103', 16, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Usado em chás', 102, 16, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Usado em chás', 'FEA102', 16, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Johnnie Walker', 69, 17, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Johnnie Walker', 'FEA069', 17, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('40%', 116, 17, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('40%', 'FEA116', 17, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Escócia', 106, 17, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Escócia', 'FEA106', 17, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1 Whisky', 124, 17, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1 Whisky', 'FEA124', 17, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1 Litro', 117, 17, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1 Litro', 'FEA117', 17, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('EMPÓRIO M&L COM. ALIM. BEBIDAS LTDA.', 74, 17, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('EMPÓRIO M&L COM. ALIM. BEBIDAS LTDA.', 'FEA074', 17, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('0800 -704 -7200', 73, 17, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('0800 -704 -7200', 'FEA073', 17, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('5000267116310', 75, 17, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('5000267116310', 'FEA075', 17, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1 Litro', 117, 18, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1 Litro', 'FEA117', 18, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1 Vodka Absolut Unique - Ed Limitada', 124, 18, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1 Vodka Absolut Unique - Ed Limitada', 'FEA124', 18, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Limitada, numerada e exclusivas', 140, 18, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Limitada, numerada e exclusivas', 'FEA140', 18, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('750 ml', 117, 19, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('750 ml', 'FEA117', 19, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Coupage: 33% Parellada, 33% Macabeo e 33% Xarello', 118, 19, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Coupage: 33% Parellada, 33% Macabeo e 33% Xarello', 'FEA118', 19, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('6 a 7ºC', 121, 19, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('6 a 7ºC', 'FEA121', 19, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('O licor de expedição se elabora com vinho do mesmo coupage, envelhecido 12 meses
-        em barrica.', 120, 19, NOW(), NOW());
+        em barrica.', 'FEA120', 19, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('Ligeiros aromas florais e consistente estrutura em boca, devido ao período de
-        criança.', 119, 19, NOW(), NOW());
+        criança.', 'FEA119', 19, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('12 Latas', 96, 20, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('12 Latas', 'FEA096', 20, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('355 ml (cada lata)', 117, 20, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('355 ml (cada lata)', 'FEA117', 20, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Coca-cola com Baunilha', 99, 20, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Coca-cola com Baunilha', 'FEA099', 20, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('12 Latas', 96, 21, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('12 Latas', 'FEA096', 21, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('355 ml (cada lata)', 117, 21, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('355 ml (cada lata)', 'FEA117', 21, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Laranja', 99, 21, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Laranja', 'FEA099', 21, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('12 Latas', 96, 22, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('12 Latas', 'FEA096', 22, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('355 ml (cada lata)', 117, 22, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('355 ml (cada lata)', 'FEA117', 22, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Gengibre (Ginger ale)', 99, 22, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Gengibre (Ginger ale)', 'FEA099', 22, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Canadá', 106, 22, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Canadá', 'FEA106', 22, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Canada Dry', 69, 22, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Canada Dry', 'FEA069', 22, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Delonghi', 69, 23, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Delonghi', 'FEA069', 23, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 122, 23, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA122', 23, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 123, 23, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA123', 23, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('110V', 61, 23, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('110V', 'FEA061', 23, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1750W', 215, 23, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1750W', 'FEA215', 23, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1,75kw/h', 63, 23, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1,75kw/h', 'FEA063', 23, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Azul e Branco', 72, 23, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Azul e Branco', 'FEA072', 23, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('30,2 (Cm)', 1, 23, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('30,2 (Cm)', 'FEA001', 23, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('24 (Cm)', 2, 23, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('24 (Cm)', 'FEA002', 23, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('39 (Cm)', 3, 23, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('39 (Cm)', 'FEA003', 23, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3,85 (Kg)', 4, 23, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3,85 (Kg)', 'FEA004', 23, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1 Ferro de passar e 1 manual de instruções.', 124, 23, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1 Ferro de passar e 1 manual de instruções.', 'FEA124', 23, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('VVX1475-127V Ferro de Passar à Vapor DL', 10, 23, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('VVX1475-127V Ferro de Passar à Vapor DL', 'FEA010', 23, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Queen', 97, 24, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Queen', 'FEA097', 24, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('100% Algodão', 8, 24, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('100% Algodão', 'FEA008', 24, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1,58x1,98x0,30 cm (Altura x Largura x Profundidade)', 127, 24, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1,58x1,98x0,30 cm (Altura x Largura x Profundidade)', 'FEA127', 24, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('50x70 cm (Altura x Largura)', 128, 24, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('50x70 cm (Altura x Largura)', 'FEA128', 24, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 129, 24, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA129', 24, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 130, 24, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA130', 24, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 131, 24, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA131', 24, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1,58x1,98x30 cm (Altura x Largura x Profundidade)', 132, 24, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1,58x1,98x30 cm (Altura x Largura x Profundidade)', 'FEA132', 24, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 133, 24, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA133', 24, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1.98 cm', 1, 24, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1.98 cm', 'FEA001', 24, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1.58 cm', 2, 24, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1.58 cm', 'FEA002', 24, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('0.3 cm', 3, 24, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('0.3 cm', 'FEA003', 24, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2,40 M', 1, 25, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('2,40 M', 'FEA001', 25, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1,80 M', 2, 25, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1,80 M', 'FEA002', 25, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Algodão', 8, 25, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Algodão', 'FEA008', 25, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Diversas', 38, 25, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Diversas', 'FEA038', 25, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('Utilize a manta aberta durante a semana para a proteção do seu sofá e dobrada
-        nos fins de semana decorar. Assim seu sofá ficará mais tempo bonito e apresentável.', 102, 25, NOW(), NOW());
+        nos fins de semana decorar. Assim seu sofá ficará mais tempo bonito e apresentável.', 'FEA102', 25, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Divergente', 136, 26, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Divergente', 'FEA136', 26, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Veronica Roth', 135, 26, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Veronica Roth', 'FEA135', 26, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Juvenil', 97, 26, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Juvenil', 'FEA097', 26, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Rocco', 143, 26, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Rocco', 'FEA143', 26, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Português', 145, 26, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Português', 'FEA145', 26, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2012', 144, 26, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('2012', 'FEA144', 26, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Brochura', 92, 26, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Brochura', 'FEA092', 26, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Médio', 142, 26, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Médio', 'FEA142', 26, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('13,4 cm', 1, 26, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('13,4 cm', 'FEA001', 26, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('20 cm', 2, 26, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('20 cm', 'FEA002', 26, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('7 cm', 3, 26, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('7 cm', 'FEA003', 26, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('Volume 1: 9788579801313, Volume 2: 9788579801314, Volume 3: 9788579801310,
-        Volume 4: 9788579801311', 138, 26, NOW(), NOW());
+        Volume 4: 9788579801311', 'FEA138', 26, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Volume 1: 500, Volume 2: 520, Volume 3: 530, Volume 4: 540', 139, 26, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Volume 1: 500, Volume 2: 520, Volume 3: 530, Volume 4: 540', 'FEA139', 26, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('4', 96, 26, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('4', 'FEA096', 26, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('5', 96, 27, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('5', 'FEA096', 27, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('O Diário De John Winchester- Capa Dura, O Livro Dos Monstros- Espíritos - Demônios E Ghouls,
-        O Guia De Caça De Bobby Singer, Nunca Mais E Guerra Dos Filhos', 136, 27, NOW(), NOW());
+        O Guia De Caça De Bobby Singer, Nunca Mais E Guerra Dos Filhos', 'FEA136', 27, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('22.50 cm', 1, 27, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('22.50 cm', 'FEA001', 27, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('16.00 cm', 2, 27, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('16.00 cm', 'FEA002', 27, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('8.50 cm', 3, 27, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('8.50 cm', 'FEA003', 27, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1.65 Kg', 4, 27, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1.65 Kg', 'FEA004', 27, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Gryphus', 143, 27, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Gryphus', 'FEA143', 27, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('0742832415231', 138, 27, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('0742832415231', 'FEA138', 27, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('742832415231', 75, 27, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('742832415231', 'FEA075', 27, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Português', 85, 27, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Português', 'FEA085', 27, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Kit (envolvendo os livros), Brocura (capa dos livros)', 92, 27, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Kit (envolvendo os livros), Brocura (capa dos livros)', 'FEA092', 27, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('A Lebre e a Raposa / A Raposa e o Galo / A Cigarra e a Formiga / A Lebre e a Tartaruga /
-        O Lobo Disfrançado / O Pastor Brincalhão / Os Músicos de Bremen e O Leão e o Camundongo', 136, 28, NOW(), NOW());
+        O Lobo Disfrançado / O Pastor Brincalhão / Os Músicos de Bremen e O Leão e o Camundongo', 'FEA136', 28, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('8', 96, 28, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('8', 'FEA096', 28, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Bicho Esperto', 143, 28, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Bicho Esperto', 'FEA143', 28, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('12 páginas cada livro', 139, 28, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('12 páginas cada livro', 'FEA139', 28, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('18 cm', 1, 28, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('18 cm', 'FEA001', 28, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('13 cm', 2, 28, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('13 cm', 'FEA002', 28, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Infantil', 97, 28, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Infantil', 'FEA097', 28, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Positivo', 69, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Positivo', 'FEA069', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Intel Atom', 146, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Intel Atom', 'FEA146', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Quad Core', 147, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Quad Core', 'FEA147', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2MB', 148, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('2MB', 'FEA148', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1GB', 149, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1GB', 'FEA149', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Positivo', 150, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Positivo', 'FEA150', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('16GB', 151, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('16GB', 'FEA151', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 49, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA049', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não se aplica ao produto', 152, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não se aplica ao produto', 'FEA152', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('10.1', 276, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('10.1', 'FEA276', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Áudio de alta definição (HD Áudio), Microfone e alto-falantes estéreo embutidos', 14, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Áudio de alta definição (HD Áudio), Microfone e alto-falantes estéreo embutidos', 'FEA014', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 22, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA022', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 20, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA020', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Rede sem fio IEEE 802.11 b/g/n TM e Bluetooth TM 4.0', 23, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Rede sem fio IEEE 802.11 b/g/n TM e Bluetooth TM 4.0', 'FEA023', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('Vídeo Processamento de vídeo integrado Intel HD Graphics / Aceleração gráfica integrada de
-        vídeos em alta definição (HD) e suporte Microsoft DirectX 11 e OpenGL 4.0', 153, 29, NOW(), NOW());
+        vídeos em alta definição (HD) e suporte Microsoft DirectX 11 e OpenGL 4.0', 'FEA153', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Português-Brasil', 154, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Português-Brasil', 'FEA154', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Touchpad-2botões', 155, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Touchpad-2botões', 'FEA155', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Windows 8.1', 156, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Windows 8.1', 'FEA156', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('18,4 Cm', 1, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('18,4 Cm', 'FEA001', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('25,5 Cm', 2, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('25,5 Cm', 'FEA002', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1,7 Cm', 3, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1,7 Cm', 'FEA003', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1,09 Kg', 4, 29, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1,09 Kg', 'FEA004', 29, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('USB', 157, 30, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('USB', 'FEA157', 30, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('8', 158, 30, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('8', 'FEA158', 30, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 159, 30, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA159', 30, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 160, 30, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA160', 30, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 161, 30, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA161', 30, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 162, 30, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA162', 30, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 163, 30, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA163', 30, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Widonws 98 e superiores/Mac 0S 9.0 e superiores', 164, 30, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Widonws 98 e superiores/Mac 0S 9.0 e superiores', 'FEA164', 30, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1,9 cm', 2, 30, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1,9 cm', 'FEA002', 30, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1,3 cm', 3, 30, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1,3 cm', 'FEA003', 30, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('5,5 cm', 1, 30, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('5,5 cm', 'FEA001', 30, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('10 gramas', 4, 30, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('10 gramas', 'FEA004', 30, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1 TB (1000 GB)', 158, 31, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1 TB (1000 GB)', 'FEA158', 31, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('Windows,  Mac', 164, 31, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- Samsung SecretZone™: aplicação de segurança que previne o acesso a arquivos privativos
-        em área designada SecretZone™ - SafetyKey™: protege seus dados com senha', 165, 31, NOW(), NOW());
+        em área designada SecretZone™ - SafetyKey™: protege seus dados com senha', 'FEA165', 31, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('USB de alta velocidade (2.0 e 3.0)', 157, 31, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('USB de alta velocidade (2.0 e 3.0)', 'FEA157', 31, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não necessita de alimentação externa: direto da porta USB', 70, 31, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não necessita de alimentação externa: direto da porta USB', 'FEA070', 31, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- HD Externo Portátil Samsung
         - Cabo USB
-        - Guia de instalação rápida', 124, 31, NOW(), NOW());
+        - Guia de instalação rápida', 'FEA124', 31, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Preto', 7, 31, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Preto', 'FEA007', 31, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Bivolt 110V / 220V', 61, 31, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Bivolt 110V / 220V', 'FEA061', 31, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3 meses', 6, 31, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3 meses', 'FEA006', 31, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2,00 Cm', 1, 31, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('2,00 Cm', 'FEA001', 31, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('8,00 Cm', 2, 31, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('8,00 Cm', 'FEA002', 31, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('11,00 Cm', 3, 31, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('11,00 Cm', 'FEA003', 31, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('279,00 Gramas', 4, 31, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('279,00 Gramas', 'FEA004', 31, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('TA0703G', 10, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('TA0703G', 'FEA010', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Dual Core', 147, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Dual Core', 'FEA147', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Preto', 7, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Preto', 'FEA007', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3G', 23, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3G', 'FEA023', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Android 4.1', 156, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Android 4.1', 'FEA156', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('7', 276, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('7', 'FEA276', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1024 x 600', 36, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1024 x 600', 'FEA036', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Capacitivo', 268, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Capacitivo', 'FEA268', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('16 GB', 35, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('16 GB', 'FEA035', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Cartão micro SD', 82, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Cartão micro SD', 'FEA082', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('32 Gb', 196, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('32 Gb', 'FEA196', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('0,3 Mega Pixels', 13, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('0,3 Mega Pixels', 'FEA013', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2 Mega Pixels', 12, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('2 Mega Pixels', 'FEA012', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Bivolt', 61, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Bivolt', 'FEA061', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('12.6 cm', 1, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('12.6 cm', 'FEA001', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('20 cm', 2, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('20 cm', 'FEA002', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1 cm', 3, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1 cm', 'FEA003', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('347 gramas', 4, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('347 gramas', 'FEA004', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('12 meses', 6, 32, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('12 meses', 'FEA006', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- 1 Manual Simplificado
         - 1 Cabo USB
         - 1 Fone de Ouvido
         - 1 Carregador
-        - 1 Tablet', 124, 32, NOW(), NOW());
+        - 1 Tablet', 'FEA124', 32, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('HP', 69, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('HP', 'FEA069', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('A9U24A#AK4.', 10, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('A9U24A#AK4.', 'FEA010', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Branco', 38, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Branco', 'FEA038', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Jato de tinta', 191, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Jato de tinta', 'FEA191', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- Impressora
         - Copiadora
-        - Scanner', 67, 33, NOW(), NOW());
+        - Scanner', 'FEA067', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('LCD monocromático de alta resolução.', 40, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('LCD monocromático de alta resolução.', 'FEA040', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2 (5 cm)', 276, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('2 (5 cm)', 'FEA276', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Wi-fi, USB', 23, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Wi-fi, USB', 'FEA023', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- Preto (ISO): Até 7 ppm; Preto (rascunho, A4): Até 20 ppm; Preto (rascunho, carta): Até 20 ppm;
-        - Cor (ISO): Até 4 ppm; Colorido (rascunho, A4): Até 16 ppm; Colorido (rascunho, carta): Até 16 ppm;', 166, 33, NOW(), NOW());
+        - Cor (ISO): Até 4 ppm; Colorido (rascunho, A4): Até 16 ppm; Colorido (rascunho, carta): Até 16 ppm;', 'FEA166', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- Preto: Até 600 x 600 dpi renderizados;
-        - Cor: Até 4800 x 1200 dpi otimizados e 1200 X 1200 dpi de entrada.', 167, 33, NOW(), NOW());
+        - Cor: Até 4800 x 1200 dpi otimizados e 1200 X 1200 dpi de entrada.', 'FEA167', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Mensalmente, A4: Até 1000 páginas.', 168, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Mensalmente, A4: Até 1000 páginas.', 'FEA168', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Saída da primeira página em preto (A4, pronta): Velocidade máxima 17 segundos;', 169, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Saída da primeira página em preto (A4, pronta): Velocidade máxima 17 segundos;', 'FEA169', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Saída da primeira página em cores (A4, pronta): Até 24 segundos.', 170, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Saída da primeira página em cores (A4, pronta): Até 24 segundos.', 'FEA170', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('256; 24 bits.', 171, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('256; 24 bits.', 'FEA171', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('Hardware: Até 1200 x 1200 dpi; Ótica: Até 1200 dpi; Resolução de digitalização aprimorada:
-        Até 1200 dpi.', 172, 33, NOW(), NOW());
+        Até 1200 dpi.', 'FEA172', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('Papel (brochura, jato de tinta, normal), papel fotográfico, envelopes, etiquetas, cartões (saudações).
-        A4; B5; A5; A6; Envelope DL; Carta; Ofício; 4 x 6 pol.; 5 x 7 pol.; 8 x 10 pol.; Envelopes núm. 10', 173, 33, NOW(), NOW());
+        A4; B5; A5; A6; Envelope DL; Carta; Ofício; 4 x 6 pol.; 5 x 7 pol.; 8 x 10 pol.; Envelopes núm. 10', 'FEA173', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- Bandeja de entrada para 60 folhas;
         - Bandeja de saída para 25 folhas;
         - Opções de frente e verso: Frente e verso manual;
         - Alimentador de envelopes: Não;
-        - Bandejas para Papel Standard: 1.', 174, 33, NOW(), NOW());
+        - Bandejas para Papel Standard: 1.', 'FEA174', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('Capacidade máxima de entrada: Até 60 folhas ofício, Até 10 folhas Etiqueta, Até 20 folhas papel
         fotográfico, Até 20 folhas Foto 4x6, Até 20 cartões, Até 5 envelopes. Capacidade máxima de saída: Até 25
-        folhas ofício, Até 10 folhas Etiqueta, Até 20 folhas papel fotográfico, Até 20 cartões, Até 5 envelopes.', 175, 33, NOW(), NOW());
+        folhas ofício, Até 10 folhas Etiqueta, Até 20 folhas papel fotográfico, Até 20 cartões, Até 5 envelopes.', 'FEA175', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- Tricolor CZ106AB HP 662XL
         - Tricolor CZ104AB HP
         - Preto CZ103AB HP 662
-        - Preto CZ105AB HP 662XL', 176, 33, NOW(), NOW());
+        - Preto CZ105AB HP 662XL', 'FEA176', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Energy Star', 177, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Energy Star', 'FEA177', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- Emissões de potência acústica: 6,1 B(A);
-        - Emissões de Pressão Acústica: 55 dB(A).', 178, 33, NOW(), NOW());
+        - Emissões de Pressão Acústica: 55 dB(A).', 'FEA178', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('25,219 Cm', 1, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('25,219 Cm', 'FEA001', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('55,219 Cm', 2, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('55,219 Cm', 'FEA002', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('42,523 Cm', 3, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('42,523 Cm', 'FEA003', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3,6 Kg', 4, 33, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3,6 Kg', 'FEA004', 33, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('100 Nome e Números', 179, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('100 Nome e Números', 'FEA179', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('10 metros', 180, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('10 metros', 'FEA180', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 181, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA181', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Até 28 páginas', 182, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Até 28 páginas', 'FEA182', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('10 Números', 183, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('10 Números', 'FEA183', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Até 5 Vezes', 184, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Até 5 Vezes', 'FEA184', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('10 últimas', 185, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('10 últimas', 'FEA185', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 186, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA186', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 187, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA187', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('aprox 15 seg/ pág (modo original)', 188, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('aprox 15 seg/ pág (modo original)', 'FEA188', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('9.600 / 7.200 / 4.800 / 2.400 bps', 189, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('9.600 / 7.200 / 4.800 / 2.400 bps', 'FEA189', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Modifies Huffman (MH), Modifies Read (MR)', 190, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Modifies Huffman (MH), Modifies Read (MR)', 'FEA190', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Impressão térmica', 191, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Impressão térmica', 'FEA191', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Tom(DTMF)/Pulso', 192, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Tom(DTMF)/Pulso', 'FEA192', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('352 Cm', 1, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('352 Cm', 'FEA001', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('224 Cm', 2, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('224 Cm', 'FEA002', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('121 Cm', 3, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('121 Cm', 'FEA003', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2.7 Kg', 4, 34, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('2.7 Kg', 'FEA004', 34, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 181, 35, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA181', 35, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('até 20', 185, 35, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('até 20', 'FEA185', 35, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 193, 35, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA193', 35, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 194, 35, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA194', 35, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 195, 35, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA195', 35, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 197, 35, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA197', 35, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('4 Ramais', 196, 35, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('4 Ramais', 'FEA196', 35, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 198, 35, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA198', 35, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não', 199, 35, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não', 'FEA199', 35, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Redial,  Localizador de fone (Paging)', 67, 35, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Redial,  Localizador de fone (Paging)', 'FEA067', 35, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Até 10 horas', 80, 35, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Até 10 horas', 'FEA080', 35, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Até 180 horas', 81, 35, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Até 180 horas', 'FEA081', 35, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('12 meses', 6, 35, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('12 meses', 'FEA006', 35, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Infantil', 200, 36, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Infantil', 'FEA200', 36, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('01 - Tom Pequeno, 01 - Tom medio e tom grande, 01 - Prato - Suporte para Prato,
-        01 - Par de baquetas Marca Conthey By Kids', 124, 36, NOW(), NOW());
+        01 - Par de baquetas Marca Conthey By Kids', 'FEA124', 36, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('36 cm', 1, 36, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('36 cm', 'FEA001', 36, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('15 cm', 2, 36, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('15 cm', 'FEA002', 36, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('35 cm', 3, 36, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('35 cm', 'FEA003', 36, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('5 Kg', 4, 36, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('5 Kg', 'FEA004', 36, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Plastico e metal', 8, 36, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Plastico e metal', 'FEA008', 36, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('192 mm', 201, 37, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('192 mm', 'FEA201', 37, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('36 mm', 202, 37, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('36 mm', 'FEA202', 37, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('5 cm', 1, 37, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('5 cm', 'FEA001', 37, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('8,2 cm', 2, 37, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('8,2 cm', 'FEA002', 37, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('22 cm', 3, 37, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('22 cm', 'FEA003', 37, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Bateria: 3.7V 120mAh Li-Po', 70, 37, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Bateria: 3.7V 120mAh Li-Po', 'FEA070', 37, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('7-8 minutos', 203, 37, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('7-8 minutos', 'FEA203', 37, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('30 mimutos', 204, 37, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('30 mimutos', 'FEA204', 37, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('120 metros', 205, 37, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('120 metros', 'FEA205', 37, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('15 metros', 208, 37, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('15 metros', 'FEA208', 37, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- 1 Helicóptero V911 4CH.
         - 1 Controle remoto 4CH.
         - 1 Cabo usb.
@@ -3294,147 +3295,147 @@ VALUES ('- 1 Helicóptero V911 4CH.
         - 2 Baterias.
         - 1 Manual de instruções.
         - 1 Hélice traseira "extra" para reposição.
-        - 1 Conjunto de hélice principal "extra" para reposição.', 124, 37, NOW(), NOW());
+        - 1 Conjunto de hélice principal "extra" para reposição.', 'FEA124', 37, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('E.V.A. Atoxico', 8, 38, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('E.V.A. Atoxico', 'FEA008', 38, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('40 placas de 9 cm x 9 cm', 96, 38, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('40 placas de 9 cm x 9 cm', 'FEA096', 38, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Diversas', 7, 38, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Diversas', 'FEA007', 38, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Branco', 7, 39, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Branco', 'FEA007', 39, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('18 cm', 1, 39, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('18 cm', 'FEA001', 39, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('30 cm', 2, 39, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('30 cm', 'FEA002', 39, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3 pilhas AA (Não inclusas)', 70, 39, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3 pilhas AA (Não inclusas)', 'FEA070', 39, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2.7', 276, 40, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('2.7', 'FEA276', 40, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('320 x 240', 36, 40, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('320 x 240', 'FEA036', 40, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('4 canais de 21W RMS', 58, 40, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('4 canais de 21W RMS', 'FEA058', 40, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Flip Down', 211, 40, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Flip Down', 'FEA211', 40, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('USB Frontal', 157, 40, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('USB Frontal', 'FEA157', 40, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Cor vermelha', 210, 40, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Cor vermelha', 'FEA210', 40, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1 Ano', 6, 40, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1 Ano', 'FEA006', 40, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- 1 DVD H-Buster
         - 1 Controle Remoto com Bateria
         - 1 Chicote de Conexão ISO
         - 1 Kit Instalação
         - 1 Moldura de Acabamento
-        - 1 Estojo', 124, 40, NOW(), NOW());
+        - 1 Estojo', 'FEA124', 40, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('MDF', 8, 41, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('MDF', 'FEA008', 41, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Carpete e Courvin.', 92, 41, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Carpete e Courvin.', 'FEA092', 41, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('3 (Subwoofer 12" JBL Selenium Flex 12SW14A / Super Tweeter JBL Selenium ST200
-        Driver JBL Selenium D200)', 96, 41, NOW(), NOW());
+        Driver JBL Selenium D200)', 'FEA096', 41, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Couro sintético', 8, 42, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Couro sintético', 'FEA008', 42, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Único', 232, 42, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Único', 'FEA232', 42, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- 2 Capas para os bancos dianteiros
         - 1 Capa para o assento traseiro
         - 1 Capa para o encosto traseiro
-        - 4 Capas para os encostos de cabeça', 124, 42, NOW(), NOW());
+        - 4 Capas para os encostos de cabeça', 'FEA124', 42, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- Lavar somente a mão em temperatura máxima 40°C, Secagem  por  gotejamento;
         - Não alvejar/não branquear;
-        - Não secar em tambor; Não passar; Não limpar a seco.', 134, 42, NOW(), NOW());
+        - Não secar em tambor; Não passar; Não limpar a seco.', 'FEA134', 42, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('MDF', 8, 43, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('MDF', 'FEA008', 43, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Carpete e Courvin.', 92, 43, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Carpete e Courvin.', 'FEA092', 43, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('3 (Subwoofer 12" JBL Selenium Flex 12SW14A / Super Tweeter JBL Selenium ST200
-        Driver JBL Selenium D200)', 96, 43, NOW(), NOW());
+        Driver JBL Selenium D200)', 'FEA096', 43, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('54 mm', 1, 44, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('54 mm', 'FEA001', 44, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('168 mm', 2, 44, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('168 mm', 'FEA002', 44, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('255 mm', 3, 44, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('255 mm', 'FEA003', 44, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1,60 Kg', 4, 44, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1,60 Kg', 'FEA004', 44, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Taramps', 69, 44, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Taramps', 'FEA069', 44, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('4', 214, 44, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('4', 'FEA214', 44, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Brasil', 98, 44, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Brasil', 'FEA098', 44, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('TS-800x4', 10, 44, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('TS-800x4', 'FEA010', 44, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('12 Meses', 6, 44, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('12 Meses', 'FEA006', 44, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Doméstico / Hobby', 102, 45, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Doméstico / Hobby', 'FEA102', 45, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('142', 96, 45, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('142', 'FEA096', 45, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Trabalhos manuais, apertar, parafusar e desparafusar.', 67, 45, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Trabalhos manuais, apertar, parafusar e desparafusar.', 'FEA067', 45, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('6.4 cm', 1, 45, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('6.4 cm', 'FEA001', 45, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('24 cm', 2, 45, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('24 cm', 'FEA002', 45, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('31.5 cm', 3, 45, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('31.5 cm', 'FEA003', 45, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1.5 kg', 4, 45, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1.5 kg', 'FEA004', 45, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3 meses', 6, 45, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3 meses', 'FEA006', 45, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- 16 Chaves Allen
         - 20 bits
         - 2 mini Chave de fenda
@@ -3447,24 +3448,24 @@ VALUES ('- 16 Chaves Allen
         - 1 Fita isolante
         - 1 Chave porta Bits
         - 6 Chave de fenda de precisão
-        - 90 pequenas peças ( parafusos, porcas e conectores)', 124, 45, NOW(), NOW());
+        - 90 pequenas peças ( parafusos, porcas e conectores)', 'FEA124', 45, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Bracol Comercial e Importadora Ltda', 69, 45, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Bracol Comercial e Importadora Ltda', 'FEA069', 45, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('(47) 3373-0648', 72, 45, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('(47) 3373-0648', 'FEA072', 45, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Aço cromo vanádio e aço carbono inoxidável', 8, 46, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Aço cromo vanádio e aço carbono inoxidável', 'FEA008', 46, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Termoplástico', 262, 46, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Termoplástico', 'FEA262', 46, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('110', 96, 46, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('110', 'FEA096', 46, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- 01 Alicate de corte diagonal 6"
         - 01 Alicate de bico meia-cana 8"
         - 01 Alicate bomba d´água 10"
@@ -3495,20 +3496,20 @@ VALUES ('- 01 Alicate de corte diagonal 6"
         - 11 Soquetes sextavados com encaixe de 1/4": 4 – 5 – 6 – 7 – 8 – 9 – 10 – 11 – 12 – 13 – 14 mm
         - 01 Suporte para as chaves hexagonais
         - 04 Suportes para os bits
-        - 01 Maleta com berços e identificação de medidas', 124, 46, NOW(), NOW());
+        - 01 Maleta com berços e identificação de medidas', 'FEA124', 46, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('12 meses (3 meses de garantia legal por lei, contando a partir da data de emissão
         da Nota Fiscal de Venda e 9 meses de garantia concedido pelo fabricante contra
-        defeito de fabricação)', 6, 46, NOW(), NOW());
+        defeito de fabricação)', 'FEA006', 46, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Mayle', 69, 46, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Mayle', 'FEA069', 46, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('110', 96, 47, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('110', 'FEA096', 47, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
 VALUES ('- 1 Furadeira de impacto
         - 65 Buchas
         - 1 Chave Magnética
@@ -3527,505 +3528,505 @@ VALUES ('- 1 Furadeira de impacto
         - 8 Soquetes
         - 1 Martelo
         - 1 Limitador
-        - 1 Mandril', 124, 47, NOW(), NOW());
+        - 1 Mandril', 'FEA124', 47, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('2 velocidades: Velocidade 1: 2200 RPM, Velocidade 2: 2600 RPM', 68, 47, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('2 velocidades: Velocidade 1: 2200 RPM, Velocidade 2: 2600 RPM', 'FEA068', 47, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('1 Ano', 6, 47, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('1 Ano', 'FEA006', 47, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('220 Volts', 61, 47, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('220 Volts', 'FEA061', 47, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('100% Algodão', 8, 48, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('100% Algodão', 'FEA008', 48, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 230, 48, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA230', 48, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Água fria', 231, 48, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Água fria', 'FEA231', 48, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('M, G, GG', 232, 48, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('M, G, GG', 'FEA232', 48, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Redonda', 234, 48, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Redonda', 'FEA234', 48, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('100% Algodão', 8, 49, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('100% Algodão', 'FEA008', 49, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 230, 49, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA230', 49, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Água fria', 231, 49, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Água fria', 'FEA231', 49, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('M, G, GG', 232, 49, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('M, G, GG', 'FEA232', 49, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Redonda', 234, 49, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Redonda', 'FEA234', 49, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Com imagens diversas', 131, 49, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Com imagens diversas', 'FEA131', 49, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('100% Algodão', 8, 50, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('100% Algodão', 'FEA008', 50, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 230, 50, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA230', 50, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Água fria', 231, 50, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Água fria', 'FEA231', 50, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('G', 232, 50, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('G', 'FEA232', 50, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Polo', 234, 50, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Polo', 'FEA234', 50, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Manga Comprida', 233, 50, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Manga Comprida', 'FEA233', 50, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('40 Cm', 236, 50, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('40 Cm', 'FEA236', 50, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('59 Cm', 238, 50, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('59 Cm', 'FEA238', 50, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('66 Cm', 237, 50, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('66 Cm', 'FEA237', 50, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 230, 51, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA230', 51, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Comum', 231, 51, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Comum', 'FEA231', 51, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('44', 232, 51, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('44', 'FEA232', 51, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('45 Cm', 239, 51, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('45 Cm', 'FEA239', 51, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('55,5 Cm', 240, 51, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('55,5 Cm', 'FEA240', 51, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('33,5 Cm', 241, 51, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('33,5 Cm', 'FEA241', 51, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('28,5 Cm', 243, 51, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('28,5 Cm', 'FEA243', 51, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('38,5 Cm', 244, 51, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('38,5 Cm', 'FEA244', 51, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('86', 245, 51, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('86', 'FEA245', 51, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Jeans', 8, 51, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Jeans', 'FEA008', 51, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Preto', 38, 51, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Preto', 'FEA038', 51, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('RIP STOP SUPER (35% Algodão / 65% Poliester)', 8, 52, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('RIP STOP SUPER (35% Algodão / 65% Poliester)', 'FEA008', 52, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Preto', 38, 52, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Preto', 'FEA038', 52, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 230, 52, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA230', 52, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Comum', 231, 52, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Comum', 'FEA231', 52, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('44', 232, 52, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('44', 'FEA232', 52, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('45 Cm', 239, 52, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('45 Cm', 'FEA239', 52, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('55,5 Cm', 240, 52, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('55,5 Cm', 'FEA240', 52, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('33,5 Cm', 241, 52, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('33,5 Cm', 'FEA241', 52, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('28,5 Cm', 243, 52, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('28,5 Cm', 'FEA243', 52, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('38,5 Cm', 244, 52, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('38,5 Cm', 'FEA244', 52, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('86', 245, 52, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('86', 'FEA245', 52, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3', 96, 53, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3', 'FEA096', 53, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3 Cinto em Gorgorão - Café/Troy ', 124, 53, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3 Cinto em Gorgorão - Café/Troy ', 'FEA124', 53, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Gorgorão (cinta) e Metal (fivela)', 8, 53, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Gorgorão (cinta) e Metal (fivela)', 'FEA008', 53, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Preto, Café, Taupe', 38, 53, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Preto, Café, Taupe', 'FEA038', 53, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sandro Moscoli', 69, 53, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sandro Moscoli', 'FEA069', 53, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Masculino', 97, 54, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Masculino', 'FEA097', 54, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Dia a Dia', 102, 54, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Dia a Dia', 'FEA102', 54, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sintético', 8, 54, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sintético', 'FEA008', 54, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Cardaço', 247, 54, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Cardaço', 'FEA247', 54, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('42', 248, 54, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('42', 'FEA248', 54, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Engineered mesh', 249, 54, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Engineered mesh', 'FEA249', 54, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Com lâminas de polímero', 250, 54, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Com lâminas de polímero', 'FEA250', 54, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('331 gramas', 4, 54, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('331 gramas', 'FEA004', 54, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Adiwear, Fitframe', 30, 54, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Adiwear, Fitframe', 'FEA030', 54, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3 meses (Contra Defeito de Fabricação)', 6, 54, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3 meses (Contra Defeito de Fabricação)', 'FEA006', 54, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Masculino', 97, 55, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Masculino', 'FEA097', 55, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Dia a Dia', 102, 55, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Dia a Dia', 'FEA102', 55, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sintético', 8, 55, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sintético', 'FEA008', 55, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Cardaço', 247, 55, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Cardaço', 'FEA247', 55, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('42', 248, 55, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('42', 'FEA248', 55, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Engineered mesh', 249, 55, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Engineered mesh', 'FEA249', 55, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Com lâminas de polímero', 250, 55, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Com lâminas de polímero', 'FEA250', 55, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('331 gramas', 4, 55, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('331 gramas', 'FEA004', 55, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Adiwear, Fitframe', 30, 55, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Adiwear, Fitframe', 'FEA030', 55, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3 meses (Contra Defeito de Fabricação)', 6, 55, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3 meses (Contra Defeito de Fabricação)', 'FEA006', 55, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Masculino', 97, 56, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Masculino', 'FEA097', 56, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Dia a Dia', 102, 56, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Dia a Dia', 'FEA102', 56, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sintético', 8, 56, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sintético', 'FEA008', 56, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Cardaço', 247, 56, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Cardaço', 'FEA247', 56, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('42', 248, 56, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('42', 'FEA248', 56, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Engineered mesh', 249, 56, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Engineered mesh', 'FEA249', 56, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Com lâminas de polímero', 250, 56, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Com lâminas de polímero', 'FEA250', 56, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('331 gramas', 4, 56, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('331 gramas', 'FEA004', 56, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Adiwear, Fitframe', 30, 56, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Adiwear, Fitframe', 'FEA030', 56, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3 meses (Contra Defeito de Fabricação)', 6, 56, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3 meses (Contra Defeito de Fabricação)', 'FEA006', 56, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Masculino', 97, 57, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Masculino', 'FEA097', 57, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Dia a Dia', 102, 57, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Dia a Dia', 'FEA102', 57, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Couro sintético', 8, 57, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Couro sintético', 'FEA008', 57, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Cardaço', 247, 57, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Cardaço', 'FEA247', 57, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('42', 248, 57, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('42', 'FEA248', 57, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Engineered mesh', 249, 57, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Engineered mesh', 'FEA249', 57, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Com lâminas de polímero', 250, 57, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Com lâminas de polímero', 'FEA250', 57, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('331 gramas', 4, 57, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('331 gramas', 'FEA004', 57, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3 meses (Contra Defeito de Fabricação)', 6, 57, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3 meses (Contra Defeito de Fabricação)', 'FEA006', 57, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Feminino', 97, 58, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Feminino', 'FEA097', 58, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Eventos de gala', 102, 58, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Eventos de gala', 'FEA102', 58, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sintético', 8, 58, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sintético', 'FEA008', 58, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Encaixe', 247, 58, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Encaixe', 'FEA247', 58, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('38', 248, 58, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('38', 'FEA248', 58, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('331 gramas', 4, 58, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('331 gramas', 'FEA004', 58, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3 meses (Contra Defeito de Fabricação)', 6, 58, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3 meses (Contra Defeito de Fabricação)', 'FEA006', 58, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3 Cm', 255, 58, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3 Cm', 'FEA255', 58, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('15 Cm', 256, 58, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('15 Cm', 'FEA256', 58, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Masculino', 97, 59, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Masculino', 'FEA097', 59, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Dia a Dia', 102, 59, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Dia a Dia', 'FEA102', 59, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Couro legitimo', 8, 59, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Couro legitimo', 'FEA008', 59, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Cardaço', 247, 59, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Cardaço', 'FEA247', 59, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('42', 248, 59, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('42', 'FEA248', 59, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Engineered mesh', 249, 59, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Engineered mesh', 'FEA249', 59, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Com lâminas de polímero', 250, 59, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Com lâminas de polímero', 'FEA250', 59, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('331 gramas', 4, 59, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('331 gramas', 'FEA004', 59, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('3 meses (Contra Defeito de Fabricação)', 6, 59, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('3 meses (Contra Defeito de Fabricação)', 'FEA006', 59, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Invicta', 69, 60, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Invicta', 'FEA069', 60, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Caixa oficial da Invicta', 257, 60, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Caixa oficial da Invicta', 'FEA257', 60, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('6981', 10, 60, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('6981', 'FEA010', 60, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('49 mm', 258, 60, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('49 mm', 'FEA258', 60, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('17 mm', 259, 60, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('17 mm', 'FEA259', 60, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('26mm', 260, 60, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('26mm', 'FEA260', 60, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Preto', 261, 60, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Preto', 'FEA261', 60, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Aço Inoxidável', 262, 60, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Aço Inoxidável', 'FEA262', 60, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Cristal Mineral', 263, 60, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Cristal Mineral', 'FEA263', 60, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Poliuretano', 264, 60, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Poliuretano', 'FEA264', 60, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('100 metros', 265, 60, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('100 metros', 'FEA265', 60, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Quartz Suiço (Caliber: 5040.D)', 267, 60, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Quartz Suiço (Caliber: 5040.D)', 'FEA267', 60, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('12 meses', 6, 60, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('12 meses', 'FEA006', 60, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 268, 61, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA268', 61, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 269, 61, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA269', 61, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('4 Modelos (2 Digitais e 2 Analogicos)', 270, 61, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('4 Modelos (2 Digitais e 2 Analogicos)', 'FEA270', 61, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim (apenas android)', 271, 61, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim (apenas android)', 'FEA271', 61, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim (avisa quando o celular se distancia do relógio)', 272, 61, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim (avisa quando o celular se distancia do relógio)', 'FEA272', 61, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 273, 61, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA273', 61, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 274, 61, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA274', 61, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Sim', 275, 61, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Sim', 'FEA275', 61, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não informado', 69, 62, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não informado', 'FEA069', 62, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Estojo', 257, 62, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Estojo', 'FEA257', 62, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Ref: 6981', 10, 62, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Ref: 6981', 'FEA010', 62, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('49 mm', 258, 62, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('49 mm', 'FEA258', 62, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('17 mm', 259, 62, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('17 mm', 'FEA259', 62, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('26mm', 260, 62, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('26mm', 'FEA260', 62, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Preto', 261, 62, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Preto', 'FEA261', 62, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Aço Inoxidável', 262, 62, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Aço Inoxidável', 'FEA262', 62, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Cristal Mineral', 263, 62, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Cristal Mineral', 'FEA263', 62, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Poliuretano', 264, 62, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Poliuretano', 'FEA264', 62, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('100 metros', 265, 62, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('100 metros', 'FEA265', 62, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Quartz Suiço (Caliber: 5040.D)', 267, 62, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Quartz Suiço (Caliber: 5040.D)', 'FEA267', 62, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('12 meses', 6, 62, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('12 meses', 'FEA006', 62, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Não informado', 69, 63, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Não informado', 'FEA069', 63, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Estojo', 257, 63, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Estojo', 'FEA257', 63, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Ref: 6981', 10, 63, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Ref: 6981', 'FEA010', 63, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('49 mm', 258, 63, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('49 mm', 'FEA258', 63, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('17 mm', 259, 63, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('17 mm', 'FEA259', 63, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('26 mm', 260, 63, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('26 mm', 'FEA260', 63, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Preto', 261, 63, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Preto', 'FEA261', 63, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Aço Inoxidável', 262, 63, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Aço Inoxidável', 'FEA262', 63, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Cristal Mineral', 263, 63, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Cristal Mineral', 'FEA263', 63, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Couro', 264, 63, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Couro', 'FEA264', 63, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('100 metros', 265, 63, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('100 metros', 'FEA265', 63, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Quartz Suiço (Caliber: 5040.D)', 267, 63, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Quartz Suiço (Caliber: 5040.D)', 'FEA267', 63, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('12 meses', 6, 63, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('12 meses', 'FEA006', 63, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Couro', 9, 64, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Couro', 'FEA009', 64, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Ajsutavel de 15 a 23 Cm', 232, 64, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Ajsutavel de 15 a 23 Cm', 'FEA232', 64, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Borracha (Pulseira) e Metal (feicho)', 9, 65, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Borracha (Pulseira) e Metal (feicho)', 'FEA009', 65, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Ajsutavel de 19 Cm', 232, 65, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Ajsutavel de 19 Cm', 'FEA232', 65, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Metal com detalhes em pedras', 9, 66, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Metal com detalhes em pedras', 'FEA009', 66, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Ajsutavel de 15 a 23 Cm', 232, 66, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Ajsutavel de 15 a 23 Cm', 'FEA232', 66, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('10', 96, 67, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('10', 'FEA096', 67, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('10 Resmas de papel A4 75 gramas Reciclado (cada resma com 500 folhas)', 124, 67, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('10 Resmas de papel A4 75 gramas Reciclado (cada resma com 500 folhas)', 'FEA124', 67, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Off Set, Tipografia, Serigrafia, Relevo Seco, Hot Stamping ,Jato de tinta e Laser', 191, 67, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Off Set, Tipografia, Serigrafia, Relevo Seco, Hot Stamping ,Jato de tinta e Laser', 'FEA191', 67, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('6', 96, 68, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('6', 'FEA096', 68, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('05 CARIMBOS PERSONALIZADOS AUTOMÁTICOS + 01 TUBO DE TINTA 30ml', 124, 68, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('05 CARIMBOS PERSONALIZADOS AUTOMÁTICOS + 01 TUBO DE TINTA 30ml', 'FEA124', 68, NOW(), NOW());
 
-INSERT INTO product_features (feature_value, feature_id, product_id, created, modified)
-VALUES ('Diversas', 7, 68, NOW(), NOW());
+INSERT INTO product_features (feature_value, feature_intern_code, product_id, created, modified)
+VALUES ('Diversas', 'FEA007', 68, NOW(), NOW());
 
 ## 4 registros na tabela "media_types" --------------------------------------------------
 

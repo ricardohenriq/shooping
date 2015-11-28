@@ -56,4 +56,19 @@ class InsertComponent extends Component
 
         return $featuresArray;
     }
+
+    public function createMassMediasEntities($mediasArray, $productID)
+    {
+        $mediasEntities = [];
+
+        foreach($mediasArray as $media){
+            $mediaEntity = TableRegistry::get('Medias')->newEntity();
+            $mediaEntity->product_id = $productID;
+            $mediaEntity->media_type_id = 2;
+            $mediaEntity->path = $media['tmp_name'];
+            $mediasEntities[] = $mediaEntity;
+        }
+
+        return $mediasEntities;
+    }
 }

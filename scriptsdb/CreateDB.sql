@@ -95,8 +95,8 @@ CREATE TABLE features (
 
 CREATE TABLE product_features (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  feature_value VARCHAR(255) NOT NULL UNIQUE,
-  feature_intern_code CHAR(6) NOT NULL UNIQUE,
+  feature_value VARCHAR(255) NOT NULL,
+  feature_intern_code CHAR(6) NOT NULL,
   product_id INT NOT NULL,
   created DATETIME,
   modified DATETIME,
