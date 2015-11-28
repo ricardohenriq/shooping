@@ -7,8 +7,8 @@
  * Independente e não relaciona com qualquer outra função.
  */
 $("#product-img").elevateZoom({
-    galleryActiveClass: 'active',
-    gallery: 'product-gallery',
-    cursor: 'crosshair',
-    zoomType: 'inner'
+    galleryActiveClass:'active',
+    gallery:'product-gallery',
+    cursor:'crosshair',
+    zoomType:'inner'
 });

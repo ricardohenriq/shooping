@@ -13,17 +13,16 @@ class InsertComponent extends Component
         $media->product_id = $productId;
         $media->path = $path;
 
-        if(TableRegistry::get('Medias')->save($media)){
+        if (TableRegistry::get('Medias')->save($media)) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
     }
 
     public function insertMassEntities($entities, $entityName)
     {
-        foreach($entities as $entity){
+        foreach ($entities as $entity) {
             TableRegistry::get($entityName)->save($entity);
         }
     }
@@ -32,7 +31,7 @@ class InsertComponent extends Component
     {
         $featuresEntities = [];
 
-        foreach($featuresArray as $feature){
+        foreach ($featuresArray as $feature) {
             $featureEntity = TableRegistry::get('ProductFeatures')->newEntity();
             $featureEntity->product_id = $productID;
             $featureEntity->feature_value = $feature['feature_value'];
@@ -47,8 +46,8 @@ class InsertComponent extends Component
     {
         $featuresArray = [];
 
-        foreach($formValues as $key => $field){
-            if(stripos($key, 'FEA') === 0){
+        foreach ($formValues as $key => $field) {
+            if (stripos($key, 'FEA') === 0) {
                 $featuresArray[] = ['feature_intern_code' => $key,
                     'feature_value' => $formValues[$key]];
             }
@@ -61,14 +60,32 @@ class InsertComponent extends Component
     {
         $mediasEntities = [];
 
-        foreach($mediasArray as $media){
+        foreach ($mediasArray as $media) {
             $mediaEntity = TableRegistry::get('Medias')->newEntity();
             $mediaEntity->product_id = $productID;
-            $mediaEntity->media_type_id = 2;
-            $mediaEntity->path = $media['tmp_name'];
+            $mediaEntity->media_type_id = $media['media_type_id'];
+            $mediaEntity->path = $media['url'];
             $mediasEntities[] = $mediaEntity;
         }
 
         return $mediasEntities;
+    }
+
+    public function addKeyValueToArray($array, $key, $value)
+    {
+        foreach ($array as &$element) {
+            $element[$key] = $value;
+        }
+
+        return $array;
+    }
+
+    public function replaceArrayValue($array, $key, $newString, $oldString)
+    {
+        foreach ($array as &$element) {
+            $element[$key] =  str_replace($oldString, $newString, $element[$key]);
+        }
+
+        return $array;
     }
 }

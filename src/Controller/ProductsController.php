@@ -399,30 +399,23 @@ class ProductsController extends AppController
                 $featuresEntities = $this->Insert->createMassFeaturesEntities($featuresArray, $productSaved['id']);
                 $this->Insert->insertMassEntities($featuresEntities, 'ProductFeatures');
 
-                $mediasEntities = $this->Insert->createMassMediasEntities($this->request->data['file'], $productSaved['id']);
+                $ROOT_PATH = dirname(ROOT) . DS;
+                $PRODUCTS_IMAGES_FOLDER = $ROOT_PATH . 'ShoppingResources' . DS . 'img' . DS . $productSaved['id'];
+                $imageUploaded = $this->UploadFile->uploadFiles($PRODUCTS_IMAGES_FOLDER, $this->request->data['file']);
+                $imageUploaded = $this->Insert->addKeyValueToArray($imageUploaded, 'media_type_id', 1);
+                $imageUploaded[0]['media_type_id'] = 2;
+                $imageUploaded = $this->Insert->replaceArrayValue($imageUploaded, 'url', 'http://localhost/PROJETOS/', $ROOT_PATH);
+                $imageUploaded = $this->Insert->replaceArrayValue($imageUploaded, 'url', '/', '\\');
 
-                ob_start();
+                $mediasEntities = $this->Insert->createMassMediasEntities($imageUploaded, $productSaved['id']);
+                $this->Insert->insertMassEntities($mediasEntities, 'Medias');
+
+                /*ob_start();
                 var_dump($mediasEntities);
                 $result = ob_get_clean();
                 $file = 'C:\xampp\htdocs\PROJETOS\Shopping\PRINT_VAR_DUMP.txt';
-                file_put_contents($file, $result);
+                file_put_contents($file, $result);*/
             }
-            /*$mediaTypeId = 1;
-            $productId = 2;
-            $path = $this->request->data['Media']['file']['tmp_name'];
-            $inserted = $this->Insert->insertMedia($mediaTypeId, $productId, $path);
-
-            //-------------------------------------------------------------------------
-
-            $stringSeparator = '_';
-            $storeName = 'Loja Teste';
-            $productName = 'Produto Teste';
-            $saved = $this->UploadFile->saveFileLFS($stringSeparator, $storeName,
-                $productName);
-
-            if($inserted === true && $saved === true){
-                $this->Flash->set(__('Upload successful!'));
-            }*/
         }
     }
 

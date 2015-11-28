@@ -156,11 +156,12 @@
 }
 
 .thumb-product{
-    max-height:75px
+    height:75px;
+    width:75px
 }
 
 .full-product{
-    max-height:400px
+    max-width:550px
 }
 
 #product-gallery img{
