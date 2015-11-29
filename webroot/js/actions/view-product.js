@@ -14,6 +14,7 @@ $('#product-img').elevateZoom({
 });
 
 $('body').on('mouseenter', '.zoomWindow', function(){
+	$(this).hide();
     var dimensions = getElementHeightWidth(this);
     hideElementByDimension(dimensions, this);
 });
@@ -31,7 +32,7 @@ function getElementHeightWidth(element){
 }
 
 function hideElementByDimension(dimensions, element){
-    if(dimensions['height'] < 550 || dimensions['width'] < 550){
-        $(element).hide();
+    if(dimensions['height'] >= 550 || dimensions['width'] >= 550){
+        $(element).show();
     }
 }
