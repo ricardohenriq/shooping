@@ -161,7 +161,8 @@
 }
 
 .full-product{
-    max-width:550px
+    width:550px;
+    height:550px
 }
 
 #product-gallery img{

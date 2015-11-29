@@ -2,11 +2,11 @@
     <?= $this->Html->image($productMainImage['path'], ['id' => 'product-img', 'data-zoom-image'=> $productMainImage['path'], 'class' => 'full-product']) ?>
     <div id="product-gallery">
         <a href="#" data-image="<?= $productMainImage['path'] ?>" data-zoom-image="<?= $productMainImage['path'] ?>" class="active">
-            <?= $this->Html->image($productMainImage['path'], ['id' => 'product-img', 'class' => 'thumb-product']) ?>
+            <?= $this->Html->image($productMainImage['path'], ['id' => 'product-img', 'class' => 'thumb-product elevatezoom-gallery']) ?>
         </a>
         <?php foreach($productImages as $productImage): ?>
             <a href="#" data-image="<?= $productImage['path'] ?>" data-zoom-image="<?= $productImage['path'] ?>">
-                <?= $this->Html->image($productImage['path'], ['id' => 'product-img', 'class' => 'thumb-product']) ?>
+                <?= $this->Html->image($productImage['path'], ['class' => 'thumb-product']) ?>
             </a>
         <?php endforeach; ?>
     </div>
