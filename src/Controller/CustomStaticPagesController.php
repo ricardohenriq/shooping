@@ -135,19 +135,19 @@ class CustomStaticPagesController extends AppController
 
         //-------------------------------------------------------------------------
 
-        //$offerBannersQuantity = 5;
-       // $offerBanners = $this->Search->listOfferBanners($offerBannersQuantity);
-        //$this->set('offerBanners', $offerBanners);
-
-        //-------------------------------------------------------------------------
-
         $offers = TableRegistry::get('Offers');
         $offers = $offers->find()
             ->select(['id', 'product_id', 'date_end', 'name', 'description'])
             ->contain([
                 'Products' => function($q) {
                     //return $q->autoFields(true);
-                    return $q->select(['id', 'product_name', 'price', 'old_price']);
+                    return $q->select(['id', 'product_name', 'price', 'old_price'])
+                        ->contain([
+                            'Medias' => function($q){
+                                return $q->select(['product_id', 'path'])
+                                    ->where(['media_type_id' => 3]);
+                            }
+                        ]);
                 },
                 'OfferBanners' => function($q) {
                     //return $q->autoFields(true);
@@ -155,6 +155,12 @@ class CustomStaticPagesController extends AppController
                 }
             ])->hydrate(false)->toArray();
         $this->set('offers', $offers);
+
+        ob_start();
+        var_dump($offers);
+        $result = ob_get_clean();
+        $file = 'C:\xampp\htdocs\PROJETOS\Shopping\PRINT_VAR_DUMP.txt';
+        file_put_contents($file, $result);
 
         //-------------------------------------------------------------------------
 

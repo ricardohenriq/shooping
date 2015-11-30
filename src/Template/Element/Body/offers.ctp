@@ -7,7 +7,7 @@
                 <li>
                     <div class="item-offer">
                         <div class="product-thumb">
-                            <?= $this->Html->image('products/product2.jpg', ['alt' => $offer['product']['product_name'], 'title' => $offer['product']['product_name'], 'url' => ['controller' => 'Products', 'action' => 'view', $offer['product']['id']]]) ?>
+                            <?= $this->Html->image($offer['product']['medias'][0]['path'], ['alt' => $offer['product']['product_name'], 'title' => $offer['product']['product_name'], 'url' => ['controller' => 'Products', 'action' => 'view', $offer['product']['id']]]) ?>
                         </div>
                         <div class="product-description">
                             <div>

@@ -43,6 +43,9 @@ class ProductsTable extends Table
         $this->hasMany('Offers', [
             'foreignKey' => 'product_id'
         ]);
+        $this->hasMany('Medias', [
+            'foreignKey' => 'product_id'
+        ]);
     }
 
     /**

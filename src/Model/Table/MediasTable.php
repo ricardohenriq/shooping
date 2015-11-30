@@ -31,6 +31,10 @@ class MediasTable extends Table
             'foreignKey' => 'media_type_id',
             'joinType' => 'INNER'
         ]);
+        $this->belongsTo('Products', [
+            'foreignKey' => 'product_id',
+            'joinType' => 'INNER'
+        ]);
     }
 
     /**
