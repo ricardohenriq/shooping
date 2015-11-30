@@ -5103,12 +5103,111 @@ VALUES (2, 'Respondida', NOW(), NOW());
 ## 12 registros na tabela "news" --------------------------------------------------------
 
 INSERT INTO news(store_id, name, description, created, modified)
-VALUES (, '', '', NOW(), NOW());
+VALUES (1, 'Noticia 1 Noticia 1 Noticia 1 Noticia 1 Noticia 1 Noticia 1', '
+	Descrição 1: Descrição 1 Descrição 1 Descrição 1 Descrição 1 Descrição 1 
+	Descrição 1 Descrição 1 Descrição 1 Descrição 1 Descrição 1 Descrição 1 
+	Descrição 1 Descrição 1 Descrição 1 Descrição 1 Descrição 1 Descrição 1 
+	Descrição 1 Descrição 1 Descrição 1 Descrição 1 Descrição 1 Descrição 1', NOW(), NOW());
 
-## 12 registros na tabela "new_banners" --------------------------------------------------
+INSERT INTO news(store_id, name, description, created, modified)
+VALUES (2, 'Noticia 2 Noticia 2 Noticia 2 Noticia 2 Noticia 2 Noticia 2', '
+	Descrição 2: Descrição 2 Descrição 2 Descrição 2 Descrição 2 Descrição 2 
+	Descrição 2 Descrição 2 Descrição 2 Descrição 2 Descrição 2 Descrição 2 
+	Descrição 2 Descrição 2 Descrição 2 Descrição 2 Descrição 2 Descrição 2 
+	Descrição 2 Descrição 2 Descrição 2 Descrição 2 Descrição 2 Descrição 2', NOW(), NOW());
+
+INSERT INTO news(store_id, name, description, created, modified)
+VALUES (3, 'Noticia 3 Noticia 3 Noticia 3 Noticia 3 Noticia 3 Noticia 3', '
+	Descrição 3: Descrição 3 Descrição 3 Descrição 3 Descrição 3 Descrição 3 
+	Descrição 3 Descrição 3 Descrição 3 Descrição 3 Descrição 3 Descrição 3 
+	Descrição 3 Descrição 3 Descrição 3 Descrição 3 Descrição 3 Descrição 3 
+	Descrição 3 Descrição 3 Descrição 3 Descrição 3 Descrição 3 Descrição 3', NOW(), NOW());
+
+INSERT INTO news(store_id, name, description, created, modified)
+VALUES (4, 'Noticia 4 Noticia 4 Noticia 4 Noticia 4 Noticia 4 Noticia 4', '
+	Descrição 4: Descrição 4 Descrição 4 Descrição 4 Descrição 4 Descrição 4 
+	Descrição 4 Descrição 4 Descrição 4 Descrição 4 Descrição 4 Descrição 4 
+	Descrição 4 Descrição 4 Descrição 4 Descrição 4 Descrição 4 Descrição 4 
+	Descrição 4 Descrição 4 Descrição 4 Descrição 4 Descrição 4 Descrição 4', NOW(), NOW());
+
+INSERT INTO news(store_id, name, description, created, modified)
+VALUES (5, 'Noticia 5 Noticia 5 Noticia 5 Noticia 5 Noticia 5 Noticia 5', '
+	Descrição 5: Descrição 5 Descrição 5 Descrição 5 Descrição 5 Descrição 5 
+	Descrição 5 Descrição 5 Descrição 5 Descrição 5 Descrição 5 Descrição 5 
+	Descrição 5 Descrição 5 Descrição 5 Descrição 5 Descrição 5 Descrição 5 
+	Descrição 5 Descrição 5 Descrição 5 Descrição 5 Descrição 5 Descrição 5', NOW(), NOW());
+
+INSERT INTO news(store_id, name, description, created, modified)
+VALUES (1, 'Noticia 6 Noticia 6 Noticia 6 Noticia 6 Noticia 6 Noticia 6', '
+	Descrição 6: Descrição 6 Descrição 6 Descrição 6 Descrição 6 Descrição 6 
+	Descrição 6 Descrição 6 Descrição 6 Descrição 6 Descrição 6 Descrição 6 
+	Descrição 6 Descrição 6 Descrição 6 Descrição 6 Descrição 6 Descrição 6 
+	Descrição 6 Descrição 6 Descrição 6 Descrição 6 Descrição 6 Descrição 6', NOW(), NOW());
+
+INSERT INTO news(store_id, name, description, created, modified)
+VALUES (2, 'Noticia 7 Noticia 7 Noticia 7 Noticia 7 Noticia 7 Noticia 7', '
+	Descrição 7: Descrição 7 Descrição 7 Descrição 7 Descrição 7 Descrição 7 
+	Descrição 7 Descrição 7 Descrição 7 Descrição 7 Descrição 7 Descrição 7 
+	Descrição 7 Descrição 7 Descrição 7 Descrição 7 Descrição 7 Descrição 7 
+	Descrição 7 Descrição 7 Descrição 7 Descrição 7 Descrição 7 Descrição 7', NOW(), NOW());
+
+INSERT INTO news(store_id, name, description, created, modified)
+VALUES (3, 'Noticia 8 Noticia 8 Noticia 8 Noticia 8 Noticia 8 Noticia 8', '
+	Descrição 8: Descrição 8 Descrição 8 Descrição 8 Descrição 8 Descrição 8 
+	Descrição 8 Descrição 8 Descrição 8 Descrição 8 Descrição 8 Descrição 8 
+	Descrição 8 Descrição 8 Descrição 8 Descrição 8 Descrição 8 Descrição 8 
+	Descrição 8 Descrição 8 Descrição 8 Descrição 8 Descrição 8 Descrição 8', NOW(), NOW());
+
+INSERT INTO news(store_id, name, description, created, modified)
+VALUES (4, 'Noticia 9 Noticia 9 Noticia 9 Noticia 9 Noticia 9 Noticia 9', '
+	Descrição 9: Descrição 9 Descrição 9 Descrição 9 Descrição 9 Descrição 9 
+	Descrição 9 Descrição 9 Descrição 9 Descrição 9 Descrição 9 Descrição 9 
+	Descrição 9 Descrição 9 Descrição 9 Descrição 9 Descrição 9 Descrição 9 
+	Descrição 9 Descrição 9 Descrição 9 Descrição 9 Descrição 9 Descrição 9', NOW(), NOW());
+
+INSERT INTO news(store_id, name, description, created, modified)
+VALUES (5, 'Noticia 10 Noticia 10 Noticia 10 Noticia 10 Noticia 10 Noticia 10', '
+	Descrição 10: Descrição 10 Descrição 10 Descrição 10 Descrição 10 Descrição 10 
+	Descrição 10 Descrição 10 Descrição 10 Descrição 10 Descrição 10 Descrição 10 
+	Descrição 10 Descrição 10 Descrição 10 Descrição 10 Descrição 10 Descrição 10 
+	Descrição 10 Descrição 10 Descrição 10 Descrição 10 Descrição 10 Descrição 10', NOW(), NOW());
+
+INSERT INTO news(store_id, name, description, created, modified)
+VALUES (1, 'Noticia 11 Noticia 11 Noticia 11 Noticia 11 Noticia 11 Noticia 11', '
+	Descrição 11: Descrição 11 Descrição 11 Descrição 11 Descrição 11 Descrição 11 
+	Descrição 11 Descrição 11 Descrição 11 Descrição 11 Descrição 11 Descrição 11 
+	Descrição 11 Descrição 11 Descrição 11 Descrição 11 Descrição 11 Descrição 11 
+	Descrição 11 Descrição 11 Descrição 11 Descrição 11 Descrição 11 Descrição 11', NOW(), NOW());
+
+INSERT INTO news(store_id, name, description, created, modified)
+VALUES (2, 'Noticia 12 Noticia 12 Noticia 12 Noticia 12 Noticia 12 Noticia 12', '
+	Descrição 12: Descrição 12 Descrição 12 Descrição 12 Descrição 12 Descrição 12 
+	Descrição 12 Descrição 12 Descrição 12 Descrição 12 Descrição 12 Descrição 12 
+	Descrição 12 Descrição 12 Descrição 12 Descrição 12 Descrição 12 Descrição 12 
+	Descrição 12 Descrição 12 Descrição 12 Descrição 12 Descrição 12 Descrição 12', NOW(), NOW());
+
+## 7 registros na tabela "new_banners" --------------------------------------------------
 
 INSERT INTO new_banners(path, new_id, created, modified)
-VALUES ('', , NOW(), NOW());
+VALUES ('http://localhost/PROJETOS/ShoppingResources/news/new.png', 1, NOW(), NOW());
+
+INSERT INTO new_banners(path, new_id, created, modified)
+VALUES ('http://localhost/PROJETOS/ShoppingResources/news/new.png', 2, NOW(), NOW());
+
+INSERT INTO new_banners(path, new_id, created, modified)
+VALUES ('http://localhost/PROJETOS/ShoppingResources/news/new.png', 3, NOW(), NOW());
+
+INSERT INTO new_banners(path, new_id, created, modified)
+VALUES ('http://localhost/PROJETOS/ShoppingResources/news/new.png', 4, NOW(), NOW());
+
+INSERT INTO new_banners(path, new_id, created, modified)
+VALUES ('http://localhost/PROJETOS/ShoppingResources/news/new.png', 5, NOW(), NOW());
+
+INSERT INTO new_banners(path, new_id, created, modified)
+VALUES ('http://localhost/PROJETOS/ShoppingResources/news/new.png', 6, NOW(), NOW());
+
+INSERT INTO new_banners(path, new_id, created, modified)
+VALUES ('http://localhost/PROJETOS/ShoppingResources/news/new.png', 7, NOW(), NOW());
 
 ## 12 registros na tabela "comments" --------------------------------------------------
 
