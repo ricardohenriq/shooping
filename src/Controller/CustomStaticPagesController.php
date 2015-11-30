@@ -156,11 +156,16 @@ class CustomStaticPagesController extends AppController
             ])->hydrate(false)->toArray();
         $this->set('offers', $offers);
 
-        ob_start();
-        var_dump($offers);
-        $result = ob_get_clean();
-        $file = 'C:\xampp\htdocs\PROJETOS\Shopping\PRINT_VAR_DUMP.txt';
-        file_put_contents($file, $result);
+        //-------------------------------------------------------------------------
+
+        $setting = [
+            'fields' => ['store_id', 'name'],
+            'order' => ['created' => 'DESC'],
+            'limit' => 10
+        ];
+        $news = TableRegistry::get('News')
+            ->find('all', $setting)->hydrate(false)->toArray();
+        $this->set('news', $news);
 
         //-------------------------------------------------------------------------
 
