@@ -1,110 +1,321 @@
-array(2) {
+array(9) {
   [0]=>
-  object(App\Model\Entity\Media)#178 (13) {
-    ["product_id"]=>
-    int(105)
-    ["media_type_id"]=>
-    int(2)
-    ["path"]=>
-    string(65) "C:\xampp\htdocs\PROJETOS\ShoppingResources\img\105\Anja_Rubik.jpg"
-    ["created"]=>
-    object(Cake\I18n\Time)#186 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:50:58+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#208 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:50:58+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
+  array(6) {
     ["id"]=>
-    int(286)
-    ["[new]"]=>
-    bool(false)
-    ["[accessible]"]=>
+    int(1)
+    ["product_id"]=>
+    int(1)
+    ["date_end"]=>
+    object(Cake\I18n\Time)#822 (3) {
+      ["time"]=>
+      string(24) "2019-11-11T09:39:49+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["name"]=>
+    string(43) "Liquidificador abaixo do preço de Fábrica"
+    ["offer_banners"]=>
+    array(1) {
+      [0]=>
+      array(2) {
+        ["path"]=>
+        string(61) "http://localhost/PROJETOS/ShoppingResources/offers/offer1.png"
+        ["offer_id"]=>
+        int(1)
+      }
+    }
+    ["product"]=>
     array(3) {
-      ["media_type_id"]=>
-      bool(true)
-      ["path"]=>
-      bool(true)
-      ["media_type"]=>
-      bool(true)
+      ["product_name"]=>
+      string(39) "Samsung Galaxy A5 Duos Branco 4G Orange"
+      ["price"]=>
+      float(550.5)
+      ["old_price"]=>
+      float(400)
     }
-    ["[dirty]"]=>
-    array(0) {
-    }
-    ["[original]"]=>
-    array(0) {
-    }
-    ["[virtual]"]=>
-    array(0) {
-    }
-    ["[errors]"]=>
-    array(0) {
-    }
-    ["[repository]"]=>
-    string(6) "Medias"
   }
   [1]=>
-  object(App\Model\Entity\Media)#179 (13) {
-    ["product_id"]=>
-    int(105)
-    ["media_type_id"]=>
-    int(2)
-    ["path"]=>
-    string(66) "C:\xampp\htdocs\PROJETOS\ShoppingResources\img\105\Anja_Rubik2.jpg"
-    ["created"]=>
-    object(Cake\I18n\Time)#207 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:50:58+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#223 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:50:58+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
+  array(6) {
     ["id"]=>
-    int(287)
-    ["[new]"]=>
-    bool(false)
-    ["[accessible]"]=>
+    int(2)
+    ["product_id"]=>
+    int(2)
+    ["date_end"]=>
+    object(Cake\I18n\Time)#815 (3) {
+      ["time"]=>
+      string(24) "2019-11-11T09:39:49+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["name"]=>
+    string(15) "iPod por R$ 200"
+    ["offer_banners"]=>
+    array(0) {
+    }
+    ["product"]=>
     array(3) {
-      ["media_type_id"]=>
-      bool(true)
-      ["path"]=>
-      bool(true)
-      ["media_type"]=>
-      bool(true)
+      ["product_name"]=>
+      string(50) "TV LED 32 Smart LiteUSB HDMI LE 3278i Semp Toshiba"
+      ["price"]=>
+      float(20.2)
+      ["old_price"]=>
+      float(25)
     }
-    ["[dirty]"]=>
+  }
+  [2]=>
+  array(6) {
+    ["id"]=>
+    int(3)
+    ["product_id"]=>
+    int(3)
+    ["date_end"]=>
+    object(Cake\I18n\Time)#819 (3) {
+      ["time"]=>
+      string(24) "2019-11-11T09:39:49+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["name"]=>
+    string(20) "Ovo de Páscoa R$ 10"
+    ["offer_banners"]=>
+    array(1) {
+      [0]=>
+      array(2) {
+        ["path"]=>
+        string(61) "http://localhost/PROJETOS/ShoppingResources/offers/offer2.png"
+        ["offer_id"]=>
+        int(3)
+      }
+    }
+    ["product"]=>
+    array(3) {
+      ["product_name"]=>
+      string(47) "Motorola Moto X Android 42 GPS 3G 2 Chips 13GHZ"
+      ["price"]=>
+      float(15)
+      ["old_price"]=>
+      float(12.9)
+    }
+  }
+  [3]=>
+  array(6) {
+    ["id"]=>
+    int(4)
+    ["product_id"]=>
+    int(4)
+    ["date_end"]=>
+    object(Cake\I18n\Time)#823 (3) {
+      ["time"]=>
+      string(24) "2019-11-11T09:39:49+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["name"]=>
+    string(44) "Notebook com garantia extendida com desconto"
+    ["offer_banners"]=>
+    array(1) {
+      [0]=>
+      array(2) {
+        ["path"]=>
+        string(61) "http://localhost/PROJETOS/ShoppingResources/offers/offer3.png"
+        ["offer_id"]=>
+        int(4)
+      }
+    }
+    ["product"]=>
+    array(3) {
+      ["product_name"]=>
+      string(51) "Liquidificador e Processador Reverse Red Oster 110V"
+      ["price"]=>
+      float(150.9)
+      ["old_price"]=>
+      float(140)
+    }
+  }
+  [4]=>
+  array(6) {
+    ["id"]=>
+    int(5)
+    ["product_id"]=>
+    int(5)
+    ["date_end"]=>
+    object(Cake\I18n\Time)#824 (3) {
+      ["time"]=>
+      string(24) "2019-11-11T09:39:49+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["name"]=>
+    string(34) "Todos os sucos a partir de R$ 2.00"
+    ["offer_banners"]=>
+    array(1) {
+      [0]=>
+      array(2) {
+        ["path"]=>
+        string(61) "http://localhost/PROJETOS/ShoppingResources/offers/offer4.png"
+        ["offer_id"]=>
+        int(5)
+      }
+    }
+    ["product"]=>
+    array(3) {
+      ["product_name"]=>
+      string(55) "MP3 Player Shuffle Clip FM Cabo USB Fone Suporta ate 8G"
+      ["price"]=>
+      float(5)
+      ["old_price"]=>
+      float(9.05)
+    }
+  }
+  [5]=>
+  array(6) {
+    ["id"]=>
+    int(6)
+    ["product_id"]=>
+    int(6)
+    ["date_end"]=>
+    object(Cake\I18n\Time)#809 (3) {
+      ["time"]=>
+      string(24) "2019-11-11T09:39:49+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["name"]=>
+    string(26) "Tênis com 50% de desconto"
+    ["offer_banners"]=>
+    array(1) {
+      [0]=>
+      array(2) {
+        ["path"]=>
+        string(61) "http://localhost/PROJETOS/ShoppingResources/offers/offer5.png"
+        ["offer_id"]=>
+        int(6)
+      }
+    }
+    ["product"]=>
+    array(3) {
+      ["product_name"]=>
+      string(62) "Fone de Ouvido com MP3 Player C2 Sport Entrada Cartao SD Micro"
+      ["price"]=>
+      float(13.99)
+      ["old_price"]=>
+      float(20)
+    }
+  }
+  [6]=>
+  array(6) {
+    ["id"]=>
+    int(7)
+    ["product_id"]=>
+    int(7)
+    ["date_end"]=>
+    object(Cake\I18n\Time)#821 (3) {
+      ["time"]=>
+      string(24) "2019-11-11T09:39:49+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["name"]=>
+    string(34) "2 KG Castanha de Cajú por R$ 1.50"
+    ["offer_banners"]=>
+    array(1) {
+      [0]=>
+      array(2) {
+        ["path"]=>
+        string(61) "http://localhost/PROJETOS/ShoppingResources/offers/offer7.png"
+        ["offer_id"]=>
+        int(7)
+      }
+    }
+    ["product"]=>
+    array(3) {
+      ["product_name"]=>
+      string(49) "Bi Cama 0735 Branco Brilho Multimoveis Bebe Store"
+      ["price"]=>
+      float(30.3)
+      ["old_price"]=>
+      float(25)
+    }
+  }
+  [7]=>
+  array(6) {
+    ["id"]=>
+    int(8)
+    ["product_id"]=>
+    int(8)
+    ["date_end"]=>
+    object(Cake\I18n\Time)#820 (3) {
+      ["time"]=>
+      string(24) "2019-11-11T09:39:49+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["name"]=>
+    string(24) "1 KG de Queijo por R$ 10"
+    ["offer_banners"]=>
+    array(1) {
+      [0]=>
+      array(2) {
+        ["path"]=>
+        string(61) "http://localhost/PROJETOS/ShoppingResources/offers/offer6.png"
+        ["offer_id"]=>
+        int(8)
+      }
+    }
+    ["product"]=>
+    array(3) {
+      ["product_name"]=>
+      string(60) "Jogo de Mesa com 4 Cadeiras Tampo de Vidro Temperado Incolor"
+      ["price"]=>
+      float(30.3)
+      ["old_price"]=>
+      float(25)
+    }
+  }
+  [8]=>
+  array(6) {
+    ["id"]=>
+    int(9)
+    ["product_id"]=>
+    int(9)
+    ["date_end"]=>
+    object(Cake\I18n\Time)#812 (3) {
+      ["time"]=>
+      string(24) "2019-11-11T09:39:49+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["name"]=>
+    string(25) "1 KG de Picanha por R$ 10"
+    ["offer_banners"]=>
     array(0) {
     }
-    ["[original]"]=>
-    array(0) {
+    ["product"]=>
+    array(3) {
+      ["product_name"]=>
+      string(33) "Cesta Basica de Alimentos Popular"
+      ["price"]=>
+      float(30.3)
+      ["old_price"]=>
+      float(25)
     }
-    ["[virtual]"]=>
-    array(0) {
-    }
-    ["[errors]"]=>
-    array(0) {
-    }
-    ["[repository]"]=>
-    string(6) "Medias"
   }
 }

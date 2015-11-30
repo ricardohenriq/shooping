@@ -1,20 +1,31 @@
 <div id="offers" class="col-md-9">
     <ul id="offers-slide">
-        <?php foreach($offerBanners as $offerBanner): ?>
-            <li><?= $this->Html->image($offerBanner['path_banner'], ['alt' => $offerBanner['description'], 'title' => $offerBanner['name']]) ?></li>
+        <?php foreach($offers as $offer): ?>
+            <?php if($offer['offer_banners'] == true ):?>
+                <li><?= $this->Html->image($offer['offer_banners'][0]['path'], ['alt' => $offer['description'], 'title' => $offer['name'], 'url' => ['controller' => 'Products', 'action' => 'view', $offer['product']['id']]]) ?></li>
+            <?php else: ?>
+                <li>
+                    <div class="item-offer">
+                        <div class="product-thumb">
+                            <?= $this->Html->image('products/product2.jpg', ['alt' => $offer['product']['product_name'], 'title' => $offer['product']['product_name'], 'url' => ['controller' => 'Products', 'action' => 'view', $offer['product']['id']]]) ?>
+                        </div>
+                        <div class="product-description">
+                            <div>
+                                <?php echo $offer['product']['product_name'] ?>
+                            </div>
+                            <div>
+                                <?php echo $offer['description'] ?>
+                            </div>
+                            <div>
+                                <?php if($offer['product']['price'] < $offer['product']['old_price']): ?>
+                                    <span class="item-old-price">De R$ <?= $offer['product']['old_price'] ?></span>
+                                <?php endif; ?>
+                                <span class="item-price">R$ <?= $offer['product']['price'] ?></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            <?php endif; ?>
         <?php endforeach; ?>
-        <li>
-            <div class="item-offer">
-                <div class="product-thumb">
-                    <img src="img/products/product2.jpg" />
-                </div>
-                <div class="product-description">
-                    Texto Texto Texto Texto Texto Texto
-                    Texto Texto Texto Texto Texto Texto
-                    Texto Texto Texto Texto Texto Texto
-                    Texto Texto Texto Texto Texto Texto
-                </div>
-            </div>
-        </li>
     </ul>
 </div>

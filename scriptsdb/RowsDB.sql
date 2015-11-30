@@ -5014,81 +5014,75 @@ VALUES (2, 30, 'Na compra de um Sapato ganhe um Cinto', 'http://localhost/PROJET
 INSERT INTO banners (banner_type_id, user_id, banner_description, path_banner, url_redirect, created, modified)
 VALUES (2, 30, 'Na compra de um Notebook ganhe um HD Externo', 'http://localhost/PROJETOS/ShoppingResources/full-banners/full-banner6.png', 'https://pt.wikipedia.org/wiki/Piau%C3%AD', NOW(), NOW());
 
-#@ 9 registros na tabela "new_banners" -------------------------------------------------
+## 9 registros na tabela "offers" --------------------------------------------------------
 
-INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (1, 'Banner 1', 'Noticia Fantastica', 'news/new1.png', NOW(), '2019-11-11', NOW(), NOW());
-
-INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (2, 'Banner 2', 'Noticia Boa', 'news/new2.png', NOW(), '2019-11-11', NOW(), NOW());
-
-INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (3, 'Banner 3', 'Noticia Muito Boa', 'news/new3.png', NOW(), '2019-11-11', NOW(), NOW());
-
-INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (4, 'Banner 4', 'Noticia Melhor', 'news/new4.png', NOW(), '2019-11-11', NOW(), NOW());
-
-INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (5, 'Banner 5', 'Noticia Top', 'news/new1.png', NOW(), '2019-11-11', NOW(), NOW());
-
-INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (6, 'Banner 6', 'Noticia Otima', 'news/new2.png', NOW(), '2019-11-11', NOW(), NOW());
-
-INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (7, 'Banner 7', 'Noticia Excelente', 'news/new3.png', NOW(), '2019-11-11', NOW(), NOW());
-
-INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (8, 'Banner 8', 'Noticia Perfeita', 'news/new4.png', NOW(), '2019-11-11', NOW(), NOW());
-
-INSERT INTO new_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
-VALUES (9, 'Banner 9', 'Noticia Boa Dimais da Conta', 'news/new1.png', NOW(), '2019-11-11', NOW(), NOW());
-
-## 9 registros na tabela "offer_banners" -----------------------------------------------
-
-INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+INSERT INTO offers (product_id, name, description, date_start, date_end, created, modified)
 VALUES (1, 'Liquidificador abaixo do preço de Fábrica',
-        'Liquidificador abaixo do preço de Fábrica, oferta válida somente para a loja "A" e "C"',
-        'http://localhost/PROJETOS/ShoppingResources/offers/offer1.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
+        'Liquidificador abaixo do preço de Fábrica, oferta válida somente para a loja "A" e "C"', 
+        NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
-INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+INSERT INTO offers (product_id, name, description, date_start, date_end, created, modified)
 VALUES (2, 'iPod por R$ 200',
-        'iPod por R$ 200, oferta válida somente para a loja "D" e "E"',
-        'http://localhost/PROJETOS/ShoppingResources/offers/offer2.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
+        'iPod por R$ 200, oferta válida somente para a loja "D" e "E"', 
+        NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
-INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+INSERT INTO offers (product_id, name, description, date_start, date_end, created, modified)
 VALUES (3, 'Ovo de Páscoa R$ 10',
-        'Ovo de Páscoa R$ 10, oferta válida somente para a loja "A" e "C"',
-        'http://localhost/PROJETOS/ShoppingResources/offers/offer3.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
+        'Ovo de Páscoa R$ 10, oferta válida somente para a loja "A" e "C"', 
+        NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
-INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+INSERT INTO offers (product_id, name, description, date_start, date_end, created, modified)
 VALUES (4, 'Notebook com garantia extendida com desconto',
-        'Notebook com garantia extendida com desconto, oferta válida somente para a loja "A" e "C"',
-        'http://localhost/PROJETOS/ShoppingResources/offers/offer4.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
+        'Notebook com garantia extendida com desconto, oferta válida somente para a loja "A" e "C"', 
+        NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
-INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+INSERT INTO offers (product_id, name, description, date_start, date_end, created, modified)
 VALUES (5, 'Todos os sucos a partir de R$ 2.00',
-        ', oferta válida somente para a loja "A" e "C"',
-        'http://localhost/PROJETOS/ShoppingResources/offers/offer5.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
+        ', oferta válida somente para a loja "A" e "C"', 
+        NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
-INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+INSERT INTO offers (product_id, name, description, date_start, date_end, created, modified)
 VALUES (6, 'Tênis com 50% de desconto',
-        'Tênis com 50% de desconto, somente numeração 43 e 44',
-        'http://localhost/PROJETOS/ShoppingResources/offers/offer6.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
+        'Tênis com 50% de desconto, somente numeração 43 e 44', 
+        NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
-INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+INSERT INTO offers (product_id, name, description, date_start, date_end, created, modified)
 VALUES (7, '2 KG Castanha de Cajú por R$ 1.50',
-        '2 KG Castanha de Cajú por R$ 1.50, oferta válida somente para a loja "B" e "C"',
-        'http://localhost/PROJETOS/ShoppingResources/offers/offer1.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
+        '2 KG Castanha de Cajú por R$ 1.50, oferta válida somente para a loja "B" e "C"', 
+        NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
-INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+INSERT INTO offers (product_id, name, description, date_start, date_end, created, modified)
 VALUES (8, '1 KG de Queijo por R$ 10',
-        '1 KG de Queijo por R$ 10, oferta válida no dia 12/12/2012',
-        'http://localhost/PROJETOS/ShoppingResources/offers/offer2.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
+        '1 KG de Queijo por R$ 10, oferta válida no dia 12/12/2012', 
+        NOW(), '2019-11-11 09:39:49', NOW(), NOW());
 
-INSERT INTO offer_banners (user_id, name, description, path_banner, date_start, date_end, created, modified)
+INSERT INTO offers (product_id, name, description, date_start, date_end, created, modified)
 VALUES (9, '1 KG de Picanha por R$ 10',
-        '1 KG de Picanha por R$ 10, oferta válida somente para a loja "B" e "D"',
-        'http://localhost/PROJETOS/ShoppingResources/offers/offer3.png', NOW(), '2019-11-11 09:39:49', NOW(), NOW());
+        '1 KG de Picanha por R$ 10, oferta válida somente para a loja "B" e "D"', 
+        NOW(), '2019-11-11 09:39:49', NOW(), NOW());
+
+## 7 registros na tabela "offer_banners" --------------------------------------------------
+
+INSERT INTO offer_banners (path, offer_id, created, modified)
+VALUES ('http://localhost/PROJETOS/ShoppingResources/offers/offer1.png', 1, NOW(), NOW());
+
+INSERT INTO offer_banners (path, offer_id, created, modified)
+VALUES ('http://localhost/PROJETOS/ShoppingResources/offers/offer2.png', 3, NOW(), NOW());
+
+INSERT INTO offer_banners (path, offer_id, created, modified)
+VALUES ('http://localhost/PROJETOS/ShoppingResources/offers/offer3.png', 4, NOW(), NOW());
+
+INSERT INTO offer_banners (path, offer_id, created, modified)
+VALUES ('http://localhost/PROJETOS/ShoppingResources/offers/offer4.png', 5, NOW(), NOW());
+
+INSERT INTO offer_banners (path, offer_id, created, modified)
+VALUES ('http://localhost/PROJETOS/ShoppingResources/offers/offer5.png', 6, NOW(), NOW());
+
+INSERT INTO offer_banners (path, offer_id, created, modified)
+VALUES ('http://localhost/PROJETOS/ShoppingResources/offers/offer6.png', 8, NOW(), NOW());
+
+INSERT INTO offer_banners (path, offer_id, created, modified)
+VALUES ('http://localhost/PROJETOS/ShoppingResources/offers/offer7.png', 7, NOW(), NOW());
 
 ## 2 registros na tabela "comment_types" --------------------------------------------------
 
@@ -5105,6 +5099,16 @@ VALUES (1, 'Não Respondida', NOW(), NOW());
 
 INSERT INTO comment_types(id, type_name, created, modified)
 VALUES (2, 'Respondida', NOW(), NOW());
+
+## 12 registros na tabela "news" --------------------------------------------------------
+
+INSERT INTO news(store_id, name, description, created, modified)
+VALUES (, '', '', NOW(), NOW());
+
+## 12 registros na tabela "new_banners" --------------------------------------------------
+
+INSERT INTO new_banners(path, new_id, created, modified)
+VALUES ('', , NOW(), NOW());
 
 ## 12 registros na tabela "comments" --------------------------------------------------
 

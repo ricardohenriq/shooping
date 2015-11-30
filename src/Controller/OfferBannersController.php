@@ -2,72 +2,109 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\Event\Event;
 
 /**
- * SubCategories Controller
+ * OfferBanners Controller
  *
- * @property \App\Model\Table\SubCategoriesTable $SubCategories
+ * @property \App\Model\Table\OfferBannersTable $OfferBanners
  */
 class OfferBannersController extends AppController
 {
-    public function beforeFilter(Event $event)
+
+    /**
+     * Index method
+     *
+     * @return void
+     */
+    public function index()
     {
-        $this->Auth->allow(['myOffers', 'index']);
+        $this->paginate = [
+            'contain' => ['Offers']
+        ];
+        $this->set('offerBanners', $this->paginate($this->OfferBanners));
+        $this->set('_serialize', ['offerBanners']);
     }
 
-    public function myOffers($type)
+    /**
+     * View method
+     *
+     * @param string|null $id Offer Banner id.
+     * @return void
+     * @throws \Cake\Network\Exception\NotFoundException When record not found.
+     */
+    public function view($id = null)
     {
-        $types = ['1' => 'Active', '2' => 'Paused', '3' => 'Ended'];
+        $offerBanner = $this->OfferBanners->get($id, [
+            'contain' => ['Offers']
+        ]);
+        $this->set('offerBanner', $offerBanner);
+        $this->set('_serialize', ['offerBanner']);
+    }
 
-        //-------------------------------------------------------------------------
+    /**
+     * Add method
+     *
+     * @return void Redirects on successful add, renders view otherwise.
+     */
+    public function add()
+    {
+        $offerBanner = $this->OfferBanners->newEntity();
+        if ($this->request->is('post')) {
+            $offerBanner = $this->OfferBanners->patchEntity($offerBanner, $this->request->data);
+            if ($this->OfferBanners->save($offerBanner)) {
+                $this->Flash->success(__('The offer banner has been saved.'));
+                return $this->redirect(['action' => 'index']);
+            } else {
+                $this->Flash->error(__('The offer banner could not be saved. Please, try again.'));
+            }
+        }
+        $offers = $this->OfferBanners->Offers->find('list', ['limit' => 200]);
+        $this->set(compact('offerBanner', 'offers'));
+        $this->set('_serialize', ['offerBanner']);
+    }
 
-        $bannerType = 2;
-        $bannersQuantity = 1;
-        $fullBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
-        $this->set('fullBanners', $fullBanners);
+    /**
+     * Edit method
+     *
+     * @param string|null $id Offer Banner id.
+     * @return void Redirects on successful edit, renders view otherwise.
+     * @throws \Cake\Network\Exception\NotFoundException When record not found.
+     */
+    public function edit($id = null)
+    {
+        $offerBanner = $this->OfferBanners->get($id, [
+            'contain' => []
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $offerBanner = $this->OfferBanners->patchEntity($offerBanner, $this->request->data);
+            if ($this->OfferBanners->save($offerBanner)) {
+                $this->Flash->success(__('The offer banner has been saved.'));
+                return $this->redirect(['action' => 'index']);
+            } else {
+                $this->Flash->error(__('The offer banner could not be saved. Please, try again.'));
+            }
+        }
+        $offers = $this->OfferBanners->Offers->find('list', ['limit' => 200]);
+        $this->set(compact('offerBanner', 'offers'));
+        $this->set('_serialize', ['offerBanner']);
+    }
 
-        //-------------------------------------------------------------------------
-
-        $bannerType = 1;
-        $bannersQuantity = 3;
-        $smallBanners = $this->Search->listAllBanners($bannerType, $bannersQuantity);
-        $this->set('smallBanners', $smallBanners);
-
-        //-------------------------------------------------------------------------
-
-        $newBannersQuantity = 5;
-        $newBanners = $this->Search->listNewBanners($newBannersQuantity);
-        $this->set('newBanners', $newBanners);
-
-        //-------------------------------------------------------------------------
-
-        $logged = $this->Auth->user();
-        $this->set('logged', $logged);
-
-        //-------------------------------------------------------------------------
-
-        $userId = $this->Auth->user('id');
-        $this->set('userId', $userId);
-
-        //-------------------------------------------------------------------------
-
-        $username = $this->Auth->user('username');
-        $this->set('username', $username);
-
-        //-------------------------------------------------------------------------
-
-        $stores = $this->Search->listAllStoresByUser($userId);
-        $this->set('stores', $stores);
-
-        //-------------------------------------------------------------------------
-
-        $offers = $this->Search->listAllOffersByUser($userId, 'name', 'ASC',
-            ['id', 'name', 'description','created', 'modified']);
-        $this->set('offers', $offers);
-
-        //-------------------------------------------------------------------------
-
-        $this->set('type', $types[$type]);
+    /**
+     * Delete method
+     *
+     * @param string|null $id Offer Banner id.
+     * @return void Redirects to index.
+     * @throws \Cake\Network\Exception\NotFoundException When record not found.
+     */
+    public function delete($id = null)
+    {
+        $this->request->allowMethod(['post', 'delete']);
+        $offerBanner = $this->OfferBanners->get($id);
+        if ($this->OfferBanners->delete($offerBanner)) {
+            $this->Flash->success(__('The offer banner has been deleted.'));
+        } else {
+            $this->Flash->error(__('The offer banner could not be deleted. Please, try again.'));
+        }
+        return $this->redirect(['action' => 'index']);
     }
 }

@@ -172,30 +172,44 @@ CREATE TABLE banners (
   FOREIGN KEY user_key (user_id) REFERENCES users(id)
 );
 
-CREATE TABLE offer_banners (
+CREATE TABLE offers (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  user_id INT NOT NULL,
+  product_id  INT NOT NULL,
   name VARCHAR(255) NOT NULL,
-  description VARCHAR(255) NOT NULL,
-  path_banner VARCHAR(255) NOT NULL,
-  date_start DATETIME,
-  date_end DATETIME,
+  description VARCHAR(1000) NOT NULL,
+  date_start DATETIME NOT NULL,
+  date_end DATETIME NOT NULL,
   created DATETIME,
   modified DATETIME,
-  FOREIGN KEY user_key (user_id) REFERENCES users(id)
+  FOREIGN KEY product_key (product_id) REFERENCES products(id)
+);
+
+CREATE TABLE offer_banners (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  path VARCHAR(255) NOT NULL,
+  offer_id INT NOT NULL,
+  created DATETIME,
+  modified DATETIME,
+  FOREIGN KEY offer_key (offer_id) REFERENCES offers(id)
+);
+
+CREATE TABLE news (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  store_id INT NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  created DATETIME,
+  modified DATETIME,
+  FOREIGN KEY store_key (store_id) REFERENCES stores(id)
 );
 
 CREATE TABLE new_banners (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  user_id INT NOT NULL,
-  name VARCHAR(255) NOT NULL,
-  description VARCHAR(255) NOT NULL,
-  path_banner VARCHAR(255) NOT NULL,
-  date_start DATETIME,
-  date_end DATETIME,
+  path VARCHAR(255) NOT NULL,
+  new_id INT NOT NULL,
   created DATETIME,
   modified DATETIME,
-  FOREIGN KEY user_key (user_id) REFERENCES users(id)
+  FOREIGN KEY new_key (new_id) REFERENCES news(id)
 );
 
 # NECESSITA DISCUÇÃO

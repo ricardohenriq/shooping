@@ -135,9 +135,26 @@ class CustomStaticPagesController extends AppController
 
         //-------------------------------------------------------------------------
 
-        $offerBannersQuantity = 5;
-        $offerBanners = $this->Search->listOfferBanners($offerBannersQuantity);
-        $this->set('offerBanners', $offerBanners);
+        //$offerBannersQuantity = 5;
+       // $offerBanners = $this->Search->listOfferBanners($offerBannersQuantity);
+        //$this->set('offerBanners', $offerBanners);
+
+        //-------------------------------------------------------------------------
+
+        $offers = TableRegistry::get('Offers');
+        $offers = $offers->find()
+            ->select(['id', 'product_id', 'date_end', 'name', 'description'])
+            ->contain([
+                'Products' => function($q) {
+                    //return $q->autoFields(true);
+                    return $q->select(['id', 'product_name', 'price', 'old_price']);
+                },
+                'OfferBanners' => function($q) {
+                    //return $q->autoFields(true);
+                    return $q->select(['path', 'offer_id']);
+                }
+            ])->hydrate(false)->toArray();
+        $this->set('offers', $offers);
 
         //-------------------------------------------------------------------------
 
