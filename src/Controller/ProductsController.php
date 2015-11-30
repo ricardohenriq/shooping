@@ -387,6 +387,7 @@ class ProductsController extends AppController
 	{		
         if ($this->request->is('post')) {
 
+            //Save Product entity
             $product = $this->Products->newEntity();
             $product = $this->Products->patchEntity($product, $this->request->data);
             $product->sub_category_id = 18;
@@ -395,26 +396,46 @@ class ProductsController extends AppController
 
             if($productSaved)
             {
+                //Save ProductFeatures entities
                 $featuresArray = $this->Insert->getFeatuesArray($this->request->data);
                 $featuresEntities = $this->Insert->createMassFeaturesEntities($featuresArray, $productSaved['id']);
                 $this->Insert->insertMassEntities($featuresEntities, 'ProductFeatures');
 
+                //Upload pictures to folder in server
                 $ROOT_PATH = dirname(ROOT) . DS;
                 $PRODUCTS_IMAGES_FOLDER = $ROOT_PATH . 'ShoppingResources' . DS . 'img' . DS . $productSaved['id'];
-                $imageUploaded = $this->UploadFile->uploadFiles($PRODUCTS_IMAGES_FOLDER, $this->request->data['file']);
-                $imageUploaded = $this->Insert->addKeyValueToArray($imageUploaded, 'media_type_id', 1);
-                $imageUploaded[0]['media_type_id'] = 2;
-                $imageUploaded = $this->Insert->replaceArrayValue($imageUploaded, 'url', 'http://localhost/PROJETOS/', $ROOT_PATH);
-                $imageUploaded = $this->Insert->replaceArrayValue($imageUploaded, 'url', '/', '\\');
+                $imagesUploaded = $this->UploadFile->uploadFiles($PRODUCTS_IMAGES_FOLDER, $this->request->data['file']);
 
-                $mediasEntities = $this->Insert->createMassMediasEntities($imageUploaded, $productSaved['id']);
+                //Create and Upload thumbnail to folder in server
+                $outputThumb = str_replace($PRODUCTS_IMAGES_FOLDER, $ROOT_PATH . 'ShoppingResources' . DS . 'thumb', $imagesUploaded[0]['url']);
+                $imageResized = $this->UploadFile->resizeImage([
+                    'input' => $imagesUploaded[0]['url'], 'output' => $outputThumb, 'width' => 250, 'height' => 250, 'mode' => 'stretch'
+                ]);
+
+                //Prepare image data array to be transformed into entity
+                $thumbUploaded['url'] = str_replace($ROOT_PATH, 'http://localhost/PROJETOS/', $outputThumb);
+                $thumbUploaded['url'] = str_replace('\\', '/', $thumbUploaded['url']);
+                $thumbUploaded['media_type_id'] = 3;
+
+                //Save Media entity (thumbnail)
+                $mediaEntity = $this->Insert->createMediaEntity($thumbUploaded, $productSaved['id']);
+                TableRegistry::get('Medias')->save($mediaEntity);
+
+                //Prepare image data array to be transformed into entities
+                $imagesUploaded = $this->Insert->addKeyValueToArray($imagesUploaded, 'media_type_id', 1);
+                $imagesUploaded[0]['media_type_id'] = 2;
+                $imagesUploaded = $this->Insert->replaceArrayValue($imagesUploaded, 'url', 'http://localhost/PROJETOS/', $ROOT_PATH);
+                $imagesUploaded = $this->Insert->replaceArrayValue($imagesUploaded, 'url', '/', '\\');
+
+                //Save Medias entities
+                $mediasEntities = $this->Insert->createMassMediasEntities($imagesUploaded, $productSaved['id']);
                 $this->Insert->insertMassEntities($mediasEntities, 'Medias');
 
-                /*ob_start();
-                var_dump($mediasEntities);
+                ob_start();
+                var_dump($thumbUploaded['url']);
                 $result = ob_get_clean();
-                $file = 'C:\xampp\htdocs\PROJETOS\Shopping\PRINT_VAR_DUMP.txt';
-                file_put_contents($file, $result);*/
+                $file = 'C:\xampp\htdocs\PROJETOS\ShoppingTESTE\PRINT_VAR_DUMP.txt';
+                file_put_contents($file, $result);
             }
         }
     }

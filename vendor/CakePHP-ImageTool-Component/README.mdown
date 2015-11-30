@@ -1,0 +1,94 @@
+CakePHP ImageTool Component
+================================
+
+About
+--------------------------------
+
+ImageTool is php class to perform various tasks with images. Every function accepts
+GD resource as input and can output it as well (just leave 'output' option empty).
+
+Changes from 1.1.*
+--------------------------------
+
+This library now consists purely from static functions as there was no need for class object.
+This makes it very easy to use in cake's models or anywhere else and isn't cakephp specific.
+
+Installation
+--------------------------------
+
+For use with cakephp:
+* Copy ImageTool.php to your app's Vendor/ directory
+* Include in your controller: App::import('Vendor', 'ImageTool');
+
+For use as standalone library:
+* Include in your project with include() or similar method
+
+Error handling
+--------------------------------
+
+Most image processing functions return either true or false (depending if action was successfull). Only exception is when
+you don't specify output (or set it to null/empty) - in such cases (if action was successfull) GD resource is returned.
+
+PHP requirements
+--------------------------------
+Minimum PHP version is 5.4 due to new array syntax used in library. If needed you can replace [] to array() in places arrays are used if you can't use 5.4 or higher version
+
+Available functions
+--------------------------------
+
+* autorotate - autorotate JPG images (by exif data)
+* averageColor - get image's average color
+* dominatingColor - get image's dominating color
+* flip - flip image
+* grayscale - desaturate image
+* meshify - add mesh (grid of dots) over image
+* pixelate - pixelate image
+* resize - resize image
+* rotate - rotate image (only degrees divisible by 90)
+* unsharpMask - sharpen image
+* watermark - add watermark
+
+Examples
+--------------------------------
+
+Make thumbnail 100x100px in size
+
+	$status = ImageTool::resize(array(
+		'input' => $input_file,
+		'output' => $output_file,
+		'width' => 100,
+		'height' => 100
+	));
+
+Resize image (while keeping ratio) with max width and height both set to 600px. After that place watermark
+image in bottom-right corner and sharpen end result (with default settings)
+
+	$status = ImageTool::resize(array(
+		'input' => $input_file,
+		'output' => $output_file,
+		'width' => 600,
+		'height' => 600,
+		'mode' => 'fit',
+		'paddings' => false,
+		'afterCallbacks' => array(
+			array('watermark', array('watermark' => $watermark_file, 'position' => 'bottom-right')),
+			array('unsharpMask'),
+		)
+	));
+
+Autorotate image (getting back GD resource and then passing it to the next function (greyscale) - similar to previous
+example but without using afterCallbacks option)
+
+	$image = ImageTool::autorotate(array(
+		'input' => $input_file,
+		'output' => null
+	));
+
+	if ($image) {
+		$status = ImageTool::grayscale(array(
+			'input' => $image,
+			'output' => $output_file
+		));
+	} else {
+		$status = false;
+	}

@@ -32,7 +32,7 @@ function getElementHeightWidth(element){
 }
 
 function hideElementByDimension(dimensions, element){
-    if(dimensions['height'] >= 550 || dimensions['width'] >= 550){
+    if(dimensions['height'] >= 550 && dimensions['width'] >= 550){
         $(element).show();
     }
 }

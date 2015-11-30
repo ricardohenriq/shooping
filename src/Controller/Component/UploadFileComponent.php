@@ -1,8 +1,11 @@
 <?php
 namespace App\Controller\Component;
 
+require_once(ROOT . DS . 'vendor' . DS . 'CakePHP-ImageTool-Component' . DS . 'ImageTool.php');
+
 use Burzum\FileStorage\Lib\StorageManager;
 use Cake\Controller\Component;
+use ImageTool;
 
 class UploadFileComponent extends Component
 {
@@ -86,5 +89,17 @@ class UploadFileComponent extends Component
             }
         }
         return $result;
+    }
+
+    function resizeImage($settings)
+    {
+        $status = ImageTool::resize([
+            'input' => $settings['input'],
+            'output' => $settings['output'],
+            'width' => $settings['width'],
+            'height' => $settings['height'],
+            'mode' => $settings['mode']
+        ]);
+        return $status;
     }
 }
