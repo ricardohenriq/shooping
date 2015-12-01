@@ -42,7 +42,7 @@
                 <?php endif; ?>
             </ul>
             <?= $this->Form->create(null, ['url' => ['controller' => 'Products', 'action' => 'search'], 'type' => 'get', 'id' => 'search-form', 'class' => 'navbar-form span7 text-center']) ?>
-                <?= $this->Form->text('search', ['class' => 'form-control', 'placeholder' => 'Search', 'id' => 'search', 'value' => $search]) ?>
+                <?= @$this->Form->text('search', ['class' => 'form-control', 'placeholder' => 'Search', 'id' => 'search', 'value' => $search]) ?>
                 <?= $this->Form->button('Buscar <span class="glyphicon glyphicon-search"></span>', ['type' => 'submit', 'class' => 'btn btn-default']) ?>
             <?= $this->Form->end() ?>
         </div>

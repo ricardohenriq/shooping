@@ -5,7 +5,7 @@
     </div>
     <div class="inline-pagination-menu">
         Itens por página:
-        <?= $this->Form->select('products-view', $selectOptionsProductViews,
+        <?= $this->Form->select('products-view', $selectOptionsViews,
         ['class' => 'form-control products-view inline-pagination-menu',
         'id' => 'products-view' , 'empty' => $productsView, 'onchange' => 'redirect(this)']) ?>
     </div>

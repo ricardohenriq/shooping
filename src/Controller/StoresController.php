@@ -271,9 +271,153 @@ class StoresController extends AppController
         $this->set('search', '');
     }
 
+    public function search()
+    {
+        if($this->request->is('get'))
+        {
+            $search = $this->request->query['search'];
+            @$productsView = $this->request->query['stores-view'] ?: 3;
+            @$productsOrder = $this->request->query['stores-order'];
+            @$page = $this->request->query['page'] ?: 1;
+
+            //-------------------------------------------------------------------------
+
+            $this->set('productsView', $productsView);
+
+            //-------------------------------------------------------------------------
+
+            $urls = $this->Url->createUrl('stores','search', 'stores-view', ['3', '6', '9']);
+
+            $selectOptionsViews = array_combine($urls, ['3', '6', '9']);
+            $this->set('selectOptionsViews', $selectOptionsViews);
+
+            //-------------------------------------------------------------------------
+
+            $productsOrder = ['most-popular' => 'Mais Visitados', 'most-sold' => 'Mais Vendidos',
+                'lowest-price' => 'Menor Preço', 'highest-price' => 'Maior Preço'];
+            $this->set('orderView', $this->Url->getQuerystringKeyWithArray('products-order', $productsOrder));
+
+            //-------------------------------------------------------------------------
+
+            $urls = $this->Url->createUrl('products','search', 'products-order', ['most-popular', 'most-sold',
+                'lowest-price', 'highest-price']);
+
+            $selectOptionsOrderView = array_combine($urls, ['Mais Visitados', 'Mais Vendidos',
+                'Menor Preço', 'Maior Preço']);
+            $this->set('selectOptionsOrderView', $selectOptionsOrderView);
+
+            //-------------------------------------------------------------------------
+
+            $setting = [
+                'fields' => ['id', 'product_name', 'quantity', 'sold', 'description', 'price',
+                    'old_price'],
+                'conditions' => ['product_name LIKE' => '%'.$search.'%'],
+                'order' => ['price' => 'DESC'],
+                'limit' => $productsView,
+                'offset' => ($page * $productsView) - $productsView
+            ];
+            $products = TableRegistry::get('Products')
+                ->find('all', $setting)->hydrate(false)->toArray();
+
+            $productsSize = count($products);
+            for($i = 0; $i < $productsSize ; $i++)
+            {
+                $setting = [
+                    'fields' => ['path'],
+                    'conditions' => ['product_id' => $products[$i]['id'], 'media_type_id' => 3]
+                ];
+                $products[$i]['thumb'] = TableRegistry::get('Medias')
+                    ->find('all', $setting)->hydrate(false)->first()['path'];
+            }
+            $this->set('products', $products);
+
+            //-------------------------------------------------------------------------
+
+            @$startEndProducts = $this->CustomPagination->calcStartEndPaginator($products, $this->request->query['page'],
+                $productsView);
+            $this->set('startEndProducts', $startEndProducts);
+
+            //-------------------------------------------------------------------------
+
+            $setting = [
+                'conditions' => ['product_name LIKE' => '%'.$search.'%']
+            ];
+            $qtdProducts = TableRegistry::get('Products')
+                ->find('all', $setting)->count();
+            $this->set('qtdProducts', $qtdProducts);
+
+            //-------------------------------------------------------------------------
+
+            $setting = [
+                'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+                'conditions' => ['banner_type_id' => 2],
+                'limit' => 1
+            ];
+            $fullBanners = TableRegistry::get('Banners')
+                ->find('all', $setting)->hydrate(false)->toArray();
+            $this->set('fullBanners', $fullBanners);
+
+            //-------------------------------------------------------------------------
+
+            $setting = [
+                'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+                'conditions' => ['banner_type_id' => 1],
+                'limit' => 3
+            ];
+            $smallBanners = TableRegistry::get('Banners')
+                ->find('all', $setting)->hydrate(false)->toArray();
+            $this->set('smallBanners', $smallBanners);
+
+            //-------------------------------------------------------------------------
+
+            $this->set('userId', $this->Auth->user('id'));
+
+            //-------------------------------------------------------------------------
+
+            $this->set('pageTitle', $search.' - Stores');
+
+            //-------------------------------------------------------------------------
+
+            $this->set('username', $this->Auth->user('username'));
+
+            //-------------------------------------------------------------------------
+
+            $categories = TableRegistry::get('Categories')
+                ->find()->hydrate(false)->toArray();
+            $this->set('categories', $categories);
+
+            //-------------------------------------------------------------------------
+
+            $subCategories = TableRegistry::get('SubCategories')
+                ->find()->hydrate(false)->toArray();
+            $this->set('subCategories', $subCategories);
+
+            //-------------------------------------------------------------------------
+
+            @$pagina = $this->CustomPagination->getCurrentPage();
+            @$this->set('pagina', $pagina);
+
+            //-------------------------------------------------------------------------
+
+            $this->set('numPaginas', $this->CustomPagination->getNumPaginas($qtdProducts, $productsView));
+
+            //-------------------------------------------------------------------------
+
+            $this->set('url', $this->Url->getUrlWithoutParam('products','search','page'));
+
+            //-------------------------------------------------------------------------
+
+            $this->set('previousNextPage', $this->Url->getPreviousNextPage($pagina));
+
+            //-------------------------------------------------------------------------
+
+            $this->set('search', $search);
+        }
+    }
+
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index', 'myStores', 'miniMap', 'view', 'favoriteStores', 'edit']);
+        $this->Auth->allow(['index', 'myStores', 'miniMap', 'view', 'favoriteStores', 'edit', 'search']);
     }
 
     public function isAuthorized($user = null)

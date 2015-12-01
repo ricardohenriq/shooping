@@ -256,8 +256,8 @@ class ProductsController extends AppController
 
             $urls = $this->Url->createUrl('products','search', 'products-view', ['3', '6', '9']);
 
-            $selectOptionsProductViews = array_combine($urls, ['3', '6', '9']);
-            $this->set('selectOptionsProductViews', $selectOptionsProductViews);
+            $selectOptionsViews = array_combine($urls, ['3', '6', '9']);
+            $this->set('selectOptionsViews', $selectOptionsViews);
 
             //-------------------------------------------------------------------------
 
