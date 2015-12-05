@@ -1,9 +1,11 @@
 <?php
 namespace App\Controller;
 
+use App\AppClasses\FormatFormValues\FormatContactForm;
 use App\Controller\AppController;
 use Cake\Event\Event;
 use Cake\ORM\TableRegistry;
+use Cake\Network\Email\Email;
 
 /**
  * Products Controller
@@ -239,21 +241,63 @@ class CustomStaticPagesController extends AppController
 
     public function email()
     {
-        $userTypes = TableRegistry::get('UserTypes')
-            ->find('list')->hydrate(false)->toArray();
-        $this->set('userTypes', $userTypes);
+        if ($this->request->is('get')) {
+			
+			$userTypes = TableRegistry::get('UserTypes')
+				->find('list')->hydrate(false)->toArray();
+			$this->set('userTypes', $userTypes);
 
-        //-------------------------------------------------------------------------
+			//-------------------------------------------------------------------------
 
-        $this->set('userId', $this->Auth->user('id'));
+			$this->set('userId', $this->Auth->user('id'));
 
-        //-------------------------------------------------------------------------
+			//-------------------------------------------------------------------------
 
-        $this->set('username', $this->Auth->user('username'));
+			$this->set('username', $this->Auth->user('username'));
 
-        //-------------------------------------------------------------------------
+			//-------------------------------------------------------------------------
 
-        $this->set('search', '');
+			$this->set('search', '');
+			
+		}else if($this->request->is('post')){
+			
+			Email::configTransport('gmail', [
+				'host' => 'smtp.gmail.com',
+				'port' => 587,
+				'username' => 'ricardohenrique996@gmail.com',
+				'password' => 'mustang996',
+				'className' => 'Smtp',
+				'tls' => true
+			]);
+			
+			//-------------------------------------------------------------------------
+
+            $formatContactForm = new formatContactForm();
+
+			//-------------------------------------------------------------------------
+
+			$email = new Email();
+            $email->transport('gmail');
+			$email->from(['ricardohenrique996@gmail.com' => 'Store Site'])
+				->to('ricardohenrique1@outlook.com')
+                ->emailFormat('html')
+				->subject(
+                    $formatContactForm->getSubject(
+                        $this->request->data['subject'],
+                        ['suffix' => ' | Store Site']
+                    )
+                )
+				->send(
+                    $formatContactForm->getMessage(
+                        $this->request->data,
+                        ['uppercaseLabel' => true]
+                    )
+                );
+
+			//-------------------------------------------------------------------------
+			
+			return $this->redirect(['controller' => 'CustomStaticPages', 'action' => 'index']);
+		}
     }
 
     public function beforeFilter(Event $event)

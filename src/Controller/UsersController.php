@@ -17,6 +17,12 @@ use Cake\ORM\TableRegistry;
  */
 class UsersController extends AppController
 {
+    public function initialize()
+    {
+        parent::initialize();
+        $this->loadComponent('RequestHandler');
+    }
+
     /**
      * Index method
      *
@@ -250,8 +256,6 @@ class UsersController extends AppController
 
     public function login()
     {
-        $this->autoRender = false;
-        $this->response->type('json');
         if ($this->request->is('post')) {
             $user = $this->Auth->identify();
             if ($user) {
@@ -260,14 +264,16 @@ class UsersController extends AppController
                 $response->code = CodeEnum::LOGIN_GRANTED;
                 $response->name = NameEnum::LOGIN_GRANTED;
                 $response->type = TypeMessageEnum::SUCCESS;
-                $this->response->body(json_encode($response));
+                $this->set('response', $response);
+                $this->set('_serialize', 'response');
             }else {
                 $response = new ResponseMessage();
                 $response->code = CodeEnum::LOGIN_DENIED;
                 $response->name = NameEnum::LOGIN_DENIED;
                 $response->message = MessageEnum::USER_PASS_INCORRECT;
                 $response->type = TypeMessageEnum::ERROR;
-                $this->response->body(json_encode($response));
+                $this->set('response', $response);
+                $this->set('_serialize', 'response');
             }
         }
     }

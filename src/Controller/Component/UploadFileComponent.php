@@ -1,8 +1,6 @@
 <?php
 namespace App\Controller\Component;
 
-require_once(ROOT . DS . 'vendor' . DS . 'CakePHP-ImageTool-Component' . DS . 'ImageTool.php');
-
 use Burzum\FileStorage\Lib\StorageManager;
 use Cake\Controller\Component;
 use ImageTool;

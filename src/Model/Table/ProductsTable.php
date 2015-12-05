@@ -2,10 +2,15 @@
 namespace App\Model\Table;
 
 use App\Model\Entity\Product;
+use ArrayObject;
+use Cake\Event\Event;
+use Cake\ORM\Entity;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
+use Cake\ORM\TableRegistry;
 use Cake\Validation\Validator;
+use ImageTool;
 
 /**
  * Products Model
@@ -96,5 +101,201 @@ class ProductsTable extends Table
     {
         $rules->add($rules->existsIn(['store_id'], 'Stores'));
         return $rules;
+    }
+
+    public function afterSave(Event $event, Entity $entity, ArrayObject $options){
+        //Save ProductFeatures entities
+        $featuresArray = $this->getFeatuesArray($this->request->data);
+        $featuresEntities = $this->createMassFeaturesEntities($featuresArray, $entity->id);
+        $this->insertMassEntities($featuresEntities, 'ProductFeatures');
+
+        //Upload pictures to folder in server
+        $ROOT_PATH = dirname(ROOT) . DS;
+        $PRODUCTS_IMAGES_FOLDER = $ROOT_PATH . 'ShoppingResources' . DS . 'img' . DS . $entity->id;
+        $imagesUploaded = $this->uploadFiles($PRODUCTS_IMAGES_FOLDER, $this->request->data['file']);
+
+        //Create and Upload thumbnail to folder in server
+        $outputThumb = str_replace($PRODUCTS_IMAGES_FOLDER, $ROOT_PATH . 'ShoppingResources' . DS . 'thumb', $imagesUploaded[0]['url']);
+        $imageResized = $this->resizeImage([
+            'input' => $imagesUploaded[0]['url'], 'output' => $outputThumb, 'width' => 250, 'height' => 250, 'mode' => 'stretch'
+        ]);
+
+        //Prepare image data array to be transformed into entity
+        $thumbUploaded['url'] = str_replace($ROOT_PATH, 'http://localhost/PROJETOS/', $outputThumb);
+        $thumbUploaded['url'] = str_replace('\\', '/', $thumbUploaded['url']);
+        $thumbUploaded['media_type_id'] = 3;
+
+        //Save Media entity (thumbnail)
+        $mediaEntity = $this->createMediaEntity($thumbUploaded, $entity->id);
+        TableRegistry::get('Medias')->save($mediaEntity);
+
+        //Prepare image data array to be transformed into entities
+        $imagesUploaded = $this->addKeyValueToArray($imagesUploaded, 'media_type_id', 1);
+        $imagesUploaded[0]['media_type_id'] = 2;
+        $imagesUploaded = $this->replaceArrayValue($imagesUploaded, 'url', 'http://localhost/PROJETOS/', $ROOT_PATH);
+        $imagesUploaded = $this->replaceArrayValue($imagesUploaded, 'url', '/', '\\');
+
+        //Save Medias entities
+        $mediasEntities = $this->createMassMediasEntities($imagesUploaded, $entity->id);
+        $this->insertMassEntities($mediasEntities, 'Medias');
+    }
+
+    public function uploadFiles($folder, $files){
+        // create the folder if it does not exist
+        if(!is_dir($folder)){
+            mkdir($folder);
+        }
+
+        // list of permitted file types, this is only images but documents can be added
+        $permitted = ['image/gif','image/jpeg','image/pjpeg','image/png'];
+
+        // loop through and deal with the files
+        foreach($files as $file){
+            // replace spaces with underscores
+            $filename = str_replace(' ', '_', $file['name']);
+            // assume filetype is false
+            $typeOK = false;
+            // check filetype is ok
+            foreach($permitted as $type){
+                if($type == $file['type']){
+                    $typeOK = true;
+                    break;
+                }
+            }
+
+            // if file type ok upload the file
+            if($typeOK){
+                // switch based on error code
+                switch($file['error']){
+                    case 0:
+                        // check filename already exists
+                        if(!file_exists($folder . DS . $filename)){
+                            // create full filename
+                            $url = $folder . DS . $filename;
+                            // upload the file
+                            $success = move_uploaded_file($file['tmp_name'], $url);
+                        } else{
+                            // create unique filename and upload file
+                            ini_set('date.timezone', 'Europe/London');
+                            $now = date('Y-m-d-His');
+                            $url = $folder . DS . $now . $filename;
+                            $success = move_uploaded_file($file['tmp_name'], $url);
+                        }
+                        // if upload was successful
+                        if($success){
+                            // save the url of the file
+                            $result[]['url'] = $url;
+                        } else{
+                            $result['errors'][] = "Error uploaded $filename. Please try again.";
+                        }
+                        break;
+                    case 3:
+                        // an error occured
+                        $result['errors'][] = "Error uploading $filename. Please try again.";
+                        break;
+                    default:
+                        // an error occured
+                        $result['errors'][] = "System error uploading $filename. Contact webmaster.";
+                        break;
+                }
+            } elseif($file['error'] == 4){
+                // no file was selected for upload
+                $result['nofiles'][] = "No file Selected";
+            } else{
+                // unacceptable file type
+                $result['errors'][] = "$filename cannot be uploaded. Acceptable file types: gif, jpg, png.";
+            }
+        }
+        return $result;
+    }
+
+    public function resizeImage($settings)
+    {
+        $status = ImageTool::resize([
+            'input' => $settings['input'],
+            'output' => $settings['output'],
+            'width' => $settings['width'],
+            'height' => $settings['height'],
+            'mode' => $settings['mode']
+        ]);
+        return $status;
+    }
+
+    public function insertMassEntities($entities, $entityName)
+    {
+        foreach ($entities as $entity) {
+            TableRegistry::get($entityName)->save($entity);
+        }
+    }
+
+    public function createMassFeaturesEntities($featuresArray, $productID)
+    {
+        $featuresEntities = [];
+
+        foreach ($featuresArray as $feature) {
+            $featureEntity = TableRegistry::get('ProductFeatures')->newEntity();
+            $featureEntity->product_id = $productID;
+            $featureEntity->feature_value = $feature['feature_value'];
+            $featureEntity->feature_intern_code = $feature['feature_intern_code'];
+            $featuresEntities[] = $featureEntity;
+        }
+
+        return $featuresEntities;
+    }
+
+    public function getFeatuesArray($formValues)
+    {
+        $featuresArray = [];
+
+        foreach ($formValues as $key => $field) {
+            if (stripos($key, 'FEA') === 0) {
+                $featuresArray[] = ['feature_intern_code' => $key,
+                    'feature_value' => $formValues[$key]];
+            }
+        }
+
+        return $featuresArray;
+    }
+
+    public function createMassMediasEntities($mediasArray, $productID)
+    {
+        $mediasEntities = [];
+
+        foreach ($mediasArray as $media) {
+            $mediaEntity = TableRegistry::get('Medias')->newEntity();
+            $mediaEntity->product_id = $productID;
+            $mediaEntity->media_type_id = $media['media_type_id'];
+            $mediaEntity->path = $media['url'];
+            $mediasEntities[] = $mediaEntity;
+        }
+
+        return $mediasEntities;
+    }
+
+    public function createMediaEntity($mediaArray, $productID)
+    {
+        $mediaEntity = TableRegistry::get('Medias')->newEntity();
+        $mediaEntity->product_id = $productID;
+        $mediaEntity->media_type_id = $mediaArray['media_type_id'];
+        $mediaEntity->path = $mediaArray['url'];
+        return $mediaEntity;
+    }
+
+    public function addKeyValueToArray($array, $key, $value)
+    {
+        foreach ($array as &$element) {
+            $element[$key] = $value;
+        }
+
+        return $array;
+    }
+
+    public function replaceArrayValue($array, $key, $newString, $oldString)
+    {
+        foreach ($array as &$element) {
+            $element[$key] =  str_replace($oldString, $newString, $element[$key]);
+        }
+
+        return $array;
     }
 }

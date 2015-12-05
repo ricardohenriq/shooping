@@ -394,7 +394,7 @@ class ProductsController extends AppController
             $product->store_id = 1;
             $productSaved = $this->Products->save($product);
 
-            if($productSaved)
+            /*if($productSaved)
             {
                 //Save ProductFeatures entities
                 $featuresArray = $this->Insert->getFeatuesArray($this->request->data);
@@ -436,7 +436,7 @@ class ProductsController extends AppController
                 $result = ob_get_clean();
                 $file = 'C:\xampp\htdocs\PROJETOS\ShoppingTESTE\PRINT_VAR_DUMP.txt';
                 file_put_contents($file, $result);
-            }
+            }*/
         }
     }
 
