@@ -1,8 +1,6 @@
 <?php
 namespace App\Model\Table;
 
-use App\Model\Entity\Banner;
-use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
@@ -82,5 +80,27 @@ class BannersTable extends Table
     public function isOwnedBy($bannerId, $userId)
     {
         return $this->exists(['id' => $bannerId, 'user_id' => $userId]);
+    }
+
+    public function full()
+    {
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 2],
+            'limit' => 1
+        ];
+        return $this
+            ->find('all', $setting)->hydrate(false)->toArray();
+    }
+
+    public function small()
+    {
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 1],
+            'limit' => 3
+        ];
+        return $this
+            ->find('all', $setting)->hydrate(false)->toArray();
     }
 }

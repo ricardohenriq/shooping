@@ -68,4 +68,27 @@ class StoresTable extends Table
         $rules->add($rules->existsIn(['user_id'], 'Users'));
         return $rules;
     }
+
+    public function myStores($userID)
+    {
+        $setting = [
+            'fields' => ['store_name', 'id', 'created', 'modified'],
+            'conditions' => ['user_id' => $userID]
+        ];
+        return $this
+            ->find('all', $setting)->hydrate(false)->toArray();
+    }
+
+    public function favoriteStores()
+    {
+        //ESTE MÉTODO DEVERÁ SER REFEITO QUANDO FOR CRIADA A
+        //TABELA DE FAVORITOS, ATUALMENE ESTA SOMENTE "EMULANDO"
+        //UM RESULTADO ESPERADO.
+
+        $setting = [
+            'fields' => ['store_name', 'id', 'created', 'modified']
+        ];
+        return $this
+            ->find('all', $setting)->hydrate(false)->toArray();
+    }
 }

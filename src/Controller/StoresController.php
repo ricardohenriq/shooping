@@ -1,7 +1,7 @@
 <?php
 namespace App\Controller;
 
-use App\Controller\AppController;
+use Cake\Cache\Cache;
 use Cake\Event\Event;
 use Cake\ORM\TableRegistry;
 
@@ -72,47 +72,28 @@ class StoresController extends AppController
      * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($id = null)
+    public function edit($id)
     {
-        $setting = [
-            'fields' => ['store_name', 'id', 'created', 'modified'],
-            'conditions' => ['user_id' => $this->Auth->user('username')]
-        ];
-        $stores = TableRegistry::get('Stores')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('stores', $stores);
+        $userId = $this->Auth->user('id');
+        $username = $this->Auth->user('username');
+        $pageTitle = $username . ' - Banners';
 
-        //-------------------------------------------------------------------------
+        list($fullBanners, $smallBanners,) = Cache::remember(
+            'banners', function(){
+            $this->loadModel('Banners');
+            $fullBanners = $this->Banners->full();
+            $smallBanners = $this->Banners->small();
+            return [$fullBanners, $smallBanners];
+        });
 
-        $this->set('pageTitle', $this->Auth->User('username') . ' - Banners');
+        $stores = Cache::remember(
+            'stores', function(){
+            $stores = $this->Stores->myStores($this->Auth->user('id'));
+            return $stores;
+        });
 
-        //-------------------------------------------------------------------------
-
-        $this->set('username', $this->Auth->user('username'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('userId', $this->Auth->user('id'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('search', '');
-
-        /*$store = $this->Stores->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $store = $this->Stores->patchEntity($store, $this->request->data);
-            if ($this->Stores->save($store)) {
-                $this->Flash->success(__('The store has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The store could not be saved. Please, try again.'));
-            }
-        }
-        $users = $this->Stores->Users->find('list', ['limit' => 200]);
-        $this->set(compact('store', 'users'));
-        $this->set('_serialize', ['store']);*/
+        $this->set(compact('fullBanners', 'smallBanners', 'userId', 'username',
+            'stores', 'pageTitle'));
     }
 
     /**
@@ -136,139 +117,63 @@ class StoresController extends AppController
 
     public function miniMap()
     {
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 2],
-            'limit' => 1
-        ];
-        $fullBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('fullBanners', $fullBanners);
+        list($fullBanners, $smallBanners) = Cache::remember('banners', function(){
+            $this->loadModel('Banners');
+            $fullBanners = $this->Banners->full();
+            $smallBanners = $this->Banners->small();
+            return [$fullBanners, $smallBanners];
+        });
 
-        //-------------------------------------------------------------------------
-
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 1],
-            'limit' => 3
-        ];
-        $smallBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('smallBanners', $smallBanners);
-
-        //-------------------------------------------------------------------------
-
-        $this->set('userId', $this->Auth->user('id'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('username', $this->Auth->user('username'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('search', '');
+        $userId = $this->Auth->user('id');
+        $username = $this->Auth->user('username');
+        $this->set(compact('fullBanners', 'smallBanners', 'userId', 'username'));
     }
 
     public function myStores()
     {
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 2],
-            'limit' => 1
-        ];
-        $fullBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('fullBanners', $fullBanners);
+        $userId = $this->Auth->user('id');
+        $username = $this->Auth->user('username');
 
-        //-------------------------------------------------------------------------
+        list($fullBanners, $smallBanners,) = Cache::remember(
+            'banners', function(){
+            $this->loadModel('Banners');
+            $fullBanners = $this->Banners->full();
+            $smallBanners = $this->Banners->small();
+            return [$fullBanners, $smallBanners];
+        });
 
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 1],
-            'limit' => 3
-        ];
-        $smallBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('smallBanners', $smallBanners);
+        $stores = Cache::remember(
+            'stores', function(){
+            $stores = $this->Stores->myStores($this->Auth->user('id'));
+            return $stores;
+        });
 
-        //-------------------------------------------------------------------------
-
-        $this->set('userId', $this->Auth->user('id'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('username', $this->Auth->user('username'));
-
-        //-------------------------------------------------------------------------
-
-        $setting = [
-            'fields' => ['store_name', 'id', 'created', 'modified'],
-            'conditions' => ['user_id' => $this->Auth->user('username')]
-        ];
-        $stores = TableRegistry::get('Stores')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('stores', $stores);
-
-        //-------------------------------------------------------------------------
-
-        $this->set('search', '');
+        $this->set(compact('fullBanners', 'smallBanners', 'userId', 'username',
+            'stores'));
     }
 
     public function favoriteStores()
     {
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 2],
-            'limit' => 1
-        ];
-        $fullBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('fullBanners', $fullBanners);
+        $userId = $this->Auth->user('id');
+        $username = $this->Auth->user('username');
 
-        //-------------------------------------------------------------------------
+        list($fullBanners, $smallBanners,) = Cache::remember(
+            'banners', function(){
+            $this->loadModel('Banners');
+            $fullBanners = $this->Banners->full();
+            $smallBanners = $this->Banners->small();
+            return [$fullBanners, $smallBanners];
+        });
 
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 1],
-            'limit' => 3
-        ];
-        $smallBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('smallBanners', $smallBanners);
+        list($stores, $favoriteStores) = Cache::remember(
+            'stores', function(){
+            $stores = $this->Stores->myStores($this->Auth->user('id'));
+            $favoriteStores = $this->Stores->favoriteStores();
+            return [$stores, $favoriteStores];
+        });
 
-        //-------------------------------------------------------------------------
-
-        $this->set('userId', $this->Auth->user('id'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('username', $this->Auth->user('username'));
-
-        //-------------------------------------------------------------------------
-
-        $setting = [
-            'fields' => ['store_name', 'id', 'created', 'modified'],
-            'conditions' => ['user_id' => $this->Auth->user('username')]
-        ];
-        $stores = TableRegistry::get('Stores')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('stores', $stores);
-
-        //-------------------------------------------------------------------------
-
-        //ESTE MÉTODO DEVERÁ SER REFEITO QUANDO FOR CRIADA A
-        //TABELA DE FAVORITOS, ATUALMENE ESTA SOMENTE "EMULANDO"
-        //UM RESULTADO ESPERADO.
-        $setting = [
-            'fields' => ['store_name', 'id', 'created', 'modified']
-        ];
-        $favoriteStores = TableRegistry::get('Stores')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('favoriteStores', $favoriteStores);
-
-        //-------------------------------------------------------------------------
-
-        $this->set('search', '');
+        $this->set(compact('fullBanners', 'smallBanners', 'userId', 'username',
+            'stores', 'favoriteStores'));
     }
 
     public function search()

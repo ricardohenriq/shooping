@@ -64,4 +64,5 @@ class SubCategoriesTable extends Table
         $rules->add($rules->existsIn(['category_id'], 'Categories'));
         return $rules;
     }
+
 }

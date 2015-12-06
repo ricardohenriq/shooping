@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\AppClasses\FormatFormValues\FormatContactForm;
 use App\Controller\AppController;
+use Cake\Cache\Cache;
 use Cake\Event\Event;
 use Cake\ORM\TableRegistry;
 use Cake\Network\Email\Email;
@@ -184,83 +185,63 @@ class CustomStaticPagesController extends AppController
 
     public function perguntasFrequentes()
     {
-        $userTypes = TableRegistry::get('UserTypes')
-            ->find('list')->hydrate(false)->toArray();
-        $this->set('userTypes', $userTypes);
+        $userId = $this->Auth->user('id');
+        $username = $this->Auth->user('username');
+        $userTypes = Cache::remember(
+            'userTypes', function(){
+            $this->loadModel('UserTypes');
+            $stores = $this->UserTypes->listSubCategories();
+            return $stores;
+        });
 
-        //-------------------------------------------------------------------------
-
-        $this->set('userId', $this->Auth->user('id'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('username', $this->Auth->user('username'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('search', '');
+        $this->set(compact('userId', 'username', 'userTypes'));
     }
 
     public function termosDeServico()
     {
-        $userTypes = TableRegistry::get('UserTypes')
-            ->find('list')->hydrate(false)->toArray();
-        $this->set('userTypes', $userTypes);
+        $userId = $this->Auth->user('id');
+        $username = $this->Auth->user('username');
+        $userTypes = Cache::remember(
+            'userTypes', function(){
+            $this->loadModel('UserTypes');
+            $stores = $this->UserTypes->listSubCategories();
+            return $stores;
+        });
 
-        //-------------------------------------------------------------------------
-
-        $this->set('userId', $this->Auth->user('id'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('username', $this->Auth->user('username'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('search', '');
+        $this->set(compact('userId', 'username', 'userTypes'));
     }
 
     public function politicasDePrivacidade()
     {
-        $userTypes = TableRegistry::get('UserTypes')
-            ->find('list')->hydrate(false)->toArray();
-        $this->set('userTypes', $userTypes);
+        $userId = $this->Auth->user('id');
+        $username = $this->Auth->user('username');
+        $userTypes = Cache::remember(
+            'userTypes', function(){
+            $this->loadModel('UserTypes');
+            $stores = $this->UserTypes->listSubCategories();
+            return $stores;
+        });
 
-        //-------------------------------------------------------------------------
-
-        $this->set('userId', $this->Auth->user('id'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('username', $this->Auth->user('username'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('search', '');
+        $this->set(compact('userId', 'username', 'userTypes'));
     }
 
     public function email()
     {
-        if ($this->request->is('get')) {
+        if ($this->request->is('get'))
+        {
+            $userId = $this->Auth->user('id');
+            $username = $this->Auth->user('username');
+            $userTypes = Cache::remember(
+                'userTypes', function(){
+                $this->loadModel('UserTypes');
+                $stores = $this->UserTypes->listSubCategories();
+                return $stores;
+            });
+
+            $this->set(compact('userId', 'username', 'userTypes'));
 			
-			$userTypes = TableRegistry::get('UserTypes')
-				->find('list')->hydrate(false)->toArray();
-			$this->set('userTypes', $userTypes);
-
-			//-------------------------------------------------------------------------
-
-			$this->set('userId', $this->Auth->user('id'));
-
-			//-------------------------------------------------------------------------
-
-			$this->set('username', $this->Auth->user('username'));
-
-			//-------------------------------------------------------------------------
-
-			$this->set('search', '');
-			
-		}else if($this->request->is('post')){
-			
+		}else if($this->request->is('post'))
+        {
 			Email::configTransport('gmail', [
 				'host' => 'smtp.gmail.com',
 				'port' => 587,

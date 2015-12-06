@@ -50,4 +50,10 @@ class UserTypesTable extends Table
 
         return $validator;
     }
+
+    public function listSubCategories()
+    {
+        return $this
+            ->find('list')->hydrate(false)->toArray();
+    }
 }
