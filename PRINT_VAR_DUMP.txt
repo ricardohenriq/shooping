@@ -1,1 +1,1595 @@
-string(67) "http://localhost/PROJETOS/ShoppingResources/img/113/Anja_Rubik2.jpg"
+array(59) {
+  [0]=>
+  array(5) {
+    ["id"]=>
+    int(1)
+    ["product_name"]=>
+    string(39) "Samsung Galaxy A5 Duos Branco 4G Orange"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#156 (3) {
+      ["time"]=>
+      string(24) "2010-10-28T09:39:49+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#157 (3) {
+      ["time"]=>
+      string(24) "2011-10-28T09:39:49+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [1]=>
+  array(5) {
+    ["id"]=>
+    int(5)
+    ["product_name"]=>
+    string(55) "MP3 Player Shuffle Clip FM Cabo USB Fone Suporta ate 8G"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#158 (3) {
+      ["time"]=>
+      string(24) "2010-10-28T09:39:49+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#159 (3) {
+      ["time"]=>
+      string(24) "2011-10-28T09:39:49+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [2]=>
+  array(5) {
+    ["id"]=>
+    int(75)
+    ["product_name"]=>
+    string(11) "Produto Bom"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#160 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T12:11:04+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#161 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T12:11:04+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [3]=>
+  array(5) {
+    ["id"]=>
+    int(76)
+    ["product_name"]=>
+    string(15) "Produto 1 Teste"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#162 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T12:40:50+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#163 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T12:40:50+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [4]=>
+  array(5) {
+    ["id"]=>
+    int(77)
+    ["product_name"]=>
+    string(9) "Produto 3"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#164 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T12:49:30+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#165 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T12:49:30+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [5]=>
+  array(5) {
+    ["id"]=>
+    int(78)
+    ["product_name"]=>
+    string(9) "produto 9"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#166 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T12:50:32+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#167 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T12:50:32+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [6]=>
+  array(5) {
+    ["id"]=>
+    int(79)
+    ["product_name"]=>
+    string(10) "produto 18"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#168 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T12:52:06+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#169 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T12:52:06+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [7]=>
+  array(5) {
+    ["id"]=>
+    int(80)
+    ["product_name"]=>
+    string(9) "produto 6"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#170 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T12:54:22+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#171 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T12:54:22+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [8]=>
+  array(5) {
+    ["id"]=>
+    int(81)
+    ["product_name"]=>
+    string(10) "produto 11"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#172 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T12:57:31+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#173 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T12:57:31+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [9]=>
+  array(5) {
+    ["id"]=>
+    int(82)
+    ["product_name"]=>
+    string(10) "produto 98"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#174 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:01:07+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#175 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:01:07+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [10]=>
+  array(5) {
+    ["id"]=>
+    int(83)
+    ["product_name"]=>
+    string(11) "Produto 777"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#176 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:35:38+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#177 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:35:38+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [11]=>
+  array(5) {
+    ["id"]=>
+    int(84)
+    ["product_name"]=>
+    string(10) "Produto 98"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#178 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:39:05+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#179 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:39:05+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [12]=>
+  array(5) {
+    ["id"]=>
+    int(85)
+    ["product_name"]=>
+    string(10) "Produto 89"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#180 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:43:12+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#181 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:43:12+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [13]=>
+  array(5) {
+    ["id"]=>
+    int(86)
+    ["product_name"]=>
+    string(10) "produto 69"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#182 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:46:32+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#183 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:46:32+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [14]=>
+  array(5) {
+    ["id"]=>
+    int(87)
+    ["product_name"]=>
+    string(11) "Produto 876"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#184 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:47:59+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#185 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:47:59+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [15]=>
+  array(5) {
+    ["id"]=>
+    int(88)
+    ["product_name"]=>
+    string(10) "Produto 69"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#186 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:51:57+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#187 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T13:51:57+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [16]=>
+  array(5) {
+    ["id"]=>
+    int(89)
+    ["product_name"]=>
+    string(6) "Carros"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#188 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T15:45:23+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#189 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T15:45:23+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [17]=>
+  array(5) {
+    ["id"]=>
+    int(90)
+    ["product_name"]=>
+    string(6) "Carros"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#190 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T15:48:30+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#191 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T15:48:30+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [18]=>
+  array(5) {
+    ["id"]=>
+    int(91)
+    ["product_name"]=>
+    string(6) "Carros"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#192 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T15:50:21+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#193 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T15:50:21+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [19]=>
+  array(5) {
+    ["id"]=>
+    int(92)
+    ["product_name"]=>
+    string(6) "Carros"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#194 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T15:55:12+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#195 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T15:55:12+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [20]=>
+  array(5) {
+    ["id"]=>
+    int(93)
+    ["product_name"]=>
+    string(7) "Rapidos"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#196 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T15:56:52+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#197 (3) {
+      ["time"]=>
+      string(24) "2015-11-27T15:56:52+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [21]=>
+  array(5) {
+    ["id"]=>
+    int(94)
+    ["product_name"]=>
+    string(6) "Carros"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#198 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T15:59:32+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#199 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T15:59:32+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [22]=>
+  array(5) {
+    ["id"]=>
+    int(95)
+    ["product_name"]=>
+    string(17) "Carros Importados"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#200 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:01:56+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#201 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:01:56+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [23]=>
+  array(5) {
+    ["id"]=>
+    int(96)
+    ["product_name"]=>
+    string(6) "Carros"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#202 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:18:50+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#203 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:18:50+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [24]=>
+  array(5) {
+    ["id"]=>
+    int(97)
+    ["product_name"]=>
+    string(6) "Carros"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#204 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:36:43+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#205 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:36:43+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [25]=>
+  array(5) {
+    ["id"]=>
+    int(98)
+    ["product_name"]=>
+    string(5) "carro"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#206 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:39:06+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#207 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:39:06+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [26]=>
+  array(5) {
+    ["id"]=>
+    int(99)
+    ["product_name"]=>
+    string(6) "carros"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#208 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:40:18+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#209 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:40:18+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [27]=>
+  array(5) {
+    ["id"]=>
+    int(100)
+    ["product_name"]=>
+    string(7) "rapidos"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#210 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:41:03+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#211 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:41:03+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [28]=>
+  array(5) {
+    ["id"]=>
+    int(101)
+    ["product_name"]=>
+    string(6) "carros"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#212 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:43:01+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#213 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:43:01+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [29]=>
+  array(5) {
+    ["id"]=>
+    int(102)
+    ["product_name"]=>
+    string(10) "Anja Rubik"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#214 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:44:37+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#215 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:44:37+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [30]=>
+  array(5) {
+    ["id"]=>
+    int(103)
+    ["product_name"]=>
+    string(4) "Anja"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#216 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:46:17+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#217 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:46:17+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [31]=>
+  array(5) {
+    ["id"]=>
+    int(104)
+    ["product_name"]=>
+    string(4) "Anja"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#218 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:46:56+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#219 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:46:56+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [32]=>
+  array(5) {
+    ["id"]=>
+    int(105)
+    ["product_name"]=>
+    string(10) "Anja Rubik"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#220 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:50:57+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#221 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T16:50:57+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [33]=>
+  array(5) {
+    ["id"]=>
+    int(106)
+    ["product_name"]=>
+    string(10) "Anja Rubik"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#222 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T17:19:28+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#223 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T17:19:28+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [34]=>
+  array(5) {
+    ["id"]=>
+    int(107)
+    ["product_name"]=>
+    string(10) "Anja Rubik"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#224 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T17:21:46+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#225 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T17:21:46+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [35]=>
+  array(5) {
+    ["id"]=>
+    int(108)
+    ["product_name"]=>
+    string(6) "Carros"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#226 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T17:26:41+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#227 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T17:26:41+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [36]=>
+  array(5) {
+    ["id"]=>
+    int(109)
+    ["product_name"]=>
+    string(6) "Carros"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#228 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T17:29:52+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#229 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T17:29:52+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [37]=>
+  array(5) {
+    ["id"]=>
+    int(110)
+    ["product_name"]=>
+    string(6) "CARROS"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#230 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T17:40:52+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#231 (3) {
+      ["time"]=>
+      string(24) "2015-11-28T17:40:52+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [38]=>
+  array(5) {
+    ["id"]=>
+    int(111)
+    ["product_name"]=>
+    string(4) "anja"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#232 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T20:31:28+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#233 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T20:31:28+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [39]=>
+  array(5) {
+    ["id"]=>
+    int(112)
+    ["product_name"]=>
+    string(4) "anja"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#234 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T20:32:47+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#235 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T20:32:47+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [40]=>
+  array(5) {
+    ["id"]=>
+    int(113)
+    ["product_name"]=>
+    string(4) "anja"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#236 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T20:33:56+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#237 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T20:33:56+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [41]=>
+  array(5) {
+    ["id"]=>
+    int(114)
+    ["product_name"]=>
+    string(4) "anja"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#238 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T20:35:53+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#239 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T20:35:53+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [42]=>
+  array(5) {
+    ["id"]=>
+    int(115)
+    ["product_name"]=>
+    string(4) "anja"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#240 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T20:37:30+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#241 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T20:37:30+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [43]=>
+  array(5) {
+    ["id"]=>
+    int(116)
+    ["product_name"]=>
+    string(6) "Carros"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#242 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T20:49:56+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#243 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T20:49:56+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [44]=>
+  array(5) {
+    ["id"]=>
+    int(117)
+    ["product_name"]=>
+    string(10) "Anja Rubik"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#244 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T20:58:24+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#245 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T20:58:24+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [45]=>
+  array(5) {
+    ["id"]=>
+    int(118)
+    ["product_name"]=>
+    string(10) "Anja Rubik"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#246 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T21:18:41+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#247 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T21:18:41+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [46]=>
+  array(5) {
+    ["id"]=>
+    int(119)
+    ["product_name"]=>
+    string(17) "Carros Importados"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#248 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T22:50:45+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#249 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T22:50:45+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [47]=>
+  array(5) {
+    ["id"]=>
+    int(120)
+    ["product_name"]=>
+    string(6) "CARROS"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#250 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T22:56:10+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#251 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T22:56:10+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [48]=>
+  array(5) {
+    ["id"]=>
+    int(121)
+    ["product_name"]=>
+    string(7) "CARROS2"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#252 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T23:03:34+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#253 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T23:03:34+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [49]=>
+  array(5) {
+    ["id"]=>
+    int(122)
+    ["product_name"]=>
+    string(7) "Carros1"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#254 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T23:09:24+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#255 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T23:09:24+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [50]=>
+  array(5) {
+    ["id"]=>
+    int(123)
+    ["product_name"]=>
+    string(9) "Carros 2 "
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#256 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T23:11:46+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#257 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T23:11:46+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [51]=>
+  array(5) {
+    ["id"]=>
+    int(124)
+    ["product_name"]=>
+    string(8) "Carros 3"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#258 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T23:13:29+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#259 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T23:13:29+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [52]=>
+  array(5) {
+    ["id"]=>
+    int(125)
+    ["product_name"]=>
+    string(7) "Carros7"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#260 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T23:20:20+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#261 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T23:20:20+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [53]=>
+  array(5) {
+    ["id"]=>
+    int(126)
+    ["product_name"]=>
+    string(9) "Carros123"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#262 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T23:21:57+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#263 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T23:21:57+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [54]=>
+  array(5) {
+    ["id"]=>
+    int(127)
+    ["product_name"]=>
+    string(10) "Anja Rubik"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#264 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T23:25:33+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#265 (3) {
+      ["time"]=>
+      string(24) "2015-11-30T23:25:33+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [55]=>
+  array(5) {
+    ["id"]=>
+    int(128)
+    ["product_name"]=>
+    string(7) "novinha"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#266 (3) {
+      ["time"]=>
+      string(24) "2015-12-04T13:53:17+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#267 (3) {
+      ["time"]=>
+      string(24) "2015-12-04T13:53:17+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [56]=>
+  array(5) {
+    ["id"]=>
+    int(129)
+    ["product_name"]=>
+    string(7) "novinha"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#268 (3) {
+      ["time"]=>
+      string(24) "2015-12-04T14:00:06+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#269 (3) {
+      ["time"]=>
+      string(24) "2015-12-04T14:00:06+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [57]=>
+  array(5) {
+    ["id"]=>
+    int(130)
+    ["product_name"]=>
+    string(7) "novinha"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#270 (3) {
+      ["time"]=>
+      string(24) "2015-12-04T14:17:54+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#271 (3) {
+      ["time"]=>
+      string(24) "2015-12-04T14:17:54+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+  [58]=>
+  array(5) {
+    ["id"]=>
+    int(131)
+    ["product_name"]=>
+    string(13) "Anja Rubik 69"
+    ["store_id"]=>
+    int(1)
+    ["created"]=>
+    object(Cake\I18n\Time)#272 (3) {
+      ["time"]=>
+      string(24) "2015-12-05T12:20:28+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+    ["modified"]=>
+    object(Cake\I18n\Time)#273 (3) {
+      ["time"]=>
+      string(24) "2015-12-05T12:20:28+0000"
+      ["timezone"]=>
+      string(3) "UTC"
+      ["fixedNowTime"]=>
+      bool(false)
+    }
+  }
+}

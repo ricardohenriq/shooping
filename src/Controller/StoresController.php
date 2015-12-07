@@ -134,7 +134,7 @@ class StoresController extends AppController
         $userId = $this->Auth->user('id');
         $username = $this->Auth->user('username');
 
-        list($fullBanners, $smallBanners,) = Cache::remember(
+        list($fullBanners, $smallBanners) = Cache::remember(
             'banners', function(){
             $this->loadModel('Banners');
             $fullBanners = $this->Banners->full();
@@ -142,11 +142,7 @@ class StoresController extends AppController
             return [$fullBanners, $smallBanners];
         });
 
-        $stores = Cache::remember(
-            'stores', function(){
-            $stores = $this->Stores->myStores($this->Auth->user('id'));
-            return $stores;
-        });
+        $stores = $this->Stores->myStores($this->Auth->user('id'));
 
         $this->set(compact('fullBanners', 'smallBanners', 'userId', 'username',
             'stores'));
@@ -313,8 +309,6 @@ class StoresController extends AppController
             //-------------------------------------------------------------------------
 
             $this->set('previousNextPage', $this->Url->getPreviousNextPage($pagina));
-
-            //-------------------------------------------------------------------------
 
             $this->set('search', $search);
         }

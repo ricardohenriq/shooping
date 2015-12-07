@@ -84,4 +84,26 @@ class OffersTable extends Table
         $rules->add($rules->existsIn(['product_id'], 'Products'));
         return $rules;
     }
+
+    public function offersRecursive(){
+        return $this
+            ->find()
+            ->select(['id', 'product_id', 'date_end', 'name', 'description'])
+            ->contain([
+                'Products' => function($q) {
+                    //return $q->autoFields(true);
+                    return $q->select(['id', 'product_name', 'price', 'old_price'])
+                        ->contain([
+                            'Medias' => function($q){
+                                return $q->select(['product_id', 'path'])
+                                    ->where(['media_type_id' => 3]);
+                            }
+                        ]);
+                },
+                'OfferBanners' => function($q) {
+                    //return $q->autoFields(true);
+                    return $q->select(['path', 'offer_id']);
+                }
+            ])->hydrate(false)->toArray();
+    }
 }

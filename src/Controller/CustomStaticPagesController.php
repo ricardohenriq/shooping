@@ -2,7 +2,6 @@
 namespace App\Controller;
 
 use App\AppClasses\FormatFormValues\FormatContactForm;
-use App\Controller\AppController;
 use Cake\Cache\Cache;
 use Cake\Event\Event;
 use Cake\ORM\TableRegistry;
@@ -17,170 +16,78 @@ class CustomStaticPagesController extends AppController
 {
     public function index()
     {
-        $categories = TableRegistry::get('Categories')
-            ->find()->hydrate(false)->toArray();
-        $this->set('categories', $categories);
+        $categories = Cache::remember(
+            'categories', function(){
+            $this->loadModel('Categories');
+            $categories = $this->Categories->getAllCategories();
+            return $categories;
+        });
 
         //-------------------------------------------------------------------------
 
-        $subCategories = TableRegistry::get('SubCategories')
-            ->find()->hydrate(false)->toArray();
-        $this->set('subCategories', $subCategories);
+        list($subCategories, $subCategoriesName) = Cache::remember(
+            'subCategories', function(){
+            $this->loadModel('SubCategories');
+            $subCategories = $this->SubCategories->getAllSubCategories();
+            $subCategoriesName = $this->SubCategories->listAllSubCategories();
+            return [$subCategories, $subCategoriesName];
+        });
 
         //-------------------------------------------------------------------------
 
-        $subCategoriesName = TableRegistry::get('SubCategories')
-            ->find('list')->hydrate(false)->toArray();
-        $this->set('subCategoriesName', $subCategoriesName);
+        $userId = $this->Auth->user('id');
+        $username = $this->Auth->user('username');
+
+        $userTypes = Cache::remember(
+            'userTypes', function(){
+            $this->loadModel('UserTypes');
+            $userTypes = $this->UserTypes->listSubCategories();
+            return $userTypes;
+        });
 
         //-------------------------------------------------------------------------
 
-        $userTypes = TableRegistry::get('UserTypes')
-            ->find('list')->hydrate(false)->toArray();
-        $this->set('userTypes', $userTypes);
+        list($fullBanners, $smallBanners) = Cache::remember(
+            'banners', function(){
+            $this->loadModel('Banners');
+            $fullBanners = $this->Banners->full();
+            $smallBanners = $this->Banners->small();
+            return [$fullBanners, $smallBanners];
+        });
 
         //-------------------------------------------------------------------------
 
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 2],
-            'limit' => 1
-        ];
-        $fullBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('fullBanners', $fullBanners);
+        list($productsBestSeller, $productsNewer, $productsMostPopular) = Cache::remember(
+            'productsTrend', function(){
+            $this->loadModel('Products');
+            $productsBestSeller = $this->Products->getProductTrendByColumn('sold');
+            $productsNewer = $this->Products->getProductTrendByColumn('created');
+            $productsMostPopular = $this->Products->getProductTrendByColumn('visited');
+            return [$productsBestSeller, $productsNewer, $productsMostPopular];
+        });
 
         //-------------------------------------------------------------------------
 
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 1],
-            'limit' => 3
-        ];
-        $smallBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('smallBanners', $smallBanners);
+        $offers = Cache::remember(
+            'offers', function(){
+            $this->loadModel('Offers');
+            $offers = $this->Offers->offersRecursive();
+            return $offers;
+        });
 
         //-------------------------------------------------------------------------
 
-        $limit = 4;
-        $setting = [
-            'fields' => ['id', 'product_name', 'quantity', 'sold', 'description', 'price',
-                'old_price'],
-            'order' => ['sold' => 'DESC'],
-            'limit' => $limit
-        ];
-        $productsBestSeller = TableRegistry::get('Products')
-            ->find('all', $setting)->hydrate(false)->toArray();
+        $news = Cache::remember(
+            'news', function(){
+            $this->loadModel('News');
+            $news = $this->News->getRecentNews();
+            return $news;
+        });
 
-        $productsSize = count($productsBestSeller);
-        for($i = 0; $i < $productsSize ; $i++)
-        {
-            $setting = [
-                'fields' => ['path'],
-                'conditions' => ['product_id' => $productsBestSeller[$i]['id'], 'media_type_id' => 3]
-            ];
-            $productsBestSeller[$i]['thumb'] = TableRegistry::get('Medias')
-                ->find('all', $setting)->hydrate(false)->first()['path'];
-        }
-
-        $this->set('productsBestSeller', $productsBestSeller);
-
-        //-------------------------------------------------------------------------
-
-        $limit = 4;
-        $setting = [
-            'fields' => ['id', 'product_name', 'quantity', 'sold', 'description', 'price',
-                'old_price'],
-            'order' => ['created' => 'DESC'],
-            'limit' => $limit
-        ];
-        $productsNewer = TableRegistry::get('Products')
-            ->find('all', $setting)->hydrate(false)->toArray();
-
-        $productsSize = count($productsNewer);
-        for($i = 0; $i < $productsSize ; $i++)
-        {
-            $setting = [
-                'fields' => ['path'],
-                'conditions' => ['product_id' => $productsNewer[$i]['id'], 'media_type_id' => 3]
-            ];
-            $productsNewer[$i]['thumb'] = TableRegistry::get('Medias')
-                ->find('all', $setting)->hydrate(false)->first()['path'];
-        }
-
-        $this->set('productNewer', $productsNewer);
-
-        //-------------------------------------------------------------------------
-
-        $limit = 4;
-        $setting = [
-            'fields' => ['id', 'product_name', 'quantity', 'sold', 'description', 'price',
-                'old_price'],
-            'order' => ['visited' => 'DESC'],
-            'limit' => $limit
-        ];
-        $productsMostPopular = TableRegistry::get('Products')
-            ->find('all', $setting)->hydrate(false)->toArray();
-
-        $productsSize = count($productsMostPopular);
-        for($i = 0; $i < $productsSize ; $i++)
-        {
-            $setting = [
-                'fields' => ['path'],
-                'conditions' => ['product_id' => $productsMostPopular[$i]['id'], 'media_type_id' => 3]
-            ];
-            $productsMostPopular[$i]['thumb'] = TableRegistry::get('Medias')
-                ->find('all', $setting)->hydrate(false)->first()['path'];
-        }
-
-        $this->set('productsMostPopular', $productsMostPopular);
-
-        //-------------------------------------------------------------------------
-
-        $offers = TableRegistry::get('Offers');
-        $offers = $offers->find()
-            ->select(['id', 'product_id', 'date_end', 'name', 'description'])
-            ->contain([
-                'Products' => function($q) {
-                    //return $q->autoFields(true);
-                    return $q->select(['id', 'product_name', 'price', 'old_price'])
-                        ->contain([
-                            'Medias' => function($q){
-                                return $q->select(['product_id', 'path'])
-                                    ->where(['media_type_id' => 3]);
-                            }
-                        ]);
-                },
-                'OfferBanners' => function($q) {
-                    //return $q->autoFields(true);
-                    return $q->select(['path', 'offer_id']);
-                }
-            ])->hydrate(false)->toArray();
-        $this->set('offers', $offers);
-
-        //-------------------------------------------------------------------------
-
-        $setting = [
-            'fields' => ['store_id', 'name'],
-            'order' => ['created' => 'DESC'],
-            'limit' => 10
-        ];
-        $news = TableRegistry::get('News')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('news', $news);
-
-        //-------------------------------------------------------------------------
-
-        $this->set('userId', $this->Auth->user('id'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('username', $this->Auth->user('username'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('search', '');
+        $this->set(compact('userId', 'username', 'userTypes', 'smallBanners',
+            'fullBanners', 'offers', 'news', 'categories', 'subCategories',
+            'subCategoriesName', 'productsBestSeller', 'productsNewer',
+            'productsMostPopular'));
     }
 
     public function perguntasFrequentes()
@@ -250,10 +157,6 @@ class CustomStaticPagesController extends AppController
 				'className' => 'Smtp',
 				'tls' => true
 			]);
-			
-			//-------------------------------------------------------------------------
-
-            $formatContactForm = new formatContactForm();
 
 			//-------------------------------------------------------------------------
 
@@ -263,13 +166,13 @@ class CustomStaticPagesController extends AppController
 				->to('ricardohenrique1@outlook.com')
                 ->emailFormat('html')
 				->subject(
-                    $formatContactForm->getSubject(
+                    FormatContactForm::getSubject(
                         $this->request->data['subject'],
                         ['suffix' => ' | Store Site']
                     )
                 )
 				->send(
-                    $formatContactForm->getMessage(
+                    FormatContactForm::getMessage(
                         $this->request->data,
                         ['uppercaseLabel' => true]
                     )

@@ -1,18 +1,18 @@
 <?php
 namespace App\Model\Table;
 
-use App\Model\Entity\SubCategory;
+use App\Model\Entity\News;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * SubCategories Model
+ * News Model
  *
- * @property \Cake\ORM\Association\BelongsTo $Categories
+ * @property \Cake\ORM\Association\BelongsTo $Stores
  */
-class SubCategoriesTable extends Table
+class NewsTable extends Table
 {
 
     /**
@@ -23,12 +23,14 @@ class SubCategoriesTable extends Table
      */
     public function initialize(array $config)
     {
-        $this->table('sub_categories');
-        $this->displayField('sub_category_name');
+        parent::initialize($config);
+
+        $this->table('news');
+        $this->displayField('name');
         $this->primaryKey('id');
         $this->addBehavior('Timestamp');
-        $this->belongsTo('Categories', [
-            'foreignKey' => 'category_id',
+        $this->belongsTo('Stores', [
+            'foreignKey' => 'store_id',
             'joinType' => 'INNER'
         ]);
     }
@@ -44,10 +46,14 @@ class SubCategoriesTable extends Table
         $validator
             ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create');
-            
+
         $validator
-            ->requirePresence('sub_category_name', 'create')
-            ->notEmpty('sub_category_name');
+            ->requirePresence('name', 'create')
+            ->notEmpty('name');
+
+        $validator
+            ->requirePresence('description', 'create')
+            ->notEmpty('description');
 
         return $validator;
     }
@@ -61,22 +67,18 @@ class SubCategoriesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->existsIn(['category_id'], 'Categories'));
+        $rules->add($rules->existsIn(['store_id'], 'Stores'));
         return $rules;
     }
 
-    public function getAllSubCategories()
+    public function getRecentNews()
     {
         $settings = [
-            'fields' => ['id', 'sub_category_name', 'category_id']
+            'fields' => ['store_id', 'name'],
+            'order' => ['created' => 'DESC'],
+            'limit' => 10
         ];
         return $this
             ->find('all', $settings)->hydrate(false)->toArray();
-    }
-
-    public function listAllSubCategories()
-    {
-        return $this
-            ->find('list')->hydrate(false)->toArray();
     }
 }

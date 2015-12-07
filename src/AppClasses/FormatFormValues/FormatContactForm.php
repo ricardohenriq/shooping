@@ -4,7 +4,7 @@ namespace App\AppClasses\FormatFormValues;
 
 class FormatContactForm {
 
-    public function getSubject($subject, $settings){
+    public static function getSubject($subject, $settings){
         if(@$settings['uppercase'] == true){
             $subject = strtoupper($subject);
         }
@@ -12,7 +12,7 @@ class FormatContactForm {
         return $subjectFormatted;
     }
 
-    public function getMessage($message, $settings){
+    public static function getMessage($message, $settings){
 
         $messageBody = null;
 

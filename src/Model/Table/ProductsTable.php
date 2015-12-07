@@ -298,4 +298,28 @@ class ProductsTable extends Table
 
         return $array;
     }
+
+    public function getProductTrendByColumn($column)
+    {
+        return $this
+            ->find()
+            ->select(['id', 'product_name', 'price', 'old_price'])
+            ->order([$column => 'DESC'])
+            ->limit(4)
+            ->contain([
+                'Medias' => function($q){
+                    return $q->select(['path', 'product_id'])
+                        ->where(['media_type_id' => 3]);
+                }
+            ])->hydrate(false)->toArray();
+    }
+
+    public function getProductByStore($storeId){
+        $setting = [
+            'fields' => ['id', 'product_name', 'store_id', 'created', 'modified'],
+            'conditions' => ['store_id' => $storeId]
+        ];
+        return $this
+            ->find('all', $setting)->hydrate(false)->toArray();
+    }
 }

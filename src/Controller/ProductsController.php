@@ -1,7 +1,7 @@
 <?php
 namespace App\Controller;
 
-use App\Controller\AppController;
+use Cake\Cache\Cache;
 use Cake\Event\Event;
 use Cake\ORM\TableRegistry;
 
@@ -434,7 +434,7 @@ class ProductsController extends AppController
                 ob_start();
                 var_dump($thumbUploaded['url']);
                 $result = ob_get_clean();
-                $file = 'C:\xampp\htdocs\PROJETOS\ShoppingTESTE\PRINT_VAR_DUMP.txt';
+                $file = 'C:\xampp\htdocs\PROJETOS\Shopping\PRINT_VAR_DUMP.txt';
                 file_put_contents($file, $result);
             }*/
         }
@@ -590,28 +590,24 @@ class ProductsController extends AppController
 
     public function productsByStore($storeID)
     {
-        $setting = [
-            'fields' => ['store_name', 'id', 'created', 'modified'],
-            'conditions' => ['user_id' => $this->Auth->user('username')]
-        ];
-        $stores = TableRegistry::get('Stores')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('stores', $stores);
+        $this->loadModel('Stores');
 
-        //-------------------------------------------------------------------------
+        $userId = $this->Auth->user('id');
+        $username = $this->Auth->user('username');
+        $pageTitle = 'Store';
 
-        $this->set('pageTitle', $this->Auth->User('username') . ' - Banners');
+        $products = $this->Products->getProductByStore(1);
+        $stores = $this->Stores->myStores($this->Auth->user('id'));
 
-        //-------------------------------------------------------------------------
+        list($fullBanners, $smallBanners) = Cache::remember(
+            'banners', function(){
+            $this->loadModel('Banners');
+            $fullBanners = $this->Banners->full();
+            $smallBanners = $this->Banners->small();
+            return [$fullBanners, $smallBanners];
+        });
 
-        $this->set('username', $this->Auth->user('username'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('userId', $this->Auth->user('id'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('search', '');
+        $this->set(compact('fullBanners', 'smallBanners', 'userId', 'username',
+            'products', 'pageTitle', 'stores'));
     }
 }

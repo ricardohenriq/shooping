@@ -39,11 +39,21 @@ class CategoriesTable extends Table
         $validator
             ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create');
-            
+
         $validator
             ->requirePresence('category_name', 'create')
             ->notEmpty('category_name');
 
         return $validator;
+    }
+
+    public function getAllCategories()
+    {
+        $settings = [
+            'fields' => ['id', 'category_name']
+        ];
+
+        return $this
+            ->find('all', $settings)->hydrate(false)->toArray();
     }
 }
