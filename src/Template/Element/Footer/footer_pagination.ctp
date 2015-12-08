@@ -4,7 +4,7 @@
             <?php if($qtdProducts > 0): ?>
                 <?php if($pagina > 1): ?>
                     <li>
-                        <a href=<?= $url ?>&page=<?= $previousNextPage['previousPage'] ?> aria-label='Previous'><span aria-hidden='true'>&laquo; Previous</span></a>&nbsp;&nbsp;
+                        <a href=<?= $url ?>&page=<?= $previousPage ?> aria-label='Previous'><span aria-hidden='true'>&laquo; Previous</span></a>&nbsp;&nbsp;
                     </li>
                 <?php endif; ?>
                 <?php for($i = 1; $i < $numPaginas + 1; $i++): ?>
@@ -19,7 +19,7 @@
                 <?php endfor; ?>
                 <?php if($pagina < $numPaginas): ?>
                     <li>
-                        <a href=<?= $url ?>&page=<?= $previousNextPage['nextPage'] ?> aria-label='Next'><span aria-hidden='true'>Next &raquo;</span></a>&nbsp;&nbsp;
+                        <a href=<?= $url ?>&page=<?= $nextPage ?> aria-label='Next'><span aria-hidden='true'>Next &raquo;</span></a>&nbsp;&nbsp;
                     </li>
                 <?php endif; ?>
             <?php endif; ?>

@@ -76,4 +76,13 @@ class BookingsTable extends Table
     {
         return $this->exists(['id' => $bookingId, 'user_id' => $userId]);
     }
+
+    public function getQuantityBookings($userId)
+    {
+        $setting = [
+            'conditions' => ['user_id' => $userId]
+        ];
+        return $this
+            ->find('all', $setting)->count();
+    }
 }

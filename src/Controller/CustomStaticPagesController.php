@@ -25,12 +25,18 @@ class CustomStaticPagesController extends AppController
 
         //-------------------------------------------------------------------------
 
-        list($subCategories, $subCategoriesName) = Cache::remember(
+        $subCategories = Cache::remember(
             'subCategories', function(){
             $this->loadModel('SubCategories');
             $subCategories = $this->SubCategories->getAllSubCategories();
+            return $subCategories;
+        });
+
+        $subCategoriesName = Cache::remember(
+            'subCategoriesName', function(){
+            $this->loadModel('SubCategories');
             $subCategoriesName = $this->SubCategories->listAllSubCategories();
-            return [$subCategories, $subCategoriesName];
+            return $subCategoriesName;
         });
 
         //-------------------------------------------------------------------------

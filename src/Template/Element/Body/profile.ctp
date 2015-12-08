@@ -6,7 +6,7 @@
             <h3 class="panel-title text-center title">Meu Perfil</h3>
         </div>
         <div class="panel-body">
-            <?= $this->Html->image($user['picture'], ['alt' => '', 'class' => 'picture-left']) ?>
+            <?= $this->Html->image('face200x200.png', ['alt' => '', 'class' => 'picture-left']) ?>
             <p class="user-information">
                 <span class="title">Nome:</span>&nbsp;<?= $user['username'] ?><br>
                 <span class="title">Email:</span>&nbsp;<?= $user['email'] ?><br>

@@ -106,4 +106,41 @@ class OffersTable extends Table
                 }
             ])->hydrate(false)->toArray();
     }
+
+    public function getQuantityActiveOffers($userId)
+    {
+        //Após a remodelagem do banco passeremos o status da "Offer"
+        //AINDA NÃO IMPLEMENTADO
+        /*$setting = [
+            //'conditions' => ['user_id' => $userId]
+        ];
+        return $this
+            ->find('all', $setting)->count();*/
+        return 'AINDA NÃO IMPLEMENTADO';
+    }
+
+    public function getQuantityPausedOffers($userId)
+    {
+        //Após a remodelagem do banco passeremos o status da "Offer"
+        //AINDA NÃO IMPLEMENTADO
+        /*$setting = [
+            //'conditions' => ['user_id' => $userId]
+        ];
+        return $this
+            ->find('all', $setting)->count();*/
+
+        return 'AINDA NÃO IMPLEMENTADO';
+    }
+
+    public function getQuantityEndedOffers($userId)
+    {
+        //Após a remodelagem do banco passeremos o status da "Offer"
+        //AINDA NÃO IMPLEMENTADO
+        /*$setting = [
+            //'conditions' => ['user_id' => $userId]
+        ];
+        return $this
+            ->find('all', $setting)->count();*/
+        return 'AINDA NÃO IMPLEMENTADO';
+    }
 }

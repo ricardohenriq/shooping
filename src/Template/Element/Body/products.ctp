@@ -1,7 +1,7 @@
 <div id="products" class="col-lg-9">
     <?php foreach($products as $product): ?>
         <div class="item-block">
-            <?= $this->Html->image($product['thumb'], ['alt' => $product['product_name'],
+            <?= $this->Html->image($product['medias'][0]['path'], ['alt' => $product['product_name'],
                 'url' => ['controller' => 'Products', 'action' => 'view', $product['id']]]) ?>
             <div class="item-description">
                 <span class="item-name"><?= $product['product_name'] ?></span>

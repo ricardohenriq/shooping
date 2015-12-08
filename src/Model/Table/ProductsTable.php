@@ -322,4 +322,30 @@ class ProductsTable extends Table
         return $this
             ->find('all', $setting)->hydrate(false)->toArray();
     }
+
+    public function getFavoriteProducts($userId)
+    {
+        $setting = [
+            'fields' => ['id', 'product_name', 'created', 'modified']
+        ];
+        return $this
+            ->find('all', $setting)->hydrate(false)->toArray();
+    }
+
+    public function getProducts($search, $productsView, $page)
+    {
+        return $this
+            ->find()
+            ->select(['id', 'product_name', 'price', 'old_price', 'description'])
+            ->where(['product_name LIKE' => '%' . $search . '%'])
+            ->order(['price' => 'DESC'])
+            ->limit($productsView)
+            ->offset(($page * $productsView) - $productsView)
+            ->contain([
+                'Medias' => function($q){
+                    return $q->select(['path', 'product_id'])
+                        ->where(['media_type_id' => 3]);
+                }
+            ])->hydrate(false)->toArray();
+    }
 }
