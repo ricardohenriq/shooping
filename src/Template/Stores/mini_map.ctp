@@ -64,5 +64,3 @@
 <div class="row">
     <?= $this->element('Footer/footer_newsletter') ?>
 </div>
-<?= $this->element('Body/back_top') ?>
-<?= $this->element('Footer/footer_information') ?>

@@ -13,6 +13,8 @@
                 <?= $this->fetch('content') ?>
             </div>
         </div>
+		<?= $this->element('Body/back_top') ?>
+		<?= $this->element('Footer/footer_information') ?>
         <?= $this->fetch('modals') ?>
     </body>
 </html>

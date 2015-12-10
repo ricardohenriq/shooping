@@ -161,12 +161,10 @@ class StoresController extends AppController
             return [$fullBanners, $smallBanners];
         });
 
-        list($stores, $favoriteStores) = Cache::remember(
-            'stores', function(){
-            $stores = $this->Stores->myStores($this->Auth->user('id'));
-            $favoriteStores = $this->Stores->favoriteStores();
-            return [$stores, $favoriteStores];
-        });
+		$this->loadModel('Stores');
+        $stores = $this->Stores->myStores($userId);
+		
+        $favoriteStores = $this->Stores->favoriteStores();
 
         $this->set(compact('fullBanners', 'smallBanners', 'userId', 'username',
             'stores', 'favoriteStores'));

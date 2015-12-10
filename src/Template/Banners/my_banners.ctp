@@ -1,69 +1,56 @@
 <?php
-    /**
-     *
-     * @author          Ricardo Henrique
-     * @copyright       Copyright (c) Ricardo Henrique. (http://ricardohenrique.divshot.io/)
-     * @link            http://ricardohenrique.divshot.io/
-     * @version         0.1
-     * @since           0.1
-     * @licence         Comercial
-     */
-
-    $this->layout = false;
+	$this->start('meta');
+		echo $this->Html->meta('viewport','width=device-width, initial-scale=1.0');
+        echo $this->Html->meta('title','Meus Banners');
+        echo $this->Html->meta('favicon.ico','/cart.png', ['type' => 'icon']);
+        echo $this->Html->meta('keywords','');
+        echo $this->Html->meta('description','');
+        echo $this->Html->meta('robots','index,follow');
+        echo $this->Html->meta('author','Ricardo Henrique');
+        echo $this->Html->meta('reply-to','ricardohenrique996@gmail.com');
+        echo $this->Html->meta('og:title','');
+        echo $this->Html->meta('og:description','');
+        echo $this->Html->meta('og:url','');
+        echo $this->Html->meta('og:image','');
+        echo $this->Html->meta('og:type','');
+        echo $this->Html->meta('og:site_name','');
+	$this->end();
+	
+	$this->start('css');
+		echo $this->Html->css('library/jquery-ui-1.11.2.custom/jquery-ui.css');
+        echo $this->Html->css('library/Bootstrap/css/bootstrap.min.css');
+        echo $this->Html->css('library/font-awesome-4.4.0/css/font-awesome.min.css');
+        echo $this->Html->css('library/bxslider-4-4.1.2/jquery.bxslider.css');
+        echo $this->Html->css('library/datepicker/css/datepicker.css');
+        
+		echo $this->Shrink->css(['styles/style.css', 'styles/hover-images.css']);
+		echo $this->Shrink->fetch('css');
+	$this->end();
+	
+	$this->start('script');
+		echo $this->Html->script('library/jquery-1.11.1/jquery-1.11.1.min.js',['defer' => true]);
+        echo $this->Html->script('library/jquery-ui-1.11.2.custom/jquery-ui.min.js',['defer' => true]);
+        echo $this->Html->script('library/Bootstrap/js/bootstrap.min.js',['defer' => true]);
+        echo $this->Html->script('library/Jquery-Validate/jquery.validate.min.js',['defer' => true]);
+        echo $this->Html->script('library/datepicker/js/bootstrap-datepicker.js',['defer' => true]);
+        echo $this->Html->script('library/bxslider-4-4.1.2/jquery.bxslider.min.js',['defer' => true]);
+        
+		echo $this->Shrink->js(['actions/main.js', 'actions/index-banners.js']);
+		echo $this->Shrink->fetch('js');
+	$this->end();
+	
+	$this->start('modals');
+		echo $this->element('Body/back_top');
+		echo $this->element('Footer/footer_information');
+		echo $this->element('Modal/logout_modal');
+		echo $this->element('Modal/edit_profile_modal');
+		echo $this->element('Modal/add_banner_modal');
+		echo $this->element('Modal/view_banner_modal');
+		echo $this->element('Modal/edit_banner_modal');
+	$this->end();
 ?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <?= $this->Html->charset() ?>
-        <?= $this->Html->meta('viewport','width=device-width, initial-scale=1.0') ?>
-        <?= $this->Html->meta('title',__('Meus Banners')) ?>
-        <?= $this->Html->meta('favicon.ico','/cart.png', ['type' => 'icon']) ?>
-        <?= $this->Html->meta('keywords','') ?>
-        <?= $this->Html->meta('description','') ?>
-        <?= $this->Html->meta('robots','index,follow') ?>
-        <?= $this->Html->meta('author','Ricardo Henrique') ?>
-        <?= $this->Html->meta('reply-to','ricardohenrique996@gmail.com') ?>
-        <?= $this->Html->meta('og:title','') ?>
-        <?= $this->Html->meta('og:description','') ?>
-        <?= $this->Html->meta('og:url','') ?>
-        <?= $this->Html->meta('og:image','') ?>
-        <?= $this->Html->meta('og:type','') ?>
-        <?= $this->Html->meta('og:site_name','') ?>
 
-        <?= $this->Html->css('library/jquery-ui-1.11.2.custom/jquery-ui.css') ?>
-        <?= $this->Html->css('library/Bootstrap/css/bootstrap.min.css') ?>
-        <?= $this->Html->css('library/font-awesome-4.4.0/css/font-awesome.min.css') ?>
-        <?= $this->Html->css('library/bxslider-4-4.1.2/jquery.bxslider.css') ?>
-        <?= $this->Html->css('library/datepicker/css/datepicker.css') ?>
-        <?= $this->Shrink->css(['styles/style.css', 'styles/hover-images.css']) ?>
-
-        <?= $this->Html->script('library/jquery-1.11.1/jquery-1.11.1.min.js',['defer' => true]) ?>
-        <?= $this->Html->script('library/jquery-ui-1.11.2.custom/jquery-ui.min.js',['defer' => true]) ?>
-        <?= $this->Html->script('library/Bootstrap/js/bootstrap.min.js',['defer' => true]) ?>
-        <?= $this->Html->script('library/Jquery-Validate/jquery.validate.min.js',['defer' => true]) ?>
-        <?= $this->Html->script('library/datepicker/js/bootstrap-datepicker.js',['defer' => true]) ?>
-        <?= $this->Html->script('library/bxslider-4-4.1.2/jquery.bxslider.min.js',['defer' => true]) ?>
-        <?= $this->Shrink->js(['actions/main.js', 'actions/index-banners.js']) ?>
-
-        <?= $this->Shrink->fetch('css') ?>
-        <?= $this->Shrink->fetch('js') ?>
-    </head>
-    <body>
-        <?= $this->element('Navbar/navbar_main') ?>
-        <div class="wrapper">
-            <div class="container">
-                <div class="row">
-                    <?= $this->element('Body/account_menu') ?>
-                    <?= $this->element('Body/my_small_full_banners') ?>
-                </div>
-            </div>
-        </div>
-        <?= $this->element('Body/back_top') ?>
-        <?= $this->element('Footer/footer_information') ?>
-        <?= $this->element('Modal/logout_modal') ?>
-        <?= $this->element('Modal/edit_profile_modal') ?>
-        <?= $this->element('Modal/add_banner_modal') ?>
-        <?= $this->element('Modal/view_banner_modal') ?>
-        <?= $this->element('Modal/edit_banner_modal') ?>
-    </body>
-</html>
+<div class="row">
+	<?= $this->element('Body/account_menu') ?>
+	<?= $this->element('Body/my_small_full_banners') ?>
+</div>
