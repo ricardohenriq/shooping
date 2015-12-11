@@ -15,7 +15,11 @@ use Cake\Event\Event;
  */
 class SubscribersController extends AppController
 {
-
+	public function initialize()
+    {
+        parent::initialize();
+        $this->loadComponent('RequestHandler');
+    }
     /**
      * Index method
      *
@@ -50,8 +54,6 @@ class SubscribersController extends AppController
      */
     public function add()
     {
-        $this->autoRender = false;
-        $this->response->type('json');
         $subscriber = $this->Subscribers->newEntity();
         if ($this->request->is('post')) {
             $subscriber = $this->Subscribers->patchEntity($subscriber, $this->request->data);
@@ -60,13 +62,15 @@ class SubscribersController extends AppController
                 $response->code = CodeEnum::SUBSCRIBE_ADDED;
                 $response->name = NameEnum::SUBSCRIBE_ADDED;
                 $response->type = TypeMessageEnum::SUCCESS;
-                $this->response->body(json_encode($response));
+                $this->set('response', $response);
+                $this->set('_serialize', 'response');
             } else {
                 $response = new ResponseMessage();
                 $response->code = CodeEnum::SUBSCRIBE_NOT_ADDED;
                 $response->name = NameEnum::SUBSCRIBE_NOT_ADDED;
                 $response->type = TypeMessageEnum::ERROR;
-                $this->response->body(json_encode($response));
+                $this->set('response', $response);
+                $this->set('_serialize', 'response');
             }
         }
     }

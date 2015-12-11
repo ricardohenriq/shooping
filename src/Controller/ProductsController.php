@@ -12,6 +12,12 @@ use Cake\ORM\TableRegistry;
  */
 class ProductsController extends AppController
 {
+	public function initialize()
+    {
+        parent::initialize();
+        $this->loadComponent('RequestHandler');
+    }
+	
     /**
      * Index method
      *
@@ -207,8 +213,6 @@ class ProductsController extends AppController
      */
     public function productTrends($subCategoryId = 0)
     {
-        $this->autoRender = false;
-        $this->response->type('json');
         if($this->request->is('get'))
         {
             $limit = 4;
@@ -235,7 +239,8 @@ class ProductsController extends AppController
                     ->find('all', $setting)->hydrate(false)->first()['path'];
             }
 
-            $this->response->body(json_encode($products));
+            $this->set('products', $products);
+            $this->set('_serialize', 'products');
         }
     }
 

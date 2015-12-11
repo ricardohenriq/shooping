@@ -12,6 +12,12 @@ use Cake\ORM\TableRegistry;
  */
 class BannersController extends AppController
 {
+	public function initialize()
+    {
+        parent::initialize();
+        $this->loadComponent('RequestHandler');
+    }
+
     /**
      * myBanners method
      * Gera a página http://localhost:8765/banners/my-banners/:$userId
@@ -87,8 +93,6 @@ class BannersController extends AppController
     }
 
     public function getBannerJson($id = null){
-        $this->autoRender = false;
-        $this->response->type('json');
         $setting = [
             'fields' => ['id', 'path_banner', 'banner_description', 'banner_type_id',
                 'url_redirect', 'created', 'modified'],
@@ -96,7 +100,8 @@ class BannersController extends AppController
         ];
         $banner = TableRegistry::get('Banners')
             ->find('all', $setting)->hydrate(false)->first();
-        $this->response->body(json_encode($banner));
+        $this->set('banner', $banner);
+		$this->set('_serialize', 'banner');
     }
 
     /**
