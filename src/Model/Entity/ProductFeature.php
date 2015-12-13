@@ -15,10 +15,7 @@ class ProductFeature extends Entity
      * @var array
      */
     protected $_accessible = [
-        'feature_value' => true,
-        'feature_id' => true,
-        'product_id' => true,
-        'feature' => true,
-        'product' => true,
+        '*' => true,
+        'id' => false,
     ];
 }

@@ -16,9 +16,12 @@ use ImageTool;
  * Products Model
  *
  * @property \Cake\ORM\Association\BelongsTo $Stores
+ * @property \Cake\ORM\Association\BelongsTo $SubCategories
  * @property \Cake\ORM\Association\HasMany $Bookings
+ * @property \Cake\ORM\Association\HasMany $Comments
+ * @property \Cake\ORM\Association\HasMany $Medias
+ * @property \Cake\ORM\Association\HasMany $Offers
  * @property \Cake\ORM\Association\HasMany $ProductFeatures
- * @property \Cake\ORM\Association\HasMany $ProductMedias
  */
 class ProductsTable extends Table
 {
@@ -31,6 +34,8 @@ class ProductsTable extends Table
      */
     public function initialize(array $config)
     {
+        parent::initialize($config);
+
         $this->table('products');
         $this->displayField('id');
         $this->primaryKey('id');
@@ -39,16 +44,23 @@ class ProductsTable extends Table
             'foreignKey' => 'store_id',
             'joinType' => 'INNER'
         ]);
+        $this->belongsTo('SubCategories', [
+            'foreignKey' => 'sub_category_id',
+            'joinType' => 'INNER'
+        ]);
         $this->hasMany('Bookings', [
             'foreignKey' => 'product_id'
         ]);
-        $this->hasMany('ProductFeatures', [
+        $this->hasMany('Comments', [
+            'foreignKey' => 'product_id'
+        ]);
+        $this->hasMany('Medias', [
             'foreignKey' => 'product_id'
         ]);
         $this->hasMany('Offers', [
             'foreignKey' => 'product_id'
         ]);
-        $this->hasMany('Medias', [
+        $this->hasMany('ProductFeatures', [
             'foreignKey' => 'product_id'
         ]);
     }
@@ -64,28 +76,40 @@ class ProductsTable extends Table
         $validator
             ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create');
-            
+
         $validator
             ->requirePresence('product_name', 'create')
             ->notEmpty('product_name');
-            
+
         $validator
             ->add('quantity', 'valid', ['rule' => 'numeric'])
             ->requirePresence('quantity', 'create')
             ->notEmpty('quantity');
-            
+
         $validator
-            ->allowEmpty('description');
-            
+            ->add('sold', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('sold');
+
+        $validator
+            ->requirePresence('description', 'create')
+            ->notEmpty('description');
+
         $validator
             ->add('price', 'valid', ['rule' => 'decimal'])
             ->requirePresence('price', 'create')
             ->notEmpty('price');
-            
+
+        $validator
+            ->add('old_price', 'valid', ['rule' => 'decimal'])
+            ->allowEmpty('old_price');
+
+        $validator
+            ->add('visited', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('visited');
+
         $validator
             ->add('status', 'valid', ['rule' => 'numeric'])
-            ->requirePresence('status', 'create')
-            ->notEmpty('status');
+            ->allowEmpty('status');
 
         return $validator;
     }
@@ -100,6 +124,7 @@ class ProductsTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['store_id'], 'Stores'));
+        $rules->add($rules->existsIn(['sub_category_id'], 'SubCategories'));
         return $rules;
     }
 
@@ -299,11 +324,14 @@ class ProductsTable extends Table
         return $array;
     }
 
-    public function getProductTrendByColumn($column)
+    public function getProductTrendByColumn($column, $subCategoryId)
     {
-        return $this
-            ->find()
-            ->select(['id', 'product_name', 'price', 'old_price'])
+        $products = $this->find();
+        if($subCategoryId != 0){
+            $products->where(['sub_category_id' => $subCategoryId]);
+        }
+        $products
+            ->select(['id', 'product_name', 'sub_category_id', 'price', 'old_price'])
             ->order([$column => 'DESC'])
             ->limit(4)
             ->contain([
@@ -311,7 +339,8 @@ class ProductsTable extends Table
                     return $q->select(['path', 'product_id'])
                         ->where(['media_type_id' => 3]);
                 }
-            ])->hydrate(false)->toArray();
+            ]);
+        return $products->hydrate(false)->toArray();
     }
 
     public function getProductByStore($storeId){
@@ -332,20 +361,26 @@ class ProductsTable extends Table
             ->find('all', $setting)->hydrate(false)->toArray();
     }
 
-    public function getProducts($search, $productsView, $page)
+    public function getProductRecursive($productId)
     {
         return $this
             ->find()
-            ->select(['id', 'product_name', 'price', 'old_price', 'description'])
-            ->where(['product_name LIKE' => '%' . $search . '%'])
-            ->order(['price' => 'DESC'])
-            ->limit($productsView)
-            ->offset(($page * $productsView) - $productsView)
+            ->select(['Products.id', 'product_name', 'store_id', 'sub_category_id',
+                'quantity', 'sold', 'description', 'price', 'old_price', 'visited',
+                'status', 'created'])
+            ->where(['Products.id' => $productId])
             ->contain([
-                'Medias' => function($q){
-                    return $q->select(['path', 'product_id'])
-                        ->where(['media_type_id' => 3]);
+                'ProductFeatures' => function($q){
+                    return $q->select(['ProductFeatures.id', 'feature_value', 'feature_intern_code', 'product_id'])
+                        ->contain([
+                            'Features' => function($q){
+                                return $q->select(['Features.id', 'intern_code', 'feature_name']);
+                            }
+                        ]);
+                },
+                'Stores' => function($q){
+                    return $q->select(['id', 'store_name']);
                 }
-            ])->hydrate(false)->toArray();
+            ])->hydrate(false)->first();
     }
 }

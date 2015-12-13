@@ -40,8 +40,6 @@
 	$this->end();
 	
 	$this->start('modals');
-		echo $this->element('Body/back_top');
-		echo $this->element('Footer/footer_information');
 		echo $this->element('Modal/logout_modal');
 		echo $this->element('Modal/edit_profile_modal');
 		echo $this->element('Modal/add_banner_modal');

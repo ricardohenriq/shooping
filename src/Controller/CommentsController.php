@@ -2,89 +2,111 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\Event\Event;
-use Cake\ORM\TableRegistry;
 
+/**
+ * Comments Controller
+ *
+ * @property \App\Model\Table\CommentsTable $Comments
+ */
 class CommentsController extends AppController
 {
+
     /**
-     * myComments method
-     * Gera a página http://localhost:8765/bookings/my-bookings
+     * Index method
      *
-     * Faz as chamadas ao banco para buscar os "banners" de exibição de
-     * produtos, ofertas, promoções e eventos, dados do "usuário" que serão
-     * exibidos implicitamente e lojas "stores" e reservas "bookings" do usuário
-     *
-     * @param string $answered 0  - Comentário não respondido | 1 -
-     * Comentário respondido.
      * @return void
      */
-    public function myComments($answered)
+    public function index()
     {
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 2],
-            'limit' => 1
+        $this->paginate = [
+            'contain' => ['Products', 'Users']
         ];
-        $fullBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('fullBanners', $fullBanners);
-
-        //-------------------------------------------------------------------------
-
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 1],
-            'limit' => 3
-        ];
-        $smallBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('smallBanners', $smallBanners);
-
-        //-------------------------------------------------------------------------
-
-        $this->set('userId', $this->Auth->user('id'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('username', $this->Auth->user('username'));
-
-        //-------------------------------------------------------------------------
-
-        $setting = [
-            'fields' => ['store_name', 'id'],
-            'conditions' => ['user_id' => $this->Auth->user('id')]
-        ];
-        $stores = TableRegistry::get('Stores')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('stores', $stores);
-
-        //-------------------------------------------------------------------------
-
-        $setting = [
-            'fields' => ['id', 'comment_text', 'product_id',
-                'answered', 'created'],
-            'conditions' => ['user_id' => $this->Auth->user('id'),
-                    'comment_type_id' => 1,
-                    'answered' => $answered
-                ]
-        ];
-        $comments = TableRegistry::get('Comments')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('comments', $comments);
-
-        //-------------------------------------------------------------------------
-
-        $answeredValues = ['1' => 'Não Respondidos', '2' => 'Respondidos'];
-        $this->set('answered', $answeredValues[$answered]);
-
-        //-------------------------------------------------------------------------
-
-        $this->set('search', '');
+        $this->set('comments', $this->paginate($this->Comments));
+        $this->set('_serialize', ['comments']);
     }
 
-    public function beforeFilter(Event $event)
+    /**
+     * View method
+     *
+     * @param string|null $id Comment id.
+     * @return void
+     * @throws \Cake\Network\Exception\NotFoundException When record not found.
+     */
+    public function view($id = null)
     {
-        $this->Auth->allow(['myComments', 'index']);
+        $comment = $this->Comments->get($id, [
+            'contain' => ['Products', 'Users', 'Answers']
+        ]);
+        $this->set('comment', $comment);
+        $this->set('_serialize', ['comment']);
+    }
+
+    /**
+     * Add method
+     *
+     * @return void Redirects on successful add, renders view otherwise.
+     */
+    public function add()
+    {
+        $comment = $this->Comments->newEntity();
+        if ($this->request->is('post')) {
+            $comment = $this->Comments->patchEntity($comment, $this->request->data);
+            if ($this->Comments->save($comment)) {
+                $this->Flash->success(__('The comment has been saved.'));
+                return $this->redirect(['action' => 'index']);
+            } else {
+                $this->Flash->error(__('The comment could not be saved. Please, try again.'));
+            }
+        }
+        $products = $this->Comments->Products->find('list', ['limit' => 200]);
+        $users = $this->Comments->Users->find('list', ['limit' => 200]);
+        $this->set(compact('comment', 'products', 'users'));
+        $this->set('_serialize', ['comment']);
+    }
+
+    /**
+     * Edit method
+     *
+     * @param string|null $id Comment id.
+     * @return void Redirects on successful edit, renders view otherwise.
+     * @throws \Cake\Network\Exception\NotFoundException When record not found.
+     */
+    public function edit($id = null)
+    {
+        $comment = $this->Comments->get($id, [
+            'contain' => []
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $comment = $this->Comments->patchEntity($comment, $this->request->data);
+            if ($this->Comments->save($comment)) {
+                $this->Flash->success(__('The comment has been saved.'));
+                return $this->redirect(['action' => 'index']);
+            } else {
+                $this->Flash->error(__('The comment could not be saved. Please, try again.'));
+            }
+        }
+        $products = $this->Comments->Products->find('list', ['limit' => 200]);
+        $users = $this->Comments->Users->find('list', ['limit' => 200]);
+        $this->set(compact('comment', 'products', 'users'));
+        $this->set('_serialize', ['comment']);
+    }
+
+    /**
+     * Delete method
+     *
+     * @param string|null $id Comment id.
+     * @return void Redirects to index.
+     * @throws \Cake\Network\Exception\NotFoundException When record not found.
+     */
+    public function delete($id = null)
+    {
+        $this->request->allowMethod(['post', 'delete']);
+        $comment = $this->Comments->get($id);
+        if ($this->Comments->delete($comment)) {
+            $this->Flash->success(__('The comment has been deleted.'));
+        } else {
+            $this->Flash->error(__('The comment could not be deleted. Please, try again.'));
+        }
+        return $this->redirect(['action' => 'index']);
     }
 }

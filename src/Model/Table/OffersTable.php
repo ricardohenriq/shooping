@@ -15,7 +15,6 @@ use Cake\Validation\Validator;
  */
 class OffersTable extends Table
 {
-
     /**
      * Initialize method
      *

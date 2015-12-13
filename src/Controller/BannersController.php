@@ -29,51 +29,20 @@ class BannersController extends AppController
      * @param string $userId User id.
      * @return void
      */
-    public function myBanners($userId)
+    public function myBanners($storeId)
     {
-        $setting = [
-            'fields' => ['store_name', 'id', 'created', 'modified'],
-            'conditions' => ['user_id' => $this->Auth->user('username')]
-        ];
-        $stores = TableRegistry::get('Stores')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('stores', $stores);
+        $userId = $this->Auth->user('id');
+        $username = $this->Auth->user('username');
+        $pageTitle = $this->Auth->User('username') . ' - Banners';
 
-        //-------------------------------------------------------------------------
+        $this->loadModel('Stores');
+        $stores = $this->Stores->myStores($userId);
 
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 1, 'user_id' => $userId]
-        ];
-        $smallBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('smallBanners', $smallBanners);
+        $fullBanners = $this->Banners->myFull($storeId);
+        $smallBanners = $this->Banners->mySmall($storeId);
 
-        //-------------------------------------------------------------------------
-
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 2, 'user_id' => $userId]
-        ];
-        $fullBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('fullBanners', $fullBanners);
-
-        //-------------------------------------------------------------------------
-
-        $this->set('pageTitle', $this->Auth->User('username') . ' - Banners');
-
-        //-------------------------------------------------------------------------
-
-        $this->set('username', $this->Auth->user('username'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('userId', $this->Auth->user('id'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('search', '');
+        $this->set(compact('userId', 'username', 'fullBanners', 'smallBanners',
+            'stores', 'pageTitle'));
     }
 
     /**
@@ -93,13 +62,7 @@ class BannersController extends AppController
     }
 
     public function getBannerJson($id = null){
-        $setting = [
-            'fields' => ['id', 'path_banner', 'banner_description', 'banner_type_id',
-                'url_redirect', 'created', 'modified'],
-            'conditions' => ['id' => $id]
-        ];
-        $banner = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->first();
+        $banner = $this->Banners->getBanner($id);
         $this->set('banner', $banner);
 		$this->set('_serialize', 'banner');
     }

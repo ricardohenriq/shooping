@@ -15,6 +15,7 @@ class Feature extends Entity
      * @var array
      */
     protected $_accessible = [
-        'feature_name' => true,
+        '*' => true,
+        'id' => false,
     ];
 }

@@ -1,12 +1,14 @@
-<div id="filter-pagination" class="col-lg-6 pull-right">
+<div id="filter-pagination" class="pull-right">
     <div class="inline-pagination-menu">
-        Resultado(s) <?= $startEndProducts['startProducts'] ?> - <?= $startEndProducts['endProducts'] ?> de <?= $qtdProducts ?>
-        Produtos --
+        <?= $this->Paginator->counter() ?>
+        Produtos -- 
     </div>
     <div class="inline-pagination-menu">
         Itens por página:
-        <?= $this->Form->select('products-view', $selectOptionsViews,
-        ['class' => 'form-control products-view inline-pagination-menu',
-        'id' => 'products-view' , 'empty' => $productsView, 'onchange' => 'redirect(this)']) ?>
+        <select name="products-view" class="form-control products-view inline-pagination-menu" id="products-view" onchange="redirect(this)">
+			<option>3</option>
+			<option>6</option>
+			<option>9</option>
+		</select>
     </div>
 </div>

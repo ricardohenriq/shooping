@@ -68,4 +68,24 @@ class MediasTable extends Table
         $rules->add($rules->existsIn(['media_type_id'], 'MediaTypes'));
         return $rules;
     }
+
+    public function getProductImages($productId)
+    {
+        $setting = [
+            'fields' => ['path'],
+            'conditions' => ['product_id' => $productId, 'media_type_id' => 1]
+        ];
+        return $this
+            ->find('all', $setting)->hydrate(false)->toArray();
+    }
+
+    public function getProductMainImage($productId)
+    {
+        $setting = [
+            'fields' => ['path'],
+            'conditions' => ['product_id' => $productId, 'media_type_id' => 2]
+        ];
+        return $this
+            ->find('all', $setting)->hydrate(false)->first();
+    }
 }

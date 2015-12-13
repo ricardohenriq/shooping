@@ -1,1595 +1,800 @@
-array(59) {
-  [0]=>
-  array(5) {
-    ["id"]=>
-    int(1)
-    ["product_name"]=>
-    string(39) "Samsung Galaxy A5 Duos Branco 4G Orange"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#156 (3) {
-      ["time"]=>
-      string(24) "2010-10-28T09:39:49+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#157 (3) {
-      ["time"]=>
-      string(24) "2011-10-28T09:39:49+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
+array(14) {
+  ["id"]=>
+  int(1)
+  ["product_name"]=>
+  string(39) "Samsung Galaxy A5 Duos Branco 4G Orange"
+  ["store_id"]=>
+  int(1)
+  ["sub_category_id"]=>
+  int(94)
+  ["quantity"]=>
+  int(20)
+  ["sold"]=>
+  int(40)
+  ["description"]=>
+  string(1360) "Equipado com c├ómera frontal de 5 megapixel o Samsung Galaxy A5 4G Duos ├® um aparelho capaz de fazer Selfies incr├¡veis e com uma excelente
+        qualidade gra├ºas aos seus novos recursos. Agora voc├¬ pode enquadrar todos os seus amigos em uma ├║nica foto com a fun├º├úo Selfie Panor├ómica
+        que captura um ├óngulo de at├® 120┬░ do conte├║do.
+        O Galaxy A5 equilibra desempenho em um design interessante com estrutura met├ílica e acabamento de alta qualidade, ideal para quem procura
+        estilo e sofistica├º├úo. Sua tela de 5 polegadas conta tamb├®m com tecnologia Super Amoled que fornece alto brilho, cores realistas e economia
+        de energia.
+        O Galaxy A5 ├® tudo o que voc├¬ precisa para facilitar o seu dia a dia, com suporte para dois chips voc├¬ n├úo precisa mais carregar dois aparelhos,
+        ├® s├│ escolher com qual chip vai usar a rede de dados e qual ser├í para fazer liga├º├Áes.
+        Um smartphone com tantos recursos deve consumir muita energia, pensando nisso a Samsung desenvolveu o Galaxy A5 com o modo de Ultra Economia de
+        Energia que reduz drasticamente o consumo de bateria mantendo as fun├º├Áes essenciais e garantindo que seu telefone esteja dispon├¡vel quando voc├¬
+        realmente precisar dele."
+  ["price"]=>
+  float(550.5)
+  ["old_price"]=>
+  float(400)
+  ["visited"]=>
+  int(777)
+  ["status"]=>
+  int(1)
+  ["created"]=>
+  object(Cake\I18n\Time)#209 (3) {
+    ["time"]=>
+    string(24) "2010-10-28T09:39:49+0000"
+    ["timezone"]=>
+    string(3) "UTC"
+    ["fixedNowTime"]=>
+    bool(false)
   }
-  [1]=>
-  array(5) {
+  ["store"]=>
+  array(2) {
     ["id"]=>
-    int(5)
-    ["product_name"]=>
-    string(55) "MP3 Player Shuffle Clip FM Cabo USB Fone Suporta ate 8G"
-    ["store_id"]=>
     int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#158 (3) {
-      ["time"]=>
-      string(24) "2010-10-28T09:39:49+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#159 (3) {
-      ["time"]=>
-      string(24) "2011-10-28T09:39:49+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
+    ["store_name"]=>
+    string(6) "Loja A"
   }
-  [2]=>
-  array(5) {
-    ["id"]=>
-    int(75)
-    ["product_name"]=>
-    string(11) "Produto Bom"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#160 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T12:11:04+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#161 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T12:11:04+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [3]=>
-  array(5) {
-    ["id"]=>
-    int(76)
-    ["product_name"]=>
-    string(15) "Produto 1 Teste"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#162 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T12:40:50+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#163 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T12:40:50+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [4]=>
-  array(5) {
-    ["id"]=>
-    int(77)
-    ["product_name"]=>
-    string(9) "Produto 3"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#164 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T12:49:30+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#165 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T12:49:30+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [5]=>
-  array(5) {
-    ["id"]=>
-    int(78)
-    ["product_name"]=>
-    string(9) "produto 9"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#166 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T12:50:32+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#167 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T12:50:32+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [6]=>
-  array(5) {
-    ["id"]=>
-    int(79)
-    ["product_name"]=>
-    string(10) "produto 18"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#168 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T12:52:06+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#169 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T12:52:06+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [7]=>
-  array(5) {
-    ["id"]=>
-    int(80)
-    ["product_name"]=>
-    string(9) "produto 6"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#170 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T12:54:22+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#171 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T12:54:22+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [8]=>
-  array(5) {
-    ["id"]=>
-    int(81)
-    ["product_name"]=>
-    string(10) "produto 11"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#172 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T12:57:31+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#173 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T12:57:31+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [9]=>
-  array(5) {
-    ["id"]=>
-    int(82)
-    ["product_name"]=>
-    string(10) "produto 98"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#174 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:01:07+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#175 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:01:07+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [10]=>
-  array(5) {
-    ["id"]=>
-    int(83)
-    ["product_name"]=>
-    string(11) "Produto 777"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#176 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:35:38+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#177 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:35:38+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [11]=>
-  array(5) {
-    ["id"]=>
-    int(84)
-    ["product_name"]=>
-    string(10) "Produto 98"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#178 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:39:05+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#179 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:39:05+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [12]=>
-  array(5) {
-    ["id"]=>
-    int(85)
-    ["product_name"]=>
-    string(10) "Produto 89"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#180 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:43:12+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#181 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:43:12+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [13]=>
-  array(5) {
-    ["id"]=>
-    int(86)
-    ["product_name"]=>
-    string(10) "produto 69"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#182 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:46:32+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#183 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:46:32+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [14]=>
-  array(5) {
-    ["id"]=>
-    int(87)
-    ["product_name"]=>
-    string(11) "Produto 876"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#184 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:47:59+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#185 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:47:59+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [15]=>
-  array(5) {
-    ["id"]=>
-    int(88)
-    ["product_name"]=>
-    string(10) "Produto 69"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#186 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:51:57+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#187 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T13:51:57+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [16]=>
-  array(5) {
-    ["id"]=>
-    int(89)
-    ["product_name"]=>
-    string(6) "Carros"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#188 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T15:45:23+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#189 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T15:45:23+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [17]=>
-  array(5) {
-    ["id"]=>
-    int(90)
-    ["product_name"]=>
-    string(6) "Carros"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#190 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T15:48:30+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#191 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T15:48:30+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [18]=>
-  array(5) {
-    ["id"]=>
-    int(91)
-    ["product_name"]=>
-    string(6) "Carros"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#192 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T15:50:21+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#193 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T15:50:21+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [19]=>
-  array(5) {
-    ["id"]=>
-    int(92)
-    ["product_name"]=>
-    string(6) "Carros"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#194 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T15:55:12+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#195 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T15:55:12+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [20]=>
-  array(5) {
-    ["id"]=>
-    int(93)
-    ["product_name"]=>
-    string(7) "Rapidos"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#196 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T15:56:52+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#197 (3) {
-      ["time"]=>
-      string(24) "2015-11-27T15:56:52+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [21]=>
-  array(5) {
-    ["id"]=>
-    int(94)
-    ["product_name"]=>
-    string(6) "Carros"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#198 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T15:59:32+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#199 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T15:59:32+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [22]=>
-  array(5) {
-    ["id"]=>
-    int(95)
-    ["product_name"]=>
-    string(17) "Carros Importados"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#200 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:01:56+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#201 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:01:56+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [23]=>
-  array(5) {
-    ["id"]=>
-    int(96)
-    ["product_name"]=>
-    string(6) "Carros"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#202 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:18:50+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#203 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:18:50+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [24]=>
-  array(5) {
-    ["id"]=>
-    int(97)
-    ["product_name"]=>
-    string(6) "Carros"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#204 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:36:43+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#205 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:36:43+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [25]=>
-  array(5) {
-    ["id"]=>
-    int(98)
-    ["product_name"]=>
-    string(5) "carro"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#206 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:39:06+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#207 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:39:06+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [26]=>
-  array(5) {
-    ["id"]=>
-    int(99)
-    ["product_name"]=>
-    string(6) "carros"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#208 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:40:18+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#209 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:40:18+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [27]=>
-  array(5) {
-    ["id"]=>
-    int(100)
-    ["product_name"]=>
-    string(7) "rapidos"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#210 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:41:03+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#211 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:41:03+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [28]=>
-  array(5) {
-    ["id"]=>
-    int(101)
-    ["product_name"]=>
-    string(6) "carros"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#212 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:43:01+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#213 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:43:01+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [29]=>
-  array(5) {
-    ["id"]=>
-    int(102)
-    ["product_name"]=>
-    string(10) "Anja Rubik"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#214 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:44:37+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#215 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:44:37+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [30]=>
-  array(5) {
-    ["id"]=>
-    int(103)
-    ["product_name"]=>
-    string(4) "Anja"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#216 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:46:17+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#217 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:46:17+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [31]=>
-  array(5) {
-    ["id"]=>
-    int(104)
-    ["product_name"]=>
-    string(4) "Anja"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#218 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:46:56+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#219 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:46:56+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [32]=>
-  array(5) {
-    ["id"]=>
-    int(105)
-    ["product_name"]=>
-    string(10) "Anja Rubik"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#220 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:50:57+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#221 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T16:50:57+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [33]=>
-  array(5) {
-    ["id"]=>
-    int(106)
-    ["product_name"]=>
-    string(10) "Anja Rubik"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#222 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T17:19:28+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#223 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T17:19:28+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [34]=>
-  array(5) {
-    ["id"]=>
-    int(107)
-    ["product_name"]=>
-    string(10) "Anja Rubik"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#224 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T17:21:46+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#225 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T17:21:46+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [35]=>
-  array(5) {
-    ["id"]=>
-    int(108)
-    ["product_name"]=>
-    string(6) "Carros"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#226 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T17:26:41+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#227 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T17:26:41+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [36]=>
-  array(5) {
-    ["id"]=>
-    int(109)
-    ["product_name"]=>
-    string(6) "Carros"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#228 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T17:29:52+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#229 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T17:29:52+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [37]=>
-  array(5) {
-    ["id"]=>
-    int(110)
-    ["product_name"]=>
-    string(6) "CARROS"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#230 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T17:40:52+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#231 (3) {
-      ["time"]=>
-      string(24) "2015-11-28T17:40:52+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [38]=>
-  array(5) {
-    ["id"]=>
-    int(111)
-    ["product_name"]=>
-    string(4) "anja"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#232 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T20:31:28+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#233 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T20:31:28+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [39]=>
-  array(5) {
-    ["id"]=>
-    int(112)
-    ["product_name"]=>
-    string(4) "anja"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#234 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T20:32:47+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#235 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T20:32:47+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [40]=>
-  array(5) {
-    ["id"]=>
-    int(113)
-    ["product_name"]=>
-    string(4) "anja"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#236 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T20:33:56+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#237 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T20:33:56+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [41]=>
-  array(5) {
-    ["id"]=>
-    int(114)
-    ["product_name"]=>
-    string(4) "anja"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#238 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T20:35:53+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#239 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T20:35:53+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [42]=>
-  array(5) {
-    ["id"]=>
-    int(115)
-    ["product_name"]=>
-    string(4) "anja"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#240 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T20:37:30+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#241 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T20:37:30+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [43]=>
-  array(5) {
-    ["id"]=>
-    int(116)
-    ["product_name"]=>
-    string(6) "Carros"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#242 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T20:49:56+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#243 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T20:49:56+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [44]=>
-  array(5) {
-    ["id"]=>
-    int(117)
-    ["product_name"]=>
-    string(10) "Anja Rubik"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#244 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T20:58:24+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#245 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T20:58:24+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [45]=>
-  array(5) {
-    ["id"]=>
-    int(118)
-    ["product_name"]=>
-    string(10) "Anja Rubik"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#246 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T21:18:41+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#247 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T21:18:41+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [46]=>
-  array(5) {
-    ["id"]=>
-    int(119)
-    ["product_name"]=>
-    string(17) "Carros Importados"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#248 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T22:50:45+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#249 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T22:50:45+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [47]=>
-  array(5) {
-    ["id"]=>
-    int(120)
-    ["product_name"]=>
-    string(6) "CARROS"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#250 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T22:56:10+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#251 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T22:56:10+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [48]=>
-  array(5) {
-    ["id"]=>
-    int(121)
-    ["product_name"]=>
-    string(7) "CARROS2"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#252 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T23:03:34+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#253 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T23:03:34+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [49]=>
-  array(5) {
-    ["id"]=>
-    int(122)
-    ["product_name"]=>
-    string(7) "Carros1"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#254 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T23:09:24+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#255 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T23:09:24+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [50]=>
-  array(5) {
-    ["id"]=>
-    int(123)
-    ["product_name"]=>
-    string(9) "Carros 2 "
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#256 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T23:11:46+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#257 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T23:11:46+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [51]=>
-  array(5) {
-    ["id"]=>
-    int(124)
-    ["product_name"]=>
-    string(8) "Carros 3"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#258 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T23:13:29+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#259 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T23:13:29+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [52]=>
-  array(5) {
-    ["id"]=>
-    int(125)
-    ["product_name"]=>
-    string(7) "Carros7"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#260 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T23:20:20+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#261 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T23:20:20+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [53]=>
-  array(5) {
-    ["id"]=>
-    int(126)
-    ["product_name"]=>
-    string(9) "Carros123"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#262 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T23:21:57+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#263 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T23:21:57+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [54]=>
-  array(5) {
-    ["id"]=>
-    int(127)
-    ["product_name"]=>
-    string(10) "Anja Rubik"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#264 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T23:25:33+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#265 (3) {
-      ["time"]=>
-      string(24) "2015-11-30T23:25:33+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [55]=>
-  array(5) {
-    ["id"]=>
-    int(128)
-    ["product_name"]=>
-    string(7) "novinha"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#266 (3) {
-      ["time"]=>
-      string(24) "2015-12-04T13:53:17+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#267 (3) {
-      ["time"]=>
-      string(24) "2015-12-04T13:53:17+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [56]=>
-  array(5) {
-    ["id"]=>
-    int(129)
-    ["product_name"]=>
-    string(7) "novinha"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#268 (3) {
-      ["time"]=>
-      string(24) "2015-12-04T14:00:06+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#269 (3) {
-      ["time"]=>
-      string(24) "2015-12-04T14:00:06+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [57]=>
-  array(5) {
-    ["id"]=>
-    int(130)
-    ["product_name"]=>
-    string(7) "novinha"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#270 (3) {
-      ["time"]=>
-      string(24) "2015-12-04T14:17:54+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#271 (3) {
-      ["time"]=>
-      string(24) "2015-12-04T14:17:54+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-  }
-  [58]=>
-  array(5) {
-    ["id"]=>
-    int(131)
-    ["product_name"]=>
-    string(13) "Anja Rubik 69"
-    ["store_id"]=>
-    int(1)
-    ["created"]=>
-    object(Cake\I18n\Time)#272 (3) {
-      ["time"]=>
-      string(24) "2015-12-05T12:20:28+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
-    }
-    ["modified"]=>
-    object(Cake\I18n\Time)#273 (3) {
-      ["time"]=>
-      string(24) "2015-12-05T12:20:28+0000"
-      ["timezone"]=>
-      string(3) "UTC"
-      ["fixedNowTime"]=>
-      bool(false)
+  ["product_features"]=>
+  array(37) {
+    [0]=>
+    array(5) {
+      ["id"]=>
+      int(1)
+      ["feature_value"]=>
+      string(18) "Android 4.4 KitKat"
+      ["feature_intern_code"]=>
+      string(6) "FEA009"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(9)
+        ["intern_code"]=>
+        string(6) "FEA009"
+        ["feature_name"]=>
+        string(19) "Sistema Operacional"
+      }
+    }
+    [1]=>
+    array(5) {
+      ["id"]=>
+      int(2)
+      ["feature_value"]=>
+      string(5) "Barra"
+      ["feature_intern_code"]=>
+      string(6) "FEA010"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(10)
+        ["intern_code"]=>
+        string(6) "FEA010"
+        ["feature_name"]=>
+        string(6) "Modelo"
+      }
+    }
+    [2]=>
+    array(5) {
+      ["id"]=>
+      int(3)
+      ["feature_value"]=>
+      string(27) "Traseira 13MP e Frontal 5MP"
+      ["feature_intern_code"]=>
+      string(6) "FEA011"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(11)
+        ["intern_code"]=>
+        string(6) "FEA011"
+        ["feature_name"]=>
+        string(22) "Resolução da câmera"
+      }
+    }
+    [3]=>
+    array(5) {
+      ["id"]=>
+      int(4)
+      ["feature_value"]=>
+      string(3) "Sim"
+      ["feature_intern_code"]=>
+      string(6) "FEA012"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(12)
+        ["intern_code"]=>
+        string(6) "FEA012"
+        ["feature_name"]=>
+        string(16) "Câmera traseira"
+      }
+    }
+    [4]=>
+    array(5) {
+      ["id"]=>
+      int(5)
+      ["feature_value"]=>
+      string(3) "Sim"
+      ["feature_intern_code"]=>
+      string(6) "FEA013"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(13)
+        ["intern_code"]=>
+        string(6) "FEA013"
+        ["feature_name"]=>
+        string(15) "Câmera frontal"
+      }
+    }
+    [5]=>
+    array(5) {
+      ["id"]=>
+      int(6)
+      ["feature_value"]=>
+      string(22) "Rádio FM,  MP3 Player"
+      ["feature_intern_code"]=>
+      string(6) "FEA014"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(14)
+        ["intern_code"]=>
+        string(6) "FEA014"
+        ["feature_name"]=>
+        string(3) "Som"
+      }
+    }
+    [6]=>
+    array(5) {
+      ["id"]=>
+      int(7)
+      ["feature_value"]=>
+      string(3) "Sim"
+      ["feature_intern_code"]=>
+      string(6) "FEA015"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(15)
+        ["intern_code"]=>
+        string(6) "FEA015"
+        ["feature_name"]=>
+        string(12) "Grava vídeo"
+      }
+    }
+    [7]=>
+    array(5) {
+      ["id"]=>
+      int(8)
+      ["feature_value"]=>
+      string(18) "MicroSD até 64 GB"
+      ["feature_intern_code"]=>
+      string(6) "FEA016"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(16)
+        ["intern_code"]=>
+        string(6) "FEA016"
+        ["feature_name"]=>
+        string(17) "Slot para cartão"
+      }
+    }
+    [8]=>
+    array(5) {
+      ["id"]=>
+      int(9)
+      ["feature_value"]=>
+      string(4) "Não"
+      ["feature_intern_code"]=>
+      string(6) "FEA017"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(17)
+        ["intern_code"]=>
+        string(6) "FEA017"
+        ["feature_name"]=>
+        string(15) "Cartão incluso"
+      }
+    }
+    [9]=>
+    array(5) {
+      ["id"]=>
+      int(10)
+      ["feature_value"]=>
+      string(3) "Sim"
+      ["feature_intern_code"]=>
+      string(6) "FEA018"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(18)
+        ["intern_code"]=>
+        string(6) "FEA018"
+        ["feature_name"]=>
+        string(9) "Rádio FM"
+      }
+    }
+    [10]=>
+    array(5) {
+      ["id"]=>
+      int(11)
+      ["feature_value"]=>
+      string(3) "Sim"
+      ["feature_intern_code"]=>
+      string(6) "FEA019"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(19)
+        ["intern_code"]=>
+        string(6) "FEA019"
+        ["feature_name"]=>
+        string(10) "MP3 player"
+      }
+    }
+    [11]=>
+    array(5) {
+      ["id"]=>
+      int(12)
+      ["feature_value"]=>
+      string(3) "Sim"
+      ["feature_intern_code"]=>
+      string(6) "FEA020"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(20)
+        ["intern_code"]=>
+        string(6) "FEA020"
+        ["feature_name"]=>
+        string(9) "Bluetooth"
+      }
+    }
+    [12]=>
+    array(5) {
+      ["id"]=>
+      int(13)
+      ["feature_value"]=>
+      string(4) "Não"
+      ["feature_intern_code"]=>
+      string(6) "FEA021"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(21)
+        ["intern_code"]=>
+        string(6) "FEA021"
+        ["feature_name"]=>
+        string(68) "Bluetooth Estéreo (ouça suas músicas em um dispositivo Bluetooth)"
+      }
+    }
+    [13]=>
+    array(5) {
+      ["id"]=>
+      int(14)
+      ["feature_value"]=>
+      string(3) "Sim"
+      ["feature_intern_code"]=>
+      string(6) "FEA022"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(22)
+        ["intern_code"]=>
+        string(6) "FEA022"
+        ["feature_name"]=>
+        string(5) "Wi-Fi"
+      }
+    }
+    [14]=>
+    array(5) {
+      ["id"]=>
+      int(15)
+      ["feature_value"]=>
+      string(64) "USB 2.0, Bluetooth 4.0, Wi-Fi 802.11 a/b/g/n 2.4+5GHz, HT40, NFC"
+      ["feature_intern_code"]=>
+      string(6) "FEA023"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(23)
+        ["intern_code"]=>
+        string(6) "FEA023"
+        ["feature_name"]=>
+        string(13) "Conectividade"
+      }
+    }
+    [15]=>
+    array(5) {
+      ["id"]=>
+      int(16)
+      ["feature_value"]=>
+      string(3) "Sim"
+      ["feature_intern_code"]=>
+      string(6) "FEA024"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(24)
+        ["intern_code"]=>
+        string(6) "FEA024"
+        ["feature_name"]=>
+        string(13) "Suporte a GPS"
+      }
+    }
+    [16]=>
+    array(5) {
+      ["id"]=>
+      int(17)
+      ["feature_value"]=>
+      string(18) "SMS,  MMS,  E-mail"
+      ["feature_intern_code"]=>
+      string(6) "FEA025"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(25)
+        ["intern_code"]=>
+        string(6) "FEA025"
+        ["feature_name"]=>
+        string(9) "Mensagens"
+      }
+    }
+    [17]=>
+    array(5) {
+      ["id"]=>
+      int(18)
+      ["feature_value"]=>
+      string(18) "Polifônicos,  MP3"
+      ["feature_intern_code"]=>
+      string(6) "FEA026"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(26)
+        ["intern_code"]=>
+        string(6) "FEA026"
+        ["feature_name"]=>
+        string(6) "Toques"
+      }
+    }
+    [18]=>
+    array(5) {
+      ["id"]=>
+      int(19)
+      ["feature_value"]=>
+      string(20) "Quad Core de 1.2 Ghz"
+      ["feature_intern_code"]=>
+      string(6) "FEA027"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(27)
+        ["intern_code"]=>
+        string(6) "FEA027"
+        ["feature_name"]=>
+        string(11) "Processador"
+      }
+    }
+    [19]=>
+    array(5) {
+      ["id"]=>
+      int(20)
+      ["feature_value"]=>
+      string(3) "2GB"
+      ["feature_intern_code"]=>
+      string(6) "FEA028"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(28)
+        ["intern_code"]=>
+        string(6) "FEA028"
+        ["feature_name"]=>
+        string(3) "RAM"
+      }
+    }
+    [20]=>
+    array(5) {
+      ["id"]=>
+      int(21)
+      ["feature_value"]=>
+      string(4) "Não"
+      ["feature_intern_code"]=>
+      string(6) "FEA029"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(29)
+        ["intern_code"]=>
+        string(6) "FEA029"
+        ["feature_name"]=>
+        string(18) "Sintonizador de TV"
+      }
+    }
+    [21]=>
+    array(5) {
+      ["id"]=>
+      int(22)
+      ["feature_value"]=>
+      string(13) "GSM,  3G,  4G"
+      ["feature_intern_code"]=>
+      string(6) "FEA030"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(30)
+        ["intern_code"]=>
+        string(6) "FEA030"
+        ["feature_name"]=>
+        string(10) "Tecnologia"
+      }
+    }
+    [22]=>
+    array(5) {
+      ["id"]=>
+      int(23)
+      ["feature_value"]=>
+      string(3) "Sim"
+      ["feature_intern_code"]=>
+      string(6) "FEA031"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(31)
+        ["intern_code"]=>
+        string(6) "FEA031"
+        ["feature_name"]=>
+        string(14) "Quadriband GSM"
+      }
+    }
+    [23]=>
+    array(5) {
+      ["id"]=>
+      int(24)
+      ["feature_value"]=>
+      string(25) "GSM 850/900/1800/1900 MHz"
+      ["feature_intern_code"]=>
+      string(6) "FEA032"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(32)
+        ["intern_code"]=>
+        string(6) "FEA032"
+        ["feature_name"]=>
+        string(12) "Frequências"
+      }
+    }
+    [24]=>
+    array(5) {
+      ["id"]=>
+      int(25)
+      ["feature_value"]=>
+      string(3) "sim"
+      ["feature_intern_code"]=>
+      string(6) "FEA033"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(33)
+        ["intern_code"]=>
+        string(6) "FEA033"
+        ["feature_name"]=>
+        string(9) "Dual Chip"
+      }
+    }
+    [25]=>
+    array(5) {
+      ["id"]=>
+      int(26)
+      ["feature_value"]=>
+      string(8) "Nano SIM"
+      ["feature_intern_code"]=>
+      string(6) "FEA034"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(34)
+        ["intern_code"]=>
+        string(6) "FEA034"
+        ["feature_name"]=>
+        string(12) "Tipo do Chip"
+      }
+    }
+    [26]=>
+    array(5) {
+      ["id"]=>
+      int(27)
+      ["feature_value"]=>
+      string(89) "16GB Total sendo uma parte usada para o sistema operacional e aplicativos pré-instalados"
+      ["feature_intern_code"]=>
+      string(6) "FEA035"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(35)
+        ["intern_code"]=>
+        string(6) "FEA035"
+        ["feature_name"]=>
+        string(16) "Memória interna"
+      }
+    }
+    [27]=>
+    array(5) {
+      ["id"]=>
+      int(28)
+      ["feature_value"]=>
+      string(10) "1280 x 720"
+      ["feature_intern_code"]=>
+      string(6) "FEA036"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(36)
+        ["intern_code"]=>
+        string(6) "FEA036"
+        ["feature_name"]=>
+        string(37) "Resolução do visor/display (pixels)"
+      }
+    }
+    [28]=>
+    array(5) {
+      ["id"]=>
+      int(29)
+      ["feature_value"]=>
+      string(4) "12,7"
+      ["feature_intern_code"]=>
+      string(6) "FEA037"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(37)
+        ["intern_code"]=>
+        string(6) "FEA037"
+        ["feature_name"]=>
+        string(21) "Tamanho do visor (cm)"
+      }
+    }
+    [29]=>
+    array(5) {
+      ["id"]=>
+      int(31)
+      ["feature_value"]=>
+      string(141) "- Aparelho Samsung Galaxy A5 4G Duos A500M/DS Branco - Tim
+        - Carregador
+        - Bateria
+        - Cabo USB
+        - Fone de Ouvido"
+      ["feature_intern_code"]=>
+      string(6) "FEA124"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(124)
+        ["intern_code"]=>
+        string(6) "FEA124"
+        ["feature_name"]=>
+        string(22) "Conteúdo da Embalagem"
+      }
+    }
+    [30]=>
+    array(5) {
+      ["id"]=>
+      int(32)
+      ["feature_value"]=>
+      string(8) "12 meses"
+      ["feature_intern_code"]=>
+      string(6) "FEA006"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(6)
+        ["intern_code"]=>
+        string(6) "FEA006"
+        ["feature_name"]=>
+        string(8) "Garantia"
+      }
+    }
+    [31]=>
+    array(5) {
+      ["id"]=>
+      int(33)
+      ["feature_value"]=>
+      string(257) "1.Para utilizar este celular é preciso ter um chip (vendido separadamente). Este aparelho
+        está habilitado para que funcione com operadoras nacionais com Tecnologia GSM (Vivo, Oi, Tim, Claro,
+        Brasil Telecom, CTBC, Sercomtel, Telemig).
+     "
+      ["feature_intern_code"]=>
+      string(6) "FEA039"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(39)
+        ["intern_code"]=>
+        string(6) "FEA039"
+        ["feature_name"]=>
+        string(13) "Observações"
+      }
+    }
+    [32]=>
+    array(5) {
+      ["id"]=>
+      int(34)
+      ["feature_value"]=>
+      string(10) "13,93 (Cm)"
+      ["feature_intern_code"]=>
+      string(6) "FEA001"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(1)
+        ["intern_code"]=>
+        string(6) "FEA001"
+        ["feature_name"]=>
+        string(6) "Altura"
+      }
+    }
+    [33]=>
+    array(5) {
+      ["id"]=>
+      int(35)
+      ["feature_value"]=>
+      string(9) "6,97 (Cm)"
+      ["feature_intern_code"]=>
+      string(6) "FEA002"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(2)
+        ["intern_code"]=>
+        string(6) "FEA002"
+        ["feature_name"]=>
+        string(7) "Largura"
+      }
+    }
+    [34]=>
+    array(5) {
+      ["id"]=>
+      int(36)
+      ["feature_value"]=>
+      string(9) "6,70 (Cm)"
+      ["feature_intern_code"]=>
+      string(6) "FEA003"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(3)
+        ["intern_code"]=>
+        string(6) "FEA003"
+        ["feature_name"]=>
+        string(12) "Profundidade"
+      }
+    }
+    [35]=>
+    array(5) {
+      ["id"]=>
+      int(37)
+      ["feature_value"]=>
+      string(15) "123,00 (Gramas)"
+      ["feature_intern_code"]=>
+      string(6) "FEA004"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(4)
+        ["intern_code"]=>
+        string(6) "FEA004"
+        ["feature_name"]=>
+        string(4) "Peso"
+      }
+    }
+    [36]=>
+    array(5) {
+      ["id"]=>
+      int(38)
+      ["feature_value"]=>
+      string(81) "4444-4444 (capitais e grandes centros) / 0800-444-444 (demais cidades e regiões)"
+      ["feature_intern_code"]=>
+      string(6) "FEA073"
+      ["product_id"]=>
+      int(1)
+      ["feature"]=>
+      array(3) {
+        ["id"]=>
+        int(73)
+        ["intern_code"]=>
+        string(6) "FEA073"
+        ["feature_name"]=>
+        string(3) "SAC"
+      }
     }
   }
 }

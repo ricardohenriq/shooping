@@ -50,65 +50,34 @@ class UsersController extends AppController
     {
         $user = $this->Users->get($id);
 
-        //-------------------------------------------------------------------------
+        $this->loadModel('Banners');
+        $fullBanners = $this->Banners->full();
+        $smallBanners = $this->Banners->small();
 
-        list($fullBanners, $smallBanners) = Cache::remember(
-            'banners', function(){
-            $this->loadModel('Banners');
-            $fullBanners = $this->Banners->full();
-            $smallBanners = $this->Banners->small();
-            return [$fullBanners, $smallBanners];
-        });
-
-        //-------------------------------------------------------------------------
-
-        $userId = $this->Auth->user('id');
-        $username = $this->Auth->user('username');
-        $email =  $this->Auth->user('email');
+        $userId = $user->id;
+        $username = $user->username;
+        $email =  $user->email;
         $pageTitle = $username . ' - Stores';
-
-        //-------------------------------------------------------------------------
 
         $this->loadModel('Stores');
         $stores = $this->Stores->myStores($userId);
 
-        //-------------------------------------------------------------------------
-
         $this->loadModel('Bookings');
         $quantityBookings = $this->Bookings->getQuantityBookings($userId);
-
-        //-------------------------------------------------------------------------
 
         $this->loadModel('Offers');
         $quantityActiveOffers = $this->Offers->getQuantityActiveOffers($userId);
         $quantityPausedOffers = $this->Offers->getQuantityPausedOffers($userId);
         $quantityEndedOffers = $this->Offers->getQuantityEndedOffers($userId);
 
-        //-------------------------------------------------------------------------
-
-        $setting = [
-            'conditions' => ['user_id' => $this->Auth->user('username'),
-                    'comment_type_id' => 1, 'answered' => 1
-                ]
-        ];
-        $quantityUnansweredComments = TableRegistry::get('Comments')
-            ->find('all', $setting)->count();
-        $this->set('quantityUnansweredComments', $quantityUnansweredComments);
-
-        //-------------------------------------------------------------------------
-
-        $setting = [
-            'conditions' => ['user_id' => $this->Auth->user('username'),
-                'comment_type_id' => 1, 'answered' => 2
-            ]
-        ];
-        $quantityAnsweredComments = TableRegistry::get('Comments')
-            ->find('all', $setting)->count();
-        $this->set('quantityAnsweredComments', $quantityAnsweredComments);
+        $this->loadModel('Comments');
+        $quantityUnansweredComments = $this->Comments->getQuantityUnansweredComments($userId);
+        $quantityAnsweredComments = $this->Comments->getQuantityAnsweredComments($userId);
 
         $this->set(compact('stores', 'fullBanners', 'smallBanners', 'userId',
             'username', 'email', 'pageTitle', 'user', 'quantityBookings',
-            'quantityActiveOffers', 'quantityPausedOffers', 'quantityEndedOffers'));
+            'quantityActiveOffers', 'quantityPausedOffers', 'quantityEndedOffers',
+            'quantityUnansweredComments', 'quantityAnsweredComments'));
     }
 
     /**

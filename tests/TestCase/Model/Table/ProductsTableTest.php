@@ -22,7 +22,11 @@ class ProductsTableTest extends TestCase
         'app.users',
         'app.user_types',
         'app.bookings',
-        'app.product_features'
+        'app.product_features',
+        'app.offers',
+        'app.offer_banners',
+        'app.medias',
+        'app.media_types'
     ];
 
     /**
@@ -75,6 +79,146 @@ class ProductsTableTest extends TestCase
      * @return void
      */
     public function testBuildRules()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test afterSave method
+     *
+     * @return void
+     */
+    public function testAfterSave()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test uploadFiles method
+     *
+     * @return void
+     */
+    public function testUploadFiles()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test resizeImage method
+     *
+     * @return void
+     */
+    public function testResizeImage()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test insertMassEntities method
+     *
+     * @return void
+     */
+    public function testInsertMassEntities()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test createMassFeaturesEntities method
+     *
+     * @return void
+     */
+    public function testCreateMassFeaturesEntities()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test getFeatuesArray method
+     *
+     * @return void
+     */
+    public function testGetFeatuesArray()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test createMassMediasEntities method
+     *
+     * @return void
+     */
+    public function testCreateMassMediasEntities()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test createMediaEntity method
+     *
+     * @return void
+     */
+    public function testCreateMediaEntity()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test addKeyValueToArray method
+     *
+     * @return void
+     */
+    public function testAddKeyValueToArray()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test replaceArrayValue method
+     *
+     * @return void
+     */
+    public function testReplaceArrayValue()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test getProductTrendByColumn method
+     *
+     * @return void
+     */
+    public function testGetProductTrendByColumn()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test getProductByStore method
+     *
+     * @return void
+     */
+    public function testGetProductByStore()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test getFavoriteProducts method
+     *
+     * @return void
+     */
+    public function testGetFavoriteProducts()
+    {
+        $this->markTestIncomplete('Not implemented yet.');
+    }
+
+    /**
+     * Test getProductRecursive method
+     *
+     * @return void
+     */
+    public function testGetProductRecursive()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

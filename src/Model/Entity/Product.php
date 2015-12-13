@@ -15,14 +15,7 @@ class Product extends Entity
      * @var array
      */
     protected $_accessible = [
-        'product_name' => true,
-        'store_id' => true,
-        'quantity' => true,
-        'description' => true,
-        'price' => true,
-        'status' => true,
-        'store' => true,
-        'bookings' => true,
-        'product_features' => true
+        '*' => true,
+        'id' => false,
     ];
 }

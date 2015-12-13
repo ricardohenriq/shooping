@@ -23,7 +23,11 @@ class ProductFeaturesTableTest extends TestCase
         'app.stores',
         'app.users',
         'app.user_types',
-        'app.bookings'
+        'app.bookings',
+        'app.offers',
+        'app.offer_banners',
+        'app.medias',
+        'app.media_types'
     ];
 
     /**

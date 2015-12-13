@@ -22,10 +22,17 @@ class FeaturesTable extends Table
      */
     public function initialize(array $config)
     {
+        parent::initialize($config);
+
         $this->table('features');
         $this->displayField('id');
-        $this->primaryKey('id');
+        //ESTA NÃO É A CHAVE PRIMARIA MAS É O CAMPO "UNIQUE"
+        //QUE A CHAVE ESTRANGEIRA REFERENCIA
+        $this->primaryKey('intern_code');
         $this->addBehavior('Timestamp');
+        $this->hasMany('ProductFeatures', [
+            'foreignKey' => 'feature_intern_code'
+        ]);
     }
 
     /**
@@ -39,10 +46,16 @@ class FeaturesTable extends Table
         $validator
             ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create');
-            
+
+        $validator
+            ->requirePresence('intern_code', 'create')
+            ->notEmpty('intern_code')
+            ->add('intern_code', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
+
         $validator
             ->requirePresence('feature_name', 'create')
-            ->notEmpty('feature_name');
+            ->notEmpty('feature_name')
+            ->add('feature_name', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
         return $validator;
     }

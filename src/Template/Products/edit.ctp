@@ -55,6 +55,6 @@
 ?>
 
 <div class="row">
-	echo $this->element('Body/account_menu');
-	echo $this->element('Body/edit_store_products');
+	<?= $this->element('Body/account_menu') ?>
+	<?= $this->element('Body/edit_store_products') ?>
 </div>

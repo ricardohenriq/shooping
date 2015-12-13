@@ -212,23 +212,25 @@ CREATE TABLE new_banners (
   FOREIGN KEY new_key (new_id) REFERENCES news(id)
 );
 
-# NECESSITA DISCUÇÃO
-
-CREATE TABLE comment_types(
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  type_name VARCHAR(255) NOT NULL,
-  created DATETIME,
-  modified DATETIME
-);
-
 CREATE TABLE comments(
   id INT AUTO_INCREMENT PRIMARY KEY,
   comment_text VARCHAR(500),
-  comment_type_id INT NOT NULL,
   product_id INT NOT NULL,
   user_id INT NOT NULL,
-  posted_to INT NOT NULL,
-  answered TINYINT NOT NULL,
+  answered TINYINT,
   created DATETIME,
-  modified DATETIME
+  modified DATETIME,
+  FOREIGN KEY product_key (product_id) REFERENCES products(id),
+  FOREIGN KEY user_key (user_id) REFERENCES users(id)
+);
+
+CREATE TABLE answers(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  answer_text VARCHAR(500),
+  comment_id INT NOT NULL,
+  user_id INT NOT NULL,
+  created DATETIME,
+  modified DATETIME,
+  FOREIGN KEY comment_key (comment_id) REFERENCES comments(id),
+  FOREIGN KEY user_key (user_id) REFERENCES users(id)
 );

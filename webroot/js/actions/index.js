@@ -212,7 +212,7 @@ function formatProducts(products, ulSlider, selectContainer) {
 
         var img = document.createElement("img");
         $(img).attr('alt', products[i]['product_name']);
-        $(img).attr('src', products[i]['thumb']);
+        $(img).attr('src', products[i]['medias'][0]['path']);
         $(div).append(img);
 
         var spanName = document.createElement("span");

@@ -103,4 +103,35 @@ class BannersTable extends Table
         return $this
             ->find('all', $setting)->hydrate(false)->toArray();
     }
+
+    public function myFull($storeId){
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 2, 'user_id' => $storeId],
+            'limit' => 3
+        ];
+        return $this
+            ->find('all', $setting)->hydrate(false)->toArray();
+    }
+
+    public function mySmall($storeId){
+        $setting = [
+            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
+            'conditions' => ['banner_type_id' => 1, 'user_id' => $storeId],
+            'limit' => 3
+        ];
+        return $this
+            ->find('all', $setting)->hydrate(false)->toArray();
+    }
+
+    public function getBanner($id = null)
+    {
+        $settings = [
+            'fields' => ['id', 'path_banner', 'banner_description', 'banner_type_id',
+                'url_redirect', 'created', 'modified'],
+            'conditions' => ['id' => $id]
+        ];
+        return $this
+            ->find('all', $settings)->hydrate(false)->first();
+    }
 }

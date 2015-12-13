@@ -5211,38 +5211,58 @@ VALUES ('http://localhost/PROJETOS/ShoppingResources/news/new.png', 7, NOW(), NO
 
 ## 12 registros na tabela "comments" --------------------------------------------------
 
-INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
-VALUES (1, 'Qual o frete para 45.987.330 ? Obrigado', 1, 1, 2, 0, 1, NOW(), NOW());
+INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
+VALUES ('Comentario 1 Comentario 1 Comentario 1 Comentario 1', 1, 31, 1, NOW(), NOW());
 
-INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
-VALUES (2, 'R$ 34.00', 2, 1, 26, 1, 0, NOW(), NOW());
+INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
+VALUES ('Comentario 2 Comentario 2 Comentario 2 Comentario 2', 2, 31, 1, NOW(), NOW());
 
-INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
-VALUES (3, 'Comprando 3 tenho desconto ?', 1, 1, 3, 0, 1, NOW(), NOW());
+INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
+VALUES ('Comentario 3 Comentario 3 Comentario 3 Comentario 3', 3, 31, 1, NOW(), NOW());
 
-INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
-VALUES (4, 'Tem sim, já calculou o frete ?', 2, 1, 26, 3, 0, NOW(), NOW());
+INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
+VALUES ('Comentario 4 Comentario 4 Comentario 4 Comentario 4', 4, 31, 1, NOW(), NOW());
 
-INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
-VALUES (5, 'Entrega em Manaus (AM) ?', 1, 1, 4, 0, 1, NOW(), NOW());
+INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
+VALUES ('Comentario 5 Comentario 5 Comentario 5 Comentario 5', 5, 31, 1, NOW(), NOW());
 
-INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
-VALUES (6, 'Sim, o frete fica em R$ 45.00', 2, 1, 26, 5, 0, NOW(), NOW());
+INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
+VALUES ('Comentario 6 Comentario 6 Comentario 6 Comentario 6', 6, 31, 1, NOW(), NOW());
 
-INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
-VALUES (7, 'Qual o frete para 45.987.330 ? Obrigado', 1, 2, 3, 0, 1, NOW(), NOW());
+INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
+VALUES ('Comentario 7 Comentario 7 Comentario 7 Comentario 7', 7, 31, 0, NOW(), NOW());
 
-INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
-VALUES (8, 'R$ 34.00', 2, 2, 27, 7, 0, NOW(), NOW());
+INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
+VALUES ('Comentario 8 Comentario 8 Comentario 8 Comentario 8', 8, 31, 0, NOW(), NOW());
 
-INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
-VALUES (9, 'Comprando 3 tenho desconto ?', 1, 2, 4, 0, 1, NOW(), NOW());
+INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
+VALUES ('Comentario 9 Comentario 9 Comentario 9 Comentario 9', 9, 31, 0, NOW(), NOW());
 
-INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
-VALUES (10, 'Tem sim, já calculou o frete ?', 2, 2, 27, 9, 0, NOW(), NOW());
+INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
+VALUES ('Comentario 10 Comentario 10 Comentario 10 Comentario 10', 10, 31, 0, NOW(), NOW());
 
-INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
-VALUES (11, 'Entrega em Manaus (AM) ?', 1, 2, 5, 0, 1, NOW(), NOW());
+INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
+VALUES ('Comentario 11 Comentario 11 Comentario 11 Comentario 11', 11, 31, 0, NOW(), NOW());
 
-INSERT INTO comments(id, comment_text, comment_type_id, product_id, user_id, posted_to, answered, created, modified)
-VALUES (12, 'Sim, o frete fica em R$ 45.00', 2, 2, 27, 11, 0, NOW(), NOW());
+INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
+VALUES ('Comentario 12 Comentario 12 Comentario 12 Comentario 12', 12, 31, 0, NOW(), NOW());
+
+## 6 registros na tabela "answers" --------------------------------------------------
+
+INSERT INTO answers(answer_text, comment_id, user_id, created, modified)
+VALUES ('Resposta 1 Resposta 1 Resposta 1 Resposta 1', 1, 31, NOW(), NOW());
+
+INSERT INTO answers(answer_text, comment_id, user_id, created, modified)
+VALUES ('Resposta 2 Resposta 2 Resposta 2 Resposta 2', 2, 31, NOW(), NOW());
+
+INSERT INTO answers(answer_text, comment_id, user_id, created, modified)
+VALUES ('Resposta 3 Resposta 3 Resposta 3 Resposta 3', 3, 31, NOW(), NOW());
+
+INSERT INTO answers(answer_text, comment_id, user_id, created, modified)
+VALUES ('Resposta 4 Resposta 4 Resposta 4 Resposta 4', 4, 31, NOW(), NOW());
+
+INSERT INTO answers(answer_text, comment_id, user_id, created, modified)
+VALUES ('Resposta 5 Resposta 5 Resposta 5 Resposta 5', 5, 31, NOW(), NOW());
+
+INSERT INTO answers(answer_text, comment_id, user_id, created, modified)
+VALUES ('Resposta 6 Resposta 6 Resposta 6 Resposta 6', 6, 31, NOW(), NOW());

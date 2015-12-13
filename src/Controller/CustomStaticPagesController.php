@@ -16,79 +16,33 @@ class CustomStaticPagesController extends AppController
 {
     public function index()
     {
-        $categories = Cache::remember(
-            'categories', function(){
-            $this->loadModel('Categories');
-            $categories = $this->Categories->getAllCategories();
-            return $categories;
-        });
-
-        //-------------------------------------------------------------------------
-
-        $subCategories = Cache::remember(
-            'subCategories', function(){
-            $this->loadModel('SubCategories');
-            $subCategories = $this->SubCategories->getAllSubCategories();
-            return $subCategories;
-        });
-
-        $subCategoriesName = Cache::remember(
-            'subCategoriesName', function(){
-            $this->loadModel('SubCategories');
-            $subCategoriesName = $this->SubCategories->listAllSubCategories();
-            return $subCategoriesName;
-        });
-
-        //-------------------------------------------------------------------------
-
         $userId = $this->Auth->user('id');
         $username = $this->Auth->user('username');
 
-        $userTypes = Cache::remember(
-            'userTypes', function(){
-            $this->loadModel('UserTypes');
-            $userTypes = $this->UserTypes->listSubCategories();
-            return $userTypes;
-        });
+        $this->loadModel('Categories');
+        $categories = $this->Categories->getAllCategories();
 
-        //-------------------------------------------------------------------------
+        $this->loadModel('SubCategories');
+        $subCategories = $this->SubCategories->getAllSubCategories();
+        $subCategoriesName = $this->SubCategories->listAllSubCategories();
 
-        list($fullBanners, $smallBanners) = Cache::remember(
-            'banners', function(){
-            $this->loadModel('Banners');
-            $fullBanners = $this->Banners->full();
-            $smallBanners = $this->Banners->small();
-            return [$fullBanners, $smallBanners];
-        });
+        $this->loadModel('UserTypes');
+        $userTypes = $this->UserTypes->listSubCategories();
 
-        //-------------------------------------------------------------------------
+        $this->loadModel('Banners');
+        $fullBanners = $this->Banners->full();
+        $smallBanners = $this->Banners->small();
 
-        list($productsBestSeller, $productsNewer, $productsMostPopular) = Cache::remember(
-            'productsTrend', function(){
-            $this->loadModel('Products');
-            $productsBestSeller = $this->Products->getProductTrendByColumn('sold');
-            $productsNewer = $this->Products->getProductTrendByColumn('created');
-            $productsMostPopular = $this->Products->getProductTrendByColumn('visited');
-            return [$productsBestSeller, $productsNewer, $productsMostPopular];
-        });
+        $this->loadModel('Products');
+        $productsBestSeller = $this->Products->getProductTrendByColumn('sold', 0);
+        $productsNewer = $this->Products->getProductTrendByColumn('created', 0);
+        $productsMostPopular = $this->Products->getProductTrendByColumn('visited', 0);
 
-        //-------------------------------------------------------------------------
+        $this->loadModel('Offers');
+        $offers = $this->Offers->offersRecursive();
 
-        $offers = Cache::remember(
-            'offers', function(){
-            $this->loadModel('Offers');
-            $offers = $this->Offers->offersRecursive();
-            return $offers;
-        });
-
-        //-------------------------------------------------------------------------
-
-        $news = Cache::remember(
-            'news', function(){
-            $this->loadModel('News');
-            $news = $this->News->getRecentNews();
-            return $news;
-        });
+        $this->loadModel('News');
+        $news = $this->News->getRecentNews();
 
         $this->set(compact('userId', 'username', 'userTypes', 'smallBanners',
             'fullBanners', 'offers', 'news', 'categories', 'subCategories',
@@ -100,12 +54,9 @@ class CustomStaticPagesController extends AppController
     {
         $userId = $this->Auth->user('id');
         $username = $this->Auth->user('username');
-        $userTypes = Cache::remember(
-            'userTypes', function(){
-            $this->loadModel('UserTypes');
-            $stores = $this->UserTypes->listSubCategories();
-            return $stores;
-        });
+
+        $this->loadModel('UserTypes');
+        $userTypes = $this->UserTypes->listSubCategories();
 
         $this->set(compact('userId', 'username', 'userTypes'));
     }
@@ -114,12 +65,9 @@ class CustomStaticPagesController extends AppController
     {
         $userId = $this->Auth->user('id');
         $username = $this->Auth->user('username');
-        $userTypes = Cache::remember(
-            'userTypes', function(){
-            $this->loadModel('UserTypes');
-            $stores = $this->UserTypes->listSubCategories();
-            return $stores;
-        });
+
+        $this->loadModel('UserTypes');
+        $userTypes= $this->UserTypes->listSubCategories();
 
         $this->set(compact('userId', 'username', 'userTypes'));
     }
@@ -128,12 +76,9 @@ class CustomStaticPagesController extends AppController
     {
         $userId = $this->Auth->user('id');
         $username = $this->Auth->user('username');
-        $userTypes = Cache::remember(
-            'userTypes', function(){
-            $this->loadModel('UserTypes');
-            $stores = $this->UserTypes->listSubCategories();
-            return $stores;
-        });
+
+        $this->loadModel('UserTypes');
+        $userTypes = $this->UserTypes->listSubCategories();
 
         $this->set(compact('userId', 'username', 'userTypes'));
     }
@@ -144,12 +89,9 @@ class CustomStaticPagesController extends AppController
         {
             $userId = $this->Auth->user('id');
             $username = $this->Auth->user('username');
-            $userTypes = Cache::remember(
-                'userTypes', function(){
-                $this->loadModel('UserTypes');
-                $stores = $this->UserTypes->listSubCategories();
-                return $stores;
-            });
+
+            $this->loadModel('UserTypes');
+            $userTypes = $this->UserTypes->listSubCategories();
 
             $this->set(compact('userId', 'username', 'userTypes'));
 			
@@ -163,8 +105,6 @@ class CustomStaticPagesController extends AppController
 				'className' => 'Smtp',
 				'tls' => true
 			]);
-
-			//-------------------------------------------------------------------------
 
 			$email = new Email();
             $email->transport('gmail');
@@ -184,8 +124,6 @@ class CustomStaticPagesController extends AppController
                     )
                 );
 
-			//-------------------------------------------------------------------------
-			
 			return $this->redirect(['controller' => 'CustomStaticPages', 'action' => 'index']);
 		}
     }
