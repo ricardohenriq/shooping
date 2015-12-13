@@ -19,8 +19,7 @@ class BannerTypesController extends AppController
      */
     public function index()
     {
-        $this->set('bannerTypes', $this->paginate($this->BannerTypes));
-        $this->set('_serialize', ['bannerTypes']);
+
     }
 
     /**
@@ -32,11 +31,7 @@ class BannerTypesController extends AppController
      */
     public function view($id = null)
     {
-        $bannerType = $this->BannerTypes->get($id, [
-            'contain' => ['Banners']
-        ]);
-        $this->set('bannerType', $bannerType);
-        $this->set('_serialize', ['bannerType']);
+
     }
 
     /**
@@ -46,18 +41,7 @@ class BannerTypesController extends AppController
      */
     public function add()
     {
-        $bannerType = $this->BannerTypes->newEntity();
-        if ($this->request->is('post')) {
-            $bannerType = $this->BannerTypes->patchEntity($bannerType, $this->request->data);
-            if ($this->BannerTypes->save($bannerType)) {
-                $this->Flash->success(__('The banner type has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The banner type could not be saved. Please, try again.'));
-            }
-        }
-        $this->set(compact('bannerType'));
-        $this->set('_serialize', ['bannerType']);
+
     }
 
     /**
@@ -69,20 +53,7 @@ class BannerTypesController extends AppController
      */
     public function edit($id = null)
     {
-        $bannerType = $this->BannerTypes->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $bannerType = $this->BannerTypes->patchEntity($bannerType, $this->request->data);
-            if ($this->BannerTypes->save($bannerType)) {
-                $this->Flash->success(__('The banner type has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The banner type could not be saved. Please, try again.'));
-            }
-        }
-        $this->set(compact('bannerType'));
-        $this->set('_serialize', ['bannerType']);
+
     }
 
     /**
@@ -94,14 +65,7 @@ class BannerTypesController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $bannerType = $this->BannerTypes->get($id);
-        if ($this->BannerTypes->delete($bannerType)) {
-            $this->Flash->success(__('The banner type has been deleted.'));
-        } else {
-            $this->Flash->error(__('The banner type could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 
     public function beforeFilter(Event $event)

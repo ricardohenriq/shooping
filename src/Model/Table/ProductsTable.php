@@ -383,4 +383,15 @@ class ProductsTable extends Table
                 }
             ])->hydrate(false)->first();
     }
+
+    public function getProducts($storeId)
+    {
+        $setting = [
+            'fields' => ['product_name', 'quantity', 'sold', 'price'],
+            'conditions' => ['store_id' => $storeId],
+            'order' => ['product_name' => 'ASC']
+        ];
+        return $this
+            ->find('all', $setting)->hydrate(false)->toArray();
+    }
 }

@@ -1,6 +1,6 @@
 Dropzone.autoDiscover = false;
 var addProductDropzone = new Dropzone('#addProductDropzone', { // The camelized version of the ID of the form element
-	url: 'http://localhost:8765/products/upload',
+	url: 'http://localhost:8765/products/add',
 	autoProcessQueue: false,
 	uploadMultiple: true,
 	parallelUploads: 100,

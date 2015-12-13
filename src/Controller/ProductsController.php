@@ -3,7 +3,6 @@ namespace App\Controller;
 
 use Cake\Event\Event;
 use Cake\ORM\TableRegistry;
-use Sunra\PhpSimple\HtmlDomParser;
 
 /**
  * Products Controller
@@ -19,20 +18,6 @@ class ProductsController extends AppController
         $this->loadComponent('Paginator');
     }
 	
-    /**
-     * Index method
-     *
-     * @return void
-     */
-    public function index()
-    {
-        $this->paginate = [
-            'contain' => ['Stores']
-        ];
-        $this->set('products', $this->paginate($this->Products));
-        $this->set('_serialize', ['products']);
-    }
-
     /**
      * view method
      * Gera a página http://localhost:8765/products/view/:$id
@@ -67,28 +52,6 @@ class ProductsController extends AppController
     }
 
     /**
-     * Add method
-     *
-     * @return void Redirects on successful add, renders view otherwise.
-     */
-    public function add()
-    {
-        $product = $this->Products->newEntity();
-        if ($this->request->is('post')) {
-            $product = $this->Products->patchEntity($product, $this->request->data);
-            if ($this->Products->save($product)) {
-                $this->Flash->success(__('The product has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The product could not be saved. Please, try again.'));
-            }
-        }
-        $stores = $this->Products->Stores->find('list', ['limit' => 200]);
-        $this->set(compact('product', 'stores'));
-        $this->set('_serialize', ['product']);
-    }
-
-    /**
      * Edit method
      *
      * @param string|null $id Product id.
@@ -105,22 +68,6 @@ class ProductsController extends AppController
         $stores = $this->Stores->myStores($userId);
 
         $this->set(compact('pageTitle', 'username', 'userId', 'stores'));
-
-        /*$product = $this->Products->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $product = $this->Products->patchEntity($product, $this->request->data);
-            if ($this->Products->save($product)) {
-                $this->Flash->success(__('The product has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The product could not be saved. Please, try again.'));
-            }
-        }
-        $stores = $this->Products->Stores->find('list', ['limit' => 200]);
-        $this->set(compact('product', 'stores'));
-        $this->set('_serialize', ['product']);*/
     }
 
     /**
@@ -132,14 +79,7 @@ class ProductsController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $product = $this->Products->get($id);
-        if ($this->Products->delete($product)) {
-            $this->Flash->success(__('The product has been deleted.'));
-        } else {
-            $this->Flash->error(__('The product could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 
     /**
@@ -198,7 +138,7 @@ class ProductsController extends AppController
         }
     }
 
-	public function upload() 
+	public function add()
 	{		
         if ($this->request->is('post')) {
 
@@ -255,55 +195,30 @@ class ProductsController extends AppController
         }
     }
 
-    public function importProductsFromExcel()
-    {
-        $this->autoRender = false;
-        $sheetData = $this->Excel->importExcel('Produtos.xlsx', 'Produtos');
-        $productEntities = $this->Excel->transformRowIntoEntity($sheetData,
-            ['A' => 'product_name', 'B' => 'quantity', 'C' => 'price'], 2, 'Products');
-        $this->Insert->insertMassEntities($productEntities, 'Products');
-    }
-
-    public function exportProductsToExcel($store)
+    public function exportProductsToExcel($storeId)
     {
         $this->autoRender = false;
 
-        //-------------------------------------------------------------------------
-
-        $spreadSheetHeader =
-            ['Produtos' => ['A1' => 'Nome do Produto', 'B1' => 'Quantidade',
+        $spreadSheetHeader = [
+            'Produtos' => ['A1' => 'Nome do Produto', 'B1' => 'Quantidade',
                 'C1' => 'Vendidos', 'D1' => 'Preço'],
             'Ofertas' => ['A1' => 'Nome da Oferta', 'B1' => 'Data Inicio',
-                'C1' => 'Data Fim']];
-
-        $setting = [
-            'fields' => ['product_name', 'quantity', 'sold', 'price'],
-            'conditions' => ['store_id' => $store],
-            'order' => ['product_name' => 'ASC']
+                'C1' => 'Data Fim']
         ];
-        $products = TableRegistry::get('Products')
-            ->find('all', $setting)->hydrate(false)->toArray();
 
-        $setting = [
-            'fields' => ['name', 'date_start', 'date_end'],
-            'conditions' => ['store_id' => $store],
-            'order' => ['name' => 'ASC']
-        ];
-        $offers = TableRegistry::get('Offers')
-            ->find('all', $setting)->hydrate(false)->toArray();
+        $products = $this->Products->getProducts($storeId);
+
+        $this->loadModel('Offers');
+        $offers = $this->Offers->getOffers($storeId);
 
         $objPHPExcel = $this->Excel->transformEntityIntoRow($spreadSheetHeader,
             [$products, $offers], [['product_name', 'quantity', 'sold', 'price'],
                 ['name', 'date_start', 'date_end']]);
 
-        //-------------------------------------------------------------------------
-
         $fileName = 'Username' . '-Planilha-Produtos.xlsx';
         $fileNameWithPath = TMP . DS . 'spreadsheet' . DS . $fileName;
 
         $this->Excel->exportExcel($objPHPExcel, 'Excel2007', $fileNameWithPath);
-
-        //-------------------------------------------------------------------------
 
         $this->response->file($fileNameWithPath, ['download' => true, 'name' => $fileName]);
         return $this->response;

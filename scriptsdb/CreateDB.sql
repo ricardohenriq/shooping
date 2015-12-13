@@ -234,3 +234,14 @@ CREATE TABLE answers(
   FOREIGN KEY comment_key (comment_id) REFERENCES comments(id),
   FOREIGN KEY user_key (user_id) REFERENCES users(id)
 );
+
+CREATE TABLE store_medias(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  media_type_id INT NOT NULL,
+  store_id INT NOT NULL,
+  path VARCHAR(255) NOT NULL,
+  created DATETIME,
+  modified DATETIME,
+  FOREIGN KEY media_type_key (media_type_id) REFERENCES media_types(id),
+  FOREIGN KEY store_key (store_id) REFERENCES stores(id)
+);

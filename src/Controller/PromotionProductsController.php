@@ -18,11 +18,7 @@ class PromotionProductsController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Products', 'Promotions']
-        ];
-        $this->set('promotionProducts', $this->paginate($this->PromotionProducts));
-        $this->set('_serialize', ['promotionProducts']);
+
     }
 
     /**
@@ -34,11 +30,7 @@ class PromotionProductsController extends AppController
      */
     public function view($id = null)
     {
-        $promotionProduct = $this->PromotionProducts->get($id, [
-            'contain' => ['Products', 'Promotions']
-        ]);
-        $this->set('promotionProduct', $promotionProduct);
-        $this->set('_serialize', ['promotionProduct']);
+
     }
 
     /**
@@ -48,20 +40,7 @@ class PromotionProductsController extends AppController
      */
     public function add()
     {
-        $promotionProduct = $this->PromotionProducts->newEntity();
-        if ($this->request->is('post')) {
-            $promotionProduct = $this->PromotionProducts->patchEntity($promotionProduct, $this->request->data);
-            if ($this->PromotionProducts->save($promotionProduct)) {
-                $this->Flash->success(__('The promotion product has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The promotion product could not be saved. Please, try again.'));
-            }
-        }
-        $products = $this->PromotionProducts->Products->find('list', ['limit' => 200]);
-        $promotions = $this->PromotionProducts->Promotions->find('list', ['limit' => 200]);
-        $this->set(compact('promotionProduct', 'products', 'promotions'));
-        $this->set('_serialize', ['promotionProduct']);
+
     }
 
     /**
@@ -73,22 +52,7 @@ class PromotionProductsController extends AppController
      */
     public function edit($id = null)
     {
-        $promotionProduct = $this->PromotionProducts->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $promotionProduct = $this->PromotionProducts->patchEntity($promotionProduct, $this->request->data);
-            if ($this->PromotionProducts->save($promotionProduct)) {
-                $this->Flash->success(__('The promotion product has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The promotion product could not be saved. Please, try again.'));
-            }
-        }
-        $products = $this->PromotionProducts->Products->find('list', ['limit' => 200]);
-        $promotions = $this->PromotionProducts->Promotions->find('list', ['limit' => 200]);
-        $this->set(compact('promotionProduct', 'products', 'promotions'));
-        $this->set('_serialize', ['promotionProduct']);
+
     }
 
     /**
@@ -100,13 +64,6 @@ class PromotionProductsController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $promotionProduct = $this->PromotionProducts->get($id);
-        if ($this->PromotionProducts->delete($promotionProduct)) {
-            $this->Flash->success(__('The promotion product has been deleted.'));
-        } else {
-            $this->Flash->error(__('The promotion product could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 }

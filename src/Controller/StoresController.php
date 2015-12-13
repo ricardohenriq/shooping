@@ -1,7 +1,6 @@
 <?php
 namespace App\Controller;
 
-use Cake\Cache\Cache;
 use Cake\Event\Event;
 use Cake\ORM\TableRegistry;
 
@@ -12,6 +11,12 @@ use Cake\ORM\TableRegistry;
  */
 class StoresController extends AppController
 {
+    public function initialize()
+    {
+        parent::initialize();
+        $this->loadComponent('RequestHandler');
+        $this->loadComponent('Paginator');
+    }
 
     /**
      * Index method
@@ -20,11 +25,7 @@ class StoresController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Users']
-        ];
-        $this->set('stores', $this->paginate($this->Stores));
-        $this->set('_serialize', ['stores']);
+
     }
 
     /**
@@ -36,11 +37,7 @@ class StoresController extends AppController
      */
     public function view($id = null)
     {
-        $store = $this->Stores->get($id, [
-            'contain' => ['Users', 'Products']
-        ]);
-        $this->set('store', $store);
-        $this->set('_serialize', ['store']);
+
     }
 
     /**
@@ -50,19 +47,7 @@ class StoresController extends AppController
      */
     public function add()
     {
-        $store = $this->Stores->newEntity();
-        if ($this->request->is('post')) {
-            $store = $this->Stores->patchEntity($store, $this->request->data);
-            if ($this->Stores->save($store)) {
-                $this->Flash->success(__('The store has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The store could not be saved. Please, try again.'));
-            }
-        }
-        $users = $this->Stores->Users->find('list', ['limit' => 200]);
-        $this->set(compact('store', 'users'));
-        $this->set('_serialize', ['store']);
+
     }
 
     /**
@@ -78,19 +63,11 @@ class StoresController extends AppController
         $username = $this->Auth->user('username');
         $pageTitle = $username . ' - Banners';
 
-        list($fullBanners, $smallBanners,) = Cache::remember(
-            'banners', function(){
-            $this->loadModel('Banners');
-            $fullBanners = $this->Banners->full();
-            $smallBanners = $this->Banners->small();
-            return [$fullBanners, $smallBanners];
-        });
+        $this->loadModel('Banners');
+        $fullBanners = $this->Banners->full();
+        $smallBanners = $this->Banners->small();
 
-        $stores = Cache::remember(
-            'stores', function(){
-            $stores = $this->Stores->myStores($this->Auth->user('id'));
-            return $stores;
-        });
+        $stores = $this->Stores->myStores($this->Auth->user('id'));
 
         $this->set(compact('fullBanners', 'smallBanners', 'userId', 'username',
             'stores', 'pageTitle'));
@@ -105,24 +82,14 @@ class StoresController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $store = $this->Stores->get($id);
-        if ($this->Stores->delete($store)) {
-            $this->Flash->success(__('The store has been deleted.'));
-        } else {
-            $this->Flash->error(__('The store could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 
     public function miniMap()
     {
-        list($fullBanners, $smallBanners) = Cache::remember('banners', function(){
-            $this->loadModel('Banners');
-            $fullBanners = $this->Banners->full();
-            $smallBanners = $this->Banners->small();
-            return [$fullBanners, $smallBanners];
-        });
+        $this->loadModel('Banners');
+        $fullBanners = $this->Banners->full();
+        $smallBanners = $this->Banners->small();
 
         $userId = $this->Auth->user('id');
         $username = $this->Auth->user('username');
@@ -134,13 +101,9 @@ class StoresController extends AppController
         $userId = $this->Auth->user('id');
         $username = $this->Auth->user('username');
 
-        list($fullBanners, $smallBanners) = Cache::remember(
-            'banners', function(){
-            $this->loadModel('Banners');
-            $fullBanners = $this->Banners->full();
-            $smallBanners = $this->Banners->small();
-            return [$fullBanners, $smallBanners];
-        });
+        $this->loadModel('Banners');
+        $fullBanners = $this->Banners->full();
+        $smallBanners = $this->Banners->small();
 
         $stores = $this->Stores->myStores($this->Auth->user('id'));
 
@@ -153,13 +116,9 @@ class StoresController extends AppController
         $userId = $this->Auth->user('id');
         $username = $this->Auth->user('username');
 
-        list($fullBanners, $smallBanners,) = Cache::remember(
-            'banners', function(){
-            $this->loadModel('Banners');
-            $fullBanners = $this->Banners->full();
-            $smallBanners = $this->Banners->small();
-            return [$fullBanners, $smallBanners];
-        });
+        $this->loadModel('Banners');
+        $fullBanners = $this->Banners->full();
+        $smallBanners = $this->Banners->small();
 
 		$this->loadModel('Stores');
         $stores = $this->Stores->myStores($userId);
@@ -175,140 +134,34 @@ class StoresController extends AppController
         if($this->request->is('get'))
         {
             $search = $this->request->query['search'];
-            @$productsView = $this->request->query['stores-view'] ?: 3;
-            @$productsOrder = $this->request->query['stores-order'];
-            @$page = $this->request->query['page'] ?: 1;
 
-            //-------------------------------------------------------------------------
-
-            $this->set('productsView', $productsView);
-
-            //-------------------------------------------------------------------------
-
-            $urls = $this->Url->createUrl('stores','search', 'stores-view', ['3', '6', '9']);
-
-            $selectOptionsViews = array_combine($urls, ['3', '6', '9']);
-            $this->set('selectOptionsViews', $selectOptionsViews);
-
-            //-------------------------------------------------------------------------
-
-            $productsOrder = ['most-popular' => 'Mais Visitados', 'most-sold' => 'Mais Vendidos',
-                'lowest-price' => 'Menor Preço', 'highest-price' => 'Maior Preço'];
-            $this->set('orderView', $this->Url->getQuerystringKeyWithArray('products-order', $productsOrder));
-
-            //-------------------------------------------------------------------------
-
-            $urls = $this->Url->createUrl('products','search', 'products-order', ['most-popular', 'most-sold',
-                'lowest-price', 'highest-price']);
-
-            $selectOptionsOrderView = array_combine($urls, ['Mais Visitados', 'Mais Vendidos',
-                'Menor Preço', 'Maior Preço']);
-            $this->set('selectOptionsOrderView', $selectOptionsOrderView);
-
-            //-------------------------------------------------------------------------
-
-            $setting = [
-                'fields' => ['id', 'product_name', 'quantity', 'sold', 'description', 'price',
-                    'old_price'],
-                'conditions' => ['product_name LIKE' => '%'.$search.'%'],
-                'order' => ['price' => 'DESC'],
-                'limit' => $productsView,
-                'offset' => ($page * $productsView) - $productsView
+            $this->paginate = [
+                'conditions' => ['store_name LIKE' => '%' . $search . '%'],
+                'maxLimit' => 10,
+                'contain' => ['StoreMedias' => function($q){
+                    return $q->select(['path', 'product_id'])
+                        ->where(['media_type_id' => 3]);
+                }]
             ];
-            $products = TableRegistry::get('Products')
-                ->find('all', $setting)->hydrate(false)->toArray();
+            $products = $this->paginate($this->Stores);
 
-            $productsSize = count($products);
-            for($i = 0; $i < $productsSize ; $i++)
-            {
-                $setting = [
-                    'fields' => ['path'],
-                    'conditions' => ['product_id' => $products[$i]['id'], 'media_type_id' => 3]
-                ];
-                $products[$i]['thumb'] = TableRegistry::get('Medias')
-                    ->find('all', $setting)->hydrate(false)->first()['path'];
-            }
-            $this->set('products', $products);
+            $this->loadModel('Banners');
+            $fullBanners = $this->Banners->full();
+            $smallBanners = $this->Banners->small();
 
-            //-------------------------------------------------------------------------
+            $userId = $this->Auth->user('id');
+            $pageTitle = $search . ' - Stores';
+            $username = $this->Auth->user('username');
 
-            @$startEndProducts = $this->CustomPagination->calcStartEndPaginator($products, $this->request->query['page'],
-                $productsView);
-            $this->set('startEndProducts', $startEndProducts);
+            $this->loadModel('Categories');
+            $categories = $this->Categories->getAllCategories();
 
-            //-------------------------------------------------------------------------
+            $this->loadModel('SubCategories');
+            $subCategories = $this->SubCategories->getAllSubCategories();
 
-            $setting = [
-                'conditions' => ['product_name LIKE' => '%'.$search.'%']
-            ];
-            $qtdProducts = TableRegistry::get('Products')
-                ->find('all', $setting)->count();
-            $this->set('qtdProducts', $qtdProducts);
-
-            //-------------------------------------------------------------------------
-
-            $setting = [
-                'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-                'conditions' => ['banner_type_id' => 2],
-                'limit' => 1
-            ];
-            $fullBanners = TableRegistry::get('Banners')
-                ->find('all', $setting)->hydrate(false)->toArray();
-            $this->set('fullBanners', $fullBanners);
-
-            //-------------------------------------------------------------------------
-
-            $setting = [
-                'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-                'conditions' => ['banner_type_id' => 1],
-                'limit' => 3
-            ];
-            $smallBanners = TableRegistry::get('Banners')
-                ->find('all', $setting)->hydrate(false)->toArray();
-            $this->set('smallBanners', $smallBanners);
-
-            //-------------------------------------------------------------------------
-
-            $this->set('userId', $this->Auth->user('id'));
-
-            //-------------------------------------------------------------------------
-
-            $this->set('pageTitle', $search.' - Stores');
-
-            //-------------------------------------------------------------------------
-
-            $this->set('username', $this->Auth->user('username'));
-
-            //-------------------------------------------------------------------------
-
-            $categories = TableRegistry::get('Categories')
-                ->find()->hydrate(false)->toArray();
-            $this->set('categories', $categories);
-
-            //-------------------------------------------------------------------------
-
-            $subCategories = TableRegistry::get('SubCategories')
-                ->find()->hydrate(false)->toArray();
-            $this->set('subCategories', $subCategories);
-
-            //-------------------------------------------------------------------------
-
-            @$pagina = $this->CustomPagination->getCurrentPage();
-            @$this->set('pagina', $pagina);
-
-            //-------------------------------------------------------------------------
-
-            $this->set('numPaginas', $this->CustomPagination->getNumPaginas($qtdProducts, $productsView));
-
-            //-------------------------------------------------------------------------
-
-            $this->set('url', $this->Url->getUrlWithoutParam('products','search','page'));
-
-            //-------------------------------------------------------------------------
-
-            $this->set('previousNextPage', $this->Url->getPreviousNextPage($pagina));
-
-            $this->set('search', $search);
+            $this->set(compact('search', 'fullBanners', 'smallBanners', 'categories',
+                'subCategories', 'productsView', 'userId', 'pageTitle', 'username',
+                'products'));
         }
     }
 

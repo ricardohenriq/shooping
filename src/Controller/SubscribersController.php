@@ -20,6 +20,7 @@ class SubscribersController extends AppController
         parent::initialize();
         $this->loadComponent('RequestHandler');
     }
+
     /**
      * Index method
      *
@@ -27,8 +28,7 @@ class SubscribersController extends AppController
      */
     public function index()
     {
-        $this->set('subscribers', $this->paginate($this->Subscribers));
-        $this->set('_serialize', ['subscribers']);
+
     }
 
     /**
@@ -40,11 +40,7 @@ class SubscribersController extends AppController
      */
     public function view($id = null)
     {
-        $subscriber = $this->Subscribers->get($id, [
-            'contain' => []
-        ]);
-        $this->set('subscriber', $subscriber);
-        $this->set('_serialize', ['subscriber']);
+
     }
 
     /**
@@ -84,20 +80,7 @@ class SubscribersController extends AppController
      */
     public function edit($id = null)
     {
-        $subscriber = $this->Subscribers->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $subscriber = $this->Subscribers->patchEntity($subscriber, $this->request->data);
-            if ($this->Subscribers->save($subscriber)) {
-                $this->Flash->success(__('The subscriber has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The subscriber could not be saved. Please, try again.'));
-            }
-        }
-        $this->set(compact('subscriber'));
-        $this->set('_serialize', ['subscriber']);
+
     }
 
     /**
@@ -109,14 +92,7 @@ class SubscribersController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $subscriber = $this->Subscribers->get($id);
-        if ($this->Subscribers->delete($subscriber)) {
-            $this->Flash->success(__('The subscriber has been deleted.'));
-        } else {
-            $this->Flash->error(__('The subscriber could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 
     public function beforeFilter(Event $event)

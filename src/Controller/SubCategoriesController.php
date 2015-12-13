@@ -20,11 +20,7 @@ class SubCategoriesController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Categories']
-        ];
-        $this->set('subCategories', $this->paginate($this->SubCategories));
-        $this->set('_serialize', ['subCategories']);
+
     }
 
     /**
@@ -36,11 +32,7 @@ class SubCategoriesController extends AppController
      */
     public function view($id = null)
     {
-        $subCategory = $this->SubCategories->get($id, [
-            'contain' => ['Categories']
-        ]);
-        $this->set('subCategory', $subCategory);
-        $this->set('_serialize', ['subCategory']);
+
     }
 
     /**
@@ -50,19 +42,7 @@ class SubCategoriesController extends AppController
      */
     public function add()
     {
-        $subCategory = $this->SubCategories->newEntity();
-        if ($this->request->is('post')) {
-            $subCategory = $this->SubCategories->patchEntity($subCategory, $this->request->data);
-            if ($this->SubCategories->save($subCategory)) {
-                $this->Flash->success(__('The sub category has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The sub category could not be saved. Please, try again.'));
-            }
-        }
-        $categories = $this->SubCategories->Categories->find('list', ['limit' => 200]);
-        $this->set(compact('subCategory', 'categories'));
-        $this->set('_serialize', ['subCategory']);
+
     }
 
     /**
@@ -74,21 +54,7 @@ class SubCategoriesController extends AppController
      */
     public function edit($id = null)
     {
-        $subCategory = $this->SubCategories->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $subCategory = $this->SubCategories->patchEntity($subCategory, $this->request->data);
-            if ($this->SubCategories->save($subCategory)) {
-                $this->Flash->success(__('The sub category has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The sub category could not be saved. Please, try again.'));
-            }
-        }
-        $categories = $this->SubCategories->Categories->find('list', ['limit' => 200]);
-        $this->set(compact('subCategory', 'categories'));
-        $this->set('_serialize', ['subCategory']);
+
     }
 
     /**
@@ -100,14 +66,7 @@ class SubCategoriesController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $subCategory = $this->SubCategories->get($id);
-        if ($this->SubCategories->delete($subCategory)) {
-            $this->Flash->success(__('The sub category has been deleted.'));
-        } else {
-            $this->Flash->error(__('The sub category could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 
     public function beforeFilter(Event $event)
@@ -117,58 +76,19 @@ class SubCategoriesController extends AppController
 
     public function favoriteSubcategories()
     {
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 2],
-            'limit' => 1
-        ];
-        $fullBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('fullBanners', $fullBanners);
+        $this->loadModel('Banners');
+        $fullBanners = $this->Banners->full();
+        $smallBanners = $this->Banners->small();
 
-        //-------------------------------------------------------------------------
+        $userId = $this->Auth->user('id');
+        $username = $this->Auth->user('username');
 
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 1],
-            'limit' => 3
-        ];
-        $smallBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('smallBanners', $smallBanners);
+        $this->loadModel('Stores');
+        $stores = $this->Stores->myStores($userId);
 
-        //-------------------------------------------------------------------------
+        $favoriteSubcategories = $this->SubCategories->getFavoriteSubcategories($userId);
 
-        $this->set('userId', $this->Auth->user('id'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('username', $this->Auth->user('username'));
-
-        //-------------------------------------------------------------------------
-
-        $setting = [
-            'fields' => ['store_name', 'id', 'created', 'modified'],
-            'conditions' => ['user_id' => $this->Auth->user('username')]
-        ];
-        $stores = TableRegistry::get('Stores')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('stores', $stores);
-
-        //-------------------------------------------------------------------------
-
-        //ESTE MÉTODO DEVERÁ SER REFEITO QUANDO FOR CRIADA A
-        //TABELA DE FAVORITOS, ATUALMENE ESTA SOMENTE "EMULANDO"
-        //UM RESULTADO ESPERADO.
-        $setting = [
-            'fields' => ['id', 'sub_category_name', 'created', 'modified']
-        ];
-        $favoriteSubcategories = TableRegistry::get('SubCategories')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('favoriteSubcategories', $favoriteSubcategories);
-
-        //-------------------------------------------------------------------------
-
-        $this->set('search', '');
+        $this->set(compact('fullBanners', 'smallBanners', 'userId', 'username',
+            'stores', 'favoriteSubcategories'));
     }
 }

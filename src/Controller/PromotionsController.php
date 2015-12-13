@@ -19,8 +19,7 @@ class PromotionsController extends AppController
      */
     public function index()
     {
-        $this->set('promotions', $this->paginate($this->Promotions));
-        $this->set('_serialize', ['promotions']);
+
     }
 
     /**
@@ -32,11 +31,7 @@ class PromotionsController extends AppController
      */
     public function view($id = null)
     {
-        $promotion = $this->Promotions->get($id, [
-            'contain' => ['PromotionProducts']
-        ]);
-        $this->set('promotion', $promotion);
-        $this->set('_serialize', ['promotion']);
+
     }
 
     /**
@@ -46,18 +41,7 @@ class PromotionsController extends AppController
      */
     public function add()
     {
-        $promotion = $this->Promotions->newEntity();
-        if ($this->request->is('post')) {
-            $promotion = $this->Promotions->patchEntity($promotion, $this->request->data);
-            if ($this->Promotions->save($promotion)) {
-                $this->Flash->success(__('The promotion has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The promotion could not be saved. Please, try again.'));
-            }
-        }
-        $this->set(compact('promotion'));
-        $this->set('_serialize', ['promotion']);
+
     }
 
     /**
@@ -69,20 +53,7 @@ class PromotionsController extends AppController
      */
     public function edit($id = null)
     {
-        $promotion = $this->Promotions->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $promotion = $this->Promotions->patchEntity($promotion, $this->request->data);
-            if ($this->Promotions->save($promotion)) {
-                $this->Flash->success(__('The promotion has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The promotion could not be saved. Please, try again.'));
-            }
-        }
-        $this->set(compact('promotion'));
-        $this->set('_serialize', ['promotion']);
+
     }
 
     /**
@@ -94,14 +65,7 @@ class PromotionsController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $promotion = $this->Promotions->get($id);
-        if ($this->Promotions->delete($promotion)) {
-            $this->Flash->success(__('The promotion has been deleted.'));
-        } else {
-            $this->Flash->error(__('The promotion could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 
     public function beforeFilter(Event $event)

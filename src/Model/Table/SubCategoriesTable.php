@@ -79,4 +79,16 @@ class SubCategoriesTable extends Table
         return $this
             ->find('list')->hydrate(false)->toArray();
     }
+
+    public function getFavoriteSubcategories($userId)
+    {
+        //ESTE MÉTODO DEVERÁ SER REFEITO QUANDO FOR CRIADA A
+        //TABELA DE FAVORITOS, ATUALMENE ESTA SOMENTE "EMULANDO"
+        //UM RESULTADO ESPERADO.
+        $setting = [
+            'fields' => ['id', 'sub_category_name', 'created', 'modified']
+        ];
+        return $this
+            ->find('all', $setting)->hydrate(false)->toArray();
+    }
 }

@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * MediaTypes Controller
@@ -18,8 +19,7 @@ class MediaTypesController extends AppController
      */
     public function index()
     {
-        $this->set('mediaTypes', $this->paginate($this->MediaTypes));
-        $this->set('_serialize', ['mediaTypes']);
+
     }
 
     /**
@@ -31,11 +31,7 @@ class MediaTypesController extends AppController
      */
     public function view($id = null)
     {
-        $mediaType = $this->MediaTypes->get($id, [
-            'contain' => ['Medias']
-        ]);
-        $this->set('mediaType', $mediaType);
-        $this->set('_serialize', ['mediaType']);
+
     }
 
     /**
@@ -45,18 +41,7 @@ class MediaTypesController extends AppController
      */
     public function add()
     {
-        $mediaType = $this->MediaTypes->newEntity();
-        if ($this->request->is('post')) {
-            $mediaType = $this->MediaTypes->patchEntity($mediaType, $this->request->data);
-            if ($this->MediaTypes->save($mediaType)) {
-                $this->Flash->success(__('The media type has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The media type could not be saved. Please, try again.'));
-            }
-        }
-        $this->set(compact('mediaType'));
-        $this->set('_serialize', ['mediaType']);
+
     }
 
     /**
@@ -68,20 +53,7 @@ class MediaTypesController extends AppController
      */
     public function edit($id = null)
     {
-        $mediaType = $this->MediaTypes->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $mediaType = $this->MediaTypes->patchEntity($mediaType, $this->request->data);
-            if ($this->MediaTypes->save($mediaType)) {
-                $this->Flash->success(__('The media type has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The media type could not be saved. Please, try again.'));
-            }
-        }
-        $this->set(compact('mediaType'));
-        $this->set('_serialize', ['mediaType']);
+
     }
 
     /**
@@ -93,14 +65,7 @@ class MediaTypesController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $mediaType = $this->MediaTypes->get($id);
-        if ($this->MediaTypes->delete($mediaType)) {
-            $this->Flash->success(__('The media type has been deleted.'));
-        } else {
-            $this->Flash->error(__('The media type could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 
     public function beforeFilter(Event $event)

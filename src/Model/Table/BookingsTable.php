@@ -72,11 +72,6 @@ class BookingsTable extends Table
         return $rules;
     }
 
-    public function isOwnedBy($bookingId, $userId)
-    {
-        return $this->exists(['id' => $bookingId, 'user_id' => $userId]);
-    }
-
     public function getQuantityBookings($userId)
     {
         $setting = [
@@ -84,5 +79,15 @@ class BookingsTable extends Table
         ];
         return $this
             ->find('all', $setting)->count();
+    }
+
+    public function getBookings($userId)
+    {
+        $setting = [
+            'fields' => ['id', 'product_id', 'quantity'],
+            'conditions' => ['user_id' => $userId]
+        ];
+        return $this
+            ->find('all', $setting)->hydrate(false)->toArray();
     }
 }

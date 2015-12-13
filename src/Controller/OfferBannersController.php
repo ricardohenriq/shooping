@@ -18,11 +18,7 @@ class OfferBannersController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Offers']
-        ];
-        $this->set('offerBanners', $this->paginate($this->OfferBanners));
-        $this->set('_serialize', ['offerBanners']);
+
     }
 
     /**
@@ -34,11 +30,7 @@ class OfferBannersController extends AppController
      */
     public function view($id = null)
     {
-        $offerBanner = $this->OfferBanners->get($id, [
-            'contain' => ['Offers']
-        ]);
-        $this->set('offerBanner', $offerBanner);
-        $this->set('_serialize', ['offerBanner']);
+
     }
 
     /**
@@ -48,19 +40,7 @@ class OfferBannersController extends AppController
      */
     public function add()
     {
-        $offerBanner = $this->OfferBanners->newEntity();
-        if ($this->request->is('post')) {
-            $offerBanner = $this->OfferBanners->patchEntity($offerBanner, $this->request->data);
-            if ($this->OfferBanners->save($offerBanner)) {
-                $this->Flash->success(__('The offer banner has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The offer banner could not be saved. Please, try again.'));
-            }
-        }
-        $offers = $this->OfferBanners->Offers->find('list', ['limit' => 200]);
-        $this->set(compact('offerBanner', 'offers'));
-        $this->set('_serialize', ['offerBanner']);
+
     }
 
     /**
@@ -72,21 +52,7 @@ class OfferBannersController extends AppController
      */
     public function edit($id = null)
     {
-        $offerBanner = $this->OfferBanners->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $offerBanner = $this->OfferBanners->patchEntity($offerBanner, $this->request->data);
-            if ($this->OfferBanners->save($offerBanner)) {
-                $this->Flash->success(__('The offer banner has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The offer banner could not be saved. Please, try again.'));
-            }
-        }
-        $offers = $this->OfferBanners->Offers->find('list', ['limit' => 200]);
-        $this->set(compact('offerBanner', 'offers'));
-        $this->set('_serialize', ['offerBanner']);
+
     }
 
     /**
@@ -98,13 +64,6 @@ class OfferBannersController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $offerBanner = $this->OfferBanners->get($id);
-        if ($this->OfferBanners->delete($offerBanner)) {
-            $this->Flash->success(__('The offer banner has been deleted.'));
-        } else {
-            $this->Flash->error(__('The offer banner could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 }

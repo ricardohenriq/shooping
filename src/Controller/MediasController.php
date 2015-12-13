@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Medias Controller
@@ -18,11 +19,7 @@ class MediasController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['MediaTypes']
-        ];
-        $this->set('medias', $this->paginate($this->Medias));
-        $this->set('_serialize', ['medias']);
+
     }
 
     /**
@@ -34,11 +31,7 @@ class MediasController extends AppController
      */
     public function view($id = null)
     {
-        $media = $this->Medias->get($id, [
-            'contain' => ['MediaTypes']
-        ]);
-        $this->set('media', $media);
-        $this->set('_serialize', ['media']);
+
     }
 
     /**
@@ -48,19 +41,7 @@ class MediasController extends AppController
      */
     public function add()
     {
-        $media = $this->Medias->newEntity();
-        if ($this->request->is('post')) {
-            $media = $this->Medias->patchEntity($media, $this->request->data);
-            if ($this->Medias->save($media)) {
-                $this->Flash->success(__('The media has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The media could not be saved. Please, try again.'));
-            }
-        }
-        $mediaTypes = $this->Medias->MediaTypes->find('list', ['limit' => 200]);
-        $this->set(compact('media', 'mediaTypes'));
-        $this->set('_serialize', ['media']);
+
     }
 
     /**
@@ -72,21 +53,7 @@ class MediasController extends AppController
      */
     public function edit($id = null)
     {
-        $media = $this->Medias->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $media = $this->Medias->patchEntity($media, $this->request->data);
-            if ($this->Medias->save($media)) {
-                $this->Flash->success(__('The media has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The media could not be saved. Please, try again.'));
-            }
-        }
-        $mediaTypes = $this->Medias->MediaTypes->find('list', ['limit' => 200]);
-        $this->set(compact('media', 'mediaTypes'));
-        $this->set('_serialize', ['media']);
+
     }
 
     /**
@@ -98,14 +65,7 @@ class MediasController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $media = $this->Medias->get($id);
-        if ($this->Medias->delete($media)) {
-            $this->Flash->success(__('The media has been deleted.'));
-        } else {
-            $this->Flash->error(__('The media could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 
     public function beforeFilter(Event $event)

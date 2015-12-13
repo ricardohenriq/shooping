@@ -11,7 +11,6 @@ use Cake\Event\Event;
  */
 class ProductFeaturesController extends AppController
 {
-
     /**
      * Index method
      *
@@ -19,11 +18,7 @@ class ProductFeaturesController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Features', 'Products']
-        ];
-        $this->set('productFeatures', $this->paginate($this->ProductFeatures));
-        $this->set('_serialize', ['productFeatures']);
+
     }
 
     /**
@@ -35,11 +30,7 @@ class ProductFeaturesController extends AppController
      */
     public function view($id = null)
     {
-        $productFeature = $this->ProductFeatures->get($id, [
-            'contain' => ['Features', 'Products']
-        ]);
-        $this->set('productFeature', $productFeature);
-        $this->set('_serialize', ['productFeature']);
+
     }
 
     /**
@@ -49,20 +40,7 @@ class ProductFeaturesController extends AppController
      */
     public function add()
     {
-        $productFeature = $this->ProductFeatures->newEntity();
-        if ($this->request->is('post')) {
-            $productFeature = $this->ProductFeatures->patchEntity($productFeature, $this->request->data);
-            if ($this->ProductFeatures->save($productFeature)) {
-                $this->Flash->success(__('The product feature has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The product feature could not be saved. Please, try again.'));
-            }
-        }
-        $features = $this->ProductFeatures->Features->find('list', ['limit' => 200]);
-        $products = $this->ProductFeatures->Products->find('list', ['limit' => 200]);
-        $this->set(compact('productFeature', 'features', 'products'));
-        $this->set('_serialize', ['productFeature']);
+
     }
 
     /**
@@ -74,22 +52,7 @@ class ProductFeaturesController extends AppController
      */
     public function edit($id = null)
     {
-        $productFeature = $this->ProductFeatures->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $productFeature = $this->ProductFeatures->patchEntity($productFeature, $this->request->data);
-            if ($this->ProductFeatures->save($productFeature)) {
-                $this->Flash->success(__('The product feature has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The product feature could not be saved. Please, try again.'));
-            }
-        }
-        $features = $this->ProductFeatures->Features->find('list', ['limit' => 200]);
-        $products = $this->ProductFeatures->Products->find('list', ['limit' => 200]);
-        $this->set(compact('productFeature', 'features', 'products'));
-        $this->set('_serialize', ['productFeature']);
+
     }
 
     /**
@@ -101,14 +64,7 @@ class ProductFeaturesController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $productFeature = $this->ProductFeatures->get($id);
-        if ($this->ProductFeatures->delete($productFeature)) {
-            $this->Flash->success(__('The product feature has been deleted.'));
-        } else {
-            $this->Flash->error(__('The product feature could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 
     public function beforeFilter(Event $event)

@@ -12,7 +12,6 @@ use Cake\ORM\TableRegistry;
  */
 class BookingsController extends AppController
 {
-
     /**
      * Index method
      *
@@ -20,11 +19,7 @@ class BookingsController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Products', 'Users']
-        ];
-        $this->set('bookings', $this->paginate($this->Bookings));
-        $this->set('_serialize', ['bookings']);
+
     }
 
     /**
@@ -36,11 +31,7 @@ class BookingsController extends AppController
      */
     public function view($id = null)
     {
-        $booking = $this->Bookings->get($id, [
-            'contain' => ['Products', 'Users']
-        ]);
-        $this->set('booking', $booking);
-        $this->set('_serialize', ['booking']);
+
     }
 
     /**
@@ -50,20 +41,7 @@ class BookingsController extends AppController
      */
     public function add()
     {
-        $booking = $this->Bookings->newEntity();
-        if ($this->request->is('post')) {
-            $booking = $this->Bookings->patchEntity($booking, $this->request->data);
-            if ($this->Bookings->save($booking)) {
-                $this->Flash->success(__('The booking has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The booking could not be saved. Please, try again.'));
-            }
-        }
-        $products = $this->Bookings->Products->find('list', ['limit' => 200]);
-        $users = $this->Bookings->Users->find('list', ['limit' => 200]);
-        $this->set(compact('booking', 'products', 'users'));
-        $this->set('_serialize', ['booking']);
+
     }
 
     /**
@@ -75,22 +53,7 @@ class BookingsController extends AppController
      */
     public function edit($id = null)
     {
-        $booking = $this->Bookings->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $booking = $this->Bookings->patchEntity($booking, $this->request->data);
-            if ($this->Bookings->save($booking)) {
-                $this->Flash->success(__('The booking has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The booking could not be saved. Please, try again.'));
-            }
-        }
-        $products = $this->Bookings->Products->find('list', ['limit' => 200]);
-        $users = $this->Bookings->Users->find('list', ['limit' => 200]);
-        $this->set(compact('booking', 'products', 'users'));
-        $this->set('_serialize', ['booking']);
+
     }
 
     /**
@@ -102,14 +65,7 @@ class BookingsController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $booking = $this->Bookings->get($id);
-        if ($this->Bookings->delete($booking)) {
-            $this->Flash->success(__('The booking has been deleted.'));
-        } else {
-            $this->Flash->error(__('The booking could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 
     public function beforeFilter(Event $event)
@@ -143,56 +99,19 @@ class BookingsController extends AppController
      */
     public function myBookings()
     {
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 2],
-            'limit' => 1
-        ];
-        $fullBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('fullBanners', $fullBanners);
+        $userId = $this->Auth->user('id');
+        $username = $this->Auth->user('username');
 
-        //-------------------------------------------------------------------------
+        $this->loadModel('Banners');
+        $fullBanners = $this->Banners->full();
+        $smallBanners = $this->Banners->small();
 
-        $setting = [
-            'fields' => ['id', 'banner_description', 'path_banner', 'url_redirect'],
-            'conditions' => ['banner_type_id' => 1],
-            'limit' => 3
-        ];
-        $smallBanners = TableRegistry::get('Banners')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('smallBanners', $smallBanners);
+        $this->loadModel('Stores');
+        $stores = $this->Stores->myStores($userId);
 
-        //-------------------------------------------------------------------------
+        $bookings = $this->Bookings->getBookings($userId);
 
-        $this->set('userId', $this->Auth->user('id'));
-
-        //-------------------------------------------------------------------------
-
-        $this->set('username', $this->Auth->user('username'));
-
-        //-------------------------------------------------------------------------
-
-        $setting = [
-            'fields' => ['store_name', 'id'],
-            'conditions' => ['user_id' => $this->Auth->user('id')]
-        ];
-        $stores = TableRegistry::get('Stores')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('stores', $stores);
-
-        //-------------------------------------------------------------------------
-
-        $setting = [
-            'fields' => ['id', 'product_id', 'quantity'],
-            'conditions' => ['user_id' => $this->Auth->user('id')]
-        ];
-        $bookings = TableRegistry::get('Bookings')
-            ->find('all', $setting)->hydrate(false)->toArray();
-        $this->set('bookings', $bookings);
-
-        //-------------------------------------------------------------------------
-
-        $this->set('search', '');
+        $this->set(compact('userId', 'fullBanners', 'smallBanners', 'stores',
+            'username', 'bookings'));
     }
 }

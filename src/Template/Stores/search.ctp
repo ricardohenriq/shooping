@@ -57,7 +57,10 @@
 </div>
 <div class="row">
 	<?= $this->element('Body/categories') ?>
-	<?= $this->element('Body/stores') ?>
+	<?= $this->element('Body/products') ?>
+</div>
+<div class="row">
+	<?= $this->element('Footer/footer_pagination') ?>
 </div>
 <div class="row">
 	<?= $this->element('Body/small_banners') ?>

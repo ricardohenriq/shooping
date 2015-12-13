@@ -10,7 +10,6 @@ use App\Controller\AppController;
  */
 class OffersController extends AppController
 {
-
     /**
      * Index method
      *
@@ -18,11 +17,7 @@ class OffersController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Products']
-        ];
-        $this->set('offers', $this->paginate($this->Offers));
-        $this->set('_serialize', ['offers']);
+
     }
 
     /**
@@ -34,11 +29,7 @@ class OffersController extends AppController
      */
     public function view($id = null)
     {
-        $offer = $this->Offers->get($id, [
-            'contain' => ['Products', 'OfferBanners']
-        ]);
-        $this->set('offer', $offer);
-        $this->set('_serialize', ['offer']);
+
     }
 
     /**
@@ -48,19 +39,7 @@ class OffersController extends AppController
      */
     public function add()
     {
-        $offer = $this->Offers->newEntity();
-        if ($this->request->is('post')) {
-            $offer = $this->Offers->patchEntity($offer, $this->request->data);
-            if ($this->Offers->save($offer)) {
-                $this->Flash->success(__('The offer has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The offer could not be saved. Please, try again.'));
-            }
-        }
-        $products = $this->Offers->Products->find('list', ['limit' => 200]);
-        $this->set(compact('offer', 'products'));
-        $this->set('_serialize', ['offer']);
+
     }
 
     /**
@@ -72,21 +51,7 @@ class OffersController extends AppController
      */
     public function edit($id = null)
     {
-        $offer = $this->Offers->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $offer = $this->Offers->patchEntity($offer, $this->request->data);
-            if ($this->Offers->save($offer)) {
-                $this->Flash->success(__('The offer has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The offer could not be saved. Please, try again.'));
-            }
-        }
-        $products = $this->Offers->Products->find('list', ['limit' => 200]);
-        $this->set(compact('offer', 'products'));
-        $this->set('_serialize', ['offer']);
+
     }
 
     /**
@@ -98,13 +63,6 @@ class OffersController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $offer = $this->Offers->get($id);
-        if ($this->Offers->delete($offer)) {
-            $this->Flash->success(__('The offer has been deleted.'));
-        } else {
-            $this->Flash->error(__('The offer could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 }

@@ -3,7 +3,6 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\Event\Event;
-use Cake\ORM\TableRegistry;
 
 /**
  * Banners Controller
@@ -74,20 +73,7 @@ class BannersController extends AppController
      */
     public function add()
     {
-        $banner = $this->Banners->newEntity();
-        if ($this->request->is('post')) {
-            $banner = $this->Banners->patchEntity($banner, $this->request->data);
-            if ($this->Banners->save($banner)) {
-                $this->Flash->success(__('The banner has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The banner could not be saved. Please, try again.'));
-            }
-        }
-        $bannerTypes = $this->Banners->BannerTypes->find('list', ['limit' => 200]);
-        $users = $this->Banners->Users->find('list', ['limit' => 200]);
-        $this->set(compact('banner', 'bannerTypes', 'users'));
-        $this->set('_serialize', ['banner']);
+
     }
 
     /**
@@ -99,22 +85,7 @@ class BannersController extends AppController
      */
     public function edit($id = null)
     {
-        $banner = $this->Banners->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $banner = $this->Banners->patchEntity($banner, $this->request->data);
-            if ($this->Banners->save($banner)) {
-                $this->Flash->success(__('The banner has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The banner could not be saved. Please, try again.'));
-            }
-        }
-        $bannerTypes = $this->Banners->BannerTypes->find('list', ['limit' => 200]);
-        $users = $this->Banners->Users->find('list', ['limit' => 200]);
-        $this->set(compact('banner', 'bannerTypes', 'users'));
-        $this->set('_serialize', ['banner']);
+
     }
 
     /**
@@ -126,19 +97,12 @@ class BannersController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $banner = $this->Banners->get($id);
-        if ($this->Banners->delete($banner)) {
-            $this->Flash->success(__('The banner has been deleted.'));
-        } else {
-            $this->Flash->error(__('The banner could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['getBannerJson', 'myBanners']);
+        $this->Auth->allow(['getBannerJson', 'myBanners', 'add', 'delete']);
     }
 
     public function isAuthorized($user = null)

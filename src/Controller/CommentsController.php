@@ -18,11 +18,7 @@ class CommentsController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['Products', 'Users']
-        ];
-        $this->set('comments', $this->paginate($this->Comments));
-        $this->set('_serialize', ['comments']);
+
     }
 
     /**
@@ -34,11 +30,7 @@ class CommentsController extends AppController
      */
     public function view($id = null)
     {
-        $comment = $this->Comments->get($id, [
-            'contain' => ['Products', 'Users', 'Answers']
-        ]);
-        $this->set('comment', $comment);
-        $this->set('_serialize', ['comment']);
+
     }
 
     /**
@@ -48,20 +40,7 @@ class CommentsController extends AppController
      */
     public function add()
     {
-        $comment = $this->Comments->newEntity();
-        if ($this->request->is('post')) {
-            $comment = $this->Comments->patchEntity($comment, $this->request->data);
-            if ($this->Comments->save($comment)) {
-                $this->Flash->success(__('The comment has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The comment could not be saved. Please, try again.'));
-            }
-        }
-        $products = $this->Comments->Products->find('list', ['limit' => 200]);
-        $users = $this->Comments->Users->find('list', ['limit' => 200]);
-        $this->set(compact('comment', 'products', 'users'));
-        $this->set('_serialize', ['comment']);
+
     }
 
     /**
@@ -73,22 +52,7 @@ class CommentsController extends AppController
      */
     public function edit($id = null)
     {
-        $comment = $this->Comments->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $comment = $this->Comments->patchEntity($comment, $this->request->data);
-            if ($this->Comments->save($comment)) {
-                $this->Flash->success(__('The comment has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The comment could not be saved. Please, try again.'));
-            }
-        }
-        $products = $this->Comments->Products->find('list', ['limit' => 200]);
-        $users = $this->Comments->Users->find('list', ['limit' => 200]);
-        $this->set(compact('comment', 'products', 'users'));
-        $this->set('_serialize', ['comment']);
+
     }
 
     /**
@@ -100,13 +64,6 @@ class CommentsController extends AppController
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
-        $comment = $this->Comments->get($id);
-        if ($this->Comments->delete($comment)) {
-            $this->Flash->success(__('The comment has been deleted.'));
-        } else {
-            $this->Flash->error(__('The comment could not be deleted. Please, try again.'));
-        }
-        return $this->redirect(['action' => 'index']);
+
     }
 }

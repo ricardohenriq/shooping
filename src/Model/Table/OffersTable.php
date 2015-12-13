@@ -142,4 +142,15 @@ class OffersTable extends Table
             ->find('all', $setting)->count();*/
         return 'AINDA NÃO IMPLEMENTADO';
     }
+
+    public function getOffers($storeId)
+    {
+        $setting = [
+            'fields' => ['name', 'date_start', 'date_end'],
+            'conditions' => ['store_id' => $storeId],
+            'order' => ['name' => 'ASC']
+        ];
+        return $this
+            ->find('all', $setting)->hydrate(false)->toArray();
+    }
 }
