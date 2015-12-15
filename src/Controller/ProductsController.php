@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\AppClasses\Utils\ModelUtils;
+use App\AppClasses\Utils\UploadUtils;
 use Cake\Event\Event;
 use Cake\ORM\TableRegistry;
 
@@ -103,19 +104,20 @@ class ProductsController extends AppController
         }
     }
 
-
     public $helpers = [
         'Paginator' => ['templates' => 'paginator-templates']
     ];
+
     public function search()
     {
         if($this->request->is('get'))
         {
             $search = $this->request->query['search'];
+            @$limit = $this->request->query['limit'] ?: 3;
 
             $this->paginate = [
                 'conditions' => ['product_name LIKE' => '%' . $search . '%'],
-                'maxLimit' => 10,
+                'limit' => $limit,
                 'contain' => ['Medias' => function($q){
                     return $q->select(['path', 'product_id'])
                         ->where(['media_type_id' => 3]);
@@ -150,11 +152,7 @@ class ProductsController extends AppController
 
         if ($this->request->is('post'))
         {
-            //Save Product entity
             $productSaved = $this->Products->setProductByForm($this->request->data);
-            /*$product = $this->Products->newEntity();
-            $product = $this->Products->patchEntity($product, $this->request->data);
-            $productSaved = $this->Products->save($product);*/
 
             /*ob_start();
             var_dump($productSaved);
@@ -164,45 +162,29 @@ class ProductsController extends AppController
 
             if($productSaved)
             {
-                //Save ProductFeatures
-                $productFeaturesArray = ModelUtils::createProductsFeaturesArray(
-                    $this->request->data);
-                $productFeaturesEntities = ModelUtils::createProductsFeaturesEntitiesArray(
-                    $productFeaturesArray, $productSaved['id']);
                 $this->loadModel('ProductFeatures');
                 $productFeaturesSaved = $this->ProductFeatures->setProductFeaturesEntities(
-                    $productFeaturesEntities);
+                    ModelUtils::prepareProductsFeatures($this->request->data, $productSaved['id'])
+                );
 
-                //Upload pictures to folder in server
-                $ROOT_PATH = dirname(ROOT) . DS;
-                $PRODUCTS_IMAGES_FOLDER = $ROOT_PATH . 'ShoppingResources' . DS . 'img' . DS . $productSaved['id'];
-                $imagesUploaded = $this->UploadFile->uploadFiles($PRODUCTS_IMAGES_FOLDER, $this->request->data['file']);
+                $imagesUploaded = $this->UploadFile->uploadFiles(
+                    PRODUCTS_IMAGES_FOLDER . $productSaved['id'], $this->request->data['file']
+                );
 
-                //Create and Upload thumbnail to folder in server
-                $outputThumb = str_replace($PRODUCTS_IMAGES_FOLDER, $ROOT_PATH . 'ShoppingResources' . DS . 'thumb', $imagesUploaded[0]['url']);
-                $imageResized = $this->UploadFile->resizeImage([
-                    'input' => $imagesUploaded[0]['url'], 'output' => $outputThumb, 'width' => 250, 'height' => 250, 'mode' => 'stretch'
+                $outputThumbUrl = UploadUtils::getOutputThumbUrl($imagesUploaded[0]['url'], $productSaved['id']);
+
+                $thumbUploaded = $this->UploadFile->resizeImage([
+                        'input' => $imagesUploaded[0]['url'], 'output' => $outputThumbUrl,
+                        'width' => 250, 'height' => 250, 'mode' => 'stretch'
                 ]);
 
-                //Prepare image data array to be transformed into entity
-                $thumbUploaded['url'] = str_replace($ROOT_PATH, 'http://localhost/PROJETOS/', $outputThumb);
-                $thumbUploaded['url'] = str_replace('\\', '/', $thumbUploaded['url']);
-                $thumbUploaded['media_type_id'] = 3;
-
-                //Save Media entity (thumbnail)
-                $mediaEntity = $this->Insert->createMediaEntity($thumbUploaded, $productSaved['id']);
-                TableRegistry::get('Medias')->save($mediaEntity);
-
-                //Prepare image data array to be transformed into entities
-                $imagesUploaded = $this->Insert->addKeyValueToArray($imagesUploaded, 'media_type_id', 1);
-                $imagesUploaded[0]['media_type_id'] = 2;
-                $imagesUploaded = $this->Insert->replaceArrayValue($imagesUploaded, 'url', 'http://localhost/PROJETOS/', $ROOT_PATH);
-                $imagesUploaded = $this->Insert->replaceArrayValue($imagesUploaded, 'url', '/', '\\');
-
-                //Save Medias entities
-                $mediasEntities = ModelUtils::createMediasEntitiesArray($imagesUploaded, $productSaved['id']);
                 $this->loadModel('Medias');
-                $mediasSaved = $this->Medias->setMediasEntities($mediasEntities);
+                $thumbSaved = $this->Medias->setMediaEntity(
+                    ModelUtils::prepareMediaThumb($productSaved['id'], $outputThumbUrl)
+                );
+                $mediasSaved = $this->Medias->setMediasEntities(
+                    ModelUtils::prepareMedias($imagesUploaded, $productSaved['id'])
+                );
             }
         }
     }

@@ -2,9 +2,7 @@
 namespace App\Controller;
 
 use App\AppClasses\FormatFormValues\FormatContactForm;
-use Cake\Cache\Cache;
 use Cake\Event\Event;
-use Cake\ORM\TableRegistry;
 use Cake\Network\Email\Email;
 
 /**

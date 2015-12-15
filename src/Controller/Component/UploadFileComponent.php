@@ -7,19 +7,6 @@ use ImageTool;
 
 class UploadFileComponent extends Component
 {
-    public function saveFileLFS($stringSeparator, $storeName, $productName)
-    {
-        $key = $storeName . $stringSeparator . $productName . $stringSeparator .
-            $this->request->data['Media']['file']['name'];
-        if(StorageManager::adapter('Local')->write($key,
-            file_get_contents($this->request->data['Media']['file']['tmp_name']))){
-            return true;
-        }else
-       {
-            return false;
-        }
-    }
-
     function uploadFiles($folder, $files){
         // create the folder if it does not exist
         if(!is_dir($folder)){
@@ -48,19 +35,11 @@ class UploadFileComponent extends Component
                 // switch based on error code
                 switch($file['error']){
                     case 0:
-                        // check filename already exists
-                        if(!file_exists($folder . DS . $filename)){
-                            // create full filename
-                            $url = $folder . DS . $filename;
-                            // upload the file
-                            $success = move_uploaded_file($file['tmp_name'], $url);
-                        } else{
-                            // create unique filename and upload file
-                            ini_set('date.timezone', 'Europe/London');
-                            $now = date('Y-m-d-His');
-                            $url = $folder . DS . $now . $filename;
-                            $success = move_uploaded_file($file['tmp_name'], $url);
-                        }
+                        // create unique filename and upload file
+                        ini_set('date.timezone', 'Europe/London');
+                        $now = date('Y-m-d-His');
+                        $url = $folder . DS . $now . $filename;
+                        $success = move_uploaded_file($file['tmp_name'], $url);
                         // if upload was successful
                         if($success){
                             // save the url of the file

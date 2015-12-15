@@ -1,7 +1,7 @@
 <div id="filter-pagination" class="pull-right">
     <div class="inline-pagination-menu">
         Ordenar por:
-        <select name="products-order" class="form-control products-order inline-pagination-menu" onchange="redirect(this)">
+        <select name="products-order" class="form-control products-order inline-pagination-menu" id="products-order">
 			<option value="
 				<?php 
 					$this->Paginator->templates([

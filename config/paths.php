@@ -83,3 +83,10 @@ define('CAKE_CORE_INCLUDE_PATH', ROOT . DS . 'vendor' . DS . 'cakephp' . DS . 'c
  */
 define('CORE_PATH', CAKE_CORE_INCLUDE_PATH . DS);
 define('CAKE', CORE_PATH . 'src' . DS);
+
+/**
+ * Paths used to store application Images
+ */
+define('ROOT_PARENT', dirname(ROOT));
+define('PRODUCTS_IMAGES_FOLDER', ROOT_PARENT . DS . 'ShoppingResources' . DS . 'img' . DS );
+define('PRODUCTS_THUMB_FOLDER', ROOT_PARENT . DS . 'ShoppingResources' . DS . 'thumb' . DS);

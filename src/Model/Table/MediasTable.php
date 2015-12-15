@@ -101,4 +101,14 @@ class MediasTable extends Table
             throw $e;
         }
     }
+
+    public function setMediaEntity($media)
+    {
+        try {
+                $this->save($media);
+            return true;
+        }catch (Exception $e){
+            throw $e;
+        }
+    }
 }

@@ -323,7 +323,11 @@ $('#back-top').click(function(){
  action = $(this).attr('action') + '/' + document.getElementById('search').value;
  window.location.href = action;
  });*/
- 
+
+$('#products-order').change(function(){
+	redirect(this);
+});
+
 /**
  * Usado na tela de localhost/product/search.
  * 
@@ -336,6 +340,14 @@ $('#back-top').click(function(){
  */
 function redirect(option){
     location = option.value;
+}
+
+$('#products-view').change(function(){
+	changeLimitPagination(this);
+});
+
+function changeLimitPagination(option){
+	location.search = $.query.set('limit', option.value).toString();
 }
 
 /**

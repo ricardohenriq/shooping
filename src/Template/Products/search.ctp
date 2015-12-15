@@ -33,6 +33,7 @@
         echo $this->Html->script('library/Jquery-Validate/jquery.validate.min.js',['defer' => true]);
         echo $this->Html->script('library/datepicker/js/bootstrap-datepicker.js',['defer' => true]);
         echo $this->Html->script('library/bxslider-4-4.1.2/jquery.bxslider.min.js',['defer' => true]);
+        echo $this->Html->script('library/jquery-plugin-query-object/jquery.query-object.js',['defer' => true]);
         echo $this->Html->script('actions/main.js',['defer' => true]);
 	$this->end();
 	
