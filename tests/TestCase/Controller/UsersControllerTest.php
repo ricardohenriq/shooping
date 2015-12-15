@@ -1,12 +1,10 @@
 <?php
 namespace App\Test\TestCase\Controller;
 
-use App\AppClasses\DataClasses\ResponseMessage;
-use App\AppClasses\EnumClasses\CodeEnum;
-use App\AppClasses\EnumClasses\NameEnum;
-use App\AppClasses\EnumClasses\TypeMessageEnum;
-use App\Controller\UsersController;
-use Cake\Auth\DefaultPasswordHasher;
+use App\Lib\DataClasses\ResponseMessage;
+use App\Lib\EnumClasses\CodeEnum;
+use App\Lib\EnumClasses\NameEnum;
+use App\Lib\EnumClasses\TypeMessageEnum;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\IntegrationTestCase;
 use Cake\Routing\Router;

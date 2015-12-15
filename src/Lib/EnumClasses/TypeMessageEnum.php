@@ -6,7 +6,7 @@
  * Time: 10:33
  */
 
-namespace App\AppClasses\EnumClasses;
+namespace App\Lib\EnumClasses;
 
 abstract class TypeMessageEnum extends BasicEnum{
     const SUCCESS = 'Sucesso';

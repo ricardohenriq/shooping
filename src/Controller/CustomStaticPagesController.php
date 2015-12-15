@@ -1,7 +1,7 @@
 <?php
 namespace App\Controller;
 
-use App\AppClasses\FormatFormValues\FormatContactForm;
+use App\Lib\FormatFormValues\FormatContactForm;
 use Cake\Event\Event;
 use Cake\Network\Email\Email;
 

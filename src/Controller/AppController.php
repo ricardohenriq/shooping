@@ -38,9 +38,6 @@ class AppController extends Controller
     {
         parent::initialize();
         $this->helpers[] = 'Shrink.Shrink';
-		$this->loadComponent('Insert');
-        $this->loadComponent('UploadFile');
-        $this->loadComponent('Excel');
         $this->loadComponent('Auth', [
             'authorize' => 'Controller',
             'authenticate' => [
@@ -52,12 +49,12 @@ class AppController extends Controller
                 ]
             ],
             'loginAction' => [
-                'controller' => 'Pages',
-                'action' => 'display'
+                'controller' => 'CustomStaticPages',
+                'action' => 'index'
             ],
             'logoutAction' => [
-                'controller' => 'Pages',
-                'action' => 'display'
+                'controller' => 'CustomStaticPages',
+                'action' => 'index'
             ]
         ]);
         //$this->Auth->allow();

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\AppClasses\Utils;
+namespace App\Lib\Utils;
 
 class UploadUtils {
 

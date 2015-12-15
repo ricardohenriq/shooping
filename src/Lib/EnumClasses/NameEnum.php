@@ -6,7 +6,7 @@
  * Time: 15:36
  */
 
-namespace App\AppClasses\EnumClasses;
+namespace App\Lib\EnumClasses;
 
 abstract class NameEnum extends BasicEnum{
     const LOGIN_GRANTED = 'Login efetuado com sucesso.';

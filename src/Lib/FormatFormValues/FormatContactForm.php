@@ -1,10 +1,11 @@
 <?php
 
-namespace App\AppClasses\FormatFormValues;
+namespace App\Lib\FormatFormValues;
 
 class FormatContactForm {
 
-    public static function getSubject($subject, $settings){
+    public static function getSubject($subject, $settings)
+    {
         if(@$settings['uppercase'] == true){
             $subject = strtoupper($subject);
         }
@@ -12,8 +13,8 @@ class FormatContactForm {
         return $subjectFormatted;
     }
 
-    public static function getMessage($message, $settings){
-
+    public static function getMessage($message, $settings)
+    {
         $messageBody = null;
 
         foreach($message as $key => $value){

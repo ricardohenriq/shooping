@@ -1,6 +1,6 @@
 <?php
 
-namespace App\AppClasses\Utils;
+namespace App\Lib\Utils;
 
 use Cake\ORM\TableRegistry;
 
@@ -65,7 +65,7 @@ class ModelUtils {
         return self::createMediasEntitiesArray($imagesUploaded, $productId);
     }
 
-    public function addKeyValueToArray($array, $key, $value)
+    public static function addKeyValueToArray($array, $key, $value)
     {
         foreach ($array as &$element) {
             $element[$key] = $value;
@@ -74,7 +74,7 @@ class ModelUtils {
         return $array;
     }
 
-    public function replaceArrayValue($array, $key, $newString, $oldString)
+    public static function replaceArrayValue($array, $key, $newString, $oldString)
     {
         foreach ($array as &$element) {
             $element[$key] =  str_replace($oldString, $newString, $element[$key]);

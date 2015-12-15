@@ -16,7 +16,6 @@ namespace App\Controller;
 
 use Cake\Core\Configure;
 use Cake\Network\Exception\NotFoundException;
-use Cake\ORM\TableRegistry;
 use Cake\View\Exception\MissingTemplateException;
 
 /**

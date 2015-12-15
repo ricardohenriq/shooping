@@ -1,7 +1,6 @@
 <?php
 namespace App\Controller\Component;
 
-use Burzum\FileStorage\Lib\StorageManager;
 use Cake\Controller\Component;
 use ImageTool;
 

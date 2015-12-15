@@ -6,7 +6,7 @@
  * Time: 15:22
  */
 
-namespace App\AppClasses\EnumClasses;
+namespace App\Lib\EnumClasses;
 
 abstract class BasicEnum {
     private static $constCacheArray = NULL;

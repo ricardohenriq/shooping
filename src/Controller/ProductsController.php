@@ -1,10 +1,9 @@
 <?php
 namespace App\Controller;
 
-use App\AppClasses\Utils\ModelUtils;
-use App\AppClasses\Utils\UploadUtils;
+use App\Lib\Utils\ModelUtils;
+use App\Lib\Utils\UploadUtils;
 use Cake\Event\Event;
-use Cake\ORM\TableRegistry;
 
 /**
  * Products Controller
@@ -18,6 +17,8 @@ class ProductsController extends AppController
         parent::initialize();
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Paginator');
+        $this->loadComponent('UploadFile');
+        $this->loadComponent('Excel');
     }
 	
     /**
@@ -60,7 +61,7 @@ class ProductsController extends AppController
      * @return void Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($productID)
+    public function edit($productId)
     {
         $pageTitle = 'Product';
         $username = $this->Auth->user('username');
@@ -154,12 +155,6 @@ class ProductsController extends AppController
         {
             $productSaved = $this->Products->setProductByForm($this->request->data);
 
-            /*ob_start();
-            var_dump($productSaved);
-            $result = ob_get_clean();
-            $file = 'C:\xampp\htdocs\PROJETOS\Shopping\PRINT_VAR_DUMP.txt';
-            file_put_contents($file, $result);*/
-
             if($productSaved)
             {
                 $this->loadModel('ProductFeatures');
@@ -174,8 +169,8 @@ class ProductsController extends AppController
                 $outputThumbUrl = UploadUtils::getOutputThumbUrl($imagesUploaded[0]['url'], $productSaved['id']);
 
                 $thumbUploaded = $this->UploadFile->resizeImage([
-                        'input' => $imagesUploaded[0]['url'], 'output' => $outputThumbUrl,
-                        'width' => 250, 'height' => 250, 'mode' => 'stretch'
+                    'input' => $imagesUploaded[0]['url'], 'output' => $outputThumbUrl,
+                    'width' => 250, 'height' => 250, 'mode' => 'stretch'
                 ]);
 
                 $this->loadModel('Medias');

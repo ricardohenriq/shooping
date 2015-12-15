@@ -2,7 +2,6 @@
 namespace App\Controller;
 
 use Cake\Event\Event;
-use Cake\ORM\TableRegistry;
 
 /**
  * Stores Controller

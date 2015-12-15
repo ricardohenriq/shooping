@@ -1,15 +1,12 @@
 <?php
 namespace App\Controller;
 
-use App\AppClasses\EnumClasses\CodeEnum;
-use App\AppClasses\EnumClasses\MessageEnum;
-use App\AppClasses\EnumClasses\NameEnum;
-use App\AppClasses\EnumClasses\TypeMessageEnum;
-use App\Controller\AppController;
-use Cake\Cache\Cache;
+use App\Lib\EnumClasses\CodeEnum;
+use App\Lib\EnumClasses\MessageEnum;
+use App\Lib\EnumClasses\NameEnum;
+use App\Lib\EnumClasses\TypeMessageEnum;
 use Cake\Event\Event;
-use App\AppClasses\DataClasses\ResponseMessage;
-use Cake\ORM\TableRegistry;
+use App\Lib\DataClasses\ResponseMessage;
 
 /**
  * Users Controller

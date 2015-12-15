@@ -1,6 +1,6 @@
 <?php
 
-namespace App\AppClasses\Utils;
+namespace App\Lib\Utils;
 
 class StringUtils {
 
@@ -12,7 +12,7 @@ class StringUtils {
      * que deverão ser removidas.
      * @return $string que armazena o conteudo com as tags HTML removidas.
      */
-    public function ripTags($string){
+    public static function ripTags($string){
 
         /**
          *Remove todas as tags HTML

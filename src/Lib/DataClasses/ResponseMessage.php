@@ -6,7 +6,7 @@
  * Time: 15:00
  */
 
-namespace App\AppClasses\DataClasses;
+namespace App\Lib\DataClasses;
 
 class ResponseMessage {
     public $code;
