@@ -38,12 +38,9 @@ class AppController extends Controller
     {
         parent::initialize();
         $this->helpers[] = 'Shrink.Shrink';
-        $this->loadComponent('Search');
 		$this->loadComponent('Insert');
         $this->loadComponent('UploadFile');
-        $this->loadComponent('Url');
         $this->loadComponent('Excel');
-        $this->loadComponent('CustomPagination');
         $this->loadComponent('Auth', [
             'authorize' => 'Controller',
             'authenticate' => [

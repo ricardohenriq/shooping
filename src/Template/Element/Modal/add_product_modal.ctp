@@ -31,6 +31,26 @@
                             <?= $this->Form->input('quantity', ['label' => false, 'class' => 'form-control', 'id' => 'quantity']) ?>
                         </div>
                     </div>
+					<div class="form-group">
+                        <label for="sub_category_id" class="control-label col-md-6">Subcaterias</label>
+                        <div class="col-md-6">
+                            <select name="sub_category_id" class="form-control">
+								<option value="1">Subcategoria 1</option>
+								<option value="2">Subcategoria 2</option>
+								<option value="3">Subcategoria 3</option>
+                            </select>
+                        </div>
+                    </div>
+					<div class="form-group">
+                        <label for="store_id" class="control-label col-md-6">Loja</label>
+                        <div class="col-md-6">
+                            <select name="store_id" class="form-control">
+								<option value="1">Loja 1</option>
+								<option value="2">Loja 2</option>
+								<option value="3">Loja 3</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="form-group">
                         <label for="description" class="control-label col-md-6">Descrição do Produto</label>
                         <div class="col-md-6">

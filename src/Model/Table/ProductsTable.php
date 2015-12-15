@@ -128,7 +128,7 @@ class ProductsTable extends Table
         return $rules;
     }
 
-    public function afterSave(Event $event, Entity $entity, ArrayObject $options){
+    /*public function afterSave(Event $event, Entity $entity, ArrayObject $options){
         //Save ProductFeatures entities
         $featuresArray = $this->getFeatuesArray($this->request->data);
         $featuresEntities = $this->createMassFeaturesEntities($featuresArray, $entity->id);
@@ -163,7 +163,7 @@ class ProductsTable extends Table
         //Save Medias entities
         $mediasEntities = $this->createMassMediasEntities($imagesUploaded, $entity->id);
         $this->insertMassEntities($mediasEntities, 'Medias');
-    }
+    }*/
 
     public function uploadFiles($folder, $files){
         // create the folder if it does not exist
@@ -393,5 +393,12 @@ class ProductsTable extends Table
         ];
         return $this
             ->find('all', $setting)->hydrate(false)->toArray();
+    }
+
+    public function setProductByForm($form)
+    {
+        $product = $this->newEntity();
+        $product = $this->patchEntity($product, $form);
+        return $this->save($product);
     }
 }

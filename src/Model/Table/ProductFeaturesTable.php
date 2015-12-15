@@ -2,6 +2,7 @@
 namespace App\Model\Table;
 
 use App\Model\Entity\ProductFeature;
+use Cake\Core\Exception\Exception;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
@@ -73,5 +74,17 @@ class ProductFeaturesTable extends Table
     {
         $rules->add($rules->existsIn(['product_id'], 'Products'));
         return $rules;
+    }
+
+    public function setProductFeaturesEntities($productFeatures)
+    {
+        try {
+            foreach ($productFeatures as $productFeature) {
+                $this->save($productFeature);
+            }
+            return true;
+        }catch (Exception $e){
+            throw $e;
+        }
     }
 }

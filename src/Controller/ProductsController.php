@@ -1,6 +1,7 @@
 <?php
 namespace App\Controller;
 
+use App\AppClasses\Utils\ModelUtils;
 use Cake\Event\Event;
 use Cake\ORM\TableRegistry;
 
@@ -102,6 +103,10 @@ class ProductsController extends AppController
         }
     }
 
+
+    public $helpers = [
+        'Paginator' => ['templates' => 'paginator-templates']
+    ];
     public function search()
     {
         if($this->request->is('get'))
@@ -116,6 +121,7 @@ class ProductsController extends AppController
                         ->where(['media_type_id' => 3]);
                 }]
             ];
+
             $products = $this->paginate($this->Products);
 
             $this->loadModel('Banners');
@@ -139,22 +145,33 @@ class ProductsController extends AppController
     }
 
 	public function add()
-	{		
-        if ($this->request->is('post')) {
+	{
+        $this->autoRender = false;
 
+        if ($this->request->is('post'))
+        {
             //Save Product entity
-            $product = $this->Products->newEntity();
+            $productSaved = $this->Products->setProductByForm($this->request->data);
+            /*$product = $this->Products->newEntity();
             $product = $this->Products->patchEntity($product, $this->request->data);
-            $product->sub_category_id = 18;
-            $product->store_id = 1;
-            $productSaved = $this->Products->save($product);
+            $productSaved = $this->Products->save($product);*/
 
-            /*if($productSaved)
+            /*ob_start();
+            var_dump($productSaved);
+            $result = ob_get_clean();
+            $file = 'C:\xampp\htdocs\PROJETOS\Shopping\PRINT_VAR_DUMP.txt';
+            file_put_contents($file, $result);*/
+
+            if($productSaved)
             {
-                //Save ProductFeatures entities
-                $featuresArray = $this->Insert->getFeatuesArray($this->request->data);
-                $featuresEntities = $this->Insert->createMassFeaturesEntities($featuresArray, $productSaved['id']);
-                $this->Insert->insertMassEntities($featuresEntities, 'ProductFeatures');
+                //Save ProductFeatures
+                $productFeaturesArray = ModelUtils::createProductsFeaturesArray(
+                    $this->request->data);
+                $productFeaturesEntities = ModelUtils::createProductsFeaturesEntitiesArray(
+                    $productFeaturesArray, $productSaved['id']);
+                $this->loadModel('ProductFeatures');
+                $productFeaturesSaved = $this->ProductFeatures->setProductFeaturesEntities(
+                    $productFeaturesEntities);
 
                 //Upload pictures to folder in server
                 $ROOT_PATH = dirname(ROOT) . DS;
@@ -183,15 +200,10 @@ class ProductsController extends AppController
                 $imagesUploaded = $this->Insert->replaceArrayValue($imagesUploaded, 'url', '/', '\\');
 
                 //Save Medias entities
-                $mediasEntities = $this->Insert->createMassMediasEntities($imagesUploaded, $productSaved['id']);
-                $this->Insert->insertMassEntities($mediasEntities, 'Medias');
-
-                ob_start();
-                var_dump($thumbUploaded['url']);
-                $result = ob_get_clean();
-                $file = 'C:\xampp\htdocs\PROJETOS\Shopping\PRINT_VAR_DUMP.txt';
-                file_put_contents($file, $result);
-            }*/
+                $mediasEntities = ModelUtils::createMediasEntitiesArray($imagesUploaded, $productSaved['id']);
+                $this->loadModel('Medias');
+                $mediasSaved = $this->Medias->setMediasEntities($mediasEntities);
+            }
         }
     }
 
@@ -226,7 +238,7 @@ class ProductsController extends AppController
 
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['index', 'upload', 'productTrends', 'search',
+        $this->Auth->allow(['index', 'add', 'productTrends', 'search',
             'favoriteProducts', 'view', 'productsByStore', 'edit']);
     }
 

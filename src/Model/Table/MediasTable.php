@@ -2,6 +2,7 @@
 namespace App\Model\Table;
 
 use App\Model\Entity\Media;
+use Cake\Core\Exception\Exception;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
@@ -87,5 +88,17 @@ class MediasTable extends Table
         ];
         return $this
             ->find('all', $setting)->hydrate(false)->first();
+    }
+
+    public function setMediasEntities($medias)
+    {
+        try {
+            foreach ($medias as $media) {
+                $this->save($media);
+            }
+            return true;
+        }catch (Exception $e){
+            throw $e;
+        }
     }
 }

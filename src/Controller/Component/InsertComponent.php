@@ -42,7 +42,7 @@ class InsertComponent extends Component
         return $featuresEntities;
     }
 
-    public function getFeatuesArray($formValues)
+    public function createFeatuesArray($formValues)
     {
         $featuresArray = [];
 
