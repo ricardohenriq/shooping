@@ -6,7 +6,7 @@ use ImageTool;
 
 class UploadFileComponent extends Component
 {
-    function uploadFiles($folder, $files){
+    public function uploadFiles($folder, $files){
         // create the folder if it does not exist
         if(!is_dir($folder)){
             mkdir($folder);
@@ -67,7 +67,7 @@ class UploadFileComponent extends Component
         return $result;
     }
 
-    function resizeImage($settings)
+    public function resizeImage($settings)
     {
         $status = ImageTool::resize([
             'input' => $settings['input'],

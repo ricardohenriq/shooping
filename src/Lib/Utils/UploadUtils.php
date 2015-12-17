@@ -2,8 +2,8 @@
 
 namespace App\Lib\Utils;
 
-class UploadUtils {
-
+class UploadUtils 
+{
     public static function getOutputThumbUrl($mainImage, $productId)
     {
         return str_replace(PRODUCTS_IMAGES_FOLDER . $productId,

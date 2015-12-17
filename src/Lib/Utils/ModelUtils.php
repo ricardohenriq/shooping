@@ -4,13 +4,14 @@ namespace App\Lib\Utils;
 
 use Cake\ORM\TableRegistry;
 
-class ModelUtils {
-
+class ModelUtils 
+{
     public static function prepareProductsFeatures($formValues, $productId)
     {
         $productFeaturesArray = self::createProductsFeaturesArray($formValues);
         $productFeaturesEntities = self::createProductsFeaturesEntitiesArray(
-            $productFeaturesArray, $productId);
+            $productFeaturesArray, $productId
+		);
         return $productFeaturesEntities;
     }
 
