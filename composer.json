@@ -11,10 +11,7 @@
         "cakephp/migrations": "~1.0",
         "cakephp/plugin-installer": "*",
         "trentrichardson/cakephp-shrink": "3.0",
-        "burzum/cakephp-file-storage": "3.0.x-dev",
-        "burzum/cakephp-imagine-plugin": "3.0.x-dev",
-        "phpunit/phpunit": "4.8.6",
-        "sunra/php-simple-html-dom-parser": "v1.5.0"
+        "phpunit/phpunit": "4.8.6"
     },
     "require-dev": {
         "psy/psysh": "@stable",
@@ -30,7 +27,8 @@
             "App\\": "src"
         },
         "classmap": [
-            "./vendor/CakePHP-ImageTool-Component"
+            "./vendor/CakePHP-ImageTool-Component",
+			"./vendor/PHPExcel_1_8_0/Classes"
         ]
     },
     "autoload-dev": {

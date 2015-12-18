@@ -1416,66 +1416,6 @@
         ]
     },
     {
-        "name": "burzum/cakephp-file-storage",
-        "version": "3.0.x-dev",
-        "version_normalized": "3.0.9999999.9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/burzum/cakephp-file-storage.git",
-            "reference": "7ccdfc26446f37a7fed461756c1ec1faa97f1891"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/burzum/cakephp-file-storage/zipball/0427346fc10ac8f19525eaaf39f6bddbc1cd575f",
-            "reference": "7ccdfc26446f37a7fed461756c1ec1faa97f1891",
-            "shasum": ""
-        },
-        "require": {
-            "cakephp/cakephp": "~3.0",
-            "cakephp/migrations": "~1.0",
-            "cakephp/plugin-installer": "*",
-            "knplabs/gaufrette": "*",
-            "php": ">=5.4.19"
-        },
-        "require-dev": {
-            "burzum/cakephp-imagine-plugin": "3.0.*-dev",
-            "phpunit/phpunit": "*"
-        },
-        "suggest": {
-            "burzum/cakephp-imagine-plugin": "Required if you want to use the image processing feature of FileStorage"
-        },
-        "time": "2015-07-17 11:24:29",
-        "type": "cakephp-plugin",
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "Burzum\\FileStorage\\": "src",
-                "Burzum\\FileStorage\\Test\\Fixture\\": "tests\\Fixture"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Florian Krämer",
-                "homepage": "http://florian-kraemer.net"
-            }
-        ],
-        "description": "This plugin is giving you the possibility to store files in virtually and kind of storage backend. This plugin is wrapping the Gaufrette library (https://github.com/KnpLabs/Gaufrette) library in a CakePHP fashion and provides a simple way to use the storage adapters through the StorageManager class.",
-        "homepage": "http://github.com/burzum/cakephp-file-storage-plugin",
-        "keywords": [
-            "abstraction",
-            "cakephp",
-            "file",
-            "filesystem",
-            "media",
-            "storage",
-            "upload"
-        ]
-    },
-    {
         "name": "imagine/imagine",
         "version": "0.6.2",
         "version_normalized": "0.6.2.0",
@@ -1532,54 +1472,6 @@
             "graphics",
             "image manipulation",
             "image processing"
-        ]
-    },
-    {
-        "name": "burzum/cakephp-imagine-plugin",
-        "version": "3.0.x-dev",
-        "version_normalized": "3.0.9999999.9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/burzum/cakephp-imagine-plugin.git",
-            "reference": "42f257e862c3931ccfec4e81014ae71a48a94f03"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/burzum/cakephp-imagine-plugin/zipball/050e5b11455bef7b9d86f059923ae4f2218d66a7",
-            "reference": "42f257e862c3931ccfec4e81014ae71a48a94f03",
-            "shasum": ""
-        },
-        "require": {
-            "cakephp/cakephp": "~3.0",
-            "cakephp/plugin-installer": "*",
-            "imagine/imagine": "*"
-        },
-        "time": "2015-08-05 08:53:49",
-        "type": "cakephp-plugin",
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "Burzum\\Imagine\\": "src",
-                "Burzum\\Imagine\\Test\\Fixture\\": "tests\\Fixture"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Florian Krämer",
-                "homepage": "http://florian-kraemer.net"
-            }
-        ],
-        "description": "Imagine Plugin for CakePHP",
-        "homepage": "https://github.com/burzum/cakephp-imagine-plugin",
-        "keywords": [
-            "cakephp",
-            "image",
-            "image-processing",
-            "media"
         ]
     },
     {
@@ -2756,51 +2648,6 @@
             "phpunit",
             "testing",
             "xunit"
-        ]
-    },
-    {
-        "name": "sunra/php-simple-html-dom-parser",
-        "version": "v1.5.0",
-        "version_normalized": "1.5.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/sunra/php-simple-html-dom-parser.git",
-            "reference": "a0b80ace086c7e09085669205e1b3c2c9c7a453c"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/sunra/php-simple-html-dom-parser/zipball/a0b80ace086c7e09085669205e1b3c2c9c7a453c",
-            "reference": "a0b80ace086c7e09085669205e1b3c2c9c7a453c",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.2"
-        },
-        "time": "2013-05-04 14:32:03",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Sunra",
-                "email": "sunra@yandex.ru",
-                "homepage": "http://github.com/sunra"
-            }
-        ],
-        "description": "Composer adaptation of: A HTML DOM parser written in PHP5+ let you manipulate HTML in a very easy way! Require PHP 5+. Supports invalid HTML. Find tags on an HTML page with selectors just like jQuery. Extract contents from HTML in a single line.",
-        "homepage": "https://github.com/sunra/php-simple-html-dom-parser",
-        "keywords": [
-            "dom",
-            "html",
-            "parser"
         ]
     }
 ]

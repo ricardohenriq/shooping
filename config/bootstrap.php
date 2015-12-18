@@ -38,10 +38,8 @@ if (!extension_loaded('intl')) {
     trigger_error('You must enable the intl extension to use CakePHP.', E_USER_ERROR);
 }
 
-use Burzum\FileStorage\Lib\StorageManager;
 use Cake\Cache\Cache;
 use Cake\Console\ConsoleErrorHandler;
-use Cake\Core\App;
 use Cake\Core\Configure;
 use Cake\Core\Configure\Engine\PhpConfig;
 use Cake\Core\Plugin;
@@ -52,15 +50,7 @@ use Cake\Log\Log;
 use Cake\Network\Email\Email;
 use Cake\Network\Request;
 use Cake\Routing\DispatcherFactory;
-use Cake\Utility\Inflector;
 use Cake\Utility\Security;
-
-// burzum/cakephp-file-storage
-StorageManager::config('Local', [
-    'adapterOptions' => [dirname(ROOT) . DS . 'ShoppingResources' . DS],
-    'adapterClass' => '\Gaufrette\Adapter\Local',
-    'class' => '\Gaufrette\Filesystem']
-);
 
 /**
  * Read configuration file and inject configuration into various

@@ -145,10 +145,9 @@ class OffersTable extends Table
 
     public function getOffers($storeId)
     {
+        //AINDA NÃO IMPLEMENTADO
         $setting = [
-            'fields' => ['name', 'date_start', 'date_end'],
-            'conditions' => ['store_id' => $storeId],
-            'order' => ['name' => 'ASC']
+            'fields' => ['id', 'product_id', 'name', 'description', 'date_start', 'date_end']
         ];
         return $this
             ->find('all', $setting)->hydrate(false)->toArray();

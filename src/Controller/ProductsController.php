@@ -216,7 +216,8 @@ class ProductsController extends AppController
     public function beforeFilter(Event $event)
     {
         $this->Auth->allow(['index', 'add', 'productTrends', 'search',
-            'favoriteProducts', 'view', 'productsByStore', 'edit']);
+            'favoriteProducts', 'view', 'productsByStore', 'edit',
+            'exportProductsToExcel']);
     }
 
     public function isAuthorized($user = null)

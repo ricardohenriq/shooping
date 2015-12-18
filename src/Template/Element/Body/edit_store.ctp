@@ -8,7 +8,7 @@
             <div class="products-images">
                 <div class="product-slider">
                     <div class="view view-first">
-                        <img src="http://localhost/PROJETOS/ShoppingResources/stores/loja-1/loja-1-1.jpg" class="product-pic">
+                        <img src="http://localhost/PROJETOS/ShoppingResources/stores/1/1.jpg" class="product-pic">
                         <div class="mask">
                             <h2>Imagem Secundária</h2>
 
@@ -22,7 +22,7 @@
                         </div>
                     </div>
                     <div class="view view-first">
-                        <img src="http://localhost/PROJETOS/ShoppingResources/stores/loja-1/loja-1-2.jpg" class="product-pic main-product-picture">
+                        <img src="http://localhost/PROJETOS/ShoppingResources/stores/1/2.jpg" class="product-pic main-product-picture">
                         <div class="mask">
                             <h2>Imagem Primária</h2>
 
@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     <div class="view view-first">
-                        <img src="http://localhost/PROJETOS/ShoppingResources/stores/loja-1/loja-1-3.jpg" class="product-pic">
+                        <img src="http://localhost/PROJETOS/ShoppingResources/stores/1/3.jpg" class="product-pic">
                         <div class="mask">
                             <h2>Imagem secundária</h2>
 
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class="view view-first">
-                        <img src="http://localhost/PROJETOS/ShoppingResources/stores/loja-1/loja-1-4.jpg" class="product-pic">
+                        <img src="http://localhost/PROJETOS/ShoppingResources/stores/1/4.jpg" class="product-pic">
                         <div class="mask">
                             <h2>Imagem secundária</h2>
 
