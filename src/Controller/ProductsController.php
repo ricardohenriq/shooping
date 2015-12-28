@@ -1,8 +1,6 @@
 <?php
 namespace App\Controller;
 
-use App\Lib\Utils\ModelUtils;
-use App\Lib\Utils\UploadUtils;
 use Cake\Event\Event;
 
 /**
@@ -17,7 +15,6 @@ class ProductsController extends AppController
         parent::initialize();
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Paginator');
-        $this->loadComponent('UploadFile');
         $this->loadComponent('Excel');
     }
 	
@@ -151,37 +148,17 @@ class ProductsController extends AppController
 	{
         $this->autoRender = false;
 
-        if ($this->request->is('post'))
-        {
-            $productSaved = $this->Products->setProductByForm($this->request->data);
-
-            if($productSaved)
-            {
-                $this->loadModel('ProductFeatures');
-                $productFeaturesSaved = $this->ProductFeatures->setProductFeaturesEntities(
-                    ModelUtils::prepareProductsFeatures($this->request->data, $productSaved['id'])
-                );
-
-                $imagesUploaded = $this->UploadFile->uploadFiles(
-                    PRODUCTS_IMAGES_FOLDER . $productSaved['id'], $this->request->data['file']
-                );
-
-                $outputThumbUrl = UploadUtils::getOutputThumbUrl($imagesUploaded[0]['url'], $productSaved['id']);
-
-                $thumbUploaded = $this->UploadFile->resizeImage([
-                    'input' => $imagesUploaded[0]['url'], 'output' => $outputThumbUrl,
-                    'width' => 250, 'height' => 250, 'mode' => 'stretch'
-                ]);
-
-                $this->loadModel('Medias');
-                $thumbSaved = $this->Medias->setMediaEntity(
-                    ModelUtils::prepareMediaThumb($productSaved['id'], $outputThumbUrl)
-                );
-                $mediasSaved = $this->Medias->setMediasEntities(
-                    ModelUtils::prepareMedias($imagesUploaded, $productSaved['id'])
-                );
-            }
+		if (!$this->request->is('post')) {
+            return; // Return early, avoid code nesting
         }
+		
+		$productSaved = $this->Products->setProductByForm($this->request->data);
+		if ($productSaved) {
+            // response logic for success
+            return;
+        }   
+
+        // response logic for failure
     }
 
     public function exportProductsToExcel($storeId)

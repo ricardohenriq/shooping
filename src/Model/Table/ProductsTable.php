@@ -1,16 +1,12 @@
 <?php
 namespace App\Model\Table;
 
-use App\Model\Entity\Product;
-use ArrayObject;
-use Cake\Event\Event;
-use Cake\ORM\Entity;
-use Cake\ORM\Query;
+use App\Lib\Utils\ModelUtils;
+use App\Lib\Utils\UploadUtils;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\ORM\TableRegistry;
 use Cake\Validation\Validator;
-use ImageTool;
 
 /**
  * Products Model
@@ -203,6 +199,38 @@ class ProductsTable extends Table
     {
         $product = $this->newEntity();
         $product = $this->patchEntity($product, $form);
-        return $this->save($product);
+        $productSaved = $this->save($product);
+
+        $productFeatures = TableRegistry::get('ProductFeatures');
+		$productFeaturesSaved = $productFeatures->setProductFeaturesEntities(
+			ModelUtils::prepareProductsFeatures($form, $productSaved['id'])
+		);
+
+		$imagesUploaded = UploadUtils::uploadFiles(
+			PRODUCTS_IMAGES_FOLDER . $productSaved['id'], $form['file']
+		);
+
+		$outputThumbUrl = UploadUtils::getOutputThumbUrl($imagesUploaded[0]['url'], $productSaved['id']);
+
+		$thumbUploaded = UploadUtils::resizeImage([
+			'input' => $imagesUploaded[0]['url'], 'output' => $outputThumbUrl,
+			'width' => 250, 'height' => 250, 'mode' => 'stretch'
+		]);
+
+        $medias = TableRegistry::get('Medias');
+		$thumbSaved = $medias->setMediaEntity(
+			ModelUtils::prepareMediaThumb($productSaved['id'], $outputThumbUrl)
+		);
+		$mediasSaved = $medias->setMediasEntities(
+			ModelUtils::prepareMedias($imagesUploaded, $productSaved['id'])
+		);
+		
+		if($productSaved && $productFeaturesSaved && $imagesUploaded && $thumbUploaded && $thumbSaved && $mediasSaved)
+		{
+			return true;
+		}else
+		{
+			return false;
+		}
     }
 }
