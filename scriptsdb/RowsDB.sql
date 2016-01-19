@@ -5212,40 +5212,40 @@ VALUES ('http://localhost/PROJETOS/ShoppingResources/news/new.png', 7, NOW(), NO
 ## 12 registros na tabela "comments" --------------------------------------------------
 
 INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
-VALUES ('Comentario 1 Comentario 1 Comentario 1 Comentario 1', 1, 31, 1, NOW(), NOW());
+VALUES ('Comentario 1 Comentario 1 Comentario 1 Comentario 1', 1, 1, 1, NOW(), NOW());
 
 INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
-VALUES ('Comentario 2 Comentario 2 Comentario 2 Comentario 2', 2, 31, 1, NOW(), NOW());
+VALUES ('Comentario 2 Comentario 2 Comentario 2 Comentario 2', 2, 1, 1, NOW(), NOW());
 
 INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
-VALUES ('Comentario 3 Comentario 3 Comentario 3 Comentario 3', 3, 31, 1, NOW(), NOW());
+VALUES ('Comentario 3 Comentario 3 Comentario 3 Comentario 3', 3, 1, 1, NOW(), NOW());
 
 INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
-VALUES ('Comentario 4 Comentario 4 Comentario 4 Comentario 4', 4, 31, 1, NOW(), NOW());
+VALUES ('Comentario 4 Comentario 4 Comentario 4 Comentario 4', 4, 1, 1, NOW(), NOW());
 
 INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
-VALUES ('Comentario 5 Comentario 5 Comentario 5 Comentario 5', 5, 31, 1, NOW(), NOW());
+VALUES ('Comentario 5 Comentario 5 Comentario 5 Comentario 5', 5, 1, 1, NOW(), NOW());
 
 INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
-VALUES ('Comentario 6 Comentario 6 Comentario 6 Comentario 6', 6, 31, 1, NOW(), NOW());
+VALUES ('Comentario 6 Comentario 6 Comentario 6 Comentario 6', 6, 1, 1, NOW(), NOW());
 
 INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
-VALUES ('Comentario 7 Comentario 7 Comentario 7 Comentario 7', 7, 31, 0, NOW(), NOW());
+VALUES ('Comentario 7 Comentario 7 Comentario 7 Comentario 7', 7, 1, 0, NOW(), NOW());
 
 INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
-VALUES ('Comentario 8 Comentario 8 Comentario 8 Comentario 8', 8, 31, 0, NOW(), NOW());
+VALUES ('Comentario 8 Comentario 8 Comentario 8 Comentario 8', 8, 1, 0, NOW(), NOW());
 
 INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
-VALUES ('Comentario 9 Comentario 9 Comentario 9 Comentario 9', 9, 31, 0, NOW(), NOW());
+VALUES ('Comentario 9 Comentario 9 Comentario 9 Comentario 9', 9, 1, 0, NOW(), NOW());
 
 INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
-VALUES ('Comentario 10 Comentario 10 Comentario 10 Comentario 10', 10, 31, 0, NOW(), NOW());
+VALUES ('Comentario 10 Comentario 10 Comentario 10 Comentario 10', 10, 1, 0, NOW(), NOW());
 
 INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
-VALUES ('Comentario 11 Comentario 11 Comentario 11 Comentario 11', 11, 31, 0, NOW(), NOW());
+VALUES ('Comentario 11 Comentario 11 Comentario 11 Comentario 11', 11, 1, 0, NOW(), NOW());
 
 INSERT INTO comments(comment_text, product_id, user_id, answered, created, modified)
-VALUES ('Comentario 12 Comentario 12 Comentario 12 Comentario 12', 12, 31, 0, NOW(), NOW());
+VALUES ('Comentario 12 Comentario 12 Comentario 12 Comentario 12', 12, 1, 0, NOW(), NOW());
 
 ## 6 registros na tabela "answers" --------------------------------------------------
 
